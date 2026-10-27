@@ -600,12 +600,425 @@ def book_aio(src, out):
 
 
 # ---------------------------------------------------------------------------
+# Official CompTIA exam objectives (220-1201, 220-1202), PDF
+# ---------------------------------------------------------------------------
+
+OBJ_BULLETS = {"•": 1, "−": 2, "-": 2, "◦": 3, "գ": 3, "▪": 4}
+
+
+def obj_lines(page):
+    """(x, y, size, font, text) for each text line, without the page footer."""
+    out = []
+    for b in page.get_text("dict")["blocks"]:
+        for l in b.get("lines", []):
+            spans = [s for s in l["spans"] if s["text"].strip()]
+            if not spans or l["bbox"][1] > 740:
+                continue
+            text = re.sub(r"\s+", " ", "".join(s["text"] for s in spans)).strip()
+            out.append((l["bbox"][0], l["bbox"][1], spans[0]["size"], spans[0]["font"], text))
+    return out
+
+
+def obj_column(x):
+    return 0 if x < 150 else 1 if x < 320 else 2 if x < 400 else 3
+
+
+def obj_table(lines):
+    """A two-column table inside an objective (N10-009 1.4: Protocols | Ports). Returns (markdown, other lines)."""
+    heads = [l for l in lines if "Bold" in l[3] and l[4] in ("Protocols", "Ports")]
+    if len(heads) != 2:
+        return "", lines
+    left, right = sorted(heads, key=lambda l: l[0])
+    names = [l for l in lines if abs(l[0] - left[0]) < 5 and l[1] > left[1] and l not in heads]
+    values = [l for l in lines if abs(l[0] - right[0]) < 5 and l[1] > right[1] and l not in heads]
+    rows, used = [], set()
+    for n in sorted(names, key=lambda l: l[1]):
+        v = next((v for v in values if abs(v[1] - n[1]) < 3), None)
+        if v is None:
+            continue
+        rows.append((n[4], v[4]))
+        used |= {id(n), id(v)}
+    md = "\n".join([f"| {left[4]} | {right[4]} |", "|---|---|"] + [f"| {a} | {b} |" for a, b in rows])
+    return md, [l for l in lines if id(l) not in used and l not in heads]
+
+
+def obj_items(lines):
+    """Nested Markdown list from the bullet lines of one objective (read column by column)."""
+    table, lines = obj_table(lines)
+    lines = sorted(lines, key=lambda l: (obj_column(l[0]), l[1]))
+    items = []  # [level, text]
+    for x, y, size, font, text in lines:
+        level = OBJ_BULLETS.get(text[0])
+        if text.startswith("o "):
+            level, text = 3, text[1:]
+        if level:
+            items.append([level, text[1:].strip() if text[0] in OBJ_BULLETS else text.strip()])
+        elif re.match(r"\d+\. ", text):
+            items.append([0, text])  # numbered step
+        elif items:
+            sep = "" if items[-1][1].endswith(("/", "-")) else " "
+            items[-1][1] += sep + text
+        else:
+            items.append([1, text])
+    out = "\n".join(t if lvl == 0 else "  " * (lvl - 1) + "- " + t for lvl, t in items)
+    if table:
+        out = table + "\n\n" + out
+    return re.sub(r"(\w)\. (exe|msc)\b", r"\1.\2", out)
+
+
+def obj_parse(doc):
+    """Exam details, domains, objectives, and the acronym list of one objectives PDF."""
+    details, domains, objectives, acronyms = [], [], [], []
+    front = re.sub(r"\s+", " ", " ".join(doc[i].get_text() for i in range(1, 3)))
+    for label in ("Number of questions", "Types of questions", "Length of test", "Passing Score"):
+        m = re.search(re.escape(label) + r" (.+?) (?=Number of|Types of|Length of|Recommended|Passing|EXAM OBJECTIVES)", front, re.I)
+        if m:
+            details.append((label, m.group(1).strip()))
+    domains = re.findall(r"(\d\.0) ([A-Za-z ,]+?) (\d+%)", front)
+    m = re.search(r"The troubleshooting methodology includes the following steps: (.+?) DOMAIN", front)
+    method = [s.strip() for s in re.split(r"[•]", m.group(1)) if s.strip()] if m else []
+    method = [re.sub(r" - ", "\n   - ", s) for s in method]  # sub-steps
+
+    mode, cur = "front", None
+    for page in doc:
+        lines = obj_lines(page)
+        texts = " ".join(l[4] for l in lines)
+        if "Hardware and Software List" in texts or "registered trademark" in texts:
+            break
+        if "Acronym List" in texts:
+            mode = "acronyms"
+        if mode == "front" and any(l[2] > 20 and re.match(r"1\.0 ", l[4]) for l in lines):
+            mode = "objectives"
+        if mode == "objectives":
+            lines = [l for l in lines if not re.match(r"\d\.0 +\| ", l[4])]  # repeated domain header
+            # Objective numbers sit in the left margin, sometimes joined to the title ("1.3Summarize ...").
+            nums, extra = [], []
+            for l in lines:
+                m = re.match(r"(\d\.\d+) ?(.*)", l[4])
+                if m and "Bold" in l[3] and l[0] < 45:
+                    nums.append((l[0], l[1], l[2], l[3], m.group(1)))
+                    if m.group(2):
+                        extra.append((54.0, l[1], 12.0, l[3], m.group(2)))
+            nums.sort(key=lambda l: l[1])
+            lines = [l for l in lines if not (re.match(r"\d\.\d+", l[4]) and "Bold" in l[3] and l[0] < 45)] + extra
+            titles = [l for l in lines if 11 < l[2] < 17]
+            starts = []  # (y, number, title)
+            for n in nums:
+                tl = sorted([t for t in titles if abs(t[1] - n[1]) < 8 or 0 < t[1] - n[1] < 40 and t[0] > 50], key=lambda t: t[1])
+                block = [tl[0]] if tl else []
+                for t in tl[1:]:
+                    if t[1] - block[-1][1] <= 22:
+                        block.append(t)
+                starts.append((block[0][1] if block else n[1], n[4], " ".join(t[4] for t in block), {id(t) for t in block}))
+            used = set().union(*[s[3] for s in starts]) if starts else set()
+            bullets = [l for l in lines if l[2] < 10 and id(l) not in used]
+            bounds = [s[0] for s in starts] + [1e9]
+            # Bullets above the first objective on a page continue the last objective.
+            if cur is not None:
+                cur["lines"] += [b for b in bullets if b[1] < bounds[0]]
+            for i, (y, num, title, _) in enumerate(starts):
+                title = re.sub(r"(\.\s*)+(\s[a-z])?$", ".", title.strip())
+                cur = {"num": num, "title": title, "lines": [b for b in bullets if bounds[i] < b[1] < bounds[i + 1]]}
+                objectives.append(cur)
+        elif mode == "acronyms":
+            # One or two acronym/definition column pairs per page; read the left pair first.
+            rows = sorted([l for l in lines if l[2] < 10 and l[4].upper() not in ("ACRONYM", "DEFINITION", "SPELLED OUT")],
+                          key=lambda l: (l[0] >= 300, round(l[1]), l[0]))
+            for x, y, size, font, text in rows:
+                if x < 100 or 300 <= x < 360:
+                    acronyms.append([text, ""])
+                elif acronyms:
+                    acronyms[-1][1] = (acronyms[-1][1] + " " + text).strip()
+    return details, domains, method, objectives, acronyms
+
+
+def book_objectives(src, out):
+    code = re.search(r"220-\d{4}|n10-\d{3}", src.name, re.I).group(0).upper()
+    core = "Network+" if code.startswith("N10") else "Core 1" if code.endswith("1") else "Core 2"
+    details, domains, method, objectives, acronyms = obj_parse(pymupdf.open(str(src)))
+    cert = "" if core == "Network+" else "A+ "
+    src_line = f"Source: CompTIA {cert}{core} ({code}) Exam Objectives (official)\nExam: {core} ({code})"
+
+    md = ["## Exam details", ""] + [f"- **{k}:** {v}" for k, v in details] + [""]
+    md += ["## Domains", "", "| Domain | Weight |", "|---|---|"] + [f"| {n} {name} | {w} |" for n, name, w in domains] + [""]
+    if method:
+        md += ["## Troubleshooting methodology", "",
+               "Listed in the objectives as a best practice. CompTIA says it is not tested as an objective.", ""]
+        md += [f"{i}. {s}" for i, s in enumerate(method, 1)] + [""]
+    names = {n.split(".")[0]: name for n, name, _ in domains}
+    major = None
+    for o in objectives:
+        d = o["num"].split(".")[0]
+        if d != major:
+            major = d
+            md += [f"## {d}.0 {names.get(d, '')}".rstrip(), ""]
+        md += [f"### {o['num']} {o['title']}", "", obj_items(o["lines"]), ""]
+    files = [(write_chapter(out, 1, f"{core} ({code}) Exam Objectives", src_line, "\n".join(md)),
+              f"{core} ({code}) Exam Objectives", f"{core} ({code})", [o["num"] for o in objectives])]
+
+    rows = ["| Acronym | Expanded form |", "|---|---|"] + [f"| {a} | {d} |" for a, d in acronyms]
+    body = (f"The official list of acronyms that can appear on the {core} ({code}) exam: {len(acronyms)} acronyms. "
+            "Use it as the main source for `content/acronyms/`.\n\n" + "\n".join(rows))
+    files.append((write_chapter(out, 2, f"{core} ({code}) Acronym List", src_line, body),
+                  f"{core} ({code}) Acronym List", f"{core} ({code})", []))
+    return files
+
+
+
+# ---------------------------------------------------------------------------
+# Book: Network+ N10-009 Exam Cram (Dulaney), EPUB
+# ---------------------------------------------------------------------------
+
+NET = "Network+ (N10-009)"
+
+
+def gloss_html(html):
+    """Glossary entries ("term" paragraph, then a definition paragraph) as one paragraph each."""
+    return re.sub(rb'<p class="gloss"[^>]*>(.*?)</p>\s*<p class="gloss-p"[^>]*>(.*?)</p>',
+                  rb"<p><b>\1</b> \2</p>", html, flags=re.S)
+
+
+def book_exam_cram_net(src, out):
+    files = []
+    for name, html in epub_items(src):
+        m = re.fullmatch(r"ch(\d+)\.xhtml", name)
+        if not (m or name in ("cramsheet.xhtml", "gloss.xhtml")):
+            continue
+        html = re.sub(rb'<p class="obj-p">.*?</p>', b"", html, flags=re.S)  # intro chatter
+        if name == "gloss.xhtml":
+            html = gloss_html(html)
+        soup, md = html_to_md(html)
+        h = soup.find(["h1", "h2"])
+        title = re.sub(r"\s+", " ", h.get_text(" ")).strip() if h else name
+        title = title.replace(". ", ": ", 1) if title.startswith("Chapter") else title
+        md = md.split("\n\n", 1)[1] if md.startswith("#") else md
+        md = drop_sections(md, [r"What.s Next\?"])
+        md = re.sub(r"^If you can correctly answer these questions before going through this section.*\n", "", md, flags=re.M)
+        md = re.sub(r"^(CramSaver|Cram Quiz|Cram Quiz Answers|Answers)$", r"**\1**", md, flags=re.M)
+        objs = []
+        if m:
+            ch = int(m.group(1))
+            box = " ".join(p.get_text(" ") for p in soup.find_all(class_="obj-bullet"))
+            objs = objectives_in(box, NET)
+        else:
+            ch = "x1" if name == "cramsheet.xhtml" else "x2"
+        header = f"Source: CompTIA Network+ N10-009 Exam Cram (Dulaney) – {name}\nExam: {NET}"
+        if objs:
+            header += "\nObjectives: " + ", ".join(objs)
+        files.append((write_chapter(out, ch, title, header, md), title, NET, objs))
+    return files
+
+
+# ---------------------------------------------------------------------------
+# Book: Network+ Practice Tests N10-009 (Zacker), EPUB
+# ---------------------------------------------------------------------------
+
+def book_zacker(src, out):
+    items = dict(epub_items(src))
+    _, ans_md = html_to_md(items["b01.xhtml"])
+    answers = split_by_heading(ans_md, r"^#+\s+Chapter (\d+):")
+    files = []
+    ch = 0
+    while f"c{ch + 1:02d}.xhtml" in items:
+        ch += 1
+        soup, md = html_to_md(items[f"c{ch:02d}.xhtml"])
+        h = soup.find("h1")
+        title = re.sub(r"\s+", " ", h.get_text(" ")).strip() if h else f"Chapter {ch}"
+        title = re.sub(r"^Chapter\s*(\d+)\s*:?\s*", r"Chapter \1: ", title)
+        md = re.sub(r"^#+ .*\n", "", md, count=1)
+        # The objectives box at the start lists every sub-topic; the objective headings carry the numbers.
+        md = re.sub(r"^> \*\*THE COMPTIA NETWORK\+.*?(?=\n\n(?!>))", "", md, flags=re.S | re.M)
+        objs = sorted(set(re.findall(r"^#+ ([1-5]\.\d{1,2}) ", md, re.M)), key=lambda s: [int(x) for x in s.split(".")])
+        if str(ch) in answers:
+            md += "\n\n## Answers to Review Questions\n\n" + answers[str(ch)].strip()
+        header = (f"Source: CompTIA Network+ Practice Tests: Exam N10-009 (Zacker) – chapter {ch}\nExam: {NET}"
+                  + ("\nObjectives: " + ", ".join(objs) if objs else ""))
+        files.append((write_chapter(out, ch, title, header, md), title, NET, objs))
+    return files
+
+
+# ---------------------------------------------------------------------------
+# Book: Network+ Guide to Networks (West), Cengage, PDF
+# ---------------------------------------------------------------------------
+
+WEST_HEADINGS = [  # (min size, max size, font starts with, markdown prefix)
+    (19.0, 21.0, "Montserrat-Bold", "## "),
+    (16.0, 18.0, "Montserrat-Bold", "### "),
+    (11.5, 13.5, "Montserrat-Bold", "#### "),
+    (11.5, 12.5, "HelveticaNeue", "#### "),
+]
+
+
+def west_kind(span):
+    size, font = span["size"], span["font"]
+    for lo, hi, f, p in WEST_HEADINGS:
+        if lo <= size <= hi and font.startswith(f):
+            return p
+    if size >= 20 or font.startswith(("Helvetica", "Syntax", "Courier", "Arial")):
+        return "skip"  # chapter numbers and figure labels
+    if font.startswith("OpenSans"):
+        keep = (8.6 <= size <= 9.0 and "Bold" not in font and "Semibold" not in font) or (size >= 10.5 and "Bold" in font)
+        return "body" if keep else "skip"  # self-check questions and table titles; else figure labels
+    if size < 7.5:
+        return "skip"
+    return "body"
+
+
+def west_line(spans):
+    parts = []
+    for s in spans:
+        t = s["text"]
+        bold = t.strip() and s["font"].startswith(("UtopiaStd-Bold", "AreaNormal-Bold", "AreaNormal-ExtraBold"))
+        parts.append(f"**{t.strip()}** " if bold else t)
+    return "".join(parts)
+
+
+def west_page(page):
+    """(band, column, y, x, text) items for one page of the West book."""
+    width = page.rect.width
+    tables = []
+    try:
+        tables = [t for t in page.find_tables().tables if t.row_count >= 2 and t.col_count >= 2]
+    except Exception:
+        pass
+    tboxes = [pymupdf.Rect(t.bbox) for t in tables]
+    items = []  # (y, x0, x1, text)
+    for t in tables:
+        md = aio_table(page, t)
+        if md:
+            items.append((t.bbox[1], t.bbox[0], t.bbox[2], md))
+    for b in page.get_text("dict")["blocks"]:
+        lines = [l for l in b.get("lines", []) if l["spans"] and "".join(s["text"] for s in l["spans"]).strip()]
+        if not lines or b["bbox"][1] < 45:  # running header and page number
+            continue
+        if any(pymupdf.Rect(b["bbox"]).intersects(tb) for tb in tboxes):
+            continue
+        first = "".join(s["text"] for s in lines[0]["spans"]).strip()
+        if re.match(r"Figure \d+-\d+", first):
+            continue
+        groups, kinds = [], []
+        for l in lines:
+            spans = [s for s in l["spans"] if s["text"].strip()]
+            kind = west_kind(spans[0])
+            raw = "".join(s["text"] for s in l["spans"]).lstrip()
+            new = (not groups or kind != kinds[-1] or kind.startswith("#") or raw.startswith(("•", "■"))
+                   or re.match(r"^(\d+|[a-z])\.\t", raw) or raw.startswith(("Answer:", "Explanation:")))
+            if new:
+                groups.append([l])
+                kinds.append(kind)
+            else:
+                groups[-1].append(l)
+        for g, kind in zip(groups, kinds):
+            if kind == "skip":
+                continue
+            text = ""
+            for l in g:
+                seg = west_line(l["spans"]).rstrip()
+                if text.endswith("-") and seg[:1].islower():
+                    text = text[:-1] + HYPHEN + seg.lstrip()  # resolved in book_west
+                else:
+                    text = (text + " " + seg.lstrip()) if text else seg
+            text = re.sub(r"\s+", " ", text.replace("\t", " ").replace("­", "")).strip()
+            if not text:
+                continue
+            if kind.startswith("#"):
+                text = kind + text.replace("**", "")
+            elif "SourceCodePro" in g[0]["spans"][0]["font"]:
+                text = "`" + text + "`"
+            elif re.match(r"^\*\*(Note|Exam Tip|Caution|Warning) [\d-]*", text):
+                text = "> " + text
+            elif text.startswith(("•", "■")):
+                text = "- " + text.lstrip("•■ ").strip()
+            x0, x1 = g[0]["bbox"][0], max(l["bbox"][2] for l in g)
+            items.append((g[0]["bbox"][1], x0, x1, text))
+    # Reading order: bands split by full-width items; in a band, the left column first.
+    items.sort(key=lambda i: (i[0], i[1]))
+    out, band = [], 0
+    for y, x0, x1, text in items:
+        full = x1 - x0 > width * 0.55 or text.startswith("## ")
+        if full:
+            band += 1
+        col = 1 if (not full and x0 > width * 0.47) else 0
+        out.append((band, col, y, x0, text))
+    out.sort(key=lambda i: i[:4])
+    return [i[4] for i in out]
+
+
+WEST_DROP = [r"^Outline$", r"^Objectives$", r"^Applying Concepts", r"^Hands-On Projects$", r"^Capstone Projects$",
+             r"^Project \d", r"^Capstone Project", r"^On the Job$", r"^Key Terms$", r"^Acronyms Checklist$"]
+HYPHEN = "\x00"  # a hyphen at a line break: dropped when the joined word is used elsewhere in the book
+WEST_BOILERPLATE = [r"Check your answers at the end of this chapter\.", r"Study the chapter.s outline",
+                    r"For definitions of key terms, check the Glossary\.", r"After reading this chapter and completing"]
+
+
+def west_body(paras):
+    merged = []
+    for p in paras:
+        prev = merged[-1] if merged else ""
+        if re.fullmatch(r"(\d+|[a-z])\.", prev):
+            merged[-1] = prev + " " + p  # a list number in its own block
+        elif re.match(r"(#+) ", p) and re.match(r"(#+) ", prev) and p.split(" ")[0] == prev.split(" ")[0]:
+            merged[-1] = prev + " " + p.split(" ", 1)[1]  # a heading on two lines
+        elif (prev and p[:1].islower() and not re.match(r"[a-z]\. ", p)
+              and not prev.startswith(("#", "|", ">", "`")) and not prev.rstrip().endswith((".", ":", "?", "!"))):
+            merged[-1] = prev + " " + p  # a paragraph split by a page break
+        else:
+            merged.append(p)
+    md = "\n\n".join(merged)
+    for b in WEST_BOILERPLATE:
+        md = re.sub(r"^.*" + b + r".*\n?", "", md, flags=re.M)
+    md = drop_sections(md, WEST_DROP)
+    md = re.sub(r"\n\n(?=[a-f]\. )", "\n", md)  # answer options
+    return compact_bullets(md)
+
+
+def book_west(src, out):
+    doc = pymupdf.open(str(src))
+    toc = [(t, p) for lvl, t, p in doc.get_toc() if lvl == 1]
+    # Every word in the book, to tell a line-break hyphen ("under-stand") from a real one ("peer-to-peer").
+    words = set(w.lower() for pg in doc for w in re.findall(r"[A-Za-z]+", pg.get_text()))
+    files = []
+    for i, (title, start) in enumerate(toc):
+        end = toc[i + 1][1] - 1 if i + 1 < len(toc) else doc.page_count
+        m = re.match(r"Chapter (\d+): (.*)", title)
+        if m:
+            ch, name = int(m.group(1)), title
+        elif title.startswith("Appendix B"):
+            ch, name = "xb", "Appendix B: Calculating Subnets"
+        elif title.startswith("Appendix C"):
+            ch, name = "xc", "Appendix C: Practice Exam"
+        elif title == "Glossary":
+            ch, name = 99, "Glossary"
+        else:
+            continue  # front matter, objectives (see the official file), rubric, index
+        paras = []
+        for pg in range(start - 1, end):
+            paras += west_page(doc[pg])
+        if m:
+            paras = [p for p in paras if p.strip() not in (m.group(2), "Chapter")]
+        body = west_body(paras)
+        body = re.sub(r"(\w+)\x00(\w+)", lambda m: m.group(1) + m.group(2) if (m.group(1) + m.group(2)).lower() in words
+                      else m.group(1) + "-" + m.group(2), body).replace(HYPHEN, "-")
+        objs = sorted(set(re.findall(r"Net\+ ([1-5]\.\d{1,2})", body)), key=lambda s: [int(x) for x in s.split(".")])
+        header = (f"Source: CompTIA Network+ Guide to Networks (West), Cengage – {name}\nExam: {NET}"
+                  + ("\nObjectives: " + ", ".join(objs) if objs else ""))
+        files.append((write_chapter(out, ch, name, header, body), name, NET, objs))
+    return files
+
+
+# ---------------------------------------------------------------------------
 
 BOOKS = {
     "exam-cram-2e": ("general", "CompTIAACore1(220-1201)andCore2(220-1202)ExamCram,2ndEdition-9780135447000.epub", book_exam_cram),
     "docter-study-guide": ("general", "COMPTIA A+ COMPLETE STUDY GUIDE by Quentin Docter.epub", book_docter),
     "neil-practice-tests": ("general", "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) by Ian Neil.epub", book_neil),
     "aio-11e": ("general", "CompTIA A+ Certification All-in-One Exam Guide 11ed 2023.pdf", book_aio),
+    "objectives-220-1201": ("general", "comptia-a-plus-220-1201-exam-objectives.pdf", book_objectives),
+    "objectives-220-1202": ("general", "comptia-a-plus-220-1202-exam-objectives.pdf", book_objectives),
+    "objectives-n10-009": ("network", "n10-009-exam-objectives.pdf", book_objectives),
+    "net-exam-cram": ("network", "Comptia Network+ N10-009 Exam Cram (Exam Cram (Pearson)){Emmett Dulaney}(2024, Pearson It Certification){105355531} libgen.li.epub", book_exam_cram_net),
+    "net-zacker-practice-tests": ("network", "CompTIA Network+ Practice Tests_ Exam N10-009{Craig Zacker}(2024, Sybex){105351008} libgen.li.epub", book_zacker),
+    "net-west-guide": ("network", "CompTIA Network+ Guide to Networks{Jill West}(224, Cengage Learning){107908711} libgen.li.pdf", book_west),
 }
 
 

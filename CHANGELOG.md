@@ -2,6 +2,41 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-27 – Network+ sources
+
+Decisions:
+- Network+ sources are extracted now. No Network+ content, configs, or exams are built yet; the module stays inactive.
+- Network+ sources stay apart from A+: `sources/network/` → `sources-text/network/`, with their own acronym files (`derived/network-plus-acronyms.md`, `network-plus-acronym-candidates.md`).
+- The Cengage textbook's classroom material (labs, projects, rubric, chapter outlines, "On the Job" stories) is filler and is removed. Its Key Terms and Acronyms Checklist pages are removed too: they extract badly, and the glossary and official acronym list cover them.
+
+Changes:
+- `tools/extract/extract_books.py`: added `objectives-n10-009`, `net-exam-cram` (Dulaney), `net-zacker-practice-tests` (Zacker), and `net-west-guide` (West, PDF). The objectives parser no longer depends on fonts, reads two-column acronym lists, keeps wrapped titles, and rebuilds the 1.4 Protocols/Ports table. The A+ objectives output is unchanged.
+- Extracted: N10-009 objectives (25 objectives, 162 acronyms), Exam Cram (10 chapters, cram sheet, glossary, ~180 quiz questions), Zacker (5 domain chapters and 2 practice tests, ~1,200 questions with answers), and West (12 chapters, subnetting and practice-exam appendices, glossary; Self-Check answers kept, review questions have no answers in the book).
+- `tools/extract/derive_terms.py`: one official list and one candidate list for each certification. Made the order of differing forms stable.
+- `tools/extract/build_index.py`: Network+ books and domains in `sources-text/sources-index.md`.
+- `CLAUDE.md`, `tools/extract/README.md`: recorded the Network+ folders and the rule to keep A+ and Network+ sources apart.
+
+Found in the official N10-009 list: "TACAS+" (typo for TACACS+); "IPSec" (the books write IPsec). The objectives PDF has no passing score; `docs/compTIA-exam-overviews.md` keeps 720.
+
+## 2026-10-27 – Official exam objectives
+
+Decisions:
+- The official CompTIA objectives are the main source for acronyms and the check that content matches a current objective.
+- The two official acronym lists are merged into one A+ list. Where they differ, both forms are kept with a note, not silently corrected.
+
+Changes:
+- Moved `comptia-a-plus-220-1201-exam-objectives.pdf` and `comptia-a-plus-220-1202-exam-objectives.pdf` from `sources-text/` to `sources/general/`.
+- `tools/extract/extract_books.py`: parses the objectives PDFs into `sources-text/general/objectives-220-1201/` and `objectives-220-1202/`: exam details, domain weights, troubleshooting methodology, all objectives (27 for Core 1, 36 for Core 2) with nested sub-topics, and the acronym list (200 for each exam).
+- `tools/extract/derive_terms.py`: writes `sources-text/derived/a-plus-acronyms.md` (201 acronyms) and marks the book candidates that are on the official list.
+- `tools/extract/build_index.py`: adds the objectives to `sources-text/sources-index.md`.
+- `CLAUDE.md` and `tools/extract/README.md`: recorded the new files and the rules above.
+
+Found in the official lists (to resolve when writing `content/acronyms/`):
+- Core 1 has XXS (typo) where Core 2 has XSS (Cross-site Scripting).
+- NAT: Core 1 says Network Access Translation; Core 2 says Network Address Translation.
+- SPICE: Core 1 says Software Process Improvement and Capability Determination; Core 2 (and objective 4.9) says Simple Protocol for Independent Computing Environments.
+- IAM, MNDA, NDA, and OTP differ only in wording or capitals.
+
 ## 2026-10-27 – Book extraction
 
 Decisions:
