@@ -1,0 +1,470 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>A+ Core 1 Practice Exam</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+<style>
+/* Layout: grey exam shell, white question card, question left / answer keys right (stacks on phones) */
+:root{
+  --shell:#f2f2f4; --card:#ffffff; --fg:#1f1f1f; --muted:#555a60; --line:#d6d7db;
+  --btn:#eeeff2; --btn-hover:#e3e5ea; --btn-border:#c3c5cb;
+  --accent:#0d789e; --accent-fg:#ffffff; --link:#1b6da3;
+  --sel:#d8eef6; --sel-border:#0d789e; --track:#c9cbd0;
+  --ok:#1d7a3a; --ok-bg:#e3f3e8; --bad:#b3261e; --bad-bg:#fbe7e5; --flag:#a86400; --flag-bg:#fdf1dc;
+  --shadow:rgba(0,0,0,.18);
+  --font:"Segoe UI","Open Sans",system-ui,-apple-system,Arial,sans-serif;
+}
+:root,:root[data-theme]{color-scheme:light}
+
+body{background:var(--shell);color:var(--fg);font-family:var(--font);font-size:15px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px 24px}
+.wrap{max-width:940px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+button{font-family:inherit;color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* header */
+.head{display:grid;grid-template-columns:1fr auto;gap:8px 16px;align-items:start}
+.head h1{font-size:15px;font-weight:700;margin:0;display:inline}
+.head .sec{font-size:13px;color:var(--muted);margin-left:22px;white-space:nowrap}
+.timers{grid-column:1/-1;display:flex;justify-content:flex-end;gap:24px;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;flex-wrap:wrap}
+.timers span{display:inline-flex;align-items:center;gap:6px}
+.timers b{font-weight:400;color:var(--fg)}
+.foot{display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px}
+.foot .reportbox{flex-basis:100%}
+#qTimer{margin-left:auto;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+#qTimer b{font-weight:400;color:var(--fg)}
+#qTimer.neg b{color:var(--bad);font-weight:600}
+.timers.low b{color:var(--bad);font-weight:600}
+.hg{width:14px;height:14px;flex:none}
+.pause{background:var(--btn);border:1px solid var(--btn-border);border-radius:2px;padding:7px 26px;font-size:12px;cursor:pointer}
+.pause:hover{background:var(--btn-hover)}
+
+/* card */
+.card{background:var(--card);position:relative}
+.bar{display:flex;align-items:center;border-bottom:1px solid var(--line);min-height:36px;font-size:13px;flex-wrap:wrap}
+.nav{display:flex;border-right:1px solid var(--line);padding:0 6px}
+.nav button{background:none;border:0;cursor:pointer;width:26px;height:34px;display:grid;place-items:center}
+.nav button:disabled{opacity:.3;cursor:default}
+.pct{padding:0 10px;white-space:nowrap;font-variant-numeric:tabular-nums}
+.track{flex:1;min-width:120px;height:12px;margin:0 16px 0 4px;position:relative;background:var(--track);border-radius:6px}
+.track .fill{position:absolute;inset:0 auto 0 0;background:var(--accent);border-radius:6px;transition:width .25s}
+.track .tick{position:absolute;top:0;bottom:0;width:1px;background:var(--card);opacity:.7}
+.track .knob{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:var(--track);border:2px solid var(--card);transform:translate(-50%,-50%);box-shadow:0 0 0 1px var(--track)}
+.track .knob.l{left:0}.track .knob.r{left:100%}
+.revisit{display:flex;align-items:center;gap:4px;border-left:1px solid var(--line);padding:0 12px;height:36px;cursor:pointer;white-space:nowrap}
+.revisit input{margin:0;accent-color:var(--accent)}
+.review{border-left:1px solid var(--line);padding:0 12px;height:36px;display:flex;align-items:center;color:var(--link);background:none;border-top:0;border-right:0;border-bottom:0;cursor:pointer;font-size:13px;white-space:nowrap}
+.review:hover{text-decoration:underline}
+
+.qa{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:24px;padding:22px 22px 18px}
+.qnum{font-size:12px;color:var(--muted);margin:0 0 6px;letter-spacing:.03em;text-transform:uppercase}
+.chip{display:inline-block;margin-left:8px;padding:2px 8px;border:1px solid var(--sel-border);background:var(--sel);color:var(--fg);border-radius:10px;font-size:11px;letter-spacing:.02em;text-transform:none;vertical-align:1px}
+.stem{margin:0 0 18px;line-height:1.5;max-width:62ch}
+.opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px}
+.opts li{line-height:1.4}
+.opts li.struck{text-decoration:line-through;color:var(--muted)}
+.keys{display:flex;flex-direction:column;gap:6px}
+.krow{display:grid;grid-template-columns:24px 1fr;align-items:center;gap:10px}
+.x{background:none;border:0;cursor:pointer;width:24px;height:24px;display:grid;place-items:center;color:var(--fg);border-radius:3px}
+.x:hover{background:var(--btn)}
+.x[aria-pressed="true"]{color:var(--bad)}
+.key{height:41px;background:var(--btn);border:1px solid var(--btn-border);font-size:17px;cursor:pointer}
+.key:hover:not(:disabled){background:var(--btn-hover)}
+.key.on{background:var(--sel);border:2px solid var(--sel-border);font-weight:600}
+.key:disabled{opacity:.4;cursor:not-allowed;text-decoration:line-through}
+.confirm{margin:6px 0 0 34px;height:48px;background:var(--accent);color:var(--accent-fg);border:0;font-size:15px;cursor:pointer}
+.confirm:disabled{opacity:.45;cursor:default}
+.saved{margin-left:34px;font-size:12px;color:var(--ok);min-height:16px}
+.foot{padding:12px 22px 18px}
+.report{font-size:11px;color:var(--fg);background:none;border:0;border-bottom:1px solid var(--line);padding:0 0 4px;cursor:pointer;display:inline-flex;gap:4px;align-items:center}
+.report:disabled{color:#9a9ca1;cursor:not-allowed;opacity:.7}
+.reportbox{margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:flex-start;max-width:520px}
+.reportbox textarea{flex:1 1 240px;min-height:56px;font:inherit;font-size:13px;background:var(--card);color:var(--fg);border:1px solid var(--btn-border);padding:6px}
+.sm{background:var(--btn);border:1px solid var(--btn-border);padding:6px 14px;cursor:pointer;font-size:13px}
+.sm.pri{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+
+/* overlays */
+.ovl{position:absolute;inset:0;background:var(--card);z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:24px;text-align:center}
+.ovl h2{margin:0;font-size:20px}
+.ovl p{margin:0;color:var(--muted);max-width:44ch;line-height:1.5}
+
+.panel{padding:20px 22px}
+.panel h2{font-size:18px;margin:0 0 4px}
+.panel .sub{color:var(--muted);margin:0 0 16px;font-size:13px}
+.stats{list-style:none;padding:0;margin:4px 0 10px;display:flex;flex-direction:column;gap:4px;font-size:13px;font-variant-numeric:tabular-nums}
+.modal{position:fixed;inset:0;z-index:50;background:rgba(20,22,26,.55);display:flex;align-items:center;justify-content:center;padding:16px}
+.dlg{background:var(--card);width:100%;max-width:420px;padding:24px;box-shadow:0 10px 40px var(--shadow);display:flex;flex-direction:column;gap:12px}
+.dlg h2{margin:0;font-size:18px}.dlg p{margin:0;color:var(--muted);line-height:1.5}
+.dlg .sm{padding:10px 24px}
+.loading{min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;text-align:center}
+.spin{width:40px;height:40px;border-radius:50%;border:4px solid var(--track);border-top-color:var(--accent);animation:spin 1s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation-duration:3s}}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted);margin-bottom:12px}
+.legend i{display:inline-block;width:12px;height:12px;border:1px solid var(--btn-border);vertical-align:-2px;margin-right:5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;margin-bottom:18px}
+.cell{height:48px;border:1px solid var(--btn-border);background:var(--btn);cursor:pointer;font-size:13px;position:relative;font-variant-numeric:tabular-nums}
+.cell.ans{background:var(--sel);border-color:var(--sel-border)}
+.cell.flag::after{content:"";position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;background:var(--flag)}
+.actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.warn{background:var(--flag-bg);color:var(--fg);border-left:3px solid var(--flag);padding:10px 12px;font-size:13px;margin-bottom:14px}
+
+.score{display:flex;gap:28px;flex-wrap:wrap;align-items:baseline;margin:6px 0 16px}
+.score .big{font-size:40px;font-weight:700;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600}
+.pill.pass{background:var(--ok-bg);color:var(--ok)}.pill.fail{background:var(--bad-bg);color:var(--bad)}
+.rlist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
+.rlist>li{border:1px solid var(--line);border-left:4px solid var(--bad);padding:10px 12px;font-size:13px;line-height:1.5}
+.rlist>li{background:#fdf5f4;position:relative;padding-right:40px;cursor:pointer}
+.rlist>li.part{border-left-color:var(--flag);background:#fdf9f0}
+.rlist>li.part .mark{color:var(--flag)}
+.pnote{color:var(--flag);font-weight:600;font-size:12px;margin-top:4px}
+.rlist>li:hover{border-color:var(--accent)}
+.key.ro:disabled{opacity:1;cursor:default;text-decoration:none}
+.key.ro.on{background:var(--bad-bg);border:2px solid var(--bad)}
+.key.ro.right{background:var(--ok-bg);border:2px solid var(--ok);font-weight:600}
+.key.ro{position:relative}
+.key.mine::after{content:"";position:absolute;top:5px;right:6px;width:8px;height:8px;border-radius:50%;background:#1a73d9}
+.klegend .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#1a73d9;margin:0 9px 0 2px;vertical-align:0}
+.klegend{margin-left:34px;display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);padding-top:4px}
+.klegend .sw{display:inline-block;width:11px;height:11px;margin-right:6px;vertical-align:-1px;border:2px solid}
+.sw.ok{border-color:var(--ok);background:var(--ok-bg)}.sw.bad{border-color:var(--bad);background:var(--bad-bg)}
+.explain{margin-top:20px;padding:10px 12px;background:var(--shell);font-size:13px;line-height:1.5;max-width:62ch}
+.rlist .mark{position:absolute;top:10px;right:12px;color:var(--bad);display:grid;place-items:center}
+.rlist>li.ok .mark{color:var(--ok)}
+.acols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px}
+@media (max-width:520px){.acols{grid-template-columns:1fr}}
+.albl{margin-top:6px;font-weight:600}
+.alist{margin:2px 0 6px;padding-left:20px;display:flex;flex-direction:column;gap:2px}
+.rlist>li.ok{border-left-color:var(--ok);background:#f4faf5}
+.rlist .q{font-weight:600;font-size:14px;margin-bottom:4px}
+.rlist .a{color:var(--muted)}
+.filters{display:flex;gap:6px;margin-bottom:10px}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+
+@media (max-width:640px){
+  .qa{grid-template-columns:1fr}
+  .head .sec{display:block;margin:4px 0 0}
+  .timers{justify-content:flex-start}
+  .track{order:5;flex-basis:100%;margin:6px 16px 10px}
+  .review,.revisit{border-left:0}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <div class="head">
+    <div><h1>CompTIA A+ Core 1 Practice Exam: Core 1 (220-1201) Final Assessment</h1><span class="sec">Section 1 of 1</span></div>
+    <button class="pause" id="pauseBtn">Pause</button>
+    <div class="timers" id="timers">
+      <span><svg class="hg" viewBox="0 0 14 14" aria-hidden="true"><rect x=".5" y=".5" width="13" height="13" fill="none" stroke="currentColor"/><path d="M4 3h6L7 7l3 4H4l3-4z" fill="none" stroke="currentColor"/></svg>This section: <b id="tSec">01:30:00</b></span>
+      <span><svg class="hg" viewBox="0 0 14 14" aria-hidden="true"><rect x=".5" y=".5" width="13" height="13" fill="none" stroke="currentColor"/><path d="M4 3h6L7 7l3 4H4l3-4z" fill="none" stroke="currentColor"/></svg>Total <b id="tTot">01:30:00</b></span>
+    </div>
+  </div>
+
+  <div class="card" id="card">
+    <div class="bar" id="bar">
+      <div class="nav">
+        <button id="prev" aria-label="Previous question"><svg width="10" height="12" viewBox="0 0 10 12"><path d="M8 0v12L0 6z" fill="currentColor"/></svg></button>
+        <button id="next" aria-label="Next question"><svg width="10" height="12" viewBox="0 0 10 12"><path d="M2 0v12l8-6z" fill="currentColor"/></svg></button>
+      </div>
+      <div class="pct" id="pct">0.0% Complete</div>
+      <div class="track" aria-hidden="true"><div class="fill" id="fill" style="width:0"></div><div class="tick" style="left:25%"></div><div class="tick" style="left:50%"></div><div class="tick" style="left:75%"></div><div class="knob l"></div><div class="knob r"></div></div>
+      <label class="revisit"><input type="checkbox" id="flag"> Revisit Later</label>
+      <button class="review" id="reviewBtn">Review &amp; Finalize Section</button>
+    </div>
+    <div id="view"></div>
+  </div>
+</div>
+
+<div class="modal" id="timeout" role="alertdialog" aria-modal="true" aria-labelledby="toTitle" hidden>
+  <div class="dlg"><h2 id="toTitle">Time is up</h2><p>The time for this section has ended. You cannot change your answers. Submit the exam to see your results.</p>
+  <div class="actions"><button class="sm pri" id="toSubmit">Submit Exam</button></div></div>
+</div>
+
+<script>
+const BANK=[
+ {q:"A company realizes that it needs to implement a management solution for mobile phones. Which solution is specific to the restriction of apps installed from a device’s app store?",o:["MAM","EMM","MDM","BYOD"],a:0,e:"Mobile application management (MAM) controls which apps users can install and how corporate apps handle data. MDM manages the whole device, and EMM is the umbrella that includes both."},
+ {q:"A user reports that a laptop display is very dark. When a flashlight is held against the screen, the image is faintly visible. Which component has most likely failed?",o:["Digitizer","Backlight","Graphics processor","Wi-Fi antenna"],a:1,e:"A faint image that is visible under a flashlight shows the LCD panel works but is not lit. The backlight (or its inverter on older CCFL panels) has failed."},
+ {q:"Which TCP port does SMTP use by default to send email between mail servers?",o:["25","110","143","53"],a:0,e:"SMTP uses port 25. POP3 uses 110, IMAP uses 143, and DNS uses 53."},
+ {q:"A technician must configure a storage array that uses striping with distributed parity and needs a minimum of three drives. Which RAID level must the technician use?",o:["RAID 0","RAID 1","RAID 5","RAID 10"],a:2,e:"RAID 5 stripes data with distributed parity across at least three drives and survives the loss of one drive."},
+ {q:"Which copper cable category supports 10 Gbps Ethernet over the full 100-meter channel length?",o:["Cat 5","Cat 5e","Cat 6","Cat 6a"],a:3,e:"Cat 6a supports 10GBASE-T to 100 m. Cat 6 supports 10 Gbps only to about 55 m."},
+ {q:"In the laser printing process, which step uses heat and pressure to bond toner to the paper?",o:["Charging","Developing","Transferring","Fusing"],a:3,e:"The fuser assembly applies heat and pressure so the toner melts into the paper fibers."},
+ {q:"A company subscribes to a hosted email and office suite. The provider manages the infrastructure, OS, and application. Which cloud service model is this?",o:["IaaS","PaaS","SaaS","DaaS"],a:2,e:"Software as a Service (SaaS) delivers a complete application. The customer only uses the software."},
+ {q:"Which DNS record type maps a hostname to an IPv6 address?",o:["A","AAAA","MX","CNAME"],a:1,e:"AAAA records hold IPv6 addresses. A records hold IPv4 addresses."},
+ {q:"A workstation cannot reach the network. Which IP address on the workstation shows that it did not receive a lease from the DHCP server?",o:["192.168.1.10","10.0.0.5","169.254.12.4","172.16.0.1"],a:2,e:"169.254.0.0/16 is the APIPA range. Windows assigns it when no DHCP server answers."},
+ {q:"Which type of hypervisor installs directly on the host hardware without a host operating system?",o:["Type 1","Type 2","Container engine","Emulator"],a:0,e:"A Type 1 (bare-metal) hypervisor runs directly on the hardware. A Type 2 hypervisor runs as an application on a host OS."},
+ {q:"Which wireless technology lets a user make a contactless payment by tapping a smartphone on a terminal?",o:["Bluetooth","NFC","Infrared","Mobile hotspot"],a:1,e:"Near-field communication (NFC) operates over a few centimeters and is used for tap-to-pay."},
+ {q:"A technician must upgrade the memory in a laptop. Which memory form factor will the technician most likely need?",o:["DIMM","SODIMM","ECC RDIMM","LRDIMM"],a:1,e:"Laptops use the small outline DIMM (SODIMM) form factor."},
+ {q:"Which Wi-Fi standard can operate in the 6 GHz band when certified as Wi-Fi 6E?",o:["802.11ac","802.11n","802.11ax","802.11g"],a:2,e:"802.11ax (Wi-Fi 6/6E). The 6E certification adds the 6 GHz band."},
+ {q:"A technician terminated a new patch cable. Which tool verifies that each wire is connected to the correct pin?",o:["Loopback plug","Toner probe","Cable tester","Punchdown tool"],a:2,e:"A cable tester checks continuity and pin-out (wire map). A toner probe only locates a cable."},
+ {q:"Which port must be open on a firewall so administrators can connect to a Windows server with Remote Desktop Protocol?",o:["22","3389","443","445"],a:1,e:"RDP uses TCP/UDP 3389. SSH uses 22, HTTPS uses 443, and SMB uses 445."},
+ {q:"After a RAM upgrade, a desktop computer powers on, beeps repeatedly, and shows no display. What is the most likely cause?",o:["Failed power supply","Improperly seated memory","Corrupted operating system","Failed hard drive"],a:1,e:"Repeated POST beeps after a memory change usually point to memory that is not seated correctly or is not compatible."},
+ {q:"Which connector type is used with fiber-optic cable?",o:["RJ45","F-type","LC","RJ11"],a:2,e:"LC (Lucent connector) is a common small-form-factor fiber connector. F-type is coaxial; RJ45 and RJ11 are copper."},
+ {q:"Which network device forwards frames based on the destination MAC address?",o:["Hub","Switch","Router","Repeater"],a:1,e:"A switch learns MAC addresses and forwards frames only to the correct port. A router forwards by IP address."},
+ {q:"An inkjet printer prints pages with horizontal streaks and missing colors. What must the technician do first?",o:["Replace the fuser","Run the printhead cleaning utility","Replace the transfer belt","Replace the pickup roller"],a:1,e:"Clogged nozzles cause streaks and missing colors. Run the cleaning utility first, then do a nozzle check."},
+ {q:"A company-owned smartphone is lost. Which solution lets IT remotely wipe the entire device?",o:["MAM","MDM","BYOD","SSO"],a:1,e:"Mobile device management (MDM) controls the whole device, including full remote wipe. MAM can wipe only corporate app data."},
+ {q:"Which features are new in DDR5 memory modules compared to DDR4?",o:["Two independent 32-bit subchannels per module","An on-module power management IC","A 240-pin DIMM form factor","Lower bandwidth than DDR4","A 1.5 V operating voltage"],a:[0,1],e:"DDR5 splits each module into two 32-bit subchannels and moves voltage regulation onto the module with a PMIC. DDR5 DIMMs have 288 pins and run at 1.1 V."},
+ {q:"A technician is setting up a SOHO wireless router. Which actions improve the security of the network?",o:["Change the default administrator password","Enable WPS","Enable WPA3 encryption","Keep the default SSID","Disable the router firewall"],a:[0,2],e:"Changing default credentials and using WPA3 both harden the router. WPS has known weaknesses, and a default SSID identifies the router model."},
+ {q:"Which address ranges are private IPv4 ranges as defined in RFC 1918?",o:["10.0.0.0/8","172.16.0.0/12","192.168.0.0/16","169.254.0.0/16","100.64.0.0/10"],a:[0,1,2],e:"RFC 1918 defines 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16. 169.254.0.0/16 is link-local (APIPA), and 100.64.0.0/10 is carrier-grade NAT space."},
+ {q:"A user configures an email client to download mail over encrypted connections. Which ports can the client use?",o:["993","995","110","143","25"],a:[0,1],e:"IMAPS uses port 993 and POP3S uses port 995. Ports 110 and 143 are unencrypted POP3 and IMAP, and 25 is SMTP."},
+ {q:"Which TCP port does HTTPS use by default?",o:["80","443","21","23"],a:1,e:"HTTPS uses port 443. HTTP uses 80, FTP uses 21, and Telnet uses 23."},
+ {q:"A technician must connect to a network switch's command line over an encrypted session. Which port must be open?",o:["21","22","23","25"],a:1,e:"SSH uses port 22 and encrypts the session. Telnet (23) sends data in clear text."},
+ {q:"Which port does FTP use for its control connection?",o:["20","21","69","161"],a:1,e:"FTP uses 21 for control and 20 for data. TFTP uses 69 and SNMP uses 161."},
+ {q:"Which port does DNS use for name resolution queries?",o:["53","67","88","389"],a:0,e:"DNS uses port 53. DHCP uses 67, Kerberos uses 88, and LDAP uses 389."},
+ {q:"Which port does a DHCP server listen on for client requests?",o:["67","68","123","137"],a:0,e:"DHCP servers listen on UDP 67 and clients use UDP 68. NTP uses 123."},
+ {q:"A directory service lookup fails. Which port does unencrypted LDAP use?",o:["389","636","445","3389"],a:0,e:"LDAP uses 389. LDAPS uses 636."},
+ {q:"Which port does SMB use to share files directly over TCP without NetBIOS?",o:["137","445","389","161"],a:1,e:"Modern SMB runs directly over TCP 445."},
+ {q:"A monitoring server polls network devices for status. Which port do SNMP agents listen on?",o:["161","143","110","514"],a:0,e:"SNMP agents listen on UDP 161. Traps go to 162. Syslog uses 514."},
+ {q:"Which remote access protocol sends credentials in clear text and uses port 23?",o:["Telnet","SSH","RDP","SFTP"],a:0,e:"Telnet uses port 23 and does not encrypt traffic."},
+ {q:"Which group of 2.4 GHz channels does not overlap in North America?",o:["1, 6, 11","1, 5, 9","2, 7, 12","3, 8, 13"],a:0,e:"Channels 1, 6, and 11 are the non-overlapping 2.4 GHz channels in North America."},
+ {q:"Which frequency band does 802.11ac use?",o:["2.4 GHz only","5 GHz only","2.4 GHz and 5 GHz","6 GHz only"],a:1,e:"802.11ac (Wi-Fi 5) operates in the 5 GHz band only."},
+ {q:"A company connects several office buildings across one city. Which network type is this?",o:["LAN","PAN","MAN","WLAN"],a:2,e:"A metropolitan area network (MAN) spans a city or campus area."},
+ {q:"A user pairs wireless earbuds with a smartphone. Which type of network does this create?",o:["PAN","LAN","MAN","SAN"],a:0,e:"Bluetooth connections create a personal area network (PAN)."},
+ {q:"Which PoE standard supplies up to 30 W per port?",o:["802.3af","802.3at","802.3bt","802.11ax"],a:1,e:"802.3at (PoE+) supplies up to 30 W. 802.3af supplies 15.4 W and 802.3bt supplies more."},
+ {q:"A technician must find one specific cable in a bundle at the patch panel. Which tool must the technician use?",o:["Cable tester","Toner probe","Multimeter","Crimper"],a:1,e:"A toner probe puts a tone on the cable so the technician can trace it."},
+ {q:"Which tool tests whether a NIC port can send and receive signals?",o:["Loopback plug","Punchdown tool","Toner probe","Crimper"],a:0,e:"A loopback plug sends the NIC's transmit signal back to its receive pins."},
+ {q:"Users report slow Wi-Fi. Which tool shows interference and channel overlap from nearby access points?",o:["Wi-Fi analyzer","Cable tester","Loopback plug","Multimeter"],a:0,e:"A Wi-Fi analyzer shows nearby networks, channels, and signal strength."},
+ {q:"Which DHCP setting makes sure a network printer always receives the same IP address?",o:["Scope","Lease time","Reservation","Exclusion"],a:2,e:"A reservation binds an IP address to the printer's MAC address."},
+ {q:"A PC can reach local hosts but cannot reach any remote network by IP address. Which setting is most likely incorrect?",o:["DNS server","Default gateway","MAC address","DHCP lease time"],a:1,e:"The default gateway routes traffic to other networks."},
+ {q:"A user can ping 8.8.8.8 but cannot open websites by name. Which setting is most likely incorrect?",o:["Default gateway","DNS server","Subnet mask","NIC driver"],a:1,e:"IP connectivity works, so name resolution (DNS) is the problem."},
+ {q:"What is the primary purpose of a VLAN?",o:["Encrypt traffic between sites","Separate broadcast domains on one switch","Extend wireless coverage","Translate private addresses to public addresses"],a:1,e:"VLANs logically split one physical switch into separate broadcast domains."},
+ {q:"Remote employees must access internal resources securely over the internet. Which technology provides an encrypted tunnel?",o:["VLAN","VPN","NAT","DHCP"],a:1,e:"A VPN creates an encrypted tunnel across a public network."},
+ {q:"Which technology lets many hosts with private IP addresses share one public IP address?",o:["NAT","DNS","VLAN","APIPA"],a:0,e:"Network address translation (NAT) maps private addresses to a public address."},
+ {q:"How many bits are in an IPv6 address?",o:["32","64","128","256"],a:2,e:"IPv6 addresses are 128 bits. IPv4 addresses are 32 bits."},
+ {q:"Which subnet mask matches the /24 prefix?",o:["255.0.0.0","255.255.0.0","255.255.255.0","255.255.255.128"],a:2,e:"A /24 prefix has 24 network bits: 255.255.255.0."},
+ {q:"Which cable type is best for a 40 km link between two buildings?",o:["Multimode fiber","Single-mode fiber","Cat 6a","RG-6 coaxial"],a:1,e:"Single-mode fiber supports the longest distances."},
+ {q:"Which connector attaches the coaxial cable to a cable internet modem?",o:["RJ45","F-type","LC","SC"],a:1,e:"Cable modems use RG-6 coaxial cable with F-type connectors."},
+ {q:"A cable has T568A wiring on one end and T568B wiring on the other end. Which cable type is this?",o:["Straight-through","Crossover","Rollover","Plenum"],a:1,e:"Different standards on each end make a crossover cable."},
+ {q:"A cable must run through the air-handling space above a drop ceiling. Which cable rating is necessary?",o:["Shielded","Plenum","Direct burial","PVC"],a:1,e:"Plenum-rated cable produces less toxic smoke in air-handling spaces."},
+ {q:"Network cable must run next to large industrial motors. Which cable type reduces EMI?",o:["UTP","STP","Plenum UTP","Cat 5"],a:1,e:"Shielded twisted pair (STP) protects against electromagnetic interference."},
+ {q:"What is the maximum throughput of SATA III?",o:["1.5 Gbps","3 Gbps","6 Gbps","12 Gbps"],a:2,e:"SATA III supports 6 Gbps."},
+ {q:"An M.2 NVMe SSD communicates over which bus?",o:["PCIe","SATA","USB","SAS"],a:0,e:"NVMe drives use PCIe lanes. Some M.2 drives use SATA, but those are not NVMe."},
+ {q:"Which RAID level mirrors data across two drives?",o:["RAID 0","RAID 1","RAID 5","RAID 6"],a:1,e:"RAID 1 writes identical data to two drives."},
+ {q:"Which RAID level improves performance but provides no redundancy?",o:["RAID 0","RAID 1","RAID 5","RAID 10"],a:0,e:"RAID 0 stripes data with no parity or mirror. One failed drive loses all data."},
+ {q:"What is the minimum number of drives for RAID 10?",o:["2","3","4","5"],a:2,e:"RAID 10 stripes across mirrored pairs and needs at least four drives."},
+ {q:"A technician installs a new CPU. What must the technician apply between the CPU and the heat sink?",o:["Thermal paste","Dielectric grease","Silicone adhesive","Contact cleaner"],a:0,e:"Thermal paste fills gaps so heat moves to the heat sink."},
+ {q:"A desktop computer loses its date and time every time it is unplugged. Which component must the technician replace?",o:["Power supply","CMOS battery","RAM","Hard drive"],a:1,e:"The CMOS battery keeps the real-time clock and firmware settings without AC power."},
+ {q:"Which motherboard component stores encryption keys for full-disk encryption such as BitLocker?",o:["TPM","CMOS","Northbridge","VRM"],a:0,e:"The Trusted Platform Module (TPM) stores keys securely in hardware."},
+ {q:"Which UEFI feature prevents an unsigned bootloader from loading?",o:["Secure Boot","Fast Boot","Legacy BIOS","Wake-on-LAN"],a:0,e:"Secure Boot loads only bootloaders signed with trusted keys."},
+ {q:"Which power connector supplies the main power to a modern ATX motherboard?",o:["24-pin ATX","Molex","SATA power","8-pin PCIe"],a:0,e:"The 24-pin ATX connector is the main motherboard power connector."},
+ {q:"What does an 80 PLUS rating on a power supply show?",o:["Efficiency","Maximum wattage","Number of rails","Fan speed"],a:0,e:"80 PLUS certifies at least 80% efficiency at specified loads."},
+ {q:"Which interface uses a USB-C connector, supports 40 Gbps, and can daisy-chain displays?",o:["USB 2.0","Thunderbolt 3","eSATA","DVI"],a:1,e:"Thunderbolt 3 uses USB-C at up to 40 Gbps and supports daisy chaining."},
+ {q:"Which video interface carries digital video and audio on one cable?",o:["VGA","DVI-A","HDMI","Component"],a:2,e:"HDMI carries digital video and audio."},
+ {q:"Which display technology does not need a backlight?",o:["IPS LCD","TN LCD","OLED","VA LCD"],a:2,e:"OLED pixels make their own light."},
+ {q:"Which tool must a technician use to measure the voltage of a power supply rail?",o:["Multimeter","Toner probe","Loopback plug","Cable tester"],a:0,e:"A multimeter measures voltage, resistance, and current."},
+ {q:"Which item best prevents ESD damage when a technician installs RAM?",o:["Antistatic wrist strap","Rubber gloves","Compressed air","Magnetic screwdriver"],a:0,e:"A grounded antistatic wrist strap equalizes the charge between the technician and the computer."},
+ {q:"Which material does a 3D printer use to build objects?",o:["Toner","Filament","Ribbon","Thermal paper"],a:1,e:"Most consumer 3D printers melt plastic filament."},
+ {q:"A thermal receipt printer prints faded text. Which component must the technician clean or check first?",o:["Fuser","Heating element","Imaging drum","Ink ribbon"],a:1,e:"Thermal printers use a heating element on special paper. Debris or wear causes faded prints."},
+ {q:"Which printer type can print on multipart carbon forms?",o:["Laser","Inkjet","Impact","Thermal"],a:2,e:"Impact printers strike the page, so the carbon copies also print."},
+ {q:"A laser printer prints faint repeated images of earlier content down the page. Which component is most likely the cause?",o:["Pickup roller","Imaging drum","Duplex unit","Separation pad"],a:1,e:"Ghost images usually come from a drum that does not fully clean or discharge."},
+ {q:"Toner on laser-printed pages smears when touched. Which component has most likely failed?",o:["Imaging drum","Fuser","Toner cartridge","Pickup roller"],a:1,e:"The fuser bonds toner to the paper. If it fails, toner rubs off."},
+ {q:"A laser printer pulls several sheets at the same time. Which component is most likely worn?",o:["Fuser","Separation pad","Imaging drum","Duplex unit"],a:1,e:"The separation pad makes sure only one sheet feeds at a time."},
+ {q:"Which technology lets Apple devices print to compatible printers without installing drivers?",o:["AirPrint","SMB","TFTP","SNMP"],a:0,e:"AirPrint discovers printers and prints without separate drivers."},
+ {q:"Which printer component lets a printer print on both sides of the paper?",o:["Duplexing assembly","Fuser","Transfer roller","Pickup roller"],a:0,e:"The duplexing assembly turns the page over so the printer can print the second side."},
+ {q:"A smartphone shows images correctly, but one area of the screen does not respond to touch. Which component has most likely failed?",o:["Backlight","Digitizer","Inverter","Battery"],a:1,e:"The digitizer converts touch into input. The display works, so the digitizer is the problem."},
+ {q:"A technician sees that a laptop battery is swollen. What must the technician do?",o:["Puncture it to release pressure","Remove it and dispose of it correctly","Charge it fully","Put it in a freezer"],a:1,e:"A swollen lithium-ion battery is a fire risk. Remove it and recycle it correctly."},
+ {q:"A user shares a smartphone's cellular data connection with a laptop through a USB cable. What is this called?",o:["Tethering","NFC","Screen mirroring","Pairing"],a:0,e:"Tethering shares a mobile device's data connection."},
+ {q:"Which protocol synchronizes corporate email, calendar, and contacts to mobile devices?",o:["POP3","Exchange ActiveSync","SMTP","SNMP"],a:1,e:"Exchange ActiveSync synchronizes mail, calendar, and contacts."},
+ {q:"After a technician replaces a laptop screen, the Wi-Fi signal is very weak. What is the most likely cause?",o:["Bad RAM","Disconnected antenna cable","Failed SSD","Wrong display driver"],a:1,e:"Laptop Wi-Fi antennas are in the display lid. A cable that is not reconnected weakens the signal."},
+ {q:"Which cloud characteristic automatically adds resources when demand increases?",o:["Metered utilization","Rapid elasticity","High availability","File synchronization"],a:1,e:"Rapid elasticity scales resources up and down with demand."},
+ {q:"A company runs some workloads in its own data center and others with a public provider. Which cloud model is this?",o:["Public","Private","Hybrid","Community"],a:2,e:"A hybrid cloud combines private and public cloud resources."},
+ {q:"Several hospitals share one cloud environment to meet the same compliance rules. Which cloud model is this?",o:["Public","Private","Hybrid","Community"],a:3,e:"A community cloud serves organizations with shared requirements."},
+ {q:"A hypervisor installation fails with an error that virtualization is not supported, but the CPU is new. What must the technician do?",o:["Add more RAM","Enable VT-x or AMD-V in UEFI","Update the NIC driver","Disable Secure Boot"],a:1,e:"Hardware virtualization extensions must be enabled in firmware."},
+ {q:"A technician must test a suspicious program without risk to the production network. Which solution is best?",o:["Run it on a sandbox virtual machine","Run it on the domain controller","Email it to a coworker","Install it on a laptop on the corporate LAN"],a:0,e:"An isolated VM sandbox contains any damage."},
+ {q:"Users connect to desktops that run on central servers in the data center. Which technology is this?",o:["VDI","IaaS","SaaS","NAS"],a:0,e:"Virtual desktop infrastructure (VDI) hosts desktops on servers."},
+ {q:"A cloud bill charges only for the compute hours that the company used. Which cloud characteristic is this?",o:["Rapid elasticity","Metered utilization","Shared resources","Availability"],a:1,e:"Metered utilization bills for measured usage."},
+ {q:"A company rents virtual machines from a provider and manages the operating systems itself. Which service model is this?",o:["IaaS","PaaS","SaaS","DaaS"],a:0,e:"With IaaS the provider supplies infrastructure, and the customer manages the OS and above."},
+ {q:"What is the first step of the CompTIA troubleshooting methodology?",o:["Establish a theory of probable cause","Identify the problem","Test the theory","Document findings"],a:1,e:"The first step is to identify the problem: gather information and question the user."},
+ {q:"What is the last step of the CompTIA troubleshooting methodology?",o:["Verify full system functionality","Document findings, actions, and outcomes","Implement the solution","Escalate"],a:1,e:"The final step is to document findings, actions, and outcomes."},
+ {q:"A technician confirms the theory of probable cause. What must the technician do next?",o:["Document findings","Establish a plan of action to resolve the problem","Identify the problem","Question the user again"],a:1,e:"After the theory is confirmed, establish a plan of action and implement the solution."},
+ {q:"A desktop shuts down without warning after 20 minutes of heavy use. What is the most likely cause?",o:["Failed NIC","Overheating","Bad keyboard","Wrong display resolution"],a:1,e:"Shutdowns under load usually come from overheating. Check fans, dust, and thermal paste."},
+ {q:"A hard drive makes a loud clicking noise. What must the technician do first?",o:["Defragment the drive","Back up the data","Update the BIOS","Format the drive"],a:1,e:"Clicking shows mechanical failure. Back up the data before the drive fails completely."},
+ {q:"A user smells burning plastic from a desktop computer. What must the technician do first?",o:["Open the case while it runs","Power it off and unplug it","Run a diagnostic","Update drivers"],a:1,e:"A burning smell is a safety hazard. Remove power immediately."},
+ {q:"A monitor shows a \"No signal\" message after a user moves the desk. What must the technician check first?",o:["Video cable and input source","Graphics driver","Monitor firmware","Power supply wattage"],a:0,e:"Check the simple cause first: a loose cable or the wrong input."},
+ {q:"A technician sees bulging capacitors on a motherboard. What is the correct action?",o:["Replace the motherboard","Update the BIOS","Reseat the RAM","Replace the CMOS battery"],a:0,e:"Bulging capacitors show motherboard failure."},
+ {q:"A projector shows a dim image, and the lamp hours are past the rating. What must the technician do?",o:["Replace the lamp","Change the input source","Update the firmware","Change the resolution"],a:0,e:"Projector lamps lose brightness with age and must be replaced."},
+ {q:"A RAID 5 array shows a degraded status. What must the technician do?",o:["Replace the failed drive and rebuild","Delete the array","Convert it to RAID 0","Ignore it"],a:0,e:"A degraded array has lost one drive. Replace it before a second drive fails."},
+ {q:"Which drive feature reports early warnings of hard drive or SSD failure?",o:["S.M.A.R.T.","TRIM","NTFS","GPT"],a:0,e:"S.M.A.R.T. monitors drive health attributes and predicts failure."},
+ {q:"Which connectors carry digital video signals?",o:["HDMI","DisplayPort","VGA","DVI-A","RCA composite"],a:[0,1],e:"HDMI and DisplayPort are digital. VGA, DVI-A, and composite are analog."},
+ {q:"Which statements describe a Type 2 hypervisor?",o:["It runs on top of a host operating system","It is common on desktops for testing","It installs directly on bare metal","It has no host OS overhead"],a:[0,1],e:"Type 2 hypervisors run as applications on a host OS, such as on a technician's desktop."},
+ {q:"Which actions must a technician take before opening a desktop case?",o:["Shut down and unplug the computer","Use an antistatic wrist strap","Remove the CMOS battery","Open the power supply"],a:[0,1],e:"Remove power and control ESD. The CMOS battery and the PSU must not be opened for normal work."},
+ {q:"Which are characteristics of cloud computing?",o:["Shared resources","Rapid elasticity","Metered utilization","Requires the purchase of on-premises hardware"],a:[0,1,2],e:"Cloud computing shares pooled resources, scales quickly, and bills by usage."},
+ {q:"Which protocols encrypt their traffic?",o:["SSH","HTTPS","Telnet","FTP","SFTP"],a:[0,1,4],e:"SSH, HTTPS, and SFTP are encrypted. Telnet and FTP send clear text."},
+ {q:"Which protocols use UDP by default?",o:["DHCP","TFTP","SNMP","SSH","SMTP"],a:[0,1,2],e:"DHCP, TFTP, and SNMP use UDP. SSH and SMTP use TCP."},
+ {q:"Which components are part of a laser printer?",o:["Imaging drum","Fuser","Transfer roller","Printhead nozzles","Ink ribbon"],a:[0,1,2],e:"The drum, transfer roller, and fuser are laser printer parts. Nozzles are inkjet parts and ribbons are impact printer parts."},
+ {q:"A laptop battery does not charge. Which items can cause this problem?",o:["Faulty AC adapter","Damaged DC power jack","Failed battery","Wrong screen resolution"],a:[0,1,2],e:"The adapter, the jack, or the battery itself can stop charging. Screen resolution has no effect."}
+];
+const L=["A","B","C","D","E","F"], TOTAL=90*60, PASS=675;
+BANK.forEach(q=>{q.a=[].concat(q.a);q.n=q.a.length;});
+let QS=[];
+function pickIds(){const ids=BANK.map((_,j)=>j);for(let j=ids.length-1;j>0;j--){const r=Math.floor(Math.random()*(j+1));[ids[j],ids[r]]=[ids[r],ids[j]];}return ids.slice(0,75+Math.floor(Math.random()*16));}
+const pace=()=>Math.floor(TOTAL/QS.length);
+const fmtQ=s=>(s<0?"-":"")+[Math.floor(Math.abs(s)/60),Math.abs(s)%60].map(n=>String(n).padStart(2,"0")).join(":");
+function qtime(){if(!$("qTimer"))return;const r=pace()-S.qt[S.i];$("tQ").textContent=fmtQ(r);$("qTimer").classList.toggle("neg",r<0);$("qTimer").hidden=S.mode!=="q"||S.done||S.paused;}
+const same=(a,b)=>!!a&&!!b&&a.length===b.length&&a.every((v,j)=>v===b[j]);
+const isRight=k=>same(S.ans[k],QS[k].a);
+const credit=k=>{const a=S.ans[k],c=QS[k].a;if(!a||!a.length||a.some(j=>!c.includes(j)))return 0;return a.length/c.length;};
+const words=["one","two","three","four"];
+const alist=(arr,q)=>`<ul class="alist">${arr.map(j=>`<li><b>${L[j]}.</b> ${esc(q.o[j])}</li>`).join("")}</ul>`;
+const fa=(arr,q)=>arr.map(j=>L[j]+". "+esc(q.o[j])).join("; ");
+function choose(k){const Q=QS[S.i];if(S.strike[S.i][k])return;let p=S.pick[S.i]||[];
+  p=Q.n===1?[k]:p.includes(k)?p.filter(j=>j!==k):[...p,k];
+  S.pick[S.i]=p;S.justSaved=false;render();}
+let S=fresh();
+const h=window.claude?.hot;
+const $=id=>document.getElementById(id), view=$("view");
+const fmt=s=>[Math.floor(s/3600),Math.floor(s%3600/60),s%60].map(n=>String(n).padStart(2,"0")).join(":");
+const esc=s=>s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const answered=()=>S.ans.filter(a=>a!==null).length;
+
+function chrome(){
+  const p=answered()/QS.length*100;
+  $("pct").textContent=p.toFixed(1)+"% Complete"; $("fill").style.width=p+"%";
+  $("tSec").textContent=$("tTot").textContent=fmt(S.left);
+  $("timers").classList.toggle("low",S.left<=300);
+  const q=S.mode==="q";qtime();
+  const nv=q||S.mode==="rq"; $("prev").disabled=!nv||S.i===0; $("next").disabled=!nv||S.i===QS.length-1;
+  document.querySelector(".revisit").hidden=!q||S.done||S.paused; $("flag").checked=S.flag[S.i];
+  $("reviewBtn").disabled=S.done; $("reviewBtn").textContent=S.done?"Section finalized":"Review & Finalize Section";
+  $("pauseBtn").hidden=S.done||!!S.timeout; $("pauseBtn").textContent=S.paused?"Resume":"Pause";
+}
+
+const XSVG='<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M1.5 1.5l9 9M10.5 1.5l-9 9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
+
+function renderQ(){
+  const i=S.i,Q=QS[i],st=S.strike[i],pk=S.pick[i]||[];
+  const changed=!same(pk,S.ans[i]);
+  const ready=pk.length>0&&changed;
+  const saved=S.ans[i]?S.ans[i].map(k=>L[k]).join(", "):"";
+  view.innerHTML=`<div class="qa">
+    <div style="min-width:0"><p class="qnum">Question ${i+1} of ${QS.length}${S.ans[i]!==null?" · Answered":""}</p>
+      <p class="stem">${esc(Q.q)}${Q.n>1?' <b>Select all that apply.</b>':""}</p>
+      <ol class="opts">${Q.o.map((o,k)=>`<li class="${st[k]?"struck":""}">${L[k]}. ${esc(o)}</li>`).join("")}</ol></div>
+    <div class="keys">
+      ${Q.o.map((o,k)=>`<div class="krow"><button class="x" data-x="${k}" aria-pressed="${st[k]}" aria-label="${st[k]?"Restore":"Eliminate"} option ${L[k]}" title="${st[k]?"Restore":"Eliminate"} option">${XSVG}</button>
+        <button class="key${pk.includes(k)?" on":""}" data-k="${k}" ${st[k]?"disabled":""} aria-pressed="${pk.includes(k)}">${L[k]}</button></div>`).join("")}
+      <button class="confirm" id="confirm" ${ready?"":"disabled"}>Confirm</button>
+      <div class="saved" aria-live="polite">${S.justSaved?"Answer saved.":(S.ans[i]!==null&&!changed?"Answer "+saved+" saved.":"")}</div>
+    </div></div>
+    <div class="foot"><button class="report" id="rep" disabled title="Not available"><svg width="12" height="11" viewBox="0 0 12 11" aria-hidden="true"><path d="M6 0l6 11H0z" fill="currentColor"/><path d="M6 4v3.5M6 8.6v.8" stroke="var(--card)" stroke-width="1.3"/></svg> Report Content Errors</button>
+    <div id="qTimer" class="${pace()-S.qt[i]<0?"neg":""}" title="Suggested time for this question">This question: <b id="tQ">${fmtQ(pace()-S.qt[i])}</b></div>
+    ${S.report?`<div class="reportbox"><textarea id="repText" aria-label="Describe the content error" placeholder="Describe the error in question ${i+1}"></textarea><button class="sm pri" id="repSend">Submit</button><button class="sm" id="repCancel">Cancel</button></div>`:""}
+    ${S.report==="sent"?`<p class="saved" style="margin:8px 0 0">Report recorded for question ${i+1}. Thank you.</p>`:""}</div>`;
+  if(S.report==="sent") view.querySelector(".reportbox")?.remove();
+}
+
+function renderReview(confirming){
+  const un=QS.length-answered(), fl=S.flag.filter(Boolean).length;
+  view.innerHTML=`<div class="panel"><h2>Review &amp; Finalize Section</h2>
+   <ul class="stats"><li>Answered: <b>${answered()} of ${QS.length}</b></li><li>Unanswered: <b>${un}</b></li><li>Marked to revisit: <b>${fl}</b></li></ul>
+   <p class="sub">Select a question to go back to it.</p>
+   <div class="legend"><span><i style="background:var(--sel);border-color:var(--sel-border)"></i>Answered</span><span><i></i>Unanswered</span><span><i style="border-radius:50%;background:var(--flag);border:0;width:9px;height:9px"></i>Revisit later</span></div>
+   <div class="grid">${QS.map((_,k)=>`<button class="cell${S.ans[k]!==null?" ans":""}${S.flag[k]?" flag":""}" data-go="${k}" aria-label="Question ${k+1}${S.ans[k]!==null?", answered":", unanswered"}${S.flag[k]?", marked to revisit":""}">${k+1}</button>`).join("")}</div>
+   ${confirming?`<div class="warn">${un?`You have ${un} unanswered question${un>1?"s":""}. `:""}After you finalize, you cannot change your answers. Submit the exam now?</div>
+     <div class="actions"><button class="sm pri" id="finYes">Submit Exam</button><button class="sm" id="finNo">Cancel</button></div>`
+   :`<div class="actions"><button class="sm" id="back">Return to question ${S.i+1}</button><button class="sm pri" id="fin">Finalize Submission</button></div>`}
+  </div>`;
+}
+
+function renderResults(){
+  const right=QS.filter((q,k)=>isRight(k)).length, part=QS.filter((q,k)=>!isRight(k)&&credit(k)>0).length, pts=QS.reduce((s,q,k)=>s+credit(k),0), score=Math.round(900*pts/QS.length), pass=score>=PASS;
+  const used=TOTAL-S.left;
+  const items=QS.map((q,k)=>({q,k,ok:isRight(k),pc:credit(k)})).filter(x=>S.filter==="all"||(S.filter==="wrong"&&!x.ok));
+  view.innerHTML=`<div class="panel"><h2>Assessment Results</h2>
+   <div class="score"><span class="big">${score}</span><span>out of 900 · ${right} of ${QS.length} correct${part?` · ${part} partially correct`:""}</span><span class="pill ${pass?"pass":"fail"}">${pass?"Pass":"Did not pass"} (${PASS} required)</span><span class="sub" style="margin:0">Time used ${fmt(used)}</span></div>
+   <p class="sub" style="margin:-6px 0 14px">Each question is worth ${(900/QS.length).toFixed(2)} points. On multi-answer questions, you get part of the points if all your selected answers are correct.</p>
+   <div class="filters"><button class="sm" data-f="all" aria-pressed="${S.filter==="all"}">All questions</button><button class="sm" data-f="wrong" aria-pressed="${S.filter==="wrong"}">Incorrect only (${QS.length-right})</button></div>
+   <ul class="rlist">${items.map(({q,k,ok,pc})=>`<li class="${ok?"ok":pc>0?"part":""}" data-rv="${k}" tabindex="0" title="Open this question"><span class="mark" role="img" aria-label="${ok?"Correct":pc>0?"Partially correct":"Incorrect"}">${ok||pc>0?'<svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>':'<svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>'}</span><div class="q">${k+1}. ${esc(q.q)}</div>
+     ${!ok&&pc>0?`<div class="pnote">Partial credit: ${S.ans[k].length} of ${q.a.length} correct answers selected</div>`:""}<div class="acols"><div><div class="albl">Your answer:</div>${S.ans[k]===null?'<ul class="alist"><li><b>Not answered</b></li></ul>':alist(S.ans[k],q)}</div>${ok?"":`<div><div class="albl" style="text-decoration:underline">Correct answer(s):</div>${alist(q.a,q)}</div>`}</div>
+     <div class="a">${esc(q.e)}</div></li>`).join("")||"<li class='ok'>No incorrect answers.</li>"}</ul>
+   <div class="actions" style="margin-top:16px"><button class="sm pri" id="restart">Start a new attempt</button></div></div>`;
+}
+
+function renderRQ(){
+  const i=S.i,Q=QS[i],ua=S.ans[i]||[],ok=isRight(i),pc=credit(i),stc=ok?"--ok":pc>0?"--flag":"--bad";
+  view.innerHTML=`<div class="qa">
+    <div style="min-width:0"><p class="qnum">Question ${i+1} of ${QS.length} · <span style="color:var(${stc})">${ok?"Correct":pc>0?"Partially correct":S.ans[i]===null?"Not answered":"Incorrect"}</span></p>
+      <p class="stem">${esc(Q.q)}${Q.n>1?' <b>Select all that apply.</b>':""}</p>
+      <ol class="opts">${Q.o.map((o,k)=>`<li class="${S.strike[i][k]?"struck":""}">${L[k]}. ${esc(o)}</li>`).join("")}</ol>
+      <div class="explain"><b>Explanation:</b> ${esc(Q.e)}</div></div>
+    <div class="keys">
+      ${Q.o.map((o,k)=>`<div class="krow"><span class="x" aria-hidden="true" style="cursor:default;${S.strike[i][k]?"color:var(--bad)":"opacity:.3"}">${XSVG}</span>
+        <button class="key ro${ua.includes(k)?" on mine":""}${Q.a.includes(k)?" right":""}" disabled aria-label="Option ${L[k]}${ua.includes(k)?", your answer":""}${Q.a.includes(k)?", correct answer":""}">${L[k]}</button></div>`).join("")}
+      <div class="klegend"><span><i class="sw ok"></i>Correct answer</span><span><i class="sw bad"></i>Your incorrect answer</span><span><i class="dot"></i>Your selected answer</span></div>
+      <button class="confirm" id="backRes">Back to results</button>
+    </div></div>`;
+}
+
+function renderPause(){
+  view.innerHTML=`<div class="panel" style="min-height:320px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center">
+   <h2>Assessment paused</h2><p class="sub" style="margin:0;max-width:44ch">The timer is stopped and the questions are hidden. Select Resume to continue from question ${S.i+1}.</p>
+   <button class="sm pri" id="resume" style="padding:10px 30px">Resume</button></div>`;
+}
+
+function render(){
+  const to=!!S.timeout&&!S.done; $("timeout").hidden=!to; document.querySelector(".wrap").inert=to;
+  chrome(); if(to) setTimeout(()=>$("toSubmit").focus(),0);
+  if(S.paused) return renderPause();
+  if(S.mode==="q") renderQ(); else if(S.mode==="rq") renderRQ(); else if(S.mode==="loading") renderLoading(); else if(S.mode==="review") renderReview(false);
+  else if(S.mode==="confirm") renderReview(true); else renderResults();
+}
+
+let busy=false;
+function go(i){if(busy)return;const nx=S.mode==="q"&&!S.done&&i>S.i&&S.i<QS.length-1;
+  S.i=Math.max(0,Math.min(QS.length-1,i));S.mode=S.mode==="rq"?"rq":"q";S.report=false;S.justSaved=false;
+  if(!nx){render();return;}
+  busy=true;chrome();view.innerHTML='<div class="panel loading" role="status" aria-label="Loading next question"><div class="spin" aria-hidden="true"></div></div>';
+  setTimeout(()=>{busy=false;render();},250);}
+$("toSubmit").onclick=()=>finalize();
+function finalize(){S.timeout=false;S.done=true;S.mode="loading";S.loadMs=3000+Math.floor(Math.random()*12001);S.paused=false;render();}
+let loadT=null;
+function renderLoading(){
+  view.innerHTML=`<div class="panel loading" role="status" aria-live="polite"><div class="spin" aria-hidden="true"></div>
+   <h2>Submitting your exam</h2><p class="sub" style="margin:0">Your results are loading. Do not close or refresh this page.</p></div>`;
+  if(!loadT) loadT=setTimeout(()=>{loadT=null;S.mode="results";render();window.scrollTo(0,0);},S.loadMs||5000);
+}
+
+view.addEventListener("click",e=>{
+  const rv=e.target.closest("[data-rv]");
+  if(rv){S.i=+rv.dataset.rv;S.mode="rq";render();window.scrollTo(0,0);return;}
+  const t=e.target.closest("button"); if(!t) return;
+  if(t.id==="backRes"){S.mode="results";render();view.querySelector('[data-rv="'+S.i+'"]')?.scrollIntoView({block:"center"});return;}
+  const i=S.i;
+  if(t.dataset.k!==undefined)choose(+t.dataset.k);
+  else if(t.dataset.x!==undefined){const k=+t.dataset.x;S.strike[i][k]=!S.strike[i][k];if(S.strike[i][k]&&S.pick[i])S.pick[i]=S.pick[i].filter(j=>j!==k);if(S.strike[i][k]&&S.ans[i]&&S.ans[i].includes(k)){S.ans[i]=null;S.justSaved=false;}render();}
+  else if(t.id==="confirm"){S.ans[i]=[...S.pick[i]].sort((x,y)=>x-y);if(i<QS.length-1){go(i+1);}else{S.mode="review";S.report=false;S.justSaved=false;render();}}
+  else if(t.id==="rep"){S.report=S.report===true?false:true;render();$("repText")?.focus();}
+  else if(t.id==="repSend"){if(!$("repText").value.trim()){$("repText").focus();return;}S.report="sent";render();}
+  else if(t.id==="repCancel"){S.report=false;render();}
+  else if(t.dataset.go!==undefined) go(+t.dataset.go);
+  else if(t.id==="back") go(S.i);
+  else if(t.id==="fin"){S.mode="confirm";render();}
+  else if(t.id==="finNo"){S.mode="review";render();}
+  else if(t.id==="finYes") finalize();
+  else if(t.dataset.f){S.filter=t.dataset.f;render();}
+  else if(t.id==="restart"){location.hash="";S=fresh();render();}
+  else if(t.id==="resume"){S.paused=false;render();}
+});
+function fresh(ids){ids=ids||pickIds();QS=ids.map(j=>BANK[j]);return {ids,qt:Array(QS.length).fill(0),i:0,ans:Array(QS.length).fill(null),pick:Array(QS.length).fill(null),flag:Array(QS.length).fill(false),strike:QS.map(q=>q.o.map(()=>false)),left:TOTAL,paused:false,mode:"q",done:false,filter:"all",report:false,justSaved:false,v:3};}
+view.addEventListener("keydown",e=>{const c=e.target.closest&&e.target.closest("[data-rv]");if(c&&(e.key==="Enter"||e.key===" ")){e.preventDefault();c.click();}});
+$("prev").onclick=()=>go(S.i-1);
+$("next").onclick=()=>go(S.i+1);
+$("flag").onchange=e=>{S.flag[S.i]=e.target.checked;};
+$("reviewBtn").onclick=()=>{if(S.done)return;S.paused=false;S.mode="review";S.report=false;render();};
+$("pauseBtn").onclick=()=>{if(S.done)return;S.paused=!S.paused;render();};
+document.addEventListener("keydown",e=>{
+  if(S.timeout||S.paused||S.mode!=="q"||e.target.matches("textarea,input"))return;
+  const k=e.key.length===1?"abcdef".indexOf(e.key.toLowerCase()):-1;
+  if(k>=0&&k<QS[S.i].o.length)choose(k);
+  else if(e.key==="Enter"&&!$("confirm").disabled){$("confirm").click();}
+  else if(e.key==="ArrowRight")go(S.i+1); else if(e.key==="ArrowLeft")go(S.i-1);
+});
+setInterval(()=>{if(S.paused||S.done||S.timeout)return;S.left=Math.max(0,S.left-1);if(S.mode==="q"){S.qt[S.i]++;qtime();}
+  if(S.left===0){S.timeout=true;S.paused=false;render();return;} $("tSec").textContent=$("tTot").textContent=fmt(S.left);$("timers").classList.toggle("low",S.left<=300);},1000);
+
+h?.snapshot?.(()=>S);
+const start=d=>{if(d&&d.v===3)S=Object.assign(fresh(d.ids),d);render();};
+h?.ready?h.ready(start):start(h?.data??{});
+</script>
+
+</body></html>

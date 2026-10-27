@@ -1,0 +1,18 @@
+# Source books and extracted text (large files)
+sources/
+sources-text/
+
+# Dependencies and build output
+node_modules/
+dist/
+out/
+release/
+
+# Local data
+*.db
+*.sqlite
+
+# Environment and OS files
+.env
+.DS_Store
+Thumbs.db
