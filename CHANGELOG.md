@@ -2,6 +2,23 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-27 – Book extraction
+
+Decisions:
+- The original books go in `sources/` (`core1/`, `core2/`, `general/`), not in `sources-text/`. The four books cover both cores, so they are in `sources/general/`.
+- `sources-text/` mirrors the categories: `sources-text/<category>/<book>/`, one Markdown file for each chapter.
+- Filler is removed: front and back matter, ads and coupons, indexes, figures and captions, page headers, performance-based questions (out of scope), "Beyond A+" sections, duplicate answer keys, and study-method boilerplate.
+- Review-question answers are added to the end of each chapter, so each file has its questions and answers together.
+- Two books (All-in-One 11th ed., Neil Practice Tests) cover the older 220-1101/1102 objectives. They are marked in each file and in the index. Use the 220-1201/1202 books first.
+
+Changes:
+- Moved the four books from `sources-text/` to `sources/general/`.
+- Added `tools/extract/` (dev only): `extract_books.py`, `derive_terms.py`, `build_index.py`, `requirements.txt`, `README.md`.
+- Extracted the four books to `sources-text/general/` (not in git).
+- Added `sources-text/sources-index.md` (chapters by book and by domain) and `sources-text/derived/acronym-candidates.md` (not in git).
+- `.gitignore`: ignore `.venv/` and `__pycache__/`.
+- `CLAUDE.md`: recorded the folder layout, the extractor, and the rule to prefer the current-objective books.
+
 ## 2026-10-27 – UI draft review
 
 Decisions:

@@ -25,8 +25,10 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - `references/UI Inspiration.png` – Original screenshot for the compTIA UI style.
 - `references/links.md` – Links to the official CompTIA exam pages.
 - `sources/` – Original books and guides (PDF, EPUB). Not in git. Subfolders: `core1/`, `core2/`, `general/`, `network/` (later).
-- `sources-text/` – Text extracted from `sources/`. One Markdown file for each chapter. Not in git.
-- `sources-text/sources-index.md` – Links each chapter to an exam domain.
+- `sources-text/` – Text extracted from `sources/`, filler removed. One Markdown file for each chapter, in `sources-text/<category>/<book>/` (same categories as `sources/`). Each file starts with its source, exam, and objectives. Not in git.
+- `sources-text/sources-index.md` – Links each chapter to an exam domain. Lists the books and which exam objectives (220-1201/1202 or older 220-1101/1102) each one covers.
+- `sources-text/derived/acronym-candidates.md` – Acronym and expanded-form pairs found in the books. A helper for `content/acronyms/`, not a source of truth.
+- `tools/extract/` – Dev-only Python extractor for the books (see its `README.md`). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
 - `content/` – Question records, terms, and noun pools that the app uses. Subfolders: `core1/`, `core2/`, `acronyms/`, `definitions/`, `network/` (later).
 <!-- Add the code folders when they exist. -->
 
@@ -82,7 +84,9 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - For tasks that do not create content (UI, exam generation code, storage, tests), use `content/` and do not read `sources-text/`.
 - Read the text in `sources-text/`, not the original files in `sources/`.
 - If a book is not in `sources-text/`, extract it first: one Markdown file for each chapter. Then update `sources-text/sources-index.md`.
-- The extractor is a dev-only Python script (PyMuPDF for PDF, ebooklib for EPUB) in a local venv (approved). It is not part of the app. Build it after the books are added to `sources/`.
+- The extractor is a dev-only Python script (PyMuPDF for PDF, ebooklib for EPUB) in a local venv (approved). It is not part of the app. It is in `tools/extract/`; its `README.md` has the commands and the list of removed filler.
+- Put new books in `sources/` (`core1/`, `core2/`, or `general/` for books that cover both cores), not in `sources-text/`. Then run the extractor.
+- Prefer the books for the current objectives (220-1201/1202). The 220-1101/1102 books are older: use them for background, and check their facts against a current book.
 - Create questions from the facts in each chapter.
 - When a chapter has practice questions, add each one to the question pool in `content/`. Keep the question, the answers, and the explanation. Set the `origin` field to `book`.
 - Create content one domain at a time. Stop after each domain so the user can review it.

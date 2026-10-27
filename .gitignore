@@ -16,3 +16,7 @@ release/
 .env
 .DS_Store
 Thumbs.db
+
+# Dev-only Python tools
+.venv/
+__pycache__/
