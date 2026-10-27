@@ -32,6 +32,7 @@ Use these names in all files and code:
 ### General
 - The app runs locally.
 - The app runs on Windows and Linux.
+- Desktop only. There is no phone or tablet layout.
 - The app has no user accounts. Each installation keeps its own data.
 - The app does not use a language model.
 - Language: English only.
@@ -49,7 +50,7 @@ Use these names in all files and code:
 - The app grades each attempt against the passing score in `docs/compTIA-exam-overviews.md`.
 - The app stores each attempt persistently.
 - The correct answer has an in-depth explanation of 2–5 sentences.
-- Each incorrect answer has a short explanation. <!-- Q3: What length? Example: 1 sentence. -->
+- Each incorrect answer has a short explanation of 1 sentence.
 - Review of a previous attempt uses the same results screen and review screen as the exam simulation draft. They are the same screens that the user sees at the end of an attempt.
 
 ### Acronym Exercise and Definition Exercise modules

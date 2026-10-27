@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise results (draft)</title>
+<link rel="stylesheet" href="drafts.css">
+<style>
+  .ok { color: var(--plum); font-weight: 600; }
+  .bad { color: var(--brand); font-weight: 600; }
+  .miss { text-decoration: underline wavy var(--brand); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+  .rtable td:first-child { width: 32px; color: var(--ink-muted); }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <span class="appname">Cert <span>Practice</span></span>
+  <nav class="nav"><a href="home.html">Home</a><a href="attempts.html">Previous attempts</a></nav>
+</div></header>
+<p class="crumbs"><a href="home.html">Home</a> › Acronym Exercise › Results</p>
+
+<main class="page">
+  <div class="page-head">
+    <h1 class="display-page"><span class="title-gradient">Exercise results</span></h1>
+    <p class="subtitle">Acronym Exercise · CompTIA A+</p>
+  </div>
+
+  <section class="card stack-6" aria-labelledby="sumTitle">
+    <h2 class="visually-hidden" id="sumTitle">Summary</h2>
+    <div class="grid-3">
+      <div><p class="stat-num">16/20</p><p class="stat-label">Correct</p><p class="stat-text">80% of the questions.</p></div>
+      <div><p class="stat-num">11/14</p><p class="stat-label">Multiple choice</p><p class="stat-text">Both directions.</p></div>
+      <div><p class="stat-num">5/6</p><p class="stat-label">Typed answers</p><p class="stat-text">One answer had a spelling error.</p></div>
+    </div>
+    <p class="small">These results are not saved. They clear when you leave this screen.</p>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="exercise-setup.html">Try again</a>
+      <a class="btn btn-outline" href="home.html">Back to home</a>
+    </div>
+  </section>
+
+  <section class="card stack-6" aria-labelledby="listTitle">
+    <div class="btn-row" style="justify-content:space-between">
+      <h2 class="h3" id="listTitle">Your answers</h2>
+      <div class="seg" role="group" aria-label="Filter answers">
+        <button data-f="all" aria-pressed="true">All questions</button>
+        <button data-f="wrong" aria-pressed="false">Incorrect only (4)</button>
+      </div>
+    </div>
+    <table class="table rtable">
+      <thead><tr><th>#</th><th>Question</th><th>Your answer</th><th>Correct answer</th><th>Result</th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+  </section>
+</main>
+
+<script>
+// Sample data for the draft only. "miss" marks a word with a spelling error in a typed answer.
+const ROWS = [
+  [1, "DHCP", "Dynamic Host Configuration Protocol", "Dynamic Host Configuration Protocol", true],
+  [2, "Basic Input/Output System", "UEFI", "BIOS", false],
+  [3, "DNS", 'Domain Name <span class="miss">Sytem</span>', "Domain Name System", false],
+  [4, "SSD", "Solid-State Drive", "Solid-State Drive", true],
+  [5, "Network Address Translation", "NAT", "NAT", true],
+  [6, "RAID", "Redundant Array of Independent Disks", "Redundant Array of Independent Disks", true],
+  [7, "TPM", "Trusted Program Module", "Trusted Platform Module", false],
+  [8, "Wireless Access Point", "WAP", "WAP", true],
+  [9, "POST", "Power-On Self-Test", "Power-On Self-Test", true],
+  [10, "Virtual Private Network", "VLAN", "VPN", false],
+];
+const rows = document.getElementById("rows");
+function render(f) {
+  rows.innerHTML = ROWS.filter(r => f === "all" || !r[4]).map(([n, q, y, c, ok]) =>
+    `<tr><td>${n}</td><td><b>${q}</b></td><td>${y}</td><td>${c}</td><td><span class="${ok ? "ok" : "bad"}">${ok ? "Correct" : "Incorrect"}</span></td></tr>`).join("");
+}
+document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render(b.dataset.f);
+});
+render("all");
+</script>
+</body>
+</html>

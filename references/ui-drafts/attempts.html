@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Previous attempts (draft)</title>
+<link rel="stylesheet" href="drafts.css">
+<style>
+  .attempts td:first-child { white-space: nowrap; }
+  .score { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .empty { text-align: center; padding: var(--space-8) 0; }
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <span class="appname">Cert <span>Practice</span></span>
+  <nav class="nav"><a href="home.html">Home</a><a href="attempts.html" aria-current="page">Previous attempts</a></nav>
+</div></header>
+
+<main class="page">
+  <div class="page-head">
+    <h1 class="display-page"><span class="title-gradient">Previous attempts</span></h1>
+    <p class="subtitle">Open an attempt to see your results and review each question.</p>
+  </div>
+
+  <section class="card stack-6" aria-labelledby="listTitle">
+    <div class="btn-row" style="justify-content:space-between">
+      <h2 class="h3" id="listTitle">Exam attempts</h2>
+      <div class="seg" role="group" aria-label="Filter by exam">
+        <button data-f="all" aria-pressed="true">All</button>
+        <button data-f="Core 1 Exam" aria-pressed="false">Core 1</button>
+        <button data-f="Core 2 Exam" aria-pressed="false">Core 2</button>
+      </div>
+    </div>
+    <table class="table attempts">
+      <thead><tr><th>Date</th><th>Exam</th><th class="num">Score</th><th>Result</th><th class="num">Correct</th><th class="num">Time used</th><th><span class="visually-hidden">Action</span></th></tr></thead>
+      <tbody id="rows"></tbody>
+    </table>
+    <p class="small">Exercise results are not saved. Only finished exam attempts show here. An attempt in progress shows on the home screen.</p>
+  </section>
+</main>
+
+<script>
+// Sample data for the draft only.
+const ROWS = [
+  ["27 Oct 2026, 09:12", "Core 1 Exam", 712, 675, "64 of 84", "1:21:40"],
+  ["25 Oct 2026, 19:47", "Core 2 Exam", 688, 700, "68 of 88", "1:29:58"],
+  ["23 Oct 2026, 20:03", "Core 1 Exam", 641, 675, "52 of 76", "1:15:02"],
+  ["20 Oct 2026, 18:30", "Core 2 Exam", 702, 700, "61 of 78", "1:26:11"],
+  ["18 Oct 2026, 08:55", "Core 1 Exam", 590, 675, "50 of 90", "1:30:00"],
+];
+const rows = document.getElementById("rows");
+function render(f) {
+  const list = ROWS.filter(r => f === "all" || r[1] === f);
+  rows.innerHTML = list.length ? list.map(([d, ex, s, p, c, t]) => `<tr>
+    <td>${d}</td><td>${ex}</td>
+    <td class="num score">${s}</td>
+    <td><span class="result ${s >= p ? "pass" : "fail"}">${s >= p ? "Pass" : "Did not pass"}</span></td>
+    <td class="num">${c}</td><td class="num">${t}</td>
+    <td class="num"><a class="btn btn-outline btn-sm" href="../exam-simulation-ui.html">Review attempt</a></td></tr>`).join("")
+    : `<tr><td colspan="7" class="empty">No attempts yet. <a href="home.html">Start an exam</a> to see it here.</td></tr>`;
+}
+document.querySelectorAll(".seg button").forEach(b => b.onclick = () => {
+  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  render(b.dataset.f);
+});
+render("all");
+</script>
+</body>
+</html>

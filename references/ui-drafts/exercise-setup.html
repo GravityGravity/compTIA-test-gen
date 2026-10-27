@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exercise setup (draft)</title>
+<link rel="stylesheet" href="drafts.css">
+</head>
+<body>
+<header class="topbar"><div class="topbar-inner">
+  <span class="appname">Cert <span>Practice</span></span>
+  <nav class="nav"><a href="home.html">Home</a><a href="attempts.html">Previous attempts</a></nav>
+</div></header>
+<p class="crumbs"><a href="home.html">Home</a> › Acronym Exercise</p>
+
+<main class="page">
+  <div class="page-head">
+    <h1 class="display-page"><span class="title-gradient">Acronym Exercise</span></h1>
+    <p class="subtitle">Match acronyms to their expanded forms, then type a few from memory.</p>
+  </div>
+
+  <section class="card stack-6" aria-labelledby="certTitle">
+    <div class="stack-2">
+      <h2 class="h3" id="certTitle">Select a certification</h2>
+      <p class="small">The exercise uses only the acronyms for this certification.</p>
+    </div>
+    <div class="stack-2" role="radiogroup" aria-labelledby="certTitle">
+      <button class="choice" role="radio" aria-checked="true" data-c="a-plus">
+        <span class="dot"></span>
+        <span class="stack-2"><span class="h4">CompTIA A+ (Core 1 and Core 2)</span><span class="small">312 acronyms</span></span>
+      </button>
+      <!-- Inactive certification: config has active: false. -->
+      <button class="choice" role="radio" aria-checked="false" aria-disabled="true" tabindex="-1">
+        <span class="dot"></span>
+        <span class="stack-2"><span class="h4">CompTIA Network+</span><span class="small">Coming later</span></span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Values come from the exercise config. -->
+  <section class="card stack-6" aria-labelledby="sumTitle">
+    <h2 class="h3" id="sumTitle">What to expect</h2>
+    <div class="grid-3">
+      <div><p class="stat-num">20</p><p class="stat-label">Questions</p><p class="stat-text">14 multiple choice and 6 type the answer.</p></div>
+      <div><p class="stat-num">30</p><p class="stat-label">Minutes</p><p class="stat-text">The exercise ends when the time is up.</p></div>
+      <div><p class="stat-num">0</p><p class="stat-label">Close matches</p><p class="stat-text">A typed answer with a spelling error is incorrect.</p></div>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn-primary" href="exercise-question.html">Start exercise</a>
+      <a class="btn btn-outline" href="home.html">Back to home</a>
+    </div>
+  </section>
+</main>
+</body>
+</html>

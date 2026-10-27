@@ -15,9 +15,11 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 ```
 
 ## Folder Structure
+- `CHANGELOG.md` – A summary of the changes and decisions in each task.
 - `docs/spec.md` – Product requirements.
 - `docs/compTIA-exam-overviews.md` – Exam overviews for Core 1, Core 2, and Network+ (future): question count, time, passing score, domains, weights, question structures, and the structure mix.
 - `references/exam-simulation-ui.html` – Exam simulation draft. The UI for an exam attempt must follow it.
+- `references/ui-drafts/` – Static HTML drafts of the non-exam screens (home, exam intro, previous attempts, exercise setup, question, results).
 - `references/comptia-ui-style/` – compTIA UI style: `README.md` (rules), `tokens.json` (colors, type, spacing, radius, shadow), `components.css`, and `components/` (Button, Card, Eyebrow, StatTile). All other screens must follow it.
 - `references/exam-question-UI.png` – Original screenshot for the exam simulation draft.
 - `references/UI Inspiration.png` – Original screenshot for the compTIA UI style.
@@ -35,9 +37,11 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 | Desktop shell | Electron | It uses the same Chromium engine on Linux and Windows. The exam screens look and operate the same on the two systems. |
 | Language | TypeScript | Use one language for the UI and the logic. |
 | UI | React + Vite | Fast build. Familiar from full-stack work. |
-| Local storage | SQLite (`better-sqlite3`) – proposed | Plan with the user (see Data storage). |
+| Local storage | SQLite (`better-sqlite3`) | Approved. One `.db` file in the Electron `userData` folder. |
+| Spell check | `nspell` + bundled en_US Hunspell dictionary | Approved. Same result on Windows and Linux, no network. The acronym and term lists from `content/` are added to the dictionary. |
+| Package manager | npm | Approved. |
 | Packaging | electron-builder | Makes an `.exe` installer for Windows and an `.AppImage`/`.deb` for Linux. |
-| Tests | Vitest – proposed | Plan with the user (see Testing). |
+| Tests | Vitest + Playwright | Approved (see Testing). |
 
 ## Rules for Claude
 - Read `docs/spec.md` before you start a feature.
@@ -51,6 +55,8 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Do not build performance-based questions (PBQs) until the user asks. Keep the question type as a field in each question, and keep the code for each question type separate, so PBQ types can be added later.
 - Sections marked **Plan with the user** are not decided. Propose a plan and get approval before you write code for them.
 - Update this file when a planned decision is approved.
+- When a question is answered or a decision changes, update the affected docs (`CLAUDE.md`, `docs/spec.md`, and others) in the same task.
+- At the end of each task, add an entry to `CHANGELOG.md`: the date, the task, and a short list of the changes and decisions.
 - In Electron, keep `contextIsolation` on and `nodeIntegration` off.
 - Run the tests after each change.
 
@@ -59,6 +65,9 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Review of a previous attempt: use the same results and review components as the end of an exam attempt. Do not make a second version of these screens. Load the saved attempt into them.
 - All other screens (menus, module selection, the list of previous attempts, Acronym Exercise module, Definition Exercise module): follow `references/comptia-ui-style/`. Read its `README.md` first.
 - Use the values in `references/comptia-ui-style/tokens.json`. Do not invent new colors, fonts, or spacing.
+- Before React code, each non-exam screen gets a static HTML draft in `references/ui-drafts/` (approved). The user reviews the drafts first. See `references/ui-drafts/README.md`.
+- Desktop only. No phone or tablet layouts. Set a minimum window size (1024 × 720) in Electron instead of responsive breakpoints.
+- Bundle the Inter font with the app. Do not load Google Fonts at runtime.
 - Do not use real CompTIA logos.
 
 ### Rules for source books and content
@@ -68,6 +77,7 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - For tasks that do not create content (UI, exam generation code, storage, tests), use `content/` and do not read `sources-text/`.
 - Read the text in `sources-text/`, not the original files in `sources/`.
 - If a book is not in `sources-text/`, extract it first: one Markdown file for each chapter. Then update `sources-text/sources-index.md`.
+- The extractor is a dev-only Python script (PyMuPDF for PDF, ebooklib for EPUB) in a local venv (approved). It is not part of the app. Build it after the books are added to `sources/`.
 - Create questions from the facts in each chapter.
 - When a chapter has practice questions, add each one to the question pool in `content/`. Keep the question, the answers, and the explanation. Set the `origin` field to `book`.
 - Create content one domain at a time. Stop after each domain so the user can review it.
@@ -93,6 +103,15 @@ Each exam type has its own config file. Make each config from the part of the gu
 
 All exam modules use the same generation code. Only the config and the content are different.
 
+Approved exam decisions:
+- Question count: random in a range from the config (Core 1 and Core 2: 75–90), as in the draft UI.
+- Scoring: keep the draft's method. A multiple-response question gets partial credit (selected correct / total correct) only when no wrong option is selected. Score = round(900 × points / questions). Pass when score ≥ the config's passing score.
+- Results screen: add a per-domain breakdown (correct / total for each domain) under the score, in the draft's style.
+- Interrupted attempt: autosave progress and remaining time. On the next launch, offer to resume or discard it.
+- Keep the draft's pause button and its 3–15 s "Submitting your exam" delay.
+- "Report Content Errors" stays disabled, as in the draft.
+- Each incorrect answer has a 1-sentence explanation.
+
 For each attempt, the app uses the config of the selected exam to:
 - Set the question count and the timer.
 - Calculate the number of questions for each domain from the weights.
@@ -116,7 +135,7 @@ Rules:
 - Before the app compares a typed answer, it ignores letter case, extra spaces, and punctuation.
 - Spelling errors in a typed answer show a red squiggle underline.
 - Grading: a typed answer with a spelling error is incorrect. Do not accept close matches.
-- Spelling check method – Plan with the user. The standard spell checker does not know many IT terms, so the acronym and term lists must be part of the dictionary.
+- Spelling check method (approved): `nspell` with a bundled en_US Hunspell dictionary. Add all acronyms and terms from `content/` to the dictionary. Do not use Electron's built-in spellchecker (it downloads dictionaries on Linux and uses the OS checker on Windows). The app draws the red squiggle itself.
 
 ### Question generation (cognitive model)
 The app builds scenario-based questions from a cognitive model.
@@ -151,11 +170,12 @@ This fault record is a draft. Change it as development continues.
 
 Many exam topics are facts, not faults (for example ports and RAM types). Plan a record type for these questions with the user. Use the question structures in `docs/compTIA-exam-overviews.md` to decide which record types are necessary.
 
-### Data storage and database – Plan with the user
-Not decided. The storage must:
+### Data storage and database
+SQLite with `better-sqlite3` (approved). Schema – Plan with the user. The storage must:
 - Keep exam attempts persistently (see `docs/spec.md`).
 - Keep the full question text and answers for each attempt.
 - Not keep Acronym Exercise or Definition Exercise results.
 
-## Testing – Plan with the user
-Not decided. Use Vitest. Plan the test targets with the user.
+## Testing
+- Vitest: the engine (config loading, seeded generation, domain allocation, grading, typed-answer normalization, spell check) and React components.
+- Playwright: a few end-to-end flows that drive the Electron app.
