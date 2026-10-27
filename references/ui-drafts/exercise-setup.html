@@ -9,16 +9,18 @@
 <body>
 <header class="topbar"><div class="topbar-inner">
   <span class="appname">Cert <span>Practice</span></span>
-  <nav class="nav"><a href="home.html">Home</a><a href="attempts.html">Previous attempts</a></nav>
+  <nav class="nav"><a href="home.html">Home</a></nav>
 </div></header>
 <p class="crumbs"><a href="home.html">Home</a> › Acronym Exercise</p>
 
-<main class="page">
+<div class="hero">
   <div class="page-head">
     <h1 class="display-page"><span class="title-gradient">Acronym Exercise</span></h1>
     <p class="subtitle">Match acronyms to their expanded forms, then type a few from memory.</p>
   </div>
+</div>
 
+<main class="page">
   <section class="card stack-6" aria-labelledby="certTitle">
     <div class="stack-2">
       <h2 class="h3" id="certTitle">Select a certification</h2>
@@ -40,11 +42,13 @@
   <!-- Values come from the exercise config. -->
   <section class="card stack-6" aria-labelledby="sumTitle">
     <h2 class="h3" id="sumTitle">What to expect</h2>
-    <div class="grid-3">
-      <div><p class="stat-num">20</p><p class="stat-label">Questions</p><p class="stat-text">14 multiple choice and 6 type the answer.</p></div>
-      <div><p class="stat-num">30</p><p class="stat-label">Minutes</p><p class="stat-text">The exercise ends when the time is up.</p></div>
-      <div><p class="stat-num">0</p><p class="stat-label">Close matches</p><p class="stat-text">A typed answer with a spelling error is incorrect.</p></div>
-    </div>
+    <dl class="facts" style="max-width:480px">
+      <div><dt>Questions</dt><dd>20</dd></div>
+      <div><dt>Multiple choice</dt><dd>14</dd></div>
+      <div><dt>Type the answer</dt><dd>6</dd></div>
+      <div><dt>Time</dt><dd>30 minutes</dd></div>
+    </dl>
+    <p>A typed answer with a spelling error is incorrect. Close matches are not accepted.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="exercise-question.html">Start exercise</a>
       <a class="btn btn-outline" href="home.html">Back to home</a>

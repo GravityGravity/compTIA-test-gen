@@ -5,6 +5,7 @@
 :root {
   --brand: #c8102e; --brand-hover: #a00d25; --brand-tint: #fbe9ec;
   --plum: #7a1f7a; --wine: #9e1b4f;
+  --ok: #1d7a3a; --ok-tint: #e3f3e8;
   --ink: #1a1a1a; --ink-muted: #4a4a4a; --on-brand: #ffffff;
   --surface: #ffffff; --surface-muted: #ebebeb; --border: #e2e2e2;
   --font-sans: Inter, "Helvetica Neue", Arial, system-ui, sans-serif;
@@ -14,6 +15,7 @@
 }
 
 * { box-sizing: border-box; }
+[hidden] { display: none !important; }
 body { min-width: 1024px; margin: 0; font-family: var(--font-sans); font-size: 15px; line-height: 22px; color: var(--ink); background: var(--surface); }
 h1, h2, h3, h4, p { margin: 0; }
 a { color: var(--brand); text-decoration: none; }
@@ -22,16 +24,20 @@ a:hover { color: var(--brand-hover); text-decoration: underline; }
 /* Top bar: app name and main navigation. No CompTIA logo. */
 .topbar { border-bottom: 1px solid var(--border); background: var(--surface); }
 .topbar-inner { max-width: 960px; margin: 0 auto; padding: var(--space-4); display: flex; align-items: center; gap: var(--space-6); }
-.appname { font-weight: 700; font-size: 15px; color: var(--brand); }
+.appname { font-weight: 700; font-size: 20px; line-height: 28px; color: var(--brand); }
 .appname span { color: var(--plum); }
-.nav { display: flex; gap: var(--space-4); font-size: 13px; line-height: 19px; }
+.nav { display: flex; gap: var(--space-6); margin-left: auto; font-size: 15px; line-height: 22px; }
 .nav a { color: var(--ink); }
 .nav a[aria-current="page"] { color: var(--brand); font-weight: 600; }
 .crumbs { max-width: 960px; margin: 0 auto; padding: var(--space-2) var(--space-4) 0; font-size: 13px; line-height: 19px; color: var(--ink-muted); }
 
 /* Page column */
-.page { max-width: 960px; margin: 0 auto; padding: var(--space-8) var(--space-4) var(--space-12); display: flex; flex-direction: column; gap: var(--space-12); }
-.page-head { text-align: center; display: flex; flex-direction: column; gap: var(--space-2); }
+.page { max-width: 960px; margin: 0 auto; padding: var(--space-12) var(--space-4); display: flex; flex-direction: column; gap: var(--space-12); }
+.page-head { text-align: center; display: flex; flex-direction: column; gap: var(--space-4); }
+/* Hero band: sets the page title apart from the top bar and the content below. */
+.hero { background: var(--surface-muted); padding: var(--space-12) var(--space-4); }
+.hero .page-head { max-width: 960px; margin: 0 auto; }
+.hero .subtitle { color: var(--ink); }
 .display-page { font-size: 36px; line-height: 44px; font-weight: 700; }
 .subtitle { color: var(--ink-muted); }
 .title-gradient { background: linear-gradient(90deg, var(--brand), var(--plum)); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -73,18 +79,22 @@ a:hover { color: var(--brand-hover); text-decoration: underline; }
 /* Line icon: 32px box, about 1.5px stroke, brand, no fill */
 .icon { width: 32px; height: 32px; stroke: var(--brand); stroke-width: 1.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
 
+/* Facts list: label and value pairs, one per line (vertical, not a dot-separated line). */
+.facts { margin: 0; display: flex; flex-direction: column; border-top: 1px solid var(--border); }
+.facts > div { display: flex; justify-content: space-between; gap: var(--space-4); padding: var(--space-2) 0; border-bottom: 1px solid var(--border); }
+.facts dt { color: var(--ink-muted); }
+.facts dd { margin: 0; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+
 /* Module card */
 .module { display: flex; flex-direction: column; gap: var(--space-4); }
-.module .meta { display: flex; flex-wrap: wrap; gap: var(--space-2); }
-.tag { font-size: 13px; line-height: 19px; padding: 2px 10px; border-radius: var(--radius-pill); background: var(--surface-muted); color: var(--ink-muted); }
 .module.inactive { opacity: .5; box-shadow: none; background: var(--surface-muted); }
 .module.inactive .icon { stroke: var(--ink-muted); }
 .module.inactive .eyebrow { color: var(--ink-muted); }
 .module .grow { flex: 1; }
 
 /* Resume banner */
-.resume { display: flex; align-items: center; gap: var(--space-6); flex-wrap: wrap; }
-.resume .grow { flex: 1; min-width: 240px; }
+.resume { display: grid; grid-template-columns: 32px 1fr; gap: var(--space-6); align-items: start; }
+.resume .facts { max-width: 480px; }
 
 /* Tables (domains, attempts) */
 .table { width: 100%; border-collapse: collapse; font-size: 15px; line-height: 22px; }
@@ -94,9 +104,9 @@ a:hover { color: var(--brand-hover); text-decoration: underline; }
 .bar { height: 6px; border-radius: var(--radius-pill); background: var(--surface-muted); overflow: hidden; min-width: 80px; }
 .bar i { display: block; height: 100%; background: var(--plum); }
 
-/* Pass/fail tags: no green token, so pass uses plum and fail uses brand, always with a text label */
+/* Pass/fail tags: pass uses ok and fail uses brand, always with a text label */
 .result { font-size: 13px; line-height: 19px; font-weight: 600; padding: 2px 10px; border-radius: var(--radius-pill); border: 1.5px solid currentColor; white-space: nowrap; }
-.result.pass { color: var(--plum); }
+.result.pass { color: var(--ok); }
 .result.fail { color: var(--brand); }
 
 /* Segmented filter */

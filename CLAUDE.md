@@ -65,8 +65,13 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Review of a previous attempt: use the same results and review components as the end of an exam attempt. Do not make a second version of these screens. Load the saved attempt into them.
 - All other screens (menus, module selection, the list of previous attempts, Acronym Exercise module, Definition Exercise module): follow `references/comptia-ui-style/`. Read its `README.md` first.
 - Use the values in `references/comptia-ui-style/tokens.json`. Do not invent new colors, fonts, or spacing.
+- Correct answers and Pass results use the `ok` and `ok-tint` tokens (green, approved addition). Incorrect and Did not pass use `brand`. Always add a text label.
 - Before React code, each non-exam screen gets a static HTML draft in `references/ui-drafts/` (approved). The user reviews the drafts first. See `references/ui-drafts/README.md`.
 - Desktop only. No phone or tablet layouts. Set a minimum window size (1024 × 720) in Electron instead of responsive breakpoints.
+- Previous attempts are reached only from the home screen (module selection): a short list of recent attempts at the bottom, with a button that opens the full list on its own page. Do not put them in the top navigation.
+- Show details (counts, times, scores, states) as vertical label–value lists, not as one line of items separated by dots. Big numbers may still use StatTile rows.
+- Each page title sits in a grey `surface-muted` hero band, set apart from the top bar and the content.
+- App name: "Cert Practice" (approved). Use it in the top bar and the window title.
 - Bundle the Inter font with the app. Do not load Google Fonts at runtime.
 - Do not use real CompTIA logos.
 
@@ -108,9 +113,15 @@ Approved exam decisions:
 - Scoring: keep the draft's method. A multiple-response question gets partial credit (selected correct / total correct) only when no wrong option is selected. Score = round(900 × points / questions). Pass when score ≥ the config's passing score.
 - Results screen: add a per-domain breakdown (correct / total for each domain) under the score, in the draft's style.
 - Interrupted attempt: autosave progress and remaining time. On the next launch, offer to resume or discard it.
+- Leaving an exam: during an attempt, a "Return" button sits at the top next to Pause. It is a compTIA UI style pill with the `brand` to `plum` gradient and bold white text. When the user selects it or tries to close the app, a dialog asks: "Save for later" (keep answers, marks, and remaining time) or "Cancel attempt" (delete it, not graded or saved). The two choices are stacked, full-width buttons, each with a one-line description; a "Keep working" link under them (or Escape) closes the dialog. The timer stops while the dialog is open. Save and Cancel go back to the exam's page. In Electron, the main process stops the window `close` event while an attempt is active and asks the renderer to show this dialog. Autosave still covers a crash or forced exit.
+- A saved attempt shows on the home screen and on that exam's page, with Resume and Discard.
 - Keep the draft's pause button and its 3–15 s "Submitting your exam" delay.
 - "Report Content Errors" stays disabled, as in the draft.
+- The results screen has no Return button. "Start a new attempt" goes back to that exam's page (exam intro), where the user starts the next attempt.
 - Each incorrect answer has a 1-sentence explanation.
+- On the results screen, the filters are "All questions", "Correct only (n)", and "Incorrect only (n)", as round pills. The selected one has a thick black (`ink`) outline and a fill: light blue for All, light green for Correct, light red for Incorrect. Partially correct questions count as incorrect.
+- Every button on the exam screens has a hover color that is a darker shade of its own color: grey turns darker grey (`#dfe1e6`, border `#a3a6ad`), teal turns darker teal (`#0a5f7d`), light blue, green, and red fills turn a little darker, and borderless bar buttons get a light grey fill. Disabled buttons do not change.
+- When the user opens a question from the results, a large result banner at the top shows Correct, Partially correct, Incorrect, or Not answered, with an icon and one line of text.
 
 For each attempt, the app uses the config of the selected exam to:
 - Set the question count and the timer.
@@ -132,6 +143,7 @@ Rules:
 - Keep acronyms and definitions in separate content: `content/acronyms/` and `content/definitions/`. Do not mix them in one exercise.
 - Each acronym and definition record has a certification field (for example `["a-plus"]`, later `["network-plus"]`). The app selects only the records for the certification that the user selected.
 - Multiple-choice distractors come from the same module's content for the same certification: other acronyms for the Acronym Exercise, other terms or definitions for the Definition Exercise.
+- Feedback after each answer (approved): the user selects or types an answer, selects "Check answer", sees Correct or Incorrect with the correct answer, then goes to the next question.
 - Before the app compares a typed answer, it ignores letter case, extra spaces, and punctuation.
 - Spelling errors in a typed answer show a red squiggle underline.
 - Grading: a typed answer with a spelling error is incorrect. Do not accept close matches.

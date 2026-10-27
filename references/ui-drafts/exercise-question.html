@@ -13,16 +13,17 @@
   .prompt { font-size: 28px; line-height: 36px; font-weight: 600; }
   .prompt.long { font-size: 20px; line-height: 28px; }
 
-  /* Feedback: no green token, so correct uses plum and incorrect uses brand, always with a text label. */
-  .choice.right { border-color: var(--plum); }
+  /* Feedback: correct uses ok and incorrect uses brand, always with a text label. */
+  .choice.right { border-color: var(--ok); background: var(--ok-tint); }
   .choice.wrong { border-color: var(--brand); background: var(--brand-tint); }
   .feedback { display: flex; gap: var(--space-4); align-items: flex-start; border-radius: var(--radius-sm); padding: var(--space-4); background: var(--surface-muted); }
   .feedback .icon { flex: none; width: 24px; height: 24px; }
-  .feedback.ok .icon { stroke: var(--plum); }
-  .feedback.ok .h4 { color: var(--plum); }
+  .feedback.ok { background: var(--ok-tint); }
+  .feedback.ok .icon { stroke: var(--ok); }
+  .feedback.ok .h4 { color: var(--ok); }
   .feedback.bad .h4 { color: var(--brand); }
   .mark { font-size: 13px; font-weight: 600; margin-left: auto; white-space: nowrap; }
-  .choice.right .mark { color: var(--plum); }
+  .choice.right .mark { color: var(--ok); }
   .choice.wrong .mark { color: var(--brand); }
 
   /* Type-the-answer field with a spelling squiggle. The mirror sits under a transparent input and
@@ -39,13 +40,14 @@
 <body>
 <header class="topbar"><div class="topbar-inner">
   <span class="appname">Cert <span>Practice</span></span>
-  <nav class="nav"><a href="home.html">Home</a><a href="attempts.html">Previous attempts</a></nav>
+  <nav class="nav"><a href="home.html">Home</a></nav>
 </div></header>
 
 <main class="page" style="gap:var(--space-6)">
   <div class="exbar">
     <div class="grow stack-2">
-      <span class="eyebrow">Acronym Exercise · CompTIA A+</span>
+      <span class="eyebrow">Acronym Exercise</span>
+      <span class="small">CompTIA A+</span>
       <span class="h4" id="count">Question 1 of 20</span>
       <div class="bar" aria-hidden="true"><i id="fill" style="width:5%"></i></div>
     </div>
@@ -68,12 +70,12 @@
 <script>
 // Sample questions for the draft only.
 const QS = [
-  { kind: "mc", label: "Multiple choice · Acronym to expanded form", ask: "What does this acronym stand for?", prompt: "DHCP",
+  { kind: "mc", label: "Multiple choice", dir: "Acronym to expanded form", ask: "What does this acronym stand for?", prompt: "DHCP",
     opts: ["Dynamic Host Configuration Protocol", "Domain Host Control Protocol", "Dynamic Hardware Configuration Process", "Distributed Host Connection Protocol"], a: 0,
     acr: "DHCP", exp: "Dynamic Host Configuration Protocol" },
-  { kind: "mc", label: "Multiple choice · Expanded form to acronym", ask: "Which acronym matches this expanded form?", prompt: "Basic Input/Output System", long: true,
+  { kind: "mc", label: "Multiple choice", dir: "Expanded form to acronym", ask: "Which acronym matches this expanded form?", prompt: "Basic Input/Output System", long: true,
     opts: ["UEFI", "BIOS", "POST", "CMOS"], a: 1, acr: "BIOS", exp: "Basic Input/Output System" },
-  { kind: "typed", label: "Type the answer · Acronym to expanded form", ask: "Type the expanded form of this acronym.", prompt: "DNS", a: "Domain Name System",
+  { kind: "typed", label: "Type the answer", dir: "Acronym to expanded form", ask: "Type the expanded form of this acronym.", prompt: "DNS", a: "Domain Name System",
     acr: "DNS", exp: "Domain Name System" },
 ];
 // Demo dictionary. The app uses nspell with en_US plus all acronyms and terms from content/.
@@ -88,7 +90,7 @@ function render() {
   const Q = QS[i];
   $("count").textContent = `Question ${i + 1} of 20`;
   $("fill").style.width = ((i + 1) / 20 * 100) + "%";
-  const head = `<div class="stack-2"><span class="eyebrow">${Q.label}</span><p>${Q.ask}</p></div>
+  const head = `<div class="stack-2"><span class="eyebrow">${Q.label}</span><span class="small">${Q.dir}</span><p>${Q.ask}</p></div>
     <p class="prompt${Q.long ? " long" : ""}">${esc(Q.prompt)}</p>`;
   let body;
   if (Q.kind === "mc") {

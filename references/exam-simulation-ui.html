@@ -6,8 +6,8 @@
 /* Layout: grey exam shell, white question card, question left / answer keys right (stacks on phones) */
 :root{
   --shell:#f2f2f4; --card:#ffffff; --fg:#1f1f1f; --muted:#555a60; --line:#d6d7db;
-  --btn:#eeeff2; --btn-hover:#e3e5ea; --btn-border:#c3c5cb;
-  --accent:#0d789e; --accent-fg:#ffffff; --link:#1b6da3;
+  --btn:#eeeff2; --btn-hover:#dfe1e6; --btn-hover-border:#a3a6ad; --btn-border:#c3c5cb;
+  --accent:#0d789e; --accent-hover:#0a5f7d; --accent-fg:#ffffff; --link:#1b6da3;
   --sel:#d8eef6; --sel-border:#0d789e; --track:#c9cbd0;
   --ok:#1d7a3a; --ok-bg:#e3f3e8; --bad:#b3261e; --bad-bg:#fbe7e5; --flag:#a86400; --flag-bg:#fdf1dc;
   --shadow:rgba(0,0,0,.18);
@@ -37,6 +37,17 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .hg{width:14px;height:14px;flex:none}
 .pause{background:var(--btn);border:1px solid var(--btn-border);border-radius:2px;padding:7px 26px;font-size:12px;cursor:pointer}
 .pause:hover{background:var(--btn-hover)}
+/* Leave dialog: two stacked choices, each with a one-line description, and a quiet "Keep working" link under them. */
+.dlg.lv{max-width:440px;gap:14px}
+.lv-opts{display:flex;flex-direction:column;gap:8px}
+.lv-opt{display:flex;flex-direction:column;gap:2px;text-align:left;width:100%;padding:12px 14px;background:var(--btn);border:1px solid var(--btn-border);cursor:pointer;font-size:14px}
+.lv-opt:hover{background:var(--btn-hover)}
+.lv-opt b{font-size:15px}
+.lv-opt span{color:var(--muted);font-size:13px;line-height:1.4}
+.lv-opt.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+.lv-opt.pri span{color:var(--accent-fg);opacity:.9}
+.lv-stay{align-self:center;background:none;border:0;padding:6px 10px;color:var(--accent);font-size:14px;cursor:pointer;text-decoration:underline}
+.head-actions{display:flex;gap:8px;align-items:center}
 
 /* card */
 .card{background:var(--card);position:relative}
@@ -119,6 +130,15 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .rlist>li.part .mark{color:var(--flag)}
 .pnote{color:var(--flag);font-weight:600;font-size:12px;margin-top:4px}
 .rlist>li:hover{border-color:var(--accent)}
+/* Return button (exam header): compTIA UI style pill with the brand-to-plum gradient (tokens brand, plum, on-brand, radius-pill). */
+.ct-btn{font:inherit;font-size:13px;font-weight:700;padding:6px 18px;border:1px solid transparent;border-radius:9999px;background:linear-gradient(90deg,#c8102e,#7a1f7a);color:#fff;cursor:pointer}
+.ct-btn:hover{background:linear-gradient(90deg,#a00d25,#7a1f7a)}
+.ct-btn:focus-visible{outline:2px solid #c8102e;outline-offset:2px}
+/* Result banner on a reviewed question: a large, clear signal of the result. */
+.verdict{display:flex;align-items:center;gap:14px;padding:14px 18px;margin:0 0 16px;border-left:6px solid var(--vc);background:var(--vbg);color:var(--vc)}
+.verdict svg{flex:none}
+.verdict b{display:block;font-size:22px;line-height:28px}
+.verdict span{display:block;font-size:13px;color:var(--fg)}
 .key.ro:disabled{opacity:1;cursor:default;text-decoration:none}
 .key.ro.on{background:var(--bad-bg);border:2px solid var(--bad)}
 .key.ro.right{background:var(--ok-bg);border:2px solid var(--ok);font-weight:600}
@@ -139,7 +159,23 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .rlist .q{font-weight:600;font-size:14px;margin-bottom:4px}
 .rlist .a{color:var(--muted)}
 .filters{display:flex;gap:6px;margin-bottom:10px}
-.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-fg);border-color:var(--accent)}
+/* Result filters: round pills. The selected one has a thick black outline (drawn with a shadow so its size does not change)
+   and a fill that matches the filter: neutral for All, green for Correct, red for Incorrect. */
+.filters button{border-radius:9999px;padding:6px 16px}
+.filters button[aria-pressed="true"]{background:var(--sel);color:#1a1a1a;border-color:#1a1a1a;box-shadow:0 0 0 2px #1a1a1a;font-weight:600}
+.filters button[data-f="right"][aria-pressed="true"]{background:var(--ok-bg)}
+.filters button[data-f="wrong"][aria-pressed="true"]{background:var(--bad-bg)}
+
+/* Hover: every button turns a darker shade of its own color. Grey turns darker grey, teal turns darker teal,
+   light blue/green/red fills turn a little darker, and borderless bar buttons get a light grey fill. Disabled buttons do not change. */
+.sm,.pause,.key,.cell,.confirm,.nav button,.review,.revisit,.x,.lv-opt,.lv-stay{transition:background-color .12s,border-color .12s,color .12s}
+.sm:hover:not(:disabled),.pause:hover,.key:hover:not(:disabled),.cell:hover,.lv-opt:hover{background:var(--btn-hover);border-color:var(--btn-hover-border)}
+.sm.pri:hover:not(:disabled),.confirm:hover:not(:disabled),.lv-opt.pri:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
+.nav button:hover:not(:disabled),.review:hover,.revisit:hover,.x:hover,.lv-stay:hover{background:var(--btn)}
+.key.on:hover:not(:disabled),.cell.ans:hover{background:#c4e3ef;border-color:var(--sel-border)}
+.filters button[data-f][aria-pressed="true"]:hover{background:#c4e3ef;border-color:#1a1a1a}
+.filters button[data-f="right"][aria-pressed="true"]:hover{background:#cfe9d6}
+.filters button[data-f="wrong"][aria-pressed="true"]:hover{background:#f6d3cf}
 
 @media (max-width:640px){
   .qa{grid-template-columns:1fr}
@@ -154,7 +190,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 <div class="wrap">
   <div class="head">
     <div><h1>CompTIA A+ Core 1 Practice Exam: Core 1 (220-1201) Final Assessment</h1><span class="sec">Section 1 of 1</span></div>
-    <button class="pause" id="pauseBtn">Pause</button>
+    <div class="head-actions"><button class="pause" id="pauseBtn">Pause</button><button class="ct-btn" id="leaveBtn">Return</button></div>
     <div class="timers" id="timers">
       <span><svg class="hg" viewBox="0 0 14 14" aria-hidden="true"><rect x=".5" y=".5" width="13" height="13" fill="none" stroke="currentColor"/><path d="M4 3h6L7 7l3 4H4l3-4z" fill="none" stroke="currentColor"/></svg>This section: <b id="tSec">01:30:00</b></span>
       <span><svg class="hg" viewBox="0 0 14 14" aria-hidden="true"><rect x=".5" y=".5" width="13" height="13" fill="none" stroke="currentColor"/><path d="M4 3h6L7 7l3 4H4l3-4z" fill="none" stroke="currentColor"/></svg>Total <b id="tTot">01:30:00</b></span>
@@ -179,6 +215,19 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 <div class="modal" id="timeout" role="alertdialog" aria-modal="true" aria-labelledby="toTitle" hidden>
   <div class="dlg"><h2 id="toTitle">Time is up</h2><p>The time for this section has ended. You cannot change your answers. Submit the exam to see your results.</p>
   <div class="actions"><button class="sm pri" id="toSubmit">Submit Exam</button></div></div>
+</div>
+
+<!-- Leave dialog: opens from the Return button during the exam, and when the user tries to close the app.
+     In Electron, the main process stops the window "close" event while an attempt is active and asks the
+     renderer to show this dialog; the window closes after the user saves or cancels the attempt. -->
+<div class="modal" id="leave" role="alertdialog" aria-modal="true" aria-labelledby="lvTitle" aria-describedby="lvText" hidden>
+  <div class="dlg lv"><h2 id="lvTitle">Leave this exam?</h2>
+  <p id="lvText">The timer is stopped while you decide.</p>
+  <div class="lv-opts">
+    <button class="lv-opt pri" id="lvSave"><b>Save for later</b><span>Keep your answers and remaining time. Resume it from the home screen or the exam page.</span></button>
+    <button class="lv-opt" id="lvCancel"><b>Cancel attempt</b><span>Delete this attempt. It is not graded or saved.</span></button>
+  </div>
+  <button class="lv-stay" id="lvStay">Keep working</button></div>
 </div>
 
 <script>
@@ -326,7 +375,7 @@ function chrome(){
   const nv=q||S.mode==="rq"; $("prev").disabled=!nv||S.i===0; $("next").disabled=!nv||S.i===QS.length-1;
   document.querySelector(".revisit").hidden=!q||S.done||S.paused; $("flag").checked=S.flag[S.i];
   $("reviewBtn").disabled=S.done; $("reviewBtn").textContent=S.done?"Section finalized":"Review & Finalize Section";
-  $("pauseBtn").hidden=S.done||!!S.timeout; $("pauseBtn").textContent=S.paused?"Resume":"Pause";
+  $("pauseBtn").hidden=S.done||!!S.timeout; $("leaveBtn").hidden=S.done||!!S.timeout; $("pauseBtn").textContent=S.paused?"Resume":"Pause";
 }
 
 const XSVG='<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M1.5 1.5l9 9M10.5 1.5l-9 9" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>';
@@ -369,20 +418,25 @@ function renderReview(confirming){
 function renderResults(){
   const right=QS.filter((q,k)=>isRight(k)).length, part=QS.filter((q,k)=>!isRight(k)&&credit(k)>0).length, pts=QS.reduce((s,q,k)=>s+credit(k),0), score=Math.round(900*pts/QS.length), pass=score>=PASS;
   const used=TOTAL-S.left;
-  const items=QS.map((q,k)=>({q,k,ok:isRight(k),pc:credit(k)})).filter(x=>S.filter==="all"||(S.filter==="wrong"&&!x.ok));
+  const items=QS.map((q,k)=>({q,k,ok:isRight(k),pc:credit(k)})).filter(x=>S.filter==="all"||(S.filter==="wrong"&&!x.ok)||(S.filter==="right"&&x.ok));
   view.innerHTML=`<div class="panel"><h2>Assessment Results</h2>
    <div class="score"><span class="big">${score}</span><span>out of 900 · ${right} of ${QS.length} correct${part?` · ${part} partially correct`:""}</span><span class="pill ${pass?"pass":"fail"}">${pass?"Pass":"Did not pass"} (${PASS} required)</span><span class="sub" style="margin:0">Time used ${fmt(used)}</span></div>
    <p class="sub" style="margin:-6px 0 14px">Each question is worth ${(900/QS.length).toFixed(2)} points. On multi-answer questions, you get part of the points if all your selected answers are correct.</p>
-   <div class="filters"><button class="sm" data-f="all" aria-pressed="${S.filter==="all"}">All questions</button><button class="sm" data-f="wrong" aria-pressed="${S.filter==="wrong"}">Incorrect only (${QS.length-right})</button></div>
+   <div class="filters"><button class="sm" data-f="all" aria-pressed="${S.filter==="all"}">All questions</button><button class="sm" data-f="right" aria-pressed="${S.filter==="right"}">Correct only (${right})</button><button class="sm" data-f="wrong" aria-pressed="${S.filter==="wrong"}">Incorrect only (${QS.length-right})</button></div>
    <ul class="rlist">${items.map(({q,k,ok,pc})=>`<li class="${ok?"ok":pc>0?"part":""}" data-rv="${k}" tabindex="0" title="Open this question"><span class="mark" role="img" aria-label="${ok?"Correct":pc>0?"Partially correct":"Incorrect"}">${ok||pc>0?'<svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>':'<svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>'}</span><div class="q">${k+1}. ${esc(q.q)}</div>
      ${!ok&&pc>0?`<div class="pnote">Partial credit: ${S.ans[k].length} of ${q.a.length} correct answers selected</div>`:""}<div class="acols"><div><div class="albl">Your answer:</div>${S.ans[k]===null?'<ul class="alist"><li><b>Not answered</b></li></ul>':alist(S.ans[k],q)}</div>${ok?"":`<div><div class="albl" style="text-decoration:underline">Correct answer(s):</div>${alist(q.a,q)}</div>`}</div>
-     <div class="a">${esc(q.e)}</div></li>`).join("")||"<li class='ok'>No incorrect answers.</li>"}</ul>
+     <div class="a">${esc(q.e)}</div></li>`).join("")||(S.filter==="right"?"<li>No correct answers.</li>":"<li class='ok'>No incorrect answers.</li>")}</ul>
    <div class="actions" style="margin-top:16px"><button class="sm pri" id="restart">Start a new attempt</button></div></div>`;
 }
 
 function renderRQ(){
   const i=S.i,Q=QS[i],ua=S.ans[i]||[],ok=isRight(i),pc=credit(i),stc=ok?"--ok":pc>0?"--flag":"--bad";
-  view.innerHTML=`<div class="qa">
+  const na=S.ans[i]===null, vc=ok?"--ok":pc>0?"--flag":"--bad", vbg=ok?"--ok-bg":pc>0?"--flag-bg":"--bad-bg";
+  const vt=ok?"Correct":pc>0?"Partially correct":na?"Not answered":"Incorrect";
+  const vs=ok?"You selected the correct answer.":pc>0?`You selected ${ua.length} of ${Q.a.length} correct answers.`:na?"You did not answer this question.":"Your answer is not correct. The correct answer is marked in green.";
+  const vi=ok?'<path d="M7 17l6 6L25 9" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>':'<path d="M8 8l16 16M24 8 8 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>';
+  view.innerHTML=`<div class="verdict" role="status" style="--vc:var(${vc});--vbg:var(${vbg})"><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">${vi}</svg><div><b>${vt}</b><span>${vs}</span></div></div>
+  <div class="qa">
     <div style="min-width:0"><p class="qnum">Question ${i+1} of ${QS.length} · <span style="color:var(${stc})">${ok?"Correct":pc>0?"Partially correct":S.ans[i]===null?"Not answered":"Incorrect"}</span></p>
       <p class="stem">${esc(Q.q)}${Q.n>1?' <b>Select all that apply.</b>':""}</p>
       <ol class="opts">${Q.o.map((o,k)=>`<li class="${S.strike[i][k]?"struck":""}">${L[k]}. ${esc(o)}</li>`).join("")}</ol>
@@ -442,7 +496,8 @@ view.addEventListener("click",e=>{
   else if(t.id==="finNo"){S.mode="review";render();}
   else if(t.id==="finYes") finalize();
   else if(t.dataset.f){S.filter=t.dataset.f;render();}
-  else if(t.id==="restart"){location.hash="";S=fresh();render();}
+  // Start a new attempt goes back to this exam's intro page, where the user starts the next attempt.
+  else if(t.id==="restart"){location.href="ui-drafts/exam-intro.html";}
   else if(t.id==="resume"){S.paused=false;render();}
 });
 function fresh(ids){ids=ids||pickIds();QS=ids.map(j=>BANK[j]);return {ids,qt:Array(QS.length).fill(0),i:0,ans:Array(QS.length).fill(null),pick:Array(QS.length).fill(null),flag:Array(QS.length).fill(false),strike:QS.map(q=>q.o.map(()=>false)),left:TOTAL,paused:false,mode:"q",done:false,filter:"all",report:false,justSaved:false,v:3};}
@@ -452,14 +507,22 @@ $("next").onclick=()=>go(S.i+1);
 $("flag").onchange=e=>{S.flag[S.i]=e.target.checked;};
 $("reviewBtn").onclick=()=>{if(S.done)return;S.paused=false;S.mode="review";S.report=false;render();};
 $("pauseBtn").onclick=()=>{if(S.done)return;S.paused=!S.paused;render();};
+// Return during the exam: ask to save for later or cancel the attempt. Both go back to the exam's page.
+function openLeave(){if(S.done||S.timeout)return;$("leave").hidden=false;document.querySelector(".wrap").inert=true;$("lvSave").focus();}
+function closeLeave(){$("leave").hidden=true;document.querySelector(".wrap").inert=false;$("leaveBtn").focus();}
+$("leaveBtn").onclick=openLeave;
+$("lvStay").onclick=closeLeave;
+$("lvSave").onclick=()=>{location.href="ui-drafts/exam-intro.html#saved";};
+$("lvCancel").onclick=()=>{location.href="ui-drafts/exam-intro.html";};
+$("leave").addEventListener("keydown",e=>{if(e.key==="Escape"){e.stopPropagation();closeLeave();}});
 document.addEventListener("keydown",e=>{
-  if(S.timeout||S.paused||S.mode!=="q"||e.target.matches("textarea,input"))return;
+  if(S.timeout||S.paused||!$("leave").hidden||S.mode!=="q"||e.target.matches("textarea,input"))return;
   const k=e.key.length===1?"abcdef".indexOf(e.key.toLowerCase()):-1;
   if(k>=0&&k<QS[S.i].o.length)choose(k);
   else if(e.key==="Enter"&&!$("confirm").disabled){$("confirm").click();}
   else if(e.key==="ArrowRight")go(S.i+1); else if(e.key==="ArrowLeft")go(S.i-1);
 });
-setInterval(()=>{if(S.paused||S.done||S.timeout)return;S.left=Math.max(0,S.left-1);if(S.mode==="q"){S.qt[S.i]++;qtime();}
+setInterval(()=>{if(S.paused||S.done||S.timeout||!$("leave").hidden)return;S.left=Math.max(0,S.left-1);if(S.mode==="q"){S.qt[S.i]++;qtime();}
   if(S.left===0){S.timeout=true;S.paused=false;render();return;} $("tSec").textContent=$("tTot").textContent=fmt(S.left);$("timers").classList.toggle("low",S.left<=300);},1000);
 
 h?.snapshot?.(()=>S);

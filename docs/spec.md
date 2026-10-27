@@ -48,7 +48,9 @@ Use these names in all files and code:
 - The exam has a timer.
 - The app generates questions dynamically. The sentence structure changes between attempts, so the user cannot memorize the question form.
 - The app grades each attempt against the passing score in `docs/compTIA-exam-overviews.md`.
+- After the user submits an exam, "Start a new attempt" on the results screen goes back to that exam's page.
 - The app stores each attempt persistently.
+- During an exam, a "Return" button is at the top of the screen. When the user selects it or tries to close the app, a dialog asks the user to save the exam for later or cancel the attempt (or keep working). A saved exam can be resumed later.
 - The correct answer has an in-depth explanation of 2–5 sentences.
 - Each incorrect answer has a short explanation of 1 sentence.
 - Review of a previous attempt uses the same results screen and review screen as the exam simulation draft. They are the same screens that the user sees at the end of an attempt.
@@ -65,6 +67,7 @@ Both modules:
 - Before an exercise begins, the user selects the certification to review (for example A+ Core; Network+ later).
 - Each exercise has about 20 questions and a 30-minute time limit.
 - Question formats: multiple choice and type the answer.
+- After each answer, the app shows whether it is correct and shows the correct answer.
 - Type-the-answer questions use one direction only (see the table). The user never types a definition sentence or an acronym.
 - Type-the-answer spelling:
   - When a typed word has a spelling error, the app underlines the word with a red squiggle line.

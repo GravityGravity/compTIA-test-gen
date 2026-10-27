@@ -12,7 +12,7 @@ A clean, card-based style for career and learning sites: white page, white cards
 
 ## Visual foundations
 
-- **Color:** `brand` is for action and emphasis only (buttons, links, eyebrows). `plum` and `wine` are for display text and stats. Body text is always `ink`. Keep large areas `surface`.
+- **Color:** `brand` is for action and emphasis only (buttons, links, eyebrows). `plum` and `wine` are for display text and stats. Body text is always `ink`. Keep large areas `surface`. `ok` (green) and `ok-tint` are for correct answers and Pass results only; incorrect and Did not pass use `brand`. Always add a text label.
 - **Page title:** centered `display-page`, with a left-to-right gradient from `brand` to `plum` (`background: linear-gradient(90deg, var(--brand), var(--plum)); -webkit-background-clip: text; color: transparent`). Use it once per page.
 - **Hero headline:** `display-hero`, first line in `brand`, rest in `plum`. Key words in body copy may be bold `ink`.
 - **Layout:** centered content column, max 960px wide. Sections stack with `space-12` between them.
