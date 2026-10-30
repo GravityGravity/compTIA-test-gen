@@ -11,6 +11,18 @@ export function selectionLabel(
   return `${cert.shortName} (${names.join(' and ')})`
 }
 
+/**
+ * The exam attempt's title: "CompTIA A+ Core 1 Exam (220-1201)". Words that end the certification
+ * name and start the exam name are said once: "CompTIA Network+ Exam (N10-009)".
+ */
+export function attemptTitle(certName: string, exam: { name: string; id: string }): string {
+  const cert = certName.split(' ').filter(Boolean)
+  const name = exam.name.split(' ')
+  let overlap = Math.min(cert.length, name.length)
+  while (overlap > 0 && cert.slice(-overlap).join(' ') !== name.slice(0, overlap).join(' ')) overlap--
+  return [...cert, ...name.slice(overlap), `(${exam.id})`].join(' ')
+}
+
 /** "Core 1 (220-1201)" */
 export function examLabel(exam: ExamConfig): string {
   return `${exam.shortName} (${exam.id})`

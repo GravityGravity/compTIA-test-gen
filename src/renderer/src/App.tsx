@@ -16,7 +16,7 @@ import type {
 import { Dialog } from './components/Dialog'
 import { TopBar } from './components/TopBar'
 import { ExamAttempt } from './exam/ExamAttempt'
-import { selectionLabel } from './labels'
+import { attemptTitle, selectionLabel } from './labels'
 import { AttemptsScreen } from './screens/AttemptsScreen'
 import { ExamIntroScreen } from './screens/ExamIntroScreen'
 import { ExerciseResultsScreen } from './screens/ExerciseResultsScreen'
@@ -183,7 +183,7 @@ export function App() {
         <ExamAttempt
           key={screen.key}
           attempt={attempt}
-          title={`${certification?.shortName ?? ''} ${attempt.exam.name} (${attempt.exam.id})`.trim()}
+          title={attemptTitle(certification?.shortName ?? '', attempt.exam)}
           api={window.certPractice}
           onExit={backToExam}
           onNewAttempt={backToExam}

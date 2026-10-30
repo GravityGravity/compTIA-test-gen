@@ -1,0 +1,210 @@
+{
+  "tech": [
+    "the network technician",
+    "a network administrator",
+    "the network engineer",
+    "a junior network technician"
+  ],
+  "branch-office": [
+    "a branch office",
+    "a regional sales office",
+    "a small branch bank"
+  ],
+  "campus": [
+    "a university campus",
+    "a hospital campus",
+    "a multi-building corporate campus"
+  ],
+  "data-center": [
+    "a colocation data center",
+    "the company data center",
+    "a cloud provider's data center"
+  ],
+  "setting": [
+    "#office#",
+    "#branch-office#",
+    "#school#",
+    "#retail#",
+    "#clinic#",
+    "#enterprise#",
+    "#campus#",
+    "#data-center#"
+  ],
+  "device": [
+    "the workstation",
+    "the server",
+    "the router",
+    "the switch"
+  ],
+  "access-switch": [
+    "the access switch in the wiring closet",
+    "the floor switch",
+    "a 48-port access switch"
+  ],
+  "core-switch": [
+    "the core switch",
+    "the distribution switch",
+    "the uplink between the switches"
+  ],
+  "ip-phone": [
+    "the desk IP phones",
+    "the VoIP phones"
+  ],
+  "storage-array": [
+    "the storage array",
+    "the iSCSI storage"
+  ],
+  "workstation": [
+    "the workstation",
+    "the user's PC",
+    "a desktop computer"
+  ],
+  "server": [
+    "the server",
+    "the file server"
+  ],
+  "access-point": [
+    "the Wi-Fi network",
+    "the ceiling AP",
+    "the ceiling access point in the lobby",
+    "the small wireless router",
+    "the wireless access point"
+  ],
+  "wifi-client": [
+    "a company laptop",
+    "a laptop",
+    "the Wi-Fi connection on a laptop",
+    "the user's laptop"
+  ],
+  "iot-device": [
+    "a wireless device",
+    "a Wi-Fi device"
+  ],
+  "wireless-controller": [
+    "the wireless network",
+    "the staff Wi-Fi"
+  ],
+  "building-link": [
+    "the wireless link between the two buildings",
+    "the rooftop link to the warehouse"
+  ],
+  "mesh-node": [
+    "the wireless network",
+    "the Wi-Fi in the building"
+  ],
+  "network-gear": [
+    "the core switch",
+    "the edge router",
+    "a distribution switch",
+    "the branch router"
+  ],
+  "monitor-host": [
+    "the monitoring server",
+    "the NMS console"
+  ],
+  "client-pc": [
+    "the user's laptop",
+    "a desktop PC",
+    "the workstation"
+  ],
+  "guest-network": [
+    "the guest wireless network",
+    "the visitor Wi-Fi"
+  ],
+  "network-printer": [
+    "the network printer",
+    "the shared laser printer"
+  ],
+  "mail-server": [
+    "the company's email",
+    "the outgoing mail gateway"
+  ],
+  "name-server": [
+    "the company name servers",
+    "the internal name servers"
+  ],
+  "time-server": [
+    "the internal time server",
+    "the servers' clocks"
+  ],
+  "network-device": [
+    "the managed switch",
+    "the edge router",
+    "the access switch in the wiring closet"
+  ],
+  "firewall": [
+    "the edge firewall",
+    "the perimeter firewall",
+    "the firewall at the Internet connection"
+  ],
+  "server-host": [
+    "the server",
+    "the file server",
+    "the company's servers"
+  ],
+  "fiber-uplink": [
+    "the fiber uplink between the buildings",
+    "the fiber link to the data center",
+    "the new fiber connection in the server room"
+  ],
+  "user-pc": [
+    "the workstation",
+    "a desktop PC",
+    "the laptop on the desk",
+    "a user's computer"
+  ],
+  "cable-run": [
+    "the network drop at a desk",
+    "the cable run to a workstation",
+    "a wall jack in the office"
+  ],
+  "net-switch": [
+    "the access switch in the wiring closet",
+    "the floor switch",
+    "a switch in the stack"
+  ],
+  "edge-router": [
+    "the router",
+    "the edge router",
+    "the branch router"
+  ],
+  "server-nic": [
+    "the file server",
+    "the storage server",
+    "the database server"
+  ],
+  "poe-device": [
+    "the new IP cameras",
+    "the ceiling access points",
+    "the new powered devices"
+  ],
+  "perf-wired": [
+    "the office network",
+    "the wired network",
+    "the network in the main office"
+  ],
+  "perf-wifi": [
+    "the wireless network",
+    "the company Wi-Fi",
+    "the Wi-Fi in the building"
+  ],
+  "perf-voice": [
+    "VoIP calls",
+    "the desk phones",
+    "the phone system"
+  ],
+  "perf-internet": [
+    "the internet connection",
+    "the WAN connection",
+    "access to cloud apps"
+  ],
+  "perf-server": [
+    "the file server",
+    "the shared drives",
+    "the application server"
+  ],
+  "perf-video": [
+    "video meetings",
+    "the video conferencing app"
+  ]
+}

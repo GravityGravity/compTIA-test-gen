@@ -1,0 +1,2590 @@
+[
+  {
+    "id": "network-s-d2-duplex-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "data-center"
+    ],
+    "devices": [
+      "access-switch",
+      "server"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling",
+    "clues": [
+      "the link light is on and the server can be pinged",
+      "file copies to the server crawl and often time out",
+      "the switch port counters show many late collisions and CRC errors",
+      "the server NIC was hard-set during a rebuild while the switch port was left on auto"
+    ],
+    "answer": {
+      "cause": "a duplex mismatch between the switch port and the server NIC",
+      "action": "Set both ends of the link to the same speed and duplex, or set both to autonegotiate"
+    },
+    "appliesWhen": "one end of a link runs full duplex and the other half duplex",
+    "explanation": "A link that stays up but shows late collisions and CRC errors points to the two ends sending in different duplex modes. When one end is fixed and the other negotiates, the negotiating end often falls back to half duplex.",
+    "related": [
+      "network-s-d2-speed-mismatch",
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-mtu-mismatch",
+      "network-s-d2-lacp-mismatch"
+    ],
+    "firstStep": "Compare the speed and duplex settings on the switch port and the server NIC"
+  },
+  {
+    "id": "network-s-d2-speed-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "warehouse"
+    ],
+    "devices": [
+      "access-switch",
+      "workstation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling",
+    "clues": [
+      "the port shows no link light at all",
+      "the cable tests good and works on another PC",
+      "the NIC was manually set to 100 Mbps for an old application",
+      "the switch port is fixed at 1000 Mbps"
+    ],
+    "answer": {
+      "cause": "a speed mismatch between the NIC and the switch port",
+      "action": "Set the NIC and the switch port to the same speed, or let both autonegotiate"
+    },
+    "appliesWhen": "the two ends of a link are fixed at different data rates",
+    "explanation": "Two ends that are fixed at different rates cannot bring the link up, so there is no link light even with a good cable. Matching the rates, or letting both ends negotiate, brings the link up.",
+    "related": [
+      "network-s-d2-duplex-mismatch",
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-voice-vlan-missing",
+      "network-s-d2-lacp-mismatch"
+    ],
+    "firstStep": "Check the configured speed on the NIC and on the switch port"
+  },
+  {
+    "id": "network-s-d2-wrong-access-vlan",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.1",
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "access-switch",
+      "workstation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "the PC has a link light and gets an IP address",
+      "the address is from the sales subnet, not the accounting subnet",
+      "the user moved to a new desk yesterday",
+      "other accounting PCs on the same switch reach the accounting server"
+    ],
+    "answer": {
+      "cause": "the switch port is assigned to the wrong VLAN",
+      "action": "Assign the access port to the accounting VLAN"
+    },
+    "appliesWhen": "an access port is a member of a different VLAN than the user's department",
+    "explanation": "A port-based VLAN takes its membership from the switch port, not the PC. After a desk move, the new port can still belong to another department's VLAN, so DHCP hands out that VLAN's subnet.",
+    "related": [
+      "network-s-d2-trunk-vlan-not-allowed",
+      "network-s-d2-vlan-not-created",
+      "network-s-d2-svi-missing",
+      "network-s-d2-native-vlan-mismatch"
+    ],
+    "firstStep": "Check which VLAN the user's switch port belongs to"
+  },
+  {
+    "id": "network-s-d2-trunk-vlan-not-allowed",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "branch-office",
+      "campus"
+    ],
+    "devices": [
+      "access-switch",
+      "core-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "hosts in VLAN 30 reach each other on the same switch",
+      "hosts in VLAN 30 on the second floor cannot reach hosts in VLAN 30 on the first floor",
+      "traffic in VLANs 10 and 20 crosses the uplink between the floors normally",
+      "the network team added VLAN 30 last week"
+    ],
+    "answer": {
+      "cause": "VLAN 30 is not in the allowed list of the 802.1Q trunk between the switches",
+      "action": "Add VLAN 30 to the allowed VLANs on both ends of the trunk"
+    },
+    "appliesWhen": "a VLAN works inside one switch but its tagged frames are not carried on the uplink",
+    "explanation": "When a VLAN works inside each switch but not between them while other VLANs cross the uplink, the uplink is dropping that VLAN's tagged frames. Each VLAN must be permitted on the trunk at both ends.",
+    "related": [
+      "network-s-d2-native-vlan-mismatch",
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-vlan-not-created",
+      "network-s-d2-svi-missing"
+    ],
+    "firstStep": "Check the VLANs that the uplink carries on both switches"
+  },
+  {
+    "id": "network-s-d2-native-vlan-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "branch-office",
+      "campus"
+    ],
+    "devices": [
+      "access-switch",
+      "core-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation",
+    "clues": [
+      "frames from devices that send no tag end up in the wrong VLAN on the far switch",
+      "both switches log a warning about the link between them",
+      "tagged traffic for the other VLANs crosses the link normally",
+      "one switch was replaced and configured from an old template"
+    ],
+    "answer": {
+      "cause": "a native VLAN mismatch on the two ends of the trunk",
+      "action": "Set the same native VLAN on both ends of the trunk"
+    },
+    "appliesWhen": "the two ends of a trunk use different VLAN IDs for untagged frames",
+    "explanation": "On an 802.1Q trunk, only the native VLAN is sent without a tag. If each end uses a different native VLAN, untagged frames leave in one VLAN and arrive in another, while tagged VLANs are not affected.",
+    "related": [
+      "network-s-d2-trunk-vlan-not-allowed",
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-lacp-mismatch",
+      "network-s-d2-switching-loop"
+    ],
+    "firstStep": "Compare the trunk configuration on the two switches"
+  },
+  {
+    "id": "network-s-d2-vlan-not-created",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "school"
+    ],
+    "devices": [
+      "access-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "a port was assigned to VLAN 40 but stays inactive",
+      "the PC on that port gets no IP address",
+      "the show vlan output does not list 40 at all",
+      "ports in VLANs 10 and 20 on the same switch work"
+    ],
+    "answer": {
+      "cause": "VLAN 40 was never created in the switch's VLAN database",
+      "action": "Create VLAN 40 on the switch, then confirm the port is active in it"
+    },
+    "appliesWhen": "a port is assigned to a VLAN ID that the switch does not have",
+    "explanation": "A switch only forwards frames for VLANs it knows. Assigning a port to a VLAN ID that the switch has no entry for leaves the port inactive.",
+    "related": [
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-trunk-vlan-not-allowed",
+      "network-s-d2-svi-missing",
+      "network-s-d2-native-vlan-mismatch"
+    ],
+    "firstStep": "Run show vlan to list the VLANs that the switch knows"
+  },
+  {
+    "id": "network-s-d2-svi-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "core-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "hosts in the new VLAN 50 reach each other",
+      "they cannot reach servers or hosts in any other VLAN",
+      "the hosts use 10.50.0.1 as their default gateway and cannot ping it",
+      "the layer 3 switch routes between the older VLANs"
+    ],
+    "answer": {
+      "cause": "the switch virtual interface for VLAN 50 is missing or shut down",
+      "action": "Create the VLAN 50 interface on the layer 3 switch with the gateway address and enable it"
+    },
+    "appliesWhen": "the hosts of a VLAN have no working gateway address on the layer 3 switch",
+    "explanation": "Hosts in a VLAN use the SVI's address as their default gateway for inter-VLAN routing. If that virtual interface was not created or is down, the hosts work inside the VLAN but cannot leave it.",
+    "related": [
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-vlan-not-created",
+      "network-s-d2-trunk-vlan-not-allowed",
+      "network-s-d2-voice-vlan-missing"
+    ],
+    "firstStep": "Check that the VLAN 50 interface exists and is up on the layer 3 switch"
+  },
+  {
+    "id": "network-s-d2-voice-vlan-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "branch-office"
+    ],
+    "devices": [
+      "ip-phone",
+      "access-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "the IP phones get addresses from the user data subnet",
+      "calls break up when users download large files",
+      "the PCs plugged into the back of the phones work normally",
+      "the phone system vendor asked for phone traffic to be kept apart"
+    ],
+    "answer": {
+      "cause": "no voice VLAN is configured on the access ports",
+      "action": "Configure a voice VLAN on the access ports so the phones tag their traffic into it"
+    },
+    "appliesWhen": "phone traffic shares the data VLAN with no separation or priority",
+    "explanation": "A voice VLAN keeps phone traffic apart from PC traffic on the same port and lets it be given priority. Without it, the phones sit in the data VLAN and compete with large downloads.",
+    "related": [
+      "network-s-d2-wrong-access-vlan",
+      "network-s-d2-duplex-mismatch",
+      "network-s-d2-svi-missing",
+      "network-s-d2-mtu-mismatch"
+    ]
+  },
+  {
+    "id": "network-s-d2-switching-loop",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "branch-office",
+      "campus"
+    ],
+    "devices": [
+      "access-switch",
+      "core-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "the network slowed to a halt minutes after a second cable was connected between two switches",
+      "switch CPU use is near 100 percent",
+      "broadcast traffic floods every port",
+      "the MAC address tables keep changing for the same hosts"
+    ],
+    "answer": {
+      "cause": "a switching loop because spanning tree is disabled on the switches",
+      "action": "Remove the extra cable, then enable Spanning Tree Protocol on all switches"
+    },
+    "appliesWhen": "two switches have more than one active path between them with no loop prevention",
+    "explanation": "A redundant link with no loop prevention lets broadcasts circle forever and makes the MAC tables flap. STP blocks the redundant path so that only one active path remains.",
+    "related": [
+      "network-s-d2-wrong-root-bridge",
+      "network-s-d2-stp-slow-edge",
+      "network-s-d2-lacp-mismatch",
+      "network-s-d2-native-vlan-mismatch"
+    ],
+    "firstStep": "Disconnect the cable that was just added between the switches"
+  },
+  {
+    "id": "network-s-d2-wrong-root-bridge",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "core-switch",
+      "access-switch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture",
+    "clues": [
+      "traffic between floors passes through an old access switch in a closet",
+      "the uplinks on the new core switch are in the blocking state",
+      "every switch uses the default priority",
+      "the old closet switch has the lowest MAC address on the network"
+    ],
+    "answer": {
+      "cause": "an old access switch was elected as the spanning tree root bridge",
+      "action": "Lower the bridge priority on the core switch so it becomes the root bridge"
+    },
+    "appliesWhen": "a weak switch with the lowest bridge ID becomes the center of the spanning tree",
+    "explanation": "STP elects the bridge with the lowest bridge ID, which is the priority and then the MAC address. With default priorities, the oldest switch can win and pull traffic through a slow path.",
+    "related": [
+      "network-s-d2-switching-loop",
+      "network-s-d2-stp-slow-edge",
+      "network-s-d2-lacp-mismatch",
+      "network-s-d2-trunk-vlan-not-allowed"
+    ],
+    "firstStep": "Check which switch is the root bridge"
+  },
+  {
+    "id": "network-s-d2-stp-slow-edge",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.3"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "access-switch",
+      "workstation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture",
+    "clues": [
+      "fast-booting PCs get a 169.254 address",
+      "a minute later a DHCP renew gets a correct address",
+      "the switch ports turn green only about 30 seconds after the PC links up",
+      "the switches run the original 802.1D protocol"
+    ],
+    "answer": {
+      "cause": "access ports that pass through the spanning tree listening and learning states before they forward",
+      "action": "Configure the access ports as edge (PortFast) ports or move the switches to RSTP"
+    },
+    "appliesWhen": "host ports wait through the 802.1D listening and learning delays before they forward",
+    "explanation": "Under 802.1D a new port blocks, listens, and learns for about 30 seconds before it forwards, so a fast PC sends its DHCP request too early. Edge ports or RSTP let host ports forward at once.",
+    "related": [
+      "network-s-d2-switching-loop",
+      "network-s-d2-wrong-root-bridge",
+      "network-s-d2-speed-mismatch",
+      "network-s-d2-vlan-not-created"
+    ]
+  },
+  {
+    "id": "network-s-d2-mtu-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.4"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "storage-array",
+      "server"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "small pings and logins to the storage array work",
+      "large copies to the storage array stall",
+      "the server and storage NICs were changed to 9000 bytes last night",
+      "one switch in the path still uses the default 1500 bytes"
+    ],
+    "answer": {
+      "cause": "jumbo frames are enabled on the hosts but not on every switch in the path",
+      "action": "Enable the same jumbo frame MTU on every switch and NIC in the storage path"
+    },
+    "appliesWhen": "the devices along one path do not all use the same frame size",
+    "explanation": "Jumbo frames work only when every device in the path supports the same larger MTU. A switch left at 1500 bytes drops the large frames, so only small packets get through.",
+    "related": [
+      "network-s-d2-duplex-mismatch",
+      "network-s-d2-lacp-mismatch",
+      "network-s-d2-voice-vlan-missing",
+      "network-s-d2-speed-mismatch"
+    ],
+    "firstStep": "Ping the storage array with large packets that may not be fragmented"
+  },
+  {
+    "id": "network-s-d2-lacp-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "core-switch",
+      "server"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "clues": [
+      "four uplinks were bundled into one logical link on the first switch",
+      "the bundle shows down or only one link carries traffic",
+      "the ports on the second switch are still set up as single ports",
+      "the cables all test good"
+    ],
+    "answer": {
+      "cause": "the link aggregation group is configured on only one side",
+      "action": "Configure the same LACP group on the member ports of both switches"
+    },
+    "appliesWhen": "several ports are bundled at one end of a link but not at the other",
+    "explanation": "LACP binds several physical ports into one logical link only when both ends agree. If one side treats the ports as single links, the bundle does not form correctly.",
+    "related": [
+      "network-s-d2-duplex-mismatch",
+      "network-s-d2-switching-loop",
+      "network-s-d2-mtu-mismatch",
+      "network-s-d2-native-vlan-mismatch"
+    ]
+  },
+  {
+    "id": "network-s-d2-svi",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "route traffic between the VLANs without buying a separate router",
+    "clues": [
+      "the core switch supports layer 3 routing",
+      "each VLAN needs a default gateway address",
+      "the routing must happen inside the switch itself"
+    ],
+    "answer": {
+      "item": "A switch virtual interface (SVI) for each VLAN"
+    },
+    "itemType": "feature",
+    "appliesWhen": "a layer 3 switch must act as the default gateway for its VLANs",
+    "explanation": "An SVI is a logical interface for a VLAN with an IP address. Hosts use it as their default gateway, and the layer 3 switch routes between VLANs.",
+    "related": [
+      "network-s-d2-trunk-8021q",
+      "network-s-d2-vtp",
+      "network-s-d2-access-vlan",
+      "network-s-d2-lacp"
+    ]
+  },
+  {
+    "id": "network-s-d2-vtp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "create the same VLANs on forty Cisco switches without configuring each one by hand",
+    "clues": [
+      "all the switches are from one vendor",
+      "new VLANs are added every month",
+      "the VLAN list should be kept in one place and copied out"
+    ],
+    "answer": {
+      "item": "VLAN Trunking Protocol (VTP)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "a VLAN list must be shared from one switch to many in the same domain",
+    "explanation": "VTP is a Cisco protocol that copies the VLAN database to all switches in the same domain. It removes the need to add each VLAN on every switch.",
+    "related": [
+      "network-s-d2-svi",
+      "network-s-d2-trunk-8021q",
+      "network-s-d2-access-vlan",
+      "network-s-d2-stp"
+    ]
+  },
+  {
+    "id": "network-s-d2-access-vlan",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "keep the finance computers in their own broadcast domain even though they sit on three floors",
+    "clues": [
+      "the floors share the same switches",
+      "the finance hosts must not see other departments' broadcasts",
+      "the users must not need new IP settings when they change ports on their floor"
+    ],
+    "answer": {
+      "item": "A dedicated finance VLAN on the access ports"
+    },
+    "itemType": "configuration",
+    "appliesWhen": "hosts in different places must form one isolated broadcast domain",
+    "explanation": "A VLAN groups hosts into one broadcast domain no matter where they connect. Finance traffic is isolated from the other departments on the same switches.",
+    "related": [
+      "network-s-d2-svi",
+      "network-s-d2-voice-vlan",
+      "network-s-d2-native-unused",
+      "network-s-d2-trunk-8021q"
+    ]
+  },
+  {
+    "id": "network-s-d2-trunk-8021q",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "branch-office",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "carry the traffic of six VLANs over one cable between two switches",
+    "clues": [
+      "the switches are from different vendors",
+      "each frame must keep its VLAN identity across the link",
+      "only one port on each switch is free"
+    ],
+    "answer": {
+      "item": "An 802.1Q trunk port with VLAN tagging"
+    },
+    "itemType": "port type",
+    "appliesWhen": "frames of many VLANs must share one link between switches",
+    "explanation": "802.1Q adds a tag to each frame that names its VLAN, so one trunk link can carry many VLANs. It is the IEEE standard, so it works between vendors.",
+    "related": [
+      "network-s-d2-lacp",
+      "network-s-d2-svi",
+      "network-s-d2-access-vlan",
+      "network-s-d2-native-unused"
+    ]
+  },
+  {
+    "id": "network-s-d2-native-unused",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation",
+    "need": "stop untagged frames on the trunks from landing in a user VLAN",
+    "clues": [
+      "the auditors flagged VLAN 1 as a security risk",
+      "no device on the trunks needs to send untagged frames",
+      "the user data is in VLANs 10 to 40"
+    ],
+    "answer": {
+      "item": "A native VLAN set to an unused VLAN ID"
+    },
+    "itemType": "setting",
+    "appliesWhen": "untagged trunk traffic should go to a dead-end VLAN",
+    "explanation": "The native VLAN carries the untagged frames of a trunk and defaults to VLAN 1. Changing it to an unused VLAN sends untagged traffic nowhere.",
+    "related": [
+      "network-s-d2-trunk-8021q",
+      "network-s-d2-access-vlan",
+      "network-s-d2-voice-vlan",
+      "network-s-d2-stp"
+    ]
+  },
+  {
+    "id": "network-s-d2-voice-vlan",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "branch-office"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "keep the IP phone traffic apart from the PC that plugs into the back of each phone",
+    "clues": [
+      "the phone and the PC share one switch port",
+      "calls must get priority over file downloads",
+      "the phones support tagging their own frames"
+    ],
+    "answer": {
+      "item": "A voice VLAN on the access ports"
+    },
+    "itemType": "feature",
+    "appliesWhen": "phone and PC traffic arrive on the same access port and must be separated",
+    "explanation": "A voice VLAN puts the phone's traffic in its own VLAN while the PC stays in the data VLAN on the same port. The voice traffic can then be given priority.",
+    "related": [
+      "network-s-d2-access-vlan",
+      "network-s-d2-native-unused",
+      "network-s-d2-lacp",
+      "network-s-d2-jumbo"
+    ]
+  },
+  {
+    "id": "network-s-d2-lacp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "give the file server more bandwidth to the switch and keep it online if one cable fails",
+    "clues": [
+      "the server has four gigabit NICs",
+      "the switch has free ports beside the server's port",
+      "all the links must act as one logical connection"
+    ],
+    "answer": {
+      "item": "Link aggregation with LACP"
+    },
+    "itemType": "feature",
+    "appliesWhen": "several physical ports must work as one logical link for speed and redundancy",
+    "explanation": "LACP bundles several physical ports into one logical link. Traffic is shared across the members, and the link stays up if one member fails.",
+    "related": [
+      "network-s-d2-trunk-8021q",
+      "network-s-d2-jumbo",
+      "network-s-d2-rstp",
+      "network-s-d2-fixed-speed-duplex"
+    ]
+  },
+  {
+    "id": "network-s-d2-fixed-speed-duplex",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.2"
+    ],
+    "settings": [
+      "warehouse",
+      "office"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling",
+    "need": "connect an old controller that cannot autonegotiate to a new switch port",
+    "clues": [
+      "the controller supports only 100 Mbps full duplex",
+      "the switch port links at the wrong mode on auto",
+      "the link must not drop to half duplex"
+    ],
+    "answer": {
+      "item": "Manually set speed and duplex that match on both ends"
+    },
+    "itemType": "configuration",
+    "appliesWhen": "a device cannot negotiate and the port must be set to match it",
+    "explanation": "When one end cannot negotiate, the other end must be set by hand to the same speed and duplex. A match on both ends avoids a mismatch and its errors.",
+    "related": [
+      "network-s-d2-lacp",
+      "network-s-d2-jumbo",
+      "network-s-d2-trunk-8021q",
+      "network-s-d2-voice-vlan"
+    ]
+  },
+  {
+    "id": "network-s-d2-stp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "branch-office",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "add a second cable between two switches for redundancy without causing a loop",
+    "clues": [
+      "the second path must take over if the first fails",
+      "broadcast storms must not occur",
+      "the redundant path should stay idle while the first one works"
+    ],
+    "answer": {
+      "item": "Spanning Tree Protocol (STP)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "redundant switch links must be kept loop-free with one path blocked",
+    "explanation": "STP finds redundant paths and blocks all but one, so frames cannot loop. If the active path fails, it unblocks the backup.",
+    "related": [
+      "network-s-d2-rstp",
+      "network-s-d2-root-priority",
+      "network-s-d2-lacp",
+      "network-s-d2-trunk-8021q"
+    ]
+  },
+  {
+    "id": "network-s-d2-rstp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.3"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture",
+    "need": "recover from a failed uplink in well under a second so voice calls do not drop",
+    "clues": [
+      "the switches have redundant uplinks",
+      "the original 802.1D protocol takes up to a minute to recover",
+      "loops must still be prevented"
+    ],
+    "answer": {
+      "item": "Rapid Spanning Tree Protocol (RSTP, 802.1w)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "loop prevention must react to a failed link in milliseconds",
+    "explanation": "RSTP, defined in 802.1w, detects and corrects link failures in milliseconds instead of the long delays of 802.1D. It still keeps the topology loop-free.",
+    "related": [
+      "network-s-d2-stp",
+      "network-s-d2-root-priority",
+      "network-s-d2-lacp",
+      "network-s-d2-jumbo"
+    ]
+  },
+  {
+    "id": "network-s-d2-root-priority",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture",
+    "need": "make the new core switch the center of the loop-free topology",
+    "clues": [
+      "all switches use the default settings",
+      "an older access switch has the lowest MAC address",
+      "the choice must not depend on MAC addresses"
+    ],
+    "answer": {
+      "item": "A lower bridge priority on the core switch"
+    },
+    "itemType": "setting",
+    "appliesWhen": "a chosen switch must win the root bridge election",
+    "explanation": "The root bridge is the switch with the lowest bridge ID, made of a priority and the MAC address. Setting a lower priority on the core switch makes it win.",
+    "related": [
+      "network-s-d2-stp",
+      "network-s-d2-rstp",
+      "network-s-d2-svi",
+      "network-s-d2-lacp"
+    ]
+  },
+  {
+    "id": "network-s-d2-jumbo",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "topics": [
+      "N10-009/2.2.4"
+    ],
+    "settings": [
+      "data-center"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "need": "cut the overhead of large transfers between the virtual hosts and the storage network",
+    "clues": [
+      "every switch and NIC in the storage path supports it",
+      "the traffic is mostly large block transfers",
+      "the standard 1500-byte frames create too many headers"
+    ],
+    "answer": {
+      "item": "Jumbo frames with an MTU of about 9000 bytes"
+    },
+    "itemType": "setting",
+    "appliesWhen": "large transfers on a path where every device supports bigger frames",
+    "explanation": "Jumbo frames carry more than 1500 bytes of payload, so fewer frames and headers are needed for the same data. Every device in the path must support them.",
+    "related": [
+      "network-s-d2-lacp",
+      "network-s-d2-fixed-speed-duplex",
+      "network-s-d2-voice-vlan",
+      "network-s-d2-rstp"
+    ]
+  },
+  {
+    "id": "network-s-d2-channel-overlap",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "the APs in two offices next door are set to 3 and 5 on the 2.4 GHz band",
+      "throughput drops when both offices are busy",
+      "a Wi-Fi analyzer shows the two signals on top of each other",
+      "signal strength is good"
+    ],
+    "answer": {
+      "cause": "the two APs use overlapping 2.4 GHz channels",
+      "action": "Move the APs to non-overlapping channels such as 1 and 6"
+    },
+    "appliesWhen": "nearby APs share overlapping parts of the 2.4 GHz band",
+    "explanation": "In the 2.4 GHz band, channels are 5 MHz apart and each signal is about 20 MHz wide, so only 1, 6, and 11 do not overlap. Two APs on nearby channels interfere with each other.",
+    "related": [
+      "network-s-d2-wide-channel-24",
+      "network-s-d2-dfs-radar",
+      "network-s-d2-stuck-on-24",
+      "network-s-d2-band-5-only"
+    ],
+    "firstStep": "Check the channels of nearby APs with a Wi-Fi analyzer"
+  },
+  {
+    "id": "network-s-d2-wide-channel-24",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.1"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "school"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "the 2.4 GHz radio was set to 40 MHz to get more speed",
+      "clients disconnect often since the change",
+      "several neighboring networks use the same band",
+      "the 5 GHz clients are not affected"
+    ],
+    "answer": {
+      "cause": "a bonded 40 MHz channel in the crowded 2.4 GHz band",
+      "action": "Set the 2.4 GHz radio back to a 20 MHz channel width"
+    },
+    "appliesWhen": "a wide bonded channel is used where the band is too crowded for it",
+    "explanation": "A 40 MHz channel uses most of the small 2.4 GHz band, so it overlaps every neighbor. A narrower 20 MHz channel on 1, 6, or 11 reduces the interference.",
+    "related": [
+      "network-s-d2-channel-overlap",
+      "network-s-d2-dfs-radar",
+      "network-s-d2-stuck-on-24",
+      "network-s-d2-polarization"
+    ]
+  },
+  {
+    "id": "network-s-d2-dfs-radar",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "the office is near an airport",
+      "5 GHz clients lose the network for about a minute a few times a day",
+      "the AP log shows it changed channels at those times",
+      "clients on 2.4 GHz are not affected"
+    ],
+    "answer": {
+      "cause": "802.11h radar detection moving the AP off its 5 GHz channel",
+      "action": "Set the AP to 5 GHz channels that do not require radar detection"
+    },
+    "appliesWhen": "an AP must leave a 5 GHz channel each time it detects radar",
+    "explanation": "802.11h requires DFS on many 5 GHz channels: when the AP detects radar, it must leave the channel. Each move disconnects the clients for a short time.",
+    "related": [
+      "network-s-d2-channel-overlap",
+      "network-s-d2-wide-channel-24",
+      "network-s-d2-stuck-on-24",
+      "network-s-d2-band-5-only"
+    ]
+  },
+  {
+    "id": "network-s-d2-band-5-only",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "warehouse"
+    ],
+    "devices": [
+      "access-point",
+      "iot-device"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "the new security cameras do not list the network name at all",
+      "laptops and phones connect without trouble",
+      "the cameras' datasheet lists 802.11b/g/n support only",
+      "the AP was recently set up to reduce interference"
+    ],
+    "answer": {
+      "cause": "the SSID is offered only on the 5 GHz band, which the cameras do not support",
+      "action": "Turn on the 2.4 GHz radio for the SSID"
+    },
+    "appliesWhen": "a device supports only one band and the AP does not offer that band",
+    "explanation": "Some devices, such as cameras and IoT sensors, work only in the 2.4 GHz band. If the AP broadcasts the network only at 5 GHz, those devices cannot see it.",
+    "related": [
+      "network-s-d2-stuck-on-24",
+      "network-s-d2-client-no-6ghz",
+      "network-s-d2-channel-overlap",
+      "network-s-d2-security-mismatch"
+    ],
+    "firstStep": "Check which bands the cameras support and which bands the AP broadcasts"
+  },
+  {
+    "id": "network-s-d2-stuck-on-24",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "enterprise"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "most dual-band laptops near the AP connect at low data rates",
+      "the 2.4 GHz radio shows 60 clients and the 5 GHz radio shows 5",
+      "the laptops join whichever band has the strongest signal",
+      "the APs are close to the users"
+    ],
+    "answer": {
+      "cause": "dual-band clients staying on the crowded 2.4 GHz band",
+      "action": "Enable band steering on the APs"
+    },
+    "appliesWhen": "dual-band clients pick the slower band because its signal is stronger",
+    "explanation": "A client picks the band with the strongest signal, which is often 2.4 GHz even when 5 GHz would be faster. Band steering directs capable clients to 5 GHz.",
+    "related": [
+      "network-s-d2-band-5-only",
+      "network-s-d2-channel-overlap",
+      "network-s-d2-wide-channel-24",
+      "network-s-d2-client-no-6ghz"
+    ]
+  },
+  {
+    "id": "network-s-d2-client-no-6ghz",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "access-point",
+      "wifi-client"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "new tri-band APs were installed",
+      "a new SSID was set up for the newest band only",
+      "the latest laptops see and join the new SSID",
+      "laptops bought three years ago do not list it"
+    ],
+    "answer": {
+      "cause": "the older laptops' Wi-Fi adapters do not support Wi-Fi 6E",
+      "action": "Offer the SSID on 5 GHz as well, or upgrade the older adapters"
+    },
+    "appliesWhen": "the clients' adapters do not support the band that the SSID uses",
+    "explanation": "Only Wi-Fi 6E adapters can use the 6 GHz band. An SSID offered only there is invisible to older laptops.",
+    "related": [
+      "network-s-d2-band-5-only",
+      "network-s-d2-stuck-on-24",
+      "network-s-d2-ssid-mismatch",
+      "network-s-d2-security-mismatch"
+    ]
+  },
+  {
+    "id": "network-s-d2-ssid-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.3"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [
+      "wifi-client"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "the laptop worked at the old office",
+      "the user moved to a new office last week",
+      "other laptops in the new office connect normally",
+      "the laptop keeps trying to join a saved network that is not there"
+    ],
+    "answer": {
+      "cause": "the laptop is still set to the network name of the old office",
+      "action": "Connect the laptop to the SSID of the new office"
+    },
+    "appliesWhen": "a client is configured for a network name that the local APs do not broadcast",
+    "explanation": "A client can talk only to APs with the same SSID. A laptop moved between sites keeps trying the old name until it is set to the local one.",
+    "related": [
+      "network-s-d2-security-mismatch",
+      "network-s-d2-client-no-6ghz",
+      "network-s-d2-roaming-config",
+      "network-s-d2-band-5-only"
+    ],
+    "firstStep": "Check which network name the laptop is trying to join"
+  },
+  {
+    "id": "network-s-d2-roaming-config",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.3",
+      "N10-009/2.3.9"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "school"
+    ],
+    "devices": [
+      "access-point",
+      "wifi-client"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "users lose the connection each time they walk to the other wing",
+      "they must pick a network again and enter a password",
+      "the APs in the new wing were set up by a contractor",
+      "the APs are managed one at a time"
+    ],
+    "answer": {
+      "cause": "the APs in the new wing use a different SSID or passphrase from the rest",
+      "action": "Configure every AP with the same SSID and security settings"
+    },
+    "appliesWhen": "the APs of one network do not share the same name and security settings",
+    "explanation": "Clients roam between APs only when every AP offers the same ESSID with the same security. A wing of APs with different settings looks like another network.",
+    "related": [
+      "network-s-d2-ssid-mismatch",
+      "network-s-d2-autonomous-drift",
+      "network-s-d2-security-mismatch",
+      "network-s-d2-controller-unreachable"
+    ]
+  },
+  {
+    "id": "network-s-d2-security-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.5"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "retail"
+    ],
+    "devices": [
+      "access-point",
+      "iot-device"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "the AP was upgraded to WPA3-only mode last night",
+      "an older label printer now fails to join",
+      "the printer sees the network name",
+      "new laptops connect normally"
+    ],
+    "answer": {
+      "cause": "the printer does not support the encryption that the AP now requires",
+      "action": "Use WPA2/WPA3 transition mode, or put the printer on a separate WPA2 SSID"
+    },
+    "appliesWhen": "a client cannot use the encryption protocol that the AP requires",
+    "explanation": "The client and the AP must use the same encryption. An older device that supports only WPA2 cannot join a network set to WPA3 only.",
+    "related": [
+      "network-s-d2-ssid-mismatch",
+      "network-s-d2-band-5-only",
+      "network-s-d2-radius-unreachable",
+      "network-s-d2-psk-shared"
+    ],
+    "firstStep": "Check which security protocols the printer supports"
+  },
+  {
+    "id": "network-s-d2-psk-shared",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.7"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "retail"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "unknown devices keep appearing on the wireless network",
+      "the same passphrase has been used for three years",
+      "several staff left the company this year",
+      "there is no way to tell which person a device belongs to"
+    ],
+    "answer": {
+      "cause": "one shared passphrase that former staff still know",
+      "action": "Move to WPA2- or WPA3-Enterprise with 802.1X and a login for each user"
+    },
+    "appliesWhen": "every user shares one key, so access cannot be removed for one person",
+    "explanation": "With a pre-shared key, everyone who ever had the key can still join, and no device can be traced to a user. Enterprise authentication checks each user against a server, so leavers can be blocked.",
+    "related": [
+      "network-s-d2-radius-unreachable",
+      "network-s-d2-guest-on-lan",
+      "network-s-d2-security-mismatch",
+      "network-s-d2-captive-portal-fails"
+    ]
+  },
+  {
+    "id": "network-s-d2-radius-unreachable",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.7"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "access-point",
+      "wireless-controller"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "no user can log on to the staff wireless network since this morning",
+      "the guest network still works",
+      "the authentication server was moved to a new IP address last night",
+      "the AP log shows timeouts for each logon"
+    ],
+    "answer": {
+      "cause": "the APs cannot reach the RADIUS server at its new address",
+      "action": "Update the RADIUS server address and shared secret on the controller or APs"
+    },
+    "appliesWhen": "the authentication server for 802.1X logons cannot be reached",
+    "explanation": "WPA2- and WPA3-Enterprise pass each logon to a central authentication server. If the APs still point to the old address, every logon times out while PSK networks keep working.",
+    "related": [
+      "network-s-d2-psk-shared",
+      "network-s-d2-security-mismatch",
+      "network-s-d2-controller-unreachable",
+      "network-s-d2-captive-portal-fails"
+    ],
+    "firstStep": "Check the RADIUS server address configured on the APs"
+  },
+  {
+    "id": "network-s-d2-guest-on-lan",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.6"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "retail"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "a visitor on the guest network could browse the internal file shares",
+      "guest devices get addresses from the staff subnet",
+      "the guest network name was added to the AP last week",
+      "staff and guests share the same switch uplink"
+    ],
+    "answer": {
+      "cause": "the guest SSID is mapped to the internal staff VLAN",
+      "action": "Map the guest SSID to an isolated VLAN that allows internet access only"
+    },
+    "appliesWhen": "guest wireless traffic lands on the internal network",
+    "explanation": "A guest network must be kept apart from the main network so visitors get only internet access. Guests with staff addresses show that the guest SSID is bridged into the internal VLAN.",
+    "related": [
+      "network-s-d2-captive-portal-fails",
+      "network-s-d2-psk-shared",
+      "network-s-d2-radius-unreachable",
+      "network-s-d2-ssid-mismatch"
+    ]
+  },
+  {
+    "id": "network-s-d2-captive-portal-fails",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.6"
+    ],
+    "settings": [
+      "retail",
+      "clinic",
+      "office"
+    ],
+    "devices": [
+      "wifi-client"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "guests connect to the guest network and get an IP address",
+      "the terms page never appears in the browser",
+      "the guests' browsers open an HTTPS home page first",
+      "browsing to a plain HTTP site makes the page appear"
+    ],
+    "answer": {
+      "cause": "the browser's HTTPS request cannot be redirected to the captive portal page",
+      "action": "Open a non-secure HTTP page to trigger the portal, and check that DNS and the firewall allow the portal"
+    },
+    "appliesWhen": "the splash page that guests must accept does not load in the browser",
+    "explanation": "A captive portal works by redirecting the first web request. A secure HTTPS page often refuses the redirect, so the portal never loads until the guest opens a plain HTTP page.",
+    "related": [
+      "network-s-d2-guest-on-lan",
+      "network-s-d2-psk-shared",
+      "network-s-d2-radius-unreachable",
+      "network-s-d2-ssid-mismatch"
+    ],
+    "firstStep": "Browse to a non-secure HTTP site from the guest device"
+  },
+  {
+    "id": "network-s-d2-omni-on-ptp",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.8",
+      "N10-009/2.3.4"
+    ],
+    "settings": [
+      "campus",
+      "warehouse"
+    ],
+    "devices": [
+      "building-link"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "the link between the two buildings is weak and drops often",
+      "the antennas on both roofs are vertical poles",
+      "people in nearby buildings can see the network",
+      "the buildings have clear line of sight"
+    ],
+    "answer": {
+      "cause": "omnidirectional antennas on a building-to-building link",
+      "action": "Replace them with directional antennas aimed at each other"
+    },
+    "appliesWhen": "a long link between two fixed points spreads its signal in every direction",
+    "explanation": "An omnidirectional antenna spreads its power in all directions, so little of it reaches a distant fixed point. A directional antenna focuses the signal for a stronger, longer link.",
+    "related": [
+      "network-s-d2-directional-indoor",
+      "network-s-d2-polarization",
+      "network-s-d2-mesh-node-far",
+      "network-s-d2-channel-overlap"
+    ]
+  },
+  {
+    "id": "network-s-d2-directional-indoor",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.8"
+    ],
+    "settings": [
+      "warehouse",
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "the signal is strong in front of the AP",
+      "it is weak beside and behind the AP",
+      "the AP is in the middle of the open floor",
+      "the installer used an antenna kit from a previous project"
+    ],
+    "answer": {
+      "cause": "a directional antenna on an AP that must cover all around it",
+      "action": "Use an omnidirectional antenna on the central AP"
+    },
+    "appliesWhen": "an AP in the middle of an area focuses its signal in one direction",
+    "explanation": "A directional antenna focuses its power one way, so the areas to the sides and back get little signal. An omnidirectional antenna covers 360 degrees from the center.",
+    "related": [
+      "network-s-d2-omni-on-ptp",
+      "network-s-d2-polarization",
+      "network-s-d2-mesh-node-far",
+      "network-s-d2-wide-channel-24"
+    ]
+  },
+  {
+    "id": "network-s-d2-polarization",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.8"
+    ],
+    "settings": [
+      "campus",
+      "warehouse"
+    ],
+    "devices": [
+      "building-link"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "clues": [
+      "the link was rebuilt after a storm",
+      "both antennas are aimed at each other",
+      "one antenna is now mounted on its side",
+      "the received signal is much weaker than before"
+    ],
+    "answer": {
+      "cause": "the two antennas have different polarization",
+      "action": "Mount both antennas with the same polarization"
+    },
+    "appliesWhen": "the sending and receiving antennas radiate along different axes",
+    "explanation": "Polarization is the axis along which an antenna radiates, vertical or horizontal. Both ends of a link must use the same polarization, or much of the signal is lost.",
+    "related": [
+      "network-s-d2-omni-on-ptp",
+      "network-s-d2-directional-indoor",
+      "network-s-d2-mesh-node-far",
+      "network-s-d2-dfs-radar"
+    ]
+  },
+  {
+    "id": "network-s-d2-mesh-node-far",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.4"
+    ],
+    "settings": [
+      "home-office",
+      "warehouse",
+      "school"
+    ],
+    "devices": [
+      "mesh-node"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "devices near the unit in the garage are very slow",
+      "the unit's app shows a weak link to the next unit",
+      "there is no Ethernet cable to the garage",
+      "the other units in the house work well"
+    ],
+    "answer": {
+      "cause": "the mesh unit in the garage is too far from the other units",
+      "action": "Move the mesh unit closer to the next unit or add a unit between them"
+    },
+    "appliesWhen": "a mesh relay has a weak wireless link to its neighbors",
+    "explanation": "In a mesh network, each unit relays data over a wireless link to its neighbors. A unit placed too far away has a weak link, so every device behind it is slow.",
+    "related": [
+      "network-s-d2-omni-on-ptp",
+      "network-s-d2-directional-indoor",
+      "network-s-d2-polarization",
+      "network-s-d2-controller-unreachable"
+    ]
+  },
+  {
+    "id": "network-s-d2-autonomous-drift",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.9"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "school"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "the 40 APs are each configured through their own web page",
+      "some APs still use last year's passphrase",
+      "channel and power settings differ from AP to AP",
+      "updates take two days to apply"
+    ],
+    "answer": {
+      "cause": "standalone APs set up one at a time with different settings",
+      "action": "Move to lightweight APs managed from a wireless LAN controller"
+    },
+    "appliesWhen": "many APs are each managed on their own without central control",
+    "explanation": "Autonomous APs are configured one by one, so in a large network their settings drift apart. Lightweight APs take their settings from one controller.",
+    "related": [
+      "network-s-d2-controller-unreachable",
+      "network-s-d2-roaming-config",
+      "network-s-d2-psk-shared",
+      "network-s-d2-mesh-node-far"
+    ]
+  },
+  {
+    "id": "network-s-d2-controller-unreachable",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.9"
+    ],
+    "settings": [
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "access-point",
+      "wireless-controller"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "clues": [
+      "after a firewall change, the branch APs stopped broadcasting",
+      "the APs power on and get IP addresses",
+      "the APs' status lights show they are searching",
+      "the APs are managed from the head office"
+    ],
+    "answer": {
+      "cause": "the lightweight APs cannot reach their wireless LAN controller",
+      "action": "Allow the traffic between the APs and the controller through the firewall"
+    },
+    "appliesWhen": "managed APs lose the path to the device that holds their settings",
+    "explanation": "Lightweight APs take their configuration from a wireless LAN controller. If a firewall blocks the controller, the APs boot but never get the settings to broadcast.",
+    "related": [
+      "network-s-d2-autonomous-drift",
+      "network-s-d2-radius-unreachable",
+      "network-s-d2-roaming-config",
+      "network-s-d2-mesh-node-far"
+    ],
+    "firstStep": "Check that the APs can reach the controller's address"
+  },
+  {
+    "id": "network-s-d2-nonoverlap-plan",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.1"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "retail"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "choose channels for three APs in the 2.4 GHz band",
+    "clues": [
+      "the APs' coverage areas overlap",
+      "the APs must not interfere with each other",
+      "each AP uses a 20 MHz channel"
+    ],
+    "answer": {
+      "item": "Channels 1, 6, and 11"
+    },
+    "itemType": "channel plan",
+    "appliesWhen": "nearby 2.4 GHz APs must not overlap",
+    "explanation": "In the 2.4 GHz band, only channels 1, 6, and 11 do not overlap. Giving each AP one of them avoids interference.",
+    "related": [
+      "network-s-d2-wide-channel",
+      "network-s-d2-ieee-80211h",
+      "network-s-d2-band-steering",
+      "network-s-d2-band-24"
+    ]
+  },
+  {
+    "id": "network-s-d2-wide-channel",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "get the highest throughput for a few video editing stations",
+    "clues": [
+      "the stations are close to the AP",
+      "the 5 GHz band in the building is almost empty",
+      "the AP and stations support Wi-Fi 6"
+    ],
+    "answer": {
+      "item": "An 80 MHz or 160 MHz channel width on 5 GHz"
+    },
+    "itemType": "setting",
+    "appliesWhen": "a quiet band has room for bonded channels",
+    "explanation": "Channel bonding joins channels into a wider one, which carries more data. In a quiet 5 GHz band there is room for 80 or 160 MHz channels without much interference.",
+    "related": [
+      "network-s-d2-nonoverlap-plan",
+      "network-s-d2-band-6",
+      "network-s-d2-band-steering",
+      "network-s-d2-ieee-80211h"
+    ]
+  },
+  {
+    "id": "network-s-d2-ieee-80211h",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "use the 5 GHz band in a country whose regulator protects radar systems",
+    "clues": [
+      "the APs must avoid channels used by radar",
+      "they must lower transmit power where required",
+      "the network must operate legally"
+    ],
+    "answer": {
+      "item": "802.11h with DFS and TPC"
+    },
+    "itemType": "standard",
+    "appliesWhen": "regulators require radar avoidance and power control on 5 GHz",
+    "explanation": "802.11h adds Dynamic Frequency Selection, which moves off channels where radar is found, and Transmit Power Control. It meets regulatory rules for the 5 GHz band.",
+    "related": [
+      "network-s-d2-nonoverlap-plan",
+      "network-s-d2-wide-channel",
+      "network-s-d2-band-5",
+      "network-s-d2-band-6"
+    ]
+  },
+  {
+    "id": "network-s-d2-band-24",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "warehouse"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "need": "cover a large warehouse with tall metal shelves for older handheld scanners",
+    "clues": [
+      "the scanners support only 802.11b/g/n",
+      "range matters more than speed",
+      "the signal must pass through many obstacles"
+    ],
+    "answer": {
+      "item": "The 2.4 GHz band"
+    },
+    "itemType": "frequency band",
+    "appliesWhen": "range and support for older clients matter more than throughput",
+    "explanation": "The longer waves of 2.4 GHz travel farther and pass obstacles better than 5 or 6 GHz. Older 802.11b/g devices work only there.",
+    "related": [
+      "network-s-d2-band-5",
+      "network-s-d2-band-6",
+      "network-s-d2-band-steering",
+      "network-s-d2-nonoverlap-plan"
+    ]
+  },
+  {
+    "id": "network-s-d2-band-5",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "give a crowded open-plan office faster Wi-Fi with less interference",
+    "clues": [
+      "neighboring offices fill the lower band",
+      "most laptops are from the last six years",
+      "the APs are mounted close to the users"
+    ],
+    "answer": {
+      "item": "The 5 GHz band"
+    },
+    "itemType": "frequency band",
+    "appliesWhen": "clients need more speed and channels than 2.4 GHz gives and support the band",
+    "explanation": "5 GHz offers many more non-overlapping channels and higher speeds than 2.4 GHz, with less interference. Its shorter range suits APs placed close to users.",
+    "related": [
+      "network-s-d2-band-24",
+      "network-s-d2-band-6",
+      "network-s-d2-band-steering",
+      "network-s-d2-wide-channel"
+    ]
+  },
+  {
+    "id": "network-s-d2-band-6",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "give new Wi-Fi 6E laptops uncongested spectrum with many wide channels",
+    "clues": [
+      "both lower bands are crowded",
+      "all the target laptops are new",
+      "the APs are tri-band"
+    ],
+    "answer": {
+      "item": "The 6 GHz band"
+    },
+    "itemType": "frequency band",
+    "appliesWhen": "every client supports the newest, least crowded band",
+    "explanation": "Wi-Fi 6E adds the 6 GHz band, which gives more channels and bandwidth and less interference. Only 6E clients can use it.",
+    "related": [
+      "network-s-d2-band-5",
+      "network-s-d2-band-24",
+      "network-s-d2-band-steering",
+      "network-s-d2-wide-channel"
+    ]
+  },
+  {
+    "id": "network-s-d2-band-steering",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.2"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "enterprise"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "need": "move dual-band clients off the busy lower band automatically",
+    "clues": [
+      "the same network name is on both bands",
+      "clients join the band with the strongest signal",
+      "most clients can use both bands"
+    ],
+    "answer": {
+      "item": "Band steering"
+    },
+    "itemType": "feature",
+    "appliesWhen": "dual-band clients must be directed to the better band",
+    "explanation": "Band steering makes the AP answer capable clients on 5 GHz, so they do not stay on 2.4 GHz only because its signal is stronger.",
+    "related": [
+      "network-s-d2-band-5",
+      "network-s-d2-nonoverlap-plan",
+      "network-s-d2-wide-channel",
+      "network-s-d2-band-24"
+    ]
+  },
+  {
+    "id": "network-s-d2-essid",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "school"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "let users walk through the whole building without joining a new network",
+    "clues": [
+      "the building has 25 APs",
+      "users must see one network name",
+      "the APs connect to the same subnet"
+    ],
+    "answer": {
+      "item": "One ESSID shared by all the APs"
+    },
+    "itemType": "configuration",
+    "appliesWhen": "many APs must appear as one wireless network",
+    "explanation": "An ESSID is the network name shared by all APs in an extended service set. Clients roam between APs with the same name and security.",
+    "related": [
+      "network-s-d2-bssid",
+      "network-s-d2-infrastructure",
+      "network-s-d2-mesh",
+      "network-s-d2-lightweight"
+    ]
+  },
+  {
+    "id": "network-s-d2-bssid",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "find out which AP a problem laptop is connected to in a survey log",
+    "clues": [
+      "all the APs use the same network name",
+      "the log lists each radio's hardware address",
+      "the result must point to one AP"
+    ],
+    "answer": {
+      "item": "The BSSID"
+    },
+    "itemType": "identifier",
+    "appliesWhen": "one AP radio must be told apart from others with the same network name",
+    "explanation": "The BSSID is the MAC address of an AP radio, so it is unique for each AP. The ESSID is shared and cannot show which AP the client uses.",
+    "related": [
+      "network-s-d2-essid",
+      "network-s-d2-infrastructure",
+      "network-s-d2-adhoc",
+      "network-s-d2-mesh"
+    ]
+  },
+  {
+    "id": "network-s-d2-mesh",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.4"
+    ],
+    "settings": [
+      "home-office",
+      "warehouse",
+      "school"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "cover a large site where cables cannot be run to each AP",
+    "clues": [
+      "the network must keep working if one unit fails",
+      "units must relay traffic for each other",
+      "only one unit has a wired connection"
+    ],
+    "answer": {
+      "item": "A mesh network"
+    },
+    "itemType": "network type",
+    "appliesWhen": "wireless units must relay data for each other and heal around failures",
+    "explanation": "In a mesh network, each node relays data to the others and traffic reroutes when a node fails. Only one node needs a wired link.",
+    "related": [
+      "network-s-d2-ptp",
+      "network-s-d2-infrastructure",
+      "network-s-d2-adhoc",
+      "network-s-d2-essid"
+    ]
+  },
+  {
+    "id": "network-s-d2-adhoc",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.4"
+    ],
+    "settings": [
+      "home-office",
+      "warehouse"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "share files between two laptops at a field site that has no access point",
+    "clues": [
+      "no network equipment is on site",
+      "the setup is temporary",
+      "the laptops are in the same room"
+    ],
+    "answer": {
+      "item": "An ad hoc (IBSS) network"
+    },
+    "itemType": "network type",
+    "appliesWhen": "devices must connect directly with no AP",
+    "explanation": "An ad hoc network lets devices connect directly to each other with no central AP. It suits short, temporary setups.",
+    "related": [
+      "network-s-d2-infrastructure",
+      "network-s-d2-mesh",
+      "network-s-d2-ptp",
+      "network-s-d2-bssid"
+    ]
+  },
+  {
+    "id": "network-s-d2-ptp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.4",
+      "N10-009/2.3.8"
+    ],
+    "settings": [
+      "campus",
+      "warehouse"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "link the main building to a warehouse 500 meters away without digging a trench",
+    "clues": [
+      "the roofs have clear line of sight",
+      "only the two sites need to be connected",
+      "the link must carry the warehouse's whole LAN traffic"
+    ],
+    "answer": {
+      "item": "A point-to-point wireless link with directional antennas"
+    },
+    "itemType": "network type",
+    "appliesWhen": "two fixed sites need one dedicated wireless link",
+    "explanation": "A point-to-point link joins exactly two endpoints, often between buildings. Directional antennas focus the signal for the distance.",
+    "related": [
+      "network-s-d2-mesh",
+      "network-s-d2-infrastructure",
+      "network-s-d2-adhoc",
+      "network-s-d2-omni"
+    ]
+  },
+  {
+    "id": "network-s-d2-infrastructure",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "connect the office laptops to the wired LAN and the internet",
+    "clues": [
+      "the laptops must reach the file servers",
+      "access must be managed centrally",
+      "ceiling-mounted APs are wired to the switches"
+    ],
+    "answer": {
+      "item": "An infrastructure network"
+    },
+    "itemType": "network type",
+    "appliesWhen": "clients reach the wired network through central APs",
+    "explanation": "In an infrastructure network, clients connect through APs that bridge them to the wired LAN. It is the usual type for offices.",
+    "related": [
+      "network-s-d2-adhoc",
+      "network-s-d2-mesh",
+      "network-s-d2-ptp",
+      "network-s-d2-essid"
+    ]
+  },
+  {
+    "id": "network-s-d2-wpa3-personal",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.5",
+      "N10-009/2.3.7"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "secure a small office network with one passphrase that resists offline guessing",
+    "clues": [
+      "there is no authentication server",
+      "all the devices are new",
+      "the staff choose simple passwords"
+    ],
+    "answer": {
+      "item": "WPA3-Personal with SAE"
+    },
+    "itemType": "security mode",
+    "appliesWhen": "a passphrase network must resist offline dictionary attacks",
+    "explanation": "WPA3-Personal replaces the PSK exchange with Simultaneous Authentication of Equals. SAE resists offline dictionary attacks and gives forward secrecy even with simple passwords.",
+    "related": [
+      "network-s-d2-wpa2-aes",
+      "network-s-d2-enterprise",
+      "network-s-d2-guest",
+      "network-s-d2-captive-portal"
+    ]
+  },
+  {
+    "id": "network-s-d2-wpa2-aes",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.5"
+    ],
+    "settings": [
+      "warehouse",
+      "clinic",
+      "retail"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "secure a network whose devices support WPA2 but not WPA3",
+    "clues": [
+      "the handheld devices cannot be upgraded",
+      "the policy bans WEP and TKIP",
+      "the strongest option the devices offer must be used"
+    ],
+    "answer": {
+      "item": "WPA2 with AES (CCMP)"
+    },
+    "itemType": "security mode",
+    "appliesWhen": "the clients support WPA2 at most",
+    "explanation": "WPA2 requires CCMP, which uses 128-bit AES. It is the strongest choice when devices cannot use WPA3.",
+    "related": [
+      "network-s-d2-wpa3-personal",
+      "network-s-d2-enterprise",
+      "network-s-d2-guest",
+      "network-s-d2-captive-portal"
+    ]
+  },
+  {
+    "id": "network-s-d2-enterprise",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.7"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "clinic"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "give each employee their own wireless login and block it when they leave",
+    "clues": [
+      "the company has a directory of user accounts",
+      "a RADIUS server is available",
+      "a shared passphrase is not allowed"
+    ],
+    "answer": {
+      "item": "WPA2/WPA3-Enterprise with 802.1X"
+    },
+    "itemType": "authentication method",
+    "appliesWhen": "each user must log on with their own credentials checked by a server",
+    "explanation": "Enterprise mode sends each logon to an authentication server through 802.1X. Each user has their own credentials, so one account can be disabled without changing anyone else's.",
+    "related": [
+      "network-s-d2-wpa3-personal",
+      "network-s-d2-wpa2-aes",
+      "network-s-d2-guest",
+      "network-s-d2-captive-portal"
+    ]
+  },
+  {
+    "id": "network-s-d2-guest",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.6"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "retail"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "give visitors internet access without letting them reach internal servers",
+    "clues": [
+      "visitors bring their own devices",
+      "staff data must stay protected",
+      "visitor traffic should be limited in bandwidth"
+    ],
+    "answer": {
+      "item": "A separate guest SSID on an isolated network"
+    },
+    "itemType": "configuration",
+    "appliesWhen": "visitors need internet access but no access to the main network",
+    "explanation": "A guest network is a separate SSID that gives internet access while keeping visitors apart from the main network. Bandwidth limits can protect staff traffic.",
+    "related": [
+      "network-s-d2-captive-portal",
+      "network-s-d2-enterprise",
+      "network-s-d2-wpa3-personal",
+      "network-s-d2-wpa2-aes"
+    ]
+  },
+  {
+    "id": "network-s-d2-captive-portal",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.6"
+    ],
+    "settings": [
+      "retail",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "need": "make hotel-style guests accept the acceptable use policy before they browse",
+    "clues": [
+      "guests use the visitor network",
+      "each guest must see the terms first",
+      "no user accounts are created for guests"
+    ],
+    "answer": {
+      "item": "A captive portal"
+    },
+    "itemType": "feature",
+    "appliesWhen": "guests must see and accept a web page before they get access",
+    "explanation": "A captive portal redirects a new guest's browser to a page with the terms or a login. Access opens only after the guest accepts.",
+    "related": [
+      "network-s-d2-guest",
+      "network-s-d2-enterprise",
+      "network-s-d2-wpa3-personal",
+      "network-s-d2-wpa2-aes"
+    ]
+  },
+  {
+    "id": "network-s-d2-omni",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.8"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "warehouse"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "cover an open-plan floor evenly from one AP in the center",
+    "clues": [
+      "users sit all around the AP",
+      "the floor has few walls",
+      "no area needs extra range"
+    ],
+    "answer": {
+      "item": "An omnidirectional antenna"
+    },
+    "itemType": "antenna type",
+    "appliesWhen": "the signal must reach all directions around the AP",
+    "explanation": "An omnidirectional antenna sends the signal 360 degrees around it. It suits an AP in the middle of an open area.",
+    "related": [
+      "network-s-d2-directional",
+      "network-s-d2-ptp",
+      "network-s-d2-mesh",
+      "network-s-d2-lightweight"
+    ]
+  },
+  {
+    "id": "network-s-d2-directional",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.8"
+    ],
+    "settings": [
+      "warehouse",
+      "school"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "send a strong signal down a long, narrow corridor from an AP at one end",
+    "clues": [
+      "the coverage area is in one direction only",
+      "the signal must reach far",
+      "nearby rooms should not get the signal"
+    ],
+    "answer": {
+      "item": "A directional antenna"
+    },
+    "itemType": "antenna type",
+    "appliesWhen": "the signal must be focused in one direction for distance",
+    "explanation": "A directional antenna focuses power in one direction, which gives a stronger signal over a longer distance. It does not waste signal where it is not needed.",
+    "related": [
+      "network-s-d2-omni",
+      "network-s-d2-mesh",
+      "network-s-d2-ptp",
+      "network-s-d2-autonomous"
+    ]
+  },
+  {
+    "id": "network-s-d2-lightweight",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.9"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "manage 200 APs across a campus from one place with smooth roaming",
+    "clues": [
+      "firmware and settings must be pushed to all APs at once",
+      "radio settings should be tuned centrally",
+      "the network will keep growing"
+    ],
+    "answer": {
+      "item": "Lightweight APs with a wireless LAN controller"
+    },
+    "itemType": "AP type",
+    "appliesWhen": "a large network needs central management of its APs",
+    "explanation": "Lightweight APs hand configuration, firmware, RF tuning, and roaming to a wireless LAN controller. One controller manages every AP, so it scales well.",
+    "related": [
+      "network-s-d2-autonomous",
+      "network-s-d2-mesh",
+      "network-s-d2-essid",
+      "network-s-d2-omni"
+    ]
+  },
+  {
+    "id": "network-s-d2-autonomous",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "2",
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "topics": [
+      "N10-009/2.3.9"
+    ],
+    "settings": [
+      "retail",
+      "home-office",
+      "branch-office"
+    ],
+    "devices": [],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions",
+    "need": "add one AP to a small shop that has no other network equipment to manage it",
+    "clues": [
+      "there is no controller",
+      "the AP will be configured through its own web page",
+      "only one AP is needed"
+    ],
+    "answer": {
+      "item": "An autonomous AP"
+    },
+    "itemType": "AP type",
+    "appliesWhen": "a small site has one standalone AP with no controller",
+    "explanation": "An autonomous AP works on its own and is configured directly. It suits small sites where a controller is not needed.",
+    "related": [
+      "network-s-d2-lightweight",
+      "network-s-d2-mesh",
+      "network-s-d2-omni",
+      "network-s-d2-directional"
+    ]
+  }
+]

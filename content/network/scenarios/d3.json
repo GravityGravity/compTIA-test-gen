@@ -1,0 +1,2646 @@
+[
+  {
+    "id": "network-s-d3-snmp-traps",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "get an alert from each switch the moment one of its interfaces goes down",
+    "clues": [
+      "the monitoring server should not have to poll every device every minute",
+      "the switch itself must send the message when the event happens",
+      "the alert must reach the network management system over UDP"
+    ],
+    "answer": {
+      "item": "SNMP traps"
+    },
+    "itemType": "feature",
+    "appliesWhen": "a device must push an event notice to the NMS without being polled",
+    "explanation": "Traps are messages that an SNMP agent sends on its own when a set event happens, so the NMS learns of the failure at once instead of at its next poll.",
+    "related": [
+      "network-s-d3-snmpv3",
+      "network-s-d3-syslog-collector",
+      "network-s-d3-baseline-alerting",
+      "network-s-d3-availability-monitoring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-snmpv3",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "monitor the core routers without sending the management credentials in plain text",
+    "clues": [
+      "the old setup uses plaintext community strings",
+      "the auditors require authentication with a username",
+      "the polled data must be encrypted on the wire"
+    ],
+    "answer": {
+      "item": "SNMPv3 with authentication and privacy"
+    },
+    "itemType": "protocol version",
+    "appliesWhen": "the monitoring traffic needs user authentication and encryption",
+    "explanation": "SNMPv3 adds user-based authentication, message integrity, and encryption, which v2c with its plaintext community strings does not have.",
+    "related": [
+      "network-s-d3-snmp-traps",
+      "network-s-d3-mib",
+      "network-s-d3-packet-capture",
+      "network-s-d3-api-integration"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-mib",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "read the values of a new vendor-specific temperature sensor from the NMS",
+    "clues": [
+      "the NMS already polls the device's standard interface counters",
+      "the sensor values appear only as long numeric object IDs",
+      "the vendor publishes a file that names each object"
+    ],
+    "answer": {
+      "item": "The vendor's management information base (MIB) loaded into the NMS"
+    },
+    "itemType": "file",
+    "appliesWhen": "the NMS must learn the names and meaning of a device's managed objects",
+    "explanation": "The MIB defines the objects a device exposes and maps each OID to a name, so loading the vendor's MIB lets the NMS read and label the new sensor.",
+    "related": [
+      "network-s-d3-snmpv3",
+      "network-s-d3-snmp-traps",
+      "network-s-d3-flow-data",
+      "network-s-d3-api-integration"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-flow-data",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "see which hosts and applications use the most bandwidth on the WAN link",
+    "clues": [
+      "storing the full content of every packet is not possible",
+      "the router can export a summary record for each conversation",
+      "the report must show source, destination, ports, and byte counts"
+    ],
+    "answer": {
+      "item": "Flow data such as NetFlow or IPFIX"
+    },
+    "itemType": "method",
+    "appliesWhen": "the need is a summary of who talks to whom and how much, not packet contents",
+    "explanation": "Flow records summarize each conversation by addresses, ports, and volume, which shows the top talkers without capturing full packets.",
+    "related": [
+      "network-s-d3-packet-capture",
+      "network-s-d3-port-mirroring",
+      "network-s-d3-baseline-alerting",
+      "network-s-d3-performance-monitoring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-packet-capture",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "examine every field of the frames in a failing application handshake",
+    "clues": [
+      "summary counters show that the traffic reaches the server",
+      "the developers need to see the payload and the header flags",
+      "the problem happens every time the client connects"
+    ],
+    "answer": {
+      "item": "A packet capture with a protocol analyzer"
+    },
+    "itemType": "tool",
+    "appliesWhen": "the full headers and payload of individual packets must be inspected",
+    "explanation": "A packet capture records whole frames so a protocol analyzer such as Wireshark can decode every header and the payload of the handshake.",
+    "related": [
+      "network-s-d3-flow-data",
+      "network-s-d3-syslog-collector",
+      "network-s-d3-snmpv3",
+      "network-s-d3-traffic-analysis"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-baseline-alerting",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "be notified when traffic on the internet link moves far outside its normal level",
+    "clues": [
+      "usage has been recorded for a month of normal business days",
+      "a fixed threshold gives too many false alarms at month end",
+      "the team wants a message only for unusual behavior"
+    ],
+    "answer": {
+      "item": "Baseline metrics with anomaly alerting"
+    },
+    "itemType": "method",
+    "appliesWhen": "alerts must fire when current values differ from what is normal for the network",
+    "explanation": "A baseline records what normal looks like, and anomaly alerting compares current metrics against it, so only real departures from normal raise a notice.",
+    "related": [
+      "network-s-d3-snmp-traps",
+      "network-s-d3-flow-data",
+      "network-s-d3-siem",
+      "network-s-d3-configuration-monitoring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-syslog-collector",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "keep the log messages from every router and switch in one place",
+    "clues": [
+      "each device keeps only a small log buffer that is lost on reboot",
+      "the messages must keep their severity levels",
+      "the devices can send their messages over UDP port 514"
+    ],
+    "answer": {
+      "item": "A central syslog collector"
+    },
+    "itemType": "solution",
+    "appliesWhen": "device log messages only need to be gathered and stored on one server",
+    "explanation": "A syslog collector receives and stores log messages from many devices, so the logs survive reboots and can be searched in one place.",
+    "related": [
+      "network-s-d3-siem",
+      "network-s-d3-snmp-traps",
+      "network-s-d3-packet-capture",
+      "network-s-d3-api-integration"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-siem",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "correlate events from the firewalls, servers, and switches to detect attacks in real time",
+    "clues": [
+      "logs from many kinds of systems must be analyzed together",
+      "the security team wants a dashboard with drill-down views",
+      "a single failed login is normal but a pattern across devices is not"
+    ],
+    "answer": {
+      "item": "A security information and event management (SIEM) system"
+    },
+    "itemType": "solution",
+    "appliesWhen": "security events from many sources must be correlated and analyzed, not only stored",
+    "explanation": "A SIEM aggregates logs from many sources and correlates them to find threat patterns that no single log shows, with real-time alerts and dashboards.",
+    "related": [
+      "network-s-d3-syslog-collector",
+      "network-s-d3-baseline-alerting",
+      "network-s-d3-api-integration",
+      "network-s-d3-configuration-monitoring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-api-integration",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "open a help desk ticket automatically whenever the monitoring platform raises an alert",
+    "clues": [
+      "the ticketing system accepts requests from other software",
+      "staff now copy each alert into a ticket by hand",
+      "the ticket must include the device name and the alert text"
+    ],
+    "answer": {
+      "item": "API integration between the monitoring platform and the ticketing system"
+    },
+    "itemType": "method",
+    "appliesWhen": "the monitoring tool must exchange data with another system or start an automated workflow",
+    "explanation": "API integration lets the monitoring platform call the ticketing system directly, so each alert creates a ticket with no manual steps.",
+    "related": [
+      "network-s-d3-siem",
+      "network-s-d3-syslog-collector",
+      "network-s-d3-snmp-traps",
+      "network-s-d3-scheduled-discovery"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-port-mirroring",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "send a copy of all traffic on the database server's switch port to an IDS sensor",
+    "clues": [
+      "the sensor must not sit inline with the server's traffic",
+      "the switch normally sends frames only to the port of the destination",
+      "the sensor is cabled to a spare port on the same switch"
+    ],
+    "answer": {
+      "item": "Port mirroring (SPAN) on the switch"
+    },
+    "itemType": "feature",
+    "appliesWhen": "traffic from one switch port must be copied to another port for analysis",
+    "explanation": "Port mirroring copies the frames of a source port to a monitor port, so a sensor sees the traffic without affecting the server's connection.",
+    "related": [
+      "network-s-d3-flow-data",
+      "network-s-d3-packet-capture",
+      "network-s-d3-traffic-analysis",
+      "network-s-d3-adhoc-discovery"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-adhoc-discovery",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "find out right now which devices are on a segment that a contractor just connected",
+    "clues": [
+      "the network inventory has no entries for that segment",
+      "the answer is needed today for a troubleshooting call",
+      "a ping sweep and port scan of the subnet are allowed"
+    ],
+    "answer": {
+      "item": "An ad hoc network discovery scan"
+    },
+    "itemType": "method",
+    "appliesWhen": "a one-time discovery is needed for a specific segment or problem",
+    "explanation": "Ad hoc discovery is a targeted scan run when needed, which finds the devices on that segment at once.",
+    "related": [
+      "network-s-d3-scheduled-discovery",
+      "network-s-d3-configuration-monitoring",
+      "network-s-d3-availability-monitoring",
+      "network-s-d3-port-mirroring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-scheduled-discovery",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "keep the device inventory and the topology map current without manual work",
+    "clues": [
+      "devices are added and removed every week",
+      "the map was last updated by hand six months ago",
+      "the scan should repeat automatically at night"
+    ],
+    "answer": {
+      "item": "Scheduled network discovery"
+    },
+    "itemType": "method",
+    "appliesWhen": "the inventory must be refreshed automatically on a recurring basis",
+    "explanation": "Scheduled discovery rescans the network at set times, so new and removed devices show up in the inventory without anyone starting a scan.",
+    "related": [
+      "network-s-d3-adhoc-discovery",
+      "network-s-d3-configuration-monitoring",
+      "network-s-d3-availability-monitoring",
+      "network-s-d3-api-integration"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-traffic-analysis",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "find the congestion points and unusual traffic patterns across the network",
+    "clues": [
+      "users report slow transfers only at certain hours",
+      "the team needs to see how data moves between sites over time",
+      "the cause may be one link or one group of hosts"
+    ],
+    "answer": {
+      "item": "Traffic analysis"
+    },
+    "itemType": "solution",
+    "appliesWhen": "the patterns and behavior of the traffic itself must be studied to find bottlenecks",
+    "explanation": "Traffic analysis examines how traffic moves through the network and when, which shows where congestion and odd patterns occur.",
+    "related": [
+      "network-s-d3-performance-monitoring",
+      "network-s-d3-availability-monitoring",
+      "network-s-d3-packet-capture",
+      "network-s-d3-port-mirroring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-performance-monitoring",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "track latency, jitter, and packet loss on the voice links over time",
+    "clues": [
+      "calls sound choppy on some afternoons",
+      "the links never go fully down",
+      "the team needs graphs of how well the links carry traffic"
+    ],
+    "answer": {
+      "item": "Performance monitoring"
+    },
+    "itemType": "solution",
+    "appliesWhen": "metrics such as latency, jitter, throughput, and loss must be tracked over time",
+    "explanation": "Performance monitoring tracks quality metrics such as latency, jitter, and loss, which show when a link that is still up is carrying traffic badly.",
+    "related": [
+      "network-s-d3-availability-monitoring",
+      "network-s-d3-traffic-analysis",
+      "network-s-d3-configuration-monitoring",
+      "network-s-d3-flow-data"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-availability-monitoring",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "know at once when the public web servers stop responding and report their uptime each month",
+    "clues": [
+      "the service level agreement promises 99.9 percent uptime",
+      "the managers want a monthly report of any downtime",
+      "the check must run every minute from outside the servers"
+    ],
+    "answer": {
+      "item": "Availability monitoring"
+    },
+    "itemType": "solution",
+    "appliesWhen": "the main need is to know whether services are up and to report uptime",
+    "explanation": "Availability monitoring checks that devices and services respond and records uptime, so outages are found quickly and SLA reports can be made.",
+    "related": [
+      "network-s-d3-performance-monitoring",
+      "network-s-d3-configuration-monitoring",
+      "network-s-d3-scheduled-discovery",
+      "network-s-d3-snmp-traps"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-configuration-monitoring",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "detect any change to the router and firewall settings that drifts from the approved standard",
+    "clues": [
+      "a golden configuration is stored for each device type",
+      "an unapproved change caused an outage last quarter",
+      "the auditors want proof that devices match the policy"
+    ],
+    "answer": {
+      "item": "Configuration monitoring"
+    },
+    "itemType": "solution",
+    "appliesWhen": "device settings must be tracked and compared against a baseline or policy",
+    "explanation": "Configuration monitoring compares the running settings of devices with the approved baseline and flags drift, which supports change control and audits.",
+    "related": [
+      "network-s-d3-availability-monitoring",
+      "network-s-d3-performance-monitoring",
+      "network-s-d3-scheduled-discovery",
+      "network-s-d3-siem"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-snmp-community-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "the new switch answers ping from the monitoring server",
+      "the NMS shows the switch as not responding to queries",
+      "older switches with the standard setup are polled without problems",
+      "the installer typed a custom read-only password on the new switch"
+    ],
+    "answer": {
+      "cause": "a community string on the switch that does not match the one on the NMS",
+      "action": "Set the same community string on the switch and in the NMS"
+    },
+    "firstStep": "Compare the community string set on the switch with the one in the NMS",
+    "appliesWhen": "the device and the NMS are set with different SNMP community strings",
+    "explanation": "In SNMPv2c the community string works like a password, so the agent ignores queries that carry a different one even though the device is reachable.",
+    "related": [
+      "network-s-d3-snmp-version-mismatch",
+      "network-s-d3-missing-mib",
+      "network-s-d3-snmp-port-blocked",
+      "network-s-d3-syslog-wrong-host"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-snmp-version-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "polling of the router stopped right after it was hardened",
+      "the hardening guide allows only the newest secure protocol version",
+      "the router logs show rejected requests that carry no username",
+      "the NMS profile for the router has not been changed in years"
+    ],
+    "answer": {
+      "cause": "an NMS that still polls with SNMPv2c while the router accepts only SNMPv3",
+      "action": "Change the NMS profile for the router to SNMPv3 with the router's user credentials"
+    },
+    "appliesWhen": "the device accepts only SNMPv3 but the NMS still uses v2c",
+    "explanation": "After hardening, the router drops v2c requests, which carry a community string but no user, so the NMS must use SNMPv3 with a username and keys.",
+    "related": [
+      "network-s-d3-snmp-community-mismatch",
+      "network-s-d3-missing-mib",
+      "network-s-d3-snmp-port-blocked"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-missing-mib",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "the NMS shows the new firewall's sensor values as long numeric object IDs",
+      "basic interface counters display with normal names",
+      "the firewall is from a vendor the NMS has not monitored before"
+    ],
+    "answer": {
+      "cause": "a vendor MIB that is not loaded on the NMS",
+      "action": "Load the vendor's MIB into the NMS"
+    },
+    "appliesWhen": "the NMS lacks the MIB that names a device's vendor-specific objects",
+    "explanation": "Standard MIBs cover the interface counters, but vendor objects need the vendor's MIB so the NMS can translate the OIDs into names.",
+    "related": [
+      "network-s-d3-snmp-community-mismatch",
+      "network-s-d3-snmp-version-mismatch",
+      "network-s-d3-snmp-port-blocked"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-snmp-port-blocked",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "every device at the branch stopped reporting to the NMS at the same time",
+      "a new rule set was applied to the branch firewall yesterday",
+      "the NMS can still reach the branch devices by SSH"
+    ],
+    "answer": {
+      "cause": "a firewall rule that blocks UDP ports 161 and 162 between the NMS and the branch",
+      "action": "Allow UDP 161 and 162 between the NMS and the branch devices on the firewall"
+    },
+    "firstStep": "Review the firewall rules that were changed yesterday",
+    "appliesWhen": "a firewall between the NMS and the devices blocks the SNMP ports",
+    "explanation": "All devices failed together right after a firewall change while SSH still works, which points to the SNMP ports being blocked, not to the devices.",
+    "related": [
+      "network-s-d3-snmp-community-mismatch",
+      "network-s-d3-snmp-version-mismatch",
+      "network-s-d3-missing-mib",
+      "network-s-d3-syslog-wrong-host"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-syslog-severity",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "the collector receives emergency and alert messages from the switch",
+      "interface flap warnings show on the switch console but never on the collector",
+      "other switches send their warnings to the collector"
+    ],
+    "answer": {
+      "cause": "a logging level on the switch that sends only critical and more severe messages",
+      "action": "Lower the switch's logging threshold so that warning-level messages are sent"
+    },
+    "firstStep": "Check the logging level set for the remote log host on the switch",
+    "appliesWhen": "the device's logging threshold is set above the level of the missing messages",
+    "explanation": "Syslog sends only messages at or above the set severity, so warnings (level 4) are dropped when the threshold is critical (level 2).",
+    "related": [
+      "network-s-d3-syslog-wrong-host",
+      "network-s-d3-mirror-wrong-source",
+      "network-s-d3-stale-baseline",
+      "network-s-d3-snmp-port-blocked"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-syslog-wrong-host",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "no messages from the router have reached the collector since the logging server moved",
+      "other devices that were updated last week still log normally",
+      "the router's local buffer shows many recent events"
+    ],
+    "answer": {
+      "cause": "a router configuration that still names the old log server address",
+      "action": "Update the logging host address on the router to the new collector"
+    },
+    "appliesWhen": "the device still sends its log messages to an old or wrong server address",
+    "explanation": "The router creates events but sends them nowhere useful, because its logging host still points to the address the collector used before the move.",
+    "related": [
+      "network-s-d3-syslog-severity",
+      "network-s-d3-mirror-wrong-source",
+      "network-s-d3-snmp-community-mismatch",
+      "network-s-d3-stale-baseline"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-mirror-wrong-source",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "the analyzer is cabled to the switch's monitor port and shows traffic",
+      "none of the captured frames come from or go to the file server",
+      "the session was copied from a template for another rack"
+    ],
+    "answer": {
+      "cause": "a SPAN session that copies the wrong source port",
+      "action": "Set the session's source to the file server's switch port"
+    },
+    "firstStep": "Check which source port the mirror session copies",
+    "appliesWhen": "the mirror session copies traffic from a port other than the one under study",
+    "explanation": "The analyzer gets mirrored frames, so the session works, but it copies another port's traffic, which means the source is set wrong.",
+    "related": [
+      "network-s-d3-syslog-severity",
+      "network-s-d3-syslog-wrong-host",
+      "network-s-d3-stale-baseline"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-stale-baseline",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "topics": [
+      "N10-009/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "monitor-host"
+    ],
+    "clues": [
+      "anomaly alerts fire every morning since 200 new staff joined",
+      "the alerting system has not been retuned in two years",
+      "the traffic peaks match the new normal start of the work day"
+    ],
+    "answer": {
+      "cause": "an outdated baseline that no longer matches normal network traffic",
+      "action": "Record a new baseline of normal traffic and retune the alert thresholds"
+    },
+    "appliesWhen": "normal traffic has grown and the reference data that alerts use is old",
+    "explanation": "Anomaly alerts compare traffic with a baseline, so after normal usage grows, an old baseline flags normal traffic as unusual.",
+    "related": [
+      "network-s-d3-syslog-severity",
+      "network-s-d3-syslog-wrong-host",
+      "network-s-d3-mirror-wrong-source"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "network-s-d3-dhcp-scope-full",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "new laptops get 169.254.x.x addresses",
+      "devices that were already on the network keep working",
+      "the office grew from 120 to 260 staff this month",
+      "the address range was sized for a /25 years ago"
+    ],
+    "answer": {
+      "cause": "an exhausted DHCP scope with no free addresses",
+      "action": "Enlarge the scope or add an address range for the subnet"
+    },
+    "firstStep": "Check how many free addresses are left in the scope",
+    "appliesWhen": "every address in the pool is already leased to a client",
+    "explanation": "Only new clients fail and fall back to APIPA after the staff count doubled, which shows the pool has no addresses left to lease.",
+    "related": [
+      "network-s-d3-dhcp-relay-missing",
+      "network-s-d3-rogue-dhcp",
+      "network-s-d3-dhcp-exclusion-missing",
+      "network-s-d3-dhcp-gateway-option"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-dhcp-relay-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "clients on the new VLAN get 169.254.x.x addresses",
+      "the address server sits on a different subnet in the data center",
+      "clients on the server's own subnet get leases normally",
+      "the scope for the new VLAN exists and has free addresses"
+    ],
+    "answer": {
+      "cause": "a router interface for the new VLAN with no IP helper address",
+      "action": "Configure an IP helper (DHCP relay) on the new VLAN's router interface that points to the DHCP server"
+    },
+    "firstStep": "Check the router interface of the new VLAN for an IP helper address",
+    "appliesWhen": "clients are on a subnet without a relay to the remote DHCP server",
+    "explanation": "DHCP discovery is a broadcast that routers do not forward, so clients on a remote subnet need a relay agent to reach the server.",
+    "related": [
+      "network-s-d3-dhcp-scope-full",
+      "network-s-d3-rogue-dhcp",
+      "network-s-d3-slaac-ra-off",
+      "network-s-d3-dhcp-gateway-option"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-rogue-dhcp",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "some clients get 192.168.0.x addresses instead of the company 10.10.x.x range",
+      "those clients have a gateway the company does not use and cannot reach servers",
+      "a user plugged a home wireless router into a wall jack this morning"
+    ],
+    "answer": {
+      "cause": "an unauthorized DHCP server on the network",
+      "action": "Find and disconnect the unauthorized server and enable DHCP snooping on the switches"
+    },
+    "appliesWhen": "a second, unauthorized server is handing out leases with the wrong settings",
+    "explanation": "Clients that get a foreign address range and gateway took a lease from another server, here the home router that a user connected.",
+    "related": [
+      "network-s-d3-dhcp-scope-full",
+      "network-s-d3-dhcp-relay-missing",
+      "network-s-d3-dhcp-exclusion-missing",
+      "network-s-d3-dhcp-gateway-option"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-dhcp-exclusion-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "a duplicate address warning appears on a PC",
+      "the same address is set by hand on a network printer",
+      "the printer's address is inside the range the server hands out"
+    ],
+    "answer": {
+      "cause": "a static printer address that is not excluded from the DHCP scope",
+      "action": "Add an exclusion to the scope for the addresses that are set by hand"
+    },
+    "firstStep": "Check whether the conflicting address is in the scope's pool",
+    "appliesWhen": "a statically set address is still inside the pool that the server leases",
+    "explanation": "The server leased an address that a printer already uses because nothing told it to skip that address; an exclusion removes it from the pool.",
+    "related": [
+      "network-s-d3-dhcp-scope-full",
+      "network-s-d3-rogue-dhcp",
+      "network-s-d3-lease-too-long",
+      "network-s-d3-reservation-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-dhcp-gateway-option",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "clients get addresses in the right subnet",
+      "clients can reach local servers but not the internet",
+      "a PC with a manually set address in the same subnet works",
+      "an administrator edited the scope settings yesterday"
+    ],
+    "answer": {
+      "cause": "a wrong router (default gateway) option in the DHCP scope",
+      "action": "Correct the router option in the scope and have clients renew their leases"
+    },
+    "firstStep": "Compare the gateway that a client received with the router's real address",
+    "appliesWhen": "the scope hands out a wrong default gateway address",
+    "explanation": "Local traffic works and only off-subnet traffic fails for DHCP clients, which points to the gateway the scope gives out.",
+    "related": [
+      "network-s-d3-dhcp-dns-option",
+      "network-s-d3-dhcp-scope-full",
+      "network-s-d3-rogue-dhcp",
+      "network-s-d3-dhcp-relay-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-dhcp-dns-option",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "clients can ping 8.8.8.8 but cannot open websites by name",
+      "setting a name server by hand on one PC fixes that PC",
+      "every client that gets its settings automatically has the problem"
+    ],
+    "answer": {
+      "cause": "a wrong DNS server option in the DHCP scope",
+      "action": "Correct the DNS server option in the scope and renew the clients' leases"
+    },
+    "appliesWhen": "the scope gives clients a wrong name server address",
+    "explanation": "Clients reach the internet by IP address but not by name, and a manual name server fixes it, so the server address from DHCP is wrong.",
+    "related": [
+      "network-s-d3-dhcp-gateway-option",
+      "network-s-d3-dhcp-scope-full",
+      "network-s-d3-stale-dns-cache",
+      "network-s-d3-rogue-dhcp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-slaac-ra-off",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "hosts have only fe80:: addresses on the new IPv6 segment",
+      "the design uses stateless autoconfiguration with no DHCPv6 server",
+      "the router interface has the global prefix configured"
+    ],
+    "answer": {
+      "cause": "router advertisements that are suppressed on the router interface",
+      "action": "Enable router advertisements for the prefix on the router interface"
+    },
+    "firstStep": "Check whether the router interface sends router advertisements",
+    "appliesWhen": "hosts never receive the router advertisements that carry the prefix",
+    "explanation": "SLAAC hosts build global addresses from the prefix in router advertisements, so with advertisements suppressed they keep only link-local addresses.",
+    "related": [
+      "network-s-d3-dhcp-relay-missing",
+      "network-s-d3-dhcp-scope-full",
+      "network-s-d3-dhcp-gateway-option"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-lease-too-long",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "retail",
+      "school"
+    ],
+    "devices": [
+      "guest-network"
+    ],
+    "clues": [
+      "the guest address pool runs out by midday",
+      "most guests stay less than an hour",
+      "addresses stay assigned for eight days after a visitor leaves"
+    ],
+    "answer": {
+      "cause": "a lease time that is much too long for short guest visits",
+      "action": "Shorten the lease time on the guest scope to a few hours"
+    },
+    "appliesWhen": "addresses stay tied to clients that left long ago",
+    "explanation": "A client keeps its address until the lease ends, so with eight-day leases and short visits the pool fills with addresses no one uses.",
+    "related": [
+      "network-s-d3-dhcp-exclusion-missing",
+      "network-s-d3-rogue-dhcp",
+      "network-s-d3-reservation-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-reservation-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "network-printer"
+    ],
+    "clues": [
+      "users suddenly cannot print to the printer by its IP address",
+      "the printer's panel shows a different address than last week",
+      "the printer gets its settings automatically"
+    ],
+    "answer": {
+      "cause": "a printer with no DHCP reservation that received a new address",
+      "action": "Create a DHCP reservation for the printer's MAC address and update the print queues"
+    },
+    "firstStep": "Compare the address on the printer's panel with the address in the print queue",
+    "appliesWhen": "a device that needs a fixed address gets whatever address is free",
+    "explanation": "Without a reservation the printer can get a different address when it renews, which breaks queues that point to its old address.",
+    "related": [
+      "network-s-d3-dhcp-exclusion-missing",
+      "network-s-d3-lease-too-long",
+      "network-s-d3-rogue-dhcp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-reservation",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "make sure the new network printer always gets the same address",
+    "clues": [
+      "the printer must stay a DHCP client",
+      "the address must be tied to the printer's MAC address",
+      "the print queues on every PC use the printer's IP address"
+    ],
+    "answer": {
+      "item": "A DHCP reservation"
+    },
+    "itemType": "DHCP setting",
+    "appliesWhen": "one device must always get the same address from the server",
+    "explanation": "A reservation ties an address to a client's MAC address, so the printer still uses DHCP but always gets the same address.",
+    "related": [
+      "network-s-d3-req-exclusion",
+      "network-s-d3-req-scope-options",
+      "network-s-d3-req-short-lease",
+      "network-s-d3-req-relay"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-exclusion",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "stop the server from leasing the addresses that the servers and switches use",
+    "clues": [
+      "those devices have addresses set by hand",
+      "the addresses sit inside the range of the subnet's pool",
+      "the devices must not depend on the DHCP server"
+    ],
+    "answer": {
+      "item": "A DHCP exclusion range"
+    },
+    "itemType": "DHCP setting",
+    "appliesWhen": "some addresses inside the pool must never be handed out",
+    "explanation": "An exclusion removes addresses from the pool, so the server never leases the addresses already set by hand.",
+    "related": [
+      "network-s-d3-req-reservation",
+      "network-s-d3-req-scope-options",
+      "network-s-d3-req-new-scope",
+      "network-s-d3-req-short-lease"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-relay",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "serve addresses to five VLANs from one central DHCP server",
+    "clues": [
+      "the server sits in the data center subnet",
+      "routers do not forward broadcasts between the VLANs",
+      "the company does not want a DHCP server in each VLAN"
+    ],
+    "answer": {
+      "item": "A DHCP relay agent (IP helper) on each VLAN's router interface"
+    },
+    "itemType": "feature",
+    "appliesWhen": "clients on other subnets must reach a central DHCP server",
+    "explanation": "A relay agent forwards the clients' broadcast requests to the central server as unicast, so one server can serve every VLAN.",
+    "related": [
+      "network-s-d3-req-new-scope",
+      "network-s-d3-req-slaac",
+      "network-s-d3-req-scope-options",
+      "network-s-d3-req-reservation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-slaac",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "let IPv6 hosts build their own global addresses with no server that tracks them",
+    "clues": [
+      "the router advertises the /64 prefix on the segment",
+      "no one wants to keep a lease database for the segment",
+      "the hosts can form an interface ID on their own"
+    ],
+    "answer": {
+      "item": "Stateless address autoconfiguration (SLAAC)"
+    },
+    "itemType": "method",
+    "appliesWhen": "IPv6 hosts must configure addresses from the router's prefix without a stateful server",
+    "explanation": "With SLAAC a host takes the prefix from router advertisements and adds its own interface ID, so no server has to track the addresses.",
+    "related": [
+      "network-s-d3-req-relay",
+      "network-s-d3-req-new-scope",
+      "network-s-d3-req-scope-options"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-scope-options",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "give every client its gateway, name servers, and domain suffix automatically",
+    "clues": [
+      "the clients already get their addresses from the server",
+      "technicians set the gateway and name servers by hand today",
+      "the values are the same for every client in the subnet"
+    ],
+    "answer": {
+      "item": "DHCP scope options"
+    },
+    "itemType": "DHCP setting",
+    "appliesWhen": "extra settings such as gateway, DNS servers, or suffix must be handed out with the address",
+    "explanation": "Scope options send settings such as the default gateway, DNS servers, and DNS suffix along with each lease.",
+    "related": [
+      "network-s-d3-req-reservation",
+      "network-s-d3-req-exclusion",
+      "network-s-d3-req-short-lease",
+      "network-s-d3-req-relay"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-short-lease",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "retail",
+      "school"
+    ],
+    "devices": [],
+    "need": "reuse addresses quickly on the guest wireless network",
+    "clues": [
+      "hundreds of visitors connect each day for less than an hour",
+      "the pool is a single /24",
+      "addresses now stay assigned for days after a visitor leaves"
+    ],
+    "answer": {
+      "item": "A short lease time on the guest scope"
+    },
+    "itemType": "DHCP setting",
+    "appliesWhen": "addresses must return to the pool soon after clients leave",
+    "explanation": "A short lease returns unused addresses to the pool quickly, which suits many brief visitors on a small pool.",
+    "related": [
+      "network-s-d3-req-reservation",
+      "network-s-d3-req-exclusion",
+      "network-s-d3-req-scope-options",
+      "network-s-d3-req-new-scope"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-new-scope",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "hand out addresses in the new 10.20.30.0/24 subnet from the existing server",
+    "clues": [
+      "the server already serves two other subnets",
+      "requests from the new subnet already reach the server",
+      "the server has no address range for that subnet yet"
+    ],
+    "answer": {
+      "item": "A new DHCP scope for the 10.20.30.0/24 subnet"
+    },
+    "itemType": "DHCP setting",
+    "appliesWhen": "the server needs an address range defined for a subnet it does not serve yet",
+    "explanation": "A scope defines the range of addresses the server leases for one subnet, so the new subnet needs its own scope.",
+    "related": [
+      "network-s-d3-req-relay",
+      "network-s-d3-req-exclusion",
+      "network-s-d3-req-short-lease",
+      "network-s-d3-req-slaac"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-a",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "let clients find the intranet server's IPv4 address by its host name",
+    "clues": [
+      "the server has the address 10.1.5.20",
+      "users type intranet.example.com",
+      "the network uses only IPv4 for this server"
+    ],
+    "answer": {
+      "item": "An A record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "a host name must map to an IPv4 address",
+    "explanation": "An A record maps a host name to an IPv4 address, which is the forward lookup the clients need.",
+    "related": [
+      "network-s-d3-req-aaaa",
+      "network-s-d3-req-cname",
+      "network-s-d3-req-mx",
+      "network-s-d3-req-txt"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-aaaa",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "let clients reach the web server by name over IPv6",
+    "clues": [
+      "the server has the address 2001:db8:10::25",
+      "clients that have only IPv6 addresses must reach it by name",
+      "the IPv4 name mapping already exists"
+    ],
+    "answer": {
+      "item": "An AAAA record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "a host name must map to an IPv6 address",
+    "explanation": "An AAAA (quad-A) record maps a host name to a 128-bit IPv6 address.",
+    "related": [
+      "network-s-d3-req-cname",
+      "network-s-d3-req-mx",
+      "network-s-d3-req-txt",
+      "network-s-d3-req-ns"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-cname",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "make shop.example.com another name for the server www.example.com",
+    "clues": [
+      "the server already has its own name mapping",
+      "the alias must follow the server if its address changes",
+      "no second address is needed"
+    ],
+    "answer": {
+      "item": "A CNAME record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "one name must be an alias of another host name",
+    "explanation": "A CNAME record points an alias to the canonical name, so the alias always follows the real host's address.",
+    "related": [
+      "network-s-d3-req-mx",
+      "network-s-d3-req-txt",
+      "network-s-d3-req-ns",
+      "network-s-d3-req-ptr"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-mx",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "tell other companies' mail servers which host accepts email for the domain",
+    "clues": [
+      "the new mail gateway is mail2.example.com",
+      "outside senders look up the domain, not a host name",
+      "a backup gateway should get a lower priority"
+    ],
+    "answer": {
+      "item": "An MX record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "a domain must name the servers that receive its email",
+    "explanation": "An MX record lists the mail servers for a domain, with a preference value that sets their order.",
+    "related": [
+      "network-s-d3-req-txt",
+      "network-s-d3-req-ns",
+      "network-s-d3-req-ptr",
+      "network-s-d3-req-a"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-txt",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "publish the list of servers allowed to send email for the domain",
+    "clues": [
+      "the entry is free-form text that starts with v=spf1",
+      "a cloud service also asks for a verification token",
+      "the entry does not map a name to an address"
+    ],
+    "answer": {
+      "item": "A TXT record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "free-form text such as SPF, DKIM, DMARC, or a verification token must be published",
+    "explanation": "A TXT record holds free-form text; SPF policies and domain verification tokens are published this way.",
+    "related": [
+      "network-s-d3-req-ns",
+      "network-s-d3-req-ptr",
+      "network-s-d3-req-a",
+      "network-s-d3-req-aaaa"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-ns",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "delegate the branch.example.com subdomain to the branch's own name servers",
+    "clues": [
+      "the branch servers will be authoritative for the subdomain",
+      "the parent zone must point queries to them",
+      "the branch servers already host the subdomain's zone"
+    ],
+    "answer": {
+      "item": "An NS record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "a zone must name the authoritative servers for itself or a subdomain",
+    "explanation": "An NS record names the authoritative name servers, and NS records in the parent zone delegate a subdomain.",
+    "related": [
+      "network-s-d3-req-ptr",
+      "network-s-d3-req-a",
+      "network-s-d3-req-aaaa",
+      "network-s-d3-req-cname"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-ptr",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "let the mail gateway find a host name from the sending server's IP address",
+    "clues": [
+      "the lookup starts from an address, not a name",
+      "the entry goes in the in-addr.arpa zone",
+      "receiving servers check that the address maps back to a name"
+    ],
+    "answer": {
+      "item": "A PTR record"
+    },
+    "itemType": "DNS record type",
+    "appliesWhen": "an IP address must map back to a host name",
+    "explanation": "A PTR record holds the address-to-name mapping used by reverse lookups.",
+    "related": [
+      "network-s-d3-req-a",
+      "network-s-d3-req-aaaa",
+      "network-s-d3-req-cname",
+      "network-s-d3-req-mx"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-secondary-zone",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "keep a read-only copy of the company zone on a second server for redundancy",
+    "clues": [
+      "the master copy stays on the first server",
+      "the copy must update through zone transfers",
+      "users must resolve names if the first server fails"
+    ],
+    "answer": {
+      "item": "A secondary zone"
+    },
+    "itemType": "DNS zone or server type",
+    "appliesWhen": "a read-only copy of a zone must be kept by zone transfer",
+    "explanation": "A secondary zone holds a read-only copy that it receives from the primary by zone transfer, so a second server can answer if the first fails.",
+    "related": [
+      "network-s-d3-req-reverse-zone",
+      "network-s-d3-req-primary-zone",
+      "network-s-d3-req-recursive",
+      "network-s-d3-req-forward-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-reverse-zone",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "create the zone that will hold the address-to-name entries for the 10.1.0.0/16 network",
+    "clues": [
+      "the zone name ends in in-addr.arpa",
+      "lookups start from an IP address",
+      "the existing zone holds only name-to-address entries"
+    ],
+    "answer": {
+      "item": "A reverse lookup zone"
+    },
+    "itemType": "DNS zone or server type",
+    "appliesWhen": "a zone must hold address-to-name mappings",
+    "explanation": "A reverse zone, named under in-addr.arpa, holds the PTR records that map addresses back to names.",
+    "related": [
+      "network-s-d3-req-primary-zone",
+      "network-s-d3-req-recursive",
+      "network-s-d3-req-forward-zone",
+      "network-s-d3-req-secondary-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-primary-zone",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "hold the one writable master copy of the company's zone",
+    "clues": [
+      "all record changes must be made on one server",
+      "other servers will copy from it",
+      "its serial number goes up with each change"
+    ],
+    "answer": {
+      "item": "A primary zone"
+    },
+    "itemType": "DNS zone or server type",
+    "appliesWhen": "the writable master copy of a zone is needed",
+    "explanation": "The primary zone is the writable master copy; secondary servers copy it from there.",
+    "related": [
+      "network-s-d3-req-recursive",
+      "network-s-d3-req-forward-zone",
+      "network-s-d3-req-secondary-zone",
+      "network-s-d3-req-reverse-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-recursive",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "let internal clients look up any internet name through one company server",
+    "clues": [
+      "the clients must not query internet name servers themselves",
+      "the server must follow referrals from the root down",
+      "answers should be cached for other clients"
+    ],
+    "answer": {
+      "item": "A recursive DNS resolver"
+    },
+    "itemType": "DNS zone or server type",
+    "appliesWhen": "a server must do the full lookup for clients and cache the answers",
+    "explanation": "A recursive resolver queries the root, TLD, and authoritative servers on the client's behalf and caches the results.",
+    "related": [
+      "network-s-d3-req-forward-zone",
+      "network-s-d3-req-secondary-zone",
+      "network-s-d3-req-reverse-zone",
+      "network-s-d3-req-primary-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-forward-zone",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "store the records that map the company's host names to IP addresses",
+    "clues": [
+      "clients search by name and need an address back",
+      "the domain is example.com",
+      "the records will be mostly A and AAAA entries"
+    ],
+    "answer": {
+      "item": "A forward lookup zone"
+    },
+    "itemType": "DNS zone or server type",
+    "appliesWhen": "a zone must hold name-to-address mappings",
+    "explanation": "A forward lookup zone holds the records that map names to addresses, such as A and AAAA records.",
+    "related": [
+      "network-s-d3-req-secondary-zone",
+      "network-s-d3-req-reverse-zone",
+      "network-s-d3-req-primary-zone",
+      "network-s-d3-req-recursive"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-dnssec",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "let resolvers verify that the answers from the company's zone are authentic and unchanged",
+    "clues": [
+      "attackers have tried to poison caches with false answers",
+      "the records must carry digital signatures",
+      "the queries themselves do not need to be private"
+    ],
+    "answer": {
+      "item": "Domain Name System Security Extensions (DNSSEC)"
+    },
+    "itemType": "feature",
+    "appliesWhen": "DNS answers must be signed so resolvers can check their origin and integrity",
+    "explanation": "DNSSEC signs the zone's records, so a validating resolver can prove an answer came from the zone and was not changed; it does not encrypt the queries.",
+    "related": [
+      "network-s-d3-req-doh",
+      "network-s-d3-req-hosts-file",
+      "network-s-d3-req-secondary-zone",
+      "network-s-d3-req-recursive"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-doh",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "keep the laptops' name lookups private from anyone on hotel and airport networks",
+    "clues": [
+      "the lookups now cross the network in plain text",
+      "the queries must be encrypted between the laptop and the resolver",
+      "the traffic may travel over port 443 or port 853"
+    ],
+    "answer": {
+      "item": "DNS over HTTPS (DoH) or DNS over TLS (DoT)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "the DNS queries themselves must be encrypted in transit",
+    "explanation": "DoH and DoT wrap DNS queries in HTTPS or TLS, which hides them from others on the local network.",
+    "related": [
+      "network-s-d3-req-dnssec",
+      "network-s-d3-req-hosts-file",
+      "network-s-d3-req-recursive"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-hosts-file",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [],
+    "need": "point one test PC to the staging web server by its normal name without changing any name server",
+    "clues": [
+      "only this one PC must use the staging address",
+      "other users must still reach the live site",
+      "the developer has local administrator rights"
+    ],
+    "answer": {
+      "item": "An entry in the PC's hosts file"
+    },
+    "itemType": "method",
+    "appliesWhen": "a single computer must resolve a name locally without DNS",
+    "explanation": "The hosts file is checked before DNS, so an entry there changes the name's address on that PC only.",
+    "related": [
+      "network-s-d3-req-dnssec",
+      "network-s-d3-req-doh",
+      "network-s-d3-req-forward-zone",
+      "network-s-d3-req-a"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-stale-dns-cache",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "the intranet server moved to a new IP address an hour ago",
+      "most users reach the site",
+      "one PC still tries to connect to the old address",
+      "nslookup on that PC returns the new address from the server"
+    ],
+    "answer": {
+      "cause": "a stale cached entry in the client's DNS resolver cache",
+      "action": "Flush the client's DNS cache with ipconfig /flushdns"
+    },
+    "appliesWhen": "the client still holds an old lookup result in its local cache",
+    "explanation": "The server already returns the new address, so the PC is using an old answer it cached before the move; flushing the cache clears it.",
+    "related": [
+      "network-s-d3-hosts-file-entry",
+      "network-s-d3-missing-ptr",
+      "network-s-d3-mx-old-server",
+      "network-s-d3-zone-transfer-fail"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-missing-ptr",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "mail-server"
+    ],
+    "clues": [
+      "other companies' servers reject the outgoing email",
+      "the bounce message says the sender's address has no matching host name",
+      "lookups of the server's name return the right address"
+    ],
+    "answer": {
+      "cause": "a missing PTR record for the mail server's public IP address",
+      "action": "Add a PTR record for the mail server's address in the reverse zone"
+    },
+    "firstStep": "Run a reverse lookup on the mail server's public IP address",
+    "appliesWhen": "the server's IP address does not map back to a host name",
+    "explanation": "Many mail servers check that the sender's address maps back to a name; forward lookups work, so the reverse entry is the part missing.",
+    "related": [
+      "network-s-d3-mx-old-server",
+      "network-s-d3-stale-dns-cache",
+      "network-s-d3-dnssec-expired",
+      "network-s-d3-zone-transfer-fail"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-hosts-file-entry",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "only one PC still reaches the old intranet server",
+      "flushing the resolver cache does not help",
+      "nslookup on that PC shows the correct new address",
+      "a contractor tested the site on that PC months ago"
+    ],
+    "answer": {
+      "cause": "an old static entry in the PC's hosts file",
+      "action": "Remove the outdated entry from the hosts file"
+    },
+    "firstStep": "Open the PC's hosts file and look for an entry for the server",
+    "appliesWhen": "a local static entry overrides the DNS answer on that computer",
+    "explanation": "nslookup asks the name server directly, but applications check the hosts file first, so a leftover entry wins on that PC even after a cache flush.",
+    "related": [
+      "network-s-d3-stale-dns-cache",
+      "network-s-d3-missing-ptr",
+      "network-s-d3-zone-transfer-fail",
+      "network-s-d3-dnssec-expired"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-mx-old-server",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "mail-server"
+    ],
+    "clues": [
+      "internal email between staff works",
+      "messages from outside senders stopped arriving after the migration",
+      "the old gateway was shut down last week",
+      "outside senders get a delivery delay notice"
+    ],
+    "answer": {
+      "cause": "an MX record that still points to the old mail gateway",
+      "action": "Update the MX record to the new mail gateway's host name"
+    },
+    "firstStep": "Look up the domain's MX record from an outside resolver",
+    "appliesWhen": "the domain's mail exchanger entry names a server that no longer accepts mail",
+    "explanation": "Outside servers find where to deliver mail from the domain's MX record, so after the migration they still try the old, shut-down gateway.",
+    "related": [
+      "network-s-d3-missing-ptr",
+      "network-s-d3-stale-dns-cache",
+      "network-s-d3-zone-transfer-fail",
+      "network-s-d3-dnssec-expired"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-zone-transfer-fail",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "name-server"
+    ],
+    "clues": [
+      "new host names resolve on one name server but not on the other",
+      "the serial number on the second server has not changed in days",
+      "the first server's settings were hardened last week"
+    ],
+    "answer": {
+      "cause": "zone transfers from the primary to the secondary server that are now refused",
+      "action": "Allow zone transfers to the secondary server's address on the primary"
+    },
+    "firstStep": "Compare the zone serial numbers on the two servers",
+    "appliesWhen": "the secondary can no longer copy the zone from the primary",
+    "explanation": "The secondary still serves an old copy because its serial number does not change, which shows it is no longer getting zone transfers from the primary.",
+    "related": [
+      "network-s-d3-stale-dns-cache",
+      "network-s-d3-hosts-file-entry",
+      "network-s-d3-missing-ptr",
+      "network-s-d3-dnssec-expired"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-dnssec-expired",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.2"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "devices": [
+      "name-server"
+    ],
+    "clues": [
+      "validating resolvers return SERVFAIL for the company domain",
+      "resolvers that do not validate still get answers",
+      "the scheduled key rollover and re-signing job failed last month"
+    ],
+    "answer": {
+      "cause": "expired DNSSEC signatures on the zone",
+      "action": "Re-sign the zone and publish fresh signatures and keys"
+    },
+    "appliesWhen": "the zone's signatures have expired so validating resolvers reject its answers",
+    "explanation": "Only validating resolvers fail, which means the answers exist but their signatures cannot be trusted, here because the re-signing job failed.",
+    "related": [
+      "network-s-d3-zone-transfer-fail",
+      "network-s-d3-mx-old-server",
+      "network-s-d3-missing-ptr",
+      "network-s-d3-stale-dns-cache"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "network-s-d3-req-ntp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "keep the clocks of all servers, switches, and firewalls within a few milliseconds of one reference",
+    "clues": [
+      "log entries from many devices must line up",
+      "millisecond accuracy is enough",
+      "the devices can reach the company's time servers over UDP 123"
+    ],
+    "answer": {
+      "item": "Network Time Protocol (NTP)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "ordinary devices need millisecond-level clock sync",
+    "explanation": "NTP syncs clocks over UDP port 123 through a hierarchy of strata, which gives millisecond accuracy for logs and authentication.",
+    "related": [
+      "network-s-d3-req-ptp",
+      "network-s-d3-req-nts",
+      "network-s-d3-req-local-stratum1",
+      "network-s-d3-req-dnssec"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-ptp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "sync the trading servers' clocks to within a microsecond",
+    "clues": [
+      "each trade must carry a timestamp more precise than a millisecond",
+      "the switches support hardware timestamping",
+      "one grandmaster clock will lead the others"
+    ],
+    "answer": {
+      "item": "Precision Time Protocol (PTP)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "clocks need sub-microsecond accuracy",
+    "explanation": "PTP (IEEE 1588) syncs clocks to a grandmaster with hardware timestamps and reaches sub-microsecond accuracy.",
+    "related": [
+      "network-s-d3-req-ntp",
+      "network-s-d3-req-nts",
+      "network-s-d3-req-local-stratum1"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-nts",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "stop attackers from spoofing or changing the time updates the servers receive",
+    "clues": [
+      "a test showed that forged time packets were accepted",
+      "the clients must verify that each time update is genuine",
+      "the existing time protocol should stay in use"
+    ],
+    "answer": {
+      "item": "Network Time Security (NTS)"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "time sync traffic must be authenticated against spoofing and tampering",
+    "explanation": "NTS (RFC 8915) adds cryptographic protection to NTP so clients can trust that time updates are genuine and unchanged.",
+    "related": [
+      "network-s-d3-req-ntp",
+      "network-s-d3-req-ptp",
+      "network-s-d3-req-local-stratum1",
+      "network-s-d3-req-dnssec"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-req-local-stratum1",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "data-center",
+      "campus"
+    ],
+    "devices": [],
+    "need": "provide accurate time to an isolated network with no internet access",
+    "clues": [
+      "outside time servers cannot be reached",
+      "the building has a roof antenna with a clear view of the sky",
+      "all devices must still agree on the correct time of day"
+    ],
+    "answer": {
+      "item": "A local time server with a GPS reference clock"
+    },
+    "itemType": "device",
+    "appliesWhen": "the network needs its own accurate time source without reaching outside servers",
+    "explanation": "A GPS receiver serves as a stratum 0 reference, so a local server attached to it can act as stratum 1 for the isolated network.",
+    "related": [
+      "network-s-d3-req-ntp",
+      "network-s-d3-req-ptp",
+      "network-s-d3-req-nts"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-kerberos-skew",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [
+      "client-pc"
+    ],
+    "clues": [
+      "the user cannot sign in to the domain from one PC",
+      "other users sign in without problems",
+      "the PC's taskbar shows a time 20 minutes behind the wall clock",
+      "the sign-in error mentions a ticket that is not yet valid"
+    ],
+    "answer": {
+      "cause": "a PC clock that is too far off the domain controller's time",
+      "action": "Set the PC to sync with the domain's time source and resync it"
+    },
+    "firstStep": "Compare the PC's time with the domain controller's time",
+    "appliesWhen": "the computer's clock differs from the authentication server by more than the allowed skew",
+    "explanation": "Kerberos tickets carry timestamps and are rejected when clocks differ by more than about five minutes, so a PC that is 20 minutes off cannot sign in.",
+    "related": [
+      "network-s-d3-ntp-blocked",
+      "network-s-d3-unsynced-logs",
+      "network-s-d3-time-spoofing",
+      "network-s-d3-stale-dns-cache"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-ntp-blocked",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "time-server"
+    ],
+    "clues": [
+      "the internal time server's offset grows a little each day",
+      "the server reports that none of its upstream sources are reachable",
+      "a new perimeter firewall was installed last week"
+    ],
+    "answer": {
+      "cause": "a firewall that blocks UDP port 123 to the upstream time sources",
+      "action": "Allow UDP 123 from the internal time server to its upstream sources"
+    },
+    "firstStep": "Check the firewall rules for UDP 123 from the time server",
+    "appliesWhen": "the time server cannot reach its upstream sources through the firewall",
+    "explanation": "The internal server drifts because it can no longer reach its sources, and the change came with a new firewall, which points to NTP's port being blocked.",
+    "related": [
+      "network-s-d3-kerberos-skew",
+      "network-s-d3-unsynced-logs",
+      "network-s-d3-time-spoofing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-unsynced-logs",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "network-gear"
+    ],
+    "clues": [
+      "events in the SIEM appear in the wrong order",
+      "one switch's entries are seven minutes ahead of the firewall's",
+      "each device's clock was set by hand when it was installed"
+    ],
+    "answer": {
+      "cause": "devices that do not sync to a common time source",
+      "action": "Configure every device to use the same NTP servers"
+    },
+    "appliesWhen": "devices keep their own clocks instead of syncing to one source",
+    "explanation": "Clocks set by hand drift apart, so log times from different devices do not line up; a common NTP source fixes the order.",
+    "related": [
+      "network-s-d3-kerberos-skew",
+      "network-s-d3-ntp-blocked",
+      "network-s-d3-time-spoofing",
+      "network-s-d3-syslog-wrong-host"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "network-s-d3-time-spoofing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "3",
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "topics": [
+      "N10-009/3.4.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [
+      "time-server"
+    ],
+    "clues": [
+      "the servers' clocks jump by hours at random",
+      "each jump follows packets from an unknown host that claims to be a time source",
+      "the time clients accept any update without checking it"
+    ],
+    "answer": {
+      "cause": "forged time updates from a rogue host that the clients trust",
+      "action": "Enable Network Time Security so clients accept only authenticated time updates"
+    },
+    "appliesWhen": "an attacker sends false time updates that the clients cannot verify",
+    "explanation": "The clocks jump only when packets arrive from an unknown host, and nothing checks the updates, so forged time is the cause; NTS authenticates them.",
+    "related": [
+      "network-s-d3-kerberos-skew",
+      "network-s-d3-ntp-blocked",
+      "network-s-d3-unsynced-logs"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  }
+]

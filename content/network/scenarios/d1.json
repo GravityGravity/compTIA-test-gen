@@ -1,0 +1,516 @@
+[
+  {
+    "id": "network-s-subnet-hosts-small",
+    "kind": "calculation",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [],
+    "calculation": "subnet-hosts",
+    "prefixMin": 24,
+    "prefixMax": 30,
+    "explanation": "Usable hosts are 2 to the power of the host bits, less the network and broadcast addresses.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets"
+  },
+  {
+    "id": "network-s-subnet-hosts-large",
+    "kind": "calculation",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "calculation": "subnet-hosts",
+    "prefixMin": 16,
+    "prefixMax": 23,
+    "explanation": "Usable hosts are 2 to the power of the host bits, less the network and broadcast addresses.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets"
+  },
+  {
+    "id": "network-s-subnet-mask",
+    "kind": "calculation",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "campus"
+    ],
+    "devices": [],
+    "calculation": "subnet-mask",
+    "prefixMin": 20,
+    "prefixMax": 30,
+    "explanation": "The smallest subnet that fits the hosts has enough host bits for the hosts plus the network and broadcast addresses. The prefix length sets the mask.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets"
+  },
+  {
+    "id": "network-s-network-address",
+    "kind": "calculation",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "data-center"
+    ],
+    "devices": [],
+    "calculation": "network-address",
+    "prefixMin": 16,
+    "prefixMax": 30,
+    "explanation": "The network address is the host address with every host bit set to 0. It is the first address of the subnet's block.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets"
+  },
+  {
+    "id": "network-s-broadcast-address",
+    "kind": "calculation",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "calculation": "broadcast-address",
+    "prefixMin": 16,
+    "prefixMax": 30,
+    "explanation": "The broadcast address is the host address with every host bit set to 1. It is the last address of the subnet's block.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets"
+  },
+  {
+    "id": "network-s-rfc1918",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "choose the IPv4 addresses for the computers on a new internal LAN",
+    "clues": [
+      "the computers reach the internet through a router that performs NAT",
+      "the addresses must never be routed on the public internet",
+      "the ISP gave the company only one routable address"
+    ],
+    "answer": {
+      "item": "An RFC1918 private range, such as 192.168.10.0/24"
+    },
+    "itemType": "address type",
+    "appliesWhen": "internal hosts share one routable address through NAT",
+    "explanation": "RFC1918 sets aside 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16 for private networks. Internet routers do not forward these addresses, so NAT at the edge translates them to the public address.",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "related": [
+      "network-s-public-address",
+      "network-s-apipa",
+      "network-s-loopback",
+      "network-s-class-d"
+    ]
+  },
+  {
+    "id": "network-s-public-address",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.1"
+    ],
+    "settings": [
+      "enterprise",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "give the company web server an address that customers can reach from the internet",
+    "clues": [
+      "the server must answer requests from anywhere on the internet",
+      "no NAT or port forwarding is allowed in front of the server",
+      "the address must be unique worldwide"
+    ],
+    "answer": {
+      "item": "A public IPv4 address assigned by the ISP"
+    },
+    "itemType": "address type",
+    "appliesWhen": "a host must be reached directly from the internet",
+    "explanation": "Only a globally unique public address is routed on the internet. The ISP or a regional registry assigns these addresses, so they cannot be picked at random.",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "related": [
+      "network-s-rfc1918",
+      "network-s-apipa",
+      "network-s-loopback"
+    ]
+  },
+  {
+    "id": "network-s-loopback",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.1"
+    ],
+    "settings": [
+      "office",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "check that the TCP/IP stack on a server works before it is connected to any network",
+    "clues": [
+      "the network cable is not plugged in yet",
+      "the test must not send any traffic onto a network",
+      "the address must point back to the same machine"
+    ],
+    "answer": {
+      "item": "The loopback address 127.0.0.1"
+    },
+    "itemType": "address type",
+    "appliesWhen": "traffic must go to the local machine only",
+    "explanation": "The 127.0.0.0/8 block is reserved for loopback, and 127.0.0.1 is localhost. Traffic sent to it never leaves the host, so a reply shows that the local TCP/IP stack works.",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "related": [
+      "network-s-apipa",
+      "network-s-rfc1918",
+      "network-s-public-address"
+    ]
+  },
+  {
+    "id": "network-s-apipa",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.1"
+    ],
+    "settings": [
+      "school",
+      "office"
+    ],
+    "devices": [],
+    "need": "let two computers on an isolated test segment talk to each other without any address setup",
+    "clues": [
+      "the segment has no DHCP server",
+      "nobody will type static addresses on the computers",
+      "the computers never need to leave the local segment"
+    ],
+    "answer": {
+      "item": "Automatic Private IP Addressing (APIPA) in 169.254.0.0/16"
+    },
+    "itemType": "address type",
+    "appliesWhen": "hosts on one segment get no DHCP lease and need link-local addresses",
+    "explanation": "A client that finds no DHCP server gives itself an APIPA address from 169.254.0.0/16. APIPA hosts can talk only to other hosts on the same segment, because the range has no default gateway and is not routed.",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "related": [
+      "network-s-rfc1918",
+      "network-s-loopback",
+      "network-s-public-address"
+    ]
+  },
+  {
+    "id": "network-s-class-d",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.3"
+    ],
+    "settings": [
+      "campus",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "send one video stream to a group of receivers that joined the stream",
+    "clues": [
+      "only the hosts that joined the group should receive the stream",
+      "the sender must send each packet once, not once for each receiver",
+      "the address must be in the 224.0.0.0 to 239.255.255.255 range"
+    ],
+    "answer": {
+      "item": "A Class D multicast address"
+    },
+    "itemType": "address type",
+    "appliesWhen": "one sender must reach a joined group of receivers",
+    "explanation": "Class D (224.0.0.0 to 239.255.255.255) is reserved for multicast. A host that joins the group receives the packets, and the sender sends each packet only once.",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching",
+    "related": [
+      "network-s-class-a",
+      "network-s-class-b",
+      "network-s-class-c"
+    ]
+  },
+  {
+    "id": "network-s-class-a",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.3"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "pick a classful private network block for a company with tens of thousands of hosts",
+    "clues": [
+      "the default mask must be 255.0.0.0",
+      "the first octet of the block must be between 1 and 126",
+      "the block must hold more than 65,000 hosts without subnetting"
+    ],
+    "answer": {
+      "item": "A Class A network, such as 10.0.0.0"
+    },
+    "itemType": "address class",
+    "appliesWhen": "a network needs the largest classful block, with an 8-bit default mask",
+    "explanation": "Class A addresses have a first octet of 1 to 126 and a default mask of 255.0.0.0. Each Class A network has 24 host bits, so it holds about 16.7 million hosts.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets",
+    "related": [
+      "network-s-class-b",
+      "network-s-class-c",
+      "network-s-class-d"
+    ]
+  },
+  {
+    "id": "network-s-class-c",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.3"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "pick a classful network block for a small office with about 100 hosts",
+    "clues": [
+      "the default mask must be 255.255.255.0",
+      "the first octet of the block must be between 192 and 223",
+      "fewer than 254 hosts will ever be on the network"
+    ],
+    "answer": {
+      "item": "A Class C network, such as 192.168.1.0"
+    },
+    "itemType": "address class",
+    "appliesWhen": "a network needs a classful block for no more than 254 hosts",
+    "explanation": "Class C addresses have a first octet of 192 to 223 and a default mask of 255.255.255.0. That leaves 8 host bits, which give 254 usable hosts.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets",
+    "related": [
+      "network-s-class-a",
+      "network-s-class-b",
+      "network-s-class-d"
+    ]
+  },
+  {
+    "id": "network-s-class-b",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.3"
+    ],
+    "settings": [
+      "campus"
+    ],
+    "devices": [],
+    "need": "pick a classful network block for a campus with about 20,000 hosts",
+    "clues": [
+      "the default mask must be 255.255.0.0",
+      "the first octet of the block must be between 128 and 191",
+      "the network needs more than 254 hosts but far fewer than a million"
+    ],
+    "answer": {
+      "item": "A Class B network, such as 172.16.0.0"
+    },
+    "itemType": "address class",
+    "appliesWhen": "a network needs a classful block with a 16-bit default mask",
+    "explanation": "Class B addresses have a first octet of 128 to 191 and a default mask of 255.255.0.0. The 16 host bits give 65,534 usable hosts.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets",
+    "related": [
+      "network-s-class-a",
+      "network-s-class-c",
+      "network-s-class-d"
+    ]
+  },
+  {
+    "id": "network-s-vlsm",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "divide one /24 block into subnets for departments of very different sizes",
+    "clues": [
+      "one department has 100 hosts and another has 10",
+      "two point-to-point router links need only 2 addresses each",
+      "as few addresses as possible may be wasted"
+    ],
+    "answer": {
+      "item": "Variable Length Subnet Mask (VLSM)"
+    },
+    "itemType": "subnetting method",
+    "appliesWhen": "subnets of different sizes must be cut from one block",
+    "explanation": "VLSM lets each subnet of a block have its own prefix length. Large subnets get short prefixes and small links get long ones, such as /30, so fewer addresses are wasted.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets",
+    "related": [
+      "network-s-cidr-summary",
+      "network-s-slash30",
+      "network-s-class-c"
+    ]
+  },
+  {
+    "id": "network-s-cidr-summary",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "enterprise",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "advertise eight contiguous /24 networks to the ISP as a single route",
+    "clues": [
+      "the networks are 192.168.0.0 through 192.168.7.0",
+      "the ISP router accepts only one route from the company",
+      "the route must not depend on the old address classes"
+    ],
+    "answer": {
+      "item": "A CIDR summary route of 192.168.0.0/21"
+    },
+    "itemType": "subnetting method",
+    "appliesWhen": "contiguous networks must be shown as one prefix",
+    "explanation": "CIDR drops the class boundaries and writes a network as an address and a prefix length. Eight contiguous /24 networks share their first 21 bits, so one /21 route covers them all.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets",
+    "related": [
+      "network-s-vlsm",
+      "network-s-slash30",
+      "network-s-class-b"
+    ]
+  },
+  {
+    "id": "network-s-slash30",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "1",
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "origin": "written",
+    "topics": [
+      "N10-009/1.7.2"
+    ],
+    "settings": [
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "address a point-to-point WAN link between two routers",
+    "clues": [
+      "only the two router interfaces need addresses",
+      "the link must waste as few addresses as possible",
+      "the routers do not support /31 prefixes"
+    ],
+    "answer": {
+      "item": "A /30 subnet (255.255.255.252)"
+    },
+    "itemType": "subnet size",
+    "appliesWhen": "a link needs exactly two usable host addresses",
+    "explanation": "A /30 subnet has 4 addresses: the network address, two usable hosts, and the broadcast address. That is exactly what a link between two routers needs.",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing and Appendix B: Calculating Subnets",
+    "related": [
+      "network-s-vlsm",
+      "network-s-cidr-summary",
+      "network-s-class-c"
+    ]
+  }
+]

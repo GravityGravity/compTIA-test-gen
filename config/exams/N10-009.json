@@ -3,7 +3,7 @@
   "certification": "network-plus",
   "name": "Network+ Exam",
   "shortName": "Network+",
-  "active": false,
+  "active": true,
   "content": "network",
   "questionCount": { "min": 75, "max": 90 },
   "timeLimitMinutes": 90,

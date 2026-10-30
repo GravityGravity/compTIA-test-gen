@@ -1,0 +1,3682 @@
+[
+  {
+    "id": "network-s-d5a-fiber-mode-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "campus",
+      "enterprise"
+    ],
+    "devices": [
+      "fiber-uplink"
+    ],
+    "clues": [
+      "the new link between the buildings never comes up or drops after a few minutes",
+      "the patch cord has a yellow jacket while the transceivers are rated for 850 nm",
+      "the same transceivers work with the old orange patch cords",
+      "the link light flickers but no traffic passes"
+    ],
+    "answer": {
+      "cause": "a single-mode patch cord used with multimode transceivers",
+      "action": "Replace the patch cord with multimode fiber that matches the transceivers"
+    },
+    "firstStep": "Check the fiber type printed on the patch cord against the transceiver specs",
+    "appliesWhen": "the fiber type does not match the optics at its ends",
+    "explanation": "Short-range 850 nm optics are made for multimode fiber, and a yellow jacket marks single-mode cable. A fiber type mismatch can keep the link down or make it unstable.",
+    "related": [
+      "network-s-d5a-low-category-cable",
+      "network-s-d5a-fiber-dirty-connector",
+      "network-s-d5a-fiber-tx-rx",
+      "network-s-d5a-attenuation-long-run"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-low-category-cable",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the workstation links at 1 Gbps although the switch port and NIC support 10 Gbps",
+      "the jacket of the old patch cord is printed Cat 5",
+      "a newer patch cord from the stockroom gives the full speed",
+      "no errors show on the switch port"
+    ],
+    "answer": {
+      "cause": "a lower-category cable that cannot carry the link speed",
+      "action": "Replace the cable with Cat 6a or better"
+    },
+    "firstStep": "Read the category printed on the cable jacket",
+    "appliesWhen": "the cable is rated for a lower speed than the link needs",
+    "explanation": "Each cable category has a top speed and distance. An old Cat 5 cord cannot carry 10GBASE-T, so the ports fall back to a lower speed.",
+    "related": [
+      "network-s-d5a-fiber-mode-mismatch",
+      "network-s-d5a-utp-in-emi-area",
+      "network-s-d5a-attenuation-long-run",
+      "network-s-d5a-improper-termination"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-utp-in-emi-area",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "cable-run"
+    ],
+    "clues": [
+      "the drops on the factory floor run past large motors and welders",
+      "errors rise whenever the production line starts",
+      "the cable is plain Cat 6 with no foil or braid",
+      "the same model of cable works well in the office area"
+    ],
+    "answer": {
+      "cause": "unshielded cable installed where a shielded cable is needed",
+      "action": "Replace the run with shielded twisted pair (STP) or fiber"
+    },
+    "appliesWhen": "a plain unshielded cable runs through an area full of electrical noise",
+    "explanation": "Unshielded cable has no protection against the strong electrical noise of motors and welders. Shielded twisted pair or fiber resists that noise.",
+    "related": [
+      "network-s-d5a-emi-near-power",
+      "network-s-d5a-crosstalk-untwisted",
+      "network-s-d5a-low-category-cable",
+      "network-s-d5a-attenuation-long-run"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-emi-near-power",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "cable-run"
+    ],
+    "clues": [
+      "the errors started after new fluorescent light fixtures were installed",
+      "the cable lies on top of the light fittings above the ceiling tiles",
+      "the cable tests clean when it is laid on the floor",
+      "users on that run see slow transfers and retransmissions"
+    ],
+    "answer": {
+      "cause": "electromagnetic interference (EMI) from the light fixtures next to the cable",
+      "action": "Reroute the cable away from the fixtures, or use shielded cable for that path"
+    },
+    "firstStep": "Look at the path of the cable above the ceiling",
+    "appliesWhen": "a cable lies next to a source of electrical noise such as lights or power lines",
+    "explanation": "Fluorescent fixtures, elevators, and power lines make electromagnetic fields that corrupt the signal in copper cable. Running the cable away from them, or shielding it, removes the noise.",
+    "related": [
+      "network-s-d5a-utp-in-emi-area",
+      "network-s-d5a-crosstalk-untwisted",
+      "network-s-d5a-attenuation-long-run",
+      "network-s-d5a-improper-termination"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-crosstalk-untwisted",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [
+      "cable-run"
+    ],
+    "clues": [
+      "the certifier reports a NEXT failure on the run",
+      "the pairs are untwisted for several centimeters behind the patch panel",
+      "the wire map test shows every pin in the right place",
+      "the link works at 100 Mbps but fails at 1 Gbps"
+    ],
+    "answer": {
+      "cause": "near-end crosstalk between pairs left untwisted at the termination",
+      "action": "Reterminate the run, keeping each pair twisted up to the punch-down point"
+    },
+    "appliesWhen": "the pairs are untwisted too far where the cable is terminated",
+    "explanation": "The twists cancel the signal that one pair puts on its neighbor. Untwisting too much at the panel lets the pairs couple, which a certifier reports as near-end crosstalk.",
+    "related": [
+      "network-s-d5a-improper-termination",
+      "network-s-d5a-emi-near-power",
+      "network-s-d5a-open-short",
+      "network-s-d5a-attenuation-long-run"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-attenuation-long-run",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "cable-run"
+    ],
+    "clues": [
+      "the run goes from the closet to a new office at the far end of the warehouse",
+      "the measured length is about 140 meters",
+      "the link drops in and out and shows many errors",
+      "the cable tests with no opens or shorts"
+    ],
+    "answer": {
+      "cause": "attenuation because the copper run is longer than 100 meters",
+      "action": "Shorten the run by adding a switch or repeater closer to the office, or use fiber"
+    },
+    "firstStep": "Measure the cable length with a TDR or cable certifier",
+    "appliesWhen": "the copper run is longer than its rated distance",
+    "explanation": "Signals weaken as they travel, and twisted pair is rated for 100 meters. Past that length the signal is too weak, which causes intermittent errors.",
+    "related": [
+      "network-s-d5a-low-category-cable",
+      "network-s-d5a-improper-termination",
+      "network-s-d5a-emi-near-power",
+      "network-s-d5a-fiber-mode-mismatch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-improper-termination",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the connection drops when the patch cord is moved",
+      "the outer jacket stops short of the plug, so the bare wires show",
+      "the conductors do not reach the end of the plug",
+      "a different patch cord works without problems"
+    ],
+    "answer": {
+      "cause": "a badly crimped connector on the patch cord",
+      "action": "Cut off the plug and crimp a new connector, or replace the patch cord"
+    },
+    "firstStep": "Swap in a known-good patch cord",
+    "appliesWhen": "a plug was crimped badly, so the pins make poor contact",
+    "explanation": "When the wires do not reach the pins and the jacket is not held by the plug, contact is poor and changes when the cord moves. Proper termination fixes the contact.",
+    "related": [
+      "network-s-d5a-crosstalk-untwisted",
+      "network-s-d5a-open-short",
+      "network-s-d5a-low-category-cable",
+      "network-s-d5a-attenuation-long-run"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-open-short",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "cable-run"
+    ],
+    "clues": [
+      "the wall jack stopped working after workers installed new shelving",
+      "a cable tester shows no continuity on two pairs",
+      "the patch cords at both ends test good",
+      "the port shows no link at all"
+    ],
+    "answer": {
+      "cause": "a cable in the wall cut or crushed during the work",
+      "action": "Repair or replace the damaged run in the wall"
+    },
+    "firstStep": "Test the in-wall run with a cable tester",
+    "appliesWhen": "the in-wall cable has a break or a short",
+    "explanation": "Losing continuity on pairs inside the wall right after building work points to a cut or crushed run. An open breaks the circuit and stops the link.",
+    "related": [
+      "network-s-d5a-improper-termination",
+      "network-s-d5a-crosstalk-untwisted",
+      "network-s-d5a-attenuation-long-run",
+      "network-s-d5a-fiber-tx-rx"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-fiber-tx-rx",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "data-center",
+      "campus"
+    ],
+    "devices": [
+      "fiber-uplink"
+    ],
+    "clues": [
+      "the new duplex fiber patch shows no link on either switch",
+      "a light meter at the far end finds light on the wrong strand of the pair",
+      "the transceivers and the fiber type match",
+      "the cable was cut and terminated on site"
+    ],
+    "answer": {
+      "cause": "transmit and receive strands transposed on the fiber patch",
+      "action": "Reverse the two strands at one end so transmit connects to receive"
+    },
+    "firstStep": "Check which strand carries light with a visual fault locator or light meter",
+    "appliesWhen": "the transmit of one end does not reach the receive of the other",
+    "explanation": "A fiber link needs each transmit port connected to the far receive port. When the strands are reversed, both ends send light that no receiver sees.",
+    "related": [
+      "network-s-d5a-fiber-mode-mismatch",
+      "network-s-d5a-fiber-dirty-connector",
+      "network-s-d5a-transceiver-mismatch",
+      "network-s-d5a-open-short"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-fiber-dirty-connector",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "fiber-uplink"
+    ],
+    "clues": [
+      "the link came up with errors after the patch cords were moved during a rack change",
+      "the receive power on the port is several dB lower than last month",
+      "an inspection scope shows specks on the ferrule end face",
+      "the dust caps were left off the ports for a day"
+    ],
+    "answer": {
+      "cause": "dirty fiber connectors blocking part of the light",
+      "action": "Clean the connector end faces and inspect them before reconnecting"
+    },
+    "firstStep": "Inspect the connector end faces with a fiber scope",
+    "appliesWhen": "dust or residue on the fiber end faces blocks the light",
+    "explanation": "Dust or oil on a ferrule scatters light and adds loss at the connector. Cleaning the end faces restores the receive power.",
+    "related": [
+      "network-s-d5a-fiber-tx-rx",
+      "network-s-d5a-fiber-mode-mismatch",
+      "network-s-d5a-optical-signal-weak",
+      "network-s-d5a-transceiver-mismatch"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-crc-errors",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "the input error counter on one access port climbs every minute",
+      "the frames fail their checksum at the switch",
+      "the user on that port says file copies are slow",
+      "other ports on the same switch show no errors"
+    ],
+    "answer": {
+      "cause": "a damaged cable or connector corrupting frames on that port",
+      "action": "Test the cable on that port and replace it if it fails"
+    },
+    "firstStep": "Look at the interface counters with a show interface command",
+    "appliesWhen": "frames arrive corrupted because of a bad cable, connector, or noise on one link",
+    "explanation": "A CRC error means the frame's checksum did not match its data, so the bits were damaged on the wire. One port with rising CRC counts points to that link's cabling.",
+    "related": [
+      "network-s-d5a-duplex-mismatch-runts",
+      "network-s-d5a-giants-mtu",
+      "network-s-d5a-output-drops",
+      "network-s-d5a-err-disabled"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-duplex-mismatch-runts",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "office",
+      "data-center"
+    ],
+    "devices": [
+      "server-nic"
+    ],
+    "clues": [
+      "the switch port counts runts and late collisions",
+      "the server NIC was set by hand to 100 Mbps full",
+      "the switch port is left on auto",
+      "throughput drops badly under load"
+    ],
+    "answer": {
+      "cause": "a duplex mismatch between the switch port and the server NIC",
+      "action": "Set both ends to the same speed and duplex, or both to auto"
+    },
+    "firstStep": "Compare the speed and duplex on the switch port and the NIC",
+    "appliesWhen": "one end of the link runs half duplex and the other full duplex",
+    "explanation": "When one side is set by hand and the other is on auto, the auto side falls back to half duplex. The half-duplex side sees collisions and cut-off frames.",
+    "related": [
+      "network-s-d5a-crc-errors",
+      "network-s-d5a-giants-mtu",
+      "network-s-d5a-output-drops",
+      "network-s-d5a-suspended-bundle"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-giants-mtu",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "data-center"
+    ],
+    "devices": [
+      "server-nic"
+    ],
+    "clues": [
+      "the storage server was set to send 9000-byte frames",
+      "the switch port counts giants and drops them",
+      "small pings work but large file transfers stall",
+      "the other storage servers on the switch work normally"
+    ],
+    "answer": {
+      "cause": "jumbo frames on the server that the switch port does not accept",
+      "action": "Set the same MTU on the server and the switch port"
+    },
+    "firstStep": "Compare the MTU settings on the server and the switch port",
+    "appliesWhen": "one end sends frames larger than the other end accepts",
+    "explanation": "A giant is a frame larger than the port allows. When the server sends jumbo frames and the switch port is set for 1500 bytes, the large frames are dropped.",
+    "related": [
+      "network-s-d5a-crc-errors",
+      "network-s-d5a-duplex-mismatch-runts",
+      "network-s-d5a-output-drops",
+      "network-s-d5a-suspended-bundle"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-output-drops",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "the output discard counter on the uplink rises every night",
+      "the counts climb during the backup window",
+      "the uplink shows no CRC errors, runts, or giants",
+      "users on the floor report slow access only while backups run"
+    ],
+    "answer": {
+      "cause": "an oversubscribed uplink whose output buffers overflow",
+      "action": "Add uplink capacity, such as a faster or aggregated link, or apply QoS"
+    },
+    "firstStep": "Check the uplink utilization during the backup window",
+    "appliesWhen": "more traffic is sent to a port than it can forward, so its buffers overflow",
+    "explanation": "Drops with no error counters mean the frames were good but the port could not forward them in time. The buffers fill when traffic is more than the link can carry.",
+    "related": [
+      "network-s-d5a-crc-errors",
+      "network-s-d5a-duplex-mismatch-runts",
+      "network-s-d5a-giants-mtu",
+      "network-s-d5a-admin-down"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-err-disabled",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "a user plugged a small desk switch into the wall jack to add a printer",
+      "the port light on the access switch turned amber and then went dark",
+      "the switch log shows a port security violation",
+      "the port stays down after the desk switch is removed"
+    ],
+    "answer": {
+      "cause": "a port shut down in the error-disabled state by port security",
+      "action": "Remove the extra device, then reset the port (shutdown, then no shutdown) or let errdisable recovery restore it"
+    },
+    "firstStep": "Check the port status and the switch log",
+    "appliesWhen": "the switch shut the port itself after a security or error condition",
+    "explanation": "Port security puts a port in the error-disabled state when it sees more MAC addresses than allowed. The port stays down until it is reset or recovered.",
+    "related": [
+      "network-s-d5a-admin-down",
+      "network-s-d5a-suspended-bundle",
+      "network-s-d5a-crc-errors",
+      "network-s-d5a-poe-budget"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-admin-down",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "the port light is off and the switch counts no errors on it",
+      "the configuration has a shutdown line under that interface",
+      "a technician worked on the switch during last night's maintenance",
+      "the cable and the PC test good"
+    ],
+    "answer": {
+      "cause": "an interface that was disabled in the switch configuration",
+      "action": "Enable the interface with the no shutdown command"
+    },
+    "firstStep": "Check the interface status on the switch",
+    "appliesWhen": "an administrator disabled the interface in the configuration",
+    "explanation": "Administratively down means someone turned the port off with a command, for example during maintenance. It stays off until it is enabled again.",
+    "related": [
+      "network-s-d5a-err-disabled",
+      "network-s-d5a-suspended-bundle",
+      "network-s-d5a-output-drops",
+      "network-s-d5a-wrong-vlan"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-suspended-bundle",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.2"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "core-switch"
+    ],
+    "clues": [
+      "two ports were bundled into one link to the server switch",
+      "one member port shows suspended while the other forwards",
+      "the suspended port was set to 1 Gbps while its partner runs at 10 Gbps",
+      "the bundle carries only half its expected bandwidth"
+    ],
+    "answer": {
+      "cause": "a port-channel member whose settings do not match the rest of the bundle",
+      "action": "Match the member port's speed, duplex, and LACP settings to the bundle"
+    },
+    "firstStep": "Compare the member port settings with the other ports in the bundle",
+    "appliesWhen": "a member link of a port channel has settings that differ from the others",
+    "explanation": "A switch suspends a port-channel member when its settings do not match the bundle or the far end. The other members keep forwarding, so the bundle runs with less capacity.",
+    "related": [
+      "network-s-d5a-err-disabled",
+      "network-s-d5a-admin-down",
+      "network-s-d5a-duplex-mismatch-runts",
+      "network-s-d5a-giants-mtu"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-poe-budget",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.3"
+    ],
+    "settings": [
+      "retail",
+      "school"
+    ],
+    "devices": [
+      "poe-device"
+    ],
+    "clues": [
+      "twelve new cameras were added to a switch that already powers the phones",
+      "the last ports connected get no power while the earlier ones work",
+      "the switch log shows power denied on several ports",
+      "each camera works when moved to a different switch"
+    ],
+    "answer": {
+      "cause": "the switch's PoE power budget exceeded by the new devices",
+      "action": "Add power capacity (a bigger power supply, a second switch, or an injector) or set port power priorities"
+    },
+    "firstStep": "Check the switch's PoE power use against its budget",
+    "appliesWhen": "the devices together draw more power than the switch can supply",
+    "explanation": "A PoE switch has a total power budget shared by all its ports. When the connected devices need more than that budget, the switch stops powering some ports.",
+    "related": [
+      "network-s-d5a-poe-wrong-standard",
+      "network-s-d5a-transceiver-mismatch",
+      "network-s-d5a-err-disabled",
+      "network-s-d5a-optical-signal-weak"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-poe-wrong-standard",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.3"
+    ],
+    "settings": [
+      "office",
+      "campus"
+    ],
+    "devices": [
+      "poe-device"
+    ],
+    "clues": [
+      "the new access point boots but runs with only one radio",
+      "the AP's log shows it is in a low-power mode",
+      "the switch ports supply up to 15.4 W",
+      "the AP's data sheet asks for 802.3bt power"
+    ],
+    "answer": {
+      "cause": "a switch port that supports only 802.3af PoE for a device that needs more power",
+      "action": "Connect the device to a PoE+ or PoE++ port, or use a matching injector"
+    },
+    "appliesWhen": "the port supplies an older PoE standard than the device requires",
+    "explanation": "802.3af gives at most 15.4 W per port, while 802.3at and 802.3bt give more. A device that needs a higher standard runs in a limited mode or does not start.",
+    "related": [
+      "network-s-d5a-poe-budget",
+      "network-s-d5a-transceiver-mismatch",
+      "network-s-d5a-optical-signal-weak",
+      "network-s-d5a-err-disabled"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-transceiver-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.3"
+    ],
+    "settings": [
+      "data-center",
+      "campus"
+    ],
+    "devices": [
+      "fiber-uplink"
+    ],
+    "clues": [
+      "one end of the new link has a 10GBASE-SR module and the other a 10GBASE-LR module",
+      "the link does not come up",
+      "the fiber tests good with a light source and meter",
+      "each module works when paired with a module of its own type"
+    ],
+    "answer": {
+      "cause": "mismatched transceivers that use different standards and wavelengths",
+      "action": "Install the same transceiver type at both ends of the link"
+    },
+    "firstStep": "Read the type of the transceiver at each end",
+    "appliesWhen": "the modules at the two ends use different standards or wavelengths",
+    "explanation": "Both ends of a fiber link need transceivers of the same standard, data rate, and wavelength. SR modules use 850 nm and LR modules use 1310 nm, so they cannot talk to each other.",
+    "related": [
+      "network-s-d5a-optical-signal-weak",
+      "network-s-d5a-poe-wrong-standard",
+      "network-s-d5a-fiber-mode-mismatch",
+      "network-s-d5a-fiber-tx-rx"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-optical-signal-weak",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.3"
+    ],
+    "settings": [
+      "campus",
+      "enterprise"
+    ],
+    "devices": [
+      "fiber-uplink"
+    ],
+    "clues": [
+      "the transceiver diagnostics show receive power near the module's lowest limit",
+      "the run is long and has several splices and patch panels",
+      "the link flaps and logs errors on warm afternoons",
+      "the module types match at both ends"
+    ],
+    "answer": {
+      "cause": "a received optical level too low for the transceiver",
+      "action": "Reduce the loss on the path (clean, re-splice, or remove patch points) or use longer-reach transceivers"
+    },
+    "firstStep": "Read the receive power in the transceiver diagnostics (DOM)",
+    "appliesWhen": "the light reaching the receiver is too weak because the path has too much loss",
+    "explanation": "Each splice, connector, and meter of fiber adds loss. When the received power is close to the module's lowest limit, small changes make the link flap.",
+    "related": [
+      "network-s-d5a-transceiver-mismatch",
+      "network-s-d5a-fiber-dirty-connector",
+      "network-s-d5a-poe-budget",
+      "network-s-d5a-poe-wrong-standard"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-need-stp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "choose the copper cable for drops that run through a machine shop",
+    "clues": [
+      "the drops pass close to large electric motors",
+      "the runs are under 60 meters",
+      "the client devices have only RJ45 ports"
+    ],
+    "answer": {
+      "item": "Shielded twisted pair (STP) cable"
+    },
+    "itemType": "cable type",
+    "appliesWhen": "a short copper run must pass through strong electrical noise",
+    "explanation": "Shielded twisted pair has a foil or braid that protects the pairs from outside electrical noise. It keeps the RJ45 connection that the devices need.",
+    "related": [
+      "network-s-d5a-need-single-mode",
+      "network-s-d5a-need-cat6a",
+      "network-s-d5a-need-multimode",
+      "network-s-d5a-need-poe-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-need-single-mode",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "campus"
+    ],
+    "devices": [],
+    "need": "link two buildings that are 8 kilometers apart",
+    "clues": [
+      "the link must run at 10 Gbps",
+      "the path is far beyond any copper limit",
+      "the cable will run underground between the sites"
+    ],
+    "answer": {
+      "item": "Single-mode fiber with long-range (LR) transceivers"
+    },
+    "itemType": "cable type",
+    "appliesWhen": "a high-speed link must cover several kilometers",
+    "explanation": "Single-mode fiber carries light over many kilometers with little loss. Multimode and copper cannot reach that far.",
+    "related": [
+      "network-s-d5a-need-multimode",
+      "network-s-d5a-need-stp",
+      "network-s-d5a-need-cat6a",
+      "network-s-d5a-need-poe-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-need-multimode",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "data-center"
+    ],
+    "devices": [],
+    "need": "connect the switches in two rows of the same data center at 10 Gbps",
+    "clues": [
+      "the run is about 200 meters",
+      "the budget calls for the lower-cost optics",
+      "the switches have SFP+ slots"
+    ],
+    "answer": {
+      "item": "Multimode fiber with short-range (SR) transceivers"
+    },
+    "itemType": "cable type",
+    "appliesWhen": "a fast link of a few hundred meters must use the lower-cost optics",
+    "explanation": "Multimode fiber with SR optics covers a few hundred meters at 10 Gbps at a lower cost than single-mode. It fits links inside one building.",
+    "related": [
+      "network-s-d5a-need-single-mode",
+      "network-s-d5a-need-cat6a",
+      "network-s-d5a-need-stp",
+      "network-s-d5a-need-poe-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-need-cat6a",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "cable new desks for 10 Gbps copper connections",
+    "clues": [
+      "the longest run is 90 meters",
+      "the NICs use RJ45 ports",
+      "the building has no unusual electrical noise"
+    ],
+    "answer": {
+      "item": "Cat 6a unshielded twisted pair cable"
+    },
+    "itemType": "cable type",
+    "appliesWhen": "a copper run up to 100 meters must carry 10 Gbps",
+    "explanation": "Cat 6a supports 10GBASE-T to the full 100 meters. Cat 5e and Cat 6 cannot carry 10 Gbps that far.",
+    "related": [
+      "network-s-d5a-need-stp",
+      "network-s-d5a-need-multimode",
+      "network-s-d5a-need-single-mode",
+      "network-s-d5a-need-poe-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-need-poe-bt",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "topics": [
+      "N10-009/5.2.3"
+    ],
+    "settings": [
+      "retail",
+      "campus"
+    ],
+    "devices": [],
+    "need": "power new pan-tilt-zoom cameras with heaters over the network cable",
+    "clues": [
+      "each camera draws about 60 W",
+      "no power outlets are near the camera mounts",
+      "the current switch gives at most 30 W per port"
+    ],
+    "answer": {
+      "item": "A switch with IEEE 802.3bt (PoE++) ports"
+    },
+    "itemType": "device",
+    "appliesWhen": "a powered device needs more than 30 W over the network cable",
+    "explanation": "802.3bt delivers 60 W or more per port, while 802.3at stops at 30 W. A high-power camera needs the newer standard.",
+    "related": [
+      "network-s-d5a-need-stp",
+      "network-s-d5a-need-cat6a",
+      "network-s-d5a-need-single-mode",
+      "network-s-d5a-need-multimode"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "network-s-d5a-switching-loop",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "the whole floor lost the network a few minutes after a desk was moved",
+      "both ends of one patch cord are plugged into two wall jacks",
+      "the switch CPU is at 100 percent and every port light blinks fast",
+      "the switch log shows MAC addresses flapping between ports"
+    ],
+    "answer": {
+      "cause": "a network loop on switch ports where spanning tree is turned off",
+      "action": "Remove the extra cable, then enable STP with BPDU guard on the access ports"
+    },
+    "firstStep": "Look for a cable that connects two switch ports together",
+    "appliesWhen": "two switch ports are joined by a redundant path that nothing blocks",
+    "explanation": "A loop forwards broadcasts around and around because Ethernet frames have no TTL, so a broadcast storm fills every link. Spanning tree blocks redundant paths to stop this.",
+    "related": [
+      "network-s-d5a-root-bridge-wrong",
+      "network-s-d5a-portfast-delay",
+      "network-s-d5a-wrong-vlan",
+      "network-s-d5a-blocking-redundant"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-root-bridge-wrong",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "core-switch"
+    ],
+    "clues": [
+      "traffic between two buildings now crosses an old access switch",
+      "all switches still use the default bridge priority",
+      "the old access switch has the lowest MAC address on the network",
+      "the problem started after that switch was reconnected"
+    ],
+    "answer": {
+      "cause": "an old access switch elected as the STP root bridge",
+      "action": "Set a lower bridge priority on the core switch so it becomes the root"
+    },
+    "firstStep": "Check which switch is the root bridge with the spanning tree show command",
+    "appliesWhen": "a switch other than the core won the root bridge election",
+    "explanation": "With equal priorities, the switch with the lowest MAC address becomes the root bridge. All paths are built toward the root, so a weak access switch as root sends traffic the long way.",
+    "related": [
+      "network-s-d5a-switching-loop",
+      "network-s-d5a-blocking-redundant",
+      "network-s-d5a-portfast-delay",
+      "network-s-d5a-suspended-bundle"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-portfast-delay",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the PCs get an APIPA address after a cold boot",
+      "a manual renew a minute later gets a normal address",
+      "the switch port lights stay amber for about 30 seconds after the PC starts",
+      "the problem started after a new managed switch was installed"
+    ],
+    "answer": {
+      "cause": "access ports that wait in the STP listening and learning states before they forward",
+      "action": "Enable PortFast (edge port) on the access ports"
+    },
+    "firstStep": "Watch the port state on the switch while the PC boots",
+    "appliesWhen": "an access port spends its first 30 seconds or so in the STP listening and learning states",
+    "explanation": "A standard STP port listens and learns for about 30 seconds before it forwards. A fast-booting PC sends its DHCP request in that time and gets no reply.",
+    "related": [
+      "network-s-d5a-switching-loop",
+      "network-s-d5a-wrong-vlan",
+      "network-s-d5a-dhcp-pool-exhausted",
+      "network-s-d5a-root-bridge-wrong"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-blocking-redundant",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "data-center"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "the second uplink to the core shows no traffic",
+      "the switch lists that port with the alternate role",
+      "the first uplink is up and forwarding",
+      "the manager wants both uplinks to carry traffic"
+    ],
+    "answer": {
+      "cause": "spanning tree blocking the redundant uplink as designed",
+      "action": "Bundle the two uplinks into one port channel (link aggregation)"
+    },
+    "appliesWhen": "STP holds a redundant link in the blocking state to prevent a loop",
+    "explanation": "STP leaves one path forwarding and blocks the others, so a second uplink waits as an alternate port. A port channel makes the two links one logical link, so both carry traffic.",
+    "related": [
+      "network-s-d5a-switching-loop",
+      "network-s-d5a-root-bridge-wrong",
+      "network-s-d5a-portfast-delay",
+      "network-s-d5a-admin-down"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-wrong-vlan",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the user moved to a new desk yesterday",
+      "the PC now gets an address from the guest subnet",
+      "the user can browse the internet but cannot reach the department file server",
+      "users at nearby desks have no problems"
+    ],
+    "answer": {
+      "cause": "the switch port at the new desk assigned to the wrong VLAN",
+      "action": "Assign the switch port to the user's department VLAN"
+    },
+    "firstStep": "Check the VLAN that the switch port is assigned to",
+    "appliesWhen": "a switch port is a member of a different VLAN than the user needs",
+    "explanation": "Each VLAN is its own subnet, so the PC gets an address from whatever VLAN its port is in. A port in the guest VLAN cannot reach the department servers.",
+    "related": [
+      "network-s-d5a-trunk-missing-vlan",
+      "network-s-d5a-acl-blocks-app",
+      "network-s-d5a-switching-loop",
+      "network-s-d5a-portfast-delay"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-trunk-missing-vlan",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "net-switch"
+    ],
+    "clues": [
+      "a new VLAN for the phones works on the core switch",
+      "phones on the access switch in the second closet get no address",
+      "the other VLANs on that access switch work",
+      "the new VLAN exists on both switches"
+    ],
+    "answer": {
+      "cause": "the new VLAN not allowed on the trunk between the switches",
+      "action": "Add the VLAN to the allowed list on the trunk ports at both ends"
+    },
+    "firstStep": "Check the allowed VLAN list on the trunk",
+    "appliesWhen": "a trunk does not carry one of the VLANs it needs",
+    "explanation": "A trunk carries only the VLANs in its allowed list. If the new VLAN is left off, frames for it never reach the far switch, so its clients cannot reach the DHCP server.",
+    "related": [
+      "network-s-d5a-wrong-vlan",
+      "network-s-d5a-acl-blocks-app",
+      "network-s-d5a-dhcp-relay-missing",
+      "network-s-d5a-switching-loop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-acl-blocks-app",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "branch-office"
+    ],
+    "devices": [
+      "edge-router"
+    ],
+    "clues": [
+      "users can ping the application server",
+      "the web application times out on its custom port",
+      "a security change was applied to the router interface last night",
+      "the hit counter on the last line of the list is rising"
+    ],
+    "answer": {
+      "cause": "an access control list that blocks the application's port",
+      "action": "Add a permit entry for the application's port above the deny entries"
+    },
+    "firstStep": "Review the ACL entries and hit counts on the interface",
+    "appliesWhen": "a filter on a router or switch interface drops the traffic",
+    "explanation": "An ACL is read from the top down and ends with an implicit deny. If no permit line matches the application's port, the traffic is dropped while ping still works.",
+    "related": [
+      "network-s-d5a-wrong-vlan",
+      "network-s-d5a-trunk-missing-vlan",
+      "network-s-d5a-missing-route",
+      "network-s-d5a-default-route-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-default-route-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.2"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [
+      "edge-router"
+    ],
+    "clues": [
+      "users can reach every internal subnet",
+      "no one can reach any internet site",
+      "a traceroute stops at the router",
+      "the router was replaced yesterday and its configuration was rebuilt by hand"
+    ],
+    "answer": {
+      "cause": "a missing default route on the edge router",
+      "action": "Add a default route (0.0.0.0/0) that points to the ISP's next hop"
+    },
+    "firstStep": "Display the routing table on the router",
+    "appliesWhen": "the router has no gateway of last resort for unknown networks",
+    "explanation": "Without a default route, the router drops traffic for networks that are not in its table. Internal routes still work, so only the internet fails.",
+    "related": [
+      "network-s-d5a-missing-route",
+      "network-s-d5a-routing-loop",
+      "network-s-d5a-static-route-override",
+      "network-s-d5a-wrong-gateway-static"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-missing-route",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "branch-office"
+    ],
+    "devices": [
+      "edge-router"
+    ],
+    "clues": [
+      "a new subnet was added at the branch office",
+      "branch users on the new subnet can reach the internet",
+      "the head office cannot reach the new subnet",
+      "the older subnets at the branch work from the head office"
+    ],
+    "answer": {
+      "cause": "no entry for the new subnet in the head office router's routing table",
+      "action": "Add a static route for the subnet, or advertise it in the routing protocol"
+    },
+    "firstStep": "Display the routing table on the head office router",
+    "appliesWhen": "the router has no route to one destination network",
+    "explanation": "A router forwards only to networks in its routing table. The new subnet was never added or advertised, so the head office has no path to it.",
+    "related": [
+      "network-s-d5a-default-route-missing",
+      "network-s-d5a-routing-loop",
+      "network-s-d5a-static-route-override",
+      "network-s-d5a-acl-blocks-app"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-routing-loop",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "edge-router"
+    ],
+    "clues": [
+      "a traceroute alternates between the same two router addresses",
+      "the trace ends with TTL expired in transit",
+      "both routers have static routes added by hand last week",
+      "other destinations work normally"
+    ],
+    "answer": {
+      "cause": "a routing loop between two routers whose static routes point at each other",
+      "action": "Correct the static routes so each router has the right next hop"
+    },
+    "firstStep": "Run a traceroute to the destination",
+    "appliesWhen": "two routers each send the traffic to the other",
+    "explanation": "When router A sends a network to router B and B sends it back to A, the packet bounces until its TTL reaches zero. Fixing the conflicting routes ends the loop.",
+    "related": [
+      "network-s-d5a-default-route-missing",
+      "network-s-d5a-missing-route",
+      "network-s-d5a-static-route-override",
+      "network-s-d5a-switching-loop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-static-route-override",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "branch-office"
+    ],
+    "devices": [
+      "edge-router"
+    ],
+    "clues": [
+      "traffic to one branch takes the slow backup VPN although the main circuit is up",
+      "the routing protocol learns the branch as part of a larger summary",
+      "the routing table also lists a /24 entry for that branch from an old test",
+      "other branches use the main circuit"
+    ],
+    "answer": {
+      "cause": "a leftover more-specific static route that wins over the dynamic route",
+      "action": "Remove the leftover static route"
+    },
+    "firstStep": "Look up the route for the branch in the routing table",
+    "appliesWhen": "a more specific route in the table sends the traffic the wrong way",
+    "explanation": "A router picks the longest matching prefix first. An old /24 static route beats the larger summary that the routing protocol learned, so traffic follows the old path.",
+    "related": [
+      "network-s-d5a-missing-route",
+      "network-s-d5a-default-route-missing",
+      "network-s-d5a-routing-loop",
+      "network-s-d5a-wrong-gateway-dhcp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-dhcp-pool-exhausted",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.3"
+    ],
+    "settings": [
+      "school",
+      "retail"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "guests who arrived early in the day connect normally",
+      "later arrivals get a 169.254 address",
+      "the scope has 50 addresses and an 8-day lease",
+      "the DHCP server is running and answers other subnets"
+    ],
+    "answer": {
+      "cause": "an exhausted DHCP address pool",
+      "action": "Enlarge the scope or shorten the lease time"
+    },
+    "firstStep": "Check how many addresses in the scope are leased",
+    "appliesWhen": "every address in the DHCP scope is already leased",
+    "explanation": "When every address in the scope is leased, new clients get no offer and fall back to APIPA. A larger scope or shorter leases free addresses.",
+    "related": [
+      "network-s-d5a-dhcp-relay-missing",
+      "network-s-d5a-rogue-dhcp",
+      "network-s-d5a-duplicate-ip",
+      "network-s-d5a-portfast-delay"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-dhcp-relay-missing",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.5"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "every PC on the new VLAN gets a 169.254 address",
+      "the DHCP server is on a different subnet",
+      "the new scope on the server has plenty of free addresses",
+      "a PC with a static address on the new VLAN works"
+    ],
+    "answer": {
+      "cause": "no DHCP relay (IP helper) on the router interface for the new VLAN",
+      "action": "Configure a DHCP relay (IP helper address) on the VLAN's router interface"
+    },
+    "firstStep": "Check the router interface for the VLAN for a helper address",
+    "appliesWhen": "the DHCP requests from a subnet never reach the server on another subnet",
+    "explanation": "DHCP discovers are broadcasts, and routers do not forward broadcasts. A relay on the VLAN interface forwards them to the server.",
+    "related": [
+      "network-s-d5a-dhcp-pool-exhausted",
+      "network-s-d5a-rogue-dhcp",
+      "network-s-d5a-wrong-subnet-static",
+      "network-s-d5a-trunk-missing-vlan"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-rogue-dhcp",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.5"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "some PCs get addresses in 192.168.0.0/24 while the LAN uses 10.10.0.0/16",
+      "those PCs have a gateway that no one recognizes",
+      "a consumer wireless router was seen under a desk",
+      "the PCs that renew later may get a correct address"
+    ],
+    "answer": {
+      "cause": "an unauthorized DHCP server handing out leases",
+      "action": "Remove the device and enable DHCP snooping on the switches"
+    },
+    "firstStep": "Run ipconfig /all on an affected PC to see which DHCP server gave the lease",
+    "appliesWhen": "a second, unapproved DHCP server answers clients",
+    "explanation": "Clients take the first DHCP offer they hear. A consumer router answering requests gives out its own range and gateway.",
+    "related": [
+      "network-s-d5a-dhcp-pool-exhausted",
+      "network-s-d5a-dhcp-relay-missing",
+      "network-s-d5a-duplicate-ip",
+      "network-s-d5a-wrong-gateway-dhcp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-wrong-gateway-static",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.4"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the PC can reach the printer and the file server on its own subnet",
+      "it cannot reach any other subnet or the internet",
+      "ipconfig shows the gateway as 10.1.1.254 while the router interface is 10.1.1.1",
+      "the PC has a static address set by hand"
+    ],
+    "answer": {
+      "cause": "an incorrect default gateway on the PC",
+      "action": "Set the default gateway to the router's address"
+    },
+    "firstStep": "Compare the gateway in ipconfig with the router's interface address",
+    "appliesWhen": "a host points to the wrong address to leave its subnet",
+    "explanation": "A host sends traffic for other subnets to its default gateway. When that address is not the router, local traffic works but nothing leaves the subnet.",
+    "related": [
+      "network-s-d5a-wrong-mask-wide",
+      "network-s-d5a-wrong-subnet-static",
+      "network-s-d5a-duplicate-ip",
+      "network-s-d5a-default-route-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-wrong-gateway-dhcp",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.4"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "all DHCP clients on one subnet reach only local hosts",
+      "the computers with static settings on the same subnet work",
+      "the DHCP scope was edited yesterday",
+      "the clients show a router option of 10.2.0.10, which is a printer"
+    ],
+    "answer": {
+      "cause": "a wrong router option in the DHCP scope",
+      "action": "Correct the router (default gateway) option in the scope and have the clients renew"
+    },
+    "firstStep": "Check the router option in the DHCP scope",
+    "appliesWhen": "the DHCP scope gives every client the wrong gateway",
+    "explanation": "DHCP gives each client its gateway from the scope's router option. A wrong value sends every DHCP client to a host that does not route.",
+    "related": [
+      "network-s-d5a-wrong-gateway-static",
+      "network-s-d5a-rogue-dhcp",
+      "network-s-d5a-dhcp-relay-missing",
+      "network-s-d5a-wrong-mask-wide"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-duplicate-ip",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.5"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the PC shows an address conflict message",
+      "a network printer and a PC lose their connections in turn",
+      "the printer was given a static address inside the DHCP range",
+      "arp -a shows two different MAC addresses for the same address over time"
+    ],
+    "answer": {
+      "cause": "two devices using the same IP address",
+      "action": "Give the printer an address outside the DHCP range, or a DHCP reservation"
+    },
+    "firstStep": "Check the ARP table for the MAC address that answers that address",
+    "appliesWhen": "two hosts have the same address",
+    "explanation": "Every address on a network must be unique. A static address inside the DHCP range can be leased to another device, so the two take turns losing traffic.",
+    "related": [
+      "network-s-d5a-wrong-subnet-static",
+      "network-s-d5a-rogue-dhcp",
+      "network-s-d5a-dhcp-pool-exhausted",
+      "network-s-d5a-wrong-mask-wide"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-wrong-subnet-static",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.5"
+    ],
+    "settings": [
+      "branch-office",
+      "office"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the PC was moved from the head office to the branch",
+      "it still has the static address it used at the head office",
+      "it cannot reach anything, even the branch printer",
+      "other PCs at the branch use DHCP and work"
+    ],
+    "answer": {
+      "cause": "a static IP address from another subnet",
+      "action": "Set an address from the local subnet, or switch the PC to DHCP"
+    },
+    "firstStep": "Compare the PC's address with the addresses used at the branch",
+    "appliesWhen": "a host has an address that belongs to a different network",
+    "explanation": "A host can only talk directly to hosts in its own subnet and needs a gateway on that subnet. An address from the old site leaves it with no local neighbors and no gateway it can reach.",
+    "related": [
+      "network-s-d5a-duplicate-ip",
+      "network-s-d5a-wrong-gateway-static",
+      "network-s-d5a-wrong-mask-wide",
+      "network-s-d5a-dhcp-relay-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-wrong-mask-wide",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.6"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the PC has address 10.1.5.20 with mask 255.255.0.0",
+      "the LAN is 10.1.5.0/24",
+      "it cannot reach servers on 10.1.8.0/24 but can reach internet sites",
+      "the gateway and DNS settings are correct"
+    ],
+    "answer": {
+      "cause": "an incorrect subnet mask that is too wide",
+      "action": "Set the subnet mask to 255.255.255.0"
+    },
+    "firstStep": "Compare the PC's mask with the mask of the subnet",
+    "appliesWhen": "a host's mask makes it think remote hosts are on its own subnet",
+    "explanation": "With a /16 mask the PC treats 10.1.8.x as local and sends ARP requests that no one answers, instead of using the gateway. Internet traffic still goes to the gateway, so it works.",
+    "related": [
+      "network-s-d5a-wrong-gateway-static",
+      "network-s-d5a-duplicate-ip",
+      "network-s-d5a-wrong-subnet-static",
+      "network-s-d5a-dhcp-relay-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-wrong-mask-narrow",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.6"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "user-pc"
+    ],
+    "clues": [
+      "the PC has address 192.168.10.20 with mask 255.255.255.192",
+      "the LAN is 192.168.10.0/24 and the router is 192.168.10.1",
+      "it cannot reach the file server at 192.168.10.200 on the same switch",
+      "it can reach the PCs at addresses 192.168.10.2 to .62"
+    ],
+    "answer": {
+      "cause": "a subnet mask that is too narrow for the LAN",
+      "action": "Set the subnet mask to 255.255.255.0"
+    },
+    "firstStep": "Compare the PC's mask with the mask of the subnet",
+    "appliesWhen": "a host's mask makes it think local hosts are on another subnet",
+    "explanation": "With a /26 mask the PC sees only .1 to .62 as local. It sends traffic for .200 to the gateway, and other hosts outside its small range seem unreachable.",
+    "related": [
+      "network-s-d5a-wrong-gateway-static",
+      "network-s-d5a-wrong-subnet-static",
+      "network-s-d5a-duplicate-ip",
+      "network-s-d5a-default-route-missing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-need-bpdu-guard",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [],
+    "need": "stop users' desk switches from causing problems in the spanning tree",
+    "clues": [
+      "users sometimes plug small switches into wall jacks",
+      "an access port must shut down if it hears switch control messages",
+      "end devices on these ports never send BPDUs"
+    ],
+    "answer": {
+      "item": "BPDU guard on the access ports"
+    },
+    "itemType": "switch feature",
+    "appliesWhen": "an access port must shut down when another switch is connected to it",
+    "explanation": "BPDU guard error-disables an access port when a BPDU arrives on it. End devices never send BPDUs, so only a connected switch triggers it.",
+    "related": [
+      "network-s-d5a-need-root-priority",
+      "network-s-d5a-need-root-guard",
+      "network-s-d5a-need-portfast",
+      "network-s-d5a-need-dhcp-snooping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-need-root-priority",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "make sure the core switch is always the center of the spanning tree",
+    "clues": [
+      "all switches use the default settings",
+      "older access switches have lower MAC addresses than the core",
+      "the change must be made on the core switch"
+    ],
+    "answer": {
+      "item": "A lower bridge priority on the core switch"
+    },
+    "itemType": "setting",
+    "appliesWhen": "one chosen switch must always win the root bridge election",
+    "explanation": "The root bridge is the switch with the lowest bridge ID, which is the priority followed by the MAC address. A lower priority makes the core win no matter its MAC address.",
+    "related": [
+      "network-s-d5a-need-bpdu-guard",
+      "network-s-d5a-need-root-guard",
+      "network-s-d5a-need-portfast",
+      "network-s-d5a-need-dhcp-snooping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-need-root-guard",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "keep a partner's switch from taking over the spanning tree",
+    "clues": [
+      "the partner's switch connects to a downlink port and must still pass traffic",
+      "the port must keep working while the partner's switch accepts the current root",
+      "a superior BPDU from that side must not change the topology"
+    ],
+    "answer": {
+      "item": "Root guard on the downlink port"
+    },
+    "itemType": "switch feature",
+    "appliesWhen": "a downlink must stay up but never lead to a new root bridge",
+    "explanation": "Root guard blocks a port only while it receives superior BPDUs that would move the root. The downstream switch can keep its link as long as it accepts the current root.",
+    "related": [
+      "network-s-d5a-need-bpdu-guard",
+      "network-s-d5a-need-root-priority",
+      "network-s-d5a-need-portfast",
+      "network-s-d5a-need-dhcp-snooping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-need-portfast",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "let PCs start using the network as soon as their ports come up",
+    "clues": [
+      "the PCs are on single access ports with no other switches",
+      "the ports take about 30 seconds to pass traffic",
+      "the PCs sometimes miss their DHCP lease at boot"
+    ],
+    "answer": {
+      "item": "PortFast (edge port) on the access ports"
+    },
+    "itemType": "switch feature",
+    "appliesWhen": "an access port must skip the STP listening and learning delay",
+    "explanation": "PortFast moves an edge port straight to forwarding, so a booting PC can reach DHCP at once. It belongs only on ports with end devices.",
+    "related": [
+      "network-s-d5a-need-bpdu-guard",
+      "network-s-d5a-need-root-priority",
+      "network-s-d5a-need-root-guard",
+      "network-s-d5a-need-dhcp-snooping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5a-need-dhcp-snooping",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "topics": [
+      "N10-009/5.3.5"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [],
+    "need": "make sure clients get leases only from the approved server",
+    "clues": [
+      "a consumer router once gave out leases on the LAN",
+      "the approved server is reached through the uplink port",
+      "the switches are managed"
+    ],
+    "answer": {
+      "item": "DHCP snooping with the uplink port set as trusted"
+    },
+    "itemType": "switch feature",
+    "appliesWhen": "only DHCP offers from a trusted port must reach the clients",
+    "explanation": "DHCP snooping drops DHCP server messages that arrive on untrusted ports. Only the uplink to the approved server is trusted, so a rogue server's offers are dropped.",
+    "related": [
+      "network-s-d5a-need-bpdu-guard",
+      "network-s-d5a-need-root-priority",
+      "network-s-d5a-need-root-guard",
+      "network-s-d5a-need-portfast"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-congestion-backup",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "perf-server",
+      "perf-wired"
+    ],
+    "clues": [
+      "file copies crawl every weekday from ten to eleven in the morning",
+      "the uplink graph shows close to 100 percent use in that hour",
+      "a nightly job was recently moved to run in the morning",
+      "transfers are fast again by late morning"
+    ],
+    "answer": {
+      "cause": "congestion from a large backup job that fills the link during business hours",
+      "action": "Reschedule the backup job to run outside business hours"
+    },
+    "appliesWhen": "one heavy job fills a link at a set time of day",
+    "explanation": "The slowdown matches the hour when the link is full, and it began when a large job moved into that hour. Moving the job out of business hours removes the congestion.",
+    "related": [
+      "network-s-d5b-contention-hub",
+      "network-s-d5b-bottleneck-uplink",
+      "network-s-d5b-bandwidth-wan",
+      "network-s-d5b-packet-loss-crc"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting",
+    "firstStep": "Check the link utilization graph for the slow period"
+  },
+  {
+    "id": "network-s-d5b-contention-hub",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.1"
+    ],
+    "settings": [
+      "school",
+      "retail"
+    ],
+    "devices": [
+      "perf-wired"
+    ],
+    "clues": [
+      "the computers in one lab slow down as more students log on",
+      "the lab device has link lights that all blink together",
+      "the collision counters on the lab NICs keep rising",
+      "the computers in other rooms are fast"
+    ],
+    "answer": {
+      "cause": "contention on a shared hub, where every device competes for one collision domain",
+      "action": "Replace the hub with a switch"
+    },
+    "appliesWhen": "many devices share one collision domain and wait for each other to send",
+    "explanation": "A hub repeats every frame to every port, so all the lab computers compete for the same medium and collide. A switch gives each port its own collision domain.",
+    "related": [
+      "network-s-d5b-congestion-backup",
+      "network-s-d5b-bottleneck-uplink",
+      "network-s-d5b-duplex-mismatch",
+      "network-s-d5b-bandwidth-wan"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-bottleneck-uplink",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.2"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "perf-server"
+    ],
+    "clues": [
+      "each server has a 10 Gbps NIC",
+      "the access switch connects to the core over a single 1 Gbps port",
+      "servers on the same switch talk to each other at full speed",
+      "traffic to the core never goes above about 1 Gbps"
+    ],
+    "answer": {
+      "cause": "a bottleneck at the slow uplink between the access switch and the core",
+      "action": "Upgrade the uplink to 10 Gbps or aggregate several uplinks with LACP"
+    },
+    "appliesWhen": "one link in the path has much less capacity than the links that feed it",
+    "explanation": "Local traffic is fast while traffic through the uplink tops out at that port's speed, so the uplink limits the whole path. A faster or aggregated uplink removes the bottleneck.",
+    "related": [
+      "network-s-d5b-congestion-backup",
+      "network-s-d5b-contention-hub",
+      "network-s-d5b-bandwidth-wan",
+      "network-s-d5b-latency-satellite"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting",
+    "firstStep": "Compare the speed of each link in the path"
+  },
+  {
+    "id": "network-s-d5b-bandwidth-wan",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.3"
+    ],
+    "settings": [
+      "branch-office",
+      "office"
+    ],
+    "devices": [
+      "perf-internet"
+    ],
+    "clues": [
+      "the office grew from 10 to 40 staff this year",
+      "the circuit runs at its full rated speed all day",
+      "the ISP confirms the line has no faults",
+      "cloud apps are slow for everyone at once"
+    ],
+    "answer": {
+      "cause": "a WAN circuit whose bandwidth is too small for the number of users",
+      "action": "Upgrade the circuit to a higher bandwidth tier"
+    },
+    "appliesWhen": "the circuit works as designed but its capacity is too small for the demand",
+    "explanation": "The circuit has no fault and runs at its rated speed, but the demand has grown past its capacity. More throughput capacity is the fix.",
+    "related": [
+      "network-s-d5b-congestion-backup",
+      "network-s-d5b-bottleneck-uplink",
+      "network-s-d5b-isp-throughput",
+      "network-s-d5b-latency-satellite"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-isp-throughput",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.3"
+    ],
+    "settings": [
+      "home-office",
+      "branch-office"
+    ],
+    "devices": [
+      "perf-internet"
+    ],
+    "clues": [
+      "the contract is for 500 Mbps",
+      "tests from a wired PC show about 90 Mbps at every hour",
+      "only one person uses the connection",
+      "the router's own LAN ports test at full speed"
+    ],
+    "answer": {
+      "cause": "an ISP circuit that delivers far less throughput than the contracted bandwidth",
+      "action": "Contact the ISP with the test results and have them fix the circuit"
+    },
+    "appliesWhen": "the measured throughput is far below what the ISP contract promises with little local use",
+    "explanation": "One user on a wired PC gets a small part of the contracted rate at all hours, so local load does not explain it. The ISP must fix the circuit or its provisioning.",
+    "related": [
+      "network-s-d5b-bandwidth-wan",
+      "network-s-d5b-congestion-backup",
+      "network-s-d5b-bottleneck-uplink",
+      "network-s-d5b-latency-satellite"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting",
+    "firstStep": "Run a speed test from a wired computer and compare it with the contract"
+  },
+  {
+    "id": "network-s-d5b-latency-satellite",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.4"
+    ],
+    "settings": [
+      "branch-office",
+      "retail"
+    ],
+    "devices": [
+      "perf-internet",
+      "perf-voice"
+    ],
+    "clues": [
+      "the remote site's only internet link is a geostationary service",
+      "round-trip times are about 600 ms",
+      "large downloads reach their full rate after a while",
+      "two-way calls have long pauses between speakers"
+    ],
+    "answer": {
+      "cause": "high latency from the long path to a geostationary satellite",
+      "action": "Move interactive traffic to a terrestrial or low-orbit link"
+    },
+    "appliesWhen": "the signal travels a very long distance, so every round trip takes a long time",
+    "explanation": "A geostationary orbit is far from the earth, so each round trip takes about half a second even when the link has bandwidth to spare. Interactive traffic needs a shorter path.",
+    "related": [
+      "network-s-d5b-bandwidth-wan",
+      "network-s-d5b-jitter-voip",
+      "network-s-d5b-vpn-hairpin",
+      "network-s-d5b-isp-throughput"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-vpn-hairpin",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.4"
+    ],
+    "settings": [
+      "home-office",
+      "branch-office"
+    ],
+    "devices": [
+      "perf-video",
+      "perf-internet"
+    ],
+    "clues": [
+      "remote staff connect through the company tunnel",
+      "all traffic goes to a concentrator on another continent",
+      "a trace to a nearby website crosses an ocean twice",
+      "video meetings lag only while the tunnel is up"
+    ],
+    "answer": {
+      "cause": "high latency because a full tunnel sends all internet traffic through a distant concentrator",
+      "action": "Use split tunneling or a closer VPN gateway for internet traffic"
+    },
+    "appliesWhen": "traffic takes a long detour through a far-away gateway before it reaches nearby services",
+    "explanation": "With the tunnel up, even nearby sites are reached through a far-away concentrator, which adds a long round trip. Split tunneling or a closer gateway shortens the path.",
+    "related": [
+      "network-s-d5b-latency-satellite",
+      "network-s-d5b-jitter-voip",
+      "network-s-d5b-bandwidth-wan",
+      "network-s-d5b-congestion-backup"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-packet-loss-crc",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "perf-wired",
+      "perf-server"
+    ],
+    "clues": [
+      "a continuous test to the server drops about 5 percent of replies",
+      "the switch port shows rising input errors and FCS errors",
+      "the patch cord was crushed under a desk wheel",
+      "other ports on the switch have no errors"
+    ],
+    "answer": {
+      "cause": "a damaged patch cable that corrupts frames so the switch drops them",
+      "action": "Replace the damaged patch cable"
+    },
+    "appliesWhen": "a damaged cable corrupts frames so the receiver discards them",
+    "explanation": "Frames that fail the checksum are dropped, and only this port has rising errors on a crushed cord. A new cable stops the corrupted frames.",
+    "related": [
+      "network-s-d5b-duplex-mismatch",
+      "network-s-d5b-congestion-backup",
+      "network-s-d5b-contention-hub",
+      "network-s-d5b-jitter-voip"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting",
+    "firstStep": "Check the interface counters on the switch port"
+  },
+  {
+    "id": "network-s-d5b-duplex-mismatch",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.5"
+    ],
+    "settings": [
+      "office",
+      "data-center"
+    ],
+    "devices": [
+      "perf-server"
+    ],
+    "clues": [
+      "one end of the link is set by hand and the other auto-negotiates",
+      "the switch port reports late collisions",
+      "pings work but file copies are very slow",
+      "the problem started after the port was set to 100 Mbps by hand"
+    ],
+    "answer": {
+      "cause": "a duplex mismatch between the switch port and the server NIC",
+      "action": "Set both ends of the link to the same speed and duplex, or both to auto-negotiate"
+    },
+    "appliesWhen": "one end of a link runs full duplex and the other runs half duplex",
+    "explanation": "When one side is set by hand, the other side may fall back to half duplex. Late collisions and slow transfers are the sign of that mismatch.",
+    "related": [
+      "network-s-d5b-packet-loss-crc",
+      "network-s-d5b-contention-hub",
+      "network-s-d5b-bottleneck-uplink",
+      "network-s-d5b-congestion-backup"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting",
+    "firstStep": "Compare the speed and duplex settings on both ends of the link"
+  },
+  {
+    "id": "network-s-d5b-jitter-voip",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.6"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "perf-voice"
+    ],
+    "clues": [
+      "callers sound choppy and robotic",
+      "the average delay is low but it changes from 5 ms to 90 ms",
+      "the problem is worst while large files are copied",
+      "all traffic is in one queue on the router"
+    ],
+    "answer": {
+      "cause": "jitter because voice packets wait in the same queue as bulk data",
+      "action": "Configure QoS so voice traffic is marked and sent first"
+    },
+    "appliesWhen": "the delay of real-time packets changes a lot because they share a queue with bulk data",
+    "explanation": "Voice needs packets to arrive at an even pace. With one shared queue, bulk data makes the delay change from packet to packet, which breaks up the audio.",
+    "related": [
+      "network-s-d5b-latency-satellite",
+      "network-s-d5b-packet-loss-crc",
+      "network-s-d5b-congestion-backup",
+      "network-s-d5b-vpn-hairpin"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-channel-overlap",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "three nearby APs use 2.4 GHz channels 3, 4, and 8",
+      "throughput drops when all three APs are busy",
+      "the signal strength looks good everywhere",
+      "a scan shows many retries on each AP"
+    ],
+    "answer": {
+      "cause": "co-channel and adjacent-channel interference from overlapping 2.4 GHz channels",
+      "action": "Set the 2.4 GHz APs to channels 1, 6, and 11"
+    },
+    "appliesWhen": "nearby APs use 2.4 GHz channels that are too close together",
+    "explanation": "In the 2.4 GHz band, only channels 1, 6, and 11 do not overlap. APs on channels in between spill into each other, which causes retries and low throughput.",
+    "related": [
+      "network-s-d5b-microwave-interference",
+      "network-s-d5b-attenuation-walls",
+      "network-s-d5b-coverage-gap",
+      "network-s-d5b-ap-power-high"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "firstStep": "Run a Wi-Fi scan to see which channels the nearby APs use"
+  },
+  {
+    "id": "network-s-d5b-microwave-interference",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "laptops near the break room lose connection around lunchtime",
+      "the drops last a minute or two at a time",
+      "the laptops use the 2.4 GHz band",
+      "devices on 5 GHz in the same room have no problem"
+    ],
+    "answer": {
+      "cause": "RF interference from a microwave oven that works in the 2.4 GHz band",
+      "action": "Move the clients to the 5 GHz band or move the AP away from the break room"
+    },
+    "appliesWhen": "a nearby appliance sends noise in the 2.4 GHz band for short periods",
+    "explanation": "A microwave oven leaks energy at about 2.4 GHz, so drops near the break room at meal times point to it. The 5 GHz band avoids that noise.",
+    "related": [
+      "network-s-d5b-channel-overlap",
+      "network-s-d5b-attenuation-walls",
+      "network-s-d5b-deauth-attack",
+      "network-s-d5b-coverage-gap"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "network-s-d5b-attenuation-walls",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "clinic",
+      "data-center",
+      "school"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "users in the records room get a weak signal",
+      "the room is 10 meters from the AP behind a concrete wall and metal shelves",
+      "the open area at the same distance from the AP has a strong signal",
+      "the RSSI in the room is close to -80 dBm"
+    ],
+    "answer": {
+      "cause": "signal attenuation from the concrete wall and metal shelves between the AP and the room",
+      "action": "Add an AP inside the room or move the AP so the signal does not pass through the wall"
+    },
+    "appliesWhen": "dense materials such as concrete or metal absorb or reflect the signal between the AP and the clients",
+    "explanation": "The open area at the same distance has a good signal, so distance is not the problem. Concrete and metal absorb and reflect RF, which weakens the signal in that room.",
+    "related": [
+      "network-s-d5b-coverage-gap",
+      "network-s-d5b-channel-overlap",
+      "network-s-d5b-microwave-interference",
+      "network-s-d5b-ap-power-high"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking",
+    "firstStep": "Measure the RSSI inside the room and in the open area"
+  },
+  {
+    "id": "network-s-d5b-coverage-gap",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "campus",
+      "enterprise"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "a new wing opened last month",
+      "the nearest AP is at the far end of the old building",
+      "devices in the new wing show one bar or no network at all",
+      "the heat map from the original survey stops at the old wall"
+    ],
+    "answer": {
+      "cause": "insufficient wireless coverage because no AP serves the new wing",
+      "action": "Do a new site survey and install APs in the new wing"
+    },
+    "appliesWhen": "an area is too far from any AP to get a usable signal",
+    "explanation": "The wing was added after the original survey, and the closest AP is too far away. A new survey shows where to place APs to cover it.",
+    "related": [
+      "network-s-d5b-attenuation-walls",
+      "network-s-d5b-channel-overlap",
+      "network-s-d5b-ap-power-high",
+      "network-s-d5b-roaming-ssid"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "network-s-d5b-ap-power-high",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "office",
+      "campus"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "all APs are set to their maximum output",
+      "laptops stay connected to an AP two rooms away",
+      "phones show a strong signal but uploads are slow",
+      "the cells of nearby APs overlap a lot on the heat map"
+    ],
+    "answer": {
+      "cause": "AP transmit power set too high, so cells overlap and clients stay on distant APs",
+      "action": "Lower the AP transmit power so each AP covers only its own area"
+    },
+    "appliesWhen": "APs transmit so strongly that their cells overlap and clients join APs that are too far away",
+    "explanation": "A client hears a loud AP from far away and stays on it, but its own weaker signal back to that AP gives poor uploads. Lower power makes clients use the closest AP.",
+    "related": [
+      "network-s-d5b-roaming-ssid",
+      "network-s-d5b-coverage-gap",
+      "network-s-d5b-channel-overlap",
+      "network-s-d5b-attenuation-walls"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "network-s-d5b-deauth-attack",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "many clients drop from the network at the same moment",
+      "the controller log shows a flood of management frames from one MAC address",
+      "the clients reconnect and drop again within seconds",
+      "a new network with a similar name appeared nearby"
+    ],
+    "answer": {
+      "cause": "a deauthentication attack that forces clients off the AP, possibly to push them to an evil twin",
+      "action": "Enable 802.11w protected management frames and locate the rogue transmitter"
+    },
+    "appliesWhen": "an attacker sends forged frames that force clients to leave the AP",
+    "explanation": "Forged management frames make clients leave the real AP all at once, and a look-alike network suggests an evil twin. Protected management frames reject forged frames.",
+    "related": [
+      "network-s-d5b-microwave-interference",
+      "network-s-d5b-roaming-ssid",
+      "network-s-d5b-channel-overlap",
+      "network-s-d5b-coverage-gap"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-roaming-ssid",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "campus",
+      "clinic",
+      "enterprise"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "laptops lose the network when users walk from the first to the second floor",
+      "the second-floor AP was replaced last week",
+      "users must pick the network and type the key again upstairs",
+      "the signal is strong on both floors"
+    ],
+    "answer": {
+      "cause": "a replaced AP whose SSID or security settings do not match the other APs",
+      "action": "Configure the new AP with the same SSID and security settings as the other APs"
+    },
+    "appliesWhen": "the APs do not all use the same SSID and security settings, so clients cannot move between them",
+    "explanation": "Clients move between APs only when the APs share the same SSID and security settings. Having to join again on the new AP's floor shows that its settings differ.",
+    "related": [
+      "network-s-d5b-ap-power-high",
+      "network-s-d5b-coverage-gap",
+      "network-s-d5b-deauth-attack",
+      "network-s-d5b-roaming-threshold"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "network-s-d5b-roaming-threshold",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "topics": [
+      "N10-009/5.4.7"
+    ],
+    "settings": [
+      "clinic",
+      "campus"
+    ],
+    "devices": [
+      "perf-wifi"
+    ],
+    "clues": [
+      "handheld scanners switch APs many times a minute while users stand still",
+      "each switch causes a short pause in the app",
+      "the APs share the same network name and key",
+      "the change rule was edited on the controller last week"
+    ],
+    "answer": {
+      "cause": "a roaming threshold set so that clients hand over between APs too often",
+      "action": "Adjust the roaming threshold on the controller to a sensible signal level"
+    },
+    "appliesWhen": "the signal level that triggers a handover is set wrong, so clients change APs too often or too late",
+    "explanation": "The APs match, but the devices change APs even when they do not move, so the handover trigger is wrong. A better threshold stops the needless handovers.",
+    "related": [
+      "network-s-d5b-roaming-ssid",
+      "network-s-d5b-ap-power-high",
+      "network-s-d5b-channel-overlap",
+      "network-s-d5b-deauth-attack"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-ping",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [],
+    "need": "check whether a workstation can reach its default gateway",
+    "clues": [
+      "the user says nothing on the network works",
+      "the technician is at a Windows command prompt",
+      "only a quick yes-or-no reachability test is needed"
+    ],
+    "answer": {
+      "item": "The ping command"
+    },
+    "itemType": "command",
+    "appliesWhen": "a quick ICMP echo test shows whether one host can reach another",
+    "explanation": "ping sends ICMP echo requests and reports each reply and its round-trip time. A reply from the gateway shows the local link and addressing work.",
+    "related": [
+      "network-s-d5b-tracert",
+      "network-s-d5b-arp",
+      "network-s-d5b-ipconfig",
+      "network-s-d5b-netstat"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-tracert",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "find where along the path traffic to a remote server slows down or stops",
+    "clues": [
+      "the server is several routers away",
+      "the technician wants a list of each hop and its delay",
+      "the user is on a Windows workstation"
+    ],
+    "answer": {
+      "item": "The tracert command"
+    },
+    "itemType": "command",
+    "appliesWhen": "the path to a remote host must be listed hop by hop with the delay at each router",
+    "explanation": "tracert sends packets with a rising TTL, so each router on the path answers in turn. The hop where the delay jumps or the replies stop shows where the problem is.",
+    "related": [
+      "network-s-d5b-ping",
+      "network-s-d5b-netstat",
+      "network-s-d5b-nslookup",
+      "network-s-d5b-speed-test"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-nslookup",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "check which IP address the company DNS server returns for an intranet name",
+    "clues": [
+      "users reach the site by IP address but not by name",
+      "the workstation runs Windows",
+      "the technician wants to query the name server directly"
+    ],
+    "answer": {
+      "item": "The nslookup command"
+    },
+    "itemType": "command",
+    "appliesWhen": "a name must be checked against a DNS server from a Windows command prompt",
+    "explanation": "nslookup sends a query to a DNS server and shows the server used and the address it returns. A wrong or empty answer points to a DNS problem.",
+    "related": [
+      "network-s-d5b-dig",
+      "network-s-d5b-ping",
+      "network-s-d5b-arp",
+      "network-s-d5b-ipconfig"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-dig",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "see the full answer and authority sections for the mail exchanger records of a domain",
+    "clues": [
+      "the technician is in a Linux shell",
+      "the output must show the TTL and flags of each record",
+      "the query should go to one specific name server"
+    ],
+    "answer": {
+      "item": "The dig command"
+    },
+    "itemType": "command",
+    "appliesWhen": "detailed DNS records must be queried from a Linux or macOS shell",
+    "explanation": "dig is the Linux and macOS DNS lookup tool, and it prints each section of the reply with TTLs and flags. It can ask a chosen server for one record type such as MX.",
+    "related": [
+      "network-s-d5b-nslookup",
+      "network-s-d5b-tcpdump",
+      "network-s-d5b-netstat",
+      "network-s-d5b-ip-addr"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-netstat",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "list the ports a server is listening on and its active connections",
+    "clues": [
+      "a service may not have started on the server",
+      "the check must be done on the server itself",
+      "the technician also wants to see which remote hosts are connected"
+    ],
+    "answer": {
+      "item": "The netstat command"
+    },
+    "itemType": "command",
+    "appliesWhen": "a host's own listening ports and active connections must be listed",
+    "explanation": "netstat shows the local host's TCP and UDP connections and listening ports, and netstat -a lists them all. It confirms whether the service is listening.",
+    "related": [
+      "network-s-d5b-nmap",
+      "network-s-d5b-tcpdump",
+      "network-s-d5b-ping",
+      "network-s-d5b-arp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-ipconfig",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [],
+    "need": "see the IP address, gateway, DNS servers, and lease details of a Windows laptop",
+    "clues": [
+      "the laptop may have an address in the 169.254.0.0/16 range",
+      "the technician also wants to release and renew the lease",
+      "the laptop runs Windows"
+    ],
+    "answer": {
+      "item": "The ipconfig /all command"
+    },
+    "itemType": "command",
+    "appliesWhen": "a Windows host's own IP settings and lease must be shown or renewed",
+    "explanation": "ipconfig /all shows the address, mask, gateway, DNS servers, and DHCP lease on Windows. ipconfig /release and /renew request a new lease.",
+    "related": [
+      "network-s-d5b-ip-addr",
+      "network-s-d5b-arp",
+      "network-s-d5b-nslookup",
+      "network-s-d5b-ping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-ip-addr",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "view the interfaces and IPv4 addresses of a modern Linux server",
+    "clues": [
+      "the server runs a current Linux release",
+      "the old net-tools package is not installed",
+      "the technician wants to see the state of each interface"
+    ],
+    "answer": {
+      "item": "The ip address show command"
+    },
+    "itemType": "command",
+    "appliesWhen": "a Linux host's interface settings must be shown with the current tool",
+    "explanation": "On current Linux releases, ip replaces ifconfig, and ip address show lists each interface with its state and addresses. ifconfig needs the older net-tools package.",
+    "related": [
+      "network-s-d5b-ipconfig",
+      "network-s-d5b-dig",
+      "network-s-d5b-netstat",
+      "network-s-d5b-tcpdump"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-arp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "see which hardware address a workstation has stored for the gateway's IP address",
+    "clues": [
+      "two devices may be using the same IP address",
+      "the check is done on the user's Windows workstation",
+      "the technician wants the local IP-to-MAC cache"
+    ],
+    "answer": {
+      "item": "The arp -a command"
+    },
+    "itemType": "command",
+    "appliesWhen": "the IP-to-MAC mappings that a host has cached must be shown",
+    "explanation": "arp -a lists the host's cache of IP addresses and their MAC addresses. If the gateway's entry changes between MAC addresses, two devices claim that address.",
+    "related": [
+      "network-s-d5b-show-arp",
+      "network-s-d5b-ipconfig",
+      "network-s-d5b-ping",
+      "network-s-d5b-netstat"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-tcpdump",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "capture the packets on an interface of a Linux server that has no desktop",
+    "clues": [
+      "only an SSH session to the server is available",
+      "the capture must be saved to a file for later study",
+      "a filter must keep only traffic on port 443"
+    ],
+    "answer": {
+      "item": "The tcpdump command"
+    },
+    "itemType": "command",
+    "appliesWhen": "packets must be captured from the command line of a Linux or Unix host",
+    "explanation": "tcpdump captures packets from the command line with filters and can write them to a pcap file. The file can later be opened in a protocol analyzer.",
+    "related": [
+      "network-s-d5b-protocol-analyzer",
+      "network-s-d5b-netstat",
+      "network-s-d5b-tap",
+      "network-s-d5b-dig"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-protocol-analyzer",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "decode a capture to see why a web app's TCP sessions keep resetting",
+    "clues": [
+      "the capture file is already saved",
+      "the technician wants each packet's headers shown in readable form",
+      "the work is done on a Windows desktop with a graphical tool"
+    ],
+    "answer": {
+      "item": "A protocol analyzer such as Wireshark"
+    },
+    "itemType": "tool",
+    "appliesWhen": "captured traffic must be decoded and read protocol by protocol",
+    "explanation": "A protocol analyzer reads and decodes the captured frames, so the technician can see each header, flag, and retransmission. It shows where the resets come from.",
+    "related": [
+      "network-s-d5b-tcpdump",
+      "network-s-d5b-nmap",
+      "network-s-d5b-wifi-analyzer",
+      "network-s-d5b-tap"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-nmap",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "find every host on a subnet and the services each one offers",
+    "clues": [
+      "the scan runs from one admin laptop",
+      "the results must list open TCP ports and service versions",
+      "the change was approved by the security team"
+    ],
+    "answer": {
+      "item": "Nmap"
+    },
+    "itemType": "tool",
+    "appliesWhen": "remote hosts must be discovered and their open ports listed from across the network",
+    "explanation": "Nmap is a port scanner that discovers live hosts and the open ports and services on each one. netstat shows only the local host.",
+    "related": [
+      "network-s-d5b-netstat",
+      "network-s-d5b-protocol-analyzer",
+      "network-s-d5b-lldp",
+      "network-s-d5b-ping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-lldp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "learn which switch and port a VoIP phone is plugged into",
+    "clues": [
+      "the switches and phones come from three vendors",
+      "the cables are not labeled",
+      "the devices advertise their neighbors at Layer 2"
+    ],
+    "answer": {
+      "item": "LLDP"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "devices from many vendors must report their directly connected neighbors",
+    "explanation": "LLDP is the vendor-neutral Layer 2 discovery protocol, so the switch can show the phone's name, port, and capabilities. CDP works only between Cisco devices.",
+    "related": [
+      "network-s-d5b-cdp",
+      "network-s-d5b-nmap",
+      "network-s-d5b-toner",
+      "network-s-d5b-show-mac"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-cdp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "data-center",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "see the model and interface of each device connected to a router",
+    "clues": [
+      "every router and switch in the network is from Cisco",
+      "the vendor's own protocol is enabled by default",
+      "the admin is at the router's console"
+    ],
+    "answer": {
+      "item": "CDP"
+    },
+    "itemType": "protocol",
+    "appliesWhen": "an all-Cisco network must report directly connected neighbor devices",
+    "explanation": "CDP is Cisco's own Layer 2 discovery protocol and is on by default on Cisco devices. show cdp neighbors lists each connected device and port.",
+    "related": [
+      "network-s-d5b-lldp",
+      "network-s-d5b-show-route",
+      "network-s-d5b-nmap",
+      "network-s-d5b-show-mac"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-speed-test",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.1"
+    ],
+    "settings": [
+      "home-office",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "confirm whether the internet connection delivers the rate in the ISP contract",
+    "clues": [
+      "the users say the connection seems slow",
+      "the test should run from a wired computer",
+      "the result must show download and upload rates in Mbps"
+    ],
+    "answer": {
+      "item": "A speed tester"
+    },
+    "itemType": "tool",
+    "appliesWhen": "the real download and upload rates of a connection must be compared with the contract",
+    "explanation": "A speed tester measures the actual download and upload throughput to a test server. The result can be compared with the contracted bandwidth.",
+    "related": [
+      "network-s-d5b-tracert",
+      "network-s-d5b-protocol-analyzer",
+      "network-s-d5b-wifi-analyzer",
+      "network-s-d5b-ping"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-toner",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [],
+    "need": "find which unlabeled patch panel port connects to a wall jack",
+    "clues": [
+      "the wall jack is in a room on another floor",
+      "dozens of cables end in the wiring closet",
+      "the technician can put a device on the jack and listen in the closet"
+    ],
+    "answer": {
+      "item": "A tone generator and probe"
+    },
+    "itemType": "tool",
+    "appliesWhen": "one unlabeled cable must be traced from one end to the other",
+    "explanation": "The tone generator puts a signal on the cable at the jack, and the probe sounds when it touches that cable in the closet. This traces one cable among many.",
+    "related": [
+      "network-s-d5b-cable-tester",
+      "network-s-d5b-lldp",
+      "network-s-d5b-vfl",
+      "network-s-d5b-show-mac"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-cable-tester",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "check that a newly terminated Cat 6 cable has every pair wired correctly",
+    "clues": [
+      "the technician crimped both ends by hand",
+      "the result must show opens, shorts, and crossed pairs",
+      "the cable is copper twisted pair"
+    ],
+    "answer": {
+      "item": "A cable tester"
+    },
+    "itemType": "tool",
+    "appliesWhen": "the wiring of a copper cable must be checked for opens, shorts, and miswires",
+    "explanation": "A cable tester sends a signal down each pair and shows whether each pin reaches the right pin at the far end. It finds opens, shorts, and crossed pairs.",
+    "related": [
+      "network-s-d5b-toner",
+      "network-s-d5b-vfl",
+      "network-s-d5b-tap",
+      "network-s-d5b-wifi-analyzer"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-tap",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.2"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "copy all traffic on a busy link to a monitoring system without dropping frames",
+    "clues": [
+      "a switch mirror port dropped frames under heavy load",
+      "the device must be passive and add no point of failure",
+      "the monitor needs both directions of the link"
+    ],
+    "answer": {
+      "item": "A network tap"
+    },
+    "itemType": "tool",
+    "appliesWhen": "an exact passive copy of all traffic on a link must go to a monitor",
+    "explanation": "A tap sits inline and passively copies every frame in both directions to the monitor. It does not drop frames under load the way a mirror port can.",
+    "related": [
+      "network-s-d5b-tcpdump",
+      "network-s-d5b-protocol-analyzer",
+      "network-s-d5b-cable-tester",
+      "network-s-d5b-vfl"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-wifi-analyzer",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.2"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "choose the least crowded channel for a new access point",
+    "clues": [
+      "several nearby businesses run their own wireless networks",
+      "the tool should show the signal level of each network in dBm",
+      "the technician carries a laptop through the area"
+    ],
+    "answer": {
+      "item": "A Wi-Fi analyzer"
+    },
+    "itemType": "tool",
+    "appliesWhen": "the channels and signal levels of nearby wireless networks must be measured",
+    "explanation": "A Wi-Fi analyzer lists nearby networks with their channels and signal levels. The technician can then pick the clearest channel.",
+    "related": [
+      "network-s-d5b-speed-test",
+      "network-s-d5b-cable-tester",
+      "network-s-d5b-protocol-analyzer",
+      "network-s-d5b-toner"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "network-s-d5b-vfl",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.2"
+    ],
+    "settings": [
+      "data-center",
+      "campus"
+    ],
+    "devices": [],
+    "need": "find the exact spot of a break or tight bend in a short fiber patch cord",
+    "clues": [
+      "the link light is off on a fiber uplink",
+      "the cord is only a few meters long",
+      "the technician wants to see the fault with the eye"
+    ],
+    "answer": {
+      "item": "A visual fault locator"
+    },
+    "itemType": "tool",
+    "appliesWhen": "a break or bend in a short fiber run must be seen directly",
+    "explanation": "A visual fault locator sends bright red laser light into the fiber, and the light shows through the jacket at a break or tight bend. It finds faults in short runs.",
+    "related": [
+      "network-s-d5b-cable-tester",
+      "network-s-d5b-toner",
+      "network-s-d5b-tap",
+      "network-s-d5b-wifi-analyzer"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-mac",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "find which switch port a laptop with a known hardware address is connected to",
+    "clues": [
+      "the admin knows the laptop's hardware address",
+      "the admin is logged in to the access switch",
+      "the switch learns the source address of each frame on each port"
+    ],
+    "answer": {
+      "item": "show mac-address-table"
+    },
+    "itemType": "switch command",
+    "appliesWhen": "the switch port where a device's hardware address was learned must be found",
+    "explanation": "The switch keeps a table of each learned MAC address with its port and VLAN. Looking up the laptop's address in it gives the port.",
+    "related": [
+      "network-s-d5b-show-arp",
+      "network-s-d5b-show-vlan",
+      "network-s-d5b-show-interface",
+      "network-s-d5b-lldp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-route",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "branch-office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "check whether a router has a path to a remote subnet",
+    "clues": [
+      "users cannot reach one remote subnet",
+      "the admin is at the router's command line",
+      "the router learns paths from OSPF and has a few static entries"
+    ],
+    "answer": {
+      "item": "show route"
+    },
+    "itemType": "router command",
+    "appliesWhen": "the paths that a router knows to each network must be checked",
+    "explanation": "show route (show ip route on Cisco) lists the networks the router knows, the next hop, and how each was learned. A missing entry explains the unreachable subnet.",
+    "related": [
+      "network-s-d5b-show-arp",
+      "network-s-d5b-show-config",
+      "network-s-d5b-show-interface",
+      "network-s-d5b-cdp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-interface",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "office",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "check one switch port for errors, duplex, and speed",
+    "clues": [
+      "a server on that port has slow transfers",
+      "the admin wants the input error and CRC counters",
+      "the admin is logged in to the switch"
+    ],
+    "answer": {
+      "item": "show interface"
+    },
+    "itemType": "switch command",
+    "appliesWhen": "the status, speed, duplex, and error counters of a port must be checked",
+    "explanation": "show interface shows a port's state, speed, duplex, and counters such as CRC errors and collisions. Rising errors point to a cable or duplex problem.",
+    "related": [
+      "network-s-d5b-show-config",
+      "network-s-d5b-show-mac",
+      "network-s-d5b-show-power",
+      "network-s-d5b-show-vlan"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-config",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "enterprise",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "review the settings that a router is running after a change",
+    "clues": [
+      "a colleague changed the router last night",
+      "the admin wants to read every setting that is active now",
+      "the admin will compare the output with the saved backup"
+    ],
+    "answer": {
+      "item": "show config"
+    },
+    "itemType": "router command",
+    "appliesWhen": "the full set of settings on a device must be reviewed",
+    "explanation": "show config (show running-config on Cisco) prints the device's current configuration. Comparing it with the backup shows what changed.",
+    "related": [
+      "network-s-d5b-show-route",
+      "network-s-d5b-show-interface",
+      "network-s-d5b-show-vlan",
+      "network-s-d5b-show-arp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-arp",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "office",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "see which hardware address the router has stored for a server's IP address",
+    "clues": [
+      "the check must be done on the router, not on a host",
+      "a server was replaced but kept its old IP address",
+      "the admin wants the router's IP-to-MAC entries"
+    ],
+    "answer": {
+      "item": "show arp"
+    },
+    "itemType": "router command",
+    "appliesWhen": "a router's own IP-to-MAC mappings must be shown",
+    "explanation": "show arp lists the router's ARP cache of IP addresses and MAC addresses. An old MAC for the replaced server shows a stale entry.",
+    "related": [
+      "network-s-d5b-arp",
+      "network-s-d5b-show-mac",
+      "network-s-d5b-show-route",
+      "network-s-d5b-show-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-vlan",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "campus",
+      "school"
+    ],
+    "devices": [],
+    "need": "confirm which ports on a switch belong to the guest network segment",
+    "clues": [
+      "a guest laptop got an address from the staff range",
+      "the switch has several Layer 2 segments",
+      "the admin wants the ports listed by segment"
+    ],
+    "answer": {
+      "item": "show vlan"
+    },
+    "itemType": "switch command",
+    "appliesWhen": "the ports assigned to each VLAN on a switch must be listed",
+    "explanation": "show vlan lists each VLAN with its name and the ports assigned to it. A guest port in the staff VLAN explains the wrong address.",
+    "related": [
+      "network-s-d5b-show-mac",
+      "network-s-d5b-show-interface",
+      "network-s-d5b-show-config",
+      "network-s-d5b-show-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "network-s-d5b-show-power",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "5",
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "topics": [
+      "N10-009/5.5.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "find out why new IP phones on one switch do not power on",
+    "clues": [
+      "the phones get their power from the switch ports",
+      "ten more phones were added this week",
+      "the admin wants the power budget that is used and left"
+    ],
+    "answer": {
+      "item": "show power"
+    },
+    "itemType": "switch command",
+    "appliesWhen": "the PoE budget and the power drawn on each port must be checked",
+    "explanation": "show power shows the switch's PoE budget, the power in use, and the power on each port. A used-up budget means new phones get no power.",
+    "related": [
+      "network-s-d5b-show-interface",
+      "network-s-d5b-show-vlan",
+      "network-s-d5b-show-mac",
+      "network-s-d5b-show-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  }
+]

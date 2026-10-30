@@ -1,0 +1,1117 @@
+[
+  {
+    "id": "network-s-d4-port-security",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "stop people from plugging their own hubs or extra devices into the wall jacks of the access switches",
+    "clues": [
+      "each wall jack should serve only the one desk computer that is already connected to it",
+      "the switches are managed models",
+      "staff have been adding small unmanaged hubs under their desks",
+      "the switch should shut the jack down or send an alert when a new device shows up"
+    ],
+    "answer": {
+      "item": "Port security with a MAC address limit"
+    },
+    "itemType": "switch feature",
+    "appliesWhen": "each switch port must accept only one or a few known hardware addresses",
+    "explanation": "Port security works at Layer 2 and lets a switch port accept only the hardware addresses it has learned or been given. When another device appears, the switch can shut the port, send an SNMP trap, or send an alert.",
+    "related": [
+      "network-s-d4-dot1x",
+      "network-s-d4-mac-filter",
+      "network-s-d4-nac-posture",
+      "network-s-d4-captive-portal",
+      "network-s-d4-guest-isolation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-dot1x",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "make every wired and wireless device prove who it is before the switch or access point lets it on the network",
+    "clues": [
+      "a RADIUS server is already running for the VPN",
+      "the switches and access points should not do the checking themselves",
+      "the company wants to use digital certificates on each laptop",
+      "an unknown device that connects to a port must get no network access"
+    ],
+    "answer": {
+      "item": "802.1X port-based authentication with an authentication server"
+    },
+    "itemType": "access control method",
+    "appliesWhen": "each device must authenticate through EAP to a central server before its port opens",
+    "explanation": "802.1X carries EAP between the device, the switch or access point, and a central authentication server, so the network devices only pass the request on. Certificate-based EAP-TLS is its most secure form.",
+    "related": [
+      "network-s-d4-port-security",
+      "network-s-d4-mac-filter",
+      "network-s-d4-nac-posture",
+      "network-s-d4-captive-portal",
+      "network-s-d4-guest-isolation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-mac-filter",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "home-office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "let only the store's three tablets and its printer join the small wireless network",
+    "clues": [
+      "the access point is a basic small-office model with no RADIUS support",
+      "the list of allowed devices rarely changes",
+      "the owner has written down the hardware address of each device",
+      "a simple allow list is enough for this small site"
+    ],
+    "answer": {
+      "item": "MAC filtering with an allow list on the access point"
+    },
+    "itemType": "setting",
+    "appliesWhen": "a small fixed set of devices is allowed by hardware address on a basic access point",
+    "explanation": "MAC filtering keeps an allow or deny list of hardware addresses, and the access point rejects any adapter that is not on the allow list. It is simple for a small fixed set of devices, though addresses can be spoofed.",
+    "related": [
+      "network-s-d4-port-security",
+      "network-s-d4-dot1x",
+      "network-s-d4-nac-posture",
+      "network-s-d4-captive-portal",
+      "network-s-d4-guest-isolation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-nac-posture",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [],
+    "need": "keep laptops with old antivirus definitions or missing patches off the production network",
+    "clues": [
+      "each laptop must be checked for its security settings when it connects",
+      "a laptop that fails the check should go to a quarantine network until it is fixed",
+      "the check should read the antivirus version and the patch level",
+      "a temporary agent can run on visitor devices"
+    ],
+    "answer": {
+      "item": "Network access control (NAC) with a posture assessment"
+    },
+    "itemType": "solution",
+    "appliesWhen": "each device's security state must be checked before it gets access, with failures sent to quarantine",
+    "explanation": "NAC gathers information from the device, such as its antivirus version and patch level, and decides what access it gets. A device that fails the posture assessment can be placed in a quarantine network.",
+    "related": [
+      "network-s-d4-port-security",
+      "network-s-d4-dot1x",
+      "network-s-d4-mac-filter",
+      "network-s-d4-captive-portal",
+      "network-s-d4-guest-isolation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-captive-portal",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.5"
+    ],
+    "settings": [
+      "retail",
+      "clinic",
+      "campus"
+    ],
+    "devices": [],
+    "need": "give visitors Internet access only after they accept the acceptable use policy",
+    "clues": [
+      "visitors use their own phones and laptops",
+      "a web page should open first when a visitor connects",
+      "visitors must agree to the terms before they can browse",
+      "no software should be installed on visitor devices"
+    ],
+    "answer": {
+      "item": "A captive portal on the guest wireless network"
+    },
+    "itemType": "solution",
+    "appliesWhen": "guests must view a web page and agree to terms before they get Internet access",
+    "explanation": "A captive portal is the web page a guest sees first on a public network, and it holds back other access until the user acts, such as accepting the AUP. Coffee shops, hospitals, and hotels use it for guest Wi-Fi.",
+    "related": [
+      "network-s-d4-port-security",
+      "network-s-d4-dot1x",
+      "network-s-d4-mac-filter",
+      "network-s-d4-nac-posture",
+      "network-s-d4-guest-isolation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-guest-isolation",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.5"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "need": "keep visitors on the wireless network from seeing or reaching each other's devices and the staff computers",
+    "clues": [
+      "visitors only need to reach the Internet",
+      "a visitor's laptop should not be able to find any other connected device",
+      "the staff file shares must stay out of reach",
+      "the access point can run a second wireless network for visitors"
+    ],
+    "answer": {
+      "item": "Guest network isolation on a separate guest wireless network"
+    },
+    "itemType": "setting",
+    "appliesWhen": "guest users must reach the Internet but no other connected devices",
+    "explanation": "With guest network isolation, guest users get to the Internet but cannot see any other connected devices. The guest network is treated as an untrusted zone, apart from the staff network.",
+    "related": [
+      "network-s-d4-port-security",
+      "network-s-d4-dot1x",
+      "network-s-d4-mac-filter",
+      "network-s-d4-nac-posture",
+      "network-s-d4-captive-portal"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-acl-block",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "branch-office"
+    ],
+    "devices": [],
+    "need": "stop one outside address that keeps scanning the network from reaching it at all",
+    "clues": [
+      "the scans come from the same public IP address every night",
+      "the edge router can filter traffic by source address",
+      "all other outside traffic must keep working",
+      "the block should be applied at the network edge"
+    ],
+    "answer": {
+      "item": "An access control list (ACL) entry on the edge router that denies that source"
+    },
+    "itemType": "control",
+    "appliesWhen": "traffic from a specific address must be rejected at the router",
+    "explanation": "An ACL lets a router ignore or reject requests from specified addresses while other traffic passes. A deny entry for the scanning address drops its traffic every time it arrives.",
+    "related": [
+      "network-s-d4-url-filter",
+      "network-s-d4-content-filter",
+      "network-s-d4-screened-subnet",
+      "network-s-d4-implicit-deny",
+      "network-s-d4-trusted-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-url-filter",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "school",
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "block staff from gambling and social media websites while other web browsing keeps working",
+    "clues": [
+      "the acceptable use policy names categories of sites that are not allowed",
+      "new sites in those categories appear every week",
+      "the rules should apply to whole groups of websites, not single IP addresses",
+      "the school's web proxy has a subscription to a site reputation list"
+    ],
+    "answer": {
+      "item": "URL filtering by website category"
+    },
+    "itemType": "solution",
+    "appliesWhen": "access to websites must be allowed or blocked by address or category",
+    "explanation": "URL filtering, also called web filtering, allows or blocks websites by their address, category, or reputation. Blocking by category keeps up with new sites without a rule for each one.",
+    "related": [
+      "network-s-d4-acl-block",
+      "network-s-d4-content-filter",
+      "network-s-d4-screened-subnet",
+      "network-s-d4-implicit-deny",
+      "network-s-d4-trusted-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-content-filter",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "stop emails and downloads that carry malware or customer card numbers from passing through",
+    "clues": [
+      "the inspection must look inside messages and files, not only at their addresses",
+      "outgoing messages that contain sensitive data must be held",
+      "spam should be removed before it reaches the inboxes",
+      "the mail server and the firewall can both inspect traffic"
+    ],
+    "answer": {
+      "item": "Content filtering on the mail server and firewall"
+    },
+    "itemType": "solution",
+    "appliesWhen": "the data inside messages, files, and pages must be inspected and filtered",
+    "explanation": "Content filtering inspects packets, files, emails, and web content and removes unwanted items such as malware, spam, or sensitive data. Firewalls, mail servers, and DNS servers can all do it.",
+    "related": [
+      "network-s-d4-acl-block",
+      "network-s-d4-url-filter",
+      "network-s-d4-screened-subnet",
+      "network-s-d4-implicit-deny",
+      "network-s-d4-trusted-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-screened-subnet",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.5"
+    ],
+    "settings": [
+      "enterprise",
+      "data-center",
+      "office"
+    ],
+    "devices": [],
+    "need": "host a public web server so Internet users can reach it without giving them a path into the internal LAN",
+    "clues": [
+      "customers on the Internet must reach the web server",
+      "the web server should not sit on the same segment as the staff computers",
+      "all traffic to and from the server must pass through the firewall",
+      "an attacker who takes over the web server must still face another barrier"
+    ],
+    "answer": {
+      "item": "A screened subnet (formerly a DMZ) behind the firewall"
+    },
+    "itemType": "network design",
+    "appliesWhen": "servers must be reached from both outside and inside but sit on neither network",
+    "explanation": "A screened subnet holds servers that both outside and inside users must reach, and it is reached only through the firewall. An intruder on that segment still has to get past the firewall to reach the internal network.",
+    "related": [
+      "network-s-d4-acl-block",
+      "network-s-d4-url-filter",
+      "network-s-d4-content-filter",
+      "network-s-d4-implicit-deny",
+      "network-s-d4-trusted-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-implicit-deny",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "enterprise",
+      "data-center",
+      "branch-office"
+    ],
+    "devices": [
+      "firewall"
+    ],
+    "need": "make sure the firewall drops any traffic that no rule has allowed",
+    "clues": [
+      "the firewall has permit rules only for web, mail, and VPN traffic",
+      "an audit found traffic on other ports passing through",
+      "new services should be blocked until someone adds a rule for them",
+      "the policy is least privilege"
+    ],
+    "answer": {
+      "item": "An implicit deny rule at the end of the rule set"
+    },
+    "itemType": "rule",
+    "appliesWhen": "everything that is not allowed by an earlier rule must be blocked",
+    "explanation": "An implicit deny at the end of the rule set blocks anything an earlier rule has not allowed. New or unknown traffic then stays blocked until a permit rule is added.",
+    "related": [
+      "network-s-d4-acl-block",
+      "network-s-d4-url-filter",
+      "network-s-d4-content-filter",
+      "network-s-d4-screened-subnet",
+      "network-s-d4-trusted-zone"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-trusted-zone",
+    "kind": "requirement",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.5"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "data-center"
+    ],
+    "devices": [],
+    "need": "decide where to put the partner company's network connection in the firewall design",
+    "clues": [
+      "the partner network is outside the company's direct control",
+      "the partner needs only one application on one server",
+      "stricter firewall rules and access lists must apply to this traffic",
+      "the internal staff network must stay off-limits to the partner"
+    ],
+    "answer": {
+      "item": "The untrusted zone, with access only to that one server"
+    },
+    "itemType": "zone",
+    "appliesWhen": "a network outside the company's direct control must face strict rules before reaching internal resources",
+    "explanation": "Networks outside the company's control, such as the Internet, guest Wi-Fi, and partner networks, belong in the untrusted zone. Traffic from that zone faces stricter firewall rules and reaches only the resources it needs.",
+    "related": [
+      "network-s-d4-acl-block",
+      "network-s-d4-url-filter",
+      "network-s-d4-content-filter",
+      "network-s-d4-screened-subnet",
+      "network-s-d4-implicit-deny"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-default-password",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "network-device"
+    ],
+    "clues": [
+      "the router's logs show a successful admin login from the Internet",
+      "nobody on the staff made the login",
+      "the router was set up last month exactly as it came out of the box",
+      "the login used the vendor's standard admin account name"
+    ],
+    "answer": {
+      "cause": "the factory default admin credentials were never changed",
+      "action": "Change the default username and password to a unique, complex one"
+    },
+    "firstStep": "Check whether the router still accepts the vendor's standard login",
+    "appliesWhen": "the device still accepts the login values it shipped with",
+    "explanation": "Anyone who owns the same model knows its factory login, so a device left as it came out of the box is easy to enter. The default account values must be changed as soon as the device goes into use.",
+    "related": [
+      "network-s-d4-open-port",
+      "network-s-d4-unneeded-service",
+      "network-s-d4-shared-password",
+      "network-s-d4-old-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-open-port",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "network-device"
+    ],
+    "clues": [
+      "a visitor's laptop got a network address from a jack in the empty conference room",
+      "nobody has used that room's jacks for a year",
+      "the switch shows a link light on a port that maps to the room",
+      "every switch port is in the active state"
+    ],
+    "answer": {
+      "cause": "unused switch ports were left enabled",
+      "action": "Disable every switch port that is not in use"
+    },
+    "firstStep": "Check the switch for active ports that map to unused jacks",
+    "appliesWhen": "ports with nothing assigned to them are still active and give a way in",
+    "explanation": "An unused port that stays active is an open door: anyone who plugs in gets on the network. Disabling physical and virtual ports that are not needed shrinks the attack surface.",
+    "related": [
+      "network-s-d4-default-password",
+      "network-s-d4-unneeded-service",
+      "network-s-d4-shared-password",
+      "network-s-d4-old-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-unneeded-service",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.1"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "server-host"
+    ],
+    "clues": [
+      "a vulnerability scan of the file server lists Telnet, FTP, and a print spooler",
+      "the server only shares files",
+      "the scan rates the server as high risk",
+      "the server was built from the vendor's full default install"
+    ],
+    "answer": {
+      "cause": "services the server does not need are still running",
+      "action": "Disable or remove every service the server does not use"
+    },
+    "firstStep": "List the services that are running on the server",
+    "appliesWhen": "a host runs programs that its role does not need",
+    "explanation": "Each running service is another door into the server. Removing the ones its role does not use reduces the attack surface and the overhead.",
+    "related": [
+      "network-s-d4-default-password",
+      "network-s-d4-open-port",
+      "network-s-d4-shared-password",
+      "network-s-d4-old-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-shared-password",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "campus",
+      "branch-office"
+    ],
+    "devices": [
+      "network-device"
+    ],
+    "clues": [
+      "one switch's admin password was leaked by a former contractor",
+      "within a day an attacker had logged in to routers and switches at three sites",
+      "the defaults were changed when the devices were installed",
+      "the same short word is used for every device's admin login"
+    ],
+    "answer": {
+      "cause": "one simple password is reused on every network device",
+      "action": "Set a long, complex, and different password on each device"
+    },
+    "appliesWhen": "one leaked admin password opens every device because all of them share it",
+    "explanation": "When all devices share one simple password, a single leak opens every device. Each device needs its own long, complex password.",
+    "related": [
+      "network-s-d4-default-password",
+      "network-s-d4-open-port",
+      "network-s-d4-unneeded-service",
+      "network-s-d4-old-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-old-firmware",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "branch-office",
+      "retail"
+    ],
+    "devices": [
+      "network-device"
+    ],
+    "clues": [
+      "the vendor published a security notice about the router model last year",
+      "attackers are using a known flaw in that model",
+      "the passwords and port settings follow the hardening checklist",
+      "the router reports the same version it had when it was bought"
+    ],
+    "answer": {
+      "cause": "the device's firmware is out of date and still has a known security flaw",
+      "action": "Test the vendor's latest firmware in the lab, then install it on the router"
+    },
+    "firstStep": "Compare the router's version with the vendor's latest release",
+    "appliesWhen": "the device runs an old version with a flaw the vendor has already fixed",
+    "explanation": "Firmware updates often fix security flaws, so an old version keeps holes the vendor has already closed. The update should be tested on a lab device first and then installed.",
+    "related": [
+      "network-s-d4-default-password",
+      "network-s-d4-open-port",
+      "network-s-d4-unneeded-service",
+      "network-s-d4-shared-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-key-rotation",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.3"
+    ],
+    "settings": [
+      "enterprise",
+      "data-center"
+    ],
+    "devices": [
+      "server-host"
+    ],
+    "clues": [
+      "the VPN uses the same pre-shared secret it was set up with five years ago",
+      "a dozen former staff members knew the secret",
+      "there is no schedule for changing it",
+      "traffic captures show a stranger connected to the VPN"
+    ],
+    "answer": {
+      "cause": "the key has been in use for years with no rotation",
+      "action": "Generate new keys and change them on a regular schedule"
+    },
+    "appliesWhen": "a key stays in use so long that the window to crack or leak it keeps growing",
+    "explanation": "The longer one key stays in use, the more chances there are for it to be cracked or leaked. Regular rotation limits how long a stolen key works.",
+    "related": [
+      "network-s-d4-key-revocation",
+      "network-s-d4-key-storage",
+      "network-s-d4-key-destruction",
+      "network-s-d4-default-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-key-revocation",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.3"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "server-host"
+    ],
+    "clues": [
+      "a laptop with a client certificate was stolen last week",
+      "the thief's laptop can still sign in to the wireless network",
+      "the certificate is valid for two more years",
+      "nobody updated the CRL after the theft"
+    ],
+    "answer": {
+      "cause": "the stolen laptop's certificate and key were never revoked",
+      "action": "Revoke the certificate and publish the updated revocation list"
+    },
+    "appliesWhen": "a key that is lost or compromised is still treated as valid",
+    "explanation": "A lost or compromised key keeps working until it is revoked. Revoking it and updating the certificate revocation list stops any further use.",
+    "related": [
+      "network-s-d4-key-rotation",
+      "network-s-d4-key-storage",
+      "network-s-d4-key-destruction",
+      "network-s-d4-default-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-key-storage",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.3"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "server-host"
+    ],
+    "clues": [
+      "the web server's private key file sits in a shared network folder",
+      "any staff member can open the folder",
+      "a copy of the site appeared on a fake server using the real certificate",
+      "the key file has no password"
+    ],
+    "answer": {
+      "cause": "the private key is stored without protection where many people can read it",
+      "action": "Move the keys into a hardware security module or a secure key vault"
+    },
+    "appliesWhen": "keys sit in a place that unauthorized people can read or copy",
+    "explanation": "A private key that anyone can copy lets an attacker pose as the server. Keys belong in a hardware security module, key vault, or other protected store.",
+    "related": [
+      "network-s-d4-key-rotation",
+      "network-s-d4-key-revocation",
+      "network-s-d4-key-destruction",
+      "network-s-d4-unneeded-service"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-key-destruction",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "server-host"
+    ],
+    "clues": [
+      "an old server was sold to a recycler last month",
+      "files encrypted with the company's backup key have now been opened by an outsider",
+      "the backup key was retired when the server was replaced",
+      "the server's drive was only formatted before the sale"
+    ],
+    "answer": {
+      "cause": "the retired key was never securely destroyed and was recovered from the old server",
+      "action": "Destroy retired keys securely and wipe drives before disposal"
+    },
+    "appliesWhen": "a key that is no longer needed was left where it can be recovered",
+    "explanation": "A key that is no longer used must be destroyed so it cannot be recovered. A quick format leaves data that can be read back, so the key and the drive must be wiped.",
+    "related": [
+      "network-s-d4-key-rotation",
+      "network-s-d4-key-revocation",
+      "network-s-d4-key-storage",
+      "network-s-d4-unneeded-service"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-port-violation",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "network-device"
+    ],
+    "clues": [
+      "a user plugged a small desk switch into the wall jack to add a printer",
+      "both the PC and the printer lost the network at once",
+      "the switch port shows err-disabled",
+      "the switch sent an SNMP trap about a new hardware address"
+    ],
+    "answer": {
+      "cause": "a port security violation shut down the switch port",
+      "action": "Remove the extra device, then clear the violation and re-enable the port"
+    },
+    "firstStep": "Check the switch port's status and its security log",
+    "appliesWhen": "the switch saw more hardware addresses on a port than it allows",
+    "explanation": "Port security limits how many hardware addresses a port accepts, and a second device on the port caused a violation. The switch then shut the port down.",
+    "related": [
+      "network-s-d4-mac-allowlist",
+      "network-s-d4-posture-fail",
+      "network-s-d4-dot1x-cert",
+      "network-s-d4-acl-order"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-mac-allowlist",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "access-point"
+    ],
+    "clues": [
+      "a new tablet sees the store's wireless network but cannot join it",
+      "the passphrase was typed correctly",
+      "the three older tablets connect with no problem",
+      "the access point only lets listed adapters connect"
+    ],
+    "answer": {
+      "cause": "the new tablet's MAC address is not on the access point's allow list",
+      "action": "Add the new tablet's MAC address to the allow list"
+    },
+    "firstStep": "Compare the tablet's hardware address with the access point's filter list",
+    "appliesWhen": "a device's hardware address has not been added to the access point's filter",
+    "explanation": "With MAC filtering, the access point accepts only adapters on its allow list, so a new device is rejected even with the right passphrase. Adding its hardware address lets it join.",
+    "related": [
+      "network-s-d4-port-violation",
+      "network-s-d4-posture-fail",
+      "network-s-d4-dot1x-cert"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-posture-fail",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "campus"
+    ],
+    "devices": [
+      "wifi-client"
+    ],
+    "clues": [
+      "a laptop back from a long trip connects but can only reach the update server",
+      "other laptops on the same switch get full access",
+      "the laptop's antivirus definitions are four months old",
+      "the network places failing devices in a separate VLAN"
+    ],
+    "answer": {
+      "cause": "the laptop failed the NAC posture assessment and was quarantined",
+      "action": "Update the antivirus definitions and patches, then reconnect"
+    },
+    "firstStep": "Check the NAC server's report for the laptop",
+    "appliesWhen": "a device was quarantined because its security state failed the check",
+    "explanation": "NAC checks a device's security state when it connects and sends a device that fails to a quarantine network. Bringing the definitions and patches up to date lets it pass.",
+    "related": [
+      "network-s-d4-port-violation",
+      "network-s-d4-mac-allowlist",
+      "network-s-d4-dot1x-cert"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-dot1x-cert",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.2"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "wifi-client"
+    ],
+    "clues": [
+      "one laptop is refused at every wired and wireless port",
+      "the RADIUS log shows the laptop's certificate has expired",
+      "other laptops sign in with EAP-TLS with no problem",
+      "the problem started on the first of the month"
+    ],
+    "answer": {
+      "cause": "the laptop's client certificate has expired, so 802.1X authentication fails",
+      "action": "Renew the laptop's client certificate"
+    },
+    "firstStep": "Read the RADIUS log entry for the laptop",
+    "appliesWhen": "the device's certificate for EAP-TLS is no longer valid",
+    "explanation": "With 802.1X using EAP-TLS, the authentication server checks the device's certificate, and an expired one is refused at every port. A new certificate lets the device authenticate again.",
+    "related": [
+      "network-s-d4-port-violation",
+      "network-s-d4-mac-allowlist",
+      "network-s-d4-posture-fail"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-acl-order",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "firewall"
+    ],
+    "clues": [
+      "a permit rule for the new web server was added yesterday",
+      "outside users still cannot reach the server",
+      "a rule that blocks the whole server subnet sits above the new rule",
+      "the firewall reads its rules from the top down"
+    ],
+    "answer": {
+      "cause": "an explicit deny rule above the permit rule matches the traffic first",
+      "action": "Move the permit rule above the deny rule"
+    },
+    "firstStep": "Read the firewall rules in order to see which one matches first",
+    "appliesWhen": "an earlier deny entry in the list matches the traffic before the permit entry",
+    "explanation": "Rules are read in order, and an explicit deny takes precedence, so the earlier block wins. Placing the narrower permit rule above it lets the traffic through.",
+    "related": [
+      "network-s-d4-url-miscategory",
+      "network-s-d4-implicit-drop",
+      "network-s-d4-port-violation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-url-miscategory",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "school",
+      "office"
+    ],
+    "devices": [
+      "wifi-client"
+    ],
+    "clues": [
+      "staff cannot open a supplier's ordering website",
+      "the browser shows a block page from the web proxy",
+      "the page says the site is in the gambling category",
+      "other websites open normally"
+    ],
+    "answer": {
+      "cause": "the web filter has placed the supplier's site in a blocked category",
+      "action": "Add the supplier's site to the web filter's allow list"
+    },
+    "firstStep": "Check the web filter's log for the supplier's site",
+    "appliesWhen": "the web filter puts a legitimate site in a category that is blocked",
+    "explanation": "URL filtering blocks sites by category, and a site placed in the wrong category is blocked with the rest. An allow entry for that one site fixes it without changing the category rule.",
+    "related": [
+      "network-s-d4-acl-order",
+      "network-s-d4-implicit-drop",
+      "network-s-d4-posture-fail"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "network-s-d4-implicit-drop",
+    "kind": "fault",
+    "exam": "N10-009",
+    "domain": "4",
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "topics": [
+      "N10-009/4.3.4"
+    ],
+    "settings": [
+      "data-center",
+      "enterprise"
+    ],
+    "devices": [
+      "firewall"
+    ],
+    "clues": [
+      "a new reporting application uses TCP port 8443",
+      "clients time out when they connect to it through the firewall",
+      "the firewall log shows the traffic dropped by the last rule",
+      "no rule mentions port 8443"
+    ],
+    "answer": {
+      "cause": "no permit rule exists for the new application's port, so the implicit deny drops it",
+      "action": "Add a permit rule for the application's port to the right server"
+    },
+    "firstStep": "Check the firewall log for the dropped connections",
+    "appliesWhen": "traffic is dropped because no rule allows it",
+    "explanation": "Anything that no rule permits is caught by the implicit deny at the end of the rule set. A permit rule for that port and server lets the traffic pass.",
+    "related": [
+      "network-s-d4-acl-order",
+      "network-s-d4-url-miscategory",
+      "network-s-d4-dot1x-cert"
+    ],
+    "origin": "written",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  }
+]

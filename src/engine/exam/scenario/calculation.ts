@@ -150,7 +150,7 @@ export const calculation: ScenarioGenerator<CalculationRecord> = {
             'That address is in the subnet before this one.'
           ]
         ]
-        detail = `${toIp(host)} falls in the block that starts at ${toIp(network)}, so the network address is ${toIp(network)} and the broadcast address is ${toIp(broadcast)}.`
+        detail = `The address ${toIp(host)} falls in the block that starts at ${toIp(network)}, so the network address is ${toIp(network)} and the broadcast address is ${toIp(broadcast)}.`
         break
       }
     }
