@@ -77,7 +77,7 @@ To add a book format: add a parser function to `PARSERS` in `extract_questions.p
 
 ## Add a book
 
-1. Put the file in `sources/core1/`, `sources/core2/`, `sources/general/` (both cores), or `sources/network/` (Network+).
+1. Put the file in `sources/core1/`, `sources/core2/`, `sources/general/` (both cores), `sources/network/` (Network+), or `sources/sec/` (Security+).
 2. Add an entry to `BOOKS` in `extract_books.py` with a function that splits it into chapters. The EPUB helpers (`epub_items`, `html_to_md`, `drop_sections`) work for most books.
 3. Add the book to `BOOKS` in `build_index.py`, then run the three scripts.
 4. If the book has practice questions, add a parser for its format to `extract_questions.py` (see "Question formats") and run it.

@@ -2,6 +2,30 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Core 1 exam activated
+
+Decisions:
+- The user approved turning on the Core 1 exam: `config/exams/220-1201.json` has `active: true`. The user can still review the content (the notes on corrected and doubtful book answers are in the pool records; dropped and deferred book questions are in `sources-text/derived/questions/_triage-core1-*.json`).
+
+Changes:
+- `config/exams/220-1201.json`: `active: true`. `check_config.py`, `check_questions.py` (Core 1 active: no errors), 173 Vitest tests, typecheck, lint, and the 5 Playwright tests pass.
+- Checked in the built app on the real content: an 80-question Core 1 attempt (generated scenario and pool questions) runs from start to results, with the per-domain breakdown.
+
+## 2026-10-30 – Security+ (SY0-801) added to the docs
+
+Decisions:
+- Security+ (SY0-801 V8, objectives document version 2.0) is in scope. Its books and objectives are in `sources/sec/`. Certification id `security-plus`, exam config `config/exams/SY0-801.json`, module folder `content/security/`, text folder `sources-text/sec/`. The module stays greyed out until its config and content exist.
+- Exam values from the objectives: maximum of 90 questions (75–90 in the app), 90 minutes, passing score 750 of 900. Domains: General security concepts 16%, Threats, vulnerabilities, and attacks 24%, Security architecture 19%, Security operations 27%, Security program management and oversight 14%. 9 of 26 objectives are scenario objectives: estimated scenario share 33% (about 30 questions).
+- "Describe" (2.2, 2.3) is a knowledge verb.
+- All four books are for SY0-701, so they are treated as older-objective books: their practice questions go into the pool as they are, tagged with the closest SY0-801 objective, and written facts are checked against the SY0-801 objectives. The Gorgotsias PBQs are not copied.
+- Risk calculations (ALE = SLE × ARO) are pool questions; the `calculation` generator kind stays subnetting only.
+- Open (plan with the user): how to cover SY0-801 topics that the SY0-701 books do not cover (for example 2.6, AI threats).
+
+Changes:
+- `docs/compTIA-exam-overviews.md`: Part 4 (exam details, domains, structure estimate, objectives with their kind, question structures, sources), the Security+ estimate calculation, and the Security+ source links. The Network+ status now says active.
+- `CLAUDE.md`, `docs/spec.md`, `docs/exam-modules.md`, `content/README.md`, `references/ui-drafts/README.md`, `README.md`, `tools/extract/README.md`: Security+ added to the exam lists, folders, certification ids, source rules, and the exercise setup.
+- No config, content, or code yet. The objectives and books are not extracted into `sources-text/sec/` yet.
+
 ## 2026-10-30 – Core 2 exam activated
 
 Decisions:
@@ -23,6 +47,90 @@ Changes:
 - `content/core2/scenarios/d1.json`–`d4.json`: 509 records (376 requirement, 124 fault, 9 procedure) for the 25 scenario objectives; every scenario objective has at least 11 records and every topic at least 1. The 2.6 malware removal steps are procedure records in the official order.
 - `content/core2/grammar.json`: device rules (Windows PCs and laptops, Mac, Linux, phones, tablet, SOHO router, browser, Wi-Fi network, VM, and the help desk, change, and backup systems for Domain 4).
 - `sources-text/derived/questions/_triage-core2.json` (not in git): the domain of each All-in-One 11e and practice-exam question (for reuse), the dropped questions with the reason, and the corrected ones.
+
+## 2026-10-30 – Network+ exam activated
+
+Decisions:
+- The user approved turning on the Network+ exam: `config/exams/N10-009.json` has `active: true`. The user can still review the content (the notes on doubtful book answers are in the pool records).
+- The attempt title says the words shared by the certification and exam names once: "CompTIA Network+ Exam (N10-009)", not "CompTIA Network+ Network+ Exam". "CompTIA A+ Core 1 Exam (220-1201)" is unchanged.
+
+Changes:
+- `config/exams/N10-009.json`: `active: true`. `check_questions.py` now holds Network+ to the coverage rules as errors, and it passes.
+- `src/renderer/src/labels.ts`: `attemptTitle`, used by `App.tsx`, with tests in `labels.test.ts`.
+- `CLAUDE.md`, `docs/spec.md`: Network+ is active.
+- Checked in the built app with the real content: the home card, a 77-question attempt, and the results with all five domains. 171 Vitest tests and 5 Playwright tests pass.
+- For review: a generated 5.4 question can offer two latency causes (full tunnel and satellite) when the clues it picks do not tell them apart.
+
+## 2026-10-30 – Core 1 exam module: all five domains, for review
+
+Decisions:
+- The exam engine, storage, and screens already existed, so the Core 1 exam needs only content. Domain 1 was built first; the user then asked for Domains 2–5 in one batch (added to the exceptions in `CLAUDE.md`). `220-1201` stays `active: false` until the user has reviewed the content.
+- Book answers that are wrong are corrected, with a `note` ("Book answer X corrected: …") on the record (27 questions, mostly Neil and All-in-One). Book questions with no defensible answer, that need a figure, or whose technology is gone are dropped and listed with the reason in the triage files.
+- A "best" that is only in a selection hint ("Select the two best answers.") is not a qualifier.
+- Sentences that name option letters ("B is incorrect") are removed from book explanations, because the app shuffles the options.
+- The content smoke test builds attempts for an exam that is not active yet from the domains that have content only, with their share of the question count (`docs/exam-modules.md`, section 7).
+
+Changes:
+- `content/core1/pool/d1.json`–`d5.json`: 1,068 questions (1,051 from Exam Cram 2e, Docter, All-in-One 11e, and Neil; 17 written for thin topics). All 131 topics have at least 2 questions. Older-objective questions are tagged with the closest current topic and a `note`.
+- `content/core1/scenarios/d1.json`, `d2.json`, `d3.json`, `d5.json`: 322 records (195 fault, 114 requirement, 11 procedure, 2 calculation) for the 13 scenario objectives; every scenario objective has at least 15 records and every topic at least 1.
+- `content/core1/grammar.json`: device rules (laptop, phone, tablet, PCs, printers, displays, NAS) and a `field` place rule.
+- `extract_questions.py`: Docter staging ids include the core (`docter-study-guide-c1-04-rq-11`); before, Core 1 chapters 4 and 10 gave the same ids.
+- `sources-text/derived/questions/_triage-core1-d1.json` and `_triage-core1-d2-d5.json` (not in git): 69 questions deferred to Core 2 (220-1202) with their target objective, and 49 dropped questions with the reason.
+
+## 2026-10-30 – Network+ exam module: Domains 2–5, for review
+
+Decisions:
+- Domains 2–5 are made and reviewed as one batch (approved by the user; added to the exceptions in `CLAUDE.md`).
+- Copies inside one book: Zacker repeats some chapter review questions in its practice tests. One copy is kept, as for questions in two books. Pairs that share options but ask a different thing (for example "encrypt" and "sign" for IPsec) are both kept.
+- A book question with no correct option is dropped:
+  - Exam Cram Chapter 8 Cram Quiz 5 question 2: the keyed option says a full tunnel routes only specific traffic.
+  - West Chapter 9 review question 5: no option is a valid ACL rule.
+- Zacker Chapter 5 review question 131: the key prints B, but the book's explanation describes "replace the 802.11g adapters". The key letter is taken as a misprint, with a `note`.
+- `N10-009` stays `active: false` until the user has reviewed the content.
+
+Changes:
+- `content/network/pool/d1.json`–`d5.json`: 1,765 pool questions (D1 583, D2 251, D3 296, D4 326, D5 326).
+  - 1,748 are book questions: every Exam Cram, Zacker, and West practice question except dropped ones.
+  - Dropped: 10 that need a figure or have options that cannot be repaired, 2 with no correct option, and 18 copies.
+  - 17 are written questions for the topics that had fewer than 2: subinterfaces, MAC flooding, ARP spoofing, DNS spoofing, key management, bottlenecking, latency, and packet loss.
+  - Every one of the 135 topics has at least 2 questions.
+  - West questions without an answer key have answers written from the chapters (`answerOrigin: "written"`).
+  - Book answers that look wrong keep the book's answer and have a `note`.
+- `content/network/scenarios/d2.json`–`d5.json`: 258 scenario records (134 `fault`, 124 `requirement`):
+  - 2.2: 25 records.
+  - 2.3: 41.
+  - 3.2: 24.
+  - 3.4: 45.
+  - 4.3: 28.
+  - 5.2: 26.
+  - 5.3: 25.
+  - 5.4: 18.
+  - 5.5: 26.
+  - Every scenario objective has at least 18 records and every topic at least 1. Each fault and requirement record has 3–5 related records for its distractors.
+- `content/network/grammar.json`: device rules for the scenario records (switches, access points, clients, servers, phones, printers, and others).
+- Tests: the real-content smoke test now builds 200 Network+ attempts from all five domains. 167 Vitest tests pass.
+
+## 2026-10-30 – Network+ exam module: Domain 1 (Networking Concepts), for review
+
+Decisions:
+- The exam code was already generic, so the Network+ exam needs only content. It is built one domain at a time (`docs/exam-modules.md`, section 7). `N10-009` stays `active: false` until Domains 2–5 are reviewed.
+- Book explanations stay as the book has them, even when they are longer than 5 sentences (the checker warns). The content smoke test now applies the 5-sentence limit to generated questions only.
+- Book explanations that name option letters ("Answer B is incorrect…") break when the options are shuffled. Those sentences are removed (the `whyWrong` entries cover the wrong options), and "Option C, x," becomes "x".
+- `check_questions.py` compares options by case and spaces only, so options that differ by punctuation ("SFP" and "SFP+") are not reported as the same text.
+- Kept one copy of Zacker review question 33 and practice test question 1 (the same firewall question).
+
+Changes:
+- `content/network/pool/d1.json`: 530 questions. 525 are book questions (Exam Cram, Zacker, West), and 5 are written for the topics with fewer than 2 (scalability, NSGs, security lists, hybrid topology). All 51 Domain 1 topics have at least 2 questions.
+  - West questions with no answer key have answers written from the chapters (`answerOrigin: "written"`).
+  - Book answers that look wrong keep the book's answer and have a `note`.
+  - Legacy topics with no N10-009 match are tagged with the closest topic, with a `note`.
+- `content/network/scenarios/d1.json`: 16 records for 1.7:
+  - 5 `calculation` records: usable hosts, mask, network address, broadcast address.
+  - 11 `requirement` records: RFC1918, public, loopback, APIPA, Classes A–D, VLSM, a CIDR summary, and /30.
+- `content/network/grammar.json`: network technicians, the branch office, campus, and data center settings, and network devices.
+- `calculation.ts`: the network/broadcast explanation sentence starts with "The address" instead of a number.
+- 5 book questions were dropped (they need a figure or have options that cannot be repaired).
+- The other book questions in the same chapters (397) are classified by objective in `sources-text/derived/questions/network-classified.json` (not in git), for Domains 2–5.
 
 ## 2026-10-30 – Question tools: book question extractor and question checker
 

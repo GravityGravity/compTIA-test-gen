@@ -4,13 +4,16 @@ This file gives the structure of each CompTIA exam in the app. Each part is for 
 
 | Part | Exam | Code | Status in the app |
 |---|---|---|---|
-| 1 | A+ Core 1 | 220-1201 | Current |
+| 1 | A+ Core 1 | 220-1201 | Current. Active since 2026-10-30. |
 | 2 | A+ Core 2 | 220-1202 | Current |
-| 3 | Network+ | N10-009 | In scope. Greyed out in module selection until its config is active. |
+| 3 | Network+ | N10-009 | Current. Active since 2026-10-30. |
+| 4 | Security+ | SY0-801 | In scope. Greyed out in module selection until its config is active. |
 
 **A+:** The current exams are **Core 1 (220-1201)** and **Core 2 (220-1202)**, version V15. You must pass the two exams to get the A+ certification. You must take the two exams from the same version.
 
 **Network+:** One exam, **N10-009**, version V9.
+
+**Security+:** One exam, **SY0-801**, version V8 (objectives document version 2.0). The books in `sources/sec/` are for the previous exam, SY0-701 (see Part 4, "Sources for this exam").
 
 **Note:** The examples in this file are not real exam questions. They show the structure only.
 
@@ -251,7 +254,7 @@ The question tells you the number of answers to select. You must select all the 
 
 # Part 3: Network+ (N10-009)
 
-**Status:** In scope (approved 2026-10-30). Build its config and content. The module shows greyed out in module selection, and the user cannot select it, until its config has `active: true`.
+**Status:** In scope (approved 2026-10-30). Active since 2026-10-30 (all five domains have content).
 
 ## Exam Details
 
@@ -376,6 +379,152 @@ The real exam also has PBQs, for example configuring a device or putting steps i
 
 ---
 
+# Part 4: Security+ (SY0-801)
+
+**Status:** In scope (added 2026-10-30). Build its config and content. The module shows greyed out in module selection, and the user cannot select it, until its config has `active: true`.
+
+## Exam Details
+
+| Item | Value |
+|---|---|
+| Number of questions | Maximum of 90 |
+| Time | 90 minutes |
+| Passing score | 750 on a scale of 100–900 |
+| Question format | Multiple choice and performance-based questions (PBQs) |
+| Recommended experience | Security administrator with two years of hands-on experience |
+
+**Note:** PBQs are out of scope for the app now. A Security+ exam in the app uses multiple-choice questions only. Each attempt has 75–90 questions, the same range as A+ and Network+.
+
+## Topics
+
+| Domain | Weight |
+|---|---|
+| General security concepts | 16% |
+| Threats, vulnerabilities, and attacks | 24% |
+| Security architecture | 19% |
+| Security operations | 27% |
+| Security program management and oversight | 14% |
+
+## Expected Number of Each Question Structure
+
+CompTIA does not publish the number of questions for each structure. The numbers below are estimates. See "How the Estimates Were Calculated" at the end of this file.
+
+| Structure | Objectives (of 26) | Estimated questions (of 90) |
+|---|---|---|
+| Scenario-based ("Given a scenario…") | 9 | About 30 (33%) |
+| Knowledge (Explain, Compare and contrast, Summarize, Describe) | 17 | About 60 (67%) |
+
+Where the scenario questions come from:
+- **Security operations:** 5 of 8 objectives (mitigating controls, vulnerability management, identity and access management, automation and orchestration, security investigations). Largest source.
+- **General security concepts:** 1 of 3 objectives (change management).
+- **Threats, vulnerabilities, and attacks:** 1 of 6 objectives (indicators of malicious activity).
+- **Security architecture:** 1 of 4 objectives (protect the infrastructure).
+- **Security program management and oversight:** 1 of 6 objectives (security awareness).
+
+Security+ has the smallest scenario share of the four exams. Most of its questions are knowledge questions (concepts, controls, threat types, cryptography, governance, risk, and compliance).
+
+Qualifier words (BEST, FIRST, MOST LIKELY) and multiple-response questions can occur in the two groups. No source gives a count for these.
+
+## Objectives
+
+| Objective | Structure |
+|---|---|
+| 1.1 Explain security concepts and controls | Knowledge |
+| 1.2 Given a scenario, demonstrate the impact of change management processes on security | Scenario |
+| 1.3 Explain the importance of using appropriate cryptographic solutions | Knowledge |
+| 2.1 Explain characteristics of threats and vulnerabilities | Knowledge |
+| 2.2 Describe common threat actors and motivations | Knowledge |
+| 2.3 Describe threat vectors and sources | Knowledge |
+| 2.4 Explain types of vulnerabilities and attack surfaces | Knowledge |
+| 2.5 Given a scenario, analyze indicators of malicious activity | Scenario |
+| 2.6 Summarize threats and vulnerabilities associated with artificial intelligence (AI) usage | Knowledge |
+| 3.1 Compare and contrast security implications of different architecture models | Knowledge |
+| 3.2 Given a scenario, manage the security architecture to best protect the infrastructure | Scenario |
+| 3.3 Summarize concepts and strategies used to protect data | Knowledge |
+| 3.4 Explain the importance of resilience and recovery in security architecture | Knowledge |
+| 4.1 Given a scenario, apply mitigating controls, techniques, and solutions to secure the environment | Scenario |
+| 4.2 Explain the security implications of proper hardware, software, and data asset management | Knowledge |
+| 4.3 Given a scenario, perform tasks associated with vulnerability management | Scenario |
+| 4.4 Explain security alerting and monitoring concepts and tools | Knowledge |
+| 4.5 Given a scenario, apply concepts related to identity and access management | Scenario |
+| 4.6 Given a scenario, apply automation and orchestration solutions to secure operations | Scenario |
+| 4.7 Summarize concepts associated with incident response activities | Knowledge |
+| 4.8 Given a scenario, use data, artifacts and sources to support a security investigation | Scenario |
+| 5.1 Explain the importance of governance, risk, and compliance artifacts | Knowledge |
+| 5.2 Explain the impact of risk management processes on the security of the organization | Knowledge |
+| 5.3 Explain the assessment and management processes associated with third-party risk | Knowledge |
+| 5.4 Summarize elements of effective security compliance | Knowledge |
+| 5.5 Explain concepts associated with audit and assessment activities | Knowledge |
+| 5.6 Given a scenario, apply security awareness concepts to improve organizational security | Scenario |
+
+"Describe" (2.2, 2.3) is a new verb in SY0-801. It is a knowledge verb.
+
+## Question Structures
+
+### 1. Scenario-based
+
+The question tells you about an organization, a system, and a security event or need. You must find the attack, the cause, or the control that meets the need.
+
+> *Example:* An analyst sees many failed logins for different accounts from one address, each with the same password. What is the MOST LIKELY attack?
+
+### 2. Qualifier words (BEST, FIRST, MOST LIKELY, LEAST)
+
+Two or more answers can be correct. Only one answer is the best for the conditions in the question.
+
+> *Example:* A company must stop users from copying customer data to removable drives. Which control is the BEST choice?
+
+### 3. Process and procedure steps
+
+These questions ask about the correct step in a process, for example the incident response process, the change management process, or the vulnerability management cycle.
+
+> *Example:* A team has contained an incident. What is the NEXT step?
+
+### 4. Definition and recall
+
+These questions test facts: control types and categories, threat actors, attack types, cryptographic terms, and governance documents.
+
+> *Example:* Which control type is a security guard at a building entrance?
+
+### 5. Select the correct item (control, tool, technology, or method)
+
+The question gives a requirement. You must select the correct control, tool, technology, or method.
+
+> *Example:* A company must verify that a file was not changed after it was sent. Which method should the company use?
+
+### 6. Calculation
+
+A few knowledge questions ask for a simple risk value, for example the annualized loss expectancy (ALE = SLE × ARO). These are pool questions. The scenario generator's `calculation` kind does subnetting only; a risk calculation would be a new calculation type (a code change, see `docs/exam-modules.md`).
+
+> *Example:* An asset is worth a set amount, a fire damages a part of it, and a fire is expected once in a set number of years. What is the ALE?
+
+### 7. Multiple response
+
+The question tells you the number of answers to select. You must select all the correct answers.
+
+> *Example:* Which TWO are examples of multifactor authentication? (Choose two.)
+
+### Performance-based questions (out of scope)
+
+The real exam also has PBQs, for example matching controls to threats, reading logs, or configuring firewall rules in a simulation. The app does not include PBQs now. The PBQs in the Gorgotsias book are not copied into the pool.
+
+## Sources for this exam
+
+The objectives are for SY0-801 (`sources/sec/CompTIA Security+ SY0-801 Exam Objectives (2.0).pdf`). The four books in `sources/sec/` are for the previous exam, SY0-701:
+
+| Book | Kind |
+|---|---|
+| Heuermann, *CompTIA Security+ SY0-701 Cert Guide* (Pearson, 2024) | Study guide with chapter questions |
+| Neil, *CompTIA Security+ SY0-701 Certification Guide*, 3rd ed. (Packt, 2024) | Study guide with chapter questions and mock exams |
+| Seidl, *CompTIA Security+ Practice Tests: Exam SY0-701* (Sybex, 2024) | Practice questions by domain, practice exams |
+| Gorgotsias, *CompTIA Security+ SY0-701 Practice Tests & PBQs* (ExamsDigest, 2024) | Practice questions and PBQs |
+
+SY0-801 changes the domain names and weights of SY0-701, renumbers some objectives, and adds topics (for example 2.6, AI threats and vulnerabilities). So:
+- Every book is an older-objective book. Its practice questions go into the pool as they are, tagged with the closest SY0-801 objective, with a `note` when the match is not exact (the same rule as the 220-1101/1102 A+ books).
+- Check the facts of each written question and record against the SY0-801 objectives, because no current-objective book exists yet.
+- **Plan with the user:** topics that are new in SY0-801 and that the books do not cover (for example 2.6). The rule "write from the facts in each chapter" cannot give them questions. Decide how to cover them before the content for that domain is made.
+
+---
+
 # Question Structures in the App
 
 How each structure in this file is built in the app (approved 2026-10-30). The method is in `docs/exam-modules.md`.
@@ -387,7 +536,7 @@ How each structure in this file is built in the app (approved 2026-10-30). The m
 | Process and procedure steps | `procedure` | Kind `procedure` (FIRST and NEXT step) |
 | Definition and recall | `recall` | Pool only |
 | Select the correct item | `select-item` | Pool, and kind `requirement` for scenario objectives |
-| Calculation | `calculation` | Kind `calculation` (for example subnetting) |
+| Calculation | `calculation` | Kind `calculation` (for example subnetting). Security+ risk values (ALE) are pool questions only. |
 | Multiple response | Any structure, with `type: "multiple"` | Pool only |
 
 The config of each exam has a `kind` (scenario or knowledge) for each objective, taken from the tables above. Each attempt uses them to divide each domain into scenario and knowledge questions.
@@ -398,13 +547,15 @@ The config of each exam has a `kind` (scenario or knowledge) for each objective,
 
 CompTIA does not publish the number of questions for each structure. Each estimate uses the official exam objectives and domain weights:
 
-1. Mark each objective as **scenario** (its title starts with "Given a scenario") or **knowledge** (Explain, Compare and contrast, Summarize, Identify).
+1. Mark each objective as **scenario** (its title starts with "Given a scenario") or **knowledge** (Explain, Compare and contrast, Summarize, Identify, Describe).
 2. For each domain, find the part of its objectives that are scenario objectives. Example: Network troubleshooting has 4 scenario objectives of 5, so 4/5.
 3. Multiply that part by the domain weight. Example: 4/5 × 24% = 19.2%.
 4. Add the results of all domains. This gives the scenario percentage of the exam.
 5. Multiply the percentage by 90 (the maximum number of questions) and round.
 
 Network+ calculation: (1/8 × 23%) + (2/4 × 20%) + (2/5 × 19%) + (1/3 × 14%) + (4/5 × 24%) = 2.9% + 10% + 7.6% + 4.7% + 19.2% = 44.4%. 44.4% × 90 ≈ 40 questions.
+
+Security+ calculation: (1/3 × 16%) + (1/6 × 24%) + (1/4 × 19%) + (5/8 × 27%) + (1/6 × 14%) = 5.3% + 4% + 4.75% + 16.9% + 2.3% = 33.3%. 33.3% × 90 ≈ 30 questions.
 
 The calculation assumes that each objective in a domain has about the same number of questions. The real exam can be different.
 
@@ -416,6 +567,8 @@ The calculation assumes that each objective in a domain has about the same numbe
 - [CompTIA – A+ Core 2 (V15)](https://www.comptia.org/en-us/certifications/a/core-2-v15/)
 - [CompTIA – Network+ (N10-009)](https://www.comptia.org/en-us/certifications/network/)
 - [CompTIA – Network+ (N10-009) exam objectives](https://onlc.com/comptia/n10-009-exam-objectives.pdf)
+- [CompTIA – Security+](https://www.comptia.org/en-us/certifications/security/)
+- CompTIA – Security+ (SY0-801) V8 exam objectives, document version 2.0 (`sources/sec/`)
 - [ITU Online – CompTIA A+ practice test tips](https://www.ituonline.com/blogs/comptia-a-practice-test-free/)
 - [ITU Online – A+ hardware troubleshooting questions](https://www.ituonline.com/blogs/how-to-prepare-for-comptia-a-certification-exam-questions-on-hardware-troubleshooting/)
 - [PrepForCerts – A+ practice questions](https://prepforcerts.org/comptia-a-plus-practice-questions)

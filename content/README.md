@@ -4,9 +4,9 @@ The records that the app uses. The app does not read the books; the books in `so
 
 | Folder | Module | Files |
 |---|---|---|
-| `acronyms/` | Acronym Exercise | `a-plus.json`, `network-plus.json` – one file for each certification |
-| `definitions/` | Definition Exercise | `a-plus/`, `network-plus/` – one file for each exam domain |
-| `core1/`, `core2/`, `network/` | Core 1 Exam, Core 2 Exam, Network+ Exam | `pool/d<N>.json` (pool questions, one file for each domain), `scenarios/d<N>.json` (scenario records), `grammar.json` (grammar rules for this exam) |
+| `acronyms/` | Acronym Exercise | `a-plus.json`, `network-plus.json`, `security-plus.json` (planned) – one file for each certification |
+| `definitions/` | Definition Exercise | `a-plus/`, `network-plus/`, `security-plus/` (planned) – one file for each exam domain |
+| `core1/`, `core2/`, `network/`, `security/` (planned) | Core 1 Exam, Core 2 Exam, Network+ Exam, Security+ Exam | `pool/d<N>.json` (pool questions, one file for each domain), `scenarios/d<N>.json` (scenario records), `grammar.json` (grammar rules for this exam) |
 | `shared/` | All exam modules | `grammar.json` – grammar rules and noun pools that every exam uses |
 
 Each file is a JSON array of records. The app reads every `*.json` under a module's folder, so the file split is only for review. The domain of an acronym or definition record comes from its `objectives`, not from the file name. Exam module records also have a `domain` field, and it must match the file. How to build an exam module: `docs/exam-modules.md`.
@@ -40,8 +40,8 @@ The Acronym Exercise has typed questions only: the app shows the acronym and the
 | `expanded` | The correct expanded form, as the objectives and current books write it. The typed answer, and the answer the app shows after "Check answer". |
 | `meaning` | One sentence, 10–25 words, in our own words: what the thing is or does, with key exam facts (for example a port number). Shown in the feedback box after the user answers. |
 | `acceptedAnswers` | Other typed forms that are also correct, for example the official list's wording where it differs from `expanded`, or the long form of a short word in it (`Virtual LAN` / `Virtual Local Area Network`). The app compares typed answers after it removes case, extra spaces, and punctuation, and accepts no close matches, so every valid variant must be listed. |
-| `certifications` | `["a-plus"]` or `["network-plus"]`. One certification per record: an acronym on both lists has one record in each file, because each record's source and objectives belong to its own certification. |
-| `exams` | The exams whose acronym list (or objectives) have it: `220-1201`, `220-1202`, `N10-009`. |
+| `certifications` | `["a-plus"]`, `["network-plus"]`, or `["security-plus"]`. One certification per record: an acronym on more than one list has one record in each file, because each record's source and objectives belong to its own certification. |
+| `exams` | The exams whose acronym list (or objectives) have it: `220-1201`, `220-1202`, `N10-009`, `SY0-801`. |
 | `objectives` | `<exam>/<objective>`, for example `220-1201/2.1`. The objectives that name the acronym or its expanded form. Empty for an official acronym that no objective names. The feedback box shows one tag for each objective. |
 | `official` | `true` when the acronym is on the official list. |
 | `origin` | `official` (the official list) or `book` (an extra from a current book). |
@@ -86,7 +86,7 @@ The app reads these records through the configs in `config/` (approved 2026-10-3
 
 - `config/certifications/<cert>.json` – `id` (the file name), `name`, `shortName` (for example `CompTIA A+`, used in exercise headers and results), `active`, and `exams` (exam codes in picker order, each with a config in `config/exams/`). The exercise setup shows an exam picker when there is more than one exam, plus "Both".
 - `config/exams/<code>.json` – `id` (the exam code and the file name), `certification`, `name` (`Core 1 Exam`), `shortName` (`Core 1`), `active` (false until the exam module and its content exist), and `domains` (`id` `"1"`, `"2"`, …, `name` as the official objectives write it, `weight` in percent, and `objectives`; the weights add up to 100). The objective tags in the Acronym Exercise feedback use the short name and the domain name. Exam engine fields (approved 2026-10-30; how to get each value: `docs/exam-modules.md`):
-  - `content` – the exam module's folder in `content/` (`core1`, `core2`, `network`). The app reads the pool, scenarios, and grammar of the exam from it.
+  - `content` – the exam module's folder in `content/` (`core1`, `core2`, `network`, `security`). The app reads the pool, scenarios, and grammar of the exam from it.
   - `questionCount` – `{ "min": 75, "max": 90 }`. Each attempt selects a count in this range.
   - `timeLimitMinutes`, `passingScore`, `maxScore` (for example 90, 675, 900).
   - `scenarioShare` – the estimated percentage of scenario-based questions from `docs/compTIA-exam-overviews.md`.

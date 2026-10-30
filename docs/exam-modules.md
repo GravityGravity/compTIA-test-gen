@@ -1,6 +1,6 @@
 # Exam Modules – How to Build One
 
-This guide tells you how to build an exam module (approved 2026-10-30). Follow it for each exam: Core 1 (220-1201), Core 2 (220-1202), Network+ (N10-009), and exams that are added later. All exam modules use the same code. Only the config (`config/exams/<code>.json`) and the content (`content/<module>/`) are different. A new exam needs no code changes, except a new book format in the question extractor or a new scenario generator kind.
+This guide tells you how to build an exam module (approved 2026-10-30). Follow it for each exam: Core 1 (220-1201), Core 2 (220-1202), Network+ (N10-009), Security+ (SY0-801), and exams that are added later. All exam modules use the same code. Only the config (`config/exams/<code>.json`) and the content (`content/<module>/`) are different. A new exam needs no code changes, except a new book format in the question extractor or a new scenario generator kind.
 
 Each exam question comes from one of two places:
 - **Generated scenario questions.** The app writes them at attempt time from scenario records and a sentence grammar. The sentence structure changes between attempts.
@@ -17,7 +17,7 @@ The field lists and examples for each record are in `content/README.md`. This gu
 | Books for the exam | `sources-text/<category>/<book>/`, found with `sources-text/sources-index.md` |
 | Book questions, parsed | `sources-text/derived/questions/<book>.json` (made by `tools/extract/extract_questions.py`) |
 
-Do not mix values or sources between exams. A+ content uses `sources-text/general/` (and `core1/`, `core2/`). Network+ content uses `sources-text/network/` only.
+Do not mix values or sources between exams. A+ content uses `sources-text/general/` (and `core1/`, `core2/`). Network+ content uses `sources-text/network/` only. Security+ content uses `sources-text/sec/` only.
 
 ## 2. The exam config
 
@@ -139,7 +139,8 @@ tools/extract/.venv/bin/python -I tools/extract/check_config.py
    1. Copy the domain's book questions from the staging files into `pool/d<N>.json` and tag them (section 4). Check each record's `flags` against the chapter: a `figure` question needs its stem rewritten without the figure or is left out; `options-repaired` and `few-options` need the options checked; a `no-answer` question gets an answer written from the chapter (`answerOrigin: "written"`).
    2. Write questions for the topics with fewer than 2.
    3. Write the scenario records and grammar for the domain's scenario objectives (section 5).
-   4. Run `check_questions.py` and `npm test` (the test generates many attempts from the real content).
+   4. Run `check_questions.py` and `npm test` (the test generates many attempts from the real content). While the exam is not active, the test builds attempts from the domains that have content only, with their share of the question count.
+   5. Keep the triage of the staging questions that did not go into this domain (`sources-text/derived/questions/_triage-<module>-*.json`: questions deferred to another domain or exam with their target objective, and dropped questions with the reason). The next domains, and the other exam of the same certification, start from it.
 4. When all domains are reviewed and the checks pass, set `active: true` in the exam config.
 
 ## 8. Checklist: add a new exam module

@@ -1,6 +1,6 @@
 # Cert Practice
 
-A local desktop app (Electron) that creates practice exams for CompTIA A+ Core 1, Core 2, and Network+, plus acronym and definition exercises. The commands are in `CLAUDE.md` under "Commands".
+A local desktop app (Electron) that creates practice exams for CompTIA A+ Core 1, Core 2, Network+, and Security+ (planned), plus acronym and definition exercises. The commands are in `CLAUDE.md` under "Commands".
 
 ## Linux: Electron sandbox on Ubuntu 24.04 and later
 

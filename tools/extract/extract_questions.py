@@ -49,7 +49,8 @@ class Chapter:
         name, exam, objectives, title = (row.split("\t") + ["", "", ""])[:4]
         self.path = TEXT / category / book / name
         self.rel = self.path.relative_to(TEXT).as_posix()
-        self.key = name.split("-")[0]
+        # "04-chapter-4-…" -> "04"; Docter "c1-04-core-1-…" -> "c1-04" (each core numbers its chapters from 1)
+        self.key = re.match(r"(?:c\d+-)?[^-]+", name).group(0)
         self.title = title
         self.exams = exam_codes(exam)
         self.objectives = [o for o in objectives.split(",") if o]

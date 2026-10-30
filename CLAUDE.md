@@ -1,6 +1,6 @@
 # CompTIA A+ Practice App
 
-A local desktop app that generates practice exams and exercises for CompTIA A+ Core 1 and Core 2, and Network+ (N10-009).
+A local desktop app that generates practice exams and exercises for CompTIA A+ Core 1 and Core 2, Network+ (N10-009), and Security+ (SY0-801).
 Read `docs/spec.md` for the product requirements.
 Read `docs/compTIA-exam-overviews.md` for how each exam is generated.
 
@@ -24,7 +24,7 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 ## Folder Structure
 - `CHANGELOG.md` – A summary of the changes and decisions in each task.
 - `docs/spec.md` – Product requirements.
-- `docs/compTIA-exam-overviews.md` – Exam overviews for Core 1, Core 2, and Network+: question count, time, passing score, domains, weights, question structures, and the structure mix.
+- `docs/compTIA-exam-overviews.md` – Exam overviews for Core 1, Core 2, Network+, and Security+: question count, time, passing score, domains, weights, question structures, and the structure mix.
 - `docs/exam-modules.md` – How to build an exam module (config, question pool, scenario records, grammar, tools, workflow, checklist). Follow it for every exam, including exams added later.
 - `references/exam-simulation-ui.html` – Exam simulation draft. The UI for an exam attempt must follow it.
 - `references/ui-drafts/` – Static HTML drafts of the non-exam screens (home, exam intro, previous attempts, exercise setup, question, results).
@@ -32,16 +32,17 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - `references/exam-question-UI.png` – Original screenshot for the exam simulation draft.
 - `references/UI Inspiration.png` – Original screenshot for the compTIA UI style.
 - `references/links.md` – Links to the official CompTIA exam pages.
-- `sources/` – Original books and guides (PDF, EPUB). Not in git. Subfolders: `core1/`, `core2/`, `general/`, `network/` (Network+ books and objectives).
+- `sources/` – Original books and guides (PDF, EPUB). Not in git. Subfolders: `core1/`, `core2/`, `general/`, `network/` (Network+ books and objectives), `sec/` (Security+ books and objectives).
 - `sources-text/` – Text extracted from `sources/`, filler removed. One Markdown file for each chapter, in `sources-text/<category>/<book>/` (same categories as `sources/`). Each file starts with its source, exam, and objectives. Not in git.
 - `sources-text/sources-index.md` – Links each chapter to an exam domain. Lists the books and which exam objectives (220-1201/1202, older 220-1101/1102, or N10-009) each one covers.
 - `sources-text/general/objectives-220-1201/`, `objectives-220-1202/` – The official CompTIA exam objectives (every objective and sub-topic) and the official acronym list for each exam.
 - `sources-text/derived/a-plus-acronyms.md` – The two official acronym lists merged, with notes where they differ. The main source for `content/acronyms/`.
 - `sources-text/derived/acronym-candidates.md` – Acronym and expanded-form pairs found in the books, marked when they are on the official list. A helper, not a source of truth.
 - `sources-text/network/` – Network+ (N10-009): the official objectives and acronym list (`objectives-n10-009/`) and three books. `sources-text/derived/network-plus-acronyms.md` and `network-plus-acronym-candidates.md` are the Network+ acronym files.
+- `sources-text/sec/` – Security+ (SY0-801): the official objectives and acronym list (`objectives-sy0-801/`) and four books (all for the previous exam, SY0-701). Not extracted yet. `sources-text/derived/security-plus-acronyms.md` and `security-plus-acronym-candidates.md` will be the Security+ acronym files.
 - `tools/extract/` – Dev-only Python tools (see its `README.md`): the book extractor, `seed_acronyms.py` (seeds acronym records from the official lists), `check_content.py` (validates the acronym and definition records), `check_config.py` (validates the configs in `config/`), `extract_questions.py` (parses the book questions into `sources-text/derived/questions/`), and `check_questions.py` (validates the exam pool and scenario records and prints the coverage report). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
 - `config/` – Configs the app loads: `certifications/` (one per certification: name, short name, `active`, exam codes), `exams/` (one per exam: name, short name, `active`, question count, time, passing score, scenario share, domains with weights and objectives), and `exercises/` (one per exercise module). See `content/README.md` for the fields.
-- `content/` – Records that the app uses. `acronyms/`, `definitions/`, one folder per exam module (`core1/`, `core2/`, `network/`, each with `pool/d<N>.json`, `scenarios/d<N>.json`, and `grammar.json`), and `shared/grammar.json` (grammar rules and noun pools for all exams). See `content/README.md` for the record formats.
+- `content/` – Records that the app uses. `acronyms/`, `definitions/`, one folder per exam module (`core1/`, `core2/`, `network/`, and `security/` when it is built, each with `pool/d<N>.json`, `scenarios/d<N>.json`, and `grammar.json`), and `shared/grammar.json` (grammar rules and noun pools for all exams). See `content/README.md` for the record formats.
 - `sources-text/derived/questions/` – The book questions parsed by `extract_questions.py`, one file per book. The input for the question pool. Not in git.
 - `src/main/` – Electron main process: the window, IPC handlers, file loading (`catalog.ts` reads `config/`, `content.ts` reads `content/`), and the SQLite database (`db.ts`).
 - `src/preload/` – The `contextBridge` API (`window.certPractice`). The only bridge between the UI and Node.
@@ -72,8 +73,9 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - Do not add a language model.
 - Do not add network calls or user accounts.
 - Do not change the tech stack without approval.
-- Do not hard-code Core 1 or Core 2 details. Load each exam from its config, so new exams (for example Network+) can be added later.
+- Do not hard-code Core 1 or Core 2 details. Load each exam from its config, so new exams (for example Network+ and Security+) can be added later.
 - Network+ is in scope (approved 2026-10-30): build its exam, acronym, and definition content. Each module and certification has an `active` setting in its config. Set it to true when its config and content exist; until then the module shows greyed out in module selection and the user cannot select it. No code changes are needed to activate a module.
+- Security+ (SY0-801) is in scope (added 2026-10-30): build its exam, acronym, and definition content the same way. Certification id `security-plus`, exam config `config/exams/SY0-801.json`, module folder `content/security/`. Keep `active: false` until its config and content exist.
 - Do not build performance-based questions (PBQs) until the user asks. Keep the question type as a field in each question, and keep the code for each question type separate, so PBQ types can be added later.
 - Sections marked **Plan with the user** are not decided. Propose a plan and get approval before you write code for them.
 - Update this file when a planned decision is approved.
@@ -106,18 +108,19 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - Read the text in `sources-text/`, not the original files in `sources/`.
 - If a book is not in `sources-text/`, extract it first: one Markdown file for each chapter. Then update `sources-text/sources-index.md`.
 - The extractor is a dev-only Python script (PyMuPDF for PDF, ebooklib for EPUB) in a local venv (approved). It is not part of the app. It is in `tools/extract/`; its `README.md` has the commands and the list of removed filler.
-- Put new books in `sources/` (`core1/`, `core2/`, `general/` for books that cover both cores, or `network/` for Network+), not in `sources-text/`. Then run the extractor.
-- Keep A+ and Network+ sources apart: A+ content uses `sources-text/general/` (and `core1/`, `core2/`); Network+ content uses `sources-text/network/` only.
+- Put new books in `sources/` (`core1/`, `core2/`, `general/` for books that cover both cores, `network/` for Network+, or `sec/` for Security+), not in `sources-text/`. Then run the extractor.
+- Keep the sources of each certification apart: A+ content uses `sources-text/general/` (and `core1/`, `core2/`); Network+ content uses `sources-text/network/` only; Security+ content uses `sources-text/sec/` only.
+- Security+ books: all four books in `sources/sec/` are for SY0-701, the exam before SY0-801. Treat them as older-objective books: copy their practice questions as they are, tagged with the closest SY0-801 objective (with a `note` when the match is not exact), and check every written fact against the SY0-801 objectives. Do not copy the PBQs of the Gorgotsias book. **Plan with the user:** how to cover SY0-801 topics that no book covers (for example 2.6, AI threats).
 - Prefer the books for the current objectives (220-1201/1202) when you write new content. The 220-1101/1102 books are older: use them for background, and check their facts against a current book. Exception (approved 2026-10-30): the practice questions of the older books go into the question pool as they are (see the next rule).
 - Build exam modules with `docs/exam-modules.md`.
 - Question pool (approved 2026-10-30): copy every practice question of the exam's books (chapter quizzes, review questions, self-checks, practice exams) into `content/<module>/pool/`. Keep the question, the answers, and the explanation. Set `origin` to `book`. Older-objective books are copied as they are and tagged with the closest current objective, with a `note` when the match is not exact. A book question without an answer gets an answer written from the chapter (`answerOrigin: "written"`). Keep one copy of a question that is in two books.
 - Then write new questions (`origin: "written"`) from the facts in each chapter until every topic (top-level bullet, numbered step, or table under an objective) has at least 1 pool question, and 2 where the chapters give enough facts (changed 2026-10-30; was 3). Each exam has at least 800 pool questions; more is good when the questions are good.
 - Write scenario records for every scenario objective (at least 6 records per objective and 1 per topic). See `docs/exam-modules.md`.
-- Create content one domain at a time. Stop after each domain so the user can review it. Exceptions (approved): acronyms are made and reviewed as one batch for each certification. The A+ definitions after Core 1 Domain 2 (Core 1 Domains 3–5 and all of Core 2) are made and reviewed as one batch. The Network+ definitions after Domain 1 (Domains 2–5) are made and reviewed as one batch. The Core 2 exam module after Domain 1 (Domains 2–4) is made and reviewed as one batch (approved 2026-10-30).
+- Create content one domain at a time. Stop after each domain so the user can review it. Exceptions (approved): acronyms are made and reviewed as one batch for each certification. The A+ definitions after Core 1 Domain 2 (Core 1 Domains 3–5 and all of Core 2) are made and reviewed as one batch. The Network+ definitions after Domain 1 (Domains 2–5) are made and reviewed as one batch. The Network+ exam module after Domain 1 (Domains 2–5: pool questions and scenario records) is made and reviewed as one batch (approved 2026-10-30). The Core 1 exam module after Domain 1 (Domains 2–5) is made and reviewed as one batch too (approved 2026-10-30). The Core 2 exam module after Domain 1 (Domains 2–4) is made and reviewed as one batch (approved 2026-10-30).
 - Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`, `tools/extract/check_questions.py` after each change to an exam module's content, and `tools/extract/check_config.py` after each change to `config/` or to the exercise content.
 - Add a `source` field (book and chapter) to each content record.
-- For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`; for Network+, `network-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).
-- Use the official objectives (`sources-text/general/objectives-220-120*/`, `sources-text/network/objectives-n10-009/`) to check that each content record matches a current objective.
+- For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`; for Network+, `network-plus-acronyms.md`; for Security+, `security-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).
+- Use the official objectives (`sources-text/general/objectives-220-120*/`, `sources-text/network/objectives-n10-009/`, `sources-text/sec/objectives-sy0-801/`) to check that each content record matches a current objective.
 
 ## Code Style
 <!-- blank -->
@@ -128,7 +131,8 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 The exam guide gives a separate structure for EACH exam type:
 - `docs/compTIA-exam-overviews.md` Part 1 – Core 1 (220-1201).
 - `docs/compTIA-exam-overviews.md` Part 2 – Core 2 (220-1202).
-- `docs/compTIA-exam-overviews.md` Part 3 – Network+ (N10-009). In scope. Shown greyed out until its config `active` setting is true.
+- `docs/compTIA-exam-overviews.md` Part 3 – Network+ (N10-009). In scope. Active since 2026-10-30 (all five domains have content).
+- `docs/compTIA-exam-overviews.md` Part 4 – Security+ (SY0-801). In scope (added 2026-10-30). Not active: no config or content yet. 90 minutes, passing score 750, about 33% scenario questions (9 of 26 objectives).
 
 Each exam type has its own config file. Make each config from the part of the guide for that exam only. Do not mix values between exams. Build each exam module with `docs/exam-modules.md` (approved 2026-10-30). Each config has (fields in `content/README.md`):
 - `questionCount` (`min`, `max`), `timeLimitMinutes`, `passingScore`, and `maxScore`.
@@ -141,7 +145,7 @@ All exam modules use the same generation code. Only the config and the content a
 - The question pool: fixed questions in `content/<module>/pool/` (every book practice question plus written questions; knowledge and scenario questions).
 
 Approved exam decisions:
-- Question count: random in a range from the config (75–90 for Core 1, Core 2, and Network+), as in the draft UI.
+- Question count: random in a range from the config (75–90 for Core 1, Core 2, Network+, and Security+), as in the draft UI.
 - Scoring: keep the draft's method. A multiple-response question gets partial credit (selected correct / total correct) only when no wrong option is selected. Score = round(`maxScore` × points / questions). Pass when score ≥ the config's passing score.
 - Results screen: add a per-domain breakdown (correct / total for each domain) under the score, in the draft's style.
 - Interrupted attempt: autosave progress and remaining time. On the next launch, offer to resume or discard it.
@@ -175,11 +179,11 @@ Rules:
 - Each module uses its own config file in `config/exercises/` (approved 2026-10-30): question count, time limit, what happens at time up, the selection method, and the question types with a count for each. Do not hard-code these values. Current values:
   - Acronym Exercise (`acronym.json`): 20 typed questions, 12 minutes.
   - Definition Exercise (`definition.json`): 20 questions, 15 minutes: 14 multiple choice (4 choices; each question picks its direction at random) and 6 typed (definition → term, `typeable` records only).
-- Setup (approved): the user selects a certification, then an exam when the certification config lists more than one (A+: Core 1, Core 2, or Both; Both is the default). Network+ has one exam, so no exam picker. A record is in the pool when its `exams` list includes a selected exam.
+- Setup (approved): the user selects a certification, then an exam when the certification config lists more than one (A+: Core 1, Core 2, or Both; Both is the default). Network+ and Security+ have one exam each, so no exam picker. A record is in the pool when its `exams` list includes a selected exam.
 - Selection (approved): plain random from the pool, no repeats within one exercise.
 - Time up (approved): the exercise ends at once and the results open. Unanswered questions count as incorrect and show "Not answered".
 - Keep acronyms and definitions in separate content: `content/acronyms/` and `content/definitions/`. Do not mix them in one exercise.
-- Each acronym and definition record has a certification field (`["a-plus"]` or `["network-plus"]`). The app selects only the records for the certification that the user selected.
+- Each acronym and definition record has a certification field (`["a-plus"]`, `["network-plus"]`, or `["security-plus"]`). The app selects only the records for the certification that the user selected.
 - Definition Exercise multiple-choice distractors come from the same module's content for the same certification: other terms or definitions. They come from the target's `group` first; only when the group runs short, from other groups of any exam of the same certification. A record with the same term or definition is never a distractor, and no two options have the same text.
 - Definition Exercise feedback: Correct or Incorrect, the term and its definition. Multiple choice marks the correct option ("Correct answer", `ok`) and a wrong pick ("Your answer", `brand`). The letter keys A–D select an option; Enter checks and then goes on (both exercises).
 - Leaving an exercise: the top bar's Home link asks first ("Leave the exercise?" – Leave or Keep going). "End exercise" asks too, then opens the results.
@@ -215,7 +219,7 @@ Acronym and definition records (approved). The full field list and the content r
 - Shared fields: `id`, `acceptedAnswers`, `certifications`, `exams`, `objectives` (`<exam>/<objective>`), `origin`, `source`, optional `note`.
 - Acronym fields: `acronym`, `expanded`, `meaning`, `official`. `meaning` is one sentence (10–25 words, our own words) that says what the thing is or does. Every acronym is asked as a typed question, so every expanded form must be typeable, and `acceptedAnswers` lists every other valid wording. Pool scope: the official list plus vetted book extras (`official: false`, `origin: "book"`). Where the official list has an error or the two A+ lists differ, `expanded` has the correct form and `acceptedAnswers` keeps the official wording (except plain typos); a `note` says why.
 - Definition fields: `term`, `definition`, `typeable`, `group`. Pool scope: the terms named in the objectives plus book glossary terms that match a current objective. Definitions are one sentence (about 30 words or fewer) in our own words. They never contain the term. The term is the typed answer, so the `term` field is never an acronym. The app also accepts the term's acronym as a typed answer (approved 2026-10-30): when it loads the content, it links each definition to the acronym records of the same certification whose expanded form or accepted answers match the term or its accepted answers. The content files do not list the acronym.
-- One record per certification: an acronym on both lists has an A+ record and a Network+ record.
+- One record per certification: an acronym on more than one list has one record for each certification (A+, Network+, Security+).
 - Definition distractors come from the same `group` first. A record that shares the term or the definition with the target is never a distractor.
 
 Exam module records (approved 2026-10-30). The full field lists are in `content/README.md`; the method is in `docs/exam-modules.md`.

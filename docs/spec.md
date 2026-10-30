@@ -1,7 +1,7 @@
 # CompTIA A+ Practice App – Product Requirements
 
 ## Purpose
-Help users prepare for the CompTIA A+ Core 1 and Core 2 exams and the CompTIA Network+ (N10-009) exam.
+Help users prepare for the CompTIA A+ Core 1 and Core 2 exams and the CompTIA Network+ (N10-009) and Security+ (SY0-801) exams.
 
 ## Problem
 There are not many local applications that generate practice tests and exercises for the CompTIA A+ Core exams.
@@ -23,7 +23,8 @@ Use these names in all files and code:
 |---|---|---|
 | Core 1 Exam | Exam structure | Core 1 topics |
 | Core 2 Exam | Exam structure (same as Core 1) | Core 2 topics |
-| Network+ Exam | Exam structure (same as Core 1) | Network+ topics. Greyed out until its config is active. |
+| Network+ Exam | Exam structure (same as Core 1) | Network+ topics. Active since 2026-10-30. |
+| Security+ Exam | Exam structure (same as Core 1) | Security+ (SY0-801) topics. In scope (added 2026-10-30); greyed out until its config and content exist. |
 | Acronym Exercise | Exercise structure (different) | Acronyms only |
 | Definition Exercise | Exercise structure (shares the exercise code with Acronym Exercise) | Terms and definitions only |
 
@@ -38,7 +39,7 @@ Use these names in all files and code:
 - Language: English only.
 - All screens that are not part of an exam attempt or an attempt review (menus, module selection, the list of previous attempts, the Acronym Exercise module, and the Definition Exercise module) follow the compTIA UI style in `references/comptia-ui-style/`.
 
-### Exam modules (Core 1 Exam, Core 2 Exam, Network+ Exam)
+### Exam modules (Core 1 Exam, Core 2 Exam, Network+ Exam, Security+ Exam)
 All exam modules use the same exam code. Only the exam config and the content are different. `docs/exam-modules.md` tells how to build an exam module, including exams added later.
 
 - `docs/compTIA-exam-overviews.md` defines how the app generates each exam. Follow it for:
@@ -50,7 +51,7 @@ All exam modules use the same exam code. Only the exam config and the content ar
 - The exam has a timer.
 - The app generates scenario-based questions dynamically from scenario records and a sentence grammar. The sentence structure changes between attempts, so the user cannot memorize the question form. The generator works for every exam module.
 - All other questions come from a question pool for each exam (approved 2026-10-30):
-  - The pool has every practice question from the exam's books (chapter quizzes, review questions, practice exams), with the same answers. Questions from books for older objectives are included as they are, tagged with the closest current objective.
+  - The pool has every practice question from the exam's books (chapter quizzes, review questions, practice exams), with the same answers. Questions from books for older objectives are included as they are, tagged with the closest current objective. All the Security+ books are for SY0-701, the exam before SY0-801, so all of them are older-objective books.
   - New questions written from the books fill the gaps: every topic (top-level bullet, numbered step, or table under an objective) has at least 1 question, and 2 where the books give enough facts (changed 2026-10-30; was 3).
   - Each exam's pool has at least 800 questions.
   - Each question is labelled with its domain, objectives, and topics.
@@ -74,7 +75,7 @@ These are two separate modules. Each module practices one thing only.
 | Definition Exercise | Terms and definitions only | Either direction: term → select the definition, or definition → select the term | Definition → type the term (only this direction) |
 
 Both modules:
-- Before an exercise begins, the user selects the certification to review (A+ or Network+). For A+, the user also selects the exam: Core 1, Core 2, or Both (the default). Network+ has one exam.
+- Before an exercise begins, the user selects the certification to review (A+, Network+, or Security+). For A+, the user also selects the exam: Core 1, Core 2, or Both (the default). Network+ and Security+ have one exam each.
 - Each exercise has 20 questions, chosen at random with no repeats. The Acronym Exercise has a 12-minute time limit and the Definition Exercise a 15-minute time limit.
 - The Definition Exercise has 14 multiple-choice questions (each in a random direction) and 6 type-the-answer questions.
 - When the time runs out, the exercise ends and the results open. Questions not answered count as incorrect and show "Not answered".
@@ -104,7 +105,7 @@ Both modules:
 
 ## Acceptance Criteria
 
-### Exam modules (Core 1, Core 2, Network+)
+### Exam modules (Core 1, Core 2, Network+, Security+)
 Each exam module is accepted when:
 - Its config has all exam fields and `check_config.py` passes.
 - Its pool has at least 800 questions, every topic has at least 1 pool question (2 is the target), every scenario objective has enough scenario records, and `check_questions.py` passes with no errors.

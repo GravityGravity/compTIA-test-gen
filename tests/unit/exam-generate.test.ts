@@ -1,7 +1,8 @@
 import { describe, expect, it } from 'vitest'
 import { planAttempt } from '@engine/exam/allocate'
 import { generateExam, NotEnoughQuestionsError } from '@engine/exam/generate'
-import type { ExamQuestion } from '@shared/exam'
+import type { ExamContent, ExamQuestion } from '@shared/exam'
+import type { ExamConfig } from '@shared/types'
 import { loadCatalog } from '../../src/main/catalog'
 import { loadExamContent } from '../../src/main/content'
 
@@ -19,10 +20,11 @@ function checkQuestion(q: ExamQuestion) {
     else expect(w && sentences(w)).toBe(1)
   })
   expect(sentences(q.explanation)).toBeGreaterThanOrEqual(1)
-  expect(sentences(q.explanation)).toBeLessThanOrEqual(5)
+  // A book question keeps the book's explanation, which can be longer (check_questions.py warns on it).
   if (q.origin === 'generated') {
     expect(q.options).toHaveLength(4)
     expect(sentences(q.explanation)).toBeGreaterThanOrEqual(2)
+    expect(sentences(q.explanation)).toBeLessThanOrEqual(5)
   }
 }
 
@@ -68,6 +70,24 @@ describe('generateExam on the fixture content', () => {
   })
 })
 
+/**
+ * An exam that is not active yet is built one domain at a time (docs/exam-modules.md, section 7).
+ * Its attempts use only the domains that have content, with their share of the question count.
+ */
+function domainsWithContent(config: ExamConfig, content: ExamContent): ExamConfig {
+  if (config.active) return config
+  const has = (id: string) =>
+    content.pool.some((q) => q.domain === id) || content.scenarios.some((r) => r.domain === id)
+  const domains = config.domains.filter((d) => has(d.id))
+  const share = domains.reduce((s, d) => s + d.weight, 0) / 100
+  const scale = (n: number) => Math.max(1, Math.round(n * share))
+  return {
+    ...config,
+    domains,
+    questionCount: { min: scale(config.questionCount.min), max: scale(config.questionCount.max) }
+  }
+}
+
 // The real content in content/: every exam that has content must build attempts without errors.
 describe('generateExam on the real content', () => {
   const catalog = loadCatalog(process.cwd())
@@ -76,7 +96,12 @@ describe('generateExam on the real content', () => {
     const content = all[config.id]!
     const hasContent = content.pool.length + content.scenarios.length > 0
     it.runIf(hasContent)(`${config.id}: 200 attempts build and keep the question rules`, () => {
-      for (let seed = 0; seed < 200; seed++) generateExam(config, content, seed).forEach(checkQuestion)
+      const built = domainsWithContent(config, content)
+      for (let seed = 0; seed < 200; seed++) {
+        const questions = generateExam(built, content, seed)
+        expect(questions.length).toBeGreaterThanOrEqual(built.questionCount.min)
+        questions.forEach(checkQuestion)
+      }
     })
     it.runIf(config.active)(`${config.id} is active, so it has content`, () => {
       expect(hasContent).toBe(true)
