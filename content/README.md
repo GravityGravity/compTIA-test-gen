@@ -103,6 +103,14 @@ A+ Core 2 Domain 4 (`core2-d4-operational-procedures.json`, 127 terms): `ticketi
 
 Network+ Domain 1 (`network-plus/d1-networking-concepts.json`, 203 terms): `osi-layers`, `osi-encapsulation`, `appliance-forwarding`, `appliance-security`, `appliance-storage`, `appliance-traffic`, `cloud-models`, `cloud-characteristics`, `cloud-networking`, `proto-file-remote`, `proto-web-mail-voice`, `proto-network-services`, `proto-ip-types`, `proto-ports-transport`, `traffic-types`, `media-wireless`, `media-copper`, `media-cable-jackets`, `media-fiber`, `media-transceivers`, `media-fiber-connectors`, `media-copper-connectors`, `topo-types`, `topo-architecture`, `ipv4-special`, `ipv4-subnetting`, `ipv4-classes`, `modern-sdn`, `modern-vxlan`, `modern-zero-trust`, `modern-iac`, `modern-source-control`, `modern-ipv6`.
 
+Network+ Domain 2 (`network-plus/d2-network-implementation.json`, 119 terms): `route-protocols`, `route-types`, `route-selection`, `route-nat`, `route-redundancy`, `switch-intervlan`, `switch-vlan`, `switch-ports`, `switch-duplex`, `switch-features`, `wifi-channels`, `wifi-service-sets`, `wifi-network-types`, `wifi-security`, `wifi-antennas-aps`, `install-locations-racks`, `install-cabling`, `install-power`, `install-environment`.
+
+Network+ Domain 3 (`network-plus/d3-network-operations.json`, 128 terms): `ops-documentation`, `ops-assets`, `ops-lifecycle`, `ops-change-config`, `monitor-snmp`, `monitor-data`, `monitor-logs`, `monitor-solutions`, `access-vpn`, `access-management`, `dr-metrics`, `dr-sites`, `dr-ha`, `dr-plans`, `dhcp-config`, `dhcp-process`, `dhcp-ipv6`, `dns-records`, `dns-zones`, `dns-resolution`, `dns-security`, `time-sync`.
+
+Network+ Domain 4 (`network-plus/d4-network-security.json`, 90 terms): `sec-crypto`, `sec-compliance`, `sec-authentication`, `sec-iam`, `sec-physical-deception`, `sec-risk-terms`, `sec-segmentation`, `attack-dos`, `attack-layer2`, `attack-redirection`, `attack-social`, `attack-malware`, `defense-hardening`, `defense-nac`, `defense-rules-zones`.
+
+Network+ Domain 5 (`network-plus/d5-network-troubleshooting.json`, 117 terms): `ts-method-steps`, `ts-method-techniques`, `cable-signal`, `cable-faults`, `interface-issues`, `interface-hardware`, `svc-issue-stp-roles`, `svc-issue-stp-states`, `svc-issue-routing`, `svc-issue-config`, `perf-network`, `perf-wireless`, `tool-commands-reachability`, `tool-commands-host`, `tool-software`, `tool-hardware`, `tool-device-show`.
+
 ## How the acronym files were made
 
 1. `tools/extract/seed_acronyms.py <cert>` seeded one record per official acronym from `sources-text/derived/<cert>-acronyms.md` and mapped it to the objectives that name it. It does not overwrite an existing file.

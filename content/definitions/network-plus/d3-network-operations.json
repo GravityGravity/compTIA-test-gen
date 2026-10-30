@@ -1,0 +1,2669 @@
+[
+  {
+    "id": "netplus-def-physical-network-diagram",
+    "term": "Physical network diagram",
+    "definition": "Drawing of how a network is actually built, showing the real devices, cable runs and grades, WAN links, and where each piece of equipment sits.",
+    "acceptedAnswers": [
+      "Physical diagram",
+      "Physical topology diagram"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-logical-network-diagram",
+    "term": "Logical network diagram",
+    "definition": "Drawing of how data flows through a network, showing subnets, VLANs, protocols, domains, and server roles rather than hardware placement and cable paths.",
+    "acceptedAnswers": [
+      "Logical diagram",
+      "Logical topology diagram"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-rack-diagram",
+    "term": "Rack diagram",
+    "definition": "Drawing of one equipment cabinet that shows which device occupies each rack unit, how the gear is mounted, and any unusual setups in it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-cable-map",
+    "term": "Cable map",
+    "definition": "Documentation that traces each cable run end to end, with its type, label, and the switch, patch panel, or server port it connects to.",
+    "acceptedAnswers": [
+      "Cable diagram"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-layer-1-network-diagram",
+    "term": "Layer 1 network diagram",
+    "definition": "Drawing limited to the physical layer: the hardware, transmission media, and physical links between devices, without any addressing details.",
+    "acceptedAnswers": [
+      "Layer 1 diagram"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-layer-2-network-diagram",
+    "term": "Layer 2 network diagram",
+    "definition": "Drawing of data link connectivity that shows which devices can reach each other inside a LAN through switches, often with VLANs and MAC addresses.",
+    "acceptedAnswers": [
+      "Layer 2 diagram"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-layer-3-network-diagram",
+    "term": "Layer 3 network diagram",
+    "definition": "Drawing of routing that shows IP address spaces, the subnets in each LAN, and the routers that connect the network segments.",
+    "acceptedAnswers": [
+      "Layer 3 diagram"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-wireless-survey",
+    "term": "Wireless survey",
+    "definition": "Study of a building in which technicians measure signal strength, coverage gaps, dead zones, and interference to plan where access points should go.",
+    "acceptedAnswers": [
+      "Wireless site survey",
+      "Site survey",
+      "Wireless survey report"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-heat-map",
+    "term": "Heat map",
+    "definition": "Color-shaded floor plan of Wi-Fi signal strength, with warm colors such as red marking strong coverage and cool colors such as blue marking weak areas.",
+    "acceptedAnswers": [
+      "Heatmap",
+      "Signal coverage map",
+      "RF propagation map"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-documentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-asset-inventory",
+    "term": "Asset inventory",
+    "definition": "Up-to-date record of every hardware device and software title the organization owns, with models, serial numbers, versions, locations, licenses, and warranty details.",
+    "acceptedAnswers": [
+      "Inventory management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-assets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-licensing",
+    "term": "Licensing",
+    "definition": "Tracking of the legal rights to use each software product, such as how many users or devices are allowed and when the agreement must be renewed.",
+    "acceptedAnswers": [
+      "Software licensing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-assets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-warranty-support",
+    "term": "Warranty support",
+    "definition": "Vendor coverage that repairs or replaces failed hardware at no extra cost for a set period after purchase, recorded with each device in the inventory.",
+    "acceptedAnswers": [
+      "Warranty"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-assets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-ip-address-management",
+    "term": "IP address management",
+    "definition": "Planning, tracking, and monitoring of a network's address space, including ranges, subnets, reservations, and which host holds each address, often with a dedicated tool.",
+    "acceptedAnswers": [
+      "Internet Protocol address management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-assets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-service-level-agreement",
+    "term": "Service-level agreement",
+    "definition": "Contract with a provider that states measurable service terms, such as 99.999 percent uptime and repair times, and what happens if they are missed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-assets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-life-cycle-management",
+    "term": "Life cycle management",
+    "definition": "Oversight of a system from planning and deployment through maintenance and upgrades to its final retirement, so aging parts are replaced in time.",
+    "acceptedAnswers": [
+      "Lifecycle management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-end-of-life",
+    "term": "End-of-life",
+    "definition": "Stage at which the manufacturer stops making, selling, and marketing a product; support and warranty coverage may also be ending.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-end-of-support",
+    "term": "End-of-support",
+    "definition": "Date after which the vendor no longer supplies security fixes, software updates, or technical help for a product, leaving devices still in use exposed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-patch",
+    "term": "Patch",
+    "definition": "Small vendor-supplied code update that corrects a bug or closes a security hole in an operating system or application without replacing the whole program.",
+    "acceptedAnswers": [
+      "Bug fix",
+      "Software patch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-patch-management",
+    "term": "Patch management",
+    "definition": "Process of watching for new vendor fixes, testing them on lab systems, and deploying them across the network's devices, often with automated tools.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-firmware-update",
+    "term": "Firmware update",
+    "definition": "Replacement of the low-level code embedded in hardware such as a router or switch, to fix bugs, close security holes, or add features.",
+    "acceptedAnswers": [
+      "Firmware upgrade"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-decommissioning",
+    "term": "Decommissioning",
+    "definition": "Planned retirement of a device, application, or service: dependencies are checked, data is backed up or migrated, and the system is removed from production.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-rollback",
+    "term": "Rollback",
+    "definition": "Return to the previous software version or saved settings when a patch, upgrade, or change causes problems.",
+    "acceptedAnswers": [
+      "Roll back"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-lifecycle",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-change-management",
+    "term": "Change management",
+    "definition": "Formal process for requesting, reviewing, approving, scheduling, and documenting changes to the network, so each change has a reason, a back-out plan, and approval.",
+    "acceptedAnswers": [
+      "Change control"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-service-request",
+    "term": "Service request",
+    "definition": "Official logged ticket asking for a change or service, tracked from submission through approval and completion, listing the impact and back-out steps.",
+    "acceptedAnswers": [
+      "Change request",
+      "Request process tracking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-maintenance-window",
+    "term": "Maintenance window",
+    "definition": "Approved, scheduled period of downtime, usually outside business hours, during which changes to production systems are carried out.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-configuration-management",
+    "term": "Configuration management",
+    "definition": "Ongoing process of documenting device settings, keeping them in a desired state, and tracking every settings change over time with versions and audits.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-production-configuration",
+    "term": "Production configuration",
+    "definition": "The live settings a device runs with in service, tested and validated for performance, security, and function before deployment.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-backup-configuration",
+    "term": "Backup configuration",
+    "definition": "Saved snapshot of a device's live settings from a point in time, kept so the device can be restored quickly after a failure or a bad change.",
+    "acceptedAnswers": [
+      "Configuration backup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-golden-configuration",
+    "term": "Golden configuration",
+    "definition": "Tested, approved standard set of settings that similar devices are compared against to find and correct any differences.",
+    "acceptedAnswers": [
+      "Baseline configuration",
+      "Baseline/golden configuration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "group": "ops-change-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-snmp-trap",
+    "term": "SNMP trap",
+    "definition": "Unsolicited alert that an agent on a managed device sends to the manager when a set condition occurs, such as a failed interface, normally to UDP port 162.",
+    "acceptedAnswers": [
+      "Trap",
+      "Simple Network Management Protocol trap"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-management-information-base",
+    "term": "Management information base",
+    "definition": "Hierarchical database that lists every object SNMP can read or set on a managed device, each object named by a numeric identifier.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-object-identifier",
+    "term": "Object identifier",
+    "definition": "Dotted string of numbers that uniquely names one managed item, such as a CPU load counter, within the SNMP database tree.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-simple-network-management-protocol-version-2c",
+    "term": "Simple Network Management Protocol version 2c",
+    "definition": "SNMP release still widely used that improved performance but authenticates only with plaintext community strings and sends data without encryption.",
+    "acceptedAnswers": [
+      "SNMP version 2c"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-simple-network-management-protocol-version-3",
+    "term": "Simple Network Management Protocol version 3",
+    "definition": "Most secure SNMP release, adding user-based authentication, message integrity checks, and encryption such as AES instead of plaintext community strings.",
+    "acceptedAnswers": [
+      "SNMP version 3"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-community-string",
+    "term": "Community string",
+    "definition": "Plaintext password-like value that SNMPv1 and SNMPv2c devices check before they answer requests; it can grant read-only or read-write access.",
+    "acceptedAnswers": [
+      "Community strings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-network-management-system",
+    "term": "Network management system",
+    "definition": "Central console software that gathers data from managed devices, receives their alerts, and shows maps and graphs of device health across the network.",
+    "acceptedAnswers": [
+      "Network management station"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-network-management-agent",
+    "term": "Network management agent",
+    "definition": "Small software routine on a managed device that gathers data about the device and answers manager requests, listening on UDP port 161.",
+    "acceptedAnswers": [
+      "SNMP agent",
+      "Agent"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-polling",
+    "term": "Polling",
+    "definition": "Method in which the manager asks each managed device for data at regular intervals with Get requests, instead of waiting for alerts.",
+    "acceptedAnswers": [
+      "SNMP polling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-snmp",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-flow-data",
+    "term": "Flow data",
+    "definition": "Summary records of traffic crossing router and switch interfaces, with source and destination addresses, ports, and byte counts, used to find top talkers.",
+    "acceptedAnswers": [
+      "Network flow data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-data",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-netflow",
+    "term": "NetFlow",
+    "definition": "Cisco protocol that keeps a record of each conversation crossing an enabled interface and exports these records to a collector for bandwidth analysis.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-data",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-packet-capture",
+    "term": "Packet capture",
+    "definition": "Recording of complete frames, headers and payload, as they cross the network, so they can be inspected live or saved and studied later.",
+    "acceptedAnswers": [
+      "Packet sniffing",
+      "Packet analysis"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-data",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-port-mirroring",
+    "term": "Port mirroring",
+    "definition": "Switch feature that copies the traffic of one or more ports or VLANs to a chosen port where a monitoring tool or analyzer is connected.",
+    "acceptedAnswers": [
+      "Port monitoring",
+      "Switched port analyzer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-data",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-baseline-metrics",
+    "term": "Baseline metrics",
+    "definition": "Record of normal network performance, such as utilization, error rate, and latency, taken over time and used as a point of comparison.",
+    "acceptedAnswers": [
+      "Baseline",
+      "Performance baseline",
+      "Network baseline"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-data",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-anomaly-alerting",
+    "term": "Anomaly alerting",
+    "definition": "Automatic warning sent when a monitored value strays from its normal level or crosses a threshold, such as a sudden spike in traffic.",
+    "acceptedAnswers": [
+      "Anomaly detection",
+      "Anomaly notification",
+      "Anomaly alerting/notification"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-data",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-log-aggregation",
+    "term": "Log aggregation",
+    "definition": "Gathering of log data from many devices and applications into one central store so it can be searched, correlated, and analyzed together.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-logs",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-log-management",
+    "term": "Log management",
+    "definition": "Full handling of system-generated event records over their life, including collection, retention, review, and secure disposal.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-logs",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-syslog-collector",
+    "term": "Syslog collector",
+    "definition": "Central server that listens for event messages from network devices, usually on UDP port 514, and stores them with their severity levels.",
+    "acceptedAnswers": [
+      "Syslog server",
+      "Syslog receiver"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-logs",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-security-information-and-event-management",
+    "term": "Security information and event management",
+    "definition": "Platform that gathers logs from firewalls, servers, and IDS sensors, correlates events in real time, and alerts staff to likely threats on a dashboard.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-logs",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-event-correlation",
+    "term": "Event correlation",
+    "definition": "Analysis that links related entries from different devices' logs to reveal attack patterns that no single entry would show.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-logs",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-api-integration",
+    "term": "API integration",
+    "definition": "Linking monitoring tools to ticketing, orchestration, or configuration systems through programmable interfaces, so alerts can open tickets or start fixes automatically.",
+    "acceptedAnswers": [
+      "Application programming interface integration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-logs",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-network-discovery",
+    "term": "Network discovery",
+    "definition": "Scanning that finds and catalogs the hosts, devices, and services on a network, with their addresses and operating systems, to build an inventory.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-ad-hoc-discovery",
+    "term": "Ad hoc discovery",
+    "definition": "On-demand scan an administrator runs, such as a ping sweep of one segment, in response to a specific problem or question.",
+    "acceptedAnswers": [
+      "Ad hoc network discovery"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-scheduled-discovery",
+    "term": "Scheduled discovery",
+    "definition": "Automated scan that repeats at set intervals to keep the asset inventory and topology map current and to detect new or changed devices.",
+    "acceptedAnswers": [
+      "Scheduled network discovery"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-traffic-analysis",
+    "term": "Traffic analysis",
+    "definition": "Study of packet flow patterns across the network to find congestion points, bottlenecks, heavy users, and unusual behavior.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-performance-monitoring",
+    "term": "Performance monitoring",
+    "definition": "Tracking of measures such as bandwidth, latency, jitter, CPU, and memory use on devices and links to spot slowdowns before users notice them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-availability-monitoring",
+    "term": "Availability monitoring",
+    "definition": "Constant checking that devices, servers, and services are reachable and running, so outages and downtime are detected and fixed quickly.",
+    "acceptedAnswers": [
+      "Uptime monitoring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-configuration-monitoring",
+    "term": "Configuration monitoring",
+    "definition": "Ongoing comparison of device settings with an approved standard to catch unauthorized changes and drift and to verify compliance with policy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "group": "monitor-solutions",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-site-to-site-vpn",
+    "term": "Site-to-site VPN",
+    "definition": "Encrypted tunnel between gateways at two or more locations, such as a branch and headquarters, so whole networks connect securely over the Internet.",
+    "acceptedAnswers": [
+      "Site-to-site virtual private network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-vpn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-client-to-site-vpn",
+    "term": "Client-to-site VPN",
+    "definition": "Encrypted tunnel from one remote user's device, usually running client software, to a gateway at the edge of the corporate network.",
+    "acceptedAnswers": [
+      "Client-to-site virtual private network",
+      "Remote access VPN",
+      "Host-to-site VPN",
+      "Client VPN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-vpn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-clientless-vpn",
+    "term": "Clientless VPN",
+    "definition": "Remote access through a web browser to a secure portal protected by SSL/TLS, with no dedicated tunneling software installed on the device.",
+    "acceptedAnswers": [
+      "Clientless",
+      "Clientless virtual private network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-vpn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-split-tunnel",
+    "term": "Split tunnel",
+    "definition": "Remote access setup in which only traffic for the corporate network uses the encrypted tunnel, while Internet traffic goes out directly through the local connection.",
+    "acceptedAnswers": [
+      "Split tunneling",
+      "Split tunnel VPN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-vpn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-full-tunnel",
+    "term": "Full tunnel",
+    "definition": "Remote access setup that sends all of a client's traffic, including Internet browsing, through the encrypted tunnel to the corporate network.",
+    "acceptedAnswers": [
+      "Full tunneling",
+      "Full tunnel VPN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-vpn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-console-connection",
+    "term": "Console connection",
+    "definition": "Direct local access to a device through its dedicated serial management port and cable, used for initial setup, password recovery, and when the network is down.",
+    "acceptedAnswers": [
+      "Console",
+      "Console port connection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-management",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-graphical-user-interface",
+    "term": "Graphical user interface",
+    "definition": "Management method that uses windows, menus, icons, and a pointer, often a web page, instead of typed commands.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-management",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-application-programming-interface",
+    "term": "Application programming interface",
+    "definition": "Programmatic way for scripts and software to send requests to a device and receive structured responses, used to automate configuration and management.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-management",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-jump-box",
+    "term": "Jump box",
+    "definition": "Hardened server that administrators must log in to first, with strong authentication and logging, before they can reach protected internal systems.",
+    "acceptedAnswers": [
+      "Jump host",
+      "Bastion host",
+      "Jump server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-management",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-in-band-management",
+    "term": "In-band management",
+    "definition": "Device administration over the same network paths that carry user traffic, such as SSH or a web page, so it is lost when that network fails.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-management",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-out-of-band-management",
+    "term": "Out-of-band management",
+    "definition": "Device administration over a separate dedicated path, such as a console server, modem, or management network, that still works when the production network fails.",
+    "acceptedAnswers": [
+      "Lights-out management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "group": "access-management",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-recovery-point-objective",
+    "term": "Recovery point objective",
+    "definition": "A disaster recovery metric for the most data loss a business can accept, measured back in time to the last usable backup or copy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-recovery-time-objective",
+    "term": "Recovery time objective",
+    "definition": "A disaster recovery metric for the longest outage a service may have before the downtime harms the business, which sets how fast systems must be restored.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-mean-time-to-repair",
+    "term": "Mean time to repair",
+    "definition": "The average time needed to fix a failed device or system and put it back in service; a lower value means faster recovery.",
+    "acceptedAnswers": [
+      "Mean time to recovery"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-mean-time-between-failures",
+    "term": "Mean time between failures",
+    "definition": "The average time a device or system runs normally before it breaks down, used to predict reliability; a higher value means fewer outages.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-cold-site",
+    "term": "Cold site",
+    "definition": "A disaster recovery location with space, power, and basic connectivity but little or no ready equipment, so restoring service takes days or longer; the cheapest option.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-sites",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-warm-site",
+    "term": "Warm site",
+    "definition": "A disaster recovery location with equipment in place but only partly configured or updated, so data restores and setup take hours to days; mid-range cost.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-sites",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-hot-site",
+    "term": "Hot site",
+    "definition": "A disaster recovery location fully equipped, configured, and kept current with production, so operations can move there almost at once; the most expensive option.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-sites",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-cloud-site",
+    "term": "Cloud site",
+    "definition": "A disaster recovery option hosted by a provider, where cloud resources are kept running or built by scripts only when a disaster strikes.",
+    "acceptedAnswers": [
+      "Disaster Recovery as a Service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-sites",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-active-active",
+    "term": "Active-active",
+    "definition": "A high-availability design in which all redundant devices or links carry traffic at the same time and share the load, so any one can absorb a failure.",
+    "acceptedAnswers": [
+      "Active-active redundancy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-ha",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-active-passive",
+    "term": "Active-passive",
+    "definition": "A high-availability design in which one device or link carries all traffic while a standby copy stays idle and takes over only after a failure.",
+    "acceptedAnswers": [
+      "Active-passive redundancy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-ha",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-failover",
+    "term": "Failover",
+    "definition": "The automatic switch of work from a failed component to a redundant one, so the service keeps running with little or no interruption.",
+    "acceptedAnswers": [
+      "Automatic failover"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-ha",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-single-point-of-failure",
+    "term": "Single point of failure",
+    "definition": "One device, link, or service whose loss stops a whole network or process because nothing redundant can take its place.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-ha",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-tabletop-exercise",
+    "term": "Tabletop exercise",
+    "definition": "A disaster recovery test in which team members meet and talk through a pretend disaster to check roles, decisions, and communication, without running any recovery steps.",
+    "acceptedAnswers": [
+      "Tabletop exercises"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-plans",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-validation-test",
+    "term": "Validation test",
+    "definition": "A hands-on disaster recovery test that actually runs restore and failover procedures in a controlled setting to prove they work and meet time and data-loss targets.",
+    "acceptedAnswers": [
+      "Validation tests",
+      "Validation testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-plans",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-disaster-recovery-plan",
+    "term": "Disaster recovery plan",
+    "definition": "The part of continuity planning that documents the contacts, backups, and steps used to restore critical systems and data after a major outage.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-plans",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-business-continuity-plan",
+    "term": "Business continuity plan",
+    "definition": "A high-level plan for keeping an organization serving its customers during and after a disaster, covering critical operations, communications, and ways to limit downtime.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "group": "dr-plans",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-dhcp-scope",
+    "term": "DHCP scope",
+    "definition": "The range of IPv4 addresses, with its subnet settings, that a DHCP server may hand out to clients on one network segment.",
+    "acceptedAnswers": [
+      "Scope",
+      "DHCP pool"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-dhcp-reservation",
+    "term": "DHCP reservation",
+    "definition": "A setting that makes the DHCP server always give the same IP address to one client, identified by its MAC address, such as a network printer.",
+    "acceptedAnswers": [
+      "MAC reservation",
+      "IP reservation",
+      "Reservation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-lease-time",
+    "term": "Lease time",
+    "definition": "How long a client may keep an address from a DHCP server; the client tries to renew at about half that period and stops using the address when it expires.",
+    "acceptedAnswers": [
+      "DHCP lease time",
+      "DHCP lease"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-scope-options",
+    "term": "Scope options",
+    "definition": "Extra settings a DHCP server sends along with each address, such as the default gateway, DNS servers, domain suffix, and how long the address is valid.",
+    "acceptedAnswers": [
+      "Scope option",
+      "DHCP options",
+      "DHCP option"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-exclusion-range",
+    "term": "Exclusion range",
+    "definition": "Addresses inside a DHCP address range that the server never hands out, kept free for devices that use static IP addresses.",
+    "acceptedAnswers": [
+      "DHCP exclusion",
+      "IP exclusion",
+      "Exclusions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-dhcp-relay-agent",
+    "term": "DHCP relay agent",
+    "definition": "A router or layer 3 switch that picks up DHCP broadcasts on a local subnet and forwards them to a DHCP server on another subnet.",
+    "acceptedAnswers": [
+      "DHCP relay",
+      "Relay agent"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-ip-helper-address",
+    "term": "IP helper address",
+    "definition": "The address set on a router interface to forward selected UDP broadcasts, by default DHCP, DNS, TFTP, and more, to a server or subnet elsewhere.",
+    "acceptedAnswers": [
+      "IP helper"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-dhcp-discover",
+    "term": "DHCP Discover",
+    "definition": "The first message of the address assignment process, a broadcast from a client with no IP address that looks for any available DHCP server.",
+    "acceptedAnswers": [
+      "DHCP Discover message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-process",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-dhcp-offer",
+    "term": "DHCP Offer",
+    "definition": "The second message of the address assignment process, in which a DHCP server proposes an available address, its duration, and settings to the client.",
+    "acceptedAnswers": [
+      "DHCP Offer message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-process",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-dhcp-request",
+    "term": "DHCP Request",
+    "definition": "The third message of the address assignment process, in which the client tells the chosen DHCP server that it accepts the proposed address.",
+    "acceptedAnswers": [
+      "DHCP Request message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-process",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-dhcp-acknowledgment",
+    "term": "DHCP Acknowledgment",
+    "definition": "The fourth and final message of the address assignment process, in which the DHCP server confirms the assignment so the client can start using the address.",
+    "acceptedAnswers": [
+      "DHCP Acknowledgement",
+      "DHCP Acknowledgment message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-process",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-stateless-address-autoconfiguration",
+    "term": "Stateless address autoconfiguration",
+    "definition": "An IPv6 method in which a host builds its own address from the network prefix that routers announce plus an interface ID, without a DHCPv6 server.",
+    "acceptedAnswers": [
+      "Stateless address auto-configuration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-ipv6",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-duplicate-address-detection",
+    "term": "Duplicate address detection",
+    "definition": "The IPv6 check in which a host tests whether another node already uses its new address before the host starts using that address.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-ipv6",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-router-solicitation",
+    "term": "Router solicitation",
+    "definition": "An IPv6 message that a host sends to ask local routers for configuration information such as the network prefix.",
+    "acceptedAnswers": [
+      "Router solicitation message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-ipv6",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-router-advertisement",
+    "term": "Router advertisement",
+    "definition": "An IPv6 message sent by a router that gives hosts the network prefix and other settings they use to configure their own addresses.",
+    "acceptedAnswers": [
+      "Router advertisement message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dhcp-ipv6",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-address-record",
+    "term": "Address record",
+    "definition": "A DNS resource record that maps a hostname to a 32-bit IPv4 address, used for forward lookups.",
+    "acceptedAnswers": [
+      "A record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-ipv6-address-record",
+    "term": "IPv6 address record",
+    "definition": "A DNS resource record that maps a hostname to a 128-bit IPv6 address, used for forward lookups on IPv6 networks.",
+    "acceptedAnswers": [
+      "AAAA record",
+      "Quad-A record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-canonical-name-record",
+    "term": "Canonical name record",
+    "definition": "A DNS resource record that makes one hostname an alias of another, so several names lead to the same host.",
+    "acceptedAnswers": [
+      "CNAME record",
+      "Alias record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-mail-exchange-record",
+    "term": "Mail exchange record",
+    "definition": "A DNS resource record that names the email servers that receive mail for a domain, with a preference number for each server.",
+    "acceptedAnswers": [
+      "MX record",
+      "Mail exchanger record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-text-record",
+    "term": "Text record",
+    "definition": "A DNS resource record that holds free-form text, often used for SPF and DKIM email checks and to prove domain ownership.",
+    "acceptedAnswers": [
+      "TXT record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-name-server-record",
+    "term": "Name server record",
+    "definition": "A DNS resource record that lists the authoritative DNS servers for a domain, often used to delegate a subdomain to other servers.",
+    "acceptedAnswers": [
+      "NS record",
+      "Nameserver record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-pointer-record",
+    "term": "Pointer record",
+    "definition": "A DNS resource record that maps an IP address back to a hostname, stored with the address octets reversed under the in-addr.arpa domain.",
+    "acceptedAnswers": [
+      "PTR record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-start-of-authority-record",
+    "term": "Start of authority record",
+    "definition": "The first DNS resource record in a zone file, holding the contact address, serial number, and refresh timers that control zone transfers.",
+    "acceptedAnswers": [
+      "SOA record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-records",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-forward-lookup-zone",
+    "term": "Forward lookup zone",
+    "definition": "The part of a DNS database that answers a hostname query with an IP address, mainly through A and AAAA records; the most common type.",
+    "acceptedAnswers": [
+      "Forward zone",
+      "Forward lookup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-reverse-lookup-zone",
+    "term": "Reverse lookup zone",
+    "definition": "The part of a DNS database that answers an IP address query with a hostname, using PTR records under the in-addr.arpa domain.",
+    "acceptedAnswers": [
+      "Reverse zone",
+      "Reverse lookup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-dns-zone",
+    "term": "DNS zone",
+    "definition": "The portion of the DNS namespace, made of one or more domains, that one organization manages and that its name servers hold records for.",
+    "acceptedAnswers": [
+      "Zone"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-zones",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-zone-transfer",
+    "term": "Zone transfer",
+    "definition": "The copying of DNS records from the main authoritative server to a backup authoritative server so that both hold the same data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-zones",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-primary-dns-server",
+    "term": "Primary DNS server",
+    "definition": "The main authoritative server for a zone, holding the editable master copy of its records that backup servers copy from.",
+    "acceptedAnswers": [
+      "Primary name server",
+      "Primary server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-secondary-dns-server",
+    "term": "Secondary DNS server",
+    "definition": "A backup authoritative server that holds a read-only copy of a zone and gets updates by requesting them from the main server.",
+    "acceptedAnswers": [
+      "Secondary name server",
+      "Secondary server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-recursive-lookup",
+    "term": "Recursive lookup",
+    "definition": "A DNS query that requires the server to return the final answer or an error, so the server queries other servers itself if needed.",
+    "acceptedAnswers": [
+      "Recursive query"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-resolution",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-iterative-lookup",
+    "term": "Iterative lookup",
+    "definition": "A DNS query in which the server replies only with what it already knows, often a referral to another server, and the asker continues the search.",
+    "acceptedAnswers": [
+      "Iterative query"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-resolution",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-authoritative-answer",
+    "term": "Authoritative answer",
+    "definition": "A DNS reply that comes straight from a name server that holds the zone file for the domain, such as its primary or secondary server.",
+    "acceptedAnswers": [
+      "Authoritative response"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-resolution",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-non-authoritative-answer",
+    "term": "Non-authoritative answer",
+    "definition": "A DNS reply taken from a cache or learned from other servers, given by a server that does not hold the zone for that domain.",
+    "acceptedAnswers": [
+      "Nonauthoritative answer",
+      "Non-authoritative response"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-resolution",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-caching-dns-server",
+    "term": "Caching DNS server",
+    "definition": "A DNS server that holds no zone files of its own and resolves queries for local clients, keeping each answer until its time to live ends.",
+    "acceptedAnswers": [
+      "Caching name server",
+      "Caching server",
+      "Caching resolver"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-resolution",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-hosts-file",
+    "term": "Hosts file",
+    "definition": "A local text file that maps hostnames to IP addresses by hand, used for name resolution on a few hosts or to block unwanted sites.",
+    "acceptedAnswers": [
+      "Host file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-resolution",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-dns-security-extensions",
+    "term": "DNS Security Extensions",
+    "definition": "Additions to DNS that use digital signatures and public keys so that resolvers can check that records are authentic and were not changed.",
+    "acceptedAnswers": [
+      "Domain Name System Security Extensions",
+      "Domain Name Security Extensions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-dns-over-https",
+    "term": "DNS over HTTPS",
+    "definition": "A method that encrypts DNS queries inside normal web traffic on TCP port 443, usually set in the browser, which hides lookups among other traffic.",
+    "acceptedAnswers": [
+      "Domain Name System over HTTPS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-dns-over-tls",
+    "term": "DNS over TLS",
+    "definition": "A method that encrypts DNS queries directly with Transport Layer Security on its own port, 853, so secure DNS traffic is easy to identify and manage.",
+    "acceptedAnswers": [
+      "Domain Name System over TLS",
+      "DNS over Transport Layer Security"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-dynamic-dns",
+    "term": "Dynamic DNS",
+    "definition": "A DNS feature that lets hosts register and update their own name-to-address records automatically when addresses change, instead of manual edits.",
+    "acceptedAnswers": [
+      "Dynamic Domain Name System"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-split-horizon-dns",
+    "term": "Split-horizon DNS",
+    "definition": "A DNS setup that gives internal and external clients different answers for the same name, for example a private address inside and a public one outside.",
+    "acceptedAnswers": [
+      "Split-brain DNS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "dns-security",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-precision-time-protocol",
+    "term": "Precision Time Protocol",
+    "definition": "An IEEE 1588 protocol that uses hardware timestamps and one main clock to sync devices far more accurately than NTP, used in telecom, trading, and industry.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "time-sync",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-network-time-security",
+    "term": "Network Time Security",
+    "definition": "A security addition, defined in RFC 8915, that uses TLS and cryptographic checks to protect NTP and PTP time traffic against spoofing and tampering.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "time-sync",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-stratum",
+    "term": "Stratum",
+    "definition": "The level number of a time server in the NTP hierarchy, counting hops from the reference clock at 0; each hop adds one, up to 16.",
+    "acceptedAnswers": [
+      "Stratum level"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "time-sync",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-grandmaster-clock",
+    "term": "Grandmaster clock",
+    "definition": "In PTP, the one main clock chosen to lead timing for the whole network, which sends sync messages that all other clocks follow.",
+    "acceptedAnswers": [
+      "Grandmaster"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "group": "time-sync",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  }
+]

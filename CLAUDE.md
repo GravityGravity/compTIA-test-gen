@@ -94,7 +94,7 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Prefer the books for the current objectives (220-1201/1202). The 220-1101/1102 books are older: use them for background, and check their facts against a current book.
 - Create questions from the facts in each chapter.
 - When a chapter has practice questions, add each one to the question pool in `content/`. Keep the question, the answers, and the explanation. Set the `origin` field to `book`.
-- Create content one domain at a time. Stop after each domain so the user can review it. Exceptions (approved): acronyms are made and reviewed as one batch for each certification. The A+ definitions after Core 1 Domain 2 (Core 1 Domains 3–5 and all of Core 2) are made and reviewed as one batch.
+- Create content one domain at a time. Stop after each domain so the user can review it. Exceptions (approved): acronyms are made and reviewed as one batch for each certification. The A+ definitions after Core 1 Domain 2 (Core 1 Domains 3–5 and all of Core 2) are made and reviewed as one batch. The Network+ definitions after Domain 1 (Domains 2–5) are made and reviewed as one batch.
 - Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`.
 - Add a `source` field (book and chapter) to each content record.
 - For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`; for Network+, `network-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).

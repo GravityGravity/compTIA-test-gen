@@ -2,6 +2,25 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definitions: Network+ Domains 2–5
+
+Decisions:
+- Network+ Domains 2–5 are written and reviewed as one batch (the user asked for it; recorded in CLAUDE.md).
+- Where the books disagree, the definitions follow Exam Cram for: ARP poisoning vs ARP spoofing, DNS poisoning vs DNS spoofing, IP helper (forwards several UDP services) vs DHCP relay agent (DHCP only), and Static NAT (no Source NAT record, because the books use SNAT for different things). They follow West for: tailgating vs piggybacking, suspended port (an aggregation member whose settings do not match), divide and conquer, and the SNMP trap port (UDP 162).
+- Golden configuration is one record; "Baseline configuration" is an accepted answer.
+- Lockable rack is one record for objectives 2.4 and 4.1.
+- A few terms keep an acronym with words where the full name is awkward ("Rogue DHCP server", "DHCP snooping", "URL filtering", "MAC filtering"); the full name is an accepted answer. Device commands are lowercase terms ("tracert", "show vlan").
+
+Changes:
+- New definition files in `content/definitions/network-plus/`, written from Exam Cram, West and their glossaries:
+  - `d2-network-implementation.json`: 119 terms
+  - `d3-network-operations.json`: 128 terms
+  - `d4-network-security.json`: 90 terms
+  - `d5-network-troubleshooting.json`: 117 terms
+- The Network+ definition pool now holds 657 terms in 104 groups.
+- `content/README.md`: the groups for each file.
+- `CLAUDE.md`: the one-batch rule for these domains.
+
 ## 2026-10-30 – Definitions: Network+ Domain 1 (Networking Concepts)
 
 - New `content/definitions/network-plus/d1-networking-concepts.json`: 203 terms for objectives 1.1–1.8, in 33 groups.

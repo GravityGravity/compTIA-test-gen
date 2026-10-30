@@ -1,0 +1,2447 @@
+[
+  {
+    "id": "netplus-def-border-gateway-protocol",
+    "term": "Border Gateway Protocol",
+    "definition": "The exterior path-vector routing protocol of the Internet, which exchanges routes between autonomous systems over TCP port 179 and chooses paths by policy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-enhanced-interior-gateway-routing-protocol",
+    "term": "Enhanced Interior Gateway Routing Protocol",
+    "definition": "Cisco-developed advanced distance-vector, or hybrid, routing protocol that uses the Diffusing Update Algorithm for fast convergence inside one autonomous system.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-open-shortest-path-first",
+    "term": "Open Shortest Path First",
+    "definition": "Open-standard link-state interior routing protocol that floods link-state advertisements and runs Dijkstra's algorithm to find the lowest-cost path, with no hop limit.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-routing-information-protocol",
+    "term": "Routing Information Protocol",
+    "definition": "Oldest distance-vector interior routing protocol, which uses hop count as its only metric, allows at most 15 hops, and sends its whole table every 30 seconds.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-interior-gateway-protocol",
+    "term": "Interior gateway protocol",
+    "definition": "Any routing protocol used by routers inside one autonomous system, such as OSPF, EIGRP, or RIP.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-exterior-gateway-protocol",
+    "term": "Exterior gateway protocol",
+    "definition": "Any routing protocol that exchanges routes between different autonomous systems; BGP is the only one still in use.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-autonomous-system",
+    "term": "Autonomous system",
+    "definition": "A group of networks run by one organization under one routing policy, identified on the Internet by a globally unique number that BGP uses.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-protocols",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-static-routing",
+    "term": "Static routing",
+    "definition": "Routing where an administrator types each route into the table by hand; simple and predictable, but it cannot adapt to link failures or topology changes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-dynamic-routing",
+    "term": "Dynamic routing",
+    "definition": "Routing where routers use routing protocols to share route information and build their tables automatically, rerouting around failures without manual changes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-distance-vector-routing-protocol",
+    "term": "Distance-vector routing protocol",
+    "definition": "Type of routing protocol where each router periodically sends its whole table to direct neighbors and rates routes by distance, such as hops; RIP is an example.",
+    "acceptedAnswers": [
+      "Distance-vector protocol",
+      "Distance-vector routing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-link-state-routing-protocol",
+    "term": "Link-state routing protocol",
+    "definition": "Type of routing protocol where each router floods advertisements about its own links so every router builds a full map of the network; OSPF is an example.",
+    "acceptedAnswers": [
+      "Link-state protocol",
+      "Link-state routing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-hybrid-routing-protocol",
+    "term": "Hybrid routing protocol",
+    "definition": "Type of routing protocol that mixes distance-vector behavior with link-state features, such as sending updates only when something changes; EIGRP is the usual example.",
+    "acceptedAnswers": [
+      "Advanced distance-vector routing protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-convergence",
+    "term": "Convergence",
+    "definition": "The time it takes all routers to learn about a topology change, such as a failed link, and agree on updated routing tables.",
+    "acceptedAnswers": [
+      "Convergence time"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-split-horizon",
+    "term": "Split horizon",
+    "definition": "Loop-prevention rule where a router never advertises a route back out the interface from which it learned that route.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-poison-reverse",
+    "term": "Poison reverse",
+    "definition": "Loop-prevention method where a router does advertise a route back toward its source, but with an infinite hop count so it is treated as unreachable.",
+    "acceptedAnswers": [
+      "Split horizon with poison reverse"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-types",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-administrative-distance",
+    "term": "Administrative distance",
+    "definition": "Number from 0 to 255 that rates how trustworthy a route source is; when two sources offer the same route, the router uses the one with the lower value.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-selection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-prefix-length",
+    "term": "Prefix length",
+    "definition": "In route selection, the number of leading network bits in a route entry, written as a slash value such as /24; more bits mean a more specific route.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-selection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-longest-prefix-match",
+    "term": "Longest prefix match",
+    "definition": "Route-selection rule where, if several table entries match a destination address, the router forwards using the most specific entry, the one with the most network bits.",
+    "acceptedAnswers": [
+      "Longest match",
+      "Longest prefix matching"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-selection",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-metric",
+    "term": "Metric",
+    "definition": "Value a routing protocol calculates for each path from factors such as hops, bandwidth, or delay; among routes learned the same way, the lowest value wins.",
+    "acceptedAnswers": [
+      "Routing metric"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-selection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-hop-count",
+    "term": "Hop count",
+    "definition": "Number of routers a packet passes through to reach a destination; RIP uses it as its only path measure and treats 16 as unreachable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-selection",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-network-address-translation",
+    "term": "Network Address Translation",
+    "definition": "Router or firewall function that rewrites private IP addresses to public ones, so internal hosts can share registered addresses and stay hidden from the Internet.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-nat",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-port-address-translation",
+    "term": "Port Address Translation",
+    "definition": "Form of address translation where many internal hosts share one public IP address, each session told apart by a unique port number in a translation table.",
+    "acceptedAnswers": [
+      "NAT overload"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-nat",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-static-nat",
+    "term": "Static NAT",
+    "definition": "Translation that permanently maps one private IP address to one dedicated public IP address, so an inside server can always be reached at the same public address.",
+    "acceptedAnswers": [
+      "Static Network Address Translation",
+      "One-to-one NAT"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-nat",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-dynamic-nat",
+    "term": "Dynamic NAT",
+    "definition": "Translation that gives each internal host a public address from a pool on a first-come, first-served basis, so its public address may change each session.",
+    "acceptedAnswers": [
+      "Dynamic Network Address Translation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-nat",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-destination-nat",
+    "term": "Destination NAT",
+    "definition": "Translation that changes the destination of inbound traffic sent to a public IP address into the private address of an inside host, such as a web server.",
+    "acceptedAnswers": [
+      "Destination Network Address Translation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-nat",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-first-hop-redundancy-protocol",
+    "term": "First Hop Redundancy Protocol",
+    "definition": "General name for protocols that let several routers share one virtual default gateway address, so hosts keep working when the active router fails.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-virtual-router-redundancy-protocol",
+    "term": "Virtual Router Redundancy Protocol",
+    "definition": "Open-standard gateway redundancy protocol where routers share a virtual IP address that points to one master router, with the others on standby as backups.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-redundancy",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-hot-standby-router-protocol",
+    "term": "Hot Standby Router Protocol",
+    "definition": "Cisco-proprietary gateway redundancy protocol with one active router, one standby router ready for automatic failover, and any other routers only listening.",
+    "acceptedAnswers": [
+      "Hot Standby Routing Protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-redundancy",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-gateway-load-balancing-protocol",
+    "term": "Gateway Load Balancing Protocol",
+    "definition": "Cisco-proprietary gateway redundancy protocol that spreads traffic across all routers in the group, weighted by priority, instead of using one active router.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-redundancy",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-virtual-ip-address",
+    "term": "Virtual IP address",
+    "definition": "An IP address not tied to one physical interface, shared by a group of devices for high availability, such as a gateway address that several routers back up.",
+    "acceptedAnswers": [
+      "Virtual IP",
+      "Virtual Internet Protocol address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "route-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-subinterface",
+    "term": "Subinterface",
+    "definition": "Logical interface created on one physical router port, each with its own IP address and VLAN tag, and named with a dot number such as fastethernet0/0.10.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "switch-intervlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-router-on-a-stick",
+    "term": "Router on a stick",
+    "definition": "Design where a single router port, split into one logical interface per VLAN and connected to a switch trunk, routes traffic between the VLANs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "group": "switch-intervlan",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-switch-virtual-interface",
+    "term": "Switch virtual interface",
+    "definition": "Logical Layer 3 interface on a multilayer switch with an IP address for one VLAN, often used as that VLAN's default gateway.",
+    "acceptedAnswers": [
+      "Switched virtual interface",
+      "VLAN interface"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-intervlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-inter-vlan-routing",
+    "term": "Inter-VLAN routing",
+    "definition": "Forwarding traffic between different VLANs at Layer 3, done by a router or Layer 3 switch, because hosts in separate VLANs cannot reach each other directly.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-intervlan",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-virtual-local-area-network",
+    "term": "Virtual local area network",
+    "definition": "Logical group of switch ports that forms its own Layer 2 broadcast domain regardless of physical location, separating traffic as if on separate switches.",
+    "acceptedAnswers": [
+      "Virtual LAN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-vlan-database",
+    "term": "VLAN database",
+    "definition": "Storage on a switch, such as the vlan.dat file on Cisco devices, that holds VLAN numbers and names apart from the running configuration.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-native-vlan",
+    "term": "Native VLAN",
+    "definition": "On an 802.1Q trunk, the one VLAN whose frames cross without a tag; both ends must agree, and it should be moved off VLAN 1 for security.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-voice-vlan",
+    "term": "Voice VLAN",
+    "definition": "VLAN set aside for IP phone traffic so calls are kept apart from data traffic and can be given priority for low latency.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-default-vlan",
+    "term": "Default VLAN",
+    "definition": "Preconfigured VLAN, VLAN 1 on Cisco switches, that holds every port at first and cannot be renamed or deleted.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-management-vlan",
+    "term": "Management VLAN",
+    "definition": "VLAN used only for administrative access to switches and other network devices, kept apart from user traffic and moved off the default for security.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-vlan-trunking-protocol",
+    "term": "VLAN Trunking Protocol",
+    "definition": "Cisco-proprietary protocol that copies VLAN additions and changes from one switch to the other switches in the same domain over trunk links.",
+    "acceptedAnswers": [
+      "VLAN Trunk Protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-vlan",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-access-port",
+    "term": "Access port",
+    "definition": "Switch port that connects one end device, such as a PC or printer, and carries untagged traffic for a single VLAN.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-ports",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-trunk-port",
+    "term": "Trunk port",
+    "definition": "Switch port that connects to another switch or a router and carries traffic for many VLANs, marking each frame with its VLAN number.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-ports",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-vlan-tagging",
+    "term": "VLAN tagging",
+    "definition": "IEEE 802.1Q method of inserting a 4-byte field with a VLAN ID into an Ethernet frame header so switches on a trunk know which VLAN it belongs to.",
+    "acceptedAnswers": [
+      "802.1Q tagging",
+      "Frame tagging",
+      "Port tagging"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-ports",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-link-aggregation",
+    "term": "Link aggregation",
+    "definition": "Combining several physical links between two devices into one logical link for more total bandwidth and automatic failover; member ports must match in speed and duplex.",
+    "acceptedAnswers": [
+      "Port aggregation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-ports",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-link-aggregation-control-protocol",
+    "term": "Link Aggregation Control Protocol",
+    "definition": "IEEE 802.3ad (now 802.1AX) protocol that lets two devices negotiate and manage bundled links automatically, adding or dropping member ports as needed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-ports",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-nic-teaming",
+    "term": "NIC teaming",
+    "definition": "Windows feature that combines two or more network adapters in one host into a single logical adapter for failover and load balancing.",
+    "acceptedAnswers": [
+      "Network interface card teaming"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-ports",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-full-duplex",
+    "term": "Full duplex",
+    "definition": "Mode where a link sends and receives at the same time in both directions, the default for modern switch ports and NICs, with no collisions.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-duplex",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-half-duplex",
+    "term": "Half duplex",
+    "definition": "Mode where a link can send or receive but in only one direction at a time, like a walkie-talkie, so collisions can occur on shared media.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-duplex",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-simplex",
+    "term": "Simplex",
+    "definition": "Mode where signals travel in one direction only, like broadcast radio, so the receiver can never answer on the same channel.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-duplex",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-autonegotiation",
+    "term": "Autonegotiation",
+    "definition": "Ethernet feature where two connected ports exchange their abilities and pick the best speed and duplex mode they both support.",
+    "acceptedAnswers": [
+      "Auto negotiation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-duplex",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-port-speed",
+    "term": "Port speed",
+    "definition": "Interface setting for the data rate of a switch port or NIC, such as 100 Mbps, 1 Gbps, or 10 Gbps; both ends must match or negotiate it.",
+    "acceptedAnswers": [
+      "Link speed",
+      "Interface speed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-duplex",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-spanning-tree-protocol",
+    "term": "Spanning Tree Protocol",
+    "definition": "IEEE 802.1D Layer 2 protocol that finds redundant paths between switches and blocks some ports so only one loop-free active path exists.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-features",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-rapid-spanning-tree-protocol",
+    "term": "Rapid Spanning Tree Protocol",
+    "definition": "IEEE 802.1w update to the original switch loop-prevention protocol that recovers from link failures far faster, often in milliseconds instead of tens of seconds.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-features",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-maximum-transmission-unit",
+    "term": "Maximum transmission unit",
+    "definition": "Largest packet payload, in bytes, a link can carry without breaking it up; the standard Ethernet value is 1500 bytes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-features",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-jumbo-frame",
+    "term": "Jumbo frame",
+    "definition": "Ethernet frame carrying more than the standard 1500-byte payload, often up to about 9000 bytes, used in storage networks; every device on the path must support it.",
+    "acceptedAnswers": [
+      "Jumbo frames"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-features",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-fragmentation",
+    "term": "Fragmentation",
+    "definition": "Splitting a packet larger than the outgoing link's size limit into smaller pieces, each with its own header, which adds overhead and slows delivery.",
+    "acceptedAnswers": [
+      "IP fragmentation",
+      "Packet fragmentation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "group": "switch-features",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-wireless-channel",
+    "term": "Wireless channel",
+    "definition": "A numbered slice of a Wi-Fi frequency band that an access point and its clients agree to transmit on; in the United States each standard slice is 20 MHz wide.",
+    "acceptedAnswers": [
+      "Radio frequency channel",
+      "RF channel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-channel-width",
+    "term": "Channel width",
+    "definition": "The amount of spectrum, in MHz, that one Wi-Fi transmission uses, such as 20, 40, 80, or 160 MHz; wider means more data but fewer free channels.",
+    "acceptedAnswers": [
+      "Channel bandwidth"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-channel-bonding",
+    "term": "Channel bonding",
+    "definition": "Combining two or more adjacent 20 MHz Wi-Fi slots into one 40, 80, or 160 MHz slot to raise throughput, best done in the less crowded 5 GHz band.",
+    "acceptedAnswers": [
+      "Bonded channels"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-non-overlapping-channels",
+    "term": "Non-overlapping channels",
+    "definition": "Wi-Fi frequency slots far enough apart that their signals do not interfere, such as 1, 6, and 11 in the United States 2.4 GHz band, assigned to neighboring access points.",
+    "acceptedAnswers": [
+      "Nonoverlapping channels",
+      "Non-overlapping channel",
+      "Nonoverlapping channel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-def-regulatory-impacts",
+    "term": "Regulatory impacts",
+    "definition": "Rules set by national agencies such as the FCC on which Wi-Fi frequencies, slots, and power levels may be used; they vary by country and shape outdoor 5 GHz designs.",
+    "acceptedAnswers": [
+      "Regulatory impact"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-spectrum-and-transmit-power-management-extensions",
+    "term": "Spectrum and Transmit Power Management Extensions",
+    "definition": "The IEEE 802.11h amendment for the 5 GHz band that adds radar detection and automatic power reduction so wireless LANs meet regulations, especially in Europe.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-def-dynamic-frequency-selection",
+    "term": "Dynamic Frequency Selection",
+    "definition": "An 802.11h feature that makes an access point watch its 5 GHz slot for radar, stop transmitting there when radar appears, and tell its clients to move to another slot.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-transmit-power-control",
+    "term": "Transmit Power Control",
+    "definition": "An 802.11h feature that lowers an access point's radio output on a 5 GHz slot to reduce interference and tells clients the power limits that apply to the network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-band-steering",
+    "term": "Band steering",
+    "definition": "An access point feature that directs dual-band clients toward the faster, less crowded 5 GHz band, for example by answering their probe requests only on that band.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-channels",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-service-set-identifier",
+    "term": "Service set identifier",
+    "definition": "The configurable name of a wireless network; a client must be set to the same name as the access point before the two can communicate.",
+    "acceptedAnswers": [
+      "Service set ID"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-service-sets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-basic-service-set-identifier",
+    "term": "Basic service set identifier",
+    "definition": "The unique identifier of one access point radio, normally its MAC address, which tells apart the access points that share one wireless network name.",
+    "acceptedAnswers": [
+      "Basic service set ID"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-service-sets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-extended-service-set-identifier",
+    "term": "Extended service set identifier",
+    "definition": "The network name shared by every access point in one larger wireless LAN, so clients see a single logical network and can move between access points.",
+    "acceptedAnswers": [
+      "Extended service set ID"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-service-sets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-basic-service-set",
+    "term": "Basic service set",
+    "definition": "A single access point together with the wireless clients associated with it, the basic building block of an infrastructure wireless LAN.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-service-sets",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-extended-service-set",
+    "term": "Extended service set",
+    "definition": "Several access points that share one network name and form one larger wireless network on a single subnet, letting clients roam between them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-service-sets",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-ssid-broadcast",
+    "term": "SSID broadcast",
+    "definition": "An access point setting that announces the wireless network name in beacon frames so clients can find it; turning it off hides the name but does not secure the network.",
+    "acceptedAnswers": [
+      "SSID broadcasting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-service-sets",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-def-wireless-mesh-network",
+    "term": "Wireless mesh network",
+    "definition": "A wireless design in which every node relays traffic for the other nodes, so data finds alternate paths when one node fails and coverage extends over a wide area.",
+    "acceptedAnswers": [
+      "Mesh network",
+      "Wireless mesh"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-network-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-ad-hoc-network",
+    "term": "Ad hoc network",
+    "definition": "A peer-to-peer wireless network in which a few nearby devices talk directly to each other with no access point; the IEEE calls it an independent basic service set.",
+    "acceptedAnswers": [
+      "Ad hoc mode",
+      "Ad hoc",
+      "Ad hoc topology"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-network-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-infrastructure-mode",
+    "term": "Infrastructure mode",
+    "definition": "The most common wireless LAN design, in which clients connect only through access points that bridge them to the wired network and control their access.",
+    "acceptedAnswers": [
+      "Infrastructure network",
+      "Infrastructure topology"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-network-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-wireless-point-to-point-link",
+    "term": "Wireless point-to-point link",
+    "definition": "A dedicated radio connection between exactly two endpoints, usually with focused antennas, used to join two buildings or as a long-distance backhaul.",
+    "acceptedAnswers": [
+      "Point-to-point wireless link",
+      "Point-to-point wireless"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-network-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-wireless-bridge",
+    "term": "Wireless bridge",
+    "definition": "An access point set up to join two separate networks, or two remote parts of one network, over a radio link; its throughput demand is higher than a normal client's.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-network-types",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-wi-fi-protected-access-2",
+    "term": "Wi-Fi Protected Access 2",
+    "definition": "The wireless security standard that replaced the first WPA, encrypting traffic with AES through CCMP and offering a Personal passphrase mode and an Enterprise server mode.",
+    "acceptedAnswers": [
+      "Wi-Fi Protected Access version 2",
+      "WiFi Protected Access 2"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-wi-fi-protected-access-3",
+    "term": "Wi-Fi Protected Access 3",
+    "definition": "The 2018 wireless security standard that replaces the WPA2 passphrase handshake with SAE, requires at least 128-bit AES, and better protects management frames.",
+    "acceptedAnswers": [
+      "Wi-Fi Protected Access version 3",
+      "WiFi Protected Access 3"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-simultaneous-authentication-of-equals",
+    "term": "Simultaneous Authentication of Equals",
+    "definition": "The WPA3-Personal handshake in which client and access point both prove they know the password, resisting offline dictionary attacks and giving forward secrecy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-counter-mode-with-cipher-block-chaining-message-authentication-code-protocol",
+    "term": "Counter Mode with Cipher Block Chaining Message Authentication Code Protocol",
+    "definition": "The WPA2 protocol that uses 128-bit AES with a 48-bit initialization vector to give both encryption and message integrity, replacing the older TKIP.",
+    "acceptedAnswers": [
+      "Counter Mode with CBC-MAC Protocol"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-pre-shared-key",
+    "term": "Pre-shared key",
+    "definition": "Wi-Fi authentication in which every user enters the same passphrase, which the network uses with its name to make the encryption keys; the mode most home networks use.",
+    "acceptedAnswers": [
+      "Preshared key",
+      "Pre-shared key authentication",
+      "Personal mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-def-enterprise-authentication",
+    "term": "Enterprise authentication",
+    "definition": "Wi-Fi authentication in which each user signs in with personal credentials checked by a central server, usually RADIUS through 802.1X and EAP, instead of one shared passphrase.",
+    "acceptedAnswers": [
+      "Enterprise mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-def-guest-network",
+    "term": "Guest network",
+    "definition": "A separate wireless network name and passphrase that gives visitors Internet access while keeping them isolated from the organization's internal devices and data.",
+    "acceptedAnswers": [
+      "Guest Wi-Fi",
+      "Guest wireless network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-captive-portal",
+    "term": "Captive portal",
+    "definition": "A web page that a new client on a visitor network is redirected to, where the user must log in or accept the terms of use before getting Internet access.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-wireless-client-isolation",
+    "term": "Wireless client isolation",
+    "definition": "A setting that lets a wireless client reach only the default gateway and the Internet, blocking it from talking to other devices on the same network.",
+    "acceptedAnswers": [
+      "Client isolation",
+      "AP isolation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-security",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-omnidirectional-antenna",
+    "term": "Omnidirectional antenna",
+    "definition": "An antenna that sends and receives with roughly equal strength in all directions, giving wide 360-degree coverage but a weaker signal and shorter range than a focused type.",
+    "acceptedAnswers": [
+      "Omni-directional antenna",
+      "Omni antenna"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-antennas-aps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-directional-antenna",
+    "term": "Directional antenna",
+    "definition": "An antenna that concentrates its signal in one direction for a stronger link and longer range, used for point-to-point links between buildings or through obstacles.",
+    "acceptedAnswers": [
+      "Unidirectional antenna"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-antennas-aps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-antenna-gain",
+    "term": "Antenna gain",
+    "definition": "An antenna's strength compared with a theoretical isotropic antenna, measured in dBi; roughly every 3 dB more doubles the effective power output.",
+    "acceptedAnswers": [
+      "Gain value"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-antennas-aps",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-def-autonomous-access-point",
+    "term": "Autonomous access point",
+    "definition": "An access point that works on its own and is configured one at a time through its own web page or command line, with no central controller.",
+    "acceptedAnswers": [
+      "Autonomous AP",
+      "Standalone access point"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-antennas-aps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-lightweight-access-point",
+    "term": "Lightweight access point",
+    "definition": "An access point that hands configuration, firmware updates, RF tuning, and roaming control to a central wireless LAN controller; used in large enterprise networks.",
+    "acceptedAnswers": [
+      "Lightweight AP",
+      "Controller-based access point",
+      "Managed access point"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-antennas-aps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-control-and-provisioning-of-wireless-access-points",
+    "term": "Control and Provisioning of Wireless Access Points",
+    "definition": "A protocol that lets a central wireless LAN controller manage lightweight access points by tunneling their wireless frames to the controller with extra headers.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "group": "wifi-antennas-aps",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-main-distribution-frame",
+    "term": "Main distribution frame",
+    "definition": "The central wiring room or rack of a site, holding the core routers and switches and usually the demarc, with backbone cables running out to every other wiring closet.",
+    "acceptedAnswers": [
+      "Main distribution facility"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-intermediate-distribution-frame",
+    "term": "Intermediate distribution frame",
+    "definition": "A secondary wiring closet, at least one per floor or building, connected to the central wiring room by backbone cable and feeding cabling to nearby work areas.",
+    "acceptedAnswers": [
+      "Intermediate distribution facility"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-demarcation-point",
+    "term": "Demarcation point",
+    "definition": "The point where the service provider's network ends and the customer's network begins, which marks who is responsible for each side of the connection.",
+    "acceptedAnswers": [
+      "Demarc"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-rack-unit",
+    "term": "Rack unit",
+    "definition": "The standard measure of equipment height in a rack, 1.75 inches; a common full-height rack holds 42 of them, and a 1U switch fills one.",
+    "acceptedAnswers": [
+      "Rack units",
+      "U-space"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-rack-size",
+    "term": "Rack size",
+    "definition": "The dimensions of an equipment rack: a standard 19- or 23-inch mounting width, a height counted in units such as 42U, and a depth that varies by maker.",
+    "acceptedAnswers": [
+      "Rack dimensions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-port-side-exhaust",
+    "term": "Port-side exhaust",
+    "definition": "Switch airflow in which warm air leaves through the side with the network ports, so the ports face the hot aisle; the less common option.",
+    "acceptedAnswers": [
+      "Port-side exhaust switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-port-side-intake",
+    "term": "Port-side intake",
+    "definition": "Switch airflow in which cool air is drawn in through the side with the network ports, so the ports face the cold aisle at the front of the rack.",
+    "acceptedAnswers": [
+      "Port-side intake switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-hot-aisle-cold-aisle",
+    "term": "Hot aisle/cold aisle",
+    "definition": "A data center layout in which rows of racks face each other front to front over cool-air vents and back to back over rows that carry heated exhaust away.",
+    "acceptedAnswers": [
+      "Hot and cold aisles",
+      "Hot aisle/cold aisle layout"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-locations-racks",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-lockable-rack",
+    "term": "Lockable rack",
+    "definition": "A rack cabinet, or a storage box mounted in a rack, with a locking door that stops unauthorized people from touching the equipment inside.",
+    "acceptedAnswers": [
+      "Locking rack",
+      "Lockable enclosure",
+      "Lockable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4",
+      "N10-009/4.1"
+    ],
+    "group": "install-locations-racks",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-patch-panel",
+    "term": "Patch panel",
+    "definition": "A rack- or wall-mounted panel of RJ45 jacks that terminates many horizontal cable runs in one place so short cords can connect them to switches.",
+    "acceptedAnswers": [
+      "Patch bay"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-cabling",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-fiber-distribution-panel",
+    "term": "Fiber distribution panel",
+    "definition": "A cabinet or rack enclosure that provides space to terminate, splice, and store fiber-optic connections, the optical counterpart of a copper jack panel.",
+    "acceptedAnswers": [
+      "Fibre distribution panel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-cabling",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-horizontal-cabling",
+    "term": "Horizontal cabling",
+    "definition": "Cabling from a wiring closet to the wall jacks on the same floor, up to 90 meters of permanent run plus patch cords for 100 meters in total.",
+    "acceptedAnswers": [
+      "Horizontal cable",
+      "Horizontal wiring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-cabling",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-backbone-cabling",
+    "term": "Backbone cabling",
+    "definition": "Cabling, often fiber, that connects the entrance facility, the main wiring room, and the per-floor closets, including the runs between floors.",
+    "acceptedAnswers": [
+      "Backbone cable",
+      "Vertical cabling",
+      "Vertical cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-cabling",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-uninterruptible-power-supply",
+    "term": "Uninterruptible power supply",
+    "definition": "A battery unit between the wall outlet and equipment that keeps devices running through an outage long enough for an orderly shutdown and smooths power fluctuations.",
+    "acceptedAnswers": [
+      "Uninterruptable power supply",
+      "Battery backup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-standby-ups",
+    "term": "Standby UPS",
+    "definition": "A battery backup that feeds equipment from the wall outlet and switches to battery only after it senses a power loss, leaving a brief gap.",
+    "acceptedAnswers": [
+      "Offline UPS",
+      "Standby power supply"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-online-ups",
+    "term": "Online UPS",
+    "definition": "A battery backup that always powers equipment from its continuously charged battery, so there is no switchover gap and noise, surges, and sags never reach the device.",
+    "acceptedAnswers": [
+      "On-line UPS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-power-distribution-unit",
+    "term": "Power distribution unit",
+    "definition": "A rack-grade power strip that carries power from an outlet, battery backup, or generator to many devices; intelligent models add remote metering and outlet on and off control.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-power-load",
+    "term": "Power load",
+    "definition": "The total power that a device, rack, or site draws, measured in watts or volt-amperes (about 1.4 VA per watt), used to size battery backups and circuits.",
+    "acceptedAnswers": [
+      "Electrical load"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-voltage",
+    "term": "Voltage",
+    "definition": "The electrical pressure of a power feed, measured in volts, which must match the equipment rating and stay steady; spikes, surges, and sags are changes in it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-generator",
+    "term": "Generator",
+    "definition": "A fuel-driven machine that produces electricity to keep a site running through a long utility outage, after battery backups carry the load for the first minutes.",
+    "acceptedAnswers": [
+      "Power generator",
+      "Backup generator"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-surge-protector",
+    "term": "Surge protector",
+    "definition": "An inexpensive device between an outlet and equipment that sends excess voltage from spikes and surges to ground so it does not reach the device.",
+    "acceptedAnswers": [
+      "Surge suppressor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-power",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-humidity",
+    "term": "Humidity",
+    "definition": "The moisture level of a data room's air, best kept at about 45 to 55 percent relative; drier air builds static, damper air causes condensation and corrosion.",
+    "acceptedAnswers": [
+      "Relative humidity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-environment",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-temperature",
+    "term": "Temperature",
+    "definition": "How hot or cold a data room is, best held at about 20 to 25 degrees Celsius (68 to 77 degrees Fahrenheit) by dedicated cooling to prevent equipment overheating.",
+    "acceptedAnswers": [
+      "Room temperature"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-environment",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  },
+  {
+    "id": "netplus-def-fire-suppression-system",
+    "term": "Fire suppression system",
+    "definition": "Equipment that detects and puts out fires at building, room, or rack level; data centers often use gas or foam instead of water so electronics are not damaged.",
+    "acceptedAnswers": [
+      "Fire suppression"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-environment",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking; CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-clean-agent",
+    "term": "Clean agent",
+    "definition": "A nonconductive gas fire suppressant, such as FM-200, that stops a fire by absorbing heat or lowering oxygen and leaves no residue, so equipment is not harmed.",
+    "acceptedAnswers": [
+      "Clean agents",
+      "Clean agent fire suppression"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-environment",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking; checked against CompTIA Network+ Practice Tests: Exam N10-009 (Zacker) – Chapter 2: Network Implementation"
+  },
+  {
+    "id": "netplus-def-halon",
+    "term": "Halon",
+    "definition": "An older gas fire suppressant that leaves no residue on equipment but is no longer installed because of the harm it does to the ozone layer and climate.",
+    "acceptedAnswers": [
+      "Halon gas"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-environment",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations"
+  },
+  {
+    "id": "netplus-def-heating-ventilation-and-air-conditioning",
+    "term": "Heating, ventilation, and air conditioning",
+    "definition": "The building system that moves, heats, and cools air; data rooms often get their own separately managed unit to keep heat-sensitive equipment within its operating range.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "group": "install-environment",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 8: Network Operations; CompTIA Network+ Guide to Networks (West), Cengage – Chapter 2: Infrastructure and Documentation"
+  }
+]

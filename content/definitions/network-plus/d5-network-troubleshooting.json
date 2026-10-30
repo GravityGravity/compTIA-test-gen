@@ -1,0 +1,2444 @@
+[
+  {
+    "id": "netplus-def-identify-the-problem",
+    "term": "Identify the problem",
+    "definition": "First troubleshooting step: gather information, question users, identify symptoms, find out what has changed, and duplicate the issue if possible.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-establish-a-theory-of-probable-cause",
+    "term": "Establish a theory of probable cause",
+    "definition": "Second troubleshooting step: make an educated guess about the source of the issue, starting with simple causes and using approaches such as working through the OSI layers.",
+    "acceptedAnswers": [
+      "Establish a theory"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-test-the-theory",
+    "term": "Test the theory",
+    "definition": "Third troubleshooting step: confirm the suspected cause; if it is confirmed, decide the next steps, and if not, form a new guess or escalate.",
+    "acceptedAnswers": [
+      "Test the theory to determine the cause",
+      "Test the theory to determine cause"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-establish-a-plan-of-action",
+    "term": "Establish a plan of action",
+    "definition": "Fourth troubleshooting step: decide how to fix the confirmed cause, when to make the change, who is involved, and what side effects it may have on users.",
+    "acceptedAnswers": [
+      "Establish a plan of action to resolve the problem",
+      "Establish a plan of action to resolve the problem and identify potential effects"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-implement-the-solution",
+    "term": "Implement the solution",
+    "definition": "Fifth troubleshooting step: apply the planned fix one change at a time, after warning affected users and saving current settings, or pass the issue to higher support.",
+    "acceptedAnswers": [
+      "Implement the solution or escalate",
+      "Implement the solution or escalate as necessary"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-verify-full-system-functionality",
+    "term": "Verify full system functionality",
+    "definition": "Sixth troubleshooting step: confirm that the whole system works after the fix, ideally with the user, and add preventive measures so the issue does not return.",
+    "acceptedAnswers": [
+      "Verify full system functionality and implement preventive measures",
+      "Verify full system functionality and implement preventive measures if applicable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-document-findings",
+    "term": "Document findings",
+    "definition": "Seventh and final troubleshooting step: record the symptoms, cause, fix, results, who did the work, and lessons learned, often in a ticket system or knowledge base.",
+    "acceptedAnswers": [
+      "Document findings, actions, and outcomes",
+      "Document findings, actions, outcomes, and lessons learned",
+      "Document findings, actions, outcomes, and lessons learned throughout the process"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-steps",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-question-the-obvious",
+    "term": "Question the obvious",
+    "definition": "Habit of checking the simplest causes first, such as power, a loose cable, or a disabled port, before suspecting a complex fault.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-top-to-bottom-osi-approach",
+    "term": "Top-to-bottom OSI approach",
+    "definition": "Troubleshooting approach that starts at the application layer and works down the layers, suited to faults that look software related, such as a rejected password.",
+    "acceptedAnswers": [
+      "Top-to-bottom OSI model",
+      "Top-to-bottom approach",
+      "Top-down approach"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-bottom-to-top-osi-approach",
+    "term": "Bottom-to-top OSI approach",
+    "definition": "Troubleshooting approach that starts at the physical layer, ruling out cables and NICs first, and then works up the layers toward the application.",
+    "acceptedAnswers": [
+      "Bottom-to-top OSI model",
+      "Bottom-to-top approach",
+      "Bottom-up approach"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-divide-and-conquer",
+    "term": "Divide and conquer",
+    "definition": "Troubleshooting approach that splits a problem into parts, such as separate symptoms or network segments, and rules out each working part until the fault is isolated.",
+    "acceptedAnswers": [
+      "Divide-and-conquer approach"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-escalation",
+    "term": "Escalation",
+    "definition": "Handing an issue to a higher support tier, a specialist, or a supervisor when fixing it is beyond your knowledge, access, or authority.",
+    "acceptedAnswers": [
+      "Escalate",
+      "Escalate the problem"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-duplicate-the-problem",
+    "term": "Duplicate the problem",
+    "definition": "Information-gathering task of making the fault happen again on purpose, which confirms the symptoms and later proves that the real cause was found.",
+    "acceptedAnswers": [
+      "Duplicate the problem, if possible",
+      "Reproduce the problem"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-approach-multiple-problems-individually",
+    "term": "Approach multiple problems individually",
+    "definition": "Way to handle a user who reports several faults at once: rank them by business importance and solve each one separately so causes and fixes stay clear.",
+    "acceptedAnswers": [
+      "Approach multiple problems one at a time"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-determine-if-anything-has-changed",
+    "term": "Determine if anything has changed",
+    "definition": "Information-gathering question that looks for recent patches, new software or hardware, a moved computer, or new credentials, since most faults follow some change.",
+    "acceptedAnswers": [
+      "Determine if anything changed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.1"
+    ],
+    "group": "ts-method-techniques",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-crosstalk",
+    "term": "Crosstalk",
+    "definition": "Noise created when the signal on one wire pair or cable bleeds into an adjacent pair or cable; more twists per foot and shielding reduce it.",
+    "acceptedAnswers": [
+      "Cross talk"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-signal",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-near-end-crosstalk",
+    "term": "Near-end crosstalk",
+    "definition": "Signal bleed between wire pairs measured at the same end as the transmitter, often caused by pairs untwisted too far at a poorly made connector.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-signal",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-far-end-crosstalk",
+    "term": "Far-end crosstalk",
+    "definition": "Signal bleed between wire pairs measured at the opposite end of the cable from the transmitter, after the signal has traveled the full length.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-signal",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-alien-crosstalk",
+    "term": "Alien crosstalk",
+    "definition": "Signal bleed between two separate cables that are bundled or run close together, rather than between the wire pairs inside one cable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-signal",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-electromagnetic-interference",
+    "term": "Electromagnetic interference",
+    "definition": "Noise from motors, power lines, fluorescent lights, and other electrical equipment that corrupts signals on copper cable; rerouting, shielded cable, or fiber avoids it.",
+    "acceptedAnswers": [
+      "Electro-magnetic interference"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-signal",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-attenuation",
+    "term": "Attenuation",
+    "definition": "Loss of signal power as a signal travels away from its source, measured in decibels; it limits runs to a set length, such as 100 meters for twisted pair.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-signal",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-incorrect-cable-type",
+    "term": "Incorrect cable type",
+    "definition": "Fault in which the cable does not suit the link, such as multimode on a single-mode port, Cat 5 on a 10 Gbps run, or UTP where STP is needed.",
+    "acceptedAnswers": [
+      "Incorrect cable",
+      "Wrong cable type"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-faults",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-improper-termination",
+    "term": "Improper termination",
+    "definition": "Badly attached connector, such as wire pairs untwisted too far or wires not fully seated, that causes signal loss, near-end crosstalk, reflections, and errors.",
+    "acceptedAnswers": [
+      "Improperly terminated cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-faults",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-transposed-transmit-and-receive",
+    "term": "Transposed transmit and receive",
+    "definition": "Fault in which the sending and listening wire pairs or fiber strands are connected the wrong way round, so one device's output never reaches the other's input.",
+    "acceptedAnswers": [
+      "TX/RX transposed",
+      "TX/RX reversed",
+      "TX/RX reverse",
+      "Transmit and receive transposed",
+      "Transmit and receive reversed",
+      "Transmitter and receiver transposed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-faults",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-open-fault",
+    "term": "Open fault",
+    "definition": "Cable fault in which one or more wires are broken or cut, so the circuit is not complete and a cable tester shows no continuity on them.",
+    "acceptedAnswers": [
+      "Open",
+      "Open circuit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-faults",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-short-fault",
+    "term": "Short fault",
+    "definition": "Cable fault in which bare wires touch, so current flows onto a wire it was not meant for, often from damaged insulation or a crushed cable.",
+    "acceptedAnswers": [
+      "Short",
+      "Short circuit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-faults",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-dirty-fiber-connector",
+    "term": "Dirty fiber connector",
+    "definition": "Dust, oil, or liquid on a fiber end face that blocks light, causing signal loss and errors; inspect it and clean it, with isopropyl alcohol if needed.",
+    "acceptedAnswers": [
+      "Dirty connector",
+      "Dirty fibre connector",
+      "Dirty optical cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "cable-faults",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-interface-counters",
+    "term": "Interface counters",
+    "definition": "Running totals a switch or router keeps for each port, such as errors, runts, giants, and discards, shown by show interface; values that keep rising point to a fault.",
+    "acceptedAnswers": [
+      "Increasing interface counters",
+      "Interface statistics"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-cyclic-redundancy-check-error",
+    "term": "Cyclic redundancy check error",
+    "definition": "Counter entry for a frame whose checksum, recalculated by the receiver, does not match the value sent, usually caused by interference, a damaged cable, or a faulty NIC.",
+    "acceptedAnswers": [
+      "Cyclic redundancy check errors",
+      "CRC error",
+      "CRC errors"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-runt",
+    "term": "Runt",
+    "definition": "Ethernet frame smaller than the 64-byte minimum, usually the result of a collision or a transmission error; the receiving interface discards it.",
+    "acceptedAnswers": [
+      "Runts",
+      "Runt frame"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-giant",
+    "term": "Giant",
+    "definition": "Ethernet frame larger than the maximum allowed size, often caused by an MTU mismatch or a faulty NIC; the receiving interface discards it.",
+    "acceptedAnswers": [
+      "Giants",
+      "Giant frame"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-drops",
+    "term": "Drops",
+    "definition": "Frames or packets that a device discards instead of delivering, often because of full buffers, congestion, or faults, which leads to lost data and retransmissions.",
+    "acceptedAnswers": [
+      "Dropped packets",
+      "Packet drops"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-error-disabled-port",
+    "term": "Error-disabled port",
+    "definition": "Port status in which the switch shuts an interface down by itself after it detects a problem, such as a loopback, a duplex mismatch, or a port security violation.",
+    "acceptedAnswers": [
+      "Error disabled",
+      "Err-disabled",
+      "Errdisable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-administratively-down",
+    "term": "Administratively down",
+    "definition": "Port status that means a network administrator turned the interface off on purpose, for example with the shutdown command, so it passes no traffic until re-enabled.",
+    "acceptedAnswers": [
+      "Admin down",
+      "Administratively down port"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-suspended-port",
+    "term": "Suspended port",
+    "definition": "Port status for a link aggregation member whose settings, such as speed or VLANs, do not match the other members, so the switch keeps it out of the bundle.",
+    "acceptedAnswers": [
+      "Suspended"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-issues",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-power-budget-exceeded",
+    "term": "Power budget exceeded",
+    "definition": "PoE fault in which the connected devices draw more total wattage than the switch or injector can supply, so it cuts power to some ports.",
+    "acceptedAnswers": [
+      "PoE power budget exceeded",
+      "Power over Ethernet power budget exceeded"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-incorrect-poe-standard",
+    "term": "Incorrect PoE standard",
+    "definition": "PoE fault in which a device needs more wattage than the port's version supplies, for example a PoE+ (802.3at) camera on an 802.3af port, so it fails to power up.",
+    "acceptedAnswers": [
+      "Incorrect Power over Ethernet standard",
+      "Incorrect standard",
+      "Wrong PoE standard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-transceiver-mismatch",
+    "term": "Transceiver mismatch",
+    "definition": "Fault in which the optical modules at the two ends of a link differ in standard, speed, or wavelength, such as short-range against long-range, so the link fails or errs.",
+    "acceptedAnswers": [
+      "Mismatched transceivers",
+      "Transceiver mismatches"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-fiber-type-mismatch",
+    "term": "Fiber type mismatch",
+    "definition": "Fault in which fiber cables with different cores are joined, such as single-mode to multimode or 50-micron to 62.5-micron, so much of the light is lost.",
+    "acceptedAnswers": [
+      "Fibre type mismatch",
+      "Fiber core mismatch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-optical-link-budget",
+    "term": "Optical link budget",
+    "definition": "Calculation of how much light power a fiber connection can lose to distance, splices, and connectors while still delivering a usable signal; a low value causes errors and downtime.",
+    "acceptedAnswers": [
+      "Link budget",
+      "Optical power budget"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-optical-loss",
+    "term": "Optical loss",
+    "definition": "Weakening of a light signal as it travels along a fiber and through splices and connectors, measured in decibels with an optical power meter.",
+    "acceptedAnswers": [
+      "Fiber loss",
+      "Link loss"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-signal-strength",
+    "term": "Signal strength",
+    "definition": "Received light level that a fiber transceiver reports, usually in dBm; a level below or above the module's rated range causes errors or a down link.",
+    "acceptedAnswers": [
+      "Optical signal strength",
+      "Low signal strength"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "group": "interface-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-network-loop",
+    "term": "Network loop",
+    "definition": "Redundant path between switches that lets frames circle endlessly, because Ethernet frames carry no time-to-live value; Spanning Tree Protocol prevents it.",
+    "acceptedAnswers": [
+      "Switching loop",
+      "Switch loop",
+      "Bridging loop",
+      "Layer 2 loop",
+      "Network loops"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-broadcast-storm",
+    "term": "Broadcast storm",
+    "definition": "Flood of broadcast frames, often caused by a switching loop, that uses up bandwidth and switch resources until the network slows or stops.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-root-bridge",
+    "term": "Root bridge",
+    "definition": "Single switch that STP elects, by the lowest bridge ID (priority plus MAC address), as the reference point for calculating every loop-free path.",
+    "acceptedAnswers": [
+      "Root switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-root-port",
+    "term": "Root port",
+    "definition": "STP port role on a non-root switch: the one port with the lowest-cost path to the root bridge, which forwards traffic toward it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-designated-port",
+    "term": "Designated port",
+    "definition": "STP port role chosen on each network segment as the forwarding port with the lowest cost to the root bridge; every port on the root bridge has this role.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-alternate-port",
+    "term": "Alternate port",
+    "definition": "STP port role for a backup path to the root bridge that stays blocked to prevent a loop but can take over if the root port fails.",
+    "acceptedAnswers": [
+      "Blocked port",
+      "Blocking port"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-least-cost-path",
+    "term": "Least cost path",
+    "definition": "Most efficient route from a switch to the root bridge, based on the total of the link costs, which STP uses to choose root ports.",
+    "acceptedAnswers": [
+      "Lowest cost path"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-roles",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-blocking-state",
+    "term": "Blocking state",
+    "definition": "STP port state that receives BPDUs but forwards no user frames; redundant ports stay in it to prevent loops, and new ports wait in it for 20 seconds.",
+    "acceptedAnswers": [
+      "Blocking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-states",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-listening-state",
+    "term": "Listening state",
+    "definition": "STP port state lasting about 15 seconds in which the port sends and receives BPDUs to work out the topology but forwards no frames and adds no MAC addresses.",
+    "acceptedAnswers": [
+      "Listening"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-states",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-learning-state",
+    "term": "Learning state",
+    "definition": "STP port state lasting about 15 seconds in which the port adds source MAC addresses to its table but does not yet forward user frames.",
+    "acceptedAnswers": [
+      "Learning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-states",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-forwarding-state",
+    "term": "Forwarding state",
+    "definition": "Only STP port state that passes user frames to their destinations, while the port keeps reading BPDUs and adding MAC addresses to its table.",
+    "acceptedAnswers": [
+      "Forwarding"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-states",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-disabled-state",
+    "term": "Disabled state",
+    "definition": "STP port state of a port that is shut down, so it takes no part in spanning tree calculations and passes no user traffic.",
+    "acceptedAnswers": [
+      "Disabled"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-stp-states",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-routing-table",
+    "term": "Routing table",
+    "definition": "List a router keeps of known destination networks, each with a next hop or exit interface, a metric, and a source such as connected, static, or a routing protocol.",
+    "acceptedAnswers": [
+      "Route table"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-routing",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-default-route",
+    "term": "Default route",
+    "definition": "Catch-all 0.0.0.0/0 entry in the table that a router uses when no more specific entry matches a destination; without it, packets to unknown networks are discarded.",
+    "acceptedAnswers": [
+      "Default routes"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-routing",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-gateway-of-last-resort",
+    "term": "Gateway of last resort",
+    "definition": "Next-hop router that a 0.0.0.0/0 entry points to, which receives every packet the local router cannot match to a known network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-routing",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-missing-route",
+    "term": "Missing route",
+    "definition": "Routing fault in which no entry exists for a destination network and no catch-all entry is configured, so the router discards that traffic as unreachable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-routing",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-address-pool-exhaustion",
+    "term": "Address pool exhaustion",
+    "definition": "DHCP fault in which every address in the scope is leased, so new clients get none and fall back to 169.254.x.x addresses; enlarge the scope or shorten the lease time.",
+    "acceptedAnswers": [
+      "DHCP scope exhaustion",
+      "Exhausted DHCP scope",
+      "Address pool exhausted"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-incorrect-default-gateway",
+    "term": "Incorrect default gateway",
+    "definition": "Misconfiguration in which a host points to the wrong router address, so it can reach devices on its own subnet but nothing on other networks or the internet.",
+    "acceptedAnswers": [
+      "Incorrect gateway",
+      "Wrong default gateway"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-duplicate-ip-address",
+    "term": "Duplicate IP address",
+    "definition": "Conflict in which two devices on one network use the same address, often a static setting that overlaps a DHCP lease, causing warnings and unreliable connections.",
+    "acceptedAnswers": [
+      "Duplicate IP",
+      "Duplicate IP addresses",
+      "IP address conflict"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-incorrect-ip-address",
+    "term": "Incorrect IP address",
+    "definition": "Host configured with an address outside its subnet or with a typing error, so it cannot talk to the local network even though the cable and link are fine.",
+    "acceptedAnswers": [
+      "Wrong IP address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-incorrect-subnet-mask",
+    "term": "Incorrect subnet mask",
+    "definition": "Misconfiguration in which a host's mask does not match its network, so it misjudges which addresses are local and has failed or very limited connectivity.",
+    "acceptedAnswers": [
+      "Wrong subnet mask"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-incorrect-vlan-assignment",
+    "term": "Incorrect VLAN assignment",
+    "definition": "Switch port placed in the wrong virtual LAN, so the attached device joins another segment and cannot reach the resources it needs.",
+    "acceptedAnswers": [
+      "Wrong VLAN assignment",
+      "Incorrect VLAN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-access-control-list-misconfiguration",
+    "term": "Access control list misconfiguration",
+    "definition": "Rule set on a router, switch, or firewall that permits or denies the wrong traffic, either blocking needed services or, more often, allowing too much.",
+    "acceptedAnswers": [
+      "ACL misconfiguration",
+      "Incorrect ACL settings",
+      "Incorrect access control list settings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.3"
+    ],
+    "group": "svc-issue-config",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-congestion",
+    "term": "Congestion",
+    "definition": "Condition in which more traffic tries to cross a link or device than it can carry, causing queuing delays, dropped packets, and lower throughput.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-contention",
+    "term": "Contention",
+    "definition": "Competition among many devices or users for the same shared medium or resource at the same time, which cuts each one's share and causes collisions or waiting.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-bottleneck",
+    "term": "Bottleneck",
+    "definition": "Single component, such as a slow link or an underpowered router, whose limited capacity caps the performance of the whole data path.",
+    "acceptedAnswers": [
+      "Bottlenecking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-bandwidth",
+    "term": "Bandwidth",
+    "definition": "Theoretical maximum amount of data a link or medium can carry in a given time, such as 1 Gbps on a copper Ethernet link.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-throughput",
+    "term": "Throughput",
+    "definition": "Actual amount of data delivered per second on a link in real conditions, usually lower than the rated maximum because of overhead, errors, and competing traffic.",
+    "acceptedAnswers": [
+      "Throughput capacity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-latency",
+    "term": "Latency",
+    "definition": "Time delay for data to travel from source to destination, measured in milliseconds; high values make voice, video, and interactive applications feel slow.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-packet-loss",
+    "term": "Packet loss",
+    "definition": "Failure of some packets to arrive at all, caused by congestion, full buffers, faulty cables, or interference, which forces TCP resends and leaves gaps in real-time audio.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-jitter",
+    "term": "Jitter",
+    "definition": "Variation in the delay between arriving packets, measured in milliseconds, which makes voice and video calls choppy even when every packet arrives.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-network",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-wireless-interference",
+    "term": "Wireless interference",
+    "definition": "Radio noise from other transmitters on the same frequencies, such as microwave ovens, cordless phones, Bluetooth, or nearby networks, that disrupts a WLAN signal.",
+    "acceptedAnswers": [
+      "Interference",
+      "RF interference"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-channel-overlap",
+    "term": "Channel overlap",
+    "definition": "Problem where nearby access points use 2.4 GHz channels whose frequency ranges partly share spectrum; avoided by using only channels 1, 6, and 11.",
+    "acceptedAnswers": [
+      "Overlapping channels",
+      "Adjacent-channel interference"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-co-channel-interference",
+    "term": "Co-channel interference",
+    "definition": "Slowdown when nearby access points use exactly the same channel, so all their clients must take turns on the air and wait for each other.",
+    "acceptedAnswers": [
+      "Cochannel interference"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-signal-degradation",
+    "term": "Signal degradation",
+    "definition": "Weakening of a wireless signal between access point and client because of distance, walls, absorption, or low transmit power, which lowers RSSI and data rates.",
+    "acceptedAnswers": [
+      "Signal loss",
+      "Signal degradation or loss"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-insufficient-wireless-coverage",
+    "term": "Insufficient wireless coverage",
+    "definition": "Dead or weak areas where no access point gives a usable signal, found with a site survey heat map and fixed by adding or moving APs.",
+    "acceptedAnswers": [
+      "Insufficient coverage",
+      "Poor wireless coverage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-client-disassociation",
+    "term": "Client disassociation",
+    "definition": "Problem where a wireless device keeps dropping its connection to the access point, often from a weak signal, a crowded channel, or a deauthentication attack.",
+    "acceptedAnswers": [
+      "Client disassociation issues",
+      "Disassociation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-roaming-misconfiguration",
+    "term": "Roaming misconfiguration",
+    "definition": "Setup error, such as access points with different SSIDs or security settings, that stops clients from moving smoothly from one AP to the next.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-roaming-threshold",
+    "term": "Roaming threshold",
+    "definition": "Signal-strength setting that decides when a wireless client leaves its current access point for a stronger one; a poor value makes clients cling or hop too often.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-client-saturation",
+    "term": "Client saturation",
+    "definition": "Condition where more devices join one access point than it can serve, so each device gets less airtime and the whole WLAN slows down.",
+    "acceptedAnswers": [
+      "Overcapacity",
+      "Client overcapacity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.4"
+    ],
+    "group": "perf-wireless",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-ping",
+    "term": "ping",
+    "definition": "Utility that sends ICMP echo requests to a host and reports each reply and its round-trip time; the first test of basic reachability.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-reachability",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-traceroute",
+    "term": "traceroute",
+    "definition": "Linux, UNIX, and macOS utility that lists each router hop to a destination, by default sending UDP probes with rising TTL values.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-reachability",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-tracert",
+    "term": "tracert",
+    "definition": "Windows utility that lists each router hop to a destination by sending ICMP echo requests with increasing TTL values.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-reachability",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-arp-ping",
+    "term": "arp ping",
+    "definition": "Reachability test that uses address-resolution requests instead of ICMP, so it works when ICMP is blocked but only within the local subnet.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-reachability",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-nslookup",
+    "term": "nslookup",
+    "definition": "Windows and Linux utility, with an interactive mode, that queries DNS servers to resolve a name or address and check specific record types.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-reachability",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-dig",
+    "term": "dig",
+    "definition": "Linux and macOS DNS query utility with no interactive mode that shows detailed answer and authority sections plus the query time.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-reachability",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-ipconfig",
+    "term": "ipconfig",
+    "definition": "Windows command that shows each adapter's IP address, mask, and gateway; /all adds DNS and DHCP lease details, and /release and /renew refresh a lease.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-ifconfig",
+    "term": "ifconfig",
+    "definition": "Older Linux, UNIX, and macOS command for viewing and setting network interface addresses, now largely replaced on Linux by a newer utility.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-ip",
+    "term": "ip",
+    "definition": "Current Linux command, with subcommands such as addr, route, and link, that shows and changes interface addresses, routes, and link state.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-arp",
+    "term": "arp",
+    "definition": "Command that shows or edits the local cache that maps IPv4 addresses to MAC addresses; -a lists entries and -s adds a static one.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-netstat",
+    "term": "netstat",
+    "definition": "Command that lists the host's active TCP and UDP connections and listening ports; -a shows all, -r the routing table, and -s per-protocol statistics.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-tcpdump",
+    "term": "tcpdump",
+    "definition": "Free Linux and UNIX command-line tool that captures packets from a network interface and prints them or saves them to a file for analysis.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-route",
+    "term": "route",
+    "definition": "Windows and Linux command that displays or edits the host's own routing table; on Windows, the print option lists it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-hostname",
+    "term": "hostname",
+    "definition": "Simple command that prints the name of the computer it is run on, useful to confirm which host a session is on.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-commands-host",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-protocol-analyzer",
+    "term": "Protocol analyzer",
+    "definition": "Hardware or software tool that captures traffic and decodes each protocol's headers into readable form, used to find protocol errors, unwanted traffic, and per-protocol bandwidth use.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-nmap",
+    "term": "Nmap",
+    "definition": "Free open-source scanner for Windows and Linux that probes a host or address range to report open ports, running services, and operating system details.",
+    "acceptedAnswers": [
+      "Network Mapper"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-link-layer-discovery-protocol",
+    "term": "Link Layer Discovery Protocol",
+    "definition": "Vendor-neutral IEEE 802.1AB Layer 2 protocol that lets switches, routers, and phones from any maker advertise their identity and capabilities to directly connected neighbors.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-cisco-discovery-protocol",
+    "term": "Cisco Discovery Protocol",
+    "definition": "Proprietary Layer 2 neighbor protocol that shares device type, model, software version, IP address, and port, and works only between one vendor's devices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-speed-tester",
+    "term": "Speed tester",
+    "definition": "Website or app that measures a connection's actual upload and download rates, used to check whether an ISP delivers the promised service.",
+    "acceptedAnswers": [
+      "Speed test",
+      "Bandwidth speed tester",
+      "Speed test site"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-looking-glass-site",
+    "term": "Looking-glass site",
+    "definition": "Public server, often run by an ISP, that offers read-only ping, trace, and BGP route information from its own location on the Internet backbone.",
+    "acceptedAnswers": [
+      "Looking-glass server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-terminal-emulator",
+    "term": "Terminal emulator",
+    "definition": "Program that provides a text command-line window, used to run local utilities or reach a remote device's console through SSH.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-software",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-toner-probe",
+    "term": "Toner probe",
+    "definition": "Two-part kit in which one unit puts an audible signal on a wire pair and a handheld wand detects it, used to trace and identify a cable run.",
+    "acceptedAnswers": [
+      "Toner",
+      "Tone generator",
+      "Tone generator and probe",
+      "Fox and hound"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-cable-tester",
+    "term": "Cable tester",
+    "definition": "Handheld device that checks a copper or fiber run for continuity, opens, shorts, and miswired or crossed pairs, giving a pass or fail result.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-network-tap",
+    "term": "Network tap",
+    "definition": "Passive in-line device placed between two network devices that copies all traffic on that link to a monitoring tool without affecting the flow.",
+    "acceptedAnswers": [
+      "Tap",
+      "Taps",
+      "Test access point"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-wi-fi-analyzer",
+    "term": "Wi-Fi analyzer",
+    "definition": "Software that lists nearby wireless networks with their channels and signal strengths, used to choose a clear channel and a good access point location.",
+    "acceptedAnswers": [
+      "WiFi analyzer",
+      "Wireless analyzer",
+      "Wi-Fi scanner"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-visual-fault-locator",
+    "term": "Visual fault locator",
+    "definition": "Pen-sized tool that shines a visible red laser into a fiber strand so breaks, tight bends, and bad connectors glow, and confirms end-to-end continuity.",
+    "acceptedAnswers": [
+      "Visual fault finder"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-hardware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-def-spectrum-analyzer",
+    "term": "Spectrum analyzer",
+    "definition": "Device that scans a band of radio frequencies for all signals and noise, including non-802.11 sources such as microwaves, to find where interference is greatest.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-hardware",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-show-mac-address-table",
+    "term": "show mac-address-table",
+    "definition": "Switch command that lists which MAC addresses the switch has learned on each port and in each VLAN.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-show-route",
+    "term": "show route",
+    "definition": "Router command that displays the routing table, with codes for connected, static, and dynamically learned routes and the gateway of last resort.",
+    "acceptedAnswers": [
+      "show ip route"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-show-interface",
+    "term": "show interface",
+    "definition": "Device command that displays each port's up or down link state, speed, duplex, MTU, and counters for errors and dropped packets.",
+    "acceptedAnswers": [
+      "show interfaces",
+      "show int"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-show-config",
+    "term": "show config",
+    "definition": "Device command that displays the active configuration held in RAM, which is lost at reboot unless copied to the startup file.",
+    "acceptedAnswers": [
+      "show running-config",
+      "show run"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-show-arp",
+    "term": "show arp",
+    "definition": "Router or switch command that lists the device's table of IP addresses mapped to MAC addresses for hosts it talks to directly.",
+    "acceptedAnswers": [
+      "show ip arp"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-show-vlan",
+    "term": "show vlan",
+    "definition": "Switch command that lists each configured VLAN with its number, name, status, and the access ports assigned to it.",
+    "acceptedAnswers": [
+      "show vlan brief"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-show-power",
+    "term": "show power",
+    "definition": "Switch command that reports the status of installed power supplies and, with the inline option, the PoE power each port draws.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 12: Performance and Recovery"
+  },
+  {
+    "id": "netplus-def-show-ip-interface-brief",
+    "term": "show ip interface brief",
+    "definition": "Router command that prints a short one-line summary for each port with its Layer 3 address and up or down status.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "group": "tool-device-show",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  }
+]

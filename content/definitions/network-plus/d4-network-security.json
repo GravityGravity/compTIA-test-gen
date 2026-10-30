@@ -1,0 +1,1807 @@
+[
+  {
+    "id": "netplus-def-encryption",
+    "term": "Encryption",
+    "definition": "The use of a cipher and a key to scramble readable data into ciphertext so that only someone holding the right key can turn it back and read it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-crypto",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-public-key-infrastructure",
+    "term": "Public key infrastructure",
+    "definition": "The system of certificate authorities, digital certificates, and policies that binds public keys to verified identities so parties on untrusted networks can exchange data securely.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-crypto",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-digital-certificate",
+    "term": "Digital certificate",
+    "definition": "A digitally signed electronic file that ties a public key to the verified identity of a user, device, or website and is issued by a trusted authority.",
+    "acceptedAnswers": [
+      "Certificate"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-crypto",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-certificate-authority",
+    "term": "Certificate authority",
+    "definition": "A trusted public or private entity that verifies identities and then issues, signs, maintains, and revokes the digital certificates used in a PKI.",
+    "acceptedAnswers": [
+      "Certification authority"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-crypto",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-self-signed-certificate",
+    "term": "Self-signed certificate",
+    "definition": "A certificate signed with its creator's own private key instead of a trusted third party; fine for labs and internal tests, but browsers distrust it and it cannot be revoked.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-crypto",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-key-management",
+    "term": "Key management",
+    "definition": "The process of controlling every stage of a cryptographic key's life cycle: generation, distribution, secure storage, rotation, revocation, and destruction.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "sec-crypto",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-data-in-transit",
+    "term": "Data in transit",
+    "definition": "Information while it moves across a network or the Internet, its most exposed state, protected with secure protocols such as TLS, SSH, or a VPN.",
+    "acceptedAnswers": [
+      "Data in motion"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-data-at-rest",
+    "term": "Data at rest",
+    "definition": "Information stored on a nonvolatile medium such as a drive or backup, protected with storage encryption, access controls, and data loss prevention tools.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-data-locality",
+    "term": "Data locality",
+    "definition": "The requirement to store and process data only inside specific countries or regions so that it complies with local privacy laws and contracts, checked during audits.",
+    "acceptedAnswers": [
+      "Data residency"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-payment-card-industry-data-security-standard",
+    "term": "Payment Card Industry Data Security Standard",
+    "definition": "Industry security standard that every organization that stores, processes, or transmits credit card information must follow to reduce fraud and protect cardholders.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-general-data-protection-regulation",
+    "term": "General Data Protection Regulation",
+    "definition": "European Union law that protects the personal data and privacy of people in the EU and sets strict rules for how organizations collect and handle it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-authentication",
+    "term": "Authentication",
+    "definition": "The process of verifying that a user, device, or application is who or what it claims to be, for example by checking a username and password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-authentication",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-multifactor-authentication",
+    "term": "Multifactor authentication",
+    "definition": "Login method that requires proofs from at least two different categories, such as something you know, have, are, or do, or somewhere you are.",
+    "acceptedAnswers": [
+      "Multi-factor authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-authentication",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-time-based-authentication",
+    "term": "Time-based authentication",
+    "definition": "Login method that requires a generated code, such as one from an authenticator app or hardware fob, that stays valid for only a short period like 30 seconds.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-authentication",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-geofencing",
+    "term": "Geofencing",
+    "definition": "Security method that uses a device's GPS, Wi-Fi, cellular, or IP-based location to allow or deny access depending on whether it is inside a defined virtual boundary.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-authentication",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-identity-and-access-management",
+    "term": "Identity and access management",
+    "definition": "Framework of policies, processes, and tools that manages digital identities across their life cycle and controls which resources each user or device may reach.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-single-sign-on",
+    "term": "Single sign-on",
+    "definition": "Login method in which a user proves identity once and then reaches many systems or applications without entering credentials again; one stolen login therefore opens many resources.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-identity-provider",
+    "term": "Identity provider",
+    "definition": "Service that stores user credentials and performs authentication for other websites and apps, which trust its assertion instead of handling passwords themselves.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-security-assertion-markup-language",
+    "term": "Security Assertion Markup Language",
+    "definition": "XML-based open standard that passes authentication and authorization assertions from an identity provider to a service provider, commonly used for web-based single sign-on.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-remote-authentication-dial-in-user-service",
+    "term": "Remote Authentication Dial-In User Service",
+    "definition": "Open-standard AAA protocol that centralizes login for remote, VPN, and wireless clients; it normally uses UDP, combines authentication with authorization, and encrypts only the password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-terminal-access-controller-access-control-system-plus",
+    "term": "Terminal Access Controller Access Control System Plus",
+    "definition": "Cisco-developed AAA protocol on TCP port 49 that encrypts the whole exchange, separates authentication, authorization, and accounting, and mainly controls router and switch administration.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-role-based-access-control",
+    "term": "Role-based access control",
+    "definition": "Access model in which permissions are assigned to job functions, and each user receives the rights of the job group the administrator places them in.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-mandatory-access-control",
+    "term": "Mandatory access control",
+    "definition": "Strictest access model, in which the system compares sensitivity labels on users and objects, such as secret or top secret, and only administrators set the rules.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-discretionary-access-control",
+    "term": "Discretionary access control",
+    "definition": "Access model in which the owner of a file, folder, or printer decides who may use it, with each user's rights stored in that object's permission list.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-iam",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-security-camera",
+    "term": "Security camera",
+    "definition": "Video device placed at entrances, data rooms, and other secure areas, often feeding a CCTV system, to record or watch activity and help investigate intrusions.",
+    "acceptedAnswers": [
+      "Camera",
+      "Surveillance camera"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-physical-deception",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-cipher-lock",
+    "term": "Cipher lock",
+    "definition": "Door lock opened by entering a code on a keypad, which avoids lost keys and can log entries, schedule access times, and raise a duress alarm.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-physical-deception",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-access-control-vestibule",
+    "term": "Access control vestibule",
+    "definition": "Small space between two locking doors where the first must close before the second opens, so only one or two people can enter at a time.",
+    "acceptedAnswers": [
+      "Mantrap"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-physical-deception",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-honeypot",
+    "term": "Honeypot",
+    "definition": "Single decoy server that looks real and slightly vulnerable, with tempting fake data, used to lure attackers away from production systems and study their methods.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-physical-deception",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-honeynet",
+    "term": "Honeynet",
+    "definition": "Entire decoy network of several monitored lure systems that tracks all attacker traffic in and out, giving a fuller picture of attack methods than one host.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-physical-deception",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-risk",
+    "term": "Risk",
+    "definition": "The likelihood that a weakness will be taken advantage of, weighed together with the harm that would result.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-vulnerability",
+    "term": "Vulnerability",
+    "definition": "A weakness in a system, process, or design, such as an unpatched service or an open port, that could allow unauthorized access.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-exploit",
+    "term": "Exploit",
+    "definition": "The act or the code that takes advantage of a weakness in a system to gain unauthorized access or cause harm.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-threat",
+    "term": "Threat",
+    "definition": "Anything, such as an attacker, malware, or a disaster, that has the potential to cause harm to systems or data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-confidentiality",
+    "term": "Confidentiality",
+    "definition": "Security principle that only authorized users or the intended recipient can view data, supported by encryption, passwords, and access controls.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-integrity",
+    "term": "Integrity",
+    "definition": "Security principle that data is not changed without authorization between sender and receiver, supported by hashing and digital signatures.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-availability",
+    "term": "Availability",
+    "definition": "Security principle that systems and data stay reachable by authorized users whenever needed, supported by backups, redundancy, and disaster recovery.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-cia-triad",
+    "term": "CIA triad",
+    "definition": "The three-part security model whose goals are keeping data private, unaltered, and accessible to authorized users; every security control supports one or more of them.",
+    "acceptedAnswers": [
+      "Confidentiality, integrity, and availability triad"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-risk-terms",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-internet-of-things",
+    "term": "Internet of Things",
+    "definition": "Everyday network-connected devices such as cameras, thermostats, and sensors, which should be isolated in their own VLAN or segment because many are hard to secure and patch.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-industrial-internet-of-things",
+    "term": "Industrial Internet of Things",
+    "definition": "Industrial sensors and controllers in factories and utilities that are exposed to the Internet, using a decentralized design to collect large amounts of operational data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-supervisory-control-and-data-acquisition",
+    "term": "Supervisory control and data acquisition",
+    "definition": "Centralized system that monitors and controls widespread processes such as utilities or traffic signals through an operator interface; best kept physically separate from the corporate LAN.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-industrial-control-system",
+    "term": "Industrial control system",
+    "definition": "Hardware and software, such as programmable logic controllers and remote terminal units, that gather real-time data from physical machinery and control industrial processes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-operational-technology",
+    "term": "Operational technology",
+    "definition": "Hardware and software that directly monitors and controls physical infrastructure, where a breach risks physical damage rather than only lost data or services.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-bring-your-own-device",
+    "term": "Bring your own device",
+    "definition": "Policy that lets employees use their personal phones, tablets, and laptops for work, which requires segmenting those devices away from sensitive corporate resources.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-mobile-device-management",
+    "term": "Mobile device management",
+    "definition": "Software that enrolls phones and tablets and enforces passwords, encryption, remote wipe, and other policies on them, often used to support personal devices at work.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "group": "sec-segmentation",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 11: Access Control"
+  },
+  {
+    "id": "netplus-def-denial-of-service-attack",
+    "term": "Denial-of-service attack",
+    "definition": "Attack from a single source that floods a system or network with more traffic or requests than it can handle, so legitimate users cannot reach it.",
+    "acceptedAnswers": [
+      "Denial of service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-dos",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-distributed-denial-of-service-attack",
+    "term": "Distributed denial-of-service attack",
+    "definition": "Flooding attack launched at once from many compromised machines, usually a botnet under a command-and-control server, which makes it far harder to block than a single source.",
+    "acceptedAnswers": [
+      "Distributed denial of service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-dos",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-botnet",
+    "term": "Botnet",
+    "definition": "Group of malware-infected computers and IoT devices, remotely directed by a command-and-control server without the owners knowing, often used to launch flooding attacks.",
+    "acceptedAnswers": [
+      "Zombie army"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-dos",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-distributed-reflective-denial-of-service-attack",
+    "term": "Distributed reflective denial-of-service attack",
+    "definition": "Attack that spoofs the victim's IP address in small requests to many public UDP servers such as DNS or NTP, so their larger replies all flood the victim.",
+    "acceptedAnswers": [
+      "Distributed reflection denial-of-service attack",
+      "Amplification attack"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-dos",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-syn-flood",
+    "term": "SYN flood",
+    "definition": "Attack that sends many TCP connection requests but never completes the three-way handshake, filling the server with half-open connections until it refuses legitimate ones.",
+    "acceptedAnswers": [
+      "SYN flood attack",
+      "SYN attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-dos",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-deauthentication-attack",
+    "term": "Deauthentication attack",
+    "definition": "Wireless attack that sends spoofed management frames telling clients and the access point to end their session, knocking users off Wi-Fi, often to push them to a rogue AP.",
+    "acceptedAnswers": [
+      "Deauth attack",
+      "Disassociation attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-dos",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-vlan-hopping",
+    "term": "VLAN hopping",
+    "definition": "General attack in which a host on one VLAN gets its frames into a different, restricted VLAN, for example by stacking tags or by posing as a trunk.",
+    "acceptedAnswers": [
+      "Virtual LAN hopping"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-double-tagging",
+    "term": "Double tagging",
+    "definition": "VLAN attack that puts two 802.1Q tags on a frame, so after the first switch strips the outer tag, the hidden inner tag delivers it to a restricted VLAN.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-switch-spoofing",
+    "term": "Switch spoofing",
+    "definition": "VLAN attack in which the attacker's device negotiates a trunk link with a switch port, so it can then send and receive traffic for every VLAN.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-media-access-control-flooding",
+    "term": "Media Access Control flooding",
+    "definition": "Attack that fills a switch's MAC address table with fake source addresses until it fails open and sends every frame out all ports, like a hub.",
+    "acceptedAnswers": [
+      "MAC flooding",
+      "MAC flooding attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-address-resolution-protocol-poisoning",
+    "term": "Address Resolution Protocol poisoning",
+    "definition": "Attack that keeps sending false replies to corrupt the stored IP-to-MAC cache of targeted hosts, so traffic meant for a legitimate IP address goes to the attacker.",
+    "acceptedAnswers": [
+      "ARP poisoning",
+      "ARP cache poisoning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-address-resolution-protocol-spoofing",
+    "term": "Address Resolution Protocol spoofing",
+    "definition": "Attack that sends forged ARP messages claiming a legitimate host's MAC-to-IP mapping, letting the attacker impersonate that host, get past allow lists, or intercept its traffic.",
+    "acceptedAnswers": [
+      "ARP spoofing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-rogue-dhcp-server",
+    "term": "Rogue DHCP server",
+    "definition": "Unauthorized address server on a LAN that gives clients false settings, such as the attacker's IP as default gateway or DNS server, to enable on-path attacks.",
+    "acceptedAnswers": [
+      "Rogue Dynamic Host Configuration Protocol server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-layer2",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-domain-name-system-poisoning",
+    "term": "Domain Name System poisoning",
+    "definition": "Attack that injects false records into a name server's cache so that lookups resolve to the attacker's IP address and users are sent to fake sites.",
+    "acceptedAnswers": [
+      "DNS poisoning",
+      "DNS cache poisoning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-redirection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-domain-name-system-spoofing",
+    "term": "Domain Name System spoofing",
+    "definition": "Broad term for any technique that forges or manipulates name resolution replies, including cache tampering, hijacking, and interception, to redirect traffic to malicious destinations.",
+    "acceptedAnswers": [
+      "DNS spoofing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-redirection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-rogue-access-point",
+    "term": "Rogue access point",
+    "definition": "Wireless device plugged into the network without the administrator's knowledge, which usually ignores security policy and opens a back door for attackers.",
+    "acceptedAnswers": [
+      "Rogue AP"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-redirection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-evil-twin",
+    "term": "Evil twin",
+    "definition": "Fake wireless access point that copies a legitimate network's SSID and settings so users connect to it and the attacker can capture their traffic.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-redirection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-def-on-path-attack",
+    "term": "On-path attack",
+    "definition": "Attack in which the intruder secretly sits between two communicating devices to capture, read, or alter their traffic before passing it on.",
+    "acceptedAnswers": [
+      "Man-in-the-middle attack",
+      "Man-in-the-middle"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-redirection",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-social-engineering",
+    "term": "Social engineering",
+    "definition": "Manipulating people, rather than technology, into revealing passwords or other sensitive information or granting access; defended mainly by user training.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-social",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-phishing",
+    "term": "Phishing",
+    "definition": "Fraudulent email, website, or call that pretends to come from a trusted source to trick victims into giving credentials or financial details.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-social",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-dumpster-diving",
+    "term": "Dumpster diving",
+    "definition": "Searching through an organization's discarded papers and trash for passwords or other useful information, prevented by proper shredding.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-social",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-shoulder-surfing",
+    "term": "Shoulder surfing",
+    "definition": "Secretly watching someone type a password, PIN, or door code, or read their screen, to steal that information.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-social",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-tailgating",
+    "term": "Tailgating",
+    "definition": "Following an authorized person closely through a secure door before it closes, without that person's knowledge or consent.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-social",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-piggybacking",
+    "term": "Piggybacking",
+    "definition": "Getting into a secure area with an authorized person's cooperation, for example by posing as a delivery worker and asking them to hold the door.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-social",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-malware",
+    "term": "Malware",
+    "definition": "Any software or code written to harm, disrupt, or gain unauthorized access to a system, including viruses, worms, Trojans, bots, and ransomware.",
+    "acceptedAnswers": [
+      "Malicious software"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-malware",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-ransomware",
+    "term": "Ransomware",
+    "definition": "Malicious program that locks or encrypts a victim's system or data and demands payment to restore it; offline backups are the main defense.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-malware",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-trojan-horse",
+    "term": "Trojan horse",
+    "definition": "Malicious program disguised as useful or harmless software that does not replicate itself but delivers a harmful payload once installed.",
+    "acceptedAnswers": [
+      "Trojan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-malware",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-worm",
+    "term": "Worm",
+    "definition": "Malicious program that runs on its own and spreads between computers across a network without needing to attach to another file.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-malware",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-logic-bomb",
+    "term": "Logic bomb",
+    "definition": "Hidden malicious code that stays dormant until a set condition or date occurs and then performs its harmful action.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "group": "attack-malware",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-device-hardening",
+    "term": "Device hardening",
+    "definition": "Reducing a device's attack surface by patching it, disabling unneeded ports and services, changing default credentials, and using secure protocols.",
+    "acceptedAnswers": [
+      "Hardening"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-hardening",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-disabling-unused-ports",
+    "term": "Disabling unused ports",
+    "definition": "Hardening step that shuts down switch interfaces and closes TCP and UDP ports that nothing needs, so attackers cannot plug in or connect through them.",
+    "acceptedAnswers": [
+      "Disable unused ports",
+      "Disabling unneeded ports"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-hardening",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-disabling-unneeded-services",
+    "term": "Disabling unneeded services",
+    "definition": "Hardening step that stops software processes a server or device does not need, such as Telnet or FTP, removing extra ways in for attackers.",
+    "acceptedAnswers": [
+      "Disable unneeded services",
+      "Disabling unused services",
+      "Disable unused services"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-hardening",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-default-password",
+    "term": "Default password",
+    "definition": "Vendor-set login, often admin with a simple value like 1234, shipped on routers and other devices; attackers know it, so change it before use.",
+    "acceptedAnswers": [
+      "Default passwords",
+      "Default credentials",
+      "Changing default passwords",
+      "Change default passwords"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-hardening",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-dhcp-snooping",
+    "term": "DHCP snooping",
+    "definition": "Switch feature that drops address offers arriving on untrusted ports to block rogue servers and builds a binding table of legitimate IP-to-MAC pairs.",
+    "acceptedAnswers": [
+      "Dynamic Host Configuration Protocol snooping"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-hardening",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-dynamic-arp-inspection",
+    "term": "Dynamic ARP inspection",
+    "definition": "Switch feature that checks ARP messages against the DHCP snooping binding table and drops those whose IP and MAC addresses do not match.",
+    "acceptedAnswers": [
+      "Dynamic Address Resolution Protocol inspection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-hardening",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 10: Risk Management"
+  },
+  {
+    "id": "netplus-def-network-access-control",
+    "term": "Network access control",
+    "definition": "Method that checks a device's identity and security posture, such as antivirus status, before letting it on the network, and can quarantine devices that fail.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-nac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-port-based-network-access-control",
+    "term": "Port-based network access control",
+    "definition": "IEEE 802.1X standard in which a switch or access point passes a connecting device's EAP credentials to an authentication server, often RADIUS, before opening the port.",
+    "acceptedAnswers": [
+      "Port based authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-nac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-mac-filtering",
+    "term": "MAC filtering",
+    "definition": "Allow or deny list of hardware addresses that an access point or switch uses to admit only approved devices; easy to defeat by spoofing an address.",
+    "acceptedAnswers": [
+      "MAC address filtering",
+      "Media Access Control filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-nac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-port-security",
+    "term": "Port security",
+    "definition": "Switch feature that limits which and how many source MAC addresses may use an access port, and shuts down or restricts the port on a violation.",
+    "acceptedAnswers": [
+      "Switch port security"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-nac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-access-control-list",
+    "term": "Access control list",
+    "definition": "Ordered list of permit and deny rules on a router, switch, or firewall that filters traffic by criteria such as IP address, port, or protocol.",
+    "acceptedAnswers": [
+      "Access list"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-url-filtering",
+    "term": "URL filtering",
+    "definition": "Security rule that allows or blocks web requests by matching their addresses or site categories against a local or cloud database of websites.",
+    "acceptedAnswers": [
+      "Uniform Resource Locator filtering",
+      "Web filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-content-filtering",
+    "term": "Content filtering",
+    "definition": "Security rule that inspects the actual data in web pages, email, or files and blocks malware, spam, inappropriate material, or leaks of sensitive information.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-implicit-deny",
+    "term": "Implicit deny",
+    "definition": "Rule at the end of an ACL or firewall policy that blocks any traffic not specifically permitted by an earlier rule.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-def-trusted-zone",
+    "term": "Trusted zone",
+    "definition": "Network area under the organization's control, such as the internal LAN, where firewalls and ACLs apply the strictest filtering and hosts reach the Internet only through a proxy.",
+    "acceptedAnswers": [
+      "Private zone"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-untrusted-zone",
+    "term": "Untrusted zone",
+    "definition": "Network area outside the organization's control, such as the Internet or public Wi-Fi, whose incoming traffic is heavily filtered or blocked.",
+    "acceptedAnswers": [
+      "Public zone"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  },
+  {
+    "id": "netplus-def-screened-subnet",
+    "term": "Screened subnet",
+    "definition": "Perimeter segment between an outer and an inner firewall that holds public-facing servers, reachable from the Internet but kept apart from the internal LAN.",
+    "acceptedAnswers": [
+      "Demilitarized zone",
+      "Perimeter network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "group": "defense-rules-zones",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 8: Network Segmentation"
+  }
+]
