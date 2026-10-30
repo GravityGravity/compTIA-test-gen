@@ -1,0 +1,27 @@
+appId: net.certpractice.app
+productName: Cert Practice
+directories:
+  output: release
+  buildResources: build
+files:
+  - out/**
+  - package.json
+# The app reads configs and question content from these folders at run time.
+extraResources:
+  - from: config
+    to: config
+  - from: content
+    to: content
+asarUnpack:
+  - node_modules/better-sqlite3/**
+linux:
+  target: [AppImage, deb]
+  category: Education
+  maintainer: Cert Practice
+win:
+  target: nsis
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+# No auto-update: the app makes no network calls.
+publish: null

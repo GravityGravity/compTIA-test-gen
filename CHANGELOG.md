@@ -2,6 +2,26 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Build setup and app skeleton
+
+Decisions (approved):
+- Scaffold: `electron-vite` with React and strict TypeScript. Main, preload, and renderer build with one Vite config.
+- Layers: `src/main`, `src/preload`, `src/renderer`, `src/engine` (pure TypeScript, no Electron or React), `src/shared`.
+- `config/` and `content/` stay at the repo root. The main process reads them (the repo in development, the resources folder in an installed build) and sends them to the UI over IPC.
+- Code style: ESLint (`typescript-eslint`, React hooks) and Prettier.
+- Seeded random generator: our own (mulberry32), no package.
+- The Windows `.exe` needs Wine on Linux, or a Windows machine.
+
+Changes:
+- `package.json` with the npm scripts (see CLAUDE.md "Commands"). Electron 45, React 19, Vite 8, Vitest 5, Playwright 1.64, better-sqlite3 13, nspell with `dictionary-en`, and `@fontsource/inter` (bundled font).
+- The app opens a "Cert Practice" window (minimum 1024 × 720, `contextIsolation` on, `nodeIntegration` off, sandboxed preload, no popups or navigation, a strict Content Security Policy). The home screen lists the exercise modules from `config/exercises/`; inactive ones are greyed out. The Start buttons stay disabled until the exercises are built.
+- Engine: config validation (`src/engine/config.ts`) and the seeded random generator (`src/engine/random.ts`).
+- Styles: `tokens.css` (the compTIA UI style tokens) and `app.css` (from the drafts' stylesheet).
+- Tests: 41 Vitest tests (random generator, config validation, loading the real configs, `tokens.css` against `tokens.json`, the home screen) and one Playwright test that launches the app and checks the title, the modules, the isolation settings, and the minimum size.
+- Packaging: `electron-builder.yml` for AppImage, deb, and NSIS, with `publish: null` (no auto-update metadata, since the app makes no network calls). The Linux build was made and the packaged app starts and reads `config/` from its resources folder.
+- Finding: better-sqlite3 13 ships N-API prebuilt binaries, so the same binary loads in Node and Electron. The planned workaround for testing it is not needed.
+- `CLAUDE.md`: Commands, Code Style, and the new folders.
+
 ## 2026-10-30 – Exercise configs
 
 Decisions (approved):

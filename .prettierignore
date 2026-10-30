@@ -1,0 +1,14 @@
+node_modules/
+out/
+release/
+dist/
+sources/
+sources-text/
+references/
+content/
+config/
+tools/
+*.md
+package-lock.json
+# Kept byte-for-byte equal to tokens.json (tests/unit/tokens.test.ts)
+src/renderer/src/styles/tokens.css

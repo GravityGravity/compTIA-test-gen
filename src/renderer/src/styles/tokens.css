@@ -1,0 +1,33 @@
+/* Design tokens. Every value comes from references/comptia-ui-style/tokens.json
+   (tests/unit/tokens.test.ts checks that they match). Do not add values that are not there. */
+:root {
+  --brand: #c8102e;
+  --brand-hover: #a00d25;
+  --brand-tint: #fbe9ec;
+  --plum: #7a1f7a;
+  --wine: #9e1b4f;
+  --ink: #1a1a1a;
+  --ink-muted: #4a4a4a;
+  --surface: #ffffff;
+  --surface-muted: #ebebeb;
+  --border: #e2e2e2;
+  --ok: #1d7a3a;
+  --ok-tint: #e3f3e8;
+  --on-brand: #ffffff;
+
+  --font-sans: Inter, "Helvetica Neue", Arial, system-ui, sans-serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 2px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 6px 20px rgba(0, 0, 0, 0.12);
+}

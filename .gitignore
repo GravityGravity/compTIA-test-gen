@@ -20,3 +20,8 @@ Thumbs.db
 # Dev-only Python tools
 .venv/
 __pycache__/
+
+# Test output
+test-results/
+playwright-report/
+*.tsbuildinfo

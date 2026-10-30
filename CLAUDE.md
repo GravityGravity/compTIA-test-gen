@@ -5,14 +5,20 @@ Read `docs/spec.md` for the product requirements.
 Read `docs/compTIA-exam-overviews.md` for how each exam is generated.
 
 ## Commands
-Not decided. Plan the build setup with the user. Then add the commands here.
+Approved 2026-10-30. Node 24 and npm 11.
 ```bash
-# Install:
-# Run in development:
-# Run tests:
-# Build:
-# Make installers:
+npm install            # Install. npm 11 runs only the install scripts in "allowScripts" (better-sqlite3, electron-winstaller).
+npm run dev            # Run in development (electron-vite, hot reload).
+npm test               # Vitest: engine, main-process loaders, design tokens, React components.
+npm run test:e2e       # Build, then Playwright drives the Electron app (tests/e2e/).
+npm run typecheck      # tsc for the Node side (main, preload, engine, tests) and the web side (renderer).
+npm run lint           # ESLint. `npm run format` runs Prettier.
+npm run build          # Production build into out/.
+npm run dist:linux     # .AppImage and .deb in release/.
+npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or run it on Windows.
 ```
+- After each change: `npm test`, `npm run typecheck`, `npm run lint`, and `npm run test:e2e` when the change shows in the app.
+- `better-sqlite3` 13 ships N-API prebuilt binaries: the same file loads in Node (Vitest) and in Electron. No rebuild step.
 
 ## Folder Structure
 - `CHANGELOG.md` – A summary of the changes and decisions in each task.
@@ -35,6 +41,13 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - `config/` – Configs the app loads: `certifications/` (one per certification: name, `active`, exam codes) and `exercises/` (one per exercise module). Exam configs will go in `config/exams/`. See `content/README.md` for the fields.
 - `content/` – Question records, terms, and noun pools that the app uses. Subfolders: `core1/`, `core2/`, `acronyms/`, `definitions/`, `network/`. See `content/README.md` for the record formats.
 <!-- Add the code folders when they exist. -->
+- `src/main/` – Electron main process: the window, IPC handlers, and file loading (`catalog.ts` reads `config/`). Later: SQLite.
+- `src/preload/` – The `contextBridge` API (`window.certPractice`). The only bridge between the UI and Node.
+- `src/renderer/` – React UI: `screens/`, `components/`, `styles/` (`tokens.css` from the compTIA UI style tokens, `app.css` from the drafts).
+- `src/engine/` – Pure TypeScript with no Electron or React imports: config validation, the seeded random generator, and later generation, grading, normalization, and spell check.
+- `src/shared/` – Types and IPC contracts that main, preload, and renderer share.
+- `tests/unit/` – Vitest tests that are not next to one source file (for example the design-token check). `tests/e2e/` – Playwright tests.
+- `electron.vite.config.ts`, `electron-builder.yml`, `vitest.config.ts`, `playwright.config.ts` – build, packaging, and test configs. In an installed build, `config/` and `content/` are copied next to the app as resources.
 
 ## Tech Stack
 
