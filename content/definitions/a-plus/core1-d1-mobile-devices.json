@@ -1,0 +1,784 @@
+[
+  {
+    "id": "aplus-def-lithium-ion-battery",
+    "term": "Lithium-ion battery",
+    "definition": "The rechargeable power cell in laptops and phones; it wears out after many charge cycles and can swell when it fails.",
+    "acceptedAnswers": [
+      "Li-ion battery"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "mobile-hardware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-webcam",
+    "term": "Webcam",
+    "definition": "A small video camera, usually in the display bezel above the screen and often paired with a microphone, used for video calls.",
+    "acceptedAnswers": [
+      "Web camera"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1",
+      "220-1201/1.2"
+    ],
+    "group": "mobile-hardware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-wi-fi-antenna",
+    "term": "Wi-Fi antenna",
+    "definition": "The wires that carry wireless signals to the laptop's network card, usually routed through the hinge into the display lid for better reception.",
+    "acceptedAnswers": [
+      "Wireless antenna"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "mobile-hardware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-digitizer",
+    "term": "Digitizer",
+    "definition": "The touch-sensitive layer of a touchscreen that turns finger or pen contact into input the device can read.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "mobile-hardware",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-biometrics",
+    "term": "Biometrics",
+    "definition": "The general category of sign-in methods that identify a person by a unique body trait, such as a fingerprint, face, voice, or retina.",
+    "acceptedAnswers": [
+      "Biometric authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "physical-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-fingerprint-scanner",
+    "term": "Fingerprint scanner",
+    "definition": "A sensor, often on the keyboard or power button, that reads the ridges of a finger to unlock the device.",
+    "acceptedAnswers": [
+      "Fingerprint reader"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "physical-security",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-facial-recognition",
+    "term": "Facial recognition",
+    "definition": "A camera-based unlock method that compares the user's face with a stored image to verify identity.",
+    "acceptedAnswers": [
+      "Face recognition"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "physical-security",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-near-field-scanner",
+    "term": "Near-field scanner",
+    "definition": "A reader built into a laptop or phone that exchanges data with cards, tags, or payment terminals held within a few centimeters.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "physical-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-privacy-screen",
+    "term": "Privacy screen",
+    "definition": "A filter over a display that narrows the viewing angle so only the person directly in front can read the screen.",
+    "acceptedAnswers": [
+      "Privacy filter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "physical-security",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-cable-lock",
+    "term": "Cable lock",
+    "definition": "A steel cable wrapped around a fixed object and locked into a slot on a laptop so it cannot be carried away.",
+    "acceptedAnswers": [
+      "Kensington lock",
+      "Laptop lock"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "group": "physical-security",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "aplus-def-stylus",
+    "term": "Stylus",
+    "definition": "A pen-shaped tool used to write, draw, or tap on a touchscreen more precisely than a finger.",
+    "acceptedAnswers": [
+      "Touch pen",
+      "Stylus pen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-drawing-pad",
+    "term": "Drawing pad",
+    "definition": "A flat surface that accepts pen input and sends it to the computer, used with illustration and note-taking programs.",
+    "acceptedAnswers": [
+      "Drawing tablet",
+      "Graphics tablet"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-trackpad",
+    "term": "Trackpad",
+    "definition": "A flat, touch-sensitive surface that moves the cursor as a finger slides across it, built into laptops or added over USB or wireless.",
+    "acceptedAnswers": [
+      "Touchpad"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-track-point",
+    "term": "Track point",
+    "definition": "A small pressure-sensitive nub between the G, H, and B keys that moves the cursor like a tiny joystick.",
+    "acceptedAnswers": [
+      "TrackPoint",
+      "Pointing stick"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-headset",
+    "term": "Headset",
+    "definition": "Headphones combined with a microphone, connected by cable or wirelessly, for calls and online meetings.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-docking-station",
+    "term": "Docking station",
+    "definition": "A base that a laptop connects to so it works like a desktop, keeping the monitor, keyboard, network, and charger attached.",
+    "acceptedAnswers": [
+      "Dock"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-port-replicator",
+    "term": "Port replicator",
+    "definition": "A simple add-on that only gives a laptop extra ports, without the charging and expansion features of a full desktop base.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "input-accessories",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-lightning",
+    "term": "Lightning",
+    "definition": "Apple's proprietary eight-pin reversible connector for charging and data on older iPhones and iPads.",
+    "acceptedAnswers": [
+      "Lightning connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-microusb",
+    "term": "microUSB",
+    "definition": "A small, non-reversible USB connector that was standard on Android phones for years and is now mostly replaced by USB-C.",
+    "acceptedAnswers": [
+      "Micro USB"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-miniusb",
+    "term": "miniUSB",
+    "definition": "An older and thicker small USB connector, found on early phones, cameras, and some accessories, and rarely seen today.",
+    "acceptedAnswers": [
+      "Mini USB"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-tethering",
+    "term": "Tethering",
+    "definition": "Sharing a phone's cellular internet connection with one computer, usually over a USB cable.",
+    "acceptedAnswers": [
+      "USB tethering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-mobile-hotspot",
+    "term": "Mobile hotspot",
+    "definition": "A phone feature that shares its cellular internet connection by creating a small Wi-Fi network that other devices join.",
+    "acceptedAnswers": [
+      "Hotspot",
+      "Personal hotspot"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2",
+      "220-1201/1.3"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-near-field-communication",
+    "term": "Near-field communication",
+    "definition": "Very short-range wireless technology, about 4 cm, used for contactless payments and for tapping two devices together to share data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-bluetooth",
+    "term": "Bluetooth",
+    "definition": "A short-range wireless standard, usually up to about 10 meters, that connects headsets, speakers, keyboards, and wearables to a device.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.2",
+      "220-1201/1.3"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 2: Mobile Device Accessories and Connectivity Options"
+  },
+  {
+    "id": "aplus-def-pairing",
+    "term": "Pairing",
+    "definition": "The step that connects two short-range wireless devices so they trust each other, sometimes by entering a PIN.",
+    "acceptedAnswers": [
+      "Linking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-connections",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-airplane-mode",
+    "term": "Airplane mode",
+    "definition": "A setting that switches off a device's radios, including cellular, Wi-Fi, and Bluetooth, with one control.",
+    "acceptedAnswers": [
+      "Flight mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-connections",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-subscriber-identity-module",
+    "term": "Subscriber Identity Module",
+    "definition": "A small removable card that stores a subscriber's account details so a phone can connect to a carrier's network.",
+    "acceptedAnswers": [
+      "Subscriber Identification Module"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "cellular-location",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-global-positioning-system",
+    "term": "Global Positioning System",
+    "definition": "A satellite navigation system that gives a receiver its position anywhere on Earth; it does nothing if the device's location setting is off.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "cellular-location",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-cellular-location-services",
+    "term": "Cellular location services",
+    "definition": "Finding a phone's position by measuring its signals to several cell towers, which works without a view of satellites.",
+    "acceptedAnswers": [
+      "Cellular location"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "cellular-location",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-location-services",
+    "term": "Location services",
+    "definition": "The device setting that lets apps use the device's position from satellites, cell towers, or Wi-Fi; turning it off blocks maps and tracking.",
+    "acceptedAnswers": [
+      "Location"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "cellular-location",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-geofencing",
+    "term": "Geofencing",
+    "definition": "Using a device's position to trigger an action, such as an alert or a policy change, when it enters or leaves a defined area.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "cellular-location",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-data-cap",
+    "term": "Data cap",
+    "definition": "A limit in a cellular or internet plan on how much data can be transferred each month before extra charges or slowdowns.",
+    "acceptedAnswers": [
+      "Data limit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "cellular-location",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-mobile-device-management",
+    "term": "Mobile device management",
+    "definition": "Central software that lets administrators enroll, configure, update, secure, and wipe an organization's phones and tablets.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-mobile-application-management",
+    "term": "Mobile application management",
+    "definition": "Central control of only an organization's apps on a device: installing, updating, securing, and removing them without managing the whole device.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-management",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-bring-your-own-device",
+    "term": "Bring your own device",
+    "definition": "A policy that lets employees use their personal phones and laptops for work under the organization's rules.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-corporate-owned-personally-enabled",
+    "term": "Corporate-owned, personally enabled",
+    "definition": "A policy where the organization buys and controls the device but lets the employee also use it for personal tasks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-management",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-synchronization",
+    "term": "Synchronization",
+    "definition": "Keeping mail, contacts, calendars, and files the same on a phone, a computer, and the cloud by copying changes between them.",
+    "acceptedAnswers": [
+      "Sync",
+      "Syncing",
+      "Mobile device synchronization"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "aplus-def-cloud-storage",
+    "term": "Cloud storage",
+    "definition": "An online service, such as OneDrive or iCloud, that keeps files on remote servers so they can be reached from any device.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "group": "mobile-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  }
+]

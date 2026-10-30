@@ -83,6 +83,8 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 
 Definition groups are listed here as each domain is written.
 
+A+ Core 1 Domain 1 (`core1-d1-mobile-devices.json`): `mobile-hardware`, `physical-security`, `input-accessories`, `mobile-connections`, `cellular-location`, `mobile-management`.
+
 ## How the acronym files were made
 
 1. `tools/extract/seed_acronyms.py <cert>` seeded one record per official acronym from `sources-text/derived/<cert>-acronyms.md` and mapped it to the objectives that name it. It does not overwrite an existing file.

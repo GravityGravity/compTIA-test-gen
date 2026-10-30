@@ -2,6 +2,13 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definitions: A+ Core 1 Domain 1 (Mobile Devices)
+
+- New `content/definitions/a-plus/core1-d1-mobile-devices.json`: 38 terms for objectives 1.1–1.3, in 6 groups.
+  - Most terms are named in the objectives. Others come from the current books (cable lock, privacy screen, airplane mode, geofencing, MAM, COPE) or from the AIO glossary (digitizer, checked against Docter).
+  - Definitions are written from Exam Cram 2e chapters 1–3 and Docter Core 1 chapters 4 and 10.
+- Terms that are only acronyms or model names (3G/4G/5G, eSIM, M.2) are left out, because a typed answer cannot be an acronym. They are covered by the Acronym Exercise or later domains.
+
 ## 2026-10-30 – Exercise "Try again"
 
 - "Try again" on the exercise results starts a new exercise at once: the same module and certification, a new set of questions, and no setup screen. `references/ui-drafts/exercise-results.html`, `README.md`, `CLAUDE.md`, `docs/spec.md`.
