@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest'
-import { ConfigError, checkCatalogLinks, parseCertification, parseExercise } from './config'
+import { ConfigError, checkCatalogLinks, parseCertification, parseExam, parseExercise } from './config'
 
 const exercise = {
   id: 'definition-exercise',
@@ -48,14 +48,47 @@ describe('parseExercise', () => {
 
 describe('parseCertification', () => {
   it('needs at least one exam', () => {
-    expect(() => parseCertification({ id: 'a', name: 'A', active: true, exams: [] }, 'test')).toThrow(/exams/)
+    expect(() =>
+      parseCertification({ id: 'a', name: 'A', shortName: 'A', active: true, exams: [] }, 'test')
+    ).toThrow(/exams/)
+  })
+})
+
+const exam = {
+  id: '220-1201',
+  certification: 'a-plus',
+  name: 'Core 1 Exam',
+  shortName: 'Core 1',
+  active: false,
+  domains: [
+    { id: '1', name: 'Mobile Devices', weight: 40 },
+    { id: '2', name: 'Networking', weight: 60 }
+  ]
+}
+
+describe('parseExam', () => {
+  it('accepts a valid config', () => {
+    expect(parseExam(exam, 'test').domains[1]).toEqual({ id: '2', name: 'Networking', weight: 60 })
+  })
+
+  it('rejects weights that do not add up to 100', () => {
+    const bad = { ...exam, domains: [{ id: '1', name: 'Mobile Devices', weight: 40 }] }
+    expect(() => parseExam(bad, 'test')).toThrow(/add up to 40/)
   })
 })
 
 describe('checkCatalogLinks', () => {
+  const cert = parseCertification(
+    { id: 'a-plus', name: 'A+', shortName: 'A+', active: true, exams: ['220-1201'] },
+    't'
+  )
+
   it('rejects an exercise for an unknown certification', () => {
-    const cert = parseCertification({ id: 'a-plus', name: 'A+', active: true, exams: ['220-1201'] }, 't')
     const ex = parseExercise({ ...exercise, certifications: ['security-plus'] }, 't')
-    expect(() => checkCatalogLinks([cert], [ex])).toThrow(/security-plus/)
+    expect(() => checkCatalogLinks([cert], [parseExam(exam, 't')], [ex])).toThrow(/security-plus/)
+  })
+
+  it('rejects a certification exam with no exam config', () => {
+    expect(() => checkCatalogLinks([cert], [], [])).toThrow(/220-1201/)
   })
 })

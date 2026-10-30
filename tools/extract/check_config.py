@@ -1,4 +1,4 @@
-"""Check the certification and exercise configs in config/.
+"""Check the certification, exam, and exercise configs in config/.
 
 Dev-only tool. It is not part of the app.
 
@@ -16,17 +16,19 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))   # -I leaves the scrip
 from check_content import EXAMS, ROOT, load  # noqa: E402
 
 CONFIG = ROOT / "config"
-CERTIFICATION = {"id": str, "name": str, "active": bool, "exams": list}
+CERTIFICATION = {"id": str, "name": str, "shortName": str, "active": bool, "exams": list}
 EXERCISE = {"id": str, "name": str, "active": bool, "content": str, "certifications": list,
             "questionCount": int, "timeLimitMinutes": int, "onTimeUp": str, "selection": str,
             "questionTypes": list}
+EXAM = {"id": str, "certification": str, "name": str, "shortName": str, "active": bool, "domains": list}
+OPTIONAL = {"description": str, "notSure": bool}
 CONTENT = {"acronyms": "acronym", "definitions": "definition"}
 ON_TIME_UP = {"end"}
 SELECTION = {"random"}
 DIRECTIONS = {"term-to-definition", "definition-to-term"}
 
 
-def read(path, fields, errors):
+def read(path, fields, errors, optional=None):
     where = path.relative_to(ROOT)
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
@@ -37,10 +39,13 @@ def read(path, fields, errors):
         # bool is a subclass of int, so check it apart
         if not isinstance(data.get(name), typ) or (typ is int and isinstance(data.get(name), bool)):
             errors.append(f"{where}: field '{name}' is missing or not {typ.__name__}")
+    for name, typ in (optional or {}).items():
+        if name in data and not isinstance(data[name], typ):
+            errors.append(f"{where}: field '{name}' is not {typ.__name__}")
     for name in data:
-        if name not in fields:
+        if name not in fields and name not in (optional or {}):
             errors.append(f"{where}: unknown field '{name}'")
-    if data.get("id") != path.stem and fields is CERTIFICATION:
+    if data.get("id") != path.stem and fields in (CERTIFICATION, EXAM):
         errors.append(f"{where}: id must be the file name ('{path.stem}')")
     return data if not any(e.startswith(f"{where}:") for e in errors) else None
 
@@ -106,9 +111,32 @@ def main():
                 errors.append(f"{path.relative_to(ROOT)}: exam '{exam}' is not a {cert['id']} exam")
         certs[cert["id"]] = cert
 
+    exams = {}
+    for path in sorted((CONFIG / "exams").glob("*.json")):
+        where = path.relative_to(ROOT)
+        exam = read(path, EXAM, errors)
+        if not exam:
+            continue
+        if exam["id"] not in EXAMS.get(exam["certification"], {}):
+            errors.append(f"{where}: exam '{exam['id']}' is not a {exam['certification']} exam")
+        ids = [d.get("id") for d in exam["domains"]]
+        for i, d in enumerate(exam["domains"]):
+            if set(d) != {"id", "name", "weight"} or not all(isinstance(d[k], t) for k, t in
+                                                             (("id", str), ("name", str), ("weight", int))):
+                errors.append(f"{where}: domains[{i}] needs id (str), name (str), and weight (int) only")
+        if ids != [str(n) for n in range(1, len(ids) + 1)]:
+            errors.append(f"{where}: domain ids must be '1', '2', ... in order")
+        if sum(d.get("weight", 0) for d in exam["domains"] if isinstance(d.get("weight"), int)) != 100:
+            errors.append(f"{where}: domain weights must add up to 100")
+        exams[exam["id"]] = exam
+    for cert in certs.values():
+        for code in cert["exams"]:
+            if code not in exams:
+                errors.append(f"config/certifications/{cert['id']}.json: exam '{code}' has no config in config/exams/")
+
     for path in sorted((CONFIG / "exercises").glob("*.json")):
         where = path.relative_to(ROOT)
-        ex = read(path, EXERCISE, errors)
+        ex = read(path, EXERCISE, errors, OPTIONAL)
         if not ex:
             continue
         if ex["content"] not in CONTENT:

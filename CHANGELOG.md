@@ -2,6 +2,38 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definition Exercise
+
+Decisions:
+- Distractors: the target's group first; other groups (any exam of the same certification) only when the group runs short. A record with the same term or definition is never a distractor, and no two options have the same text.
+- Question types with a requirement (typed questions need `typeable` records) pick their records first, so multiple choice cannot use them up.
+- Feedback shows Correct or Incorrect with the term and its definition; multiple choice marks "Correct answer" and "Your answer". No objective tags (those are for the Acronym Exercise).
+- "Not sure" stays Acronym Exercise only, through a new `notSure` config field.
+- Keys: A–D select an option, Enter checks and goes on. The key handler listens on the whole window, so it works when nothing is focused.
+
+Changes:
+- Engine: `src/engine/exercise/multipleChoice.ts` (directions, distractors, grading through `gradeChoice`); `generate.ts` runs both question types.
+- UI: lettered option cards, the multiple-choice feedback, and the chosen option in the results list. The home screen starts both modules.
+- Tests: 96 Vitest tests, including every A+ and Network+ definition asked both ways with clean distractors, and the 14 + 6 mix from the real config. A Playwright test runs a full Network+ Definition Exercise.
+
+## 2026-10-30 – Acronym Exercise
+
+Decisions:
+- Exam configs (`config/exams/220-1201.json`, `220-1202.json`, `N10-009.json`) hold the name, short name, and domains with weights for now, for the objective tags. `active` is false until the exam modules exist. The exam engine adds its fields later.
+- Certification configs get `shortName` (`CompTIA A+`); exercise configs get an optional `description`.
+- Spell check runs in the UI: the main process sends the en_US dictionary and every word of every answer in `content/`; nspell builds once (about 0.25 s). It ignores letter case, like the answer comparison. A test checks that no answer in `content/` fails the spell check.
+- A typed answer is correct only when it matches the expanded form or an accepted answer after normalization (the same rule as `check_content.py`) and has no misspelled word.
+- The feedback adds "Spelling errors count as incorrect." only when the answer has a misspelled word.
+- The top bar's Home link during an exercise asks "Leave the exercise?" first.
+- The timer counts down to a fixed deadline, so it does not drift.
+
+Changes:
+- Engine: answer normalization, the spell checker, objective tags, the record pool, seeded generation with no repeats, grading, and the summary (correct, incorrect, spelling errors).
+- Main: loads and checks `content/acronyms/` and `content/definitions/`, and serves the content and the dictionary over IPC.
+- UI: the setup screen (certification, exam picker for A+ with Both as the default, counts, what to expect), the question screen (timer, progress, the spelling squiggle, Check answer, Not sure, feedback with the meaning and objective tags, End exercise), and the results screen (counts, time-up notice, filter, Try again).
+- `tools/extract/check_config.py`: checks the exam configs and the new fields.
+- Tests: engine, content, and component tests, and a Playwright test of a full Acronym Exercise.
+
 ## 2026-10-30 – Electron sandbox on Ubuntu 24.04
 
 - `npm run dev` aborted on Ubuntu 24.04: AppArmor blocks unprivileged user namespaces, so Electron's sandbox fell back to a `chrome-sandbox` helper that root does not own.

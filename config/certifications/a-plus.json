@@ -1,6 +1,7 @@
 {
   "id": "a-plus",
   "name": "CompTIA A+ (Core 1 and Core 2)",
+  "shortName": "CompTIA A+",
   "active": true,
   "exams": ["220-1201", "220-1202"]
 }

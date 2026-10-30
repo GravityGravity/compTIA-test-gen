@@ -4,6 +4,8 @@ import { Hero } from '../components/Hero'
 
 interface HomeScreenProps {
   catalog: Catalog
+  /** False for a module whose question types the app cannot run yet. */
+  canStart?: (exercise: ExerciseConfig) => boolean
   onStartExercise?: (exercise: ExerciseConfig) => void
 }
 
@@ -15,6 +17,7 @@ function ExerciseCard({ exercise, onStart }: { exercise: ExerciseConfig; onStart
         <span className="eyebrow">Exercise</span>
         <h3 className="h3">{exercise.name}</h3>
       </div>
+      {exercise.description && <p className="grow">{exercise.description}</p>}
       <Facts
         items={[
           ['Questions', String(exercise.questionCount)],
@@ -32,7 +35,7 @@ function ExerciseCard({ exercise, onStart }: { exercise: ExerciseConfig; onStart
 }
 
 /** Module selection. Every module comes from config/, so new ones need no code change. */
-export function HomeScreen({ catalog, onStartExercise }: HomeScreenProps) {
+export function HomeScreen({ catalog, canStart = () => true, onStartExercise }: HomeScreenProps) {
   return (
     <>
       <Hero
@@ -52,7 +55,7 @@ export function HomeScreen({ catalog, onStartExercise }: HomeScreenProps) {
               <ExerciseCard
                 key={exercise.id}
                 exercise={exercise}
-                onStart={onStartExercise && (() => onStartExercise(exercise))}
+                onStart={onStartExercise && canStart(exercise) ? () => onStartExercise(exercise) : undefined}
               />
             ))}
           </div>

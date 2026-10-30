@@ -17,7 +17,10 @@ const exercise = (id: string, name: string, active: boolean): ExerciseConfig => 
 })
 
 const catalog: Catalog = {
-  certifications: [{ id: 'a-plus', name: 'A+', active: true, exams: ['220-1201', '220-1202'] }],
+  exams: [],
+  certifications: [
+    { id: 'a-plus', name: 'A+', shortName: 'A+', active: true, exams: ['220-1201', '220-1202'] }
+  ],
   exercises: [
     exercise('acronym-exercise', 'Acronym Exercise', true),
     exercise('later', 'Later Exercise', false)

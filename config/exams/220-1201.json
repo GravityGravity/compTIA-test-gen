@@ -1,0 +1,14 @@
+{
+  "id": "220-1201",
+  "certification": "a-plus",
+  "name": "Core 1 Exam",
+  "shortName": "Core 1",
+  "active": false,
+  "domains": [
+    { "id": "1", "name": "Mobile Devices", "weight": 13 },
+    { "id": "2", "name": "Networking", "weight": 23 },
+    { "id": "3", "name": "Hardware", "weight": 25 },
+    { "id": "4", "name": "Virtualization and Cloud Computing", "weight": 11 },
+    { "id": "5", "name": "Hardware and Network Troubleshooting", "weight": 28 }
+  ]
+}

@@ -1,6 +1,8 @@
 {
   "id": "acronym-exercise",
   "name": "Acronym Exercise",
+  "description": "Type the expanded form of each acronym from memory.",
+  "notSure": true,
   "active": true,
   "content": "acronyms",
   "certifications": ["a-plus", "network-plus"],

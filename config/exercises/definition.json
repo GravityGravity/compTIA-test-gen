@@ -1,6 +1,7 @@
 {
   "id": "definition-exercise",
   "name": "Definition Exercise",
+  "description": "Match terms to their definitions, and type the term for a definition.",
   "active": true,
   "content": "definitions",
   "certifications": ["a-plus", "network-plus"],

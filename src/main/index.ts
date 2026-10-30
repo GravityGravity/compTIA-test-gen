@@ -2,6 +2,7 @@ import { join } from 'node:path'
 import { app, BrowserWindow, dialog, ipcMain } from 'electron'
 import { IPC } from '@shared/api'
 import { loadCatalog } from './catalog'
+import { loadContent, spellData } from './content'
 
 const APP_NAME = 'Cert Practice'
 
@@ -45,7 +46,14 @@ app
   .whenReady()
   .then(() => {
     const catalog = loadCatalog(dataRoot)
+    const content = loadContent(dataRoot)
+    const spell = spellData(content)
     ipcMain.handle(IPC.getCatalog, () => catalog)
+    ipcMain.handle(IPC.getContent, (_event, kind: unknown) => {
+      if (kind !== 'acronyms' && kind !== 'definitions') throw new Error(`unknown content "${String(kind)}"`)
+      return content[kind]
+    })
+    ipcMain.handle(IPC.getSpellData, () => spell)
     createWindow()
   })
   .catch((error: unknown) => {

@@ -1,0 +1,13 @@
+{
+  "id": "220-1202",
+  "certification": "a-plus",
+  "name": "Core 2 Exam",
+  "shortName": "Core 2",
+  "active": false,
+  "domains": [
+    { "id": "1", "name": "Operating Systems", "weight": 28 },
+    { "id": "2", "name": "Security", "weight": 28 },
+    { "id": "3", "name": "Software Troubleshooting", "weight": 23 },
+    { "id": "4", "name": "Operational Procedures", "weight": 21 }
+  ]
+}

@@ -1,6 +1,6 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
-import { checkCatalogLinks, parseCertification, parseExercise } from '@engine/config'
+import { checkCatalogLinks, parseCertification, parseExam, parseExercise } from '@engine/config'
 import type { Catalog } from '@shared/types'
 
 function readJsonDir<T>(dir: string, parse: (raw: unknown, where: string) => T): T[] {
@@ -16,7 +16,8 @@ function readJsonDir<T>(dir: string, parse: (raw: unknown, where: string) => T):
 /** Reads and checks every config. `root` holds the `config/` folder. */
 export function loadCatalog(root: string): Catalog {
   const certifications = readJsonDir(join(root, 'config', 'certifications'), parseCertification)
+  const exams = readJsonDir(join(root, 'config', 'exams'), parseExam)
   const exercises = readJsonDir(join(root, 'config', 'exercises'), parseExercise)
-  checkCatalogLinks(certifications, exercises)
-  return { certifications, exercises }
+  checkCatalogLinks(certifications, exams, exercises)
+  return { certifications, exams, exercises }
 }

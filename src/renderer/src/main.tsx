@@ -6,6 +6,7 @@ import '@fontsource/inter/600.css'
 import '@fontsource/inter/700.css'
 import './styles/tokens.css'
 import './styles/app.css'
+import './styles/exercise.css'
 import { App } from './App'
 
 createRoot(document.getElementById('root') as HTMLElement).render(

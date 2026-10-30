@@ -1,4 +1,4 @@
-import type { CertificationConfig, ExerciseConfig, QuestionTypeConfig } from '@shared/types'
+import type { CertificationConfig, ExamConfig, ExerciseConfig, QuestionTypeConfig } from '@shared/types'
 
 // Validates the configs in config/. Throws with the file and field on the first problem,
 // so a broken config stops the app with a clear message instead of a half-working screen.
@@ -53,8 +53,30 @@ export function parseCertification(raw: unknown, where: string): CertificationCo
   return {
     id: str(obj, 'id', where),
     name: str(obj, 'name', where),
+    shortName: str(obj, 'shortName', where),
     active: bool(obj, 'active', where),
     exams: strList(obj, 'exams', where)
+  }
+}
+
+export function parseExam(raw: unknown, where: string): ExamConfig {
+  const obj = asObject(raw, where)
+  const domainsRaw = obj.domains
+  if (!Array.isArray(domainsRaw) || domainsRaw.length === 0) fail(where, '"domains" must be a non-empty list')
+  const domains = domainsRaw.map((d, i) => {
+    const at = `${where} domains[${i}]`
+    const dom = asObject(d, at)
+    return { id: str(dom, 'id', at), name: str(dom, 'name', at), weight: posInt(dom, 'weight', at) }
+  })
+  const total = domains.reduce((sum, d) => sum + d.weight, 0)
+  if (total !== 100) fail(where, `domain weights add up to ${total}, not 100`)
+  return {
+    id: str(obj, 'id', where),
+    certification: str(obj, 'certification', where),
+    name: str(obj, 'name', where),
+    shortName: str(obj, 'shortName', where),
+    active: bool(obj, 'active', where),
+    domains
   }
 }
 
@@ -95,9 +117,13 @@ export function parseExercise(raw: unknown, where: string): ExerciseConfig {
   const total = questionTypes.reduce((sum, qt) => sum + qt.count, 0)
   if (total !== questionCount)
     fail(where, `question-type counts add up to ${total}, but "questionCount" is ${questionCount}`)
+  const description = obj.description === undefined ? undefined : str(obj, 'description', where)
+  const notSure = obj.notSure === undefined ? false : bool(obj, 'notSure', where)
   return {
     id: str(obj, 'id', where),
     name: str(obj, 'name', where),
+    ...(description ? { description } : {}),
+    ...(notSure ? { notSure } : {}),
     active: bool(obj, 'active', where),
     content: oneOf(obj, 'content', ['acronyms', 'definitions'] as const, where),
     certifications: strList(obj, 'certifications', where),
@@ -109,8 +135,17 @@ export function parseExercise(raw: unknown, where: string): ExerciseConfig {
   }
 }
 
-/** Checks that every exercise names a known certification. */
-export function checkCatalogLinks(certifications: CertificationConfig[], exercises: ExerciseConfig[]): void {
+/** Checks that every certification's exams have a config, and every exercise names a known certification. */
+export function checkCatalogLinks(
+  certifications: CertificationConfig[],
+  exams: ExamConfig[],
+  exercises: ExerciseConfig[]
+): void {
+  const examIds = new Set(exams.map((e) => e.id))
+  for (const cert of certifications)
+    for (const code of cert.exams)
+      if (!examIds.has(code))
+        fail(`certification ${cert.id}`, `exam "${code}" has no config in config/exams/`)
   const known = new Set(certifications.map((c) => c.id))
   for (const ex of exercises)
     for (const cert of ex.certifications)

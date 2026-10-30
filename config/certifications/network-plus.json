@@ -1,6 +1,7 @@
 {
   "id": "network-plus",
   "name": "CompTIA Network+ (N10-009)",
+  "shortName": "CompTIA Network+",
   "active": true,
   "exams": ["N10-009"]
 }

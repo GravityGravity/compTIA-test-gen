@@ -83,8 +83,9 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 
 The app reads these records through the configs in `config/` (approved 2026-10-30):
 
-- `config/certifications/<cert>.json` – `id` (the file name), `name`, `active`, and `exams` (exam codes in picker order). The exercise setup shows an exam picker when there is more than one exam, plus "Both".
-- `config/exercises/<module>.json` – `id`, `name`, `active`, `content` (`acronyms` or `definitions`), `certifications`, `questionCount`, `timeLimitMinutes`, `onTimeUp` (`end`), `selection` (`random`), and `questionTypes`. Each question type has a `type` (`typed` or `multiple-choice`) and a `count`; the counts add up to `questionCount`.
+- `config/certifications/<cert>.json` – `id` (the file name), `name`, `shortName` (for example `CompTIA A+`, used in exercise headers and results), `active`, and `exams` (exam codes in picker order, each with a config in `config/exams/`). The exercise setup shows an exam picker when there is more than one exam, plus "Both".
+- `config/exams/<code>.json` – `id` (the exam code and the file name), `certification`, `name` (`Core 1 Exam`), `shortName` (`Core 1`), `active` (false until the exam module and its content exist), and `domains` (`id` `"1"`, `"2"`, …, `name` as the official objectives write it, and `weight` in percent; the weights add up to 100). The objective tags in the Acronym Exercise feedback use the short name and the domain name. The exam engine will add its own fields.
+- `config/exercises/<module>.json` – `id`, `name`, optional `description` (one sentence for the home card and the setup screen), optional `notSure` (true: typed questions get a "Not sure" button), `active`, `content` (`acronyms` or `definitions`), `certifications`, `questionCount`, `timeLimitMinutes`, `onTimeUp` (`end`), `selection` (`random`), and `questionTypes`. Each question type has a `type` (`typed` or `multiple-choice`) and a `count`; the counts add up to `questionCount`.
   - `typed`: `prompt` and `answer` (`acronym` → `expanded`, or `definition` → `term`), and `requires: "typeable"` for definitions.
   - `multiple-choice` (definitions only): `direction` (`random`, `term-to-definition`, or `definition-to-term`), `directions` (the ones `random` picks from), and `choices`.
 

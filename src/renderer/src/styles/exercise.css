@@ -1,0 +1,139 @@
+/* Exercise screens, carried over from references/ui-drafts/exercise-question.html and exercise-results.html. */
+.exbar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.exbar .grow {
+  flex: 1;
+  min-width: 160px;
+}
+.timer {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+.timer.low {
+  color: var(--brand);
+}
+.prompt {
+  font-size: 28px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.prompt.long {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+/* Feedback: correct uses ok and incorrect uses brand, always with a text label. */
+.feedback {
+  display: flex;
+  gap: var(--space-4);
+  align-items: flex-start;
+  border-radius: var(--radius-sm);
+  padding: var(--space-4);
+  background: var(--surface-muted);
+}
+.feedback .icon {
+  flex: none;
+  width: 24px;
+  height: 24px;
+}
+.feedback.ok {
+  background: var(--ok-tint);
+}
+.feedback.ok .icon {
+  stroke: var(--ok);
+}
+.feedback.ok .h4 {
+  color: var(--ok);
+}
+.feedback.bad .h4 {
+  color: var(--brand);
+}
+
+/* Type-the-answer field with a spelling squiggle. The mirror sits under a transparent input and
+   draws a wavy underline under each word that is not in the dictionary. */
+.typed {
+  position: relative;
+}
+.typed input,
+.typed .mirror {
+  font: inherit;
+  font-size: 17px;
+  line-height: 24px;
+  padding: 12px 14px;
+  border-radius: var(--radius-sm);
+  width: 100%;
+  letter-spacing: normal;
+}
+.typed input {
+  position: relative;
+  background: transparent;
+  border: 1.5px solid var(--border);
+  color: var(--ink);
+}
+.typed input:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+.typed input:disabled {
+  color: var(--ink);
+}
+.typed .mirror {
+  position: absolute;
+  inset: 0;
+  border: 1.5px solid transparent;
+  color: transparent;
+  white-space: pre;
+  overflow: hidden;
+  pointer-events: none;
+}
+.miss {
+  text-decoration: underline wavy var(--brand);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+}
+
+/* Results */
+.result-ok {
+  color: var(--ok);
+  font-weight: 600;
+}
+.result-bad {
+  color: var(--brand);
+  font-weight: 600;
+}
+.rtable td:first-child {
+  width: 32px;
+  color: var(--ink-muted);
+}
+.crumbs a {
+  cursor: pointer;
+}
+
+/* Multiple choice: the correct option uses ok, a wrong pick uses brand, each with a text mark. */
+.choice.right {
+  border-color: var(--ok);
+  background: var(--ok-tint);
+}
+.choice.wrong {
+  border-color: var(--brand);
+  background: var(--brand-tint);
+}
+.choice:disabled {
+  cursor: default;
+}
+.mark {
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: auto;
+  white-space: nowrap;
+}
+.choice.right .mark {
+  color: var(--ok);
+}
+.choice.wrong .mark {
+  color: var(--brand);
+}
