@@ -1,0 +1,2990 @@
+[
+  {
+    "id": "aplus-def-liquid-crystal-display",
+    "term": "Liquid crystal display",
+    "definition": "Flat-panel screen that twists a layer of crystals between two polarizing filters to block or pass light; it cannot make light itself, so it needs a backlight.",
+    "acceptedAnswers": [
+      "LCD panel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-in-plane-switching",
+    "term": "In-plane switching",
+    "definition": "LCD panel technology whose crystals line up parallel to the glass, giving wide viewing angles and accurate color at a higher cost than older panels.",
+    "acceptedAnswers": [
+      "IPS panel",
+      "In-plane switching panel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-twisted-nematic",
+    "term": "Twisted nematic",
+    "definition": "Older, low-cost LCD panel technology with fast response times but narrow viewing angles and weaker color, since its crystals twist to let light through.",
+    "acceptedAnswers": [
+      "TN panel",
+      "Twisted nematic panel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-vertical-alignment",
+    "term": "Vertical alignment",
+    "definition": "LCD panel technology whose crystals stand perpendicular to the glass, giving high contrast and deep blacks but narrower viewing angles than IPS.",
+    "acceptedAnswers": [
+      "VA panel",
+      "Vertical alignment panel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-organic-light-emitting-diode",
+    "term": "Organic light-emitting diode",
+    "definition": "Display in which every pixel is a carbon-based compound that glows on its own when current flows, so it needs no backlight and shows true black.",
+    "acceptedAnswers": [
+      "Organic LED",
+      "OLED display",
+      "OLED screen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-mini-light-emitting-diode",
+    "term": "Mini light-emitting diode",
+    "definition": "LCD backlit by thousands of very small LEDs grouped in many local dimming zones, giving higher brightness and contrast than a standard LED-backlit panel.",
+    "acceptedAnswers": [
+      "Mini-LED display"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-inverter",
+    "term": "Inverter",
+    "definition": "Small circuit board in an older laptop screen that converts DC from the motherboard into high-voltage AC for the fluorescent backlight; failure leaves a dark screen.",
+    "acceptedAnswers": [
+      "Screen inverter",
+      "Display inverter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-pixel-density",
+    "term": "Pixel density",
+    "definition": "How tightly the dots of a screen are packed, counted per linear inch (PPI); a higher value shows finer detail at the same screen size.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-attributes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-refresh-rate",
+    "term": "Refresh rate",
+    "definition": "How many times per second a display redraws its image, measured in hertz; most monitors are 60 Hz, while gaming screens reach 144 or 240 Hz.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-attributes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-screen-resolution",
+    "term": "Screen resolution",
+    "definition": "Number of pixels a display shows, written as width by height, for example 1920 x 1080 for Full HD or 3840 x 2160 for 4K.",
+    "acceptedAnswers": [
+      "Display resolution"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-attributes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-color-gamut",
+    "term": "Color gamut",
+    "definition": "The range of colors a display can reproduce; a wider range, as on HDR screens, gives richer and more vivid images.",
+    "acceptedAnswers": [
+      "Colour gamut"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "group": "display-attributes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 12: Device Display Components"
+  },
+  {
+    "id": "aplus-def-unshielded-twisted-pair",
+    "term": "Unshielded twisted pair",
+    "definition": "Common Ethernet copper cable of four twisted wire pairs with a plain plastic jacket; cheap but open to EMI, with a 100-meter limit.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-shielded-twisted-pair",
+    "term": "Shielded twisted pair",
+    "definition": "Ethernet copper cable with metal foil or braid around its pairs to resist electromagnetic interference; the shielding must be grounded to work.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-plenum-rated-cable",
+    "term": "Plenum-rated cable",
+    "definition": "Network cable with a fire-resistant, low-smoke jacket, required by fire code in air-handling spaces such as the area above a drop ceiling.",
+    "acceptedAnswers": [
+      "Plenum cable",
+      "Plenum-grade cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-direct-burial-cable",
+    "term": "Direct burial cable",
+    "definition": "Twisted pair cable with an extra waterproof, protected jacket made to be laid underground outdoors without a separate conduit.",
+    "acceptedAnswers": [
+      "Direct burial"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-category-5e-cable",
+    "term": "Category 5e cable",
+    "definition": "Enhanced twisted pair cable rated for 1 Gbps Ethernet up to 100 meters; it replaced the older Cat 5 standard.",
+    "acceptedAnswers": [
+      "Category 5e",
+      "Cat 5e",
+      "Cat 5e cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-category-6-cable",
+    "term": "Category 6 cable",
+    "definition": "Twisted pair cable rated at 250 MHz that carries 1 Gbps to 100 meters and 10 Gbps over shorter runs of about 55 meters.",
+    "acceptedAnswers": [
+      "Category 6",
+      "Cat 6",
+      "Cat 6 cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-t568a-wiring-standard",
+    "term": "T568A wiring standard",
+    "definition": "TIA wiring standard for RJ45 ends that starts with white/green on pin 1; one end wired this way and one the other way makes a crossover cable.",
+    "acceptedAnswers": [
+      "T568A standard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-t568b-wiring-standard",
+    "term": "T568B wiring standard",
+    "definition": "The most widely used TIA wiring standard for RJ45 ends, starting with white/orange on pin 1; using it on both ends makes a straight-through cable.",
+    "acceptedAnswers": [
+      "T568B standard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "twisted-pair",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-coaxial-cable",
+    "term": "Coaxial cable",
+    "definition": "Copper cable with one center conductor, insulation, a braided metal shield, and an outer jacket; RG-6 is used for cable internet and TV.",
+    "acceptedAnswers": [
+      "Coax",
+      "Coax cable",
+      "Coaxial"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "fiber-coax",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-single-mode-fiber",
+    "term": "Single-mode fiber",
+    "definition": "Optical cable with a very thin core that carries one light path from a laser, used for the longest runs, up to many kilometers.",
+    "acceptedAnswers": [
+      "Single-mode fibre",
+      "Single-mode",
+      "Single-mode fiber optic cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "fiber-coax",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-multimode-fiber",
+    "term": "Multimode fiber",
+    "definition": "Optical cable with a wider core that carries many light paths, usually from LEDs, used for shorter runs such as server rooms and campus backbones.",
+    "acceptedAnswers": [
+      "Multimode fibre",
+      "Multimode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "fiber-coax",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-straight-tip-connector",
+    "term": "Straight tip connector",
+    "definition": "Round fiber optic connector with a bayonet mount that is pushed in and twisted to lock in place.",
+    "acceptedAnswers": [
+      "Straight tip"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "fiber-coax",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-subscriber-connector",
+    "term": "Subscriber connector",
+    "definition": "Square fiber optic connector that snaps in and pulls out with a push-pull latch.",
+    "acceptedAnswers": [
+      "Square connector",
+      "Standard connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "fiber-coax",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-lucent-connector",
+    "term": "Lucent connector",
+    "definition": "Small form factor fiber optic connector, about half the size of SC, with a latch tab; often used in duplex pairs in dense equipment.",
+    "acceptedAnswers": [
+      "Local connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "fiber-coax",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 6: Networking Fundamentals"
+  },
+  {
+    "id": "aplus-def-registered-jack-45",
+    "term": "Registered jack 45",
+    "definition": "Eight-pin modular plug (8P8C) that terminates twisted pair Ethernet cable and plugs into network cards, wall jacks, and switches.",
+    "acceptedAnswers": [
+      "RJ45 connector",
+      "Registered jack 45 connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-registered-jack-11",
+    "term": "Registered jack 11",
+    "definition": "Small modular plug with up to six positions, normally using two or four wires, that connects landline phones and DSL modems.",
+    "acceptedAnswers": [
+      "RJ11 connector",
+      "Registered jack 11 connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-f-type-connector",
+    "term": "F-type connector",
+    "definition": "Threaded screw-on connector at the end of RG-6 coaxial cable that attaches to cable modems, TVs, and set-top boxes.",
+    "acceptedAnswers": [
+      "F connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-punchdown-block",
+    "term": "Punchdown block",
+    "definition": "Wiring-closet panel where each twisted pair wire is pressed into a metal slot with a special tool instead of using a plug, such as a 66 or 110 block.",
+    "acceptedAnswers": [
+      "Punch block"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 6: Networking Fundamentals"
+  },
+  {
+    "id": "aplus-def-universal-serial-bus-2-0",
+    "term": "Universal Serial Bus 2.0",
+    "definition": "USB version with a maximum data rate of 480 Mbps, still common for keyboards, mice, and printers.",
+    "acceptedAnswers": [
+      "Hi-Speed USB"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "peripheral-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-universal-serial-bus-3-0",
+    "term": "Universal Serial Bus 3.0",
+    "definition": "USB version with a maximum data rate of 5 Gbps, often marked by blue ports; later renamed USB 3.2 Gen 1.",
+    "acceptedAnswers": [
+      "SuperSpeed USB"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "peripheral-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-universal-serial-bus-type-c",
+    "term": "Universal Serial Bus Type-C",
+    "definition": "Small reversible 24-pin connector that can carry data, video, and high-wattage charging on one cable; now required for new phones in the EU.",
+    "acceptedAnswers": [
+      "USB-C connector",
+      "USB Type-C connector",
+      "USB Type-C"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "peripheral-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-thunderbolt",
+    "term": "Thunderbolt",
+    "definition": "Intel interface that combines PCIe and DisplayPort for fast storage and displays; versions 3 and 4 use a USB-C port at 40 Gbps and can daisy-chain devices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "peripheral-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-serial-cable",
+    "term": "Serial cable",
+    "definition": "Cable for the RS-232 standard, usually with a 9-pin DB9 (DE-9) connector, still used to manage network gear and industrial devices.",
+    "acceptedAnswers": [
+      "RS-232 cable",
+      "DB9 cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "peripheral-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-adapter",
+    "term": "Adapter",
+    "definition": "Small part that changes one physical connection type to another, for example HDMI to DVI or USB-C to RJ45, without changing the signal format.",
+    "acceptedAnswers": [
+      "Cable adapter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "peripheral-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-high-definition-multimedia-interface",
+    "term": "High-Definition Multimedia Interface",
+    "definition": "Digital audio and video interface for TVs, monitors, and projectors; the standard Type A plug has 19 pins.",
+    "acceptedAnswers": [
+      "HDMI cable",
+      "HDMI connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "video-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-displayport",
+    "term": "DisplayPort",
+    "definition": "Royalty-free digital video and audio interface from VESA with a latching, one-corner-cut plug; a smaller mini version was used on older Macs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "video-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 3: Peripherals, Cables, and Connectors"
+  },
+  {
+    "id": "aplus-def-digital-visual-interface",
+    "term": "Digital Visual Interface",
+    "definition": "Video interface with a wide multi-pin connector that carries digital video, plus analog on some versions, but no audio; it is often white.",
+    "acceptedAnswers": [
+      "DVI cable",
+      "DVI connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "video-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 3: Peripherals, Cables, and Connectors"
+  },
+  {
+    "id": "aplus-def-video-graphics-array",
+    "term": "Video Graphics Array",
+    "definition": "Legacy analog video interface that uses a blue 15-pin DE-15 connector in three rows; it carries no audio.",
+    "acceptedAnswers": [
+      "VGA cable",
+      "VGA connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "group": "video-cables",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 3: Peripherals, Cables, and Connectors"
+  },
+  {
+    "id": "aplus-def-serial-advanced-technology-attachment",
+    "term": "Serial Advanced Technology Attachment",
+    "definition": "Common internal drive interface with a 7-pin data cable and a 15-pin power connector; revision 3.0 runs at 6 Gbps.",
+    "acceptedAnswers": [
+      "Serial ATA",
+      "SATA cable",
+      "SATA interface"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2",
+      "220-1201/3.4",
+      "220-1201/3.5"
+    ],
+    "group": "storage-interfaces",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-external-serial-advanced-technology-attachment",
+    "term": "External Serial Advanced Technology Attachment",
+    "definition": "Shielded external version of the internal drive interface for outside storage enclosures; it carries data only, so the drive needs separate power.",
+    "acceptedAnswers": [
+      "External SATA",
+      "External Serial ATA",
+      "eSATA cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2",
+      "220-1201/3.5"
+    ],
+    "group": "storage-interfaces",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 13: Cables and Connectors"
+  },
+  {
+    "id": "aplus-def-non-volatile-memory-express",
+    "term": "Non-Volatile Memory Express",
+    "definition": "Storage protocol that lets SSDs talk directly over PCIe lanes, usually on an M.2 card, for several times the speed of a SATA SSD.",
+    "acceptedAnswers": [
+      "NVMe SSD"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-interfaces",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-serial-attached-small-computer-system-interface",
+    "term": "Serial Attached Small Computer System Interface",
+    "definition": "Enterprise drive interface that sends the SCSI command set over serial links; used for server drives, with SAS-4 at 22.5 Gbps.",
+    "acceptedAnswers": [
+      "Serial Attached SCSI"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2",
+      "220-1201/3.4"
+    ],
+    "group": "storage-interfaces",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-mini-serial-advanced-technology-attachment",
+    "term": "Mini-Serial Advanced Technology Attachment",
+    "definition": "Small card-style SSD form factor for older laptops with a single notch on its edge; M.2 has replaced it.",
+    "acceptedAnswers": [
+      "Mini-SATA",
+      "mini Serial ATA"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-interfaces",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-hard-disk-drive",
+    "term": "Hard disk drive",
+    "definition": "Magnetic storage drive with spinning platters and moving read/write heads; 3.5-inch models go in desktops and 2.5-inch models in laptops.",
+    "acceptedAnswers": [
+      "Hard drive",
+      "Magnetic hard drive"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-drives",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-solid-state-drive",
+    "term": "Solid-state drive",
+    "definition": "Storage drive with no moving parts that keeps data on non-volatile flash chips, so it is silent, shock-resistant, and much faster than a magnetic disk.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-drives",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-spindle-speed",
+    "term": "Spindle speed",
+    "definition": "How fast a magnetic drive's platters turn, in revolutions per minute: 5400 and 7200 RPM are common, and 10,000 or 15,000 RPM suit servers.",
+    "acceptedAnswers": [
+      "Rotational speed",
+      "Rotational spindle speed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-drives",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-flash-drive",
+    "term": "Flash drive",
+    "definition": "Small portable NAND storage stick that plugs straight into a USB port, used to move files or boot an installer; eject it before removal.",
+    "acceptedAnswers": [
+      "USB flash drive",
+      "Thumb drive",
+      "USB thumb drive"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-drives",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-memory-card",
+    "term": "Memory card",
+    "definition": "Thin removable flash storage, such as SD or microSD, that slides into a card reader in cameras, phones, and computers.",
+    "acceptedAnswers": [
+      "Flash memory card",
+      "Secure Digital card",
+      "SD card"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-drives",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-optical-drive",
+    "term": "Optical drive",
+    "definition": "Drive that uses a laser to read and write CDs (about 700 MB), DVDs (4.7 GB per layer), and Blu-ray discs (25 GB per layer).",
+    "acceptedAnswers": [
+      "Optical disc drive",
+      "Optical disk drive"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "storage-drives",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-raid-0",
+    "term": "RAID 0",
+    "definition": "Disk array that stripes data across two or more drives for speed and full capacity but has no fault tolerance: one failed drive loses everything.",
+    "acceptedAnswers": [
+      "RAID level 0",
+      "Disk striping"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "raid",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-raid-1",
+    "term": "RAID 1",
+    "definition": "Disk array that mirrors identical copies of data onto two drives, so it survives one drive failure but gives only half the total capacity.",
+    "acceptedAnswers": [
+      "RAID level 1",
+      "Disk mirroring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "raid",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-raid-5",
+    "term": "RAID 5",
+    "definition": "Disk array that stripes data with one set of distributed parity across three or more drives, so it survives the loss of any one drive.",
+    "acceptedAnswers": [
+      "RAID level 5",
+      "Striping with parity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "raid",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-raid-6",
+    "term": "RAID 6",
+    "definition": "Disk array that stripes data with two sets of parity across four or more drives, so it survives two drives failing at the same time.",
+    "acceptedAnswers": [
+      "RAID level 6",
+      "Striping with double parity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "raid",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-raid-10",
+    "term": "RAID 10",
+    "definition": "Nested disk array of at least four drives that stripes data across mirrored pairs, combining speed with the ability to lose one drive in each pair.",
+    "acceptedAnswers": [
+      "RAID level 10",
+      "Stripe of mirrors"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "group": "raid",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 15: Storage Drives"
+  },
+  {
+    "id": "aplus-def-dual-in-line-memory-module",
+    "term": "Dual in-line memory module",
+    "definition": "Full-size desktop memory stick with separate contacts on each side; DDR4 and DDR5 versions have 288 pins with the notch in different places.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "group": "ram",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 14: RAM"
+  },
+  {
+    "id": "aplus-def-small-outline-dual-in-line-memory-module",
+    "term": "Small outline dual in-line memory module",
+    "definition": "Shorter memory module used in laptops, mini PCs, and some printers, about half the length of a desktop module.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "group": "ram",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 14: RAM"
+  },
+  {
+    "id": "aplus-def-double-data-rate",
+    "term": "Double data rate",
+    "definition": "Memory technology that moves data on both the rising and falling edges of each clock cycle; its generations (DDR3, DDR4, DDR5) are not interchangeable.",
+    "acceptedAnswers": [
+      "Double data rate SDRAM",
+      "Double data rate memory"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "group": "ram",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 14: RAM"
+  },
+  {
+    "id": "aplus-def-error-correcting-code-memory",
+    "term": "Error-correcting code memory",
+    "definition": "RAM that stores extra check bits so it can find and fix single-bit errors on the fly; used in servers and needs board support.",
+    "acceptedAnswers": [
+      "Error correction code memory",
+      "ECC memory",
+      "ECC RAM",
+      "Error-correcting code RAM"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "group": "ram",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 14: RAM"
+  },
+  {
+    "id": "aplus-def-dual-channel-memory",
+    "term": "Dual-channel memory",
+    "definition": "Memory setup that uses two 64-bit paths at once for a 128-bit bus; matched modules go in the same-colored slots.",
+    "acceptedAnswers": [
+      "Dual-channel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "group": "ram",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 14: RAM"
+  },
+  {
+    "id": "aplus-def-quad-channel-memory",
+    "term": "Quad-channel memory",
+    "definition": "Memory setup that needs four identical modules, one in each bank, so four 64-bit paths work together; with fewer modules it falls back.",
+    "acceptedAnswers": [
+      "Quad-channel",
+      "Quadruple-channel memory"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "group": "ram",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 14: RAM"
+  },
+  {
+    "id": "aplus-def-advanced-technology-extended",
+    "term": "Advanced Technology eXtended",
+    "definition": "The standard full-size motherboard form factor, 12 x 9.6 inches, with RAM slots at right angles to the expansion slots and a 24-pin power connector.",
+    "acceptedAnswers": [
+      "ATX motherboard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-micro-advanced-technology-extended",
+    "term": "Micro Advanced Technology eXtended",
+    "definition": "Smaller square motherboard form factor, up to 9.6 x 9.6 inches, that fits in larger cases but has fewer expansion and RAM slots.",
+    "acceptedAnswers": [
+      "microATX",
+      "mATX"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-information-technology-extended",
+    "term": "Information Technology eXtended",
+    "definition": "Family of small, low-power motherboard form factors created by VIA, including Mini, Nano, Pico, and Mobile sizes.",
+    "acceptedAnswers": [
+      "ITX motherboard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-peripheral-component-interconnect",
+    "term": "Peripheral Component Interconnect",
+    "definition": "Older 32-bit parallel expansion bus with a shared bandwidth of about 266 MB/s, now mostly replaced by its serial successor.",
+    "acceptedAnswers": [
+      "PCI bus",
+      "PCI slot"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-peripheral-component-interconnect-express",
+    "term": "Peripheral Component Interconnect Express",
+    "definition": "Serial point-to-point expansion bus that sends data over lanes; slots come in x1, x4, x8, and x16 sizes, and x16 is used for video cards.",
+    "acceptedAnswers": [
+      "PCI Express",
+      "PCIe slot",
+      "PCIe bus"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.4",
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-front-panel-header",
+    "term": "Front panel header",
+    "definition": "Group of small pins at the edge of a motherboard that the case's power button, reset button, and LED wires plug into.",
+    "acceptedAnswers": [
+      "Case connector header"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-land-grid-array",
+    "term": "Land grid array",
+    "definition": "CPU socket with spring pins in the socket that touch flat contacts on the processor; used by Intel and AMD's AM5.",
+    "acceptedAnswers": [
+      "LGA socket",
+      "Land grid array socket"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-pin-grid-array",
+    "term": "Pin grid array",
+    "definition": "CPU socket with holes that accept pins on the underside of the processor, locked by a lever; used by older AMD sockets such as AM4.",
+    "acceptedAnswers": [
+      "PGA socket",
+      "Pin grid array socket"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-multisocket-motherboard",
+    "term": "Multisocket motherboard",
+    "definition": "Board with two or more processor sockets so several CPUs work together, common in servers and high-end workstations.",
+    "acceptedAnswers": [
+      "Multisocket",
+      "Multiprocessor motherboard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "motherboards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-sound-card",
+    "term": "Sound card",
+    "definition": "Expansion card that turns digital data into audio, with color-coded 3.5 mm jacks: lime green for speakers, pink for a microphone, light blue for line in.",
+    "acceptedAnswers": [
+      "Audio card"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "expansion-cards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-video-card",
+    "term": "Video card",
+    "definition": "Expansion card with its own GPU and memory that drives monitors; usually goes in a PCIe x16 slot and may need 6- or 8-pin power.",
+    "acceptedAnswers": [
+      "Graphics card",
+      "Video adapter",
+      "Display adapter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "expansion-cards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-capture-card",
+    "term": "Capture card",
+    "definition": "Expansion card that records video or audio from an outside source, such as a camera or game console, for editing or streaming.",
+    "acceptedAnswers": [
+      "Video capture card"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "expansion-cards",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-host-bus-adapter",
+    "term": "Host bus adapter",
+    "definition": "Expansion card that connects a computer to external storage such as a storage area network, often over Fibre Channel with LC connectors.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "expansion-cards",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-basic-input-output-system",
+    "term": "Basic Input/Output System",
+    "definition": "Legacy motherboard firmware with a keyboard-driven text setup program that tests hardware and starts the operating system.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-unified-extensible-firmware-interface",
+    "term": "Unified Extensible Firmware Interface",
+    "definition": "Modern motherboard firmware that replaced the legacy type; it has a mouse-driven setup, faster startup, GPT drive support, and Secure Boot.",
+    "acceptedAnswers": [
+      "UEFI firmware"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-boot-options",
+    "term": "Boot options",
+    "definition": "Firmware setting that lists the order of devices to start from, such as SSD, USB, optical, or network; put the system drive first after installing.",
+    "acceptedAnswers": [
+      "Boot order",
+      "Boot sequence",
+      "Boot priority"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-temperature-monitoring",
+    "term": "Temperature monitoring",
+    "definition": "Firmware feature that reads sensors on the CPU, GPU, and chipset and can raise fan speed, warn, or shut down at a set limit.",
+    "acceptedAnswers": [
+      "Temperature monitor",
+      "Hardware monitoring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-fan-speed-control",
+    "term": "Fan speed control",
+    "definition": "Firmware setting that sets how fast fans on the motherboard headers spin, by RPM or by profiles such as silent, optimal, or full.",
+    "acceptedAnswers": [
+      "Fan control",
+      "Fan settings",
+      "Fan considerations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-secure-boot",
+    "term": "Secure Boot",
+    "definition": "UEFI feature that loads only boot loaders with a trusted digital signature, which blocks rootkits and tampered operating system loaders.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-boot-password",
+    "term": "Boot password",
+    "definition": "Firmware password that a person must enter before the computer will load the operating system.",
+    "acceptedAnswers": [
+      "User password",
+      "Power-on password"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-basic-input-output-system-password",
+    "term": "Basic Input/Output System password",
+    "definition": "Firmware administrator password that protects the setup utility, so only authorized people can change the firmware settings.",
+    "acceptedAnswers": [
+      "BIOS password",
+      "BIOS administrator password",
+      "Supervisor password",
+      "Setup password"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-universal-serial-bus-permissions",
+    "term": "Universal Serial Bus permissions",
+    "definition": "Firmware setting that can turn off USB ports or stop booting from USB drives, which helps block attacks with infected drives left in public.",
+    "acceptedAnswers": [
+      "USB permissions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-trusted-platform-module",
+    "term": "Trusted Platform Module",
+    "definition": "Chip on the motherboard that creates and stores encryption keys for full-drive encryption such as BitLocker; Windows 11 needs version 2.0.",
+    "acceptedAnswers": [
+      "Trusted Platform Module chip"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "aplus-def-hardware-security-module",
+    "term": "Hardware security module",
+    "definition": "Separate device, such as a USB key, adapter card, or network appliance, with a cryptoprocessor that creates, stores, and manages digital keys.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "firmware-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory"
+  },
+  {
+    "id": "aplus-def-advanced-risc-machine",
+    "term": "Advanced RISC Machine",
+    "definition": "Low-power processor architecture with a small, simple instruction set, used in smartphones, tablets, and some laptops because it runs cool and efficiently.",
+    "acceptedAnswers": [
+      "Advanced Reduced Instruction Set Computer Machine",
+      "ARM processor",
+      "ARM architecture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-multicore-processor",
+    "term": "Multicore processor",
+    "definition": "CPU package that holds two or more physical processing units that work at the same time, giving more work done with less heat.",
+    "acceptedAnswers": [
+      "Multicore",
+      "Multicore CPU"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-multithreading",
+    "term": "Multithreading",
+    "definition": "Technology that lets one core run two instruction streams at once, so the operating system sees two logical processors for each physical core.",
+    "acceptedAnswers": [
+      "Hyper-Threading",
+      "Simultaneous multithreading"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-heat-sink",
+    "term": "Heat sink",
+    "definition": "Finned block of aluminum or copper that sits on a CPU or chip and draws heat away by conduction; an active one has a fan on it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-thermal-paste",
+    "term": "Thermal paste",
+    "definition": "Compound spread thinly between a CPU and its cooler to fill tiny gaps in the metal; clean off and reapply it each time the cooler is removed.",
+    "acceptedAnswers": [
+      "Thermal compound",
+      "Thermal interface material",
+      "Thermal grease"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-thermal-pad",
+    "term": "Thermal pad",
+    "definition": "Soft, pre-formed sheet of heat-conducting material, often factory-applied to a cooler or used on memory chips and M.2 drives.",
+    "acceptedAnswers": [
+      "Thermal pads"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-case-fan",
+    "term": "Case fan",
+    "definition": "Fan mounted in the computer chassis that moves air through it; front fans pull cool air in, while rear and top fans push hot air out.",
+    "acceptedAnswers": [
+      "Chassis fan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-liquid-cooling",
+    "term": "Liquid cooling",
+    "definition": "Cooling system that pumps coolant through a block on the CPU or GPU to a radiator with fans; the most effective method, but it can leak.",
+    "acceptedAnswers": [
+      "Liquid cooling system",
+      "Water cooling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "group": "cpu-cooling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "aplus-def-redundant-power-supply",
+    "term": "Redundant power supply",
+    "definition": "Setup of two or more power units in one system, each with its own cord, so if one fails the other carries the load with no downtime.",
+    "acceptedAnswers": [
+      "Redundant PSU",
+      "Redundant power supplies"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-supply",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "aplus-def-modular-power-supply",
+    "term": "Modular power supply",
+    "definition": "Power supply whose cables plug into ports on the unit, so only the cables a build needs are attached, for neater cable management.",
+    "acceptedAnswers": [
+      "Modular PSU"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-supply",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "aplus-def-wattage-rating",
+    "term": "Wattage rating",
+    "definition": "The maximum power a power supply can deliver; it should be higher than the total draw of all components, or the system may reboot or fail to start.",
+    "acceptedAnswers": [
+      "Power supply wattage",
+      "Wattage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-supply",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "aplus-def-80-plus-certification",
+    "term": "80 Plus certification",
+    "definition": "Energy efficiency rating that a power supply converts at least 80 percent of AC input to DC, with Bronze, Silver, Gold, Platinum, and Titanium levels.",
+    "acceptedAnswers": [
+      "80 Plus",
+      "80 PLUS rating"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-supply",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "aplus-def-voltage-selector-switch",
+    "term": "Voltage selector switch",
+    "definition": "Switch on the back of older power supplies to set the input to 115 VAC (110–120 V, as in the US) or 230 VAC (220–240 V, as in Europe).",
+    "acceptedAnswers": [
+      "Voltage switch",
+      "Input voltage switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-supply",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "aplus-def-24-pin-motherboard-connector",
+    "term": "24-pin motherboard connector",
+    "definition": "Main power plug from the supply to an ATX motherboard, built as 20+4 so the extra four pins can detach for older 20-pin boards.",
+    "acceptedAnswers": [
+      "20+4-pin motherboard connector",
+      "20+4 pin connector",
+      "24-pin ATX connector",
+      "Main power connector",
+      "ATX power connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "aplus-def-molex-connector",
+    "term": "Molex connector",
+    "definition": "Older four-pin power plug with two beveled corners that supplies 5 V and 12 V to legacy PATA drives, optical drives, and fans.",
+    "acceptedAnswers": [
+      "Molex",
+      "Molex power connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2",
+      "220-1201/3.6"
+    ],
+    "group": "power-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-def-serial-ata-power-connector",
+    "term": "Serial ATA power connector",
+    "definition": "Thin 15-pin L-shaped power plug that supplies 3.3 V, 5 V, and 12 V to internal storage drives.",
+    "acceptedAnswers": [
+      "SATA power connector",
+      "Serial Advanced Technology Attachment power connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-connectors",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-def-12-volt-rail",
+    "term": "12-volt rail",
+    "definition": "Power supply output that carries the most load, feeding the CPU, video card, fans, and drive motors.",
+    "acceptedAnswers": [
+      "12V rail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-def-5-volt-rail",
+    "term": "5-volt rail",
+    "definition": "Power supply output that feeds drive logic boards and USB ports; a standby version stays on whenever the PC is plugged in.",
+    "acceptedAnswers": [
+      "5V rail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-def-3-3-volt-rail",
+    "term": "3.3-volt rail",
+    "definition": "Lowest power supply output, used by RAM, the chipset, and some expansion cards and drives, and present on the SATA power plug.",
+    "acceptedAnswers": [
+      "3.3V rail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "group": "power-connectors",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-def-printer-control-language",
+    "term": "Printer Control Language",
+    "definition": "HP page description language used by the most common printer drivers, fast and suited to everyday office documents and spreadsheets.",
+    "acceptedAnswers": [
+      "Printer Command Language"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-drivers",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-postscript",
+    "term": "PostScript",
+    "definition": "Adobe page description language that describes a page independently of the device, preferred for professional graphics, desktop publishing, and presentations.",
+    "acceptedAnswers": [
+      "Adobe PostScript"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-drivers",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-printer-firmware",
+    "term": "Printer firmware",
+    "definition": "Embedded software that controls a printer's hardware; update it from the maker's site or the embedded web page to fix bugs and security flaws.",
+    "acceptedAnswers": [
+      "Printer firmware update"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-drivers",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-printer-share",
+    "term": "Printer share",
+    "definition": "Windows feature that makes a printer attached to one PC available to others on the network; that host computer must stay on.",
+    "acceptedAnswers": [
+      "Printer sharing",
+      "Shared printer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-drivers",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-duplex-printing",
+    "term": "Duplex printing",
+    "definition": "Print setting that puts output on both sides of each sheet, either automatically with a special assembly or manually by refeeding paper.",
+    "acceptedAnswers": [
+      "Duplex",
+      "Duplexing",
+      "Two-sided printing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-orientation",
+    "term": "Orientation",
+    "definition": "Print setting that chooses portrait (tall) or landscape (wide) layout for the page.",
+    "acceptedAnswers": [
+      "Page orientation",
+      "Print orientation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-tray-settings",
+    "term": "Tray settings",
+    "definition": "Printer configuration that tells the device which paper size and type, such as letter, legal, or envelopes, is loaded in each paper source.",
+    "acceptedAnswers": [
+      "Paper tray settings",
+      "Tray configuration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-print-quality",
+    "term": "Print quality",
+    "definition": "Printer setting for output resolution in dots per inch, offered as draft, normal, or best; 600 DPI or higher is letter quality.",
+    "acceptedAnswers": [
+      "Print resolution"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-multifunction-device",
+    "term": "Multifunction device",
+    "definition": "Single office machine that can print, scan, copy, and often fax, usually connected to the network.",
+    "acceptedAnswers": [
+      "Multifunction printer",
+      "All-in-one printer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "scanning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-automatic-document-feeder",
+    "term": "Automatic document feeder",
+    "definition": "Scanner part that pulls a stack of loose pages through one at a time for copying or scanning, without placing each on the glass.",
+    "acceptedAnswers": [
+      "Automatic document feeder scanner",
+      "Document feeder"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "scanning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-flatbed-scanner",
+    "term": "Flatbed scanner",
+    "definition": "Scanner with a glass surface under a lid where one page, photo, or open book is laid face down to be scanned.",
+    "acceptedAnswers": [
+      "Flatbed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "scanning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-scan-to-email",
+    "term": "Scan to email",
+    "definition": "Network scan service that sends the scanned file, usually a PDF, to a recipient as an attachment through a mail server.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "scanning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "aplus-def-scan-to-folder",
+    "term": "Scan to folder",
+    "definition": "Network scan service that saves the scanned file into a shared folder on a server over SMB, useful when the file is too large to email.",
+    "acceptedAnswers": [
+      "Scan to network folder",
+      "Scan to SMB"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "scanning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "aplus-def-scan-to-cloud",
+    "term": "Scan to cloud",
+    "definition": "Network scan service that uploads the scanned file straight to an online storage service, such as OneDrive or Google Drive.",
+    "acceptedAnswers": [
+      "Cloud scanning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "scanning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-user-authentication",
+    "term": "User authentication",
+    "definition": "Printer security that makes a person log in at the device with credentials or a PIN before printing, copying, or scanning.",
+    "acceptedAnswers": [
+      "Printer authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "aplus-def-badging",
+    "term": "Badging",
+    "definition": "Printer security in which users identify themselves by tapping or swiping an ID card on a reader attached to the device.",
+    "acceptedAnswers": [
+      "Badge authentication",
+      "Badge access"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "aplus-def-audit-log",
+    "term": "Audit log",
+    "definition": "Record a printer or print server keeps of who printed what, when, and on which device; it usually must be enabled first.",
+    "acceptedAnswers": [
+      "Audit logs",
+      "Printer audit log"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "aplus-def-secured-print",
+    "term": "Secured print",
+    "definition": "Print option that holds a job at the device until the user arrives and enters a passcode, so sensitive pages are not left in the tray.",
+    "acceptedAnswers": [
+      "Secure print",
+      "Secured prints",
+      "Secure printing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "group": "printer-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "aplus-def-laser-printer",
+    "term": "Laser printer",
+    "definition": "Page printer that uses a laser to draw the image on a charged drum, then fuses powdered toner onto paper with heat; common in offices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "printer-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-inkjet-printer",
+    "term": "Inkjet printer",
+    "definition": "Printer that sprays tiny drops of liquid ink through nozzles in a moving head onto paper, common in homes for color photos.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "printer-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-thermal-printer",
+    "term": "Thermal printer",
+    "definition": "Printer that makes images by heating specially coated paper with a heating element, used for receipts at point-of-sale systems.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "printer-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-impact-printer",
+    "term": "Impact printer",
+    "definition": "Printer that strikes an inked ribbon against the paper with pins or formed characters, the only kind that can print multipart forms.",
+    "acceptedAnswers": [
+      "Dot-matrix printer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "printer-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-toner-cartridge",
+    "term": "Toner cartridge",
+    "definition": "Laser printer consumable that holds the powdered pigment and plastic, often with the drum built in; remove the sealing tape before installing.",
+    "acceptedAnswers": [
+      "Toner"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "laser-printer-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-maintenance-kit",
+    "term": "Maintenance kit",
+    "definition": "Set of replacement laser printer parts, such as a fuser and rollers, applied at a set page count; reset the counter afterward.",
+    "acceptedAnswers": [
+      "Printer maintenance kit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "laser-printer-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-imaging-drum",
+    "term": "Imaging drum",
+    "definition": "Light-sensitive cylinder in a laser printer that is charged, written on by the laser, and coated with toner before the image moves to paper.",
+    "acceptedAnswers": [
+      "Photosensitive drum",
+      "Drum"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "laser-printer-parts",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-fuser-assembly",
+    "term": "Fuser assembly",
+    "definition": "Laser printer part with heated, pressurized rollers, around 200 °C, that melt toner onto the paper; if it fails, prints smear when rubbed.",
+    "acceptedAnswers": [
+      "Fuser"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "laser-printer-parts",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-calibration",
+    "term": "Calibration",
+    "definition": "Printer routine that aligns the printing mechanism with the paper and adjusts color and margins, run after replacing cartridges or a maintenance kit.",
+    "acceptedAnswers": [
+      "Printer calibration",
+      "Calibrate"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "laser-printer-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-ink-cartridge",
+    "term": "Ink cartridge",
+    "definition": "Replaceable reservoir of liquid ink in an inkjet printer, one for black and one or more for colors; some printers stop when one runs dry.",
+    "acceptedAnswers": [
+      "Inkjet cartridge"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-printhead",
+    "term": "Printhead",
+    "definition": "Part that moves across the page and puts the image on paper: nozzles in an inkjet, or a row of pins in an impact printer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-roller",
+    "term": "Roller",
+    "definition": "Rubber cylinder that grabs paper from the tray and moves it through the printer; clean or replace it when pages misfeed or jam.",
+    "acceptedAnswers": [
+      "Pickup roller",
+      "Feed roller",
+      "Paper roller"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-thermal-paper",
+    "term": "Thermal paper",
+    "definition": "Specially coated paper that darkens where heat touches it; store it away from sunlight and heat, which turn it dark.",
+    "acceptedAnswers": [
+      "Special thermal paper"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-heating-element",
+    "term": "Heating element",
+    "definition": "Part of a thermal printer that heats spots on the coated paper to form text; clean it during maintenance.",
+    "acceptedAnswers": [
+      "Thermal head",
+      "Thermal print head"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-feed-assembly",
+    "term": "Feed assembly",
+    "definition": "Thermal printer mechanism, including the rubber platen roller, that pulls the paper roll between itself and the heated print head.",
+    "acceptedAnswers": [
+      "Paper feed assembly"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-ribbon",
+    "term": "Ribbon",
+    "definition": "Inked fabric strip in an impact printer that the pins strike to transfer ink onto the paper; replace it when print gets faint.",
+    "acceptedAnswers": [
+      "Printer ribbon",
+      "Ink ribbon"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "aplus-def-multipart-paper",
+    "term": "Multipart paper",
+    "definition": "Stacked forms with carbon or carbonless layers, so one strike prints an original and copies; only impact printers can use it.",
+    "acceptedAnswers": [
+      "Multipart forms",
+      "Carbon copy paper"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "group": "inkjet-thermal-impact-parts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  }
+]

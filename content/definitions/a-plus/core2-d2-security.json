@@ -1,0 +1,3090 @@
+[
+  {
+    "id": "aplus-def-bollard",
+    "term": "Bollard",
+    "definition": "A short, sturdy vertical post, sometimes retractable, placed outside a building or walkway to stop vehicles from getting close.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-access-control-vestibule",
+    "term": "Access control vestibule",
+    "definition": "A small entry space between two interlocking doors where a person is held until identified, which stops tailgating.",
+    "acceptedAnswers": [
+      "Mantrap"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-badge-reader",
+    "term": "Badge reader",
+    "definition": "A device beside a door that reads an employee's photo ID or proximity card, often by RFID, and unlocks the door for authorized holders.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-alarm-system",
+    "term": "Alarm system",
+    "definition": "A system of door and window sensors and motion detectors that sounds a siren and alerts a central monitoring service when someone breaks in.",
+    "acceptedAnswers": [
+      "Alarm"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-motion-sensor",
+    "term": "Motion sensor",
+    "definition": "A detector, usually infrared (heat) or ultrasonic, that notices movement in a protected area and triggers an alarm or turns on lights.",
+    "acceptedAnswers": [
+      "Motion detector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-magnetometer",
+    "term": "Magnetometer",
+    "definition": "A walk-through scanner at an entry point that uses an electromagnetic field to find concealed metal weapons or equipment being carried out.",
+    "acceptedAnswers": [
+      "Metal detector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-lighting",
+    "term": "Lighting",
+    "definition": "Bright illumination of a building's perimeter and entrances that deters intruders, removes hiding places, and lets security cameras record clear images.",
+    "acceptedAnswers": [
+      "Security lighting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "facility-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-key-fob",
+    "term": "Key fob",
+    "definition": "A small proximity token on a keychain that a user holds near a reader to unlock a door, like a smaller version of an entry card.",
+    "acceptedAnswers": [
+      "Fob"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "physical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-smart-card",
+    "term": "Smart card",
+    "definition": "A credential card with an embedded chip that talks to the authentication system and can also sign and encrypt data, such as a PIV or CAC card.",
+    "acceptedAnswers": [
+      "Smartcard"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "physical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-mobile-digital-key",
+    "term": "Mobile digital key",
+    "definition": "A secure credential stored on a phone that unlocks doors or cars over NFC or Bluetooth and can be revoked remotely if the phone is lost.",
+    "acceptedAnswers": [
+      "Digital key"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "physical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-retina-scanner",
+    "term": "Retina scanner",
+    "definition": "A biometric reader that shines low-energy infrared light into the eye to map the unique pattern of blood vessels at the back of it.",
+    "acceptedAnswers": [
+      "Retinal scanner"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "physical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-palm-print-scanner",
+    "term": "Palm print scanner",
+    "definition": "A biometric reader that captures the ridges, lines, and creases across a person's whole hand, a larger area than a single fingertip.",
+    "acceptedAnswers": [
+      "Palmprint scanner"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "physical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-voice-recognition-technology",
+    "term": "Voice recognition technology",
+    "definition": "A biometric method that identifies a person by analyzing the pitch, tone, and cadence of their speech to build a voiceprint.",
+    "acceptedAnswers": [
+      "Voice recognition"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "physical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 43: Physical Security"
+  },
+  {
+    "id": "aplus-def-principle-of-least-privilege",
+    "term": "Principle of least privilege",
+    "definition": "The rule that each user or program gets only the access and rights needed to do its job, and no more.",
+    "acceptedAnswers": [
+      "Least privilege"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-zero-trust-model",
+    "term": "Zero Trust model",
+    "definition": "A security approach of never trust, always verify, which requires authentication and authorization for every request, even from inside the network perimeter.",
+    "acceptedAnswers": [
+      "Zero Trust"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-access-control-list",
+    "term": "Access control list",
+    "definition": "A list of entries attached to an object or firewall that states which users, groups, addresses, or ports are allowed or denied.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-just-in-time-access",
+    "term": "Just-in-time access",
+    "definition": "Granting elevated rights only at the moment they are needed and removing them automatically when the task ends, as with sudo in Linux.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-privileged-access-management",
+    "term": "Privileged access management",
+    "definition": "A strategy and toolset that vaults admin credentials, records admin sessions, and grants elevated rights only temporarily to protect high-power accounts.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-data-loss-prevention",
+    "term": "Data loss prevention",
+    "definition": "Tools that watch data in use and in transit and block sensitive information, such as customer records, from being emailed or copied outside the organization.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-identity-and-access-management",
+    "term": "Identity and access management",
+    "definition": "The policies and systems that verify who each user is and control what each one may reach, including provisioning, deprovisioning, and auditing accounts.",
+    "acceptedAnswers": [
+      "Identity access management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-single-sign-on",
+    "term": "Single sign-on",
+    "definition": "An authentication arrangement in which one login with one set of credentials gives a user access to many applications and systems.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1",
+      "220-1202/2.2"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-security-assertion-markup-language",
+    "term": "Security Assertion Markup Language",
+    "definition": "An XML-based open standard that passes authentication and authorization data from an identity provider to a service provider, making web single sign-on possible.",
+    "acceptedAnswers": [
+      "Security Assertions Markup Language"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "logical-access",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-multifactor-authentication",
+    "term": "Multifactor authentication",
+    "definition": "Logging in with two or more different kinds of proof, such as something you know, something you have, and something you are.",
+    "acceptedAnswers": [
+      "Multi-factor authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1",
+      "220-1202/2.3"
+    ],
+    "group": "mfa",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-hardware-token",
+    "term": "Hardware token",
+    "definition": "A small physical device, such as an RSA key fob, that generates one-time passcodes; it is hard to copy unless stolen.",
+    "acceptedAnswers": [
+      "Hard token"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "mfa",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-authenticator-application",
+    "term": "Authenticator application",
+    "definition": "A phone app, such as Google Authenticator, that generates time-based codes for a second login step without relying on text messages.",
+    "acceptedAnswers": [
+      "Authenticator app"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "mfa",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-time-based-one-time-password",
+    "term": "Time-based one-time password",
+    "definition": "A short code calculated from a shared secret and the current time that changes every 30 seconds or so, and needs synchronized clocks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "mfa",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-one-time-password",
+    "term": "One-time password",
+    "definition": "A single-use code, delivered by text, email, voice call, app, or hardware token, that is invalid after one login, which defeats replay attacks.",
+    "acceptedAnswers": [
+      "One-time passcode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "group": "mfa",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-local-account",
+    "term": "Local account",
+    "definition": "A Windows user account that exists only on one computer, needs no email address, and does not sync settings to other devices.",
+    "acceptedAnswers": [
+      "Local user account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-accounts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-microsoft-account",
+    "term": "Microsoft account",
+    "definition": "A Windows sign-in tied to an email address and online profile that syncs settings, OneDrive files, and Store apps across devices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-accounts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-standard-user",
+    "term": "Standard user",
+    "definition": "The default Windows account level, which can use apps and its own data but cannot install software or change system settings without elevation.",
+    "acceptedAnswers": [
+      "Standard account",
+      "Standard user account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-accounts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-administrator",
+    "term": "Administrator",
+    "definition": "The most powerful Windows account level, with full control of the computer, including installing software and managing other users.",
+    "acceptedAnswers": [
+      "Administrator account",
+      "Administrators"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-accounts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-guest-account",
+    "term": "Guest account",
+    "definition": "A built-in, disabled-by-default Windows account with very limited temporary access that cannot install software, change settings, or change its password.",
+    "acceptedAnswers": [
+      "Guest user"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2",
+      "220-1202/2.7"
+    ],
+    "group": "windows-accounts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-user-account-control",
+    "term": "User Account Control",
+    "definition": "The Windows feature that runs users with standard rights and shows a consent or credential prompt before any task that needs administrative rights.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-accounts",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 44: Logical Security"
+  },
+  {
+    "id": "aplus-def-microsoft-defender-antivirus",
+    "term": "Microsoft Defender Antivirus",
+    "definition": "The built-in Windows antimalware tool, found under Virus & threat protection, that runs scans, updates definitions, and can have real-time protection turned off.",
+    "acceptedAnswers": [
+      "Windows Defender Antivirus",
+      "Defender Antivirus"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-microsoft-defender-firewall",
+    "term": "Microsoft Defender Firewall",
+    "definition": "The built-in Windows host firewall, opened with firewall.cpl or wf.msc, that blocks unsolicited inbound traffic per network profile and allows app or port exceptions.",
+    "acceptedAnswers": [
+      "Windows Defender Firewall",
+      "Defender Firewall"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-windows-hello",
+    "term": "Windows Hello",
+    "definition": "The Windows passwordless sign-in feature that uses a face scan, a fingerprint, or a PIN tied to that one device, with data kept in the TPM.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-bitlocker",
+    "term": "BitLocker",
+    "definition": "The Windows Pro and Enterprise feature that encrypts a whole internal drive with AES, using a TPM chip or a USB key to hold the keys.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2",
+      "220-1202/2.7"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-bitlocker-to-go",
+    "term": "BitLocker To Go",
+    "definition": "The Windows feature that applies full-drive encryption to USB flash drives and other removable media, protected by a password or smart card.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-encrypting-file-system",
+    "term": "Encrypting File System",
+    "definition": "The NTFS feature that encrypts individual files and folders for one user through the Advanced Attributes checkbox; it does not encrypt whole drives.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-data-at-rest-encryption",
+    "term": "Data-at-rest encryption",
+    "definition": "Encrypting information while it sits on a storage device, such as a drive or tape, so it stays unreadable if the device is stolen.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "windows-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-ntfs-permissions",
+    "term": "NTFS permissions",
+    "definition": "Permissions set on the Security tab that apply to a file or folder both locally and over the network, from Read up to Full Control.",
+    "acceptedAnswers": [
+      "NTFS permission"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "ntfs-permissions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-share-permissions",
+    "term": "Share permissions",
+    "definition": "Permissions set on the Sharing tab, Read, Change, or Full Control, that apply only when a folder is reached over the network.",
+    "acceptedAnswers": [
+      "Share permission"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "ntfs-permissions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-permission-inheritance",
+    "term": "Permission inheritance",
+    "definition": "The default behavior in which a new subfolder or file takes on the permissions of its parent folder until this is disabled.",
+    "acceptedAnswers": [
+      "Inheritance"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "ntfs-permissions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-administrative-share",
+    "term": "Administrative share",
+    "definition": "A concealed share, such as C$ or ADMIN$, that Windows creates automatically for administrators and that ends with a dollar sign.",
+    "acceptedAnswers": [
+      "Hidden share",
+      "Admin share"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "ntfs-permissions",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-active-directory",
+    "term": "Active Directory",
+    "definition": "Microsoft's directory service, run on Windows Server domain controllers, that centrally manages user accounts, computers, and policies for a domain.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "active-directory",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-organizational-unit",
+    "term": "Organizational unit",
+    "definition": "A container in Active Directory used to sort users and computers, often by department, so each set can get its own Group Policy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "active-directory",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-group-policy",
+    "term": "Group Policy",
+    "definition": "The Windows rule system, edited with gpedit.msc locally or GPOs in a domain and refreshed with gpupdate, that controls user and computer settings.",
+    "acceptedAnswers": [
+      "Group Policy Object"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "active-directory",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-login-script",
+    "term": "Login script",
+    "definition": "A batch or PowerShell file that runs automatically when a user signs in to a domain to map drives, set printers, or start programs.",
+    "acceptedAnswers": [
+      "Logon script",
+      "Log-in script"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "active-directory",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-folder-redirection",
+    "term": "Folder redirection",
+    "definition": "Sending a user's Documents or Desktop folder to a network share instead of the local drive, so files follow the user to any computer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "active-directory",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-security-group",
+    "term": "Security group",
+    "definition": "An Active Directory group, such as Domain Admins or Backup Operators, used to assign permissions and access to many users at once.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "group": "active-directory",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-def-wi-fi-protected-access-2",
+    "term": "Wi-Fi Protected Access 2",
+    "definition": "The wireless security standard, also called 802.11i, that uses AES with CCMP and offers Personal (pre-shared key) and Enterprise (RADIUS) modes.",
+    "acceptedAnswers": [
+      "Wi-Fi Protected Access II"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-wi-fi-protected-access-3",
+    "term": "Wi-Fi Protected Access 3",
+    "definition": "The newest wireless security standard, required for certification since 2020, with stronger key exchange than its predecessor and 192-bit strength in Enterprise mode.",
+    "acceptedAnswers": [
+      "Wi-Fi Protected Access III"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-temporal-key-integrity-protocol",
+    "term": "Temporal Key Integrity Protocol",
+    "definition": "An older wireless encryption method from the original WPA that wraps the RC4 cipher with per-packet keys; it is deprecated and weaker than AES.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-advanced-encryption-standard",
+    "term": "Advanced Encryption Standard",
+    "definition": "A strong symmetric block cipher with 128- or 256-bit keys, used by WPA2, WPA3, BitLocker, and EFS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-remote-authentication-dial-in-user-service",
+    "term": "Remote Authentication Dial-In User Service",
+    "definition": "A central AAA server for VPN, dial-up, and enterprise Wi-Fi logons that uses UDP ports 1812 and 1813 and combines authentication with authorization.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-terminal-access-controller-access-control-system-plus",
+    "term": "Terminal Access Controller Access-Control System Plus",
+    "definition": "A Cisco-developed AAA protocol that uses TCP port 49 and keeps authentication, authorization, and accounting as separate steps.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-kerberos",
+    "term": "Kerberos",
+    "definition": "A ticket-based authentication protocol on port 88 that provides mutual authentication when users log on to an Active Directory domain controller.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "group": "wireless-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-virus",
+    "term": "Virus",
+    "definition": "Malicious code that attaches to a host file or program and spreads when that file is run or shared, often damaging files.",
+    "acceptedAnswers": [
+      "Computer virus"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-trojan",
+    "term": "Trojan",
+    "definition": "Malware disguised as a useful or legitimate program that the user installs willingly, which then opens a backdoor or delivers other malware.",
+    "acceptedAnswers": [
+      "Trojan horse"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-rootkit",
+    "term": "Rootkit",
+    "definition": "Malware that gains administrator-level control and hides itself inside the operating system, so it is usually found only by scanning from outside the OS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-boot-sector-virus",
+    "term": "Boot sector virus",
+    "definition": "Malware that infects the master boot record or boot sector, so it loads before the operating system; Secure Boot helps block it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-fileless-malware",
+    "term": "Fileless malware",
+    "definition": "Malicious code that runs in memory through trusted tools like PowerShell instead of executable files on disk, making it hard to detect.",
+    "acceptedAnswers": [
+      "Fileless"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-ransomware",
+    "term": "Ransomware",
+    "definition": "Malware that encrypts a victim's files or locks the system and demands payment, usually in cryptocurrency, for the decryption key.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-cryptominer",
+    "term": "Cryptominer",
+    "definition": "Malware, often JavaScript on a malicious web page, that secretly uses a victim's CPU or GPU to mine cryptocurrency, causing slowdowns and high usage.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-infection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-spyware",
+    "term": "Spyware",
+    "definition": "Malware that secretly gathers information about a user's activity, such as browsing habits or personal data, and sends it to a third party.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-surveillance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-keylogger",
+    "term": "Keylogger",
+    "definition": "Software or a small hardware device that records every keystroke to capture passwords and other typed data.",
+    "acceptedAnswers": [
+      "Keystroke logger"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-surveillance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-stalkerware",
+    "term": "Stalkerware",
+    "definition": "Monitoring software, secretly installed on one person's phone by someone they know, that reveals messages, calls, and location to that other person.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-surveillance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-adware",
+    "term": "Adware",
+    "definition": "Software that shows unwanted advertisements, such as pop-ups and banners, to earn money for its maker, often slowing the device.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-surveillance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-potentially-unwanted-program",
+    "term": "Potentially unwanted program",
+    "definition": "Software, often bundled with a legitimate download, that the user did not mean to install, such as toolbars or ad add-ons.",
+    "acceptedAnswers": [
+      "Potentially unwanted application"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-surveillance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-recovery-console",
+    "term": "Recovery console",
+    "definition": "A set of repair tools that runs outside normal Windows, in Windows called WinRE, offering Startup Repair, System Restore, Command Prompt, and image recovery.",
+    "acceptedAnswers": [
+      "Windows Recovery Environment"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-endpoint-detection-and-response",
+    "term": "Endpoint detection and response",
+    "definition": "An agent on each computer that continuously records process, network, and file activity to detect suspicious behavior and help respond to it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-managed-detection-and-response",
+    "term": "Managed detection and response",
+    "definition": "An outsourced service in which a provider's analysts monitor an organization's security tools around the clock and hunt for and respond to threats.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-extended-detection-and-response",
+    "term": "Extended detection and response",
+    "definition": "A platform that collects and correlates security data from endpoints, networks, servers, email, and cloud, not just from endpoints.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "group": "malware-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-antivirus",
+    "term": "Antivirus",
+    "definition": "Security software that mainly compares files against a database of known signatures, so its definitions must be kept up to date.",
+    "acceptedAnswers": [
+      "Anti-virus"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4",
+      "220-1202/2.8"
+    ],
+    "group": "malware-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-anti-malware",
+    "term": "Anti-malware",
+    "definition": "Security software that adds heuristic and behavior analysis to signature matching, so it can catch spyware, rootkits, and new threats as well.",
+    "acceptedAnswers": [
+      "Antimalware"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4",
+      "220-1202/2.8"
+    ],
+    "group": "malware-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-def-quarantine",
+    "term": "Quarantine",
+    "definition": "The malware removal step of isolating an infected computer from the network and shared drives so the infection cannot spread.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "group": "malware-removal",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-safe-mode",
+    "term": "Safe mode",
+    "definition": "A Windows startup option that loads only basic drivers and services, which limits malware activity while a scan runs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "group": "malware-removal",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-preinstallation-environment",
+    "term": "Preinstallation environment",
+    "definition": "A small bootable operating system, such as Windows PE on a USB drive, used to scan and repair a computer from outside its installed OS.",
+    "acceptedAnswers": [
+      "Windows Preinstallation Environment"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "group": "malware-removal",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-reimaging",
+    "term": "Reimaging",
+    "definition": "The last-resort removal step of wiping the drive and restoring a clean standard image or reinstalling the OS, after backing up the user's data.",
+    "acceptedAnswers": [
+      "Reimage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4",
+      "220-1202/2.6"
+    ],
+    "group": "malware-removal",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-restore-point",
+    "term": "Restore point",
+    "definition": "A saved snapshot of Windows system files and settings; after malware is removed, System Restore is turned back on and a new one is made.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "group": "malware-removal",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-phishing",
+    "term": "Phishing",
+    "definition": "A fraudulent email or website that pretends to come from a trusted organization to trick many people into giving up credentials or personal information.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-vishing",
+    "term": "Vishing",
+    "definition": "Voice-based fraud in which a phone call, often an automated VoIP message, pretends to be a bank or company to get account details.",
+    "acceptedAnswers": [
+      "Voice phishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-smishing",
+    "term": "Smishing",
+    "definition": "Fraud carried out with text messages, such as a fake delivery or tax notice, that urges the recipient to tap a malicious link.",
+    "acceptedAnswers": [
+      "SMS phishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-qr-code-phishing",
+    "term": "QR code phishing",
+    "definition": "A scam that uses a fake scannable code, for example a sticker over a parking meter's real one, to send victims to a credential-stealing site.",
+    "acceptedAnswers": [
+      "Quishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-spear-phishing",
+    "term": "Spear phishing",
+    "definition": "A fraudulent message campaign tailored to a specific group or person using researched details, rather than sent to thousands of random people.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-whaling",
+    "term": "Whaling",
+    "definition": "A targeted fraud campaign aimed at senior executives, the high-value targets of an organization.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-business-email-compromise",
+    "term": "Business email compromise",
+    "definition": "A scam in which attackers pose as an executive or vendor in email to trick employees into wiring money or sending sensitive data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "phishing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-social-engineering",
+    "term": "Social engineering",
+    "definition": "Manipulating people, rather than systems, into revealing confidential information or performing actions that harm security.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "social-engineering",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-shoulder-surfing",
+    "term": "Shoulder surfing",
+    "definition": "Watching someone directly, or with a camera, as they type a password or PIN; a privacy filter helps prevent it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "social-engineering",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-tailgating",
+    "term": "Tailgating",
+    "definition": "Following an authorized person through a secured door without their knowledge or consent; an access control vestibule prevents it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "social-engineering",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-impersonation",
+    "term": "Impersonation",
+    "definition": "Pretending to be another person, such as a technician, vendor, or manager, often with a made-up story, to gain access or information.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "social-engineering",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-dumpster-diving",
+    "term": "Dumpster diving",
+    "definition": "Searching through trash and recycling bins for documents, drives, or notes that contain sensitive information; shredding prevents it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "social-engineering",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-denial-of-service",
+    "term": "Denial of service",
+    "definition": "An attack from one source, such as a ping or SYN flood, that overwhelms a server or network so legitimate users cannot reach it.",
+    "acceptedAnswers": [
+      "Denial of service attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "network-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-distributed-denial-of-service",
+    "term": "Distributed denial of service",
+    "definition": "An attack in which many compromised computers in a botnet flood one target at the same time to make it unavailable.",
+    "acceptedAnswers": [
+      "Distributed denial of service attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "network-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-evil-twin",
+    "term": "Evil twin",
+    "definition": "A rogue wireless access point that uses the same SSID as a legitimate nearby network to lure users and capture their traffic.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "network-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-zero-day-attack",
+    "term": "Zero-day attack",
+    "definition": "An exploit of a software flaw that the vendor does not yet know about or has not patched, so no fix exists when it is used.",
+    "acceptedAnswers": [
+      "Zero-day"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "network-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-spoofing",
+    "term": "Spoofing",
+    "definition": "Falsifying identifying information, such as an IP address, MAC address, or email sender, to masquerade as a trusted source.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "network-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-on-path-attack",
+    "term": "On-path attack",
+    "definition": "An attack in which the attacker secretly sits between two communicating hosts to intercept, read, or alter their traffic; formerly called man-in-the-middle.",
+    "acceptedAnswers": [
+      "Man-in-the-middle attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "network-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-brute-force-attack",
+    "term": "Brute-force attack",
+    "definition": "Cracking a password by trying every possible combination of characters; it always works eventually but takes long against lengthy passwords.",
+    "acceptedAnswers": [
+      "Brute force"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "password-and-web-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-dictionary-attack",
+    "term": "Dictionary attack",
+    "definition": "Cracking a password by trying words from a prepared list of likely words and common passwords, one after another.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "password-and-web-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-structured-query-language-injection",
+    "term": "Structured Query Language injection",
+    "definition": "An attack that types database commands into a poorly validated web form so the database reveals or changes data; input validation prevents it.",
+    "acceptedAnswers": [
+      "SQL injection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "password-and-web-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-cross-site-scripting",
+    "term": "Cross-site scripting",
+    "definition": "An attack that plants malicious script, often JavaScript, in a trusted web page so it runs in visitors' browsers and steals cookies or session data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "password-and-web-attacks",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-insider-threat",
+    "term": "Insider threat",
+    "definition": "Danger from an employee, contractor, or planted device already inside the organization, whether the harm is deliberate or accidental.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "threats-and-vulnerabilities",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-supply-chain-attack",
+    "term": "Supply chain attack",
+    "definition": "Compromising a trusted third-party product, service, or software delivery pipeline in order to reach the organizations that use it.",
+    "acceptedAnswers": [
+      "Pipeline attack",
+      "Supply chain pipeline attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "threats-and-vulnerabilities",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-non-compliant-system",
+    "term": "Non-compliant system",
+    "definition": "A computer that breaks the organization's security policy, for example by missing required updates or antimalware, and so weakens the whole network.",
+    "acceptedAnswers": [
+      "Noncompliant system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "threats-and-vulnerabilities",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 47: Social Engineering, Threats, and Vulnerabilities"
+  },
+  {
+    "id": "aplus-def-unprotected-system",
+    "term": "Unprotected system",
+    "definition": "A computer running without antivirus software or a firewall, leaving it open to malware and network attacks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "group": "threats-and-vulnerabilities",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-def-password-complexity",
+    "term": "Password complexity",
+    "definition": "A rule that a password must mix character types, in Windows at least three of uppercase, lowercase, digits, and special characters.",
+    "acceptedAnswers": [
+      "Complexity requirements"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "passwords",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-password-expiration",
+    "term": "Password expiration",
+    "definition": "A policy that forces a password change after a set time, such as the Windows default of 42 days; NIST now advises it only after a breach.",
+    "acceptedAnswers": [
+      "Maximum password age"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "passwords",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-password-history",
+    "term": "Password history",
+    "definition": "A Windows policy that remembers a user's previous passwords so they cannot be reused when the password is changed.",
+    "acceptedAnswers": [
+      "Enforce password history"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "passwords",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-password-manager",
+    "term": "Password manager",
+    "definition": "An application or browser feature that stores credentials in an encrypted vault and can generate long, unique passwords for every site.",
+    "acceptedAnswers": [
+      "Password vault"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7",
+      "220-1202/2.11"
+    ],
+    "group": "passwords",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-account-lockout-threshold",
+    "term": "Account lockout threshold",
+    "definition": "A policy that locks a user account after a set number of failed logon attempts, which slows password-guessing attacks.",
+    "acceptedAnswers": [
+      "Account lockout",
+      "Failed attempts lockout"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7",
+      "220-1202/2.8"
+    ],
+    "group": "account-hardening",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-logon-time-restriction",
+    "term": "Logon time restriction",
+    "definition": "An account setting that allows a user to sign in only during chosen hours and days, such as weekdays from 8 a.m. to 6 p.m.",
+    "acceptedAnswers": [
+      "Logon hours",
+      "Log-in time restriction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "account-hardening",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-screensaver-lock",
+    "term": "Screensaver lock",
+    "definition": "A password-protected screensaver or timeout that locks an idle computer, so the user must sign in again when returning.",
+    "acceptedAnswers": [
+      "Screen saver lock"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "account-hardening",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-autorun",
+    "term": "AutoRun",
+    "definition": "The Windows feature that automatically starts a program from inserted removable media; turning it off stops embedded malware from launching.",
+    "acceptedAnswers": [
+      "AutoPlay"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "group": "account-hardening",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-personally-identifiable-information",
+    "term": "Personally identifiable information",
+    "definition": "Any data that can identify a specific person, such as a name with a birth date, an ID number, or an address, which must be protected.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7",
+      "220-1202/4.6"
+    ],
+    "group": "account-hardening",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "aplus-def-screen-lock",
+    "term": "Screen lock",
+    "definition": "A phone or tablet setting that requires a face, fingerprint, PIN, pattern, or password before the device can be used after a timeout.",
+    "acceptedAnswers": [
+      "Lock screen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "group": "mobile-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-def-configuration-profile",
+    "term": "Configuration profile",
+    "definition": "A set of security settings, often pushed by MDM, that enforces policies on mobile devices, such as password rules, app limits, and VPN setup.",
+    "acceptedAnswers": [
+      "Mobile configuration profile"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "group": "mobile-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-def-patch-management",
+    "term": "Patch management",
+    "definition": "Keeping operating systems and applications current by finding, testing, and installing updates that fix security flaws.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "group": "mobile-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-def-endpoint-security-software",
+    "term": "Endpoint security software",
+    "definition": "Antivirus, anti-malware, firewall, and content filtering apps installed on a phone or tablet to protect it from threats.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "group": "mobile-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-def-locator-application",
+    "term": "Locator application",
+    "definition": "An app, such as Find My or Find My Device, that uses GPS to show where a lost or stolen phone is.",
+    "acceptedAnswers": [
+      "Locator app"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "group": "mobile-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-def-remote-wipe",
+    "term": "Remote wipe",
+    "definition": "A command sent over the internet to a lost or stolen mobile device that erases all of its data.",
+    "acceptedAnswers": [
+      "Remote erase"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "group": "mobile-security",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-def-drilling",
+    "term": "Drilling",
+    "definition": "Physically destroying a hard drive by boring holes through its platters so it cannot be read.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-shredding",
+    "term": "Shredding",
+    "definition": "Feeding storage drives into an industrial machine that tears them into small pieces, also called pulverizing, usually done by a third-party vendor.",
+    "acceptedAnswers": [
+      "Drive shredding"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-degaussing",
+    "term": "Degaussing",
+    "definition": "Erasing magnetic media with a strong electromagnetic field, which also leaves a hard drive unusable; it does not work on SSDs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-incineration",
+    "term": "Incineration",
+    "definition": "Destroying storage media or documents by burning them completely, usually at a licensed facility.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-drive-wiping",
+    "term": "Drive wiping",
+    "definition": "Overwriting every sector of a drive with zeros or patterns, for example with format /p or diskpart clean all, so the drive can be reused.",
+    "acceptedAnswers": [
+      "Wiping",
+      "Erasing",
+      "Zeroing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-low-level-format",
+    "term": "Low-level format",
+    "definition": "A physical format, done by the manufacturer, that creates the tracks and sectors on a hard disk; users rely on zero-fill tools instead.",
+    "acceptedAnswers": [
+      "Low-level formatting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-standard-format",
+    "term": "Standard format",
+    "definition": "A format done from the OS that writes a new file system; quick mode only removes access to files, while full mode also zeros the partition.",
+    "acceptedAnswers": [
+      "Standard formatting",
+      "High-level format"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-certificate-of-destruction",
+    "term": "Certificate of destruction",
+    "definition": "A document from a third-party vendor that proves storage media were destroyed or recycled, often required by data privacy laws.",
+    "acceptedAnswers": [
+      "Certification of destruction",
+      "Destruction certificate"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.9"
+    ],
+    "group": "data-destruction",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 50: Data Destruction and Disposal"
+  },
+  {
+    "id": "aplus-def-ip-filtering",
+    "term": "IP filtering",
+    "definition": "A router setting that allows or blocks devices according to a list of addresses entered in advance.",
+    "acceptedAnswers": [
+      "IP address filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-firewall",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-content-filtering",
+    "term": "Content filtering",
+    "definition": "Blocking websites or content by category, domain, or schedule, as with a router's family safety page or a mobile security app.",
+    "acceptedAnswers": [
+      "Parental controls"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10",
+      "220-1202/2.8"
+    ],
+    "group": "soho-firewall",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-universal-plug-and-play",
+    "term": "Universal Plug and Play",
+    "definition": "A set of protocols that lets devices discover each other and open router ports automatically; it is often disabled because malware can abuse it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-firewall",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-screened-subnet",
+    "term": "Screened subnet",
+    "definition": "A network segment between the internet and the LAN, protected by a firewall, for servers the public must reach; formerly called a DMZ.",
+    "acceptedAnswers": [
+      "Demilitarized zone"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-firewall",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-port-forwarding",
+    "term": "Port forwarding",
+    "definition": "A router rule that sends traffic arriving on an external port to a chosen internal IP address and port, such as a web server.",
+    "acceptedAnswers": [
+      "Port mapping"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-firewall",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-default-password",
+    "term": "Default password",
+    "definition": "The factory-set credential, often blank or admin, that must be changed first when setting up a router, before anything else.",
+    "acceptedAnswers": [
+      "Default credentials"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-router",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-secure-management-access",
+    "term": "Secure management access",
+    "definition": "A router setting that requires an encrypted protocol, such as HTTPS, for the admin login so credentials are not sent in plaintext.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-router",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-service-set-identifier",
+    "term": "Service set identifier",
+    "definition": "The name of a wireless network; its default value should be changed, and its broadcast can be turned off to hide it from casual scans.",
+    "acceptedAnswers": [
+      "Network name"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-router",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-guest-network",
+    "term": "Guest network",
+    "definition": "A separate wireless network that gives visitors or IoT devices internet access but keeps them away from internal resources and main-network clients.",
+    "acceptedAnswers": [
+      "Guest access"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-router",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-wi-fi-protected-setup",
+    "term": "Wi-Fi Protected Setup",
+    "definition": "A push-button or 8-digit PIN method for joining wireless devices easily; it should be disabled because the PIN is open to brute-force attacks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "group": "soho-router",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "aplus-def-trusted-source",
+    "term": "Trusted source",
+    "definition": "A known, legitimate provider of downloads, such as the vendor's own site or official extension store, approved by the organization's policy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-trust",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-untrusted-source",
+    "term": "Untrusted source",
+    "definition": "A download site, forum, or third-party store that is unknown or unreliable, so files from it may be altered or contain malware.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-trust",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-hashing",
+    "term": "Hashing",
+    "definition": "Running a file through a one-way algorithm to produce a fixed-length value that, compared with the publisher's value, proves the download was not altered.",
+    "acceptedAnswers": [
+      "Hash"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-trust",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-extension",
+    "term": "Extension",
+    "definition": "A small add-on program, installed from a store such as the Chrome Web Store, that adds features to a web browser and can be enabled or disabled.",
+    "acceptedAnswers": [
+      "Browser extension"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-trust",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-plug-in",
+    "term": "Plug-in",
+    "definition": "An older type of browser add-on that handles specific content, such as a video codec or decryption module, now mostly replaced by extensions.",
+    "acceptedAnswers": [
+      "Plugin"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-trust",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-digital-certificate",
+    "term": "Digital certificate",
+    "definition": "An electronic credential, issued by a trusted authority, that proves a website's identity and enables HTTPS; the browser warns when it is expired or invalid.",
+    "acceptedAnswers": [
+      "Valid certificate"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-trust",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-pop-up-blocker",
+    "term": "Pop-up blocker",
+    "definition": "A browser setting that stops sites from opening new windows on their own, which blocks many ads and scam prompts.",
+    "acceptedAnswers": [
+      "Popup blocker"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-clearing-browsing-data",
+    "term": "Clearing browsing data",
+    "definition": "Deleting a browser's stored history, cookies, saved form entries, and passwords so other users of the computer cannot see them.",
+    "acceptedAnswers": [
+      "Clear browsing data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-clearing-cache",
+    "term": "Clearing cache",
+    "definition": "Deleting the browser's locally stored copies of web pages and images, which fixes pages that show outdated content or load incorrectly.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-private-browsing-mode",
+    "term": "Private-browsing mode",
+    "definition": "A browser window, InPrivate in Edge or Incognito in Chrome (Ctrl+Shift+N), that keeps no history, cookies, or cache after it closes.",
+    "acceptedAnswers": [
+      "Private browsing",
+      "Incognito mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-browser-data-synchronization",
+    "term": "Browser data synchronization",
+    "definition": "Signing in to a browser account so bookmarks, history, passwords, and settings are copied to every device that uses the same account.",
+    "acceptedAnswers": [
+      "Browser synchronization",
+      "Browser sync"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-def-ad-blocker",
+    "term": "Ad blocker",
+    "definition": "A browser extension or setting that stops advertisements from loading, which also limits tracking and adware.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-def-secure-domain-name-system",
+    "term": "Secure Domain Name System",
+    "definition": "Encrypting name-lookup requests, for example with DNS over HTTPS, so third parties cannot read or tamper with them.",
+    "acceptedAnswers": [
+      "Secure DNS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "group": "browser-settings",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  }
+]

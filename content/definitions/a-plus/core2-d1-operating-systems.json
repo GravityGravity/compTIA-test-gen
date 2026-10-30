@@ -1,0 +1,3193 @@
+[
+  {
+    "id": "aplus-def-chrome-os",
+    "term": "Chrome OS",
+    "definition": "Google's lightweight, Linux-based desktop operating system for Chromebooks that runs mostly web and cloud apps and updates itself automatically.",
+    "acceptedAnswers": [
+      "ChromeOS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "mobile-desktop-os",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-android",
+    "term": "Android",
+    "definition": "Google's open-source, Linux-based mobile operating system used by many phone and tablet makers, with apps from the Google Play Store.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "mobile-desktop-os",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-ios",
+    "term": "iOS",
+    "definition": "Apple's closed-source mobile operating system that runs only on iPhones and installs apps from the Apple App Store.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "mobile-desktop-os",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-ipados",
+    "term": "iPadOS",
+    "definition": "Apple's operating system for its tablets, based on the iPhone system but with added multitasking, split view, and keyboard and pencil support.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "mobile-desktop-os",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-new-technology-file-system",
+    "term": "New Technology File System",
+    "definition": "Default Windows file system that supports file and folder permissions, EFS encryption, compression, and very large volumes; macOS can only read it by default.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-resilient-file-system",
+    "term": "Resilient File System",
+    "definition": "Newer Microsoft file system built for data integrity and scale, with automatic checksums and scrubbing and volumes up to 35 PB, used mostly on servers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-file-allocation-table-32",
+    "term": "File Allocation Table 32",
+    "definition": "Older file system readable by almost every OS, limited to 4 GB per file and to 32 GB volumes when Windows formats it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-extensible-file-allocation-table",
+    "term": "Extensible File Allocation Table",
+    "definition": "Microsoft file system made for flash drives and SD cards that removes the 4 GB file limit and works on Windows, macOS, and Linux.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-fourth-extended-filesystem",
+    "term": "Fourth extended filesystem",
+    "definition": "Default journaling file system of most Linux distributions, supporting files up to 16 TB and volumes up to 1 EB.",
+    "acceptedAnswers": [
+      "Fourth extended file system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-extended-filesystem",
+    "term": "Extended filesystem",
+    "definition": "High-performance 64-bit journaling Linux file system for very large files and databases, the default on Red Hat Enterprise Linux.",
+    "acceptedAnswers": [
+      "XFS file system",
+      "Extended file system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-apple-file-system",
+    "term": "Apple File System",
+    "definition": "Default file system of macOS since version 10.13, which replaced HFS+ and is optimized for SSDs with snapshots and built-in encryption.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "os-file-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-end-of-life",
+    "term": "End-of-life",
+    "definition": "The date after which a vendor stops releasing updates, including security patches, and stops supporting a product, so it should be replaced first.",
+    "acceptedAnswers": [
+      "End of support"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-update-limitations",
+    "term": "Update limitations",
+    "definition": "Restrictions that stop an older OS or device from getting new versions or patches, for example hardware that fails a newer release's requirements.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 29: Common Operating Systems"
+  },
+  {
+    "id": "aplus-def-feature-update",
+    "term": "Feature update",
+    "definition": "A major Windows release, usually once a year, that adds new functions and restarts the support clock for that version.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-backward-compatibility",
+    "term": "Backward compatibility",
+    "definition": "The ability of a newer OS to run software or drivers made for an older version, such as 64-bit Windows running 32-bit apps.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1",
+      "220-1202/1.2"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 41: Application Installation and Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-network-boot",
+    "term": "Network boot",
+    "definition": "Starting a computer from its network card so it loads OS installation files from a server instead of a local drive.",
+    "acceptedAnswers": [
+      "PXE boot",
+      "Preboot Execution Environment boot"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-bootable-usb-flash-drive",
+    "term": "Bootable USB flash drive",
+    "definition": "The most common local installation medium, made by writing a downloaded ISO image to removable flash memory and starting the PC from it.",
+    "acceptedAnswers": [
+      "Bootable USB drive"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-internet-based-installation",
+    "term": "Internet-based installation",
+    "definition": "An OS installation that downloads some or all of its files from the vendor's website or cloud during setup.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-multiboot",
+    "term": "Multiboot",
+    "definition": "A setup with two or more operating systems on separate partitions, where a menu at startup lets the user choose which one to run.",
+    "acceptedAnswers": [
+      "Dual boot",
+      "Multiboot installation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-iso-image",
+    "term": "ISO image",
+    "definition": "A single file that holds the complete contents of an optical disc, used to distribute operating systems and apps and mountable as a virtual drive.",
+    "acceptedAnswers": [
+      "ISO file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2",
+      "220-1202/1.10"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 41: Application Installation and Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-clean-install",
+    "term": "Clean install",
+    "definition": "An OS installation onto a blank or wiped partition that keeps no old applications, files, or settings.",
+    "acceptedAnswers": [
+      "Clean installation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2",
+      "220-1202/1.3"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-in-place-upgrade",
+    "term": "In-place upgrade",
+    "definition": "An installation of a newer OS version over the current one that keeps the existing programs, files, and settings and does not format the drive.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2",
+      "220-1202/1.3"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 31: Basic Features of Windows Editions"
+  },
+  {
+    "id": "aplus-def-image-deployment",
+    "term": "Image deployment",
+    "definition": "Installing an OS by copying a prepared, preconfigured drive image to many computers, often with Sysprep run first to avoid duplicate identifiers.",
+    "acceptedAnswers": [
+      "Imaging"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2",
+      "220-1202/1.10"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-remote-network-installation",
+    "term": "Remote network installation",
+    "definition": "An OS installation where the target computer gets its setup files from a server across the network, often after a PXE boot.",
+    "acceptedAnswers": [
+      "Remote installation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-zero-touch-deployment",
+    "term": "Zero-touch deployment",
+    "definition": "Provisioning in which a new device enrolls itself in the organization's management and installs its apps automatically, so it ships straight to the user.",
+    "acceptedAnswers": [
+      "Zero-touch provisioning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-recovery-partition",
+    "term": "Recovery partition",
+    "definition": "A hidden section of the drive that holds a factory image so the system can be returned to the state it shipped in.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-repair-installation",
+    "term": "Repair installation",
+    "definition": "Reinstalling the OS over itself to fix damaged system files while keeping the user's files, such as Reset this PC with Keep my files.",
+    "acceptedAnswers": [
+      "Repair install"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-third-party-driver",
+    "term": "Third-party driver",
+    "definition": "A device driver from a hardware vendor rather than the OS, often needed during setup so the installer can see a new storage controller.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "installation-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-guid-partition-table",
+    "term": "GUID Partition Table",
+    "definition": "Modern partitioning scheme that is part of UEFI, allows 128 partitions in Windows, supports drives beyond 2 TB, and stores backup copies of its table.",
+    "acceptedAnswers": [
+      "Globally unique identifier Partition Table"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-master-boot-record",
+    "term": "Master boot record",
+    "definition": "Older partitioning scheme stored in the first sector of a drive that allows only four primary partitions and a maximum partition size of 2 TB.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "group": "boot-partitioning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 30: Operating System Installations and Upgrades"
+  },
+  {
+    "id": "aplus-def-home-edition",
+    "term": "Home edition",
+    "definition": "Consumer Windows edition that cannot join a domain, cannot host Remote Desktop, lacks BitLocker and gpedit.msc, and supports at most 128 GB of RAM.",
+    "acceptedAnswers": [
+      "Windows Home"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3"
+    ],
+    "group": "windows-editions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 31: Basic Features of Windows Editions"
+  },
+  {
+    "id": "aplus-def-pro-edition",
+    "term": "Pro edition",
+    "definition": "Business Windows edition that can join a domain, host Remote Desktop, use BitLocker and Group Policy, and supports up to 2 TB of RAM.",
+    "acceptedAnswers": [
+      "Windows Pro",
+      "Professional edition"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3"
+    ],
+    "group": "windows-editions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 31: Basic Features of Windows Editions"
+  },
+  {
+    "id": "aplus-def-pro-for-workstations",
+    "term": "Pro for Workstations",
+    "definition": "Windows edition for high-end hardware such as multi-CPU workstations, with server-grade features, such as ReFS and persistent memory, and support for up to 6 TB of RAM.",
+    "acceptedAnswers": [
+      "Windows Pro for Workstations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3"
+    ],
+    "group": "windows-editions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 31: Basic Features of Windows Editions"
+  },
+  {
+    "id": "aplus-def-enterprise-edition",
+    "term": "Enterprise edition",
+    "definition": "Windows edition sold through volume licensing to large organizations, adding advanced management and security features and up to 6 TB of RAM.",
+    "acceptedAnswers": [
+      "Windows Enterprise"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3"
+    ],
+    "group": "windows-editions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 31: Basic Features of Windows Editions"
+  },
+  {
+    "id": "aplus-def-n-edition",
+    "term": "N edition",
+    "definition": "A Windows version sold mainly in Europe that ships without Windows Media Player and related media apps, which the Media Feature Pack restores.",
+    "acceptedAnswers": [
+      "Windows N"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3"
+    ],
+    "group": "windows-editions",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 31: Basic Features of Windows Editions"
+  },
+  {
+    "id": "aplus-def-microsoft-management-console",
+    "term": "Microsoft Management Console",
+    "definition": "Windows framework that hosts administrative snap-ins, letting an administrator build a custom window of tools and save it as an .msc file.",
+    "acceptedAnswers": [
+      "mmc.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-event-viewer",
+    "term": "Event Viewer",
+    "definition": "Windows snap-in that shows logged errors, warnings, and information in the Application, Security, and System logs.",
+    "acceptedAnswers": [
+      "eventvwr.msc",
+      "eventvwr"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-disk-management",
+    "term": "Disk Management",
+    "definition": "Windows snap-in to create, delete, resize, format, and assign letters to partitions and to initialize new drives.",
+    "acceptedAnswers": [
+      "diskmgmt.msc",
+      "diskmgmt"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-task-scheduler",
+    "term": "Task Scheduler",
+    "definition": "Windows snap-in that runs programs or scripts automatically at a set time or when an event, such as user logon, happens.",
+    "acceptedAnswers": [
+      "taskschd.msc",
+      "taskschd"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-device-manager",
+    "term": "Device Manager",
+    "definition": "Windows tool that lists installed hardware and lets you update, roll back, disable, or uninstall drivers and see devices with problems.",
+    "acceptedAnswers": [
+      "devmgmt.msc",
+      "devmgmt"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4",
+      "220-1202/1.6"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-certificate-manager",
+    "term": "Certificate Manager",
+    "definition": "Windows snap-in for viewing, importing, exporting, and deleting the current user's digital certificates.",
+    "acceptedAnswers": [
+      "certmgr.msc",
+      "certmgr"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-local-users-and-groups",
+    "term": "Local Users and Groups",
+    "definition": "Windows snap-in for creating accounts, resetting passwords, and adding accounts to groups on one computer; Home editions do not have it.",
+    "acceptedAnswers": [
+      "lusrmgr.msc",
+      "lusrmgr",
+      "Local User and Groups"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-performance-monitor",
+    "term": "Performance Monitor",
+    "definition": "Windows snap-in that tracks chosen counters, such as processor time or available memory, over time and saves them in data collector sets for analysis.",
+    "acceptedAnswers": [
+      "perfmon.msc",
+      "perfmon"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-local-group-policy-editor",
+    "term": "Local Group Policy Editor",
+    "definition": "Windows snap-in for setting computer and user policies on a single machine, such as password rules; not included in Home editions.",
+    "acceptedAnswers": [
+      "Group Policy Editor",
+      "gpedit.msc",
+      "gpedit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3",
+      "220-1202/1.4"
+    ],
+    "group": "windows-mmc-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-task-manager",
+    "term": "Task Manager",
+    "definition": "Windows tool opened with Ctrl+Shift+Esc whose tabs show running processes, CPU and memory use, startup apps, services, and signed-in users, and can end frozen apps.",
+    "acceptedAnswers": [
+      "taskmgr",
+      "taskmgr.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 32: Microsoft Operating System Features and Tools, Part I"
+  },
+  {
+    "id": "aplus-def-system-information",
+    "term": "System Information",
+    "definition": "Windows tool that shows a read-only report of hardware resources, components, drivers, BIOS version, and the software environment.",
+    "acceptedAnswers": [
+      "msinfo32",
+      "msinfo32.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-resource-monitor",
+    "term": "Resource Monitor",
+    "definition": "Windows tool showing real-time detail of CPU, memory, disk, and network use for each process, including which files and ports it is using.",
+    "acceptedAnswers": [
+      "resmon",
+      "resmon.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-system-configuration",
+    "term": "System Configuration",
+    "definition": "Windows tool for changing boot options such as Safe Mode, selecting a diagnostic or selective startup, and disabling services to troubleshoot.",
+    "acceptedAnswers": [
+      "msconfig",
+      "msconfig.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-disk-cleanup",
+    "term": "Disk Cleanup",
+    "definition": "Windows tool that frees drive space by removing temporary files, the Recycle Bin contents, old update files, and other unneeded data.",
+    "acceptedAnswers": [
+      "cleanmgr",
+      "cleanmgr.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-optimize-drives",
+    "term": "Optimize Drives",
+    "definition": "Windows tool that rearranges fragmented files on hard drives and sends TRIM to SSDs, on a schedule or on demand.",
+    "acceptedAnswers": [
+      "Disk Defragment",
+      "Disk Defragmenter",
+      "dfrgui",
+      "dfrgui.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-registry-editor",
+    "term": "Registry Editor",
+    "definition": "Windows tool to view and change the hierarchical database of system and user settings directly; back up keys before making any change.",
+    "acceptedAnswers": [
+      "regedit",
+      "regedit.exe"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "group": "windows-system-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 33: Microsoft Operating System Features and Tools, Part II"
+  },
+  {
+    "id": "aplus-def-cd",
+    "term": "cd",
+    "definition": "Windows command that changes the current folder; with two dots it moves up one level, and with a backslash it goes to the root.",
+    "acceptedAnswers": [
+      "chdir"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-dir",
+    "term": "dir",
+    "definition": "Windows command that lists the files and subfolders in the current folder, with switches to show hidden items or sort the list.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-md",
+    "term": "md",
+    "definition": "Windows command that creates a new folder in the current location or at a given path.",
+    "acceptedAnswers": [
+      "mkdir"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-rmdir",
+    "term": "rmdir",
+    "definition": "Windows command that deletes a folder; it must be empty unless the /s switch is used to delete its contents too.",
+    "acceptedAnswers": [
+      "rd"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-robocopy",
+    "term": "Robocopy",
+    "definition": "Windows command, the successor to xcopy, that copies or mirrors entire folder trees, can resume after interruptions, and keeps file attributes.",
+    "acceptedAnswers": [
+      "Robust File Copy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-ipconfig",
+    "term": "ipconfig",
+    "definition": "Windows command that shows the IP address, subnet mask, and default gateway, with switches to show MAC and DNS details, release and renew leases, and flush DNS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-ping",
+    "term": "ping",
+    "definition": "Command that sends ICMP echo requests to a host to test whether it can be reached and how long replies take, on Windows and Linux.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5",
+      "220-1202/1.9"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-netstat",
+    "term": "netstat",
+    "definition": "Windows command that lists the active TCP connections and listening ports on a computer, with switches to show process IDs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-nslookup",
+    "term": "nslookup",
+    "definition": "Windows command that queries DNS servers to look up the IP address for a name, or the name for an address, to test name resolution.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-net-use",
+    "term": "net use",
+    "definition": "Windows command that connects a drive letter to a shared folder, lists current connections, or disconnects them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-tracert",
+    "term": "tracert",
+    "definition": "Windows command that lists each router hop between the computer and a destination with response times, to find where a connection fails.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-pathping",
+    "term": "pathping",
+    "definition": "Windows command that lists the hops to a destination like a route trace, then measures packet loss at each hop over a period of time.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-hostname",
+    "term": "hostname",
+    "definition": "Command that shows the name of the computer you are working on.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-network",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-check-disk",
+    "term": "Check Disk",
+    "definition": "Windows command that scans a volume for file system errors and, with /f or /r, fixes them and locates bad sectors.",
+    "acceptedAnswers": [
+      "chkdsk"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-format",
+    "term": "format",
+    "definition": "Windows command that prepares a partition with a file system, such as NTFS or exFAT, erasing the data on it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-diskpart",
+    "term": "diskpart",
+    "definition": "Windows command-line partitioning tool that can select disks, create, delete, and extend partitions, and convert disks between MBR and GPT.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-system-file-checker",
+    "term": "System File Checker",
+    "definition": "Windows command, run with /scannow from an elevated prompt, that scans protected system files and replaces damaged or missing ones.",
+    "acceptedAnswers": [
+      "sfc"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-gpupdate",
+    "term": "gpupdate",
+    "definition": "Windows command that refreshes Group Policy settings right away instead of waiting for the next automatic refresh; /force reapplies all policies.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-gpresult",
+    "term": "gpresult",
+    "definition": "Windows command that displays the Resultant Set of Policy, showing which Group Policy settings apply to a user and computer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-winver",
+    "term": "winver",
+    "definition": "Windows command that opens a small window showing the OS version, edition, and build number.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-def-whoami",
+    "term": "whoami",
+    "definition": "Command that shows the signed-in user's domain and username, and with switches the user's groups and privileges.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-net-user",
+    "term": "net user",
+    "definition": "Windows command that lists the local accounts or adds, deletes, and changes them, including resetting a password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "group": "cmd-system",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 35: Microsoft Command-Line Tools, Part II"
+  },
+  {
+    "id": "aplus-def-internet-options",
+    "term": "Internet Options",
+    "definition": "Control Panel item for browser settings such as the home page, security zones, cookies and privacy, proxy server, and clearing browsing history.",
+    "acceptedAnswers": [
+      "inetcpl.cpl"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-devices-and-printers",
+    "term": "Devices and Printers",
+    "definition": "Control Panel item that shows connected hardware such as printers and phones and lets you add devices and set the default printer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-programs-and-features",
+    "term": "Programs and Features",
+    "definition": "Control Panel item used to uninstall or repair installed applications and to turn Windows features on or off.",
+    "acceptedAnswers": [
+      "appwiz.cpl"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-network-and-sharing-center",
+    "term": "Network and Sharing Center",
+    "definition": "Control Panel item that shows active connections and their profiles and lets you set up new connections and change adapter and sharing settings.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6",
+      "220-1202/1.7"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-user-accounts",
+    "term": "User Accounts",
+    "definition": "Control Panel item for changing an account's type, name, or password and for managing stored credentials on the computer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-file-explorer-options",
+    "term": "File Explorer Options",
+    "definition": "Control Panel item whose General and View tabs control how folders open, whether hidden files show, and whether file extensions are hidden.",
+    "acceptedAnswers": [
+      "Folder Options"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-power-plan",
+    "term": "Power plan",
+    "definition": "A saved set of power settings, such as Balanced or Power saver, that controls when the display and drives turn off and how the processor runs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "power-options",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-sleep",
+    "term": "Sleep",
+    "definition": "Low-power state that keeps the open work in RAM while most hardware powers down, so the computer wakes in a few seconds.",
+    "acceptedAnswers": [
+      "Standby",
+      "Suspend",
+      "Sleep mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "power-options",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-hibernate",
+    "term": "Hibernate",
+    "definition": "Power state that saves the open session from RAM to the hiberfil.sys file on the drive and then turns the computer off.",
+    "acceptedAnswers": [
+      "Hibernation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "power-options",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-fast-startup",
+    "term": "Fast startup",
+    "definition": "Power setting that saves the Windows kernel state to the drive at shutdown so the next boot is quicker.",
+    "acceptedAnswers": [
+      "Turn on fast startup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "power-options",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-usb-selective-suspend",
+    "term": "USB selective suspend",
+    "definition": "Advanced power setting, on by default, that cuts power to individual USB devices that have been idle, saving laptop battery.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "power-options",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 36: Windows Control Panel Utilities"
+  },
+  {
+    "id": "aplus-def-update-and-security",
+    "term": "Update and Security",
+    "definition": "Settings area for checking for, pausing, and scheduling OS patches and viewing their history and active hours.",
+    "acceptedAnswers": [
+      "Windows Update"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 37: Windows Settings"
+  },
+  {
+    "id": "aplus-def-ease-of-access",
+    "term": "Ease of Access",
+    "definition": "Settings category with tools for users with disabilities, such as Narrator, Magnifier, high contrast, captions, and Sticky Keys.",
+    "acceptedAnswers": [
+      "Accessibility"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.6"
+    ],
+    "group": "control-panel",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 37: Windows Settings"
+  },
+  {
+    "id": "aplus-def-workgroup",
+    "term": "Workgroup",
+    "definition": "Peer-to-peer Windows network of a few computers where each one keeps its own user accounts and no central server controls logins.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3",
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-domain",
+    "term": "Domain",
+    "definition": "Centrally managed Windows network where a server running Active Directory controls user accounts, logins, and policies for all joined computers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.3",
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-mapped-drive",
+    "term": "Mapped drive",
+    "definition": "A drive letter assigned to a shared network folder so it appears in File Explorer like a local drive and can reconnect at sign-in.",
+    "acceptedAnswers": [
+      "Mapped network drive"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-universal-naming-convention-path",
+    "term": "Universal Naming Convention path",
+    "definition": "Network address format of two backslashes, a computer name, a backslash, and a share name, used to reach shared folders.",
+    "acceptedAnswers": [
+      "UNC path"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-public-network-profile",
+    "term": "Public network profile",
+    "definition": "Windows network location for untrusted networks, such as a coffee shop, that turns off network discovery and file and printer sharing.",
+    "acceptedAnswers": [
+      "Public network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-private-network-profile",
+    "term": "Private network profile",
+    "definition": "Windows network location for trusted home or office networks that turns on network discovery and file and printer sharing.",
+    "acceptedAnswers": [
+      "Private network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-metered-connection",
+    "term": "Metered connection",
+    "definition": "A network connection marked as having a data cap, so Windows limits background downloads such as updates to save data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.7"
+    ],
+    "group": "windows-networking",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "aplus-def-finder",
+    "term": "Finder",
+    "definition": "The macOS file manager, similar to File Explorer, used to browse drives, open applications, and copy, move, and tag files.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-interface",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-spotlight",
+    "term": "Spotlight",
+    "definition": "macOS search tool opened with Command+Space that finds files, apps, email, and web results.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-interface",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-mission-control",
+    "term": "Mission Control",
+    "definition": "macOS feature that zooms out to show all open windows and lets you add and switch between multiple desktops, called Spaces.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-interface",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-dock",
+    "term": "Dock",
+    "definition": "The bar of app icons along the edge of the macOS screen for launching and switching apps, with the Trash at its end.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-interface",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-force-quit",
+    "term": "Force Quit",
+    "definition": "macOS tool opened with Command+Option+Esc that closes an app that is not responding, similar to ending a task in Windows.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-interface",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-keychain",
+    "term": "Keychain",
+    "definition": "macOS password manager that stores passwords, keys, and certificates and can sync them to other Apple devices through iCloud.",
+    "acceptedAnswers": [
+      "Keychain Access"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-interface",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-icloud",
+    "term": "iCloud",
+    "definition": "Apple's cloud service that backs up and syncs files, photos, messages, passwords, and settings across a user's Apple devices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-services",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-continuity",
+    "term": "Continuity",
+    "definition": "Set of Apple features, such as Handoff, Universal Clipboard, and Sidecar, that let a Mac, iPhone, and iPad signed in to one account work together.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-services",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-apple-id",
+    "term": "Apple ID",
+    "definition": "The personal account, made of an email address and password, that signs a user in to Apple services and syncs their devices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-services",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-managed-apple-id",
+    "term": "Managed Apple ID",
+    "definition": "A company-created Apple account for work use that the organization owns and restricts, for example by blocking purchases.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-services",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-time-machine",
+    "term": "Time Machine",
+    "definition": "The built-in macOS backup tool that keeps hourly, daily, and weekly snapshots on an external drive so files or the whole system can be restored.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-maintenance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-disk-utility",
+    "term": "Disk Utility",
+    "definition": "macOS tool to verify and repair drives, erase and partition them, and create or restore disk images.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-maintenance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-filevault",
+    "term": "FileVault",
+    "definition": "macOS full-disk encryption that uses AES to protect all data on the startup drive.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-maintenance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-rapid-security-response",
+    "term": "Rapid Security Response",
+    "definition": "A small Apple security patch released between regular macOS updates that installs quickly, often without a restart.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-maintenance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-system-preferences",
+    "term": "System Preferences",
+    "definition": "The macOS configuration app, similar to the Windows Control Panel, for displays, networks, printers, privacy, and accessibility.",
+    "acceptedAnswers": [
+      "System Settings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-maintenance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-terminal",
+    "term": "Terminal",
+    "definition": "The command-line app in macOS and most Linux desktops, where commands are typed into a shell such as Bash or zsh.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8",
+      "220-1202/1.9"
+    ],
+    "group": "macos-maintenance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-apple-disk-image",
+    "term": "Apple Disk Image",
+    "definition": "A mountable macOS file type used to distribute software; opening it shows a virtual disk from which the app is dragged to Applications.",
+    "acceptedAnswers": [
+      "DMG file",
+      "Disk image file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-apps",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-installer-package",
+    "term": "Installer package",
+    "definition": "A macOS file type that runs a step-by-step installer to put an app and its supporting files in place.",
+    "acceptedAnswers": [
+      "PKG file",
+      "Package file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-apps",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-application-bundle",
+    "term": "Application bundle",
+    "definition": "A macOS folder of program files that looks like one icon and runs when double-clicked, similar to a Windows .exe.",
+    "acceptedAnswers": [
+      "APP file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-apps",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-app-store",
+    "term": "App Store",
+    "definition": "Apple's online store for finding, installing, and updating approved apps on macOS and iOS.",
+    "acceptedAnswers": [
+      "Mac App Store"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-apps",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-applications-folder",
+    "term": "Applications folder",
+    "definition": "The root-level macOS folder where most user-installed programs are kept; dragging an app from it to the Trash uninstalls it.",
+    "acceptedAnswers": [
+      "Applications"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "group": "macos-apps",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 39: macOS"
+  },
+  {
+    "id": "aplus-def-ls",
+    "term": "ls",
+    "definition": "Linux command that lists the contents of a directory; -l adds permissions, owner, size, and date.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-pwd",
+    "term": "pwd",
+    "definition": "Linux command that prints the full path of the directory you are currently working in.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-mv",
+    "term": "mv",
+    "definition": "Linux command that moves a file or directory to a new location or renames it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-cp",
+    "term": "cp",
+    "definition": "Linux command that duplicates a file or, with -r, a whole directory to a new location while leaving the original.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-rm",
+    "term": "rm",
+    "definition": "Linux command that deletes files, or directories with -r, without sending them to a trash folder.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-chmod",
+    "term": "chmod",
+    "definition": "Linux command that changes the read, write, and execute permissions of a file, for example with the numbers 755.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-chown",
+    "term": "chown",
+    "definition": "Linux command that changes which user and group own a file or directory.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-grep",
+    "term": "grep",
+    "definition": "Linux command that searches text or files for lines that match a word or pattern and prints them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-find",
+    "term": "find",
+    "definition": "Linux command that searches a directory tree for files by name, size, type, or date.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-file-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-su",
+    "term": "su",
+    "definition": "Linux command that switches the session to another account, by default root, after you enter that account's password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-admin-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-sudo",
+    "term": "sudo",
+    "definition": "Linux command placed before another command to run just that one command with administrator rights, after entering your own password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-admin-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-apt",
+    "term": "apt",
+    "definition": "Package manager for Debian and Ubuntu Linux that installs, updates, and removes software from repositories.",
+    "acceptedAnswers": [
+      "apt-get"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-admin-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-dnf",
+    "term": "dnf",
+    "definition": "Package manager for Fedora and Red Hat Enterprise Linux that installs, updates, and removes software from repositories.",
+    "acceptedAnswers": [
+      "yum"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-admin-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-fsck",
+    "term": "fsck",
+    "definition": "Linux command that checks a file system for errors and repairs it, best run on an unmounted partition.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-admin-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-mount",
+    "term": "mount",
+    "definition": "Linux command that attaches a drive or partition to a directory in the file tree so its files can be used.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-admin-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-man",
+    "term": "man",
+    "definition": "Linux command that opens the built-in manual page for a command, showing its options and usage.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-cat",
+    "term": "cat",
+    "definition": "Linux command that prints a text file's contents to the screen or joins several files together.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-top",
+    "term": "top",
+    "definition": "Linux command that shows a live, updating list of running processes sorted by CPU and memory use.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-ps",
+    "term": "ps",
+    "definition": "Linux command that prints a one-time snapshot of running processes with their process IDs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-du",
+    "term": "du",
+    "definition": "Linux command that shows how much disk space files and directories use.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-df",
+    "term": "df",
+    "definition": "Linux command that shows the total, used, and free space on each mounted file system.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-nano",
+    "term": "nano",
+    "definition": "Simple Linux text editor that runs in the terminal, with its keyboard shortcuts listed at the bottom; Ctrl+X exits.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-info-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-ip",
+    "term": "ip",
+    "definition": "Linux command that shows and configures network interfaces, addresses, and routes, replacing the older ifconfig.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-network-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-curl",
+    "term": "curl",
+    "definition": "Linux command that transfers data to or from a URL, for example to download a file or test a web server from the terminal.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-network-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-dig",
+    "term": "dig",
+    "definition": "Linux command that queries DNS servers and shows detailed records for a name, used to test name resolution.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-network-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-traceroute",
+    "term": "traceroute",
+    "definition": "Linux command that lists the routers a packet passes through on the way to a destination host.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-network-commands",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-etc-passwd",
+    "term": "/etc/passwd",
+    "definition": "Linux file listing each user account's name, user ID, group ID, home directory, and login shell, with an x where the password once was.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-config-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-etc-shadow",
+    "term": "/etc/shadow",
+    "definition": "Linux file, readable only by root, that stores the hashed user passwords and password aging settings.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-config-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-etc-hosts",
+    "term": "/etc/hosts",
+    "definition": "Linux file that maps hostnames to IP addresses locally, checked before DNS for name resolution.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-config-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-etc-fstab",
+    "term": "/etc/fstab",
+    "definition": "Linux file that lists the file systems to mount automatically at boot, with each device, mount point, type, and options.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-config-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-etc-resolv-conf",
+    "term": "/etc/resolv.conf",
+    "definition": "Linux file that lists the DNS server addresses the system uses to resolve names.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-config-files",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-kernel",
+    "term": "Kernel",
+    "definition": "The core of an operating system that talks to the hardware and manages memory and processes; the bootloader loads it at startup.",
+    "acceptedAnswers": [
+      "Linux kernel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-components",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-bootloader",
+    "term": "Bootloader",
+    "definition": "Program, usually GRUB2 on Linux, that starts after the firmware and loads the selected OS kernel, offering a menu if several are installed.",
+    "acceptedAnswers": [
+      "Boot loader"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-components",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-systemd",
+    "term": "systemd",
+    "definition": "The first process a Linux kernel starts, which manages system services and starts the rest of the system's processes and daemons.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-components",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-root-account",
+    "term": "Root account",
+    "definition": "The built-in Linux superuser with unlimited control of the system, which should be used rarely; use elevation for single commands instead.",
+    "acceptedAnswers": [
+      "Root"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.9"
+    ],
+    "group": "linux-components",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 40: Linux"
+  },
+  {
+    "id": "aplus-def-external-hardware-token",
+    "term": "External hardware token",
+    "definition": "A small USB device that some licensed software requires to be plugged in before the application will run.",
+    "acceptedAnswers": [
+      "Dongle"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.10"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 41: Application Installation and Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-32-bit-application",
+    "term": "32-bit application",
+    "definition": "A program built for x86 processors that 64-bit Windows can still run, installing it in Program Files (x86).",
+    "acceptedAnswers": [
+      "32-bit app"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.10"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 41: Application Installation and Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-system-requirements",
+    "term": "System requirements",
+    "definition": "The minimum CPU, RAM, storage, graphics, and OS version that the vendor says software needs, checked before installing it.",
+    "acceptedAnswers": [
+      "Minimum requirements"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.10"
+    ],
+    "group": "compatibility-requirements",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 41: Application Installation and Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-web-based-email",
+    "term": "Web-based email",
+    "definition": "Mail hosted by a provider, such as Gmail or Outlook on the web, that users open in a browser from any device with no client to configure.",
+    "acceptedAnswers": [
+      "Webmail",
+      "Cloud email"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.11"
+    ],
+    "group": "cloud-productivity",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 42: Cloud-Based Productivity Tools"
+  },
+  {
+    "id": "aplus-def-folder-sync",
+    "term": "Folder sync",
+    "definition": "Cloud storage setting that keeps a local folder and an online folder identical, uploading and downloading changes automatically.",
+    "acceptedAnswers": [
+      "Sync folder",
+      "Synced folder"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.11"
+    ],
+    "group": "cloud-productivity",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 42: Cloud-Based Productivity Tools"
+  },
+  {
+    "id": "aplus-def-videoconferencing",
+    "term": "Videoconferencing",
+    "definition": "Cloud collaboration tool, such as Zoom or Microsoft Teams, for meetings with live video, audio, and screen sharing over the internet.",
+    "acceptedAnswers": [
+      "Video conferencing",
+      "Videoconferencing software"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.11",
+      "220-1202/4.9"
+    ],
+    "group": "cloud-productivity",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 42: Cloud-Based Productivity Tools"
+  },
+  {
+    "id": "aplus-def-instant-messaging",
+    "term": "Instant messaging",
+    "definition": "Collaboration tool for sending short, real-time text messages to people or teams without writing a full email.",
+    "acceptedAnswers": [
+      "Chat"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.11"
+    ],
+    "group": "cloud-productivity",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 42: Cloud-Based Productivity Tools"
+  },
+  {
+    "id": "aplus-def-identity-synchronization",
+    "term": "Identity synchronization",
+    "definition": "Copying user accounts and credentials between directories, such as on-premises Active Directory and Microsoft Entra ID, so users have one identity everywhere.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.11"
+    ],
+    "group": "cloud-productivity",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 42: Cloud-Based Productivity Tools"
+  },
+  {
+    "id": "aplus-def-licensing-assignment",
+    "term": "Licensing assignment",
+    "definition": "Giving or removing a cloud subscription seat for each user, for example in the Microsoft 365 admin center, so unused licenses are not wasted.",
+    "acceptedAnswers": [
+      "License assignment"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.11"
+    ],
+    "group": "cloud-productivity",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 42: Cloud-Based Productivity Tools"
+  }
+]

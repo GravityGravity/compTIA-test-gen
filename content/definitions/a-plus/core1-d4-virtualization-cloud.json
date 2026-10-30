@@ -1,0 +1,908 @@
+[
+  {
+    "id": "aplus-def-virtual-machine",
+    "term": "Virtual machine",
+    "definition": "A software-defined computer with its own virtual CPU, RAM, disk, and network card that runs a full guest operating system on a physical host.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-sandbox",
+    "term": "Sandbox",
+    "definition": "An isolated, often temporary environment where untrusted programs or new code run without touching the host system; it is discarded and starts clean each time.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-test-development",
+    "term": "Test development",
+    "definition": "Using virtual machines to try work-in-progress applications on the same or a different operating system without risking a production computer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-application-virtualization",
+    "term": "Application virtualization",
+    "definition": "Running one program in a virtual environment instead of installing it on the local operating system, for example to keep an old or foreign-platform app working.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-legacy-software",
+    "term": "Legacy software",
+    "definition": "Old, outdated programs that often run only on an older operating system, so a business keeps them working inside a virtual machine of that older system.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-cross-platform-virtualization",
+    "term": "Cross-platform virtualization",
+    "definition": "Letting a program built for one operating system or hardware platform run on a different one, such as a macOS app inside a virtual machine on a Windows server.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-desktop-virtualization",
+    "term": "Desktop virtualization",
+    "definition": "Separating a user's desktop environment from the physical computer so the desktop, its OS, and its apps run virtually and can be reached from another device.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-virtual-desktop-infrastructure",
+    "term": "Virtual desktop infrastructure",
+    "definition": "Server-based system, on-premises or in the cloud, that hosts many users' virtual desktops, builds the desktop images, and gives clients network access to them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-emulator",
+    "term": "Emulator",
+    "definition": "Software that imitates specific hardware or firmware, even a different processor, without a hypervisor or the CPU's own virtualization features.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-purposes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-hypervisor",
+    "term": "Hypervisor",
+    "definition": "Software, also called a virtual machine manager, that lets several guest operating systems share one physical computer and allocates its CPU, memory, and storage to them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-type-1-hypervisor",
+    "term": "Type 1 hypervisor",
+    "definition": "Bare-metal virtualization layer installed straight on the server hardware with no host OS, such as VMware ESXi; it is faster but needs a proper server.",
+    "acceptedAnswers": [
+      "Type I hypervisor",
+      "Bare-metal hypervisor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-type-2-hypervisor",
+    "term": "Type 2 hypervisor",
+    "definition": "Hosted virtualization software that runs on top of an existing operating system, such as VirtualBox or VMware Workstation, so guests are one layer further from the hardware.",
+    "acceptedAnswers": [
+      "Type II hypervisor",
+      "Hosted hypervisor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-host-operating-system",
+    "term": "Host operating system",
+    "definition": "The operating system installed on the physical computer under a hosted hypervisor; if it fails, every virtual machine running on it fails too.",
+    "acceptedAnswers": [
+      "Host OS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-guest-operating-system",
+    "term": "Guest operating system",
+    "definition": "An operating system installed inside a virtual machine, running on virtual hardware that a hypervisor provides.",
+    "acceptedAnswers": [
+      "Guest OS",
+      "Guest"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-container",
+    "term": "Container",
+    "definition": "A lightweight package of one application and its runtime dependencies that shares the host's OS kernel instead of running a full OS, as with Docker or Podman.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-container-image",
+    "term": "Container image",
+    "definition": "The file a developer builds that holds an app plus all the libraries and settings it needs, which a container engine such as Docker then runs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "virtualization-platforms",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-virtual-network-interface-card",
+    "term": "Virtual network interface card",
+    "definition": "A software network adapter that a hypervisor gives each virtual machine, which can link to other guests or, through a virtual switch, to the physical adapter.",
+    "acceptedAnswers": [
+      "Virtual NIC",
+      "Virtual network adapter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-networking",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-virtual-switch",
+    "term": "Virtual switch",
+    "definition": "A software device inside the hypervisor that forwards traffic between virtual machines' adapters and can attach them to the host's physical network card.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-networking",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-bridged-networking",
+    "term": "Bridged networking",
+    "definition": "VM network mode that connects the guest straight to the host's physical network, so the guest needs its own IP address on that external network.",
+    "acceptedAnswers": [
+      "Bridged"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-networking",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-network-address-translation-networking",
+    "term": "Network Address Translation networking",
+    "definition": "Common default VM network mode in which guests get addresses on a separate private network but still reach the external network and Internet through the host.",
+    "acceptedAnswers": [
+      "NAT networking",
+      "Network Address Translation mode",
+      "NAT mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-networking",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-host-only-networking",
+    "term": "Host-only networking",
+    "definition": "VM network mode that creates a private virtual network where guests can talk to each other and the host but not to the external network.",
+    "acceptedAnswers": [
+      "Host-only"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-networking",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-hardware-virtualization",
+    "term": "Hardware virtualization",
+    "definition": "CPU feature, Intel VT-x or AMD-V, that must be supported and enabled in BIOS/UEFI before a hypervisor such as Hyper-V will install or start guests.",
+    "acceptedAnswers": [
+      "Hardware-assisted virtualization",
+      "Virtualization support"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.5",
+      "220-1201/4.1"
+    ],
+    "group": "vm-requirements",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-dynamically-expanding-virtual-disk",
+    "term": "Dynamically expanding virtual disk",
+    "definition": "Virtual drive that starts small and grows only as the guest writes data, up to the maximum size chosen, which saves space on the host drive.",
+    "acceptedAnswers": [
+      "Dynamic virtual disk",
+      "Dynamically allocated disk"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-requirements",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-fixed-size-virtual-disk",
+    "term": "Fixed-size virtual disk",
+    "definition": "Virtual drive that takes all of its chosen capacity, for example 60 GB, on the host drive as soon as it is created.",
+    "acceptedAnswers": [
+      "Static virtual disk",
+      "Fixed virtual disk"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-requirements",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-virtual-machine-sprawl",
+    "term": "Virtual machine sprawl",
+    "definition": "Problem where the number of VMs grows beyond what administrators can control, so they slip out of change and life cycle management.",
+    "acceptedAnswers": [
+      "VM sprawl"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-requirements",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-virtual-machine-escape",
+    "term": "Virtual machine escape",
+    "definition": "Attack in which code inside a guest breaks out of its isolation and interacts with the host or hypervisor; patching the virtualization software prevents it.",
+    "acceptedAnswers": [
+      "VM escape"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-requirements",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-snapshot",
+    "term": "Snapshot",
+    "definition": "A saved copy of a virtual machine's exact state at one moment, so the guest can be rolled back to that point after a failed test or change.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "group": "vm-requirements",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts"
+  },
+  {
+    "id": "aplus-def-cloud-computing",
+    "term": "Cloud computing",
+    "definition": "Using on-demand services, such as storage, applications, or servers, that a provider runs on remote, virtualized hardware and delivers over a network connection.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-public-cloud",
+    "term": "Public cloud",
+    "definition": "Cloud deployment that a provider such as Amazon or Microsoft offers to anyone over the Internet, giving low cost and high scalability but less control.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-private-cloud",
+    "term": "Private cloud",
+    "definition": "Cloud deployment built for one organization, often in its own data center, giving it the most control over security and data but the highest cost.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-hybrid-cloud",
+    "term": "Hybrid cloud",
+    "definition": "Cloud deployment that combines an organization's own private servers with a third party's public services, usually keeping confidential data in-house.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-community-cloud",
+    "term": "Community cloud",
+    "definition": "Cloud deployment shared by several organizations with common interests or requirements, such as hospitals, which know and trust the other members.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-infrastructure-as-a-service",
+    "term": "Infrastructure as a service",
+    "definition": "Cloud service model that rents servers, storage, networking, and VM hosting; the client installs and manages the operating systems and software, which takes the most expertise.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-platform-as-a-service",
+    "term": "Platform as a service",
+    "definition": "Cloud service model that adds operating systems and development tools on top of rented hardware so programmers can build, test, and deploy their own apps.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-software-as-a-service",
+    "term": "Software as a service",
+    "definition": "Cloud service model where users run finished applications, such as webmail or Microsoft 365, over the Internet without installing or maintaining them locally.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-metered-utilization",
+    "term": "Metered utilization",
+    "definition": "Billing in which the customer can draw on nearly unlimited cloud resources but pays only for the amount actually used, such as storage, bandwidth, or CPU time.",
+    "acceptedAnswers": [
+      "Metered services",
+      "Metered service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-billing-scaling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-ingress",
+    "term": "Ingress",
+    "definition": "Data moving into the cloud from outside, such as uploads or syncing on-premises systems; most providers do not charge for it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-billing-scaling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-egress",
+    "term": "Egress",
+    "definition": "Data leaving the cloud for outside destinations, such as downloads or streaming to users; providers often charge for it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-billing-scaling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-elasticity",
+    "term": "Elasticity",
+    "definition": "The ability to scale cloud resources up quickly when demand grows and back down when it falls, without buying or selling hardware.",
+    "acceptedAnswers": [
+      "Rapid elasticity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-billing-scaling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-on-demand-self-service",
+    "term": "On-demand self-service",
+    "definition": "Cloud characteristic that lets a customer add storage or processing automatically, without waiting for anyone at the provider to act.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-billing-scaling",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-shared-resources",
+    "term": "Shared resources",
+    "definition": "Cloud setup in which many customers draw from one pool of the provider's servers, storage, and bandwidth and each pays for the share it uses.",
+    "acceptedAnswers": [
+      "Shared resource"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-resources",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-dedicated-resources",
+    "term": "Dedicated resources",
+    "definition": "Cloud setup in which a single customer has exclusive use of a server's or infrastructure's whole capacity, as in a private cloud.",
+    "acceptedAnswers": [
+      "Dedicated resource"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-resources",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-multitenancy",
+    "term": "Multitenancy",
+    "definition": "Cloud characteristic in which many customers run on the same physical hardware, storage, and network while each one's data and operations stay isolated.",
+    "acceptedAnswers": [
+      "Multi-tenancy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-resources",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts"
+  },
+  {
+    "id": "aplus-def-availability",
+    "term": "Availability",
+    "definition": "The uptime a cloud provider guarantees in its service level agreement, often stated in nines, such as 99.99 percent.",
+    "acceptedAnswers": [
+      "High availability"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-resources",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  },
+  {
+    "id": "aplus-def-file-synchronization",
+    "term": "File synchronization",
+    "definition": "Cloud characteristic that keeps the newest copy of each file both in cloud storage and on local devices, updating one copy whenever the other changes.",
+    "acceptedAnswers": [
+      "File sync"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "group": "cloud-resources",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 11: Virtualization and Cloud Computing"
+  }
+]

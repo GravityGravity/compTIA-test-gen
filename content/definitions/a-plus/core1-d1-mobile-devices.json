@@ -317,9 +317,7 @@
     "id": "aplus-def-docking-station",
     "term": "Docking station",
     "definition": "A base that a laptop connects to so it works like a desktop, keeping the monitor, keyboard, network, and charger attached.",
-    "acceptedAnswers": [
-      "Dock"
-    ],
+    "acceptedAnswers": [],
     "typeable": true,
     "certifications": [
       "a-plus"

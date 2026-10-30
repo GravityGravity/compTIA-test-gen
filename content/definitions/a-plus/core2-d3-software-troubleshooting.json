@@ -1,0 +1,1474 @@
+[
+  {
+    "id": "aplus-def-blue-screen-of-death",
+    "term": "Blue screen of death",
+    "definition": "Full-screen Windows crash that halts the OS after an unrecoverable fault, most often a bad driver or poorly seated RAM, and may write a memory dump.",
+    "acceptedAnswers": [
+      "Stop error",
+      "Blue screen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-stability",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "aplus-def-frequent-shutdowns",
+    "term": "Frequent shutdowns",
+    "definition": "Repeated, unplanned power-offs of a Windows PC, traced through kernel and EventLog entries in Event Viewer to failing hardware, a faulty driver, power settings, or bad power.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-stability",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-services-not-starting",
+    "term": "Services not starting",
+    "definition": "Background Windows components that fail at boot, logged as Event ID 7000 by the Service Control Manager, often because of a wrong logon account or a resource conflict.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-stability",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-applications-crashing",
+    "term": "Applications crashing",
+    "definition": "Windows programs that close unexpectedly, investigated in Reliability Monitor and the Application log, then fixed with a vendor patch, a repair, or a reinstall.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-stability",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-system-instability",
+    "term": "System instability",
+    "definition": "A Windows PC that freezes, errors, or reboots at random, whose overall stability score and history of failures can be traced day by day in Reliability Monitor.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-stability",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-no-operating-system-found",
+    "term": "No operating system found",
+    "definition": "Startup error where the firmware finds no bootable drive, often because a USB stick is first in the boot order or the boot files are damaged.",
+    "acceptedAnswers": [
+      "No OS found",
+      "Operating system not found"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-stability",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "aplus-def-degraded-performance",
+    "term": "Degraded performance",
+    "definition": "A Windows PC that has gradually become slow, diagnosed by checking CPU, memory, disk, network, and GPU use in Task Manager and Resource Monitor.",
+    "acceptedAnswers": [
+      "Slow performance"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-performance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-low-memory-warning",
+    "term": "Low memory warning",
+    "definition": "Windows message that RAM and the paging file are nearly used up, caused by too little installed memory or one process using far more than normal.",
+    "acceptedAnswers": [
+      "Low memory warnings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-performance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-usb-controller-resource-warning",
+    "term": "USB controller resource warning",
+    "definition": "Windows error that too many devices on one controller have used up its endpoints or power budget; fix it by moving slow devices to other ports.",
+    "acceptedAnswers": [
+      "USB controller resource warnings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-performance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-slow-profile-load",
+    "term": "Slow profile load",
+    "definition": "Long logon caused by a bloated roaming profile crossing the network, login scripts, Group Policy, startup items, or a clock out of sync with the domain.",
+    "acceptedAnswers": [
+      "Slow-loading profile"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-performance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-time-drift",
+    "term": "Time drift",
+    "definition": "Gradual gap between a computer's real-time clock and the true time, which can break domain logons and certificates; fix it by syncing with an NTP server.",
+    "acceptedAnswers": [
+      "Clock drift"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-performance",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-paging-file",
+    "term": "Paging file",
+    "definition": "Hidden file on a drive where Windows moves idle memory pages when physical RAM fills, usually set to about 1.5 times the installed RAM.",
+    "acceptedAnswers": [
+      "Page file",
+      "Pagefile"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-performance",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-rebuild-the-windows-profile",
+    "term": "Rebuild the Windows profile",
+    "definition": "Fix for a corrupt or slow user environment: back up the user's data, delete the profile in System Properties, and let Windows create a new one at the next logon.",
+    "acceptedAnswers": [
+      "Rebuild Windows profile",
+      "Rebuilding Windows profiles",
+      "Rebuild the user profile"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-roll-back-updates",
+    "term": "Roll back updates",
+    "definition": "Removing a recently installed Windows patch from Update history when it causes problems, or reverting to a restore point taken before it.",
+    "acceptedAnswers": [
+      "Rolling back updates",
+      "Uninstall updates"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-roll-back-driver",
+    "term": "Roll back driver",
+    "definition": "Device Manager button on a device's Driver tab that returns to the previously installed version after a new one causes errors such as a blue screen.",
+    "acceptedAnswers": [
+      "Roll back device driver",
+      "Rolling back device drivers",
+      "Driver rollback"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "aplus-def-reset-this-pc",
+    "term": "Reset this PC",
+    "definition": "Windows recovery option that reinstalls the operating system from a local copy or a cloud download, either keeping personal files or removing everything.",
+    "acceptedAnswers": [
+      "Reset PC"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-startup-repair",
+    "term": "Startup Repair",
+    "definition": "Windows Recovery Environment tool that automatically fixes problems that stop Windows from booting, much like running bootrec /rebuildbcd.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "windows-fixes",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against Docter – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-windows-boot-manager",
+    "term": "Windows Boot Manager",
+    "definition": "First Windows startup program run by the UEFI firmware; it reads the stored boot settings and starts the OS loader, or offers a choice of systems.",
+    "acceptedAnswers": [
+      "Boot Manager"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "boot-and-crash",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against Docter – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-boot-configuration-data",
+    "term": "Boot Configuration Data",
+    "definition": "Store that lists the installed operating systems and where their files are, read by bootmgr at startup and edited with bcdedit or rebuilt with bootrec.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "boot-and-crash",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-kernel-memory-dump",
+    "term": "Kernel memory dump",
+    "definition": "Default crash file Windows writes after a fatal error, holding only the RAM the kernel was using, saved as Memory.dmp in the system root.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "boot-and-crash",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "aplus-def-small-memory-dump",
+    "term": "Small memory dump",
+    "definition": "Smallest crash file option, holding only basic error and driver details, written to its own folder under the system root for later debugging.",
+    "acceptedAnswers": [
+      "Minidump"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "boot-and-crash",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "aplus-def-complete-memory-dump",
+    "term": "Complete memory dump",
+    "definition": "Crash file holding the entire contents of RAM, which needs a paging file at least as large as physical memory plus 1 MB.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "group": "boot-and-crash",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "aplus-def-application-fails-to-launch",
+    "term": "Application fails to launch",
+    "definition": "Mobile app that will not open, often because a copy is stuck in the background or its cache is corrupt; force stop it, clear the cache, or reinstall.",
+    "acceptedAnswers": [
+      "App fails to launch"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-application-fails-to-close",
+    "term": "Application fails to close",
+    "definition": "Mobile app that hangs or quits on its own at random times rather than every time, fixed by force stopping it, clearing its cache and data, or reinstalling it.",
+    "acceptedAnswers": [
+      "App fails to close"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-application-fails-to-update",
+    "term": "Application fails to update",
+    "definition": "Mobile app stuck on an old version, often because the store updates only on Wi-Fi, automatic updates are off, or the device no longer meets its requirements.",
+    "acceptedAnswers": [
+      "App fails to update"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-application-fails-to-install",
+    "term": "Application fails to install",
+    "definition": "Mobile app download that will not finish setting up, most often from too little free storage, an incompatible device or OS version, or a weak connection.",
+    "acceptedAnswers": [
+      "App fails to install"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-slow-to-respond",
+    "term": "Slow to respond",
+    "definition": "Mobile device or app that lags, usually from RAM filled by background apps, nearly full storage, a poor network connection, or outdated software.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-os-fails-to-update",
+    "term": "OS fails to update",
+    "definition": "Mobile system upgrade that will not complete because the hardware is no longer supported, storage cannot hold both versions, or the device is on a metered connection.",
+    "acceptedAnswers": [
+      "Operating system fails to update"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-battery-life-issues",
+    "term": "Battery life issues",
+    "definition": "Phone that needs charging far too often, caused by an aging battery, apps running in the background, heat, constant signal searching, or radios left on.",
+    "acceptedAnswers": [
+      "Poor battery life",
+      "Short battery life"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-random-reboots",
+    "term": "Random reboots",
+    "definition": "Mobile device that restarts on its own; check battery health, storage over 90 percent, OS and app updates, overheating, and an Android auto restart setting.",
+    "acceptedAnswers": [
+      "Random reboot"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-screen-does-not-autorotate",
+    "term": "Screen does not autorotate",
+    "definition": "Display stuck in portrait or landscape as the device is turned, usually because the rotation lock is on, an app locked the orientation, or a motion sensor failed.",
+    "acceptedAnswers": [
+      "Autorotate issue"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-app-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-force-stop",
+    "term": "Force stop",
+    "definition": "Android App info action that ends a misbehaving app and all its background processes, stronger than just swiping it away from the recent apps view.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against Exam Cram 2e – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-clear-the-app-cache",
+    "term": "Clear the app cache",
+    "definition": "Deleting only an app's temporary stored files, which often fixes an app that will not load after an update without removing the user's sign-in or settings.",
+    "acceptedAnswers": [
+      "Clear cache",
+      "Clear app cache"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-clear-app-data",
+    "term": "Clear app data",
+    "definition": "Erasing all of an app's saved settings, sign-ins, and files so it starts as if newly installed, a stronger step than deleting only its temporary files.",
+    "acceptedAnswers": [
+      "Clear the app data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-soft-reset",
+    "term": "Soft reset",
+    "definition": "Turning a mobile device off and back on, which clears running apps from memory but keeps all data; the first step for a frozen screen or app.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against Exam Cram 2e – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-factory-reset",
+    "term": "Factory reset",
+    "definition": "Returning a mobile device to its original software state, which erases all user data, apps, and settings; a last resort that needs a backup first.",
+    "acceptedAnswers": [
+      "Hard reset"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against Exam Cram 2e – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-portrait-orientation-lock",
+    "term": "Portrait Orientation Lock",
+    "definition": "iOS Control Center setting that keeps the display upright; while it is on, the screen will not turn to landscape when the device is rotated.",
+    "acceptedAnswers": [
+      "Rotation lock"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-battery-saver-mode",
+    "term": "Battery saver mode",
+    "definition": "Setting that slows the device and limits background activity, brightness, and radios to stretch the remaining charge.",
+    "acceptedAnswers": [
+      "Power saving mode",
+      "Low Power Mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "group": "mobile-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "aplus-def-unofficial-app-store",
+    "term": "Unofficial app store",
+    "definition": "Alternative download source outside Google Play or the Apple App Store, whose apps skip the official review and may carry malware or never get updates.",
+    "acceptedAnswers": [
+      "Unofficial application store",
+      "Third-party app store"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-sideloading",
+    "term": "Sideloading",
+    "definition": "Installing a mobile app directly from a package file instead of an official store, which bypasses its security vetting; developers do this with ADB or Xcode.",
+    "acceptedAnswers": [
+      "Sideload"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-developer-mode",
+    "term": "Developer mode",
+    "definition": "Hidden Android menu, unlocked by tapping the build number seven times, that exposes USB debugging, running services, and mock locations, weakening security if left on.",
+    "acceptedAnswers": [
+      "Developer options"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-rooting",
+    "term": "Rooting",
+    "definition": "Gaining superuser control of an Android device to bypass vendor limits, which ends vendor patches and lets malware hide; MDM can block such devices.",
+    "acceptedAnswers": [
+      "Root access"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-jailbreaking",
+    "term": "Jailbreaking",
+    "definition": "Bypassing Apple's restrictions on an iPhone or iPad to gain full OS control and install unapproved apps, which removes built-in protections.",
+    "acceptedAnswers": [
+      "Jailbreak"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "aplus-def-malicious-application",
+    "term": "Malicious application",
+    "definition": "Mobile app with harmful intent, often given away by permissions that do not fit its purpose, such as a camera app that wants to record calls.",
+    "acceptedAnswers": [
+      "Malicious app",
+      "Unauthorized application"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-application-spoofing",
+    "term": "Application spoofing",
+    "definition": "Harmful app that copies the name and icon of a well-known one; check the publisher, install count, and reviews before downloading.",
+    "acceptedAnswers": [
+      "App spoofing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-bootleg-app",
+    "term": "Bootleg app",
+    "definition": "Cracked copy of a paid app with its copy protection removed, usually shared as a package file and often bundled with malware.",
+    "acceptedAnswers": [
+      "Bootleg application"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-android-package",
+    "term": "Android package",
+    "definition": "File format used to distribute and install Android apps; installing one from an untrusted website skips Google Play's security checks.",
+    "acceptedAnswers": [
+      "Android application package",
+      "APK file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-concerns",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "aplus-def-high-network-traffic",
+    "term": "High network traffic",
+    "definition": "Long, unexplained spikes in data sent or received by a mobile device, which may mean an app is stealing data or relaying traffic through it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-degraded-response-time",
+    "term": "Degraded response time",
+    "definition": "Security symptom in which a phone grows slow because hidden malware is consuming its processor and memory; check usage and run an antimalware scan.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-data-usage-limit-notification",
+    "term": "Data-usage limit notification",
+    "definition": "Carrier alert that the plan's allowance has been exceeded unexpectedly, possibly because a hidden app is sending spam or data in the background.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-limited-internet-connectivity",
+    "term": "Limited internet connectivity",
+    "definition": "Intermittent or partial online access on a mobile device that, once signal and radio firmware are ruled out, may come from malware hogging or proxying the connection.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-no-internet-connectivity",
+    "term": "No internet connectivity",
+    "definition": "Complete loss of online access on a phone that, after the usual causes are ruled out, may mean a malicious DNS or relay server it was pointed at went offline.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-high-number-of-ads",
+    "term": "High number of ads",
+    "definition": "Flood of advertisements appearing outside normal apps and sites, a sign of adware from a malicious app; uninstall recent apps until they stop.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-fake-security-warning",
+    "term": "Fake security warning",
+    "definition": "Bogus alert on a phone claiming it is infected to push the user into installing something; treat it as malware already present and factory reset the device.",
+    "acceptedAnswers": [
+      "Fake security warnings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-unexpected-application-behavior",
+    "term": "Unexpected application behavior",
+    "definition": "A newly installed, untrusted app acting in ways it should not; read its reviews, compare them with its install count, and scan the device for malware.",
+    "acceptedAnswers": [
+      "Unexpected app behavior"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-leaked-personal-files",
+    "term": "Leaked personal files",
+    "definition": "Private photos, contacts, or documents from a phone turning up where they should not, a serious sign that calls for isolating the device at once.",
+    "acceptedAnswers": [
+      "Leaked personal data",
+      "Leaked personal files/data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "group": "mobile-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "aplus-def-unable-to-access-the-network",
+    "term": "Unable to access the network",
+    "definition": "PC that cannot reach network resources even though its adapter works, possibly because malware changed its DNS or proxy settings or crashed while relaying traffic.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-desktop-alert",
+    "term": "Desktop alert",
+    "definition": "Fake dialog box made to look like a Windows system message that reports an error and urges the user to call a bogus support number or download software.",
+    "acceptedAnswers": [
+      "Desktop alerts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-false-antivirus-alert",
+    "term": "False antivirus alert",
+    "definition": "Warning that claims protection is off or a virus was found when that is untrue, shown by malware to scare the user into acting.",
+    "acceptedAnswers": [
+      "False antivirus alerts",
+      "False alerts regarding antivirus protection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "aplus-def-rogue-antivirus",
+    "term": "Rogue antivirus",
+    "definition": "Malware that poses as a security scanner, reports invented infections, and demands payment or an install to clean them.",
+    "acceptedAnswers": [
+      "Rogue anti-malware",
+      "Rogue antimalware"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against Docter – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-altered-system-files",
+    "term": "Altered system files",
+    "definition": "Key OS or user files changed or replaced by malware with high privileges, so normal tasks such as printing or saving stop working.",
+    "acceptedAnswers": [
+      "Altered system or personal files"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-missing-or-renamed-files",
+    "term": "Missing or renamed files",
+    "definition": "Documents that vanish from view or get new names or extensions, a typical sign of ransomware that encrypts data and leaves a ransom note.",
+    "acceptedAnswers": [
+      "Missing files",
+      "Renamed files"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-inability-to-access-files",
+    "term": "Inability to access files",
+    "definition": "Errors that block users from opening or copying their own documents because malware changed the permissions or encrypted the data.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-unwanted-notifications",
+    "term": "Unwanted notifications",
+    "definition": "Messages in the system notification area pushed by a website the user allowed to send alerts, made to look as if they come from the OS.",
+    "acceptedAnswers": [
+      "Unwanted OS notifications"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-os-update-failure",
+    "term": "OS update failure",
+    "definition": "Windows patches that will not install, from low disk space, bad settings, drivers, or malware; look up the error code with the update troubleshooter.",
+    "acceptedAnswers": [
+      "OS update failures",
+      "Operating system update failure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "pc-security-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-pop-up",
+    "term": "Pop-up",
+    "definition": "Unrequested browser window or tab that opens in front of the page, often with ads; frequent ones despite the blocker point to adware.",
+    "acceptedAnswers": [
+      "Pop-ups",
+      "Popup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "browser-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-certificate-warning",
+    "term": "Certificate warning",
+    "definition": "Browser message that a site's security credential is expired, untrusted, or issued for a different hostname, so the connection may not be safe.",
+    "acceptedAnswers": [
+      "Certificate warnings",
+      "Certificate error"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "browser-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-browser-redirection",
+    "term": "Browser redirection",
+    "definition": "Being sent to a different website than the one requested, caused by malware, a bad extension, changed DNS settings, or a hijacked home page.",
+    "acceptedAnswers": [
+      "Redirection",
+      "Browser redirect"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "browser-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "aplus-def-pharming",
+    "term": "Pharming",
+    "definition": "Sending users who type a correct web address to a fake look-alike site by altering the local hosts file or poisoning DNS records.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "browser-symptoms",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-degraded-browser-performance",
+    "term": "Degraded browser performance",
+    "definition": "Slow page loads, crashes, and frozen tabs, caused by too many tabs or an old version, or by cryptominers, malicious scripts, extensions, or proxies.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "browser-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "aplus-def-malicious-browser-extension",
+    "term": "Malicious browser extension",
+    "definition": "Add-on disguised as a useful tool that hijacks searches, injects ads, or steals data; remove it and install add-ons only from trusted stores.",
+    "acceptedAnswers": [
+      "Malicious extension",
+      "Malicious plug-in"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "group": "browser-symptoms",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  }
+]

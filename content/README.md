@@ -81,11 +81,25 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 
 ## Groups
 
-Definition groups are listed here as each domain is written.
+Definition groups, by file. A group name is used in one file only, so distractors stay within one domain.
 
-A+ Core 1 Domain 1 (`core1-d1-mobile-devices.json`): `mobile-hardware`, `physical-security`, `input-accessories`, `mobile-connections`, `cellular-location`, `mobile-management`.
+A+ Core 1 Domain 1 (`core1-d1-mobile-devices.json`, 38 terms): `mobile-hardware`, `physical-security`, `input-accessories`, `mobile-connections`, `cellular-location`, `mobile-management`.
 
-A+ Core 1 Domain 2 (`core1-d2-networking.json`): `transport`, `web-mail-protocols`, `file-remote-protocols`, `wireless`, `server-roles`, `appliances-systems`, `dns-records`, `email-authentication`, `dhcp-configuration`, `network-devices`, `power-provider-equipment`, `ip-addressing`, `connection-types`, `network-types`, `networking-tools`.
+A+ Core 1 Domain 2 (`core1-d2-networking.json`, 98 terms): `transport`, `web-mail-protocols`, `file-remote-protocols`, `wireless`, `server-roles`, `appliances-systems`, `dns-records`, `email-authentication`, `dhcp-configuration`, `network-devices`, `power-provider-equipment`, `ip-addressing`, `connection-types`, `network-types`, `networking-tools`.
+
+A+ Core 1 Domain 3 (`core1-d3-hardware.json`, 139 terms): `display-types`, `display-attributes`, `twisted-pair`, `fiber-coax`, `copper-connectors`, `peripheral-cables`, `video-cables`, `storage-interfaces`, `storage-drives`, `raid`, `ram`, `motherboards`, `expansion-cards`, `firmware`, `firmware-security`, `cpu-cooling`, `power-supply`, `power-connectors`, `printer-drivers`, `printer-settings`, `scanning`, `printer-security`, `printer-types`, `laser-printer-parts`, `inkjet-thermal-impact-parts`.
+
+A+ Core 1 Domain 4 (`core1-d4-virtualization-cloud.json`, 45 terms): `vm-purposes`, `virtualization-platforms`, `vm-networking`, `vm-requirements`, `cloud-models`, `cloud-billing-scaling`, `cloud-resources`.
+
+A+ Core 1 Domain 5 (`core1-d5-hw-network-troubleshooting.json`, 96 terms): `system-symptoms`, `hardware-diagnostics`, `drive-symptoms`, `raid-issues`, `image-quality`, `display-input-projector`, `mobile-power-damage`, `mobile-input-software`, `network-symptoms`, `network-causes-fixes`, `print-quality`, `paper-handling`, `print-queue`.
+
+A+ Core 2 Domain 1 (`core2-d1-operating-systems.json`, 158 terms): `mobile-desktop-os`, `os-file-systems`, `compatibility-requirements`, `boot-partitioning`, `installation-types`, `windows-editions`, `windows-mmc-tools`, `windows-system-tools`, `cmd-files`, `cmd-network`, `cmd-system`, `control-panel`, `power-options`, `windows-networking`, `macos-interface`, `macos-services`, `macos-maintenance`, `macos-apps`, `linux-file-commands`, `linux-admin-commands`, `linux-info-commands`, `linux-network-commands`, `linux-config-files`, `linux-components`, `cloud-productivity`.
+
+A+ Core 2 Domain 2 (`core2-d2-security.json`, 152 terms): `facility-security`, `physical-access`, `logical-access`, `mfa`, `windows-accounts`, `windows-protection`, `ntfs-permissions`, `active-directory`, `wireless-authentication`, `malware-infection`, `malware-surveillance`, `malware-tools`, `malware-removal`, `phishing`, `social-engineering`, `network-attacks`, `password-and-web-attacks`, `threats-and-vulnerabilities`, `passwords`, `account-hardening`, `mobile-security`, `data-destruction`, `soho-firewall`, `soho-router`, `browser-trust`, `browser-settings`.
+
+A+ Core 2 Domain 3 (`core2-d3-software-troubleshooting.json`, 71 terms): `windows-stability`, `windows-performance`, `windows-fixes`, `boot-and-crash`, `mobile-app-symptoms`, `mobile-fixes`, `mobile-security-concerns`, `mobile-security-symptoms`, `pc-security-symptoms`, `browser-symptoms`.
+
+A+ Core 2 Domain 4 (`core2-d4-operational-procedures.json`, 127 terms): `ticketing`, `asset-management`, `support-documents`, `agreements-policies`, `change-planning`, `change-control`, `backup-methods`, `backup-recovery`, `esd-protection`, `personal-safety`, `environmental-controls`, `power-protection`, `incident-response`, `software-licensing`, `regulated-data`, `customer-communication`, `professional-conduct`, `script-file-types`, `scripting-basics`, `remote-access-methods`, `ai-limitations`, `ai-privacy-use`.
 
 ## How the acronym files were made
 

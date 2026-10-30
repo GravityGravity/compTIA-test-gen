@@ -1897,8 +1897,7 @@
     "term": "Toner probe",
     "definition": "A two-part kit that sends a signal down a wire and traces it to find which cable is which in a bundle or wall.",
     "acceptedAnswers": [
-      "Tone generator and probe",
-      "Toner"
+      "Tone generator and probe"
     ],
     "typeable": true,
     "certifications": [

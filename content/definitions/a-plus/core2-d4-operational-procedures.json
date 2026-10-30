@@ -1,0 +1,2576 @@
+[
+  {
+    "id": "aplus-def-ticketing-system",
+    "term": "Ticketing system",
+    "definition": "Help desk software that records each user problem or request, tracks who owns it and its status, and keeps the notes from first report to closure.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "ticketing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-escalation",
+    "term": "Escalation",
+    "definition": "Passing a ticket the current technician cannot resolve to a more experienced support tier, such as level 2 or 3, or to another team or vendor.",
+    "acceptedAnswers": [
+      "Escalation levels"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "ticketing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-severity-level",
+    "term": "Severity level",
+    "definition": "Ticket field that records how badly a problem affects the user's work, often rated low, medium, or high, so urgent issues are handled first.",
+    "acceptedAnswers": [
+      "Severity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "ticketing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-ticket-category",
+    "term": "Ticket category",
+    "definition": "Ticket field that classifies the problem type, such as password reset, hardware, or network, so it is routed to the right team and counted in reports.",
+    "acceptedAnswers": [
+      "Issue category"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "ticketing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-progress-notes",
+    "term": "Progress notes",
+    "definition": "Clear written updates added to a ticket while work continues, recording what has been tried so far so another technician can pick it up.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "ticketing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-asset-management",
+    "term": "Asset management",
+    "definition": "The process of tracking, supervising, and auditing an organization's hardware and software through their life cycle, from purchase to retirement.",
+    "acceptedAnswers": [
+      "IT asset management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "asset-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-configuration-management-database",
+    "term": "Configuration management database",
+    "definition": "Central repository of configuration items, such as hardware, installed software, and their relationships, used to track licenses and judge the impact of changes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "asset-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-asset-tag",
+    "term": "Asset tag",
+    "definition": "Label with a unique number, often a barcode, QR code, or RFID chip, fixed to a device so inventory systems can identify and track it.",
+    "acceptedAnswers": [
+      "Asset ID",
+      "Asset tags and IDs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "asset-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-procurement-life-cycle",
+    "term": "Procurement life cycle",
+    "definition": "The purchasing process for hardware and software: identify the need, get quotes, gain budget approval, negotiate, order, receive, and later retire or replace.",
+    "acceptedAnswers": [
+      "Procurement lifecycle"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "asset-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-warranty",
+    "term": "Warranty",
+    "definition": "A seller's promise that a purchased product is free of defects and will work as described for a set period, after which repairs may cost extra.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "asset-management",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-incident-report",
+    "term": "Incident report",
+    "definition": "Record started as soon as an incident is suspected and kept to its end, logging every fact, action, time, and person involved.",
+    "acceptedAnswers": [
+      "Incident documentation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1",
+      "220-1202/4.6"
+    ],
+    "group": "support-documents",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-standard-operating-procedure",
+    "term": "Standard operating procedure",
+    "definition": "Plain-language document that gives the exact steps, in order, for a routine task such as installing an operating system or a software package.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "support-documents",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-custom-installation-procedure",
+    "term": "Custom installation procedure",
+    "definition": "Documented steps for loading a software package with set options, listing its version, 32- or 64-bit build, license, approved users, and allowed devices.",
+    "acceptedAnswers": [
+      "Software package custom installation procedure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "support-documents",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-new-user-setup-checklist",
+    "term": "New-user setup checklist",
+    "definition": "List of tasks done when an employee joins, such as creating the domain account, issuing a device, granting building access, and reviewing policies.",
+    "acceptedAnswers": [
+      "Onboarding checklist"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "support-documents",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-off-boarding-checklist",
+    "term": "Off-boarding checklist",
+    "definition": "List of tasks done when an employee leaves, such as disabling (not deleting) the account, revoking access, and collecting company devices.",
+    "acceptedAnswers": [
+      "Offboarding checklist",
+      "User off-boarding checklist",
+      "User termination checklist"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "support-documents",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-knowledge-base",
+    "term": "Knowledge base",
+    "definition": "Searchable library of support articles, often from a vendor and found by article number or phrase, that explains how to install, configure, and fix products.",
+    "acceptedAnswers": [
+      "Knowledge base article"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "support-documents",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-service-level-agreement",
+    "term": "Service-level agreement",
+    "definition": "Contract in which a provider commits to measurable service standards, such as uptime percentage and response time, with penalties if it falls short.",
+    "acceptedAnswers": [
+      "External service-level agreement",
+      "Third-party service-level agreement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-def-internal-service-level-agreement",
+    "term": "Internal service-level agreement",
+    "definition": "Agreement between teams in the same organization that sets the response times, resolution times, and quality goals one team owes another.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-non-disclosure-agreement",
+    "term": "Non-disclosure agreement",
+    "definition": "One-way legal contract that binds the receiving party to keep the owner's confidential information, such as trade secrets, private and use it only as agreed.",
+    "acceptedAnswers": [
+      "Nondisclosure agreement",
+      "Confidentiality agreement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-mutual-non-disclosure-agreement",
+    "term": "Mutual non-disclosure agreement",
+    "definition": "Two-way confidentiality contract in which both parties share sensitive information and each promises to protect what the other discloses.",
+    "acceptedAnswers": [
+      "Mutual nondisclosure agreement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-end-user-license-agreement",
+    "term": "End-user license agreement",
+    "definition": "Contract a user must accept before using proprietary software, setting how the product may be used and limiting the vendor's liability.",
+    "acceptedAnswers": [
+      "End-user licensing agreement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-acceptable-use-policy",
+    "term": "Acceptable use policy",
+    "definition": "Organization rules, often signed during onboarding, that define what employees may and may not do with company computers, networks, email, and data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-splash-screen",
+    "term": "Splash screen",
+    "definition": "Notice shown at login or when opening a system that reminds users of legal, privacy, or compliance rules and often requires acknowledgment before access.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "agreements-policies",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "aplus-def-change-management",
+    "term": "Change management",
+    "definition": "Structured process for proposing, approving, testing, carrying out, and documenting changes to systems or procedures so that disruption is kept low.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-planning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-rollback-plan",
+    "term": "Rollback plan",
+    "definition": "Documented steps to undo a failed change and return a system to its original configuration.",
+    "acceptedAnswers": [
+      "Backout plan",
+      "Back-out plan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-planning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-backup-plan",
+    "term": "Backup plan",
+    "definition": "Part of a change plan that makes and verifies copies of critical systems and data before work starts, so they can be restored if the change fails.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-planning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-sandbox-testing",
+    "term": "Sandbox testing",
+    "definition": "Trying a proposed change in an isolated copy of the production environment, often built from virtual machines, before applying it to live systems.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-planning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-responsible-staff-member",
+    "term": "Responsible staff member",
+    "definition": "Person assigned to own a business process, answer questions about it, and act as the contact who must be consulted on any change affecting it.",
+    "acceptedAnswers": [
+      "Responsible staff members"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-planning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-change-request-form",
+    "term": "Change request form",
+    "definition": "Document that starts the change process, listing the item to be altered, the reason, priority, plan, rollback steps, and expected duration.",
+    "acceptedAnswers": [
+      "Request form",
+      "Change request"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-planning",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-standard-change",
+    "term": "Standard change",
+    "definition": "Pre-approved, low-risk, routine modification that follows a set procedure and needs no extra board approval each time it is done.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-normal-change",
+    "term": "Normal change",
+    "definition": "Modification that is neither routine nor urgent, so it needs a full review, risk assessment, implementation plan, and board approval before work starts.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-emergency-change",
+    "term": "Emergency change",
+    "definition": "Urgent modification made right away to fix a critical problem, using a faster approval path than usual, such as patching an actively exploited flaw.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-change-freeze",
+    "term": "Change freeze",
+    "definition": "Period, such as a product launch or quarter end, when no modifications are allowed except emergencies or approved exceptions, to keep systems stable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-maintenance-window",
+    "term": "Maintenance window",
+    "definition": "Scheduled, agreed period, usually during off-peak hours, set aside for updates and other planned work so users are disrupted as little as possible.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-change-advisory-board",
+    "term": "Change advisory board",
+    "definition": "Group of stakeholders from across the organization that meets regularly to review proposed changes and approve or deny them.",
+    "acceptedAnswers": [
+      "Change board"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-risk-analysis",
+    "term": "Risk analysis",
+    "definition": "Review of a proposed change for possible failure or side effects on other systems, used to give it a low, moderate, or high risk level.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-end-user-acceptance",
+    "term": "End-user acceptance",
+    "definition": "Final step in which the people who will use a changed system test it and confirm it meets their needs before it is signed off.",
+    "acceptedAnswers": [
+      "User acceptance",
+      "User acceptance testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "group": "change-control",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-full-backup",
+    "term": "Full backup",
+    "definition": "Copies all selected data regardless of earlier jobs and clears the archive bits; it takes the longest but restores from a single set.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-incremental-backup",
+    "term": "Incremental backup",
+    "definition": "Copies only files changed since the last backup of any kind and clears archive bits, so a restore needs the full set plus each later job in order.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-differential-backup",
+    "term": "Differential backup",
+    "definition": "Copies all files changed since the last full backup without clearing archive bits, so it grows daily and a restore needs only the full plus the latest one.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-synthetic-full-backup",
+    "term": "Synthetic full backup",
+    "definition": "Complete backup set built by software that merges the last full backup with the later incremental jobs, without reading all data from the source again.",
+    "acceptedAnswers": [
+      "Synthetic backup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-copy-backup",
+    "term": "Copy backup",
+    "definition": "Job that saves all selected data like a full one but leaves archive bits unchanged, so it does not disturb the regular schedule, often run before an upgrade.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-methods",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "aplus-def-archive-bit",
+    "term": "Archive bit",
+    "definition": "File attribute set when a file is created or changed that tells backup software the file needs copying; full and incremental jobs clear it.",
+    "acceptedAnswers": [
+      "Archive flag",
+      "Archive attribute"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-methods",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-in-place-recovery",
+    "term": "In-place recovery",
+    "definition": "Restoring backed-up data to its original location, writing over the current data there, for example after ransomware or file corruption.",
+    "acceptedAnswers": [
+      "Overwrite recovery",
+      "In-place/overwrite recovery",
+      "In-place restore"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-recovery",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-alternative-location-recovery",
+    "term": "Alternative location recovery",
+    "definition": "Restoring backed-up data to a different folder, machine, or site, used when the original is unavailable or to compare old files with current ones.",
+    "acceptedAnswers": [
+      "Alternate location recovery",
+      "Alternative location restore"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-recovery",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-backup-testing",
+    "term": "Backup testing",
+    "definition": "Regularly restoring sample jobs to a test system and comparing the results with the original data, to prove the saved copies can actually be recovered.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-recovery",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-grandfather-father-son",
+    "term": "Grandfather-father-son",
+    "definition": "Media rotation scheme with daily, weekly, and monthly sets, where the last daily of the week is promoted to weekly and the last weekly to monthly.",
+    "acceptedAnswers": [
+      "Grandfather-father-son rotation",
+      "GFS rotation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-recovery",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-3-2-1-backup-rule",
+    "term": "3-2-1 backup rule",
+    "definition": "Guideline to keep three copies of data, counting the original, on two different types of media, with one copy stored offsite.",
+    "acceptedAnswers": [
+      "3-2-1 rule"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-recovery",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-offsite-backup",
+    "term": "Offsite backup",
+    "definition": "Copy of data kept at a different physical location or in the cloud, so it survives a fire, flood, or theft that destroys the main site.",
+    "acceptedAnswers": [
+      "Off-site backup"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "group": "backup-recovery",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "aplus-def-electrostatic-discharge",
+    "term": "Electrostatic discharge",
+    "definition": "Sudden flow of static electricity between objects at different voltages; as little as about 30 volts can damage a computer part without visible signs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "esd-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-antistatic-wrist-strap",
+    "term": "Antistatic wrist strap",
+    "definition": "Band worn by a technician and clipped to ground or the case, with about a 1-megohm resistor, that keeps the body at the same potential as the equipment.",
+    "acceptedAnswers": [
+      "ESD strap",
+      "Electrostatic discharge strap",
+      "Antistatic strap",
+      "ESD wrist strap"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "esd-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-antistatic-mat",
+    "term": "Antistatic mat",
+    "definition": "Grounded work surface on which a computer or its parts are placed, and to which a technician can connect, so static charge drains safely away.",
+    "acceptedAnswers": [
+      "ESD mat",
+      "Electrostatic discharge mat"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "esd-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-antistatic-bag",
+    "term": "Antistatic bag",
+    "definition": "Shielding package, usually silver or pink, used to store and ship cards and boards; charges collect on its outside rather than reaching the parts.",
+    "acceptedAnswers": [
+      "Antistatic bags"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "esd-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "aplus-def-self-grounding",
+    "term": "Self-grounding",
+    "definition": "Touching bare metal on the computer case before handling parts to equalize charge when no strap or mat is available; less effective than proper gear.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "esd-protection",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-equipment-grounding",
+    "term": "Equipment grounding",
+    "definition": "Connecting equipment and network racks to earth through low-gauge wire or bonding bars so stray current has a safe path away from people.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "personal-safety",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-cable-management",
+    "term": "Cable management",
+    "definition": "Routing, bundling, and tying cables away from walkways and high-traffic areas so they do not cause trips or get damaged.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "personal-safety",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-proper-lifting-technique",
+    "term": "Proper lifting technique",
+    "definition": "Bending at the knees, keeping the back straight and the load close, and lifting with the legs; get help for loads over a quarter of body weight.",
+    "acceptedAnswers": [
+      "Lifting technique",
+      "Lifting techniques"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "personal-safety",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-class-c-fire-extinguisher",
+    "term": "Class C fire extinguisher",
+    "definition": "Fire suppressor rated for electrical fires, such as a burning power supply; common CO2 BC units work but can harm computer parts.",
+    "acceptedAnswers": [
+      "Class C extinguisher"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "personal-safety",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-safety-goggles",
+    "term": "Safety goggles",
+    "definition": "Protective eyewear worn when blowing out dust, cutting cable, or working where debris or chemicals could reach the eyes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "personal-safety",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-air-filter-mask",
+    "term": "Air filter mask",
+    "definition": "Face covering worn while cleaning dusty computers or handling toner so that airborne particles are not breathed in.",
+    "acceptedAnswers": [
+      "Air filtration mask",
+      "Dust mask"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "group": "personal-safety",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "aplus-def-material-safety-data-sheet",
+    "term": "Material safety data sheet",
+    "definition": "Document for a chemical product, such as toner or a cleaner, that covers its hazards, first aid, spill handling, storage, and disposal.",
+    "acceptedAnswers": [
+      "Safety data sheet"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "environmental-controls",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-electronic-waste",
+    "term": "Electronic waste",
+    "definition": "Discarded computers, phones, batteries, and toner cartridges, which contain heavy metals or chemicals and must be recycled under local or EPA rules, not trashed.",
+    "acceptedAnswers": [
+      "E-waste"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "environmental-controls",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-relative-humidity",
+    "term": "Relative humidity",
+    "definition": "Measure of moisture in the air; about 20 to 60 percent is advised, since dry air raises the risk of static discharge and damp air causes condensation.",
+    "acceptedAnswers": [
+      "Humidity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "environmental-controls",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-compressed-air",
+    "term": "Compressed air",
+    "definition": "Pressurized gas sprayed to blow dust out of fans, heat sinks, and keyboards, ideally outdoors or with a vacuum collecting the debris.",
+    "acceptedAnswers": [
+      "Canned air"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "environmental-controls",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-high-efficiency-particulate-air-filter",
+    "term": "High-efficiency particulate air filter",
+    "definition": "Very fine filter used in air cleaners and computer vacuums to trap dust and other tiny airborne particles in repair areas.",
+    "acceptedAnswers": [
+      "HEPA filter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "environmental-controls",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-power-surge",
+    "term": "Power surge",
+    "definition": "Unexpected rise in line voltage that lasts longer than a brief transient and can damage connected electronics.",
+    "acceptedAnswers": [
+      "Surge"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-voltage-spike",
+    "term": "Voltage spike",
+    "definition": "Very short, sharp jump in voltage lasting only nanoseconds, often from lightning or from power being restored after an outage.",
+    "acceptedAnswers": [
+      "Spike",
+      "Power spike"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-brownout",
+    "term": "Brownout",
+    "definition": "Drop in line voltage that lasts long enough to dim lights and can make computers shut off, while some power still flows.",
+    "acceptedAnswers": [
+      "Under-voltage event",
+      "Undervoltage event"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-blackout",
+    "term": "Blackout",
+    "definition": "Complete loss of electrical power for a prolonged period, often followed by a damaging jump in voltage when it returns.",
+    "acceptedAnswers": [
+      "Power failure",
+      "Power outage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-surge-suppressor",
+    "term": "Surge suppressor",
+    "definition": "Power strip with metal-oxide varistors, rated in joules, that diverts voltage spikes away from devices but gives no power during an outage.",
+    "acceptedAnswers": [
+      "Surge protector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-uninterruptible-power-supply",
+    "term": "Uninterruptible power supply",
+    "definition": "Device with a battery that conditions incoming power and keeps equipment running for a few minutes during sags, brownouts, and blackouts so it can shut down safely.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 60: Environmental Controls"
+  },
+  {
+    "id": "aplus-def-power-strip",
+    "term": "Power strip",
+    "definition": "Block of outlets that lets several devices share one wall socket but, unless it has varistors, offers no protection from voltage spikes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "group": "power-protection",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "aplus-def-incident-response",
+    "term": "Incident response",
+    "definition": "The steps followed when a security breach or prohibited activity is found: identify it, report and escalate, preserve evidence, and document everything.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "incident-response",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-chain-of-custody",
+    "term": "Chain of custody",
+    "definition": "Chronological, signed record of everyone who handled a piece of evidence, when, and how it was stored, proving it was not altered.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "incident-response",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-order-of-volatility",
+    "term": "Order of volatility",
+    "definition": "Ranking of evidence by how quickly it disappears, so short-lived data such as RAM contents is collected before stable data on disks or archives.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "incident-response",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-drive-image",
+    "term": "Drive image",
+    "definition": "Exact duplicate of a storage device's contents made during an investigation so the evidence is preserved and examined without changing the original.",
+    "acceptedAnswers": [
+      "Copy of drive",
+      "Drive copy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "incident-response",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-prohibited-content",
+    "term": "Prohibited content",
+    "definition": "Material such as pirated software, malware, stolen data, or inappropriate images whose discovery on a system must be reported to a supervisor and, if needed, police.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "incident-response",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-digital-rights-management",
+    "term": "Digital rights management",
+    "definition": "Technical controls that restrict copying, sharing, or use of copyrighted software, music, video, and other digital content.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "software-licensing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-valid-license",
+    "term": "Valid license",
+    "definition": "Software right that is genuine, not counterfeit, and still within its term, so the product may legally be activated and used.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "software-licensing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-perpetual-license",
+    "term": "Perpetual license",
+    "definition": "One-time purchase that lets you use a software version forever, though upgrades after the first year usually need a separate maintenance fee.",
+    "acceptedAnswers": [
+      "Perpetual license agreement",
+      "Non-expiring license"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "software-licensing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-personal-use-license",
+    "term": "Personal-use license",
+    "definition": "Software right bought by an individual for home use on their own device, such as a retail copy of Windows Home, not for business deployment.",
+    "acceptedAnswers": [
+      "Personal license"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "software-licensing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-corporate-use-license",
+    "term": "Corporate-use license",
+    "definition": "Software right bought in bulk by an organization that allows installation on many company devices, often through a site or volume agreement.",
+    "acceptedAnswers": [
+      "Corporate license",
+      "Enterprise license",
+      "Site license",
+      "Volume license"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "software-licensing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-open-source-license",
+    "term": "Open-source license",
+    "definition": "Terms, such as the GNU GPL, that let anyone use, study, modify, and redistribute software whose source code is published.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "software-licensing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-personal-government-issued-information",
+    "term": "Personal government-issued information",
+    "definition": "Identity data found on official documents such as passports, driver's licenses, birth certificates, Social Security cards, and taxpayer ID numbers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "regulated-data",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "aplus-def-protected-health-information",
+    "term": "Protected health information",
+    "definition": "Patient medical and billing records that identify a person and are protected in the United States by the HIPAA Privacy Rule.",
+    "acceptedAnswers": [
+      "Personal health information",
+      "Healthcare data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "regulated-data",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-payment-card-industry-data-security-standard",
+    "term": "Payment Card Industry Data Security Standard",
+    "definition": "Card industry rules, enforced by banks rather than government, for how merchants must store, process, and protect credit and debit card data.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "regulated-data",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-general-data-protection-regulation",
+    "term": "General Data Protection Regulation",
+    "definition": "European Union law that protects the personal data of people in the EU, requiring consent and a right to erasure, even for companies outside Europe.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "regulated-data",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-data-retention-requirements",
+    "term": "Data retention requirements",
+    "definition": "Legal and internal rules that set how long records such as financial transactions must be kept and when they must be destroyed.",
+    "acceptedAnswers": [
+      "Data retention"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "group": "regulated-data",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "aplus-def-active-listening",
+    "term": "Active listening",
+    "definition": "Giving the customer full attention, taking notes, and letting them finish without interruption so you fully understand the problem.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "customer-communication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-open-ended-question",
+    "term": "Open-ended question",
+    "definition": "A question that cannot be answered with yes or no, such as asking what happens when the user prints, used to draw out details and narrow an issue.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "customer-communication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-restating-the-issue",
+    "term": "Restating the issue",
+    "definition": "Repeating the customer's problem back in your own words to confirm you understood it correctly before you begin work.",
+    "acceptedAnswers": [
+      "Restate the issue",
+      "Paraphrasing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "customer-communication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-jargon",
+    "term": "Jargon",
+    "definition": "Technical terms and acronyms, such as WPA3 or TCP/IP, that a nontechnical customer may not understand and that should be avoided or explained simply.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "customer-communication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-follow-up",
+    "term": "Follow-up",
+    "definition": "Contacting the customer some time after a repair is finished to verify that the problem stayed fixed and that they are satisfied.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "customer-communication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-formal-attire",
+    "term": "Formal attire",
+    "definition": "Dress such as a suit, traditionally black or navy, expected in settings like job interviews or executive meetings.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "professional-conduct",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-business-casual",
+    "term": "Business casual",
+    "definition": "Everyday office dress, such as slacks with a collared shirt or blouse, recommended for most on-site work and service calls.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "professional-conduct",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-cultural-sensitivity",
+    "term": "Cultural sensitivity",
+    "definition": "Awareness of and respect for customers' different backgrounds and customs, including using their proper titles and checking that you understand each other.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "professional-conduct",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-punctuality",
+    "term": "Punctuality",
+    "definition": "Arriving at the agreed time and, if you will be late, contacting the customer ahead of time to apologize and give a new arrival time.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "professional-conduct",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-setting-expectations",
+    "term": "Setting expectations",
+    "definition": "Telling the customer how long a repair should take, what it involves, and when they will get status updates, then keeping to that timeline.",
+    "acceptedAnswers": [
+      "Set expectations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "group": "professional-conduct",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-def-batch-file",
+    "term": "Batch file",
+    "definition": "Windows script with a .bat extension, run by the Command Prompt, that executes a list of commands such as net use for mapping drives.",
+    "acceptedAnswers": [
+      "Batch script"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "script-file-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 63: Basic Scripting, Part II"
+  },
+  {
+    "id": "aplus-def-powershell-script",
+    "term": "PowerShell script",
+    "definition": "Windows script with a .ps1 extension that runs cmdlets such as New-LocalUser and uses names that begin with a dollar sign to hold values.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "script-file-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 63: Basic Scripting, Part II"
+  },
+  {
+    "id": "aplus-def-visual-basic-script",
+    "term": "Visual Basic Script",
+    "definition": "Older object-based Microsoft language saved with a .vbs extension, historically used in Windows and Office automation and now mostly replaced.",
+    "acceptedAnswers": [
+      "VBScript",
+      "Visual Basic Scripting Edition"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "script-file-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 63: Basic Scripting, Part II"
+  },
+  {
+    "id": "aplus-def-shell-script",
+    "term": "Shell script",
+    "definition": "Linux or UNIX script with a .sh extension that usually starts with #!/bin/bash and must be made executable with chmod +x before it runs.",
+    "acceptedAnswers": [
+      "Bash script"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "script-file-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 63: Basic Scripting, Part II"
+  },
+  {
+    "id": "aplus-def-javascript",
+    "term": "JavaScript",
+    "definition": "Language saved in .js files that mainly controls how web pages behave, such as quizzes or calculators, and uses // for single-line notes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "script-file-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 63: Basic Scripting, Part II"
+  },
+  {
+    "id": "aplus-def-python",
+    "term": "Python",
+    "definition": "General-purpose, object-oriented language run by an interpreter, saved in .py files, and able to import ready-made modules such as random.",
+    "acceptedAnswers": [
+      "Python script"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "script-file-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 63: Basic Scripting, Part II"
+  },
+  {
+    "id": "aplus-def-variable",
+    "term": "Variable",
+    "definition": "Named label in a script, such as $i or count, that holds a value like a number, text, or array that can change while the script runs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "scripting-basics",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 62: Basic Scripting, Part I"
+  },
+  {
+    "id": "aplus-def-environment-variable",
+    "term": "Environment variable",
+    "definition": "Operating system setting with a name, such as Path or %username%, that scripts and programs can read to find folders and user details.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "scripting-basics",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 62: Basic Scripting, Part I"
+  },
+  {
+    "id": "aplus-def-comment",
+    "term": "Comment",
+    "definition": "Line of notes in a script that is ignored when it runs, marked with # in PowerShell and Bash or // in JavaScript.",
+    "acceptedAnswers": [
+      "Comment syntax"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "scripting-basics",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 62: Basic Scripting, Part I"
+  },
+  {
+    "id": "aplus-def-for-loop",
+    "term": "For loop",
+    "definition": "Construct that repeats a block of code a set number of times, using a counter that is initialized, tested, and incremented on each pass.",
+    "acceptedAnswers": [
+      "For statement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "scripting-basics",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 62: Basic Scripting, Part I"
+  },
+  {
+    "id": "aplus-def-if-statement",
+    "term": "If statement",
+    "definition": "Branching construct that runs a block of code only when a condition is true and can run an else block when it is false.",
+    "acceptedAnswers": [
+      "If-then statement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.8"
+    ],
+    "group": "scripting-basics",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-virtual-network-computing",
+    "term": "Virtual Network Computing",
+    "definition": "Open, cross-platform screen-sharing system, such as RealVNC, that uses TCP port 5900 and is not encrypted by default.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-remote-monitoring-and-management",
+    "term": "Remote monitoring and management",
+    "definition": "Agent-based software, often used by managed service providers, that watches the health of many endpoints and lets technicians patch and control them from one console.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "aplus-def-simple-protocol-for-independent-computing-environments",
+    "term": "Simple Protocol for Independent Computing Environments",
+    "definition": "Open protocol for reaching the desktops of virtual machines remotely, with keyboard, mouse, audio, and video, and optional TLS on each channel.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "aplus-def-windows-remote-management",
+    "term": "Windows Remote Management",
+    "definition": "Microsoft's implementation of the SOAP-based WS-Management protocol, used to run commands and PowerShell scripts and collect management data on remote computers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "aplus-def-quick-assist",
+    "term": "Quick Assist",
+    "definition": "Built-in Windows 11 tool where a helper signs in, gets a six-digit code, and the user enters it to share or hand over control of their screen.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-screen-sharing-software",
+    "term": "Screen-sharing software",
+    "definition": "Third-party tools such as TeamViewer or Splashtop that let one person view another's desktop, usually to troubleshoot a problem together.",
+    "acceptedAnswers": [
+      "Screen sharing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-file-transfer-software",
+    "term": "File transfer software",
+    "definition": "Tools such as OneDrive, Dropbox, or Google Drive used to move or share files between users and computers rather than to control a desktop.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-desktop-management-software",
+    "term": "Desktop management software",
+    "definition": "Remote-control agent installed on a computer and left waiting for incoming connections, so technicians can manage it at any time; keep it patched and use MFA.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "group": "remote-access-methods",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-hallucination",
+    "term": "Hallucination",
+    "definition": "False or made-up output, such as invented citations or links, that a generative model presents confidently as fact because of gaps in its training data.",
+    "acceptedAnswers": [
+      "AI hallucination",
+      "Hallucinations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-limitations",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 65: Appropriate Use of Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-algorithmic-bias",
+    "term": "Algorithmic bias",
+    "definition": "Unfair results caused by how a model's design or assumptions favor certain outcomes, such as weighting efficiency over fairness.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-limitations",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-data-bias",
+    "term": "Data bias",
+    "definition": "Skewed model results caused by training data that does not fairly represent the real people or situations the system will face.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-limitations",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-plagiarism",
+    "term": "Plagiarism",
+    "definition": "Presenting someone else's work as your own, a risk when generated text copies material that other people uploaded or published.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-limitations",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 65: Appropriate Use of Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-human-in-the-loop",
+    "term": "Human-in-the-loop",
+    "definition": "Practice of having people review and correct a model's outputs before they are used, to catch errors and fabricated answers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-limitations",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-artificial-intelligence",
+    "term": "Artificial intelligence",
+    "definition": "Computer systems that learn patterns from training data to recognize, predict, or generate text, images, and code, as in assistants like Copilot.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-privacy-use",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 65: Appropriate Use of Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-public-artificial-intelligence",
+    "term": "Public artificial intelligence",
+    "definition": "Openly available hosted model service whose provider may keep and learn from what users enter, so confidential code or data must never be pasted in.",
+    "acceptedAnswers": [
+      "Public AI",
+      "Public AI model"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-privacy-use",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-private-artificial-intelligence",
+    "term": "Private artificial intelligence",
+    "definition": "Model service run in an organization's own controlled environment, or under a data-protection agreement, so prompts and company data are not shared or used to train others.",
+    "acceptedAnswers": [
+      "Private AI",
+      "Private AI model"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-privacy-use",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-application-integration",
+    "term": "Application integration",
+    "definition": "Building generative features directly into everyday software, such as Copilot in Microsoft 365 summarizing meetings or drafting documents from files.",
+    "acceptedAnswers": [
+      "AI integration",
+      "AI application integration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-privacy-use",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 65: Appropriate Use of Artificial Intelligence"
+  },
+  {
+    "id": "aplus-def-data-leakage",
+    "term": "Data leakage",
+    "definition": "Accidental exposure of confidential information, such as when staff paste source code or meeting notes into a public chatbot that may reuse it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "group": "ai-privacy-use",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  }
+]

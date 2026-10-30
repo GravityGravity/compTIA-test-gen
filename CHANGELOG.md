@@ -2,6 +2,27 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definitions: the rest of A+ (Core 1 Domains 3–5, Core 2 Domains 1–4)
+
+Decisions:
+- The remaining A+ domains are written and reviewed as one batch (the user asked for it; recorded in CLAUDE.md).
+- A concept that two domains name gets one record that lists both objectives (videoconferencing, hardware virtualization, personally identifiable information).
+- No two records accept the same typed answer, and a group name is used in one file only.
+- Full names are typeable, even long ones such as "Peripheral Component Interconnect Express". Only very long names and symptom phrases are multiple choice only (17 records).
+
+Changes:
+- New definition files, written from Exam Cram 2e and Docter:
+  - `core1-d3-hardware.json`: 139 terms
+  - `core1-d4-virtualization-cloud.json`: 45 terms
+  - `core1-d5-hw-network-troubleshooting.json`: 96 terms
+  - `core2-d1-operating-systems.json`: 158 terms
+  - `core2-d2-security.json`: 152 terms
+  - `core2-d3-software-troubleshooting.json`: 71 terms
+  - `core2-d4-operational-procedures.json`: 127 terms
+- The A+ definition pool now holds 924 terms in 149 groups.
+- `content/README.md`: the groups for each file.
+- `CLAUDE.md`: the one-batch rule for these domains, and a rule to compact the conversation over 400k tokens.
+
 ## 2026-10-30 – Definitions: A+ Core 1 Domain 2 (Networking)
 
 - New `content/definitions/a-plus/core1-d2-networking.json`: 98 terms for objectives 2.1–2.8, in 15 groups.

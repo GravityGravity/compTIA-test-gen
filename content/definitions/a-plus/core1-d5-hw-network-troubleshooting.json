@@ -1,0 +1,2058 @@
+[
+  {
+    "id": "aplus-def-proprietary-crash-screen",
+    "term": "Proprietary crash screen",
+    "definition": "A vendor-specific stop screen, such as the Windows blue screen or the macOS spinning wheel, shown after a fatal error from bad drivers, faulty RAM, or failing hardware.",
+    "acceptedAnswers": [
+      "Proprietary crash screens"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-blank-screen",
+    "term": "Blank screen",
+    "definition": "The monitor shows no picture at all; check monitor power, input, and cable first, then the video card, and if the PC never completes POST, the RAM, CPU, or motherboard.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-no-power",
+    "term": "No power",
+    "definition": "Pressing the power button gets no response at all: no fans, lights, or beeps; check the outlet, power cord, and voltage switch, then replace the power supply.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-sluggish-performance",
+    "term": "Sluggish performance",
+    "definition": "A PC that responds slowly to everything, often because CPU, memory, or disk use stays above 80 percent, the system drive has under 10 percent free, or malware runs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-overheating",
+    "term": "Overheating",
+    "definition": "Components running too hot because of failed fans, dust, blocked vents, missing slot covers, or a loose heat sink, which leads to lockups, throttling, and unexpected shutdowns.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1",
+      "220-1201/5.4"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-burning-smell",
+    "term": "Burning smell",
+    "definition": "An odor of hot plastic or electronics, most often from a failing power supply; shut the PC down and unplug it at once, then look for melted or scorched parts.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-random-shutdown",
+    "term": "Random shutdown",
+    "definition": "The computer turns itself off without warning, usually from overheating, a failing power supply, or new components that draw more power than the supply can deliver.",
+    "acceptedAnswers": [
+      "Random shutdowns"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power"
+  },
+  {
+    "id": "aplus-def-application-crash",
+    "term": "Application crash",
+    "definition": "A program closes or stops responding unexpectedly; when it keeps happening across programs, suspect faulty or incompatible RAM and run a memory test.",
+    "acceptedAnswers": [
+      "Application crashes"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power"
+  },
+  {
+    "id": "aplus-def-unusual-noise",
+    "term": "Unusual noise",
+    "definition": "A whine, buzz, or rattle from inside the case, usually a dusty or failing fan or a cable brushing a fan blade, since only moving parts make sound.",
+    "acceptedAnswers": [
+      "Unusual noises"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-capacitor-swelling",
+    "term": "Capacitor swelling",
+    "definition": "A failed motherboard capacitor bulges at the top and may leak electrolyte, causing random reboots and crashes; replace the board and never touch the residue.",
+    "acceptedAnswers": [
+      "Distended capacitor",
+      "Swollen capacitor",
+      "Distended capacitors"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "system-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-power-on-self-test",
+    "term": "Power-on self-test",
+    "definition": "The firmware's built-in check of the CPU, RAM, video, and other basic hardware at startup; if it finds a fault, the boot process stops.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-beep-code",
+    "term": "Beep code",
+    "definition": "A pattern of short and long beeps from the system speaker that reports a startup hardware fault; meanings differ by BIOS maker, so look them up in the manual.",
+    "acceptedAnswers": [
+      "POST beep",
+      "POST beeps",
+      "Beep codes",
+      "POST code beeps"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-post-card",
+    "term": "POST card",
+    "definition": "A diagnostic card plugged into an expansion slot or USB port that shows a two-digit code for each startup test, revealing where the boot process stops.",
+    "acceptedAnswers": [
+      "Power-on self-test card"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "glossary",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Glossary; checked against CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-power-supply-tester",
+    "term": "Power supply tester",
+    "definition": "A handheld device that plugs into the 24-pin, CPU, SATA, and Molex connectors and shows whether the 12 V, 5 V, and 3.3 V outputs are correct.",
+    "acceptedAnswers": [
+      "PSU tester"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power"
+  },
+  {
+    "id": "aplus-def-windows-memory-diagnostic",
+    "term": "Windows Memory Diagnostic",
+    "definition": "A built-in Windows tool, started with mdsched.exe or from the recovery environment, that restarts the PC and tests the RAM for errors.",
+    "acceptedAnswers": [
+      "Windows Memory Diagnostics",
+      "Memory Diagnostic"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power"
+  },
+  {
+    "id": "aplus-def-chip-creep",
+    "term": "Chip creep",
+    "definition": "Chips, memory modules, and expansion cards slowly working out of their sockets after many heating and cooling cycles, causing intermittent faults that reseating fixes.",
+    "acceptedAnswers": [
+      "Card creep"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-inaccurate-system-date-and-time",
+    "term": "Inaccurate system date and time",
+    "definition": "The clock resets to a default date at each boot and other firmware settings are lost, because the CR2032 CMOS battery is drained below about 2.5 V.",
+    "acceptedAnswers": [
+      "Inaccurate system date/time",
+      "Inaccurate system time"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "group": "hardware-diagnostics",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power"
+  },
+  {
+    "id": "aplus-def-led-status-indicator",
+    "term": "LED status indicator",
+    "definition": "A small light on a case, drive, or enclosure that shows drive activity or health; one that never blinks, stays on solid, or turns amber signals a problem.",
+    "acceptedAnswers": [
+      "Light-emitting diode status indicator",
+      "LED status indicators",
+      "Drive activity light"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-grinding-noise",
+    "term": "Grinding noise",
+    "definition": "A harsh scraping from a moving part: in a hard disk, a failing spindle motor or heads cutting the platter; in a printer, stripped gears or a bad stepper motor.",
+    "acceptedAnswers": [
+      "Grinding noises",
+      "Grinding sound"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2",
+      "220-1201/5.6"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-clicking-sound",
+    "term": "Clicking sound",
+    "definition": "A regular ticking from a mechanical hard disk that means it is failing; copy the data to another drive at once, before it stops working.",
+    "acceptedAnswers": [
+      "Clicking sounds",
+      "Clicking noise",
+      "Clicking noises"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-bootable-device-not-found",
+    "term": "Bootable device not found",
+    "definition": "The firmware finds no disk with a startup loader, caused by a loose or reversed SATA cable, a wrong boot order, a dead drive, or a damaged MBR.",
+    "acceptedAnswers": [
+      "No bootable device",
+      "Boot device not found"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-data-corruption",
+    "term": "Data corruption",
+    "definition": "Files that will not open or contain errors, caused by failing sectors, a power surge during a write, or malware; back up what remains and test the drive.",
+    "acceptedAnswers": [
+      "Data loss/corruption",
+      "Data loss and corruption",
+      "Corrupted data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-extended-read-write-times",
+    "term": "Extended read/write times",
+    "definition": "A disk that takes much longer than normal to open and save files because it is nearly full, fragmented, infected, or developing bad sectors.",
+    "acceptedAnswers": [
+      "Extended read and write times",
+      "Slow read/write times"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-missing-drives-in-os",
+    "term": "Missing drives in OS",
+    "definition": "A drive that the firmware detects but File Explorer does not show, usually because it is not initialized, partitioned, or given a letter in Disk Management.",
+    "acceptedAnswers": [
+      "Missing drives in operating system",
+      "Missing drive in OS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-self-monitoring-analysis-and-reporting-technology",
+    "term": "Self-Monitoring, Analysis, and Reporting Technology",
+    "definition": "Monitoring built into drives that records error counts and health data to warn of failure; check its status with wmic diskdrive get status.",
+    "acceptedAnswers": [
+      "SMART failure",
+      "S.M.A.R.T. failure"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-input-output-operations-per-second",
+    "term": "Input/output operations per second",
+    "definition": "A storage performance measure of how many reads and writes a drive completes each second; a steady drop in benchmark results points to a failing device.",
+    "acceptedAnswers": [
+      "Low IOPS",
+      "Low performance IOPS"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "drive-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-raid-failure",
+    "term": "RAID failure",
+    "definition": "An array loses more drives than its level can survive, such as one disk in RAID 0 or two in RAID 5, so the data must be restored from backup.",
+    "acceptedAnswers": [
+      "RAID array failure",
+      "Redundant array of independent disks failure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "raid-issues",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-array-missing",
+    "term": "Array missing",
+    "definition": "The system cannot find the RAID volume at all, showing errors like Array Not Found, often because a BIOS reset changed the SATA mode from RAID to AHCI.",
+    "acceptedAnswers": [
+      "Missing array",
+      "Missing RAID array"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "raid-issues",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-audible-alarm",
+    "term": "Audible alarm",
+    "definition": "A beeping tone or siren from a RAID controller or storage enclosure that warns of a failed drive or controller fault; check the RAID utility before silencing it.",
+    "acceptedAnswers": [
+      "Audible alarms",
+      "RAID alarm"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "raid-issues",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-degraded-array",
+    "term": "Degraded array",
+    "definition": "A mirrored or parity volume that still runs after one member disk failed or was removed, but has no redundancy left until the disk is replaced and rebuilt.",
+    "acceptedAnswers": [
+      "Degraded RAID array",
+      "Degraded RAID"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "group": "raid-issues",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "aplus-def-fuzzy-image",
+    "term": "Fuzzy image",
+    "definition": "A blurry picture, caused on a projector by poor lens focus, and on a flat panel by an unsupported resolution, custom scaling, a bad cable, or nearby interference.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-display-burn-in",
+    "term": "Display burn-in",
+    "definition": "A faint permanent ghost of a static picture that stays visible over everything else, mostly on OLED and plasma panels; the usual fix is replacing the display.",
+    "acceptedAnswers": [
+      "Burn-in",
+      "Screen burn-in"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-dead-pixel",
+    "term": "Dead pixel",
+    "definition": "A single point on a flat panel that never lights, seen as a dark dot on a white background; it cannot be repaired, so the panel is replaced.",
+    "acceptedAnswers": [
+      "Dead pixels"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-stuck-pixel",
+    "term": "Stuck pixel",
+    "definition": "A single point on a flat panel that stays lit in one color on a black background; pixel-repair software, rapid color changes, or gentle pressure may free it.",
+    "acceptedAnswers": [
+      "Stuck pixels"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-flashing-screen",
+    "term": "Flashing screen",
+    "definition": "A picture that flickers or blinks off and on, caused by a refresh rate set too low, a failing backlight or inverter, a loose cable, or an unsupported resolution.",
+    "acceptedAnswers": [
+      "Screen flicker",
+      "Flickering screen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-incorrect-color-display",
+    "term": "Incorrect color display",
+    "definition": "Colors look wrong or tinted because of a failing panel controller board, bent connector pins, or a loose cable; recalibrate with the OSD or dccw.",
+    "acceptedAnswers": [
+      "Incorrect colors",
+      "Incorrect color"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-dim-image",
+    "term": "Dim image",
+    "definition": "A picture too dark to read, caused by low brightness settings or, if no setting helps, a failing backlight that must be replaced.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-distorted-image",
+    "term": "Distorted image",
+    "definition": "A picture that looks stretched, squashed, or trapezoid-shaped, usually because the chosen resolution has a different aspect ratio from the panel's native one.",
+    "acceptedAnswers": [
+      "Distorted images"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-artifact",
+    "term": "Artifact",
+    "definition": "Stray blocks, lines, or garbled patterns drawn over the picture, often from an overheating video card, failing video memory, or a bad driver.",
+    "acceptedAnswers": [
+      "Artifacts",
+      "Video artifacts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "image-quality",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "aplus-def-incorrect-input-source",
+    "term": "Incorrect input source",
+    "definition": "A monitor or projector set to the wrong port in its on-screen menu, such as HDMI while the PC uses DisplayPort, so it shows a black screen with no signal.",
+    "acceptedAnswers": [
+      "Wrong input source",
+      "Incorrect data source"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "aplus-def-physical-cabling-issue",
+    "term": "Physical cabling issue",
+    "definition": "A loose, damaged, or overlong video cable that causes flicker, fuzziness, random signal loss, or no picture; reseat it or swap in a cable rated for the distance.",
+    "acceptedAnswers": [
+      "Physical cabling issues",
+      "Cabling issue"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "aplus-def-burnt-out-bulb",
+    "term": "Burnt-out bulb",
+    "definition": "A projector lamp at the end of its life, so no light comes out at all; replace it with the exact model after it cools, then reset the lamp counter.",
+    "acceptedAnswers": [
+      "Burned-out bulb"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "aplus-def-audio-issues",
+    "term": "Audio issues",
+    "definition": "No sound from a monitor or TV because it is muted, Windows sends audio to the wrong output device, or a DVI cable is used, which carries video only.",
+    "acceptedAnswers": [
+      "Audio issue"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-intermittent-projector-shutdown",
+    "term": "Intermittent projector shutdown",
+    "definition": "A projector that turns itself off during use, nearly always from overheating; clean the air filter, check the fan, give it room to vent, and check the lamp.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-sizing-issue",
+    "term": "Sizing issue",
+    "definition": "Icons and text appear far too large, too small, or past the screen edges because the resolution or scaling percentage does not match the monitor's native setting.",
+    "acceptedAnswers": [
+      "Sizing issues"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "aplus-def-keystone-correction",
+    "term": "Keystone correction",
+    "definition": "A projector setting that squares up a trapezoid-shaped picture caused by aiming the projector at an angle to the screen.",
+    "acceptedAnswers": [
+      "Keystone"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "aplus-def-low-resolution-video-mode",
+    "term": "Low-resolution video mode",
+    "definition": "A basic 640 × 480 display mode Windows starts in when the video driver fails or the resolution is unsupported, so the driver or setting can be fixed.",
+    "acceptedAnswers": [
+      "Low resolution mode",
+      "VGA mode"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "group": "display-input-projector",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-poor-battery-health",
+    "term": "Poor battery health",
+    "definition": "An aging battery that holds much less charge than when new, so the device runs only briefly unplugged; replace it if recalibration does not help.",
+    "acceptedAnswers": [
+      "Bad battery health"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-swollen-battery",
+    "term": "Swollen battery",
+    "definition": "A lithium battery that puffs up from overcharging, age, damage, or a defect and can crack the case; power off, unplug, and send it for recycling.",
+    "acceptedAnswers": [
+      "Swollen batteries",
+      "Bulging battery"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-improper-charging",
+    "term": "Improper charging",
+    "definition": "A device that charges slowly or not at all, most often because of a damaged cable, a failed adapter, or lint in the port; check the cable first.",
+    "acceptedAnswers": [
+      "Not charging"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "aplus-def-liquid-damage",
+    "term": "Liquid damage",
+    "definition": "Harm from water or other fluid getting inside a device; power it off, remove the case, SIM, and memory card, and let it dry fully before restarting.",
+    "acceptedAnswers": [
+      "Water damage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "aplus-def-physically-damaged-ports",
+    "term": "Physically damaged ports",
+    "definition": "Bent, broken, or loose charging and data connectors; they usually cannot be repaired alone, so the board or the whole device is replaced.",
+    "acceptedAnswers": [
+      "Physically damaged port",
+      "Damaged port",
+      "Damaged ports"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-broken-screen",
+    "term": "Broken screen",
+    "definition": "Cracked or shattered display glass from a drop or impact; replace the screen or the device, and use protectors and rugged cases to prevent it.",
+    "acceptedAnswers": [
+      "Cracked screen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-charge-cycle",
+    "term": "Charge cycle",
+    "definition": "One full use of a battery's capacity from empty to 100 percent; batteries handle only several hundred of these, so phones wear out in three to five years.",
+    "acceptedAnswers": [
+      "Charging cycle",
+      "Charge cycles"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-power-damage",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "aplus-def-digitizer-issues",
+    "term": "Digitizer issues",
+    "definition": "A touchscreen layer that stops registering finger or pen input because of a frozen app or OS, a loose display connector, or a damaged screen.",
+    "acceptedAnswers": [
+      "Digitizer issue",
+      "Unresponsive touchscreen"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "aplus-def-cursor-drift",
+    "term": "Cursor drift",
+    "definition": "The pointer slowly moves on its own in one direction, usually because a laptop pointing stick does not recenter; move it back and forth or recalibrate it.",
+    "acceptedAnswers": [
+      "Pointer drift"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-touch-calibration",
+    "term": "Touch calibration",
+    "definition": "The process of aligning where a touchscreen registers a tap with where the image is, run in Windows from Tablet PC Settings when touches land off target.",
+    "acceptedAnswers": [
+      "Touchscreen calibration",
+      "Touch screen calibration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-ghost-cursor",
+    "term": "Ghost cursor",
+    "definition": "The pointer jumps around the screen while the user types, because a palm brushes the touchpad; lower its sensitivity or disable it.",
+    "acceptedAnswers": [
+      "Ghost cursors"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-stylus-does-not-work",
+    "term": "Stylus does not work",
+    "definition": "A pen that no longer writes on a touchscreen because its battery is dead, its tip is worn, it is not paired, or the screen does not support it.",
+    "acceptedAnswers": [
+      "Stylus not working"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "aplus-def-unable-to-install-new-applications",
+    "term": "Unable to install new applications",
+    "definition": "Apps fail to install because of low storage, an outdated OS, missing permissions, or blocked unknown sources; free space and update first.",
+    "acceptedAnswers": [
+      "Cannot install new applications",
+      "Unable to install apps"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "aplus-def-poor-connectivity",
+    "term": "Poor connectivity",
+    "definition": "Weak, dropping, or absent Wi-Fi, cellular, or Bluetooth links on a mobile device, often from distance or obstructions, or airplane mode left on.",
+    "acceptedAnswers": [
+      "Poor/no connectivity",
+      "Poor or no connectivity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "group": "mobile-input-software",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-intermittent-wireless-connectivity",
+    "term": "Intermittent wireless connectivity",
+    "definition": "A Wi-Fi link that keeps dropping and reconnecting, most often from a weak signal at the edge of range, obstructions, or too many clients on one access point.",
+    "acceptedAnswers": [
+      "Intermittent wireless connection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-slow-network-speeds",
+    "term": "Slow network speeds",
+    "definition": "Transfers take far longer than normal because of network congestion, old cabling or switches, or a host with too many open connections, seen with netstat -a.",
+    "acceptedAnswers": [
+      "Slow network speed",
+      "Slow transfer speeds"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-limited-connectivity",
+    "term": "Limited connectivity",
+    "definition": "A host can reach local resources but not other networks or the internet, often from a wrong gateway or DNS server or an APIPA address; check with ipconfig /all.",
+    "acceptedAnswers": [
+      "Local connectivity",
+      "Limited or local connectivity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-jitter",
+    "term": "Jitter",
+    "definition": "Variation in packet delay, measured in milliseconds, so traffic arrives unevenly; it ruins voice and video calls and is reduced with QoS and wired links.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-poor-voip-quality",
+    "term": "Poor VoIP quality",
+    "definition": "Choppy, garbled, or dropped internet phone calls caused by congestion, delay, and uneven packet arrival; fix by giving voice traffic priority with QoS.",
+    "acceptedAnswers": [
+      "Poor Voice over IP quality",
+      "Poor Voice over Internet Protocol quality"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-port-flapping",
+    "term": "Port flapping",
+    "definition": "A switch link that rapidly alternates between up and down states, caused by a bad patch cable, a duplex mismatch, power-saving settings, or a faulty SFP module.",
+    "acceptedAnswers": [
+      "Link flapping"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-high-latency",
+    "term": "High latency",
+    "definition": "Long delay for packets to travel from source to destination, also called lag, which hurts real-time apps like gaming and video conferencing.",
+    "acceptedAnswers": [
+      "Latency"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-external-interference",
+    "term": "External interference",
+    "definition": "Radio noise from microwaves, cordless phones, fluorescent lights, motors, or neighboring networks on the same channel that weakens and disrupts Wi-Fi signals.",
+    "acceptedAnswers": [
+      "Interference",
+      "Electromagnetic interference"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-authentication-failure",
+    "term": "Authentication failure",
+    "definition": "A user cannot log on to network resources because of wrong credentials, Caps Lock, a locked or expired account, an unreachable domain controller, or clock skew.",
+    "acceptedAnswers": [
+      "Authentication failures"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-intermittent-internet-connectivity",
+    "term": "Intermittent internet connectivity",
+    "definition": "Access to outside websites and services keeps dropping while the LAN may work, caused by failing cables, overloaded or outdated routers, DNS errors, or ISP outages.",
+    "acceptedAnswers": [
+      "Intermittent internet connection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-symptoms",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-quality-of-service",
+    "term": "Quality of Service",
+    "definition": "A router or switch feature that prioritizes chosen traffic, such as voice calls, so it gets bandwidth first when the network is congested.",
+    "acceptedAnswers": [
+      "Quality of service settings"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-causes-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-jitter-buffer",
+    "term": "Jitter buffer",
+    "definition": "A holding area that collects arriving voice packets and releases them at an even pace, smoothing out delay variation on VoIP calls.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-causes-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-ip-address-conflict",
+    "term": "IP address conflict",
+    "definition": "Two hosts on a network use the same address, so one loses access, usually because someone set a static address inside the DHCP range.",
+    "acceptedAnswers": [
+      "IP conflict",
+      "Duplicate IP address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-causes-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-duplex-mismatch",
+    "term": "Duplex mismatch",
+    "definition": "A link where one end sends in full-duplex and the other in half-duplex, causing collisions, errors, slow transfers, and a port that goes up and down.",
+    "acceptedAnswers": [
+      "Speed and duplex mismatch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-causes-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "aplus-def-wireless-site-survey",
+    "term": "Wireless site survey",
+    "definition": "A walk-through with a Wi-Fi analyzer that maps signal strength, SSIDs, and channels in an area, often shown as a heat map of coverage.",
+    "acceptedAnswers": [
+      "Site survey"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-causes-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-low-rf-signal",
+    "term": "Low RF signal",
+    "definition": "A weak radio signal from too much distance to the access point or bad antenna placement; move closer, reposition the router, or upgrade the adapter.",
+    "acceptedAnswers": [
+      "Low radio frequency signal",
+      "Weak signal"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "group": "network-causes-fixes",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems"
+  },
+  {
+    "id": "aplus-def-lines-down-the-printed-pages",
+    "term": "Lines down the printed pages",
+    "definition": "Vertical streaks on every page: white ones from a dirty transfer corona, black ones from a scratched drum or dirty charging corona, or gaps from clogged inkjet nozzles.",
+    "acceptedAnswers": [
+      "Lines down the page",
+      "Vertical lines"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-garbled-print",
+    "term": "Garbled print",
+    "definition": "Pages of random symbols or nonsense text, caused by the wrong printer driver, a mismatch between PCL and PostScript, or a failing formatter board.",
+    "acceptedAnswers": [
+      "Garbled printing",
+      "Garbage print"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-faded-prints",
+    "term": "Faded prints",
+    "definition": "Output that is too light overall, usually because the toner or ink is low; shake or replace the toner cartridge, or replace the ink cartridge.",
+    "acceptedAnswers": [
+      "Faded print",
+      "Faded printing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-speckling",
+    "term": "Speckling",
+    "definition": "Random dots of toner or ink scattered across printed pages, usually from paper dust, label glue, or debris inside the printer, or a leaking cartridge.",
+    "acceptedAnswers": [
+      "Speckling on printed pages",
+      "Speckles"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-ghosting",
+    "term": "Ghosting",
+    "definition": "A faint copy of a previous page appears on the current one, caused by a broken drum cleaning blade or bad erase lamps; try a new toner cartridge first.",
+    "acceptedAnswers": [
+      "Double image",
+      "Echo image",
+      "Double/echo images"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-image-smudging",
+    "term": "Image smudging",
+    "definition": "Toner that rubs off when the page is touched, because the fuser is not heating and melting it into the paper; replace the fuser.",
+    "acceptedAnswers": [
+      "Smudged print",
+      "Smudging"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-blank-pages",
+    "term": "Blank pages",
+    "definition": "A laser printer feeds paper with nothing on it, because the toner is empty, the sealing tape is still on, or the transfer corona or high-voltage supply failed.",
+    "acceptedAnswers": [
+      "Blank page"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-repetitive-marks",
+    "term": "Repetitive marks",
+    "definition": "The same smudge repeats down the page at equal spacing, matching the circumference of a dirty roller or a chipped drum; clean or replace that roller.",
+    "acceptedAnswers": [
+      "Repetitive defects",
+      "Repeating marks"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-incorrect-page-orientation",
+    "term": "Incorrect page orientation",
+    "definition": "Output prints in portrait when landscape was wanted, or the reverse, because the app, driver, or printer settings for page layout do not match.",
+    "acceptedAnswers": [
+      "Wrong page orientation",
+      "Incorrect orientation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-quality",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "aplus-def-paper-jam",
+    "term": "Paper jam",
+    "definition": "Paper stuck inside the paper path, caused by obstructions, worn feed or exit rollers, damp or wrong paper, or a broken drive gear.",
+    "acceptedAnswers": [
+      "Paper jams"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "paper-handling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-paper-not-feeding",
+    "term": "Paper not feeding",
+    "definition": "The printer fails to pick up any sheet from the tray, usually because the pickup rollers are worn smooth or the paper is too smooth to grip.",
+    "acceptedAnswers": [
+      "Paper will not feed",
+      "No paper feed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "paper-handling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-multipage-misfeed",
+    "term": "Multipage misfeed",
+    "definition": "The printer pulls several sheets at once, caused by a worn separation pad or paper that is damp, sticky, or rough; fan or replace the paper.",
+    "acceptedAnswers": [
+      "Multiple page misfeed",
+      "Multipage feed"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "paper-handling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-staple-jam",
+    "term": "Staple jam",
+    "definition": "A finisher fault where bent staples block the stapling unit so sets come out unstapled; clear the jammed staples and refill the cartridge if empty.",
+    "acceptedAnswers": [
+      "Staple jams"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "paper-handling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-hole-punch-issue",
+    "term": "Hole punch issue",
+    "definition": "A finisher fault where output pages are not punched or are punched in the wrong place; check the finishing settings and clear debris from the punch unit.",
+    "acceptedAnswers": [
+      "Hole punch",
+      "Hole punch issues"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "paper-handling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "aplus-def-tray-not-recognized",
+    "term": "Tray not recognized",
+    "definition": "The printer does not detect an installed paper tray, from a tray not fully seated, wrong size settings on the control panel, old firmware, or a bad sensor.",
+    "acceptedAnswers": [
+      "Tray not detected"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "paper-handling",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "aplus-def-multiple-prints-pending-in-queue",
+    "term": "Multiple prints pending in queue",
+    "definition": "Several jobs wait in line without printing because the printer is offline, paused, out of paper, or one job at the front has stalled.",
+    "acceptedAnswers": [
+      "Multiple prints pending",
+      "Print jobs pending in queue"
+    ],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-queue",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "aplus-def-frozen-print-queue",
+    "term": "Frozen print queue",
+    "definition": "Jobs stay stuck and cannot be canceled because a job is corrupted or the spooler failed; stop the spooler, empty the spool PRINTERS folder, and restart it.",
+    "acceptedAnswers": [
+      "Stuck print queue",
+      "Frozen queue"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-queue",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "aplus-def-print-spooler-service",
+    "term": "Print Spooler service",
+    "definition": "The Windows service that queues print jobs on disk and feeds them to the printer; restart it with net stop spooler and net start spooler.",
+    "acceptedAnswers": [
+      "Print spooler",
+      "Spooler service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-queue",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "aplus-def-printer-connectivity-issue",
+    "term": "Printer connectivity issue",
+    "definition": "A network printer that clients cannot reach, often because its IP address changed through DHCP; give it a reservation or static address and print a configuration page.",
+    "acceptedAnswers": [
+      "Printer connectivity issues",
+      "Connectivity issues"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "group": "print-queue",
+    "origin": "objectives",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  }
+]
