@@ -9,9 +9,16 @@ const exams: ExamConfig[] = [
     name: 'Core 1 Exam',
     shortName: 'Core 1',
     active: false,
+    content: 'core1',
+    questionCount: { min: 75, max: 90 },
+    timeLimitMinutes: 90,
+    passingScore: 675,
+    maxScore: 900,
+    scenarioShare: 50,
+    generatedScenarioShare: 70,
     domains: [
-      { id: '1', name: 'Mobile Devices', weight: 13 },
-      { id: '2', name: 'Networking', weight: 87 }
+      { id: '1', name: 'Mobile Devices', weight: 13, objectives: [{ id: '1.1', kind: 'scenario' }] },
+      { id: '2', name: 'Networking', weight: 87, objectives: [{ id: '2.1', kind: 'knowledge' }] }
     ]
   }
 ]

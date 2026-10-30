@@ -1,0 +1,142 @@
+[
+  {
+    "id": "core1-q-w-3.3-1",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "topics": [
+      "220-1201/3.3.1"
+    ],
+    "stem": "How many pins does a DDR4 desktop DIMM have?",
+    "options": [
+      "288",
+      "240",
+      "260",
+      "204"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "DDR4 DIMMs have 288 pins. DDR5 DIMMs also have 288 pins, with a different key notch.",
+    "whyWrong": [
+      null,
+      "240 pins is DDR3.",
+      "260 pins is a DDR4 SODIMM.",
+      "204 pins is a DDR3 SODIMM."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-3.4-2",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "topics": [
+      "220-1201/3.4.1"
+    ],
+    "stem": "Which RAID level stripes with no fault tolerance?",
+    "options": [
+      "RAID 0",
+      "RAID 1",
+      "RAID 5",
+      "RAID 10"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "RAID 0 stripes data across drives for speed. One drive failure loses all the data.",
+    "whyWrong": [
+      null,
+      "RAID 1 mirrors.",
+      "RAID 5 adds parity.",
+      "RAID 10 mirrors and stripes."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-3.2-3",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "topics": [
+      "220-1201/3.2.1"
+    ],
+    "stem": "Which connector is used on Cat 6 cables?",
+    "options": [
+      "RJ45",
+      "RJ11",
+      "LC",
+      "F type"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Twisted-pair Ethernet cables end in RJ45 connectors. RJ11 is for phone lines.",
+    "whyWrong": [
+      null,
+      "RJ11 is a phone connector.",
+      "LC is a fiber connector.",
+      "F type is a coaxial connector."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-3.6-4",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "MOST LIKELY",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.1"
+    ],
+    "stem": "A user adds a second graphics card and the PC shuts down under load. What is the MOST LIKELY cause?",
+    "options": [
+      "The power supply is too small",
+      "The RAM is bad",
+      "The CMOS battery is dead",
+      "The monitor cable is loose"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A new graphics card draws much more power under load. A power supply that is too small shuts down when the load peaks.",
+    "whyWrong": [
+      null,
+      "Bad RAM gives errors and crashes, not load-based shutdowns.",
+      "A dead CMOS battery resets the time.",
+      "A loose cable gives no image, not a shutdown."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  }
+]

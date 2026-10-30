@@ -1,0 +1,143 @@
+[
+  {
+    "id": "core1-q-w-1.2-1",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "topics": [
+      "220-1201/1.2.1"
+    ],
+    "stem": "Which connection type lets a phone pay at a store terminal by holding it close?",
+    "options": [
+      "NFC",
+      "Bluetooth",
+      "Wi-Fi",
+      "Infrared"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Near-field communication works only over a few centimeters. Payment terminals use it for tap-to-pay.",
+    "whyWrong": [
+      null,
+      "Bluetooth reaches about 10 meters and pairs devices.",
+      "Wi-Fi connects to a network, not a terminal.",
+      "Infrared needs line of sight and is rare on phones."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-1.2-2",
+    "type": "multiple",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.2"
+    ],
+    "topics": [
+      "220-1201/1.2.2"
+    ],
+    "stem": "Which TWO accessories add input to a tablet? (Choose two.)",
+    "options": [
+      "Stylus",
+      "Docking station speaker",
+      "Bluetooth keyboard",
+      "Screen protector"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "selectCount": 2,
+    "fixedOrder": false,
+    "explanation": "A stylus and a keyboard are input devices. Speakers and screen protectors are not.",
+    "whyWrong": [
+      null,
+      "A speaker is output.",
+      null,
+      "A screen protector only protects the glass."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-1.1-3",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "FIRST",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.1"
+    ],
+    "stem": "A user's laptop battery swells. What should the technician do FIRST?",
+    "options": [
+      "Stop using the laptop and remove the battery safely",
+      "Charge the battery fully",
+      "Press the case closed",
+      "Update the BIOS"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A swollen battery can catch fire. Stop using it and remove it safely before anything else.",
+    "whyWrong": [
+      null,
+      "Charging a swollen battery adds risk.",
+      "Pressure can puncture the cell.",
+      "A firmware update does not fix a damaged cell."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-1.3-4",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "stem": "Which setting lets a phone share its cellular data with a laptop?",
+    "options": [
+      "Hotspot",
+      "Airplane mode",
+      "Location services",
+      "Do not disturb"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A hotspot shares the phone's cellular connection over Wi-Fi. The laptop joins it like any wireless network.",
+    "whyWrong": [
+      null,
+      "Airplane mode turns the radios off.",
+      "Location services give the position only.",
+      "Do not disturb only silences alerts."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  }
+]

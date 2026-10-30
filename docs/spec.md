@@ -1,7 +1,7 @@
 # CompTIA A+ Practice App – Product Requirements
 
 ## Purpose
-Help users prepare for the CompTIA A+ Core 1 and Core 2 exams.
+Help users prepare for the CompTIA A+ Core 1 and Core 2 exams and the CompTIA Network+ (N10-009) exam.
 
 ## Problem
 There are not many local applications that generate practice tests and exercises for the CompTIA A+ Core exams.
@@ -38,7 +38,9 @@ Use these names in all files and code:
 - Language: English only.
 - All screens that are not part of an exam attempt or an attempt review (menus, module selection, the list of previous attempts, the Acronym Exercise module, and the Definition Exercise module) follow the compTIA UI style in `references/comptia-ui-style/`.
 
-### Core 1 Exam and Core 2 Exam modules
+### Exam modules (Core 1 Exam, Core 2 Exam, Network+ Exam)
+All exam modules use the same exam code. Only the exam config and the content are different. `docs/exam-modules.md` tells how to build an exam module, including exams added later.
+
 - `docs/compTIA-exam-overviews.md` defines how the app generates each exam. Follow it for:
   - The number of questions, the time limit, and the passing score.
   - The domains and the domain weights.
@@ -46,10 +48,18 @@ Use these names in all files and code:
 - All questions are multiple choice: single response and multiple response ("Choose two").
 - The exam attempt UI follows the structure of the exam simulation draft in `references/exam-simulation-ui.html` (question screen, review and finalize screen, timers, results screen, and review screen).
 - The exam has a timer.
-- The app generates questions dynamically. The sentence structure changes between attempts, so the user cannot memorize the question form.
+- The app generates scenario-based questions dynamically from scenario records and a sentence grammar. The sentence structure changes between attempts, so the user cannot memorize the question form. The generator works for every exam module.
+- All other questions come from a question pool for each exam (approved 2026-10-30):
+  - The pool has every practice question from the exam's books (chapter quizzes, review questions, practice exams), with the same answers. Questions from books for older objectives are included as they are, tagged with the closest current objective.
+  - New questions written from the books fill the gaps: every topic (top-level bullet under an objective) has at least 1 question, and 2 where the books give enough facts (changed 2026-10-30; was 3).
+  - Each exam's pool has at least 800 questions.
+  - Each question is labelled with its domain, objectives, and topics.
+- Each attempt matches the config: the questions for each domain follow the domain weights, and the scenario-based share follows the estimated mix. Part of the scenario share comes from the generator and part from the pool's scenario questions (a config value, default 70% generated).
+- The app prefers questions that the user has seen least often in earlier attempts. No question repeats within one attempt.
 - The app grades each attempt against the passing score in `docs/compTIA-exam-overviews.md`.
 - After the user submits an exam, "Start a new attempt" on the results screen goes back to that exam's page.
-- The app stores each attempt persistently.
+- The app stores each attempt persistently, with the full text of each question, its answers and explanations, and the user's answers, so a previous attempt can be reviewed exactly.
+- If the app closes during an attempt (crash or forced exit), the attempt is autosaved. On the next launch the app offers to resume or discard it.
 - During an exam, a "Return" button is at the top of the screen. When the user selects it or tries to close the app, a dialog asks the user to save the exam for later or cancel the attempt (or keep working). A saved exam can be resumed later.
 - The correct answer has an in-depth explanation of 2–5 sentences.
 - Each incorrect answer has a short explanation of 1 sentence.
@@ -94,14 +104,16 @@ Both modules:
 
 ## Acceptance Criteria
 
-### Core 1 Exam module
-<!-- blank -->
-
-### Core 2 Exam module
-<!-- blank -->
-
-### Network+ Exam module
-<!-- blank -->
+### Exam modules (Core 1, Core 2, Network+)
+Each exam module is accepted when:
+- Its config has all exam fields and `check_config.py` passes.
+- Its pool has at least 800 questions, every topic has at least 1 pool question (2 is the target), every scenario objective has enough scenario records, and `check_questions.py` passes with no errors.
+- Every book practice question for the exam is in the pool, with the book's answers.
+- 200 seeded attempts generate with no errors: each has a question count in the config range, domain counts within 1 of the weights, and a scenario share within 2 points of the config.
+- Every question has a correct answer, a 2–5 sentence explanation, and a 1-sentence explanation for each wrong option.
+- The user can start an attempt from the exam's page, answer, mark, eliminate options, pause, review and finalize, and see the score, Pass or Did not pass, and the per-domain breakdown.
+- "Return" and closing the window open the leave dialog. "Save for later" keeps answers, marks, and the remaining time; the attempt can be resumed from the home screen or the exam's page. "Cancel attempt" deletes it.
+- The module is greyed out until its config has `active: true`.
 
 ### Acronym Exercise module
 <!-- blank -->
@@ -110,4 +122,5 @@ Both modules:
 <!-- blank -->
 
 ### Attempt review
-<!-- blank -->
+- The home screen lists the recent attempts, and "View all" opens the full list.
+- Opening an attempt shows the same results screen and review screen as the end of an attempt, with the exact questions, options, answers, and explanations of that attempt.

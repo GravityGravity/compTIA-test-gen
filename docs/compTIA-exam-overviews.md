@@ -55,6 +55,38 @@ Where the scenario questions come from:
 
 Qualifier words (BEST, FIRST, MOST LIKELY) and multiple-response questions can occur in the two groups. No source gives a count for these.
 
+## Objectives
+
+| Objective | Structure |
+|---|---|
+| 1.1 Given a scenario, monitor mobile device hardware and use appropriate replacement techniques | Scenario |
+| 1.2 Compare and contrast accessories and connectivity options for mobile devices | Knowledge |
+| 1.3 Given a scenario, configure basic mobile device network connectivity and provide application support | Scenario |
+| 2.1 Compare and contrast Transmission Control Protocol (TCP) and User Datagram Protocol (UDP) ports, protocols, and their purposes | Knowledge |
+| 2.2 Explain wireless networking technologies | Knowledge |
+| 2.3 Summarize services provided by networked hosts | Knowledge |
+| 2.4 Explain common network configuration concepts | Knowledge |
+| 2.5 Compare and contrast common networking hardware devices | Knowledge |
+| 2.6 Given a scenario, configure basic wired/wireless small office/home office (SOHO) networks | Scenario |
+| 2.7 Compare and contrast internet connection types, network types, and their characteristics | Knowledge |
+| 2.8 Explain networking tools and their purposes | Knowledge |
+| 3.1 Compare and contrast display components and attributes | Knowledge |
+| 3.2 Summarize basic cable types and their connectors, features, and purposes | Knowledge |
+| 3.3 Compare and contrast RAM characteristics | Knowledge |
+| 3.4 Compare and contrast storage devices | Knowledge |
+| 3.5 Given a scenario, install and configure motherboards, central processing units (CPUs), and add-on cards | Scenario |
+| 3.6 Given a scenario, install the appropriate power supply | Scenario |
+| 3.7 Given a scenario, deploy and configure multifunction devices/printers and settings | Scenario |
+| 3.8 Given a scenario, perform appropriate printer maintenance | Scenario |
+| 4.1 Explain virtualization concepts | Knowledge |
+| 4.2 Summarize cloud computing concepts | Knowledge |
+| 5.1 Given a scenario, troubleshoot motherboards, RAM, CPUs, and power | Scenario |
+| 5.2 Given a scenario, troubleshoot drive and RAID issues | Scenario |
+| 5.3 Given a scenario, troubleshoot video, projector, and display issues | Scenario |
+| 5.4 Given a scenario, troubleshoot common mobile device issues | Scenario |
+| 5.5 Given a scenario, troubleshoot network issues | Scenario |
+| 5.6 Given a scenario, troubleshoot printer issues | Scenario |
+
 ## Question Structures
 
 ### 1. Scenario-based
@@ -132,6 +164,47 @@ Core 2 has more scenario questions than Core 1.
 
 Qualifier words (BEST, FIRST, MOST LIKELY) and multiple-response questions can occur in the two groups. No source gives a count for these.
 
+## Objectives
+
+| Objective | Structure |
+|---|---|
+| 1.1 Explain common operating system (OS) types and their purposes | Knowledge |
+| 1.2 Given a scenario, perform OS installations and upgrades in a diverse environment | Scenario |
+| 1.3 Compare and contrast basic features of Microsoft Windows editions | Knowledge |
+| 1.4 Given a scenario, use Microsoft Windows operating system features and tools | Scenario |
+| 1.5 Given a scenario, use the appropriate Microsoft command-line tools | Scenario |
+| 1.6 Given a scenario, configure Microsoft Windows settings | Scenario |
+| 1.7 Given a scenario, configure Microsoft Windows networking features on a client/desktop | Scenario |
+| 1.8 Explain common features and tools of the macOS/desktop operating system | Knowledge |
+| 1.9 Identify common features and tools of the Linux client/desktop operating system | Knowledge |
+| 1.10 Given a scenario, install applications according to requirements | Scenario |
+| 1.11 Given a scenario, install and configure cloud-based productivity tools | Scenario |
+| 2.1 Summarize various security measures and their purposes | Knowledge |
+| 2.2 Given a scenario, configure and apply basic Microsoft Windows OS security settings | Scenario |
+| 2.3 Compare and contrast wireless security protocols and authentication methods | Knowledge |
+| 2.4 Summarize types of malware and tools/methods for detection, removal, and prevention | Knowledge |
+| 2.5 Compare and contrast common social engineering attacks, threats, and vulnerabilities | Knowledge |
+| 2.6 Given a scenario, implement procedures for basic small office/home office (SOHO) malware removal | Scenario |
+| 2.7 Given a scenario, apply workstation security options and hardening techniques | Scenario |
+| 2.8 Given a scenario, apply common methods for securing mobile devices | Scenario |
+| 2.9 Compare and contrast common data destruction and disposal methods | Knowledge |
+| 2.10 Given a scenario, apply security settings on SOHO wireless and wired networks | Scenario |
+| 2.11 Given a scenario, configure relevant security settings in a browser | Scenario |
+| 3.1 Given a scenario, troubleshoot common Windows OS issues | Scenario |
+| 3.2 Given a scenario, troubleshoot common mobile OS and application issues | Scenario |
+| 3.3 Given a scenario, troubleshoot common mobile OS and application security issues | Scenario |
+| 3.4 Given a scenario, troubleshoot common personal computer (PC) security issues | Scenario |
+| 4.1 Given a scenario, implement best practices associated with documentation and support systems information management | Scenario |
+| 4.2 Given a scenario, apply change management procedures | Scenario |
+| 4.3 Given a scenario, implement workstation backup and recovery methods | Scenario |
+| 4.4 Given a scenario, use common safety procedures | Scenario |
+| 4.5 Summarize environmental impacts and local environment controls | Knowledge |
+| 4.6 Explain the importance of prohibited content/activity and privacy, licensing, and policy concepts | Knowledge |
+| 4.7 Given a scenario, use proper communication techniques and professionalism | Scenario |
+| 4.8 Explain the basics of scripting | Knowledge |
+| 4.9 Given a scenario, use remote access technologies | Scenario |
+| 4.10 Explain basic concepts related to artificial intelligence (AI) | Knowledge |
+
 ## Question Structures
 
 ### 1. Scenario-based
@@ -191,7 +264,7 @@ The question tells you the number of answers to select. You must select all the 
 | Launch date | June 20, 2024 |
 | Recommended experience | CompTIA A+ and 9–12 months of hands-on experience as a junior network administrator or network support technician |
 
-**Note:** PBQs are out of scope for the app now. A Network+ exam in the app uses multiple-choice questions only.
+**Note:** PBQs are out of scope for the app now. A Network+ exam in the app uses multiple-choice questions only. Each attempt has 75–90 questions, the same range as A+ (approved 2026-10-30).
 
 ## Topics
 
@@ -300,6 +373,24 @@ The question tells you the number of answers to select. You must select all the 
 ### Performance-based questions (out of scope)
 
 The real exam also has PBQs, for example configuring a device or putting steps in order in a simulation. The app does not include PBQs now.
+
+---
+
+# Question Structures in the App
+
+How each structure in this file is built in the app (approved 2026-10-30). The method is in `docs/exam-modules.md`.
+
+| Structure | Pool `structure` value | Generated by |
+|---|---|---|
+| Scenario-based | `scenario` | Scenario generator kinds `fault` (troubleshooting) and `requirement` (setup, configuration, security settings, select a tool or method) |
+| Qualifier words | Any structure, with `qualifier` | All kinds (MOST LIKELY, BEST, FIRST, NEXT) |
+| Process and procedure steps | `procedure` | Kind `procedure` (FIRST and NEXT step) |
+| Definition and recall | `recall` | Pool only |
+| Select the correct item | `select-item` | Pool, and kind `requirement` for scenario objectives |
+| Calculation | `calculation` | Kind `calculation` (for example subnetting) |
+| Multiple response | Any structure, with `type: "multiple"` | Pool only |
+
+The config of each exam has a `kind` (scenario or knowledge) for each objective, taken from the tables above. Each attempt uses them to divide each domain into scenario and knowledge questions.
 
 ---
 

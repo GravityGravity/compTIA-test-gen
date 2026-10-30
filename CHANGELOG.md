@@ -2,6 +2,58 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Exam engine, attempt storage, and exam screens
+
+Decisions:
+- Topic coverage (changed by the user): each topic needs at least 1 pool question, and 2 is the target (was 3). The checker reports a topic with no questions as an error and a topic with 1 as a warning.
+- Each exam config names its content folder (`content`: `core1`, `core2`, `network`), so the loader needs no exam-specific code.
+- An exam's grammar overrides shared rules with the same name (it was an error before).
+- Scenario record fields, as built: `requirement` has `need` and `itemType`; `procedure` has `task` and `steps` (`do`/`done`); `calculation` has `prefixMin`/`prefixMax`. A record's own explanation is 1–3 sentences; the generator adds the clue sentence.
+- The `attempts` table also stores `correct`, so the lists don't re-grade every attempt.
+- After an attempt is submitted (and when a previous attempt is reviewed), the app top bar with Home shows above the exam shell. During an attempt there is none, as in the draft.
+
+Changes:
+- Engine (`src/engine/exam/`):
+  - `allocate.ts`: question count, domain split (largest remainder), scenario/knowledge split scaled to `scenarioShare`, generated/pool split.
+  - `generate.ts`: per-domain selection across objectives and topics, least-seen first, no repeats, fallbacks; shuffled options and questions.
+  - `grade.ts` and `questionTypes/` (single, multiple): the draft's scoring and a per-domain breakdown.
+  - `scenario/`: a Tracery-style grammar and the `fault`, `requirement`, `procedure`, and `calculation` (IPv4 subnet) generators.
+  - `parse.ts`: the record checks.
+- `content/shared/grammar.json`: the sentence frames and noun pools for every exam.
+- Main:
+  - `db.ts`: the SQLite store, with migrations by `user_version`.
+  - `exams.ts`: starting an attempt, and checking IPC input.
+  - `content.ts`: `loadExamContent`.
+  - IPC: start, autosave, finish, get, discard, and the lists.
+  - The window `close` asks the renderer first while an attempt is open.
+  - `CERT_PRACTICE_DATA` and `CERT_PRACTICE_USER_DATA` (development only) point the app at test data.
+- Renderer:
+  - `exam/`: the draft rebuilt as React components (question, review and finalize, pause, timers, time-up and leave dialogs, results with the domain table, reviewed question with the wrong-option explanations).
+  - `exam.css`: the draft's CSS scoped under `.exam`, with the classes shared with `app.css` reset.
+  - Home: the Practice exams section, the in-progress card, and Previous attempts.
+  - Exam intro and Previous attempts screens, from the drafts.
+- Tests: 164 Vitest tests (engine, generators, 300 seeded attempts on `tests/fixtures/app-data`, database, exam service, components) and 2 new Playwright tests (save for later, relaunch and resume, submit, review; closing the window during an attempt). The real-content tests are skipped until an exam has content.
+- Not done: the question tools (`extract_questions.py`, `check_questions.py`) and the exam content. All exams stay `active: false`.
+
+## 2026-10-30 – Exam modules: plan, docs, and exam configs
+
+Decisions (approved):
+- Scenario-based questions are generated at attempt time from scenario records (`fault`, `requirement`, `procedure`, `calculation`) and a Tracery-style grammar. The generator works for any exam module. All other questions come from a question pool for each exam.
+- The pool has every practice question of the exam's books, with the book's answers. The older A+ books (Neil, All-in-One 11e) are copied as they are, tagged with the closest current objective, and their answers are not vetted. Book questions without answers get answers written from the chapter.
+- At least 1 pool question for each top-level bullet under an objective (2 is the target; changed later the same day from 3), and at least 800 pool questions for each exam.
+- The scenario share mixes generated questions and pool scenario questions (`generatedScenarioShare`, default 70%).
+- Network+ also uses 75–90 questions.
+- SQLite schema: `attempts` and `attempt_questions` (see CLAUDE.md). Generation and grading run in the main process.
+- Facts (ports, RAM types) are pool questions, not a separate record type. This replaces the draft fault record in CLAUDE.md.
+
+Changes:
+- New `docs/exam-modules.md`: how to build any exam module (config, pool rules, scenario records, grammar, tools, workflow, checklist).
+- `CLAUDE.md`, `docs/spec.md` (exam requirements and acceptance criteria), `content/README.md` (pool question, scenario record, and grammar formats; exam config fields), `docs/compTIA-exam-overviews.md` (per-objective kinds for Core 1 and Core 2, Network+ question count, structure-to-app mapping), `tools/extract/README.md` (question tools and book question formats).
+- `config/exams/*.json`: `questionCount`, `timeLimitMinutes`, `passingScore`, `maxScore`, `scenarioShare`, `generatedScenarioShare`, and each domain's objectives with their kind. The kinds come from the official objectives files: 52.0% scenario for Core 1, 68.7% for Core 2, and 44.3% for Network+, which matches the overview.
+- `parseExam` (`src/engine/config.ts`) and `ExamConfig` validate and type the new fields. `check_config.py` checks them against the official objectives files.
+- Tests: 107 Vitest tests pass (4 new config tests). Typecheck and lint pass.
+- Not done yet: the exam engine, database, IPC, and UI; `extract_questions.py` and `check_questions.py`; the exam content. All exams stay `active: false`.
+
 ## 2026-10-30 – Definition Exercise: accept the acronym
 
 Decision (approved): in a typed Definition Exercise question, typing the term's acronym counts as correct (for example DHCP for Dynamic Host Configuration Protocol).

@@ -1,14 +1,23 @@
 // Shapes of the configs in config/. The field rules are in content/README.md.
 
+export interface ObjectiveConfig {
+  /** For example "2.6". */
+  id: string
+  /** "scenario" when the objective title starts with "Given a scenario", else "knowledge". */
+  kind: 'scenario' | 'knowledge'
+}
+
 export interface DomainConfig {
   /** "1", "2", … — the first number of an objective id. */
   id: string
   name: string
   /** Percent of the exam. */
   weight: number
+  /** Every objective of the domain, in order. */
+  objectives: ObjectiveConfig[]
 }
 
-/** config/exams/<code>.json. Only the fields the app uses so far; the exam engine adds the rest. */
+/** config/exams/<code>.json. How to get each value: docs/exam-modules.md. */
 export interface ExamConfig {
   /** The exam code, for example "220-1201". */
   id: string
@@ -17,6 +26,18 @@ export interface ExamConfig {
   /** Short label, for example "Core 1". */
   shortName: string
   active: boolean
+  /** The exam module's folder in content/, for example "core1". */
+  content: string
+  /** Each attempt selects a count in this range. */
+  questionCount: { min: number; max: number }
+  timeLimitMinutes: number
+  passingScore: number
+  /** The top of the score scale, for example 900. */
+  maxScore: number
+  /** Estimated percent of scenario-based questions. */
+  scenarioShare: number
+  /** Percent of the scenario questions that the generator writes; the rest come from the pool. */
+  generatedScenarioShare: number
   domains: DomainConfig[]
 }
 

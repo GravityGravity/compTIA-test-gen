@@ -1,0 +1,177 @@
+[
+  {
+    "id": "core1-q-w-2.1-1",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "topics": [
+      "220-1201/2.1.1"
+    ],
+    "stem": "Which port does RDP use by default?",
+    "options": [
+      "3389",
+      "22",
+      "443",
+      "25"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Remote Desktop Protocol listens on TCP 3389 by default. Firewalls must allow it for remote sessions.",
+    "whyWrong": [
+      null,
+      "Port 22 is SSH.",
+      "Port 443 is HTTPS.",
+      "Port 25 is SMTP."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-2.1-2",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "topics": [
+      "220-1201/2.1.1"
+    ],
+    "stem": "Which port does DNS use?",
+    "options": [
+      "53",
+      "80",
+      "110",
+      "143"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "DNS uses port 53 over UDP for most queries. Zone transfers use TCP 53.",
+    "whyWrong": [
+      null,
+      "Port 80 is HTTP.",
+      "Port 110 is POP3.",
+      "Port 143 is IMAP."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-2.2-3",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "topics": [
+      "220-1201/2.2.1"
+    ],
+    "stem": "Which Wi-Fi standard is also called Wi-Fi 6?",
+    "options": [
+      "802.11ax",
+      "802.11ac",
+      "802.11n",
+      "802.11g"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "802.11ax is Wi-Fi 6. It works in the 2.4 GHz and 5 GHz bands.",
+    "whyWrong": [
+      null,
+      "802.11ac is Wi-Fi 5.",
+      "802.11n is Wi-Fi 4.",
+      "802.11g is an older 2.4 GHz standard."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-2.6-4",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "stem": "A small office wants guests to use the internet without reaching office PCs. What should the technician set up on the SOHO router?",
+    "options": [
+      "A guest network",
+      "Port forwarding",
+      "DMZ host",
+      "UPnP"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A guest network gives internet access on a separate network. Guests cannot reach the office devices.",
+    "whyWrong": [
+      null,
+      "Port forwarding opens inside hosts to the internet.",
+      "A DMZ host exposes one inside host fully.",
+      "UPnP lets devices open ports on their own."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-q-w-2.5-5",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "topics": [
+      "220-1201/2.5.1"
+    ],
+    "stem": "Which device joins network segments and forwards frames by MAC address?",
+    "options": [
+      "Switch",
+      "Hub",
+      "Modem",
+      "Patch panel"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A switch learns MAC addresses and forwards frames only to the right port. That cuts down collisions.",
+    "whyWrong": [
+      null,
+      "A hub repeats frames to every port.",
+      "A modem connects to the provider.",
+      "A patch panel only terminates cables."
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  }
+]

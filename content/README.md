@@ -1,14 +1,15 @@
 # Content
 
-The records that the app uses. The app does not read the books; the books in `sources-text/` help write these files. Run `tools/extract/check_content.py` after every change.
+The records that the app uses. The app does not read the books; the books in `sources-text/` help write these files. Run `tools/extract/check_content.py` after every change to `acronyms/` or `definitions/`, and `tools/extract/check_questions.py` after every change to an exam module.
 
 | Folder | Module | Files |
 |---|---|---|
 | `acronyms/` | Acronym Exercise | `a-plus.json`, `network-plus.json` – one file for each certification |
 | `definitions/` | Definition Exercise | `a-plus/`, `network-plus/` – one file for each exam domain |
-| `core1/`, `core2/`, `network/` | Exam modules | Not built yet |
+| `core1/`, `core2/`, `network/` | Core 1 Exam, Core 2 Exam, Network+ Exam | `pool/d<N>.json` (pool questions, one file for each domain), `scenarios/d<N>.json` (scenario records), `grammar.json` (grammar rules for this exam) |
+| `shared/` | All exam modules | `grammar.json` – grammar rules and noun pools that every exam uses |
 
-Each file is a JSON array of records. The app reads every `*.json` under a module's folder, so the file split is only for review. The domain of a record comes from its `objectives`, not from the file name.
+Each file is a JSON array of records. The app reads every `*.json` under a module's folder, so the file split is only for review. The domain of an acronym or definition record comes from its `objectives`, not from the file name. Exam module records also have a `domain` field, and it must match the file. How to build an exam module: `docs/exam-modules.md`.
 
 The Acronym Exercise and the Definition Exercise are separate pools. Never put acronyms in `definitions/` or definitions in `acronyms/`.
 
@@ -84,7 +85,13 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 The app reads these records through the configs in `config/` (approved 2026-10-30):
 
 - `config/certifications/<cert>.json` – `id` (the file name), `name`, `shortName` (for example `CompTIA A+`, used in exercise headers and results), `active`, and `exams` (exam codes in picker order, each with a config in `config/exams/`). The exercise setup shows an exam picker when there is more than one exam, plus "Both".
-- `config/exams/<code>.json` – `id` (the exam code and the file name), `certification`, `name` (`Core 1 Exam`), `shortName` (`Core 1`), `active` (false until the exam module and its content exist), and `domains` (`id` `"1"`, `"2"`, …, `name` as the official objectives write it, and `weight` in percent; the weights add up to 100). The objective tags in the Acronym Exercise feedback use the short name and the domain name. The exam engine will add its own fields.
+- `config/exams/<code>.json` – `id` (the exam code and the file name), `certification`, `name` (`Core 1 Exam`), `shortName` (`Core 1`), `active` (false until the exam module and its content exist), and `domains` (`id` `"1"`, `"2"`, …, `name` as the official objectives write it, `weight` in percent, and `objectives`; the weights add up to 100). The objective tags in the Acronym Exercise feedback use the short name and the domain name. Exam engine fields (approved 2026-10-30; how to get each value: `docs/exam-modules.md`):
+  - `content` – the exam module's folder in `content/` (`core1`, `core2`, `network`). The app reads the pool, scenarios, and grammar of the exam from it.
+  - `questionCount` – `{ "min": 75, "max": 90 }`. Each attempt selects a count in this range.
+  - `timeLimitMinutes`, `passingScore`, `maxScore` (for example 90, 675, 900).
+  - `scenarioShare` – the estimated percentage of scenario-based questions from `docs/compTIA-exam-overviews.md`.
+  - `generatedScenarioShare` – the percentage of scenario questions that the generator writes (default 70). The rest are pool questions with `structure: "scenario"`.
+  - `domains[].objectives` – every objective of the domain, in order: `{ "id": "2.6", "kind": "scenario" }`. `kind` is `scenario` when the title starts with "Given a scenario", else `knowledge`.
 - `config/exercises/<module>.json` – `id`, `name`, optional `description` (one sentence for the home card and the setup screen), optional `notSure` (true: typed questions get a "Not sure" button), `active`, `content` (`acronyms` or `definitions`), `certifications`, `questionCount`, `timeLimitMinutes`, `onTimeUp` (`end`), `selection` (`random`), and `questionTypes`. Each question type has a `type` (`typed` or `multiple-choice`) and a `count`; the counts add up to `questionCount`.
   - `typed`: `prompt` and `answer` (`acronym` → `expanded`, or `definition` → `term`), and `requires: "typeable"` for definitions.
   - `multiple-choice` (definitions only): `direction` (`random`, `term-to-definition`, or `definition-to-term`), `directions` (the ones `random` picks from), and `choices`.
@@ -128,3 +135,104 @@ Network+ Domain 5 (`network-plus/d5-network-troubleshooting.json`, 117 terms): `
 1. `tools/extract/seed_acronyms.py <cert>` seeded one record per official acronym from `sources-text/derived/<cert>-acronyms.md` and mapped it to the objectives that name it. It does not overwrite an existing file.
 2. By hand: corrected expanded forms where the official list has errors or the two A+ lists differ (each one has a `note`), added objective links the seed missed, and added the extras.
 3. Extras (`official: false`) are kept only when a current book uses them (A+: Exam Cram 2e or Docter; Network+: Exam Cram or West), their topic is a current objective, they are not obsolete, and the books agree on the expanded form.
+
+## Pool question (exam modules)
+
+```json
+{
+  "id": "core1-q-examcram-04-03",
+  "type": "single",
+  "structure": "recall",
+  "qualifier": null,
+  "exam": "220-1201",
+  "domain": "2",
+  "objectives": ["220-1201/2.1"],
+  "topics": ["220-1201/2.1.1"],
+  "stem": "Which port does Remote Desktop Protocol use by default?",
+  "options": ["22", "443", "3389", "5900"],
+  "answer": [2],
+  "selectCount": 1,
+  "fixedOrder": false,
+  "explanation": "Remote Desktop Protocol listens on TCP port 3389 by default. Firewalls must allow this port for RDP sessions to reach the host.",
+  "whyWrong": ["Port 22 is SSH.", "Port 443 is HTTPS.", null, "Port 5900 is VNC."],
+  "origin": "book",
+  "source": "CompTIA A+ Exam Cram 2e – Chapter 4, Cram Quiz question 3"
+}
+```
+
+| Field | Meaning |
+|---|---|
+| `id` | Stable key: `<module>-q-<book>-<chapter>-<n>` for a book question, `<module>-q-w-<objective>-<n>` for a written one. |
+| `type` | `single` (one answer) or `multiple` (`selectCount` answers, "Choose two"). New types (PBQs) are added later as new values, each with its own code. |
+| `structure` | `recall`, `select-item`, `scenario`, `procedure`, or `calculation` (the overview's question structures). Pool questions with `scenario` fill part of an attempt's scenario share. |
+| `qualifier` | `BEST`, `FIRST`, `NEXT`, `MOST LIKELY`, `LEAST`, or `null`. The word is in capitals in the stem. |
+| `exam`, `domain` | The exam code and the domain id. The domain matches the file (`d2.json` → `"2"`). |
+| `objectives` | At least one, `<exam>/<objective>`, all in `domain`. |
+| `topics` | At least one, `<exam>/<objective>.<n>`: the n-th top-level bullet under the objective in the official objectives file. `check_questions.py --topics <code>` prints the numbered list. |
+| `stem`, `options` | The question and its options (2–8). For a book question, as the book has them. |
+| `answer` | The indexes of the correct options. One for `single`, `selectCount` for `multiple`. |
+| `selectCount` | The number of answers to select. |
+| `fixedOrder` | `true` when the options must keep their order (for example "All of the above"). Else the app shuffles them. |
+| `explanation` | Why the correct answer is correct: 2–5 sentences. For a book question, the book's explanation. |
+| `whyWrong` | One entry for each option, in the same order: 1 sentence for a wrong option, `null` for a correct one. |
+| `origin` | `book` (copied from a book, with the book's answers) or `written` (written from a chapter). |
+| `answerOrigin` | Optional: `written` when the book gives no answer and we wrote it from the chapter. |
+| `source` | Book, chapter, and question number (for `written`: book and chapter). |
+| `note` | Optional. For an older-objective book question: the old objective and why the current objective was chosen. Not shown in the app. |
+
+Rules: copy every book practice question for the exam (older-objective books too, as they are); keep one copy of a question that is in two books; every topic has at least 1 question (2 is the target); each exam has at least 800.
+
+## Scenario record (exam modules)
+
+```json
+{
+  "id": "core1-s-printer-driver",
+  "kind": "fault",
+  "exam": "220-1201",
+  "domain": "5",
+  "objectives": ["220-1201/5.6"],
+  "topics": ["220-1201/5.6.1"],
+  "settings": ["office", "home-office"],
+  "devices": ["laser-printer", "inkjet-printer"],
+  "clues": ["pages print with strange symbols", "only jobs from one PC print badly", "a test page from the printer panel prints correctly"],
+  "answer": { "cause": "a corrupt or wrong printer driver", "action": "Reinstall the correct printer driver" },
+  "firstStep": "Print a test page from the printer's own panel",
+  "appliesWhen": "the driver on the PC is corrupt or is for a different model",
+  "explanation": "Garbled output from one PC while the printer's own test page is clean puts the fault in that PC's print path. The driver turns the job into the printer's language, so a corrupt or wrong driver sends data the printer cannot read. Reinstalling the correct driver fixes it.",
+  "related": ["core1-s-print-spooler", "core1-s-default-printer", "core1-s-toner-low"],
+  "origin": "written",
+  "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13"
+}
+```
+
+| Field | Meaning |
+|---|---|
+| `id` | Stable key: `<module>-s-<slug>`. |
+| `kind` | `fault`, `requirement`, `procedure`, or `calculation`. Selects the generator. |
+| `exam`, `domain`, `objectives`, `topics` | As in the pool question. The objectives are scenario objectives. |
+| `settings`, `devices` | Optional. Grammar rule names that fit the record (for example `office`, `laser-printer`). The generator selects one of each for `#setting#` and `#device#`; without them it uses the shared `setting` and `device` rules. |
+| `clues` | `fault` and `requirement`: 3–6 symptoms (`fault`) or conditions (`requirement`) as lower-case clauses ("pages print with strange symbols"). The generator selects 2–3 (`fault`) or 1–2 (`requirement`). A clue never gives away the answer. |
+| `answer` | `fault`: `cause` and `action`. `requirement`: `item` (the tool, setting, command, device, or method). `procedure`: not used (see `steps`). `calculation`: not used. |
+| `firstStep` | `fault` only, optional: the FIRST thing to check. Without it the record is not used for FIRST step questions. |
+| `task`, `steps` | `procedure` only. `task`: the procedure after "is" ("removing malware from a workstation"). `steps`: at least 4 steps in order, each `{ "do": "Quarantine the infected system", "done": "quarantined the infected system" }` (`done` follows "The technician has"). FIRST step questions need 4 steps; NEXT step questions need 5. |
+| `need`, `itemType` | `requirement` only. `need`: what the person must do, after "needs to" ("encrypt every drive on the company laptops"). `itemType`: what the answer is, for the question ("tool", "command", "setting", "feature"). |
+| `calculation`, `prefixMin`, `prefixMax` | `calculation` only: the calculation (`subnet-hosts`, `subnet-mask`, `network-address`, `broadcast-address`) and the IPv4 prefix lengths to choose from (8–30). The code works out the values, the distractors, and the explanation. |
+| `appliesWhen` | When this record's answer is the right one, as a phrase. When the record's answer is a distractor, its 1-sentence explanation is made from this phrase. |
+| `explanation` | Why the answer fits the clues: 1–3 sentences. The generator adds a sentence that links the selected clues (and for a FIRST step question, one more), so the asked question has 2–5. |
+| `related` | `fault` and `requirement`: at least 3 records of the same exam and kind with different answers. Their answers are the distractors. |
+| `origin`, `source` | `written`, and the book and chapter of the facts. |
+
+## Grammar files (exam modules)
+
+`content/shared/grammar.json` and `content/<module>/grammar.json` are JSON objects: each key is a rule name, and each value is a list of phrasings. The app merges the shared file and the exam's file; a rule in both takes the exam's phrasings. The shared file has the sentence frames the generators use (`faultOpening`, `askCause`, `askAction`, `askFirst`, `requirementOpening`, `askItem`, `procedureOpening`, `askNext`, `calculationOpening`, the `wrong…` and `link…` frames) and the noun pools (`person`, `role`, `firstName`, `tech`, `setting` and its place rules, `device`). The generators bind `#fits#`, `#clues#`, `#need#`, `#conditions#`, `#itemType#`, `#task#`, `#done#`, and `#order#` from the record. Write the qualifier words (BEST, FIRST, NEXT, MOST LIKELY, LEAST) in capitals in the `ask…` frames: the app reads them from the stem.
+
+```json
+{
+  "person": ["#firstName#, a #role#,", "a #role# named #firstName#"],
+  "role": ["sales manager", "receptionist", "graphic designer"],
+  "firstName": ["Ana", "Sam", "Priya"],
+  "office": ["a small accounting office", "a dental clinic"]
+}
+```
+
+`#rule#` is replaced by one phrasing of that rule, chosen by the seeded generator. Modifiers: `#rule.a#` adds "a" or "an", `#rule.capitalize#` starts with a capital. Every `#rule#` must name a rule that exists. A phrasing never contains an answer.

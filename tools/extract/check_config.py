@@ -9,6 +9,7 @@ and exam choice, the pool size and the records each question type needs.
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -20,7 +21,11 @@ CERTIFICATION = {"id": str, "name": str, "shortName": str, "active": bool, "exam
 EXERCISE = {"id": str, "name": str, "active": bool, "content": str, "certifications": list,
             "questionCount": int, "timeLimitMinutes": int, "onTimeUp": str, "selection": str,
             "questionTypes": list}
-EXAM = {"id": str, "certification": str, "name": str, "shortName": str, "active": bool, "domains": list}
+EXAM = {"id": str, "certification": str, "name": str, "shortName": str, "active": bool, "content": str,
+        "questionCount": dict, "timeLimitMinutes": int, "passingScore": int, "maxScore": int,
+        "scenarioShare": int, "generatedScenarioShare": int, "domains": list}
+KINDS = {"scenario", "knowledge"}
+SHARE_TOLERANCE = 2   # points between the objective kinds and the overview's scenarioShare
 OPTIONAL = {"description": str, "notSure": bool}
 CONTENT = {"acronyms": "acronym", "definitions": "definition"}
 ON_TIME_UP = {"end"}
@@ -48,6 +53,62 @@ def read(path, fields, errors, optional=None):
     if data.get("id") != path.stem and fields in (CERTIFICATION, EXAM):
         errors.append(f"{where}: id must be the file name ('{path.stem}')")
     return data if not any(e.startswith(f"{where}:") for e in errors) else None
+
+
+def official_objectives(path):
+    """{objective id: kind} from the official objectives file, in order."""
+    found = {}
+    for line in path.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^### (\d+\.\d+) (.*)", line)
+        if m:
+            found[m.group(1)] = "scenario" if m.group(2).startswith("Given a scenario") else "knowledge"
+    return found
+
+
+def check_exam_engine(where, exam, errors):
+    """The exam engine fields: counts, scores, and objectives that match the official file."""
+    qc = exam["questionCount"]
+    if set(qc) != {"min", "max"} or not all(isinstance(qc.get(k), int) and qc[k] > 0 for k in ("min", "max")):
+        errors.append(f"{where}: questionCount needs min and max (positive integers) only")
+    elif qc["min"] > qc["max"]:
+        errors.append(f"{where}: questionCount min is more than max")
+    if exam["timeLimitMinutes"] < 1:
+        errors.append(f"{where}: timeLimitMinutes must be 1 or more")
+    if not 0 < exam["passingScore"] <= exam["maxScore"]:
+        errors.append(f"{where}: passingScore must be between 1 and maxScore")
+    if not re.fullmatch(r"[a-z0-9-]+", exam["content"]) or exam["content"] in ("acronyms", "definitions", "shared"):
+        errors.append(f"{where}: content must be the exam module's folder name in content/ (for example 'core1')")
+    for key in ("scenarioShare", "generatedScenarioShare"):
+        if not 0 <= exam[key] <= 100:
+            errors.append(f"{where}: {key} must be from 0 to 100")
+    path = EXAMS.get(exam["certification"], {}).get(exam["id"])
+    if not path or not path.exists():
+        errors.append(f"{where}: no official objectives file to check the objectives against")
+        return
+    official = official_objectives(path)
+    listed, share = [], 0.0
+    for d in exam["domains"]:
+        objs = d.get("objectives", [])
+        for o in objs:
+            if set(o) != {"id", "kind"} or o.get("kind") not in KINDS:
+                errors.append(f"{where}: domain {d.get('id')} objective {o} needs id and kind ({sorted(KINDS)})")
+                continue
+            listed.append(o["id"])
+            if not o["id"].startswith(f"{d.get('id')}."):
+                errors.append(f"{where}: objective {o['id']} is not in domain {d.get('id')}")
+            if o["id"] in official and official[o["id"]] != o["kind"]:
+                errors.append(f"{where}: objective {o['id']} kind must be '{official[o['id']]}'")
+        if objs and isinstance(d.get("weight"), int):
+            share += d["weight"] * sum(o.get("kind") == "scenario" for o in objs) / len(objs)
+    if listed != list(official):
+        missing = [i for i in official if i not in listed]
+        extra = [i for i in listed if i not in official]
+        errors.append(f"{where}: objectives must list each official objective once, in order"
+                      f" (missing {missing}, unknown {extra})")
+    if abs(share - exam["scenarioShare"]) > SHARE_TOLERANCE:
+        errors.append(f"{where}: the objective kinds give a scenario share of {share:.1f}%,"
+                      f" not scenarioShare {exam['scenarioShare']}")
+    return share
 
 
 def exam_choices(cert):
@@ -121,13 +182,22 @@ def main():
             errors.append(f"{where}: exam '{exam['id']}' is not a {exam['certification']} exam")
         ids = [d.get("id") for d in exam["domains"]]
         for i, d in enumerate(exam["domains"]):
-            if set(d) != {"id", "name", "weight"} or not all(isinstance(d[k], t) for k, t in
-                                                             (("id", str), ("name", str), ("weight", int))):
-                errors.append(f"{where}: domains[{i}] needs id (str), name (str), and weight (int) only")
+            if set(d) != {"id", "name", "weight", "objectives"} or not all(
+                    isinstance(d[k], t) for k, t in
+                    (("id", str), ("name", str), ("weight", int), ("objectives", list))):
+                errors.append(f"{where}: domains[{i}] needs id (str), name (str), weight (int),"
+                              " and objectives (list) only")
         if ids != [str(n) for n in range(1, len(ids) + 1)]:
             errors.append(f"{where}: domain ids must be '1', '2', ... in order")
         if sum(d.get("weight", 0) for d in exam["domains"] if isinstance(d.get("weight"), int)) != 100:
             errors.append(f"{where}: domain weights must add up to 100")
+        if not any(e.startswith(f"{where}: domains[") for e in errors):
+            share = check_exam_engine(where, exam, errors)
+            if share is not None:
+                summary.append(f"  {exam['id']}: {exam['questionCount'].get('min')}-"
+                               f"{exam['questionCount'].get('max')} questions, {exam['timeLimitMinutes']} min, "
+                               f"pass {exam['passingScore']}/{exam['maxScore']}, scenario {share:.1f}% "
+                               f"(config {exam['scenarioShare']}%), active {exam['active']}")
         exams[exam["id"]] = exam
     for cert in certs.values():
         for code in cert["exams"]:
@@ -175,7 +245,7 @@ def main():
                 if len(typeable) < need_typed:
                     errors.append(f"{label}: {len(typeable)} typeable records, fewer than {need_typed}")
 
-    print("Pools for each exercise, certification, and exam choice:")
+    print("Exams, then the pools for each exercise, certification, and exam choice:")
     print("\n".join(summary))
     if errors:
         print(f"\n{len(errors)} errors")

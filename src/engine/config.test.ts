@@ -60,20 +60,58 @@ const exam = {
   name: 'Core 1 Exam',
   shortName: 'Core 1',
   active: false,
+  content: 'core1',
+  questionCount: { min: 75, max: 90 },
+  timeLimitMinutes: 90,
+  passingScore: 675,
+  maxScore: 900,
+  scenarioShare: 52,
+  generatedScenarioShare: 70,
   domains: [
-    { id: '1', name: 'Mobile Devices', weight: 40 },
-    { id: '2', name: 'Networking', weight: 60 }
+    { id: '1', name: 'Mobile Devices', weight: 40, objectives: [{ id: '1.1', kind: 'scenario' }] },
+    { id: '2', name: 'Networking', weight: 60, objectives: [{ id: '2.1', kind: 'knowledge' }] }
   ]
 }
 
 describe('parseExam', () => {
   it('accepts a valid config', () => {
-    expect(parseExam(exam, 'test').domains[1]).toEqual({ id: '2', name: 'Networking', weight: 60 })
+    const parsed = parseExam(exam, 'test')
+    expect(parsed.domains[1]).toEqual({
+      id: '2',
+      name: 'Networking',
+      weight: 60,
+      objectives: [{ id: '2.1', kind: 'knowledge' }]
+    })
+    expect(parsed.questionCount).toEqual({ min: 75, max: 90 })
   })
 
   it('rejects weights that do not add up to 100', () => {
-    const bad = { ...exam, domains: [{ id: '1', name: 'Mobile Devices', weight: 40 }] }
+    const bad = { ...exam, domains: [exam.domains[0]] }
     expect(() => parseExam(bad, 'test')).toThrow(/add up to 40/)
+  })
+
+  it('rejects an objective of another domain', () => {
+    const bad = {
+      ...exam,
+      domains: [{ ...exam.domains[0], objectives: [{ id: '2.1', kind: 'scenario' }] }, exam.domains[1]]
+    }
+    expect(() => parseExam(bad, 'test')).toThrow(/not in domain 1/)
+  })
+
+  it('rejects an unknown objective kind', () => {
+    const bad = {
+      ...exam,
+      domains: [{ ...exam.domains[0], objectives: [{ id: '1.1', kind: 'pbq' }] }, exam.domains[1]]
+    }
+    expect(() => parseExam(bad, 'test')).toThrow(/kind/)
+  })
+
+  it('rejects a passing score above the maximum', () => {
+    expect(() => parseExam({ ...exam, passingScore: 950 }, 'test')).toThrow(/passingScore/)
+  })
+
+  it('rejects a minimum count above the maximum', () => {
+    expect(() => parseExam({ ...exam, questionCount: { min: 95, max: 90 } }, 'test')).toThrow(/min/)
   })
 })
 

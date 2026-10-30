@@ -1,0 +1,142 @@
+[
+  {
+    "id": "core1-s-mdm",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "control the settings on all company phones",
+    "clues": [
+      "the company owns the phones",
+      "the settings must be pushed from one console"
+    ],
+    "answer": {
+      "item": "Mobile device management (MDM)"
+    },
+    "itemType": "feature",
+    "appliesWhen": "the company must manage whole devices from one console",
+    "explanation": "MDM lets a company push settings and policies to whole devices from one console.",
+    "related": [
+      "core1-s-hotspot",
+      "core1-s-vpn",
+      "core1-s-bt-pair"
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-s-hotspot",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "get a laptop online at a site with no Wi-Fi",
+    "clues": [
+      "the phone has a cellular data plan",
+      "only one laptop needs a connection"
+    ],
+    "answer": {
+      "item": "A mobile hotspot"
+    },
+    "itemType": "feature",
+    "appliesWhen": "a phone must share its cellular data",
+    "explanation": "A hotspot shares the phone's cellular data over Wi-Fi.",
+    "related": [
+      "core1-s-mdm",
+      "core1-s-vpn",
+      "core1-s-bt-pair"
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-s-vpn",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "reach the company file server from a hotel",
+    "clues": [
+      "the hotel Wi-Fi is public",
+      "the traffic must be encrypted"
+    ],
+    "answer": {
+      "item": "A VPN connection"
+    },
+    "itemType": "feature",
+    "appliesWhen": "traffic must cross an untrusted network to a private network",
+    "explanation": "A VPN encrypts the traffic between the device and the company network.",
+    "related": [
+      "core1-s-mdm",
+      "core1-s-hotspot",
+      "core1-s-bt-pair"
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  },
+  {
+    "id": "core1-s-bt-pair",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "use a wireless headset with a phone",
+    "clues": [
+      "the headset has no cable",
+      "the headset is a few feet from the phone"
+    ],
+    "answer": {
+      "item": "Bluetooth pairing"
+    },
+    "itemType": "feature",
+    "appliesWhen": "a short-range accessory must connect without a cable",
+    "explanation": "Bluetooth pairing connects short-range accessories without cables.",
+    "related": [
+      "core1-s-mdm",
+      "core1-s-hotspot",
+      "core1-s-vpn"
+    ],
+    "origin": "written",
+    "source": "Test fixture"
+  }
+]

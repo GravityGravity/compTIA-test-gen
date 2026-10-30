@@ -1,4 +1,10 @@
-import type { CertificationConfig, ExamConfig, ExerciseConfig, QuestionTypeConfig } from '@shared/types'
+import type {
+  CertificationConfig,
+  ExamConfig,
+  ExerciseConfig,
+  ObjectiveConfig,
+  QuestionTypeConfig
+} from '@shared/types'
 
 // Validates the configs in config/. Throws with the file and field on the first problem,
 // so a broken config stops the app with a clear message instead of a half-working screen.
@@ -35,6 +41,13 @@ function posInt(obj: Json, key: string, where: string): number {
   return value
 }
 
+function percent(obj: Json, key: string, where: string): number {
+  const value = obj[key]
+  if (typeof value !== 'number' || !Number.isInteger(value) || value < 0 || value > 100)
+    fail(where, `"${key}" must be a whole number from 0 to 100`)
+  return value
+}
+
 function strList(obj: Json, key: string, where: string): string[] {
   const value = obj[key]
   if (!Array.isArray(value) || value.length === 0 || !value.every((v) => typeof v === 'string' && v !== ''))
@@ -66,16 +79,43 @@ export function parseExam(raw: unknown, where: string): ExamConfig {
   const domains = domainsRaw.map((d, i) => {
     const at = `${where} domains[${i}]`
     const dom = asObject(d, at)
-    return { id: str(dom, 'id', at), name: str(dom, 'name', at), weight: posInt(dom, 'weight', at) }
+    const id = str(dom, 'id', at)
+    const objectivesRaw = dom.objectives
+    if (!Array.isArray(objectivesRaw) || objectivesRaw.length === 0)
+      fail(at, '"objectives" must be a non-empty list')
+    const objectives = objectivesRaw.map((o, j): ObjectiveConfig => {
+      const oat = `${at} objectives[${j}]`
+      const objective = asObject(o, oat)
+      const oid = str(objective, 'id', oat)
+      if (!oid.startsWith(`${id}.`)) fail(oat, `objective "${oid}" is not in domain ${id}`)
+      return { id: oid, kind: oneOf(objective, 'kind', ['scenario', 'knowledge'] as const, oat) }
+    })
+    return { id, name: str(dom, 'name', at), weight: posInt(dom, 'weight', at), objectives }
   })
   const total = domains.reduce((sum, d) => sum + d.weight, 0)
   if (total !== 100) fail(where, `domain weights add up to ${total}, not 100`)
+  const count = asObject(obj.questionCount, `${where} questionCount`)
+  const questionCount = {
+    min: posInt(count, 'min', `${where} questionCount`),
+    max: posInt(count, 'max', `${where} questionCount`)
+  }
+  if (questionCount.min > questionCount.max) fail(where, '"questionCount" min is more than max')
+  const maxScore = posInt(obj, 'maxScore', where)
+  const passingScore = posInt(obj, 'passingScore', where)
+  if (passingScore > maxScore) fail(where, '"passingScore" is more than "maxScore"')
   return {
     id: str(obj, 'id', where),
     certification: str(obj, 'certification', where),
     name: str(obj, 'name', where),
     shortName: str(obj, 'shortName', where),
     active: bool(obj, 'active', where),
+    content: str(obj, 'content', where),
+    questionCount,
+    timeLimitMinutes: posInt(obj, 'timeLimitMinutes', where),
+    passingScore,
+    maxScore,
+    scenarioShare: percent(obj, 'scenarioShare', where),
+    generatedScenarioShare: percent(obj, 'generatedScenarioShare', where),
     domains
   }
 }

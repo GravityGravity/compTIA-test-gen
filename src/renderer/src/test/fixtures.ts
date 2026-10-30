@@ -16,9 +16,16 @@ export const exams: ExamConfig[] = [
     name: 'Core 1 Exam',
     shortName: 'Core 1',
     active: false,
+    content: 'core1',
+    questionCount: { min: 75, max: 90 },
+    timeLimitMinutes: 90,
+    passingScore: 675,
+    maxScore: 900,
+    scenarioShare: 50,
+    generatedScenarioShare: 70,
     domains: [
-      { id: '1', name: 'Mobile Devices', weight: 50 },
-      { id: '2', name: 'Networking', weight: 50 }
+      { id: '1', name: 'Mobile Devices', weight: 50, objectives: [{ id: '1.1', kind: 'scenario' }] },
+      { id: '2', name: 'Networking', weight: 50, objectives: [{ id: '2.1', kind: 'knowledge' }] }
     ]
   },
   {
@@ -27,7 +34,16 @@ export const exams: ExamConfig[] = [
     name: 'Core 2 Exam',
     shortName: 'Core 2',
     active: false,
-    domains: [{ id: '1', name: 'Operating Systems', weight: 100 }]
+    content: 'core2',
+    questionCount: { min: 75, max: 90 },
+    timeLimitMinutes: 90,
+    passingScore: 675,
+    maxScore: 900,
+    scenarioShare: 50,
+    generatedScenarioShare: 70,
+    domains: [
+      { id: '1', name: 'Operating Systems', weight: 100, objectives: [{ id: '1.1', kind: 'knowledge' }] }
+    ]
   },
   {
     id: 'N10-009',
@@ -35,7 +51,16 @@ export const exams: ExamConfig[] = [
     name: 'Network+ Exam',
     shortName: 'Network+',
     active: false,
-    domains: [{ id: '1', name: 'Networking Concepts', weight: 100 }]
+    content: 'network',
+    questionCount: { min: 75, max: 90 },
+    timeLimitMinutes: 90,
+    passingScore: 675,
+    maxScore: 900,
+    scenarioShare: 50,
+    generatedScenarioShare: 70,
+    domains: [
+      { id: '1', name: 'Networking Concepts', weight: 100, objectives: [{ id: '1.1', kind: 'knowledge' }] }
+    ]
   }
 ]
 

@@ -1,0 +1,33 @@
+{
+  "id": "definition-exercise",
+  "name": "Definition Exercise",
+  "description": "Match terms to their definitions, and type the term for a definition.",
+  "active": true,
+  "content": "definitions",
+  "certifications": [
+    "a-plus"
+  ],
+  "questionCount": 20,
+  "timeLimitMinutes": 15,
+  "onTimeUp": "end",
+  "selection": "random",
+  "questionTypes": [
+    {
+      "type": "multiple-choice",
+      "direction": "random",
+      "directions": [
+        "term-to-definition",
+        "definition-to-term"
+      ],
+      "choices": 4,
+      "count": 14
+    },
+    {
+      "type": "typed",
+      "prompt": "definition",
+      "answer": "term",
+      "requires": "typeable",
+      "count": 6
+    }
+  ]
+}

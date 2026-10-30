@@ -1,0 +1,1012 @@
+/* Exam attempt screens, from references/exam-simulation-ui.html (its layout, controls, and colors).
+   Every rule is scoped under .exam, because the draft uses class names that app.css also uses.
+   Not taken from the draft: its phone breakpoints (the app is desktop only) and its Google Font
+   (the app bundles Inter). Additions for the app are at the end. */
+.exam {
+  --shell: #f2f2f4;
+  --card: #ffffff;
+  --fg: #1f1f1f;
+  --muted: #555a60;
+  --line: #d6d7db;
+  --btn: #eeeff2;
+  --btn-hover: #dfe1e6;
+  --btn-hover-border: #a3a6ad;
+  --btn-border: #c3c5cb;
+  --accent: #0d789e;
+  --accent-hover: #0a5f7d;
+  --accent-fg: #ffffff;
+  --link: #1b6da3;
+  --sel: #d8eef6;
+  --sel-border: #0d789e;
+  --track: #c9cbd0;
+  --ok: #1d7a3a;
+  --ok-bg: #e3f3e8;
+  --bad: #b3261e;
+  --bad-bg: #fbe7e5;
+  --flag: #a86400;
+  --flag-bg: #fdf1dc;
+  --shadow: rgba(0, 0, 0, 0.18);
+  --font: 'Segoe UI', Inter, system-ui, -apple-system, Arial, sans-serif;
+}
+.exam {
+  background: var(--shell);
+  color: var(--fg);
+  font-family: var(--font);
+  font-size: 15px;
+  padding: 12px 16px 24px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.exam .wrap {
+  max-width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exam button {
+  font-family: inherit;
+  color: inherit;
+}
+.exam button:focus-visible,
+.exam a:focus-visible,
+.exam input:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+/* header */
+.exam .head {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px 16px;
+  align-items: start;
+}
+.exam .head h1 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  display: inline;
+}
+.exam .head .sec {
+  font-size: 13px;
+  color: var(--muted);
+  margin-left: 22px;
+  white-space: nowrap;
+}
+.exam .timers {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 24px;
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  flex-wrap: wrap;
+}
+.exam .timers span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.exam .timers b {
+  font-weight: 400;
+  color: var(--fg);
+}
+.exam .foot {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+.exam .foot .reportbox {
+  flex-basis: 100%;
+}
+.exam #qTimer {
+  margin-left: auto;
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.exam #qTimer b {
+  font-weight: 400;
+  color: var(--fg);
+}
+.exam #qTimer.neg b {
+  color: var(--bad);
+  font-weight: 600;
+}
+.exam .timers.low b {
+  color: var(--bad);
+  font-weight: 600;
+}
+.exam .hg {
+  width: 14px;
+  height: 14px;
+  flex: none;
+}
+.exam .pause {
+  background: var(--btn);
+  border: 1px solid var(--btn-border);
+  border-radius: 2px;
+  padding: 7px 26px;
+  font-size: 12px;
+  cursor: pointer;
+}
+.exam .pause:hover {
+  background: var(--btn-hover);
+}
+/* Leave dialog: two stacked choices, each with a one-line description, and a quiet "Keep working" link under them. */
+.exam .dlg.lv {
+  max-width: 440px;
+  gap: 14px;
+}
+.exam .lv-opts {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.exam .lv-opt {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+  width: 100%;
+  padding: 12px 14px;
+  background: var(--btn);
+  border: 1px solid var(--btn-border);
+  cursor: pointer;
+  font-size: 14px;
+}
+.exam .lv-opt:hover {
+  background: var(--btn-hover);
+}
+.exam .lv-opt b {
+  font-size: 15px;
+}
+.exam .lv-opt span {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+}
+.exam .lv-opt.pri {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-fg);
+}
+.exam .lv-opt.pri span {
+  color: var(--accent-fg);
+  opacity: 0.9;
+}
+.exam .lv-stay {
+  align-self: center;
+  background: none;
+  border: 0;
+  padding: 6px 10px;
+  color: var(--accent);
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.exam .head-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+/* card */
+.exam .card {
+  background: var(--card);
+  position: relative;
+}
+.exam .bar {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  min-height: 36px;
+  font-size: 13px;
+  flex-wrap: wrap;
+}
+.exam .nav {
+  display: flex;
+  border-right: 1px solid var(--line);
+  padding: 0 6px;
+}
+.exam .nav button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  width: 26px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+}
+.exam .nav button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+.exam .pct {
+  padding: 0 10px;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.exam .track {
+  flex: 1;
+  min-width: 120px;
+  height: 12px;
+  margin: 0 16px 0 4px;
+  position: relative;
+  background: var(--track);
+  border-radius: 6px;
+}
+.exam .track .fill {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--accent);
+  border-radius: 6px;
+  transition: width 0.25s;
+}
+.exam .track .tick {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--card);
+  opacity: 0.7;
+}
+.exam .track .knob {
+  position: absolute;
+  top: 50%;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--track);
+  border: 2px solid var(--card);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 0 1px var(--track);
+}
+.exam .track .knob.l {
+  left: 0;
+}
+.exam .track .knob.r {
+  left: 100%;
+}
+.exam .revisit {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  border-left: 1px solid var(--line);
+  padding: 0 12px;
+  height: 36px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.exam .revisit input {
+  margin: 0;
+  accent-color: var(--accent);
+}
+.exam .review {
+  border-left: 1px solid var(--line);
+  padding: 0 12px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  color: var(--link);
+  background: none;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  cursor: pointer;
+  font-size: 13px;
+  white-space: nowrap;
+}
+.exam .review:hover {
+  text-decoration: underline;
+}
+.exam .qa {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 230px;
+  gap: 24px;
+  padding: 22px 22px 18px;
+}
+.exam .qnum {
+  font-size: 12px;
+  color: var(--muted);
+  margin: 0 0 6px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.exam .chip {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  border: 1px solid var(--sel-border);
+  background: var(--sel);
+  color: var(--fg);
+  border-radius: 10px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  vertical-align: 1px;
+}
+.exam .stem {
+  margin: 0 0 18px;
+  line-height: 1.5;
+  max-width: 62ch;
+}
+.exam .opts {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.exam .opts li {
+  line-height: 1.4;
+}
+.exam .opts li.struck {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+.exam .keys {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.exam .krow {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  align-items: center;
+  gap: 10px;
+}
+.exam .x {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  color: var(--fg);
+  border-radius: 3px;
+}
+.exam .x:hover {
+  background: var(--btn);
+}
+.exam .x[aria-pressed='true'] {
+  color: var(--bad);
+}
+.exam .key {
+  height: 41px;
+  background: var(--btn);
+  border: 1px solid var(--btn-border);
+  font-size: 17px;
+  cursor: pointer;
+}
+.exam .key:hover:not(:disabled) {
+  background: var(--btn-hover);
+}
+.exam .key.on {
+  background: var(--sel);
+  border: 2px solid var(--sel-border);
+  font-weight: 600;
+}
+.exam .key:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  text-decoration: line-through;
+}
+.exam .confirm {
+  margin: 6px 0 0 34px;
+  height: 48px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  border: 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+.exam .confirm:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+.exam .saved {
+  margin-left: 34px;
+  font-size: 12px;
+  color: var(--ok);
+  min-height: 16px;
+}
+.exam .foot {
+  padding: 12px 22px 18px;
+}
+.exam .report {
+  font-size: 11px;
+  color: var(--fg);
+  background: none;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  padding: 0 0 4px;
+  cursor: pointer;
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+.exam .report:disabled {
+  color: #9a9ca1;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.exam .reportbox {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 520px;
+}
+.exam .reportbox textarea {
+  flex: 1 1 240px;
+  min-height: 56px;
+  font: inherit;
+  font-size: 13px;
+  background: var(--card);
+  color: var(--fg);
+  border: 1px solid var(--btn-border);
+  padding: 6px;
+}
+.exam .sm {
+  background: var(--btn);
+  border: 1px solid var(--btn-border);
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 13px;
+}
+.exam .sm.pri {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+/* overlays */
+.exam .ovl {
+  position: absolute;
+  inset: 0;
+  background: var(--card);
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 24px;
+  text-align: center;
+}
+.exam .ovl h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.exam .ovl p {
+  margin: 0;
+  color: var(--muted);
+  max-width: 44ch;
+  line-height: 1.5;
+}
+.exam .panel {
+  padding: 20px 22px;
+}
+.exam .panel h2 {
+  font-size: 18px;
+  margin: 0 0 4px;
+}
+.exam .panel .sub {
+  color: var(--muted);
+  margin: 0 0 16px;
+  font-size: 13px;
+}
+.exam .stats {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  font-variant-numeric: tabular-nums;
+}
+.exam .modal {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(20, 22, 26, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+.exam .dlg {
+  background: var(--card);
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  box-shadow: 0 10px 40px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.exam .dlg h2 {
+  margin: 0;
+  font-size: 18px;
+}
+.exam .dlg p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.5;
+}
+.exam .dlg .sm {
+  padding: 10px 24px;
+}
+.exam .loading {
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  text-align: center;
+}
+.exam .spin {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid var(--track);
+  border-top-color: var(--accent);
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .exam .spin {
+    animation-duration: 3s;
+  }
+}
+.exam .legend {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+.exam .legend i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid var(--btn-border);
+  vertical-align: -2px;
+  margin-right: 5px;
+}
+.exam .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.exam .cell {
+  height: 48px;
+  border: 1px solid var(--btn-border);
+  background: var(--btn);
+  cursor: pointer;
+  font-size: 13px;
+  position: relative;
+  font-variant-numeric: tabular-nums;
+}
+.exam .cell.ans {
+  background: var(--sel);
+  border-color: var(--sel-border);
+}
+.exam .cell.flag::after {
+  content: '';
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--flag);
+}
+.exam .actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.exam .warn {
+  background: var(--flag-bg);
+  color: var(--fg);
+  border-left: 3px solid var(--flag);
+  padding: 10px 12px;
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+.exam .score {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  align-items: baseline;
+  margin: 6px 0 16px;
+}
+.exam .score .big {
+  font-size: 40px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.exam .pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.exam .pill.pass {
+  background: var(--ok-bg);
+  color: var(--ok);
+}
+.exam .pill.fail {
+  background: var(--bad-bg);
+  color: var(--bad);
+}
+.exam .rlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.exam .rlist > li {
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--bad);
+  padding: 10px 12px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.exam .rlist > li {
+  background: #fdf5f4;
+  position: relative;
+  padding-right: 40px;
+  cursor: pointer;
+}
+.exam .rlist > li.part {
+  border-left-color: var(--flag);
+  background: #fdf9f0;
+}
+.exam .rlist > li.part .mark {
+  color: var(--flag);
+}
+.exam .pnote {
+  color: var(--flag);
+  font-weight: 600;
+  font-size: 12px;
+  margin-top: 4px;
+}
+.exam .rlist > li:hover {
+  border-color: var(--accent);
+}
+/* Return button (exam header): compTIA UI style pill with the brand-to-plum gradient (tokens brand, plum, on-brand, radius-pill). */
+.exam .ct-btn {
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 6px 18px;
+  border: 1px solid transparent;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, #c8102e, #7a1f7a);
+  color: #fff;
+  cursor: pointer;
+}
+.exam .ct-btn:hover {
+  background: linear-gradient(90deg, #a00d25, #7a1f7a);
+}
+.exam .ct-btn:focus-visible {
+  outline: 2px solid #c8102e;
+  outline-offset: 2px;
+}
+/* Result banner on a reviewed question: a large, clear signal of the result. */
+.exam .verdict {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  margin: 0 0 16px;
+  border-left: 6px solid var(--vc);
+  background: var(--vbg);
+  color: var(--vc);
+}
+.exam .verdict svg {
+  flex: none;
+}
+.exam .verdict b {
+  display: block;
+  font-size: 22px;
+  line-height: 28px;
+}
+.exam .verdict span {
+  display: block;
+  font-size: 13px;
+  color: var(--fg);
+}
+.exam .key.ro:disabled {
+  opacity: 1;
+  cursor: default;
+  text-decoration: none;
+}
+.exam .key.ro.on {
+  background: var(--bad-bg);
+  border: 2px solid var(--bad);
+}
+.exam .key.ro.right {
+  background: var(--ok-bg);
+  border: 2px solid var(--ok);
+  font-weight: 600;
+}
+.exam .key.ro {
+  position: relative;
+}
+.exam .key.mine::after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 6px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1a73d9;
+}
+.exam .klegend .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #1a73d9;
+  margin: 0 9px 0 2px;
+  vertical-align: 0;
+}
+.exam .klegend {
+  margin-left: 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--muted);
+  padding-top: 4px;
+}
+.exam .klegend .sw {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 6px;
+  vertical-align: -1px;
+  border: 2px solid;
+}
+.exam .sw.ok {
+  border-color: var(--ok);
+  background: var(--ok-bg);
+}
+.exam .sw.bad {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+.exam .explain {
+  margin-top: 20px;
+  padding: 10px 12px;
+  background: var(--shell);
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 62ch;
+}
+.exam .rlist .mark {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  color: var(--bad);
+  display: grid;
+  place-items: center;
+}
+.exam .rlist > li.ok .mark {
+  color: var(--ok);
+}
+.exam .acols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 24px;
+}
+.exam .albl {
+  margin-top: 6px;
+  font-weight: 600;
+}
+.exam .alist {
+  margin: 2px 0 6px;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.exam .rlist > li.ok {
+  border-left-color: var(--ok);
+  background: #f4faf5;
+}
+.exam .rlist .q {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+.exam .rlist .a {
+  color: var(--muted);
+}
+.exam .filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+/* Result filters: round pills. The selected one has a thick black outline (drawn with a shadow so its size does not change)
+   and a fill that matches the filter: neutral for All, green for Correct, red for Incorrect. */
+.exam .filters button {
+  border-radius: 9999px;
+  padding: 6px 16px;
+}
+.exam .filters button[aria-pressed='true'] {
+  background: var(--sel);
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+  box-shadow: 0 0 0 2px #1a1a1a;
+  font-weight: 600;
+}
+.exam .filters button[data-f='right'][aria-pressed='true'] {
+  background: var(--ok-bg);
+}
+.exam .filters button[data-f='wrong'][aria-pressed='true'] {
+  background: var(--bad-bg);
+}
+/* Hover: every button turns a darker shade of its own color. Grey turns darker grey, teal turns darker teal,
+   light blue/green/red fills turn a little darker, and borderless bar buttons get a light grey fill. Disabled buttons do not change. */
+.exam .sm,
+.exam .pause,
+.exam .key,
+.exam .cell,
+.exam .confirm,
+.exam .nav button,
+.exam .review,
+.exam .revisit,
+.exam .x,
+.exam .lv-opt,
+.exam .lv-stay {
+  transition:
+    background-color 0.12s,
+    border-color 0.12s,
+    color 0.12s;
+}
+.exam .sm:hover:not(:disabled),
+.exam .pause:hover,
+.exam .key:hover:not(:disabled),
+.exam .cell:hover,
+.exam .lv-opt:hover {
+  background: var(--btn-hover);
+  border-color: var(--btn-hover-border);
+}
+.exam .sm.pri:hover:not(:disabled),
+.exam .confirm:hover:not(:disabled),
+.exam .lv-opt.pri:hover {
+  background: var(--accent-hover);
+  border-color: var(--accent-hover);
+}
+.exam .nav button:hover:not(:disabled),
+.exam .review:hover,
+.exam .revisit:hover,
+.exam .x:hover,
+.exam .lv-stay:hover {
+  background: var(--btn);
+}
+.exam .key.on:hover:not(:disabled),
+.exam .cell.ans:hover {
+  background: #c4e3ef;
+  border-color: var(--sel-border);
+}
+.exam .filters button[data-f][aria-pressed='true']:hover {
+  background: #c4e3ef;
+  border-color: #1a1a1a;
+}
+.exam .filters button[data-f='right'][aria-pressed='true']:hover {
+  background: #cfe9d6;
+}
+.exam .filters button[data-f='wrong'][aria-pressed='true']:hover {
+  background: #f6d3cf;
+}
+@media (prefers-reduced-motion: reduce) {
+  .exam * {
+    transition: none !important;
+  }
+}
+
+/* Additions: per-domain breakdown on the results, the wrong-option explanations on a reviewed question,
+   and the error line when an attempt cannot be saved. Same colors as the draft. */
+.exam .domains {
+  width: 100%;
+  max-width: 640px;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin: 0 0 18px;
+  font-variant-numeric: tabular-nums;
+}
+.exam .domains th {
+  text-align: left;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 4px 8px 4px 0;
+  border-bottom: 1px solid var(--line);
+}
+.exam .domains td {
+  padding: 6px 8px 6px 0;
+  border-bottom: 1px solid var(--line);
+}
+.exam .domains .num {
+  text-align: right;
+  white-space: nowrap;
+}
+.exam .dbar {
+  height: 8px;
+  min-width: 120px;
+  background: var(--track);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.exam .dbar i {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+}
+.exam .whywrong {
+  margin: 10px 0 0;
+  padding-left: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.exam .err {
+  color: var(--bad);
+  font-size: 13px;
+  margin: 0;
+}
+.exam .wrap[inert] {
+  pointer-events: none;
+}
+
+/* app.css and exercise.css use some of the same class names (.card, .panel, .bar, .nav, .mark).
+   Undo their values inside the exam shell, so it looks like the draft. */
+.exam .card {
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.exam .panel {
+  background: none;
+  border-radius: 0;
+}
+.exam .bar {
+  height: auto;
+  border-radius: 0;
+  background: none;
+  overflow: visible;
+  min-width: 0;
+}
+.exam .nav {
+  gap: 0;
+  margin-left: 0;
+  font-size: inherit;
+  line-height: normal;
+}
+.exam .rlist .mark {
+  font-size: inherit;
+  font-weight: inherit;
+  margin-left: 0;
+  white-space: normal;
+}

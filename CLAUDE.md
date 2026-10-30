@@ -25,6 +25,7 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - `CHANGELOG.md` – A summary of the changes and decisions in each task.
 - `docs/spec.md` – Product requirements.
 - `docs/compTIA-exam-overviews.md` – Exam overviews for Core 1, Core 2, and Network+: question count, time, passing score, domains, weights, question structures, and the structure mix.
+- `docs/exam-modules.md` – How to build an exam module (config, question pool, scenario records, grammar, tools, workflow, checklist). Follow it for every exam, including exams added later.
 - `references/exam-simulation-ui.html` – Exam simulation draft. The UI for an exam attempt must follow it.
 - `references/ui-drafts/` – Static HTML drafts of the non-exam screens (home, exam intro, previous attempts, exercise setup, question, results).
 - `references/comptia-ui-style/` – compTIA UI style: `README.md` (rules), `tokens.json` (colors, type, spacing, radius, shadow), `components.css`, and `components/` (Button, Card, Eyebrow, StatTile). All other screens must follow it.
@@ -38,16 +39,17 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - `sources-text/derived/a-plus-acronyms.md` – The two official acronym lists merged, with notes where they differ. The main source for `content/acronyms/`.
 - `sources-text/derived/acronym-candidates.md` – Acronym and expanded-form pairs found in the books, marked when they are on the official list. A helper, not a source of truth.
 - `sources-text/network/` – Network+ (N10-009): the official objectives and acronym list (`objectives-n10-009/`) and three books. `sources-text/derived/network-plus-acronyms.md` and `network-plus-acronym-candidates.md` are the Network+ acronym files.
-- `tools/extract/` – Dev-only Python tools (see its `README.md`): the book extractor, `seed_acronyms.py` (seeds acronym records from the official lists), `check_content.py` (validates the acronym and definition records), and `check_config.py` (validates the configs in `config/`). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
-- `config/` – Configs the app loads: `certifications/` (one per certification: name, short name, `active`, exam codes), `exams/` (one per exam: name, short name, `active`, domains and weights; the exam engine adds the rest), and `exercises/` (one per exercise module). See `content/README.md` for the fields.
-- `content/` – Question records, terms, and noun pools that the app uses. Subfolders: `core1/`, `core2/`, `acronyms/`, `definitions/`, `network/`. See `content/README.md` for the record formats.
-<!-- Add the code folders when they exist. -->
-- `src/main/` – Electron main process: the window, IPC handlers, and file loading (`catalog.ts` reads `config/`). Later: SQLite.
+- `tools/extract/` – Dev-only Python tools (see its `README.md`): the book extractor, `seed_acronyms.py` (seeds acronym records from the official lists), `check_content.py` (validates the acronym and definition records), `check_config.py` (validates the configs in `config/`), `extract_questions.py` (parses the book questions into `sources-text/derived/questions/`), and `check_questions.py` (validates the exam pool and scenario records and prints the coverage report). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
+- `config/` – Configs the app loads: `certifications/` (one per certification: name, short name, `active`, exam codes), `exams/` (one per exam: name, short name, `active`, question count, time, passing score, scenario share, domains with weights and objectives), and `exercises/` (one per exercise module). See `content/README.md` for the fields.
+- `content/` – Records that the app uses. `acronyms/`, `definitions/`, one folder per exam module (`core1/`, `core2/`, `network/`, each with `pool/d<N>.json`, `scenarios/d<N>.json`, and `grammar.json`), and `shared/grammar.json` (grammar rules and noun pools for all exams). See `content/README.md` for the record formats.
+- `sources-text/derived/questions/` – The book questions parsed by `extract_questions.py`, one file per book. The input for the question pool. Not in git.
+- `src/main/` – Electron main process: the window, IPC handlers, file loading (`catalog.ts` reads `config/`, `content.ts` reads `content/`), and the SQLite database (`db.ts`).
 - `src/preload/` – The `contextBridge` API (`window.certPractice`). The only bridge between the UI and Node.
-- `src/renderer/` – React UI: `screens/`, `components/`, `styles/` (`tokens.css` from the compTIA UI style tokens, `app.css` from the drafts).
-- `src/engine/` – Pure TypeScript with no Electron or React imports: config validation, the seeded random generator, and later generation, grading, normalization, and spell check.
+- `src/renderer/` – React UI: `screens/`, `components/`, `exam/` (the exam attempt components, rebuilt from the exam simulation draft), `styles/` (`tokens.css` from the compTIA UI style tokens, `app.css` from the drafts).
+- `src/engine/` – Pure TypeScript with no Electron or React imports: config validation, the seeded random generator, normalization, spell check, `exercise/` (exercise generation and grading), and `exam/` (exam allocation, selection, the scenario generators and grammar in `exam/scenario/`, the question types in `exam/questionTypes/`, and grading).
 - `src/shared/` – Types and IPC contracts that main, preload, and renderer share.
-- `tests/unit/` – Vitest tests that are not next to one source file (for example the design-token check). `tests/e2e/` – Playwright tests.
+- `tests/unit/` – Vitest tests that are not next to one source file (for example the design-token check and attempt generation). `tests/e2e/` – Playwright tests.
+- `tests/fixtures/app-data/` – A small `config/` and `content/` (an active Core 1 Exam with 12–14 questions, every scenario kind) for the exam tests. In development, the app reads it when `CERT_PRACTICE_DATA` points to it, and `CERT_PRACTICE_USER_DATA` sets the userData folder (the Playwright exam test uses both). Keep its `content/shared/grammar.json` a copy of the real one.
 - `electron.vite.config.ts`, `electron-builder.yml`, `vitest.config.ts`, `playwright.config.ts` – build, packaging, and test configs. In an installed build, `config/` and `content/` are copied next to the app as resources.
 
 ## Tech Stack
@@ -97,7 +99,7 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - Do not use real CompTIA logos.
 
 ### Rules for source books and content
-- The books are the main source for generating questions. When you create or update content (question records, fault and fact records, acronyms, definitions, noun pools), use `sources-text/`.
+- The books are the main source for generating questions. When you create or update content (pool questions, scenario records, grammar and noun pools, acronyms, definitions), use `sources-text/`.
 - The app does not read the books. All questions that the app uses come from `content/`. The books help you write `content/`.
 - Use `sources-text/sources-index.md` to find the chapters for the domain you work on. Read only those chapters, not full books.
 - For tasks that do not create content (UI, exam generation code, storage, tests), use `content/` and do not read `sources-text/`.
@@ -106,14 +108,16 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - The extractor is a dev-only Python script (PyMuPDF for PDF, ebooklib for EPUB) in a local venv (approved). It is not part of the app. It is in `tools/extract/`; its `README.md` has the commands and the list of removed filler.
 - Put new books in `sources/` (`core1/`, `core2/`, `general/` for books that cover both cores, or `network/` for Network+), not in `sources-text/`. Then run the extractor.
 - Keep A+ and Network+ sources apart: A+ content uses `sources-text/general/` (and `core1/`, `core2/`); Network+ content uses `sources-text/network/` only.
-- Prefer the books for the current objectives (220-1201/1202). The 220-1101/1102 books are older: use them for background, and check their facts against a current book.
-- Create questions from the facts in each chapter.
-- When a chapter has practice questions, add each one to the question pool in `content/`. Keep the question, the answers, and the explanation. Set the `origin` field to `book`.
+- Prefer the books for the current objectives (220-1201/1202) when you write new content. The 220-1101/1102 books are older: use them for background, and check their facts against a current book. Exception (approved 2026-10-30): the practice questions of the older books go into the question pool as they are (see the next rule).
+- Build exam modules with `docs/exam-modules.md`.
+- Question pool (approved 2026-10-30): copy every practice question of the exam's books (chapter quizzes, review questions, self-checks, practice exams) into `content/<module>/pool/`. Keep the question, the answers, and the explanation. Set `origin` to `book`. Older-objective books are copied as they are and tagged with the closest current objective, with a `note` when the match is not exact. A book question without an answer gets an answer written from the chapter (`answerOrigin: "written"`). Keep one copy of a question that is in two books.
+- Then write new questions (`origin: "written"`) from the facts in each chapter until every topic (top-level bullet under an objective) has at least 1 pool question, and 2 where the chapters give enough facts (changed 2026-10-30; was 3). Each exam has at least 800 pool questions; more is good when the questions are good.
+- Write scenario records for every scenario objective (at least 6 records per objective and 1 per topic). See `docs/exam-modules.md`.
 - Create content one domain at a time. Stop after each domain so the user can review it. Exceptions (approved): acronyms are made and reviewed as one batch for each certification. The A+ definitions after Core 1 Domain 2 (Core 1 Domains 3–5 and all of Core 2) are made and reviewed as one batch. The Network+ definitions after Domain 1 (Domains 2–5) are made and reviewed as one batch.
-- Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`, and `tools/extract/check_config.py` after each change to `config/` or to the exercise content.
+- Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`, `tools/extract/check_questions.py` after each change to an exam module's content, and `tools/extract/check_config.py` after each change to `config/` or to the exercise content.
 - Add a `source` field (book and chapter) to each content record.
 - For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`; for Network+, `network-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).
-- Use the official objectives in `sources-text/general/objectives-220-120*/` to check that each content record matches a current objective.
+- Use the official objectives (`sources-text/general/objectives-220-120*/`, `sources-text/network/objectives-n10-009/`) to check that each content record matches a current objective.
 
 ## Code Style
 <!-- blank -->
@@ -126,17 +130,19 @@ The exam guide gives a separate structure for EACH exam type:
 - `docs/compTIA-exam-overviews.md` Part 2 – Core 2 (220-1202).
 - `docs/compTIA-exam-overviews.md` Part 3 – Network+ (N10-009). In scope. Shown greyed out until its config `active` setting is true.
 
-Each exam type has its own config file. Make each config from the part of the guide for that exam only. Do not mix values between exams. Each config has:
-- The question count, the time limit, and the passing score.
-- The domains and the domain weights.
-- The question structures.
-- The estimated mix of scenario-based and knowledge questions.
+Each exam type has its own config file. Make each config from the part of the guide for that exam only. Do not mix values between exams. Build each exam module with `docs/exam-modules.md` (approved 2026-10-30). Each config has (fields in `content/README.md`):
+- `questionCount` (`min`, `max`), `timeLimitMinutes`, `passingScore`, and `maxScore`.
+- The domains with their weights and their objectives. Each objective has a `kind`: `scenario` ("Given a scenario…") or `knowledge` (every other verb).
+- `scenarioShare`: the estimated percentage of scenario-based questions from the guide.
+- `generatedScenarioShare`: the percentage of the scenario questions that the generator writes (default 70). The rest are book or written scenario questions from the pool.
 
-All exam modules use the same generation code. Only the config and the content are different.
+All exam modules use the same generation code. Only the config and the content are different. Each question comes from one of two places (approved 2026-10-30):
+- Generated scenario questions: written at attempt time from scenario records and a sentence grammar (see Question generation).
+- The question pool: fixed questions in `content/<module>/pool/` (every book practice question plus written questions; knowledge and scenario questions).
 
 Approved exam decisions:
-- Question count: random in a range from the config (Core 1 and Core 2: 75–90), as in the draft UI.
-- Scoring: keep the draft's method. A multiple-response question gets partial credit (selected correct / total correct) only when no wrong option is selected. Score = round(900 × points / questions). Pass when score ≥ the config's passing score.
+- Question count: random in a range from the config (75–90 for Core 1, Core 2, and Network+), as in the draft UI.
+- Scoring: keep the draft's method. A multiple-response question gets partial credit (selected correct / total correct) only when no wrong option is selected. Score = round(`maxScore` × points / questions). Pass when score ≥ the config's passing score.
 - Results screen: add a per-domain breakdown (correct / total for each domain) under the score, in the draft's style.
 - Interrupted attempt: autosave progress and remaining time. On the next launch, offer to resume or discard it.
 - Leaving an exam: during an attempt, a "Return" button sits at the top next to Pause. It is a compTIA UI style pill with the `brand` to `plum` gradient and bold white text. When the user selects it or tries to close the app, a dialog asks: "Save for later" (keep answers, marks, and remaining time) or "Cancel attempt" (delete it, not graded or saved). The two choices are stacked, full-width buttons, each with a one-line description; a "Keep working" link under them (or Escape) closes the dialog. The timer stops while the dialog is open. Save and Cancel go back to the exam's page. In Electron, the main process stops the window `close` event while an attempt is active and asks the renderer to show this dialog. Autosave still covers a crash or forced exit.
@@ -149,11 +155,14 @@ Approved exam decisions:
 - Every button on the exam screens has a hover color that is a darker shade of its own color: grey turns darker grey (`#dfe1e6`, border `#a3a6ad`), teal turns darker teal (`#0a5f7d`), light blue, green, and red fills turn a little darker, and borderless bar buttons get a light grey fill. Disabled buttons do not change.
 - When the user opens a question from the results, a large result banner at the top shows Correct, Partially correct, Incorrect, or Not answered, with an icon and one line of text.
 
-For each attempt, the app uses the config of the selected exam to:
+For each attempt (approved 2026-10-30; the steps are in `docs/exam-modules.md`), the engine in `src/engine/exam/` uses the config of the selected exam and one seeded random generator to:
 - Set the question count and the timer.
-- Calculate the number of questions for each domain from the weights.
-- Select questions to match the structure mix.
-- Grade the attempt against the passing score.
+- Divide the questions among the domains by weight (largest remainder).
+- Divide each domain into scenario and knowledge slots by its share of scenario objectives, scaled to `scenarioShare`. Divide the scenario slots between the generator and pool scenario questions by `generatedScenarioShare`.
+- Spread each domain's questions evenly across its objectives, then its topics. Prefer the pool questions the user has seen least often. Never repeat a question or scenario record in one attempt. When one slot type runs short, use the other.
+- Shuffle the options (except `fixedOrder` questions) and the question order.
+- Save the full question text, options, answers, and explanations with the attempt.
+- Grade the attempt against the passing score, with a per-domain breakdown.
 
 ### Exercise generation (Acronym Exercise and Definition Exercise modules)
 These are two separate modules. Each module practices one thing only. They can share the same exercise code with different content and configs:
@@ -184,15 +193,19 @@ Rules:
 - Spelling check method (approved): `nspell` with a bundled en_US Hunspell dictionary. Add all acronyms and terms from `content/` to the dictionary. Do not use Electron's built-in spellchecker (it downloads dictionaries on Linux and uses the OS checker on Windows). The app draws the red squiggle itself.
 
 ### Question generation (cognitive model)
-The app builds scenario-based questions from a cognitive model.
-Knowledge questions (definition and recall, select the correct item) need a different record type. See Record formats.
+The app builds scenario-based questions from a cognitive model (approved 2026-10-30). The generator is generic: it works for every exam module, current or added later, because it reads only scenario records and grammar files. Knowledge questions come from the question pool.
 
-1. Keep fault records in JSON files. Each record has the cause, the symptoms, the correct action, the explanations, and the related faults.
-2. Keep a set of question types, for example "most likely cause," "first step," and "next step."
-3. For each question, the app selects one fault, two or three symptoms (random order), a setting, and a question type.
-4. The app takes the distractors from the actions of related faults.
-5. A sentence grammar (Tracery method) joins the parts. Each part has many phrasings, so the sentence structure changes.
-6. Noun pools fill the placeholders (names, devices, offices).
+1. Keep scenario records in `content/<module>/scenarios/`. Each record has a `kind`, its objectives and topics, the `clues` (symptoms or conditions), the answer, an `appliesWhen` phrase, the explanation, and the `related` records.
+2. Each kind has its own generator in `src/engine/exam/scenario/<kind>.ts` with its own question types:
+   - `fault` (troubleshooting): MOST LIKELY cause, BEST action, FIRST step.
+   - `requirement` (a need that one tool, setting, command, device, or method meets): BEST tool, setting, or method.
+   - `procedure` (ordered steps): FIRST step, NEXT step.
+   - `calculation` (values that code calculates, for example subnetting).
+   A new kind is a code change (see `docs/exam-modules.md`).
+3. For each question, the generator selects one record, two or three clues (random order), a setting, a person, and a question type.
+4. The distractors are the answers of the `related` records. Each distractor's 1-sentence explanation comes from its record's `appliesWhen`. The correct answer's explanation is the record's `explanation` plus a sentence that links the selected clues.
+5. A sentence grammar (Tracery method, our own small expander) joins the parts. Each part has many phrasings, so the sentence structure changes.
+6. Noun pools fill the placeholders: `content/shared/grammar.json` (names, roles, offices) and `content/<module>/grammar.json` (devices, systems, places).
 7. A random generator with a seed controls all selections.
 8. Save the full question text and answers with each attempt. This lets the user review the exact question after grading.
 
@@ -205,31 +218,26 @@ Acronym and definition records (approved). The full field list and the content r
 - One record per certification: an acronym on both lists has an A+ record and a Network+ record.
 - Definition distractors come from the same `group` first. A record that shares the term or the definition with the target is never a distractor.
 
-Fault and fact records – Plan with the user. This fault record is a draft. Change it as development continues.
-
-```json
-{
-  "fault": "Failed printer driver",
-  "domain": "Core 1 – Hardware and network troubleshooting",
-  "symptoms": ["prints garbled text", "jobs stay in the queue", "printer shows ready"],
-  "correctAction": "Reinstall the printer driver",
-  "explanation": "",
-  "relatedFaults": ["Print spooler stopped", "Wrong default printer"],
-  "whyWrong": {
-    "Restart the print spooler": "",
-    "Set the correct default printer": ""
-  }
-}
-```
-
-Many exam topics are facts, not faults (for example ports and RAM types). Plan a record type for these questions with the user. Use the question structures in `docs/compTIA-exam-overviews.md` to decide which record types are necessary.
+Exam module records (approved 2026-10-30). The full field lists are in `content/README.md`; the method is in `docs/exam-modules.md`.
+- Files: `content/<module>/pool/d<N>.json` (pool questions), `content/<module>/scenarios/d<N>.json` (scenario records), `content/<module>/grammar.json`, and `content/shared/grammar.json`.
+- Pool question: `id`, `type` (`single` or `multiple`; PBQ types later), `structure` (`recall`, `select-item`, `scenario`, `procedure`, `calculation`), `qualifier`, `exam`, `domain`, `objectives`, `topics` (`<exam>/<objective>.<n>`, the n-th top-level bullet), `stem`, `options`, `answer` (option indexes), `selectCount`, `fixedOrder`, `explanation` (2–5 sentences), `whyWrong` (1 sentence for each wrong option, `null` for correct ones), `origin` (`book` or `written`), optional `answerOrigin`, `source`, optional `note`.
+- Scenario record: `id`, `kind`, `exam`, `domain`, `objectives`, `topics`, `clues`, `answer`, `appliesWhen`, `explanation`, `related`, `origin`, `source`, plus the fields of its kind.
+- Facts (for example ports and RAM types) are pool questions, not a separate record type.
 
 ### Data storage and database
-SQLite with `better-sqlite3` (approved). Schema – Plan with the user. The storage must:
+SQLite with `better-sqlite3` (approved). One file, `cert-practice.db`, in the Electron `userData` folder. Code in `src/main/db.ts`; migrations use `PRAGMA user_version`. The storage must:
 - Keep exam attempts persistently (see `docs/spec.md`).
 - Keep the full question text and answers for each attempt.
 - Not keep Acronym Exercise or Definition Exercise results.
 
+Schema (approved 2026-10-30):
+- `attempts`: `id`, `exam_id`, `seed`, `status` (`in_progress` or `completed`), `config_snapshot` (JSON: exam name, domains, passing score, max score), `question_count`, `time_limit_s`, `time_left_s`, `current_index`, `started_at`, `updated_at`, `completed_at`, `points`, `score`, `passed`, `correct`, `time_used_s`.
+- `attempt_questions`: primary key (`attempt_id`, `position`); `source_id`, `origin` (`pool` or `generated`), `kind`, `type`, `structure`, `domain_id`, `objectives` (JSON), `stem`, `options` (JSON), `answer` (JSON), `explanation`, `why_wrong` (JSON), and the user's work: `selected` (JSON), `flagged`, `struck` (JSON), `seconds`.
+- Each exam has at most one `in_progress` attempt. "Save for later" and an interrupted session both leave it `in_progress`; the next launch offers Resume or Discard. "Cancel attempt" and Discard delete the attempt.
+- The "seen least often" selection counts `source_id` in completed attempts.
+- Generation and grading run in the main process (they need the database). IPC: `exam:start`, `attempt:save` (autosave), `attempt:finish`, `attempt:get`, `attempt:discard`, `attempts:list`, `attempts:inProgress`, and `exam:close-requested` / `app:close-confirmed` for closing the window during an attempt.
+
 ## Testing
-- Vitest: the engine (config loading, seeded generation, domain allocation, grading, typed-answer normalization, spell check) and React components.
-- Playwright: a few end-to-end flows that drive the Electron app.
+- Vitest: the engine (config loading, seeded generation, domain allocation, the scenario/knowledge split, the grammar, each scenario generator, grading, typed-answer normalization, spell check), the database (on `:memory:`), a content smoke test (many seeded attempts from the real `content/` for each exam with content), and React components.
+- Playwright: a few end-to-end flows that drive the Electron app (for example: start an exam, save for later, resume after a relaunch, finalize, review the attempt from Previous attempts).
+- Python checkers: `check_config.py`, `check_content.py`, `check_questions.py` (with the coverage report).
