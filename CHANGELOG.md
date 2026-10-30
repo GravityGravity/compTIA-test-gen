@@ -2,6 +2,12 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Electron sandbox on Ubuntu 24.04
+
+- `npm run dev` aborted on Ubuntu 24.04: AppArmor blocks unprivileged user namespaces, so Electron's sandbox fell back to a `chrome-sandbox` helper that root does not own.
+- Fix (done once, with sudo): an AppArmor profile for `node_modules/electron/dist/electron`. Not `--no-sandbox`, and not a root-owned `chrome-sandbox` (npm resets it on each install).
+- `README.md`: the steps. `CLAUDE.md`: a note under Commands.
+
 ## 2026-10-30 – Build setup and app skeleton
 
 Decisions (approved):

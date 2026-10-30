@@ -18,6 +18,7 @@ npm run dist:linux     # .AppImage and .deb in release/.
 npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or run it on Windows.
 ```
 - After each change: `npm test`, `npm run typecheck`, `npm run lint`, and `npm run test:e2e` when the change shows in the app.
+- Ubuntu 24.04 and later block the user namespaces that Electron's sandbox needs, so `npm run dev` aborts with "The SUID sandbox helper binary was found, but is not configured correctly". Fix it once with an AppArmor profile for `node_modules/electron/dist/electron` (see README.md). Do not run Electron with `--no-sandbox`.
 - `better-sqlite3` 13 ships N-API prebuilt binaries: the same file loads in Node (Vitest) and in Electron. No rebuild step.
 
 ## Folder Structure
