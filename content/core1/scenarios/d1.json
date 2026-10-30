@@ -1,0 +1,2257 @@
+[
+  {
+    "id": "core1-s-swollen-battery",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the bottom of the case bulges outward",
+      "the touchpad is pushed up and hard to click",
+      "the laptop rocks when it sits on a flat desk",
+      "the bulging laptop is left on the charger day and night"
+    ],
+    "answer": {
+      "cause": "a swollen lithium-ion battery",
+      "action": "Stop using the laptop and have the battery removed and recycled safely"
+    },
+    "appliesWhen": "the case bulges because the battery inside has swollen",
+    "explanation": "Age, overcharging, or a defect can make a lithium-ion battery swell and push the case and touchpad out of shape. A swollen battery must not be punctured; remove it with care, keep it cool and dark, and recycle it.",
+    "related": [
+      "core1-s-dc-jack",
+      "core1-s-wrong-adapter",
+      "core1-s-keyboard-ribbon",
+      "core1-s-failing-hdd"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-worn-battery",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop runs only about 20 minutes when unplugged",
+      "the laptop works normally on AC power but dies soon after it is unplugged",
+      "the laptop that runs only minutes on battery is five years old",
+      "the charge level drops fast and then the laptop shuts off"
+    ],
+    "answer": {
+      "cause": "a worn-out battery that no longer holds a charge",
+      "action": "Replace the battery with a new one made for this laptop model"
+    },
+    "firstStep": "Test the battery's voltage",
+    "appliesWhen": "the laptop runs well on AC power but the battery runs down very quickly",
+    "explanation": "A battery can be recharged only a limited number of cycles. After a few years it loses charge quickly, and a very short runtime means it must be replaced.",
+    "related": [
+      "core1-s-dc-jack",
+      "core1-s-wrong-adapter",
+      "core1-s-failing-hdd"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-dc-jack",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop has charged only now and then since it fell while it was plugged in",
+      "the charge light comes on only when the plug is held at an angle",
+      "the power port wiggles and charging stops when the cord moves",
+      "a known good adapter of the right model does not charge it either"
+    ],
+    "answer": {
+      "cause": "a damaged DC jack",
+      "action": "Have the DC jack on the motherboard repaired or replaced"
+    },
+    "appliesWhen": "the power port is loose or damaged and the laptop charges only now and then",
+    "explanation": "The DC jack is soldered to the motherboard and is easily damaged when a laptop falls on its plug. A jack that charges only at an angle is loose or broken and must be repaired.",
+    "related": [
+      "core1-s-wrong-adapter",
+      "core1-s-worn-battery",
+      "core1-s-swollen-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-wrong-adapter",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "school"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop will not charge on a charger borrowed from a coworker",
+      "the borrowed plug fits, but the battery charge never rises",
+      "the charger that fails came with a different model of the same brand",
+      "the laptop's own charger, left at home today, always charged it normally"
+    ],
+    "answer": {
+      "cause": "an AC adapter from a different laptop model",
+      "action": "Use the AC adapter made for this laptop model"
+    },
+    "firstStep": "Compare the adapter's output rating with the rating on the laptop",
+    "appliesWhen": "the laptop is plugged into a charger that belongs to another model",
+    "explanation": "Laptop AC adapters are fixed-input supplies made for one model. An adapter from another model, even one only a volt or two different, usually will not power or charge the laptop.",
+    "related": [
+      "core1-s-dc-jack",
+      "core1-s-worn-battery",
+      "core1-s-swollen-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-sticky-key",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "one key has to be pressed very hard to type",
+      "one key stays down after it is pressed while the others work normally",
+      "the key problem began after coffee was spilled near the laptop yesterday",
+      "a dried brown residue shows around the edges of the hard-to-press key"
+    ],
+    "answer": {
+      "cause": "a sticky key switch from a spilled drink",
+      "action": "Remove the keycap and clean the key switch underneath"
+    },
+    "appliesWhen": "one or two keys stick after a spill but the rest of the keyboard works",
+    "explanation": "A spill or heavy use can make a key switch stick. Removing the keycap and cleaning the switch usually fixes it; if not, the keyboard must be replaced.",
+    "related": [
+      "core1-s-keyboard-ribbon",
+      "core1-s-num-lock",
+      "core1-s-warped-keyboard"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-keyboard-ribbon",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "no key on the built-in keyboard works",
+      "the laptop whose keyboard is dead is carried between sites every day",
+      "the keyboard stopped working after the laptop was jostled in a bag",
+      "even the Fn and Caps Lock keys do nothing"
+    ],
+    "answer": {
+      "cause": "a loose keyboard ribbon cable",
+      "action": "Lift the keyboard and reseat its ribbon cable on the motherboard"
+    },
+    "appliesWhen": "the whole built-in keyboard stops working after the laptop is moved or jostled",
+    "explanation": "The keyboard connects to the motherboard with a ribbon cable that can work loose when a laptop is moved around. When every key fails at once, lift the keyboard and attach the cable firmly.",
+    "related": [
+      "core1-s-sticky-key",
+      "core1-s-num-lock",
+      "core1-s-warped-keyboard"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-num-lock",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "school"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the letters U, I, and O type 4, 5, and 6",
+      "the wrong characters began when the user came back from using an external keyboard at a desk",
+      "a password that worked yesterday is now rejected",
+      "a small light near the top of the keyboard is on while the wrong characters appear"
+    ],
+    "answer": {
+      "cause": "the numeric keypad turned on by Num Lock",
+      "action": "Press the Num Lock key to turn off the numeric keypad"
+    },
+    "firstStep": "Check whether the keypad indicator light is on",
+    "appliesWhen": "some letter keys type numbers because the embedded numeric keypad is on",
+    "explanation": "On small laptop keyboards the numeric keypad shares keys with letters. When Num Lock is on, those letters type numbers, and one press of Num Lock turns it off.",
+    "related": [
+      "core1-s-sticky-key",
+      "core1-s-keyboard-ribbon",
+      "core1-s-warped-keyboard"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-warped-keyboard",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "several keys stopped working after a heavy box was dropped on the open laptop",
+      "several keycaps are missing or tilted",
+      "the keyboard surface is no longer flat"
+    ],
+    "answer": {
+      "cause": "a bent keyboard from a heavy impact",
+      "action": "Replace the whole keyboard"
+    },
+    "appliesWhen": "the keyboard is bent or warped from a heavy blow",
+    "explanation": "A heavy object or a heavy hand can bend or warp a laptop keyboard. That damage usually cannot be repaired, so the keyboard is replaced.",
+    "related": [
+      "core1-s-sticky-key",
+      "core1-s-keyboard-ribbon",
+      "core1-s-num-lock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-ram-not-seated",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "a second memory module was installed this morning, but the memory total did not change",
+      "the System Information tool lists only one memory module after the upgrade",
+      "the laptop boots and runs normally apart from the missing memory",
+      "the access cover would not close flat after the new module went in"
+    ],
+    "answer": {
+      "cause": "a new memory module that is not fully seated",
+      "action": "Power off the laptop and press the new module into its slot until the clips lock"
+    },
+    "appliesWhen": "new memory was just added and the system does not count it",
+    "explanation": "Upgraded memory that the BIOS/UEFI does not see is usually not installed properly. Turn the laptop off, reseat the SODIMM until it clicks into place, and reboot.",
+    "related": [
+      "core1-s-ram-dirty",
+      "core1-s-failing-hdd",
+      "core1-s-keyboard-ribbon"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-ram-dirty",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.3"
+    ],
+    "settings": [
+      "warehouse",
+      "school",
+      "retail"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop gives a series of continuous beeps at power on",
+      "the screen stays black at power on",
+      "the laptop, used on a dusty shop floor, has started beeping at startup",
+      "no memory has been changed since the startup beeps began"
+    ],
+    "answer": {
+      "cause": "dirty contacts on the memory modules",
+      "action": "Clean the memory contacts with compressed air or a RAM cleaner"
+    },
+    "appliesWhen": "the laptop beeps and will not boot after being used in a dusty place",
+    "explanation": "Continuous beeps at startup point to memory, and laptops in harsh places often get dirty memory contacts. Clean the contacts, reseat the modules, and swap in known good RAM if the beeps continue.",
+    "related": [
+      "core1-s-failing-hdd",
+      "core1-s-dc-jack",
+      "core1-s-swollen-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-failing-hdd",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop makes clicking and grinding sounds",
+      "files take a long time to open and some are corrupt",
+      "the noises began after the laptop was dropped while it was running"
+    ],
+    "answer": {
+      "cause": "a failing magnetic hard drive",
+      "action": "Replace the drive with an SSD and restore the user's data"
+    },
+    "firstStep": "Back up the user's data before the drive fails completely",
+    "appliesWhen": "a spinning drive makes noise and files open slowly or are corrupt",
+    "explanation": "Laptop drives take many bumps and will fail in time, and a magnetic drive that clicks after a drop is failing. Replace it, ideally with a faster, shock-resistant SSD.",
+    "related": [
+      "core1-s-ram-dirty",
+      "core1-s-worn-battery",
+      "core1-s-wifi-card-failed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-wifi-key-off",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the wireless light above the keyboard is off and no networks show",
+      "the connection stopped right after the user pressed several function keys",
+      "the wireless adapter shows as enabled in Device Manager but cannot connect",
+      "the laptop was on Wi-Fi an hour ago but now lists no networks"
+    ],
+    "answer": {
+      "cause": "the wireless adapter switched off with the Wi-Fi function key",
+      "action": "Press the Wi-Fi function key or button to turn the adapter back on"
+    },
+    "appliesWhen": "the laptop's wireless button or function key has turned the adapter off",
+    "explanation": "Many laptops have a Wi-Fi button or function key that turns the built-in adapter on and off. When it is off, the laptop cannot connect even though the adapter is enabled in the OS.",
+    "related": [
+      "core1-s-wifi-card-failed",
+      "core1-s-antenna-lead",
+      "core1-s-hinge-antenna"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-wifi-card-failed",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop has no Wi-Fi and its wireless adapter is missing from Device Manager",
+      "reinstalling the wireless driver did not help",
+      "a USB Wi-Fi adapter connects normally while the built-in wireless does not",
+      "pressing the Wi-Fi key does not bring the wireless back"
+    ],
+    "answer": {
+      "cause": "a failed internal wireless card",
+      "action": "Replace the wireless card with a compatible M.2 card"
+    },
+    "appliesWhen": "the internal wireless card is no longer detected at all",
+    "explanation": "When the OS cannot see the internal adapter at all but a USB adapter works, the internal card has failed. Laptop wireless cards, usually M.2 or Mini PCIe, can be replaced.",
+    "related": [
+      "core1-s-wifi-key-off",
+      "core1-s-antenna-lead",
+      "core1-s-hinge-antenna"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-antenna-lead",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.7",
+      "220-1201/1.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the Wi-Fi has been weak since the display panel was replaced last week",
+      "the weak signal began after the wireless card was taken out during the display repair",
+      "the signal is weak even next to the access point",
+      "other laptops get a strong signal in the same spot where this one is weak"
+    ],
+    "answer": {
+      "cause": "an antenna wire left disconnected from the wireless card",
+      "action": "Reconnect the antenna wires to the main and auxiliary posts on the wireless card"
+    },
+    "appliesWhen": "an antenna wire was not reconnected to the wireless card after a repair",
+    "explanation": "The Wi-Fi antenna runs through the display, so display repairs mean taking the antenna leads off the wireless card. If a lead is not reconnected, the card still works but the signal is very weak.",
+    "related": [
+      "core1-s-wifi-key-off",
+      "core1-s-wifi-card-failed",
+      "core1-s-hinge-antenna"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-hinge-antenna",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the Wi-Fi has been unreliable since the display hinge cracked in a fall",
+      "the connection drops when the lid is tilted",
+      "the signal changes as the loose hinge moves"
+    ],
+    "answer": {
+      "cause": "antenna wiring damaged inside a broken hinge",
+      "action": "Replace the hinge and the damaged antenna wiring"
+    },
+    "appliesWhen": "the Wi-Fi drops as the lid moves after the hinge was damaged",
+    "explanation": "The Wi-Fi antenna wiring runs up through a hinge into the display. A damaged hinge can pinch or break those wires, so the signal changes as the lid moves.",
+    "related": [
+      "core1-s-wifi-key-off",
+      "core1-s-wifi-card-failed",
+      "core1-s-antenna-lead"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-webcam-covered",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the camera's activity light turns on, but the video window stays black",
+      "the Device Manager list shows the camera working with no errors, yet calls show no picture",
+      "the black video window brightens a little when the lid is pointed at a bright lamp",
+      "a driver reinstall did not bring back the picture in any video app"
+    ],
+    "answer": {
+      "cause": "tape or a privacy cover over the webcam lens",
+      "action": "Remove the cover from the webcam lens"
+    },
+    "appliesWhen": "the camera runs but something blocks its lens",
+    "explanation": "A camera that turns on its light but shows only black is working; something is in front of the lens. Many users cover webcams with tape or a cover for privacy.",
+    "related": [
+      "core1-s-webcam-disabled",
+      "core1-s-webcam-failed",
+      "core1-s-mic-taped"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-webcam-disabled",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "no app can find a camera",
+      "the camera stopped working right after the user changed privacy settings",
+      "the camera stopped working even though the laptop has not been dropped or opened",
+      "the camera is still listed in Device Manager but apps cannot use it"
+    ],
+    "answer": {
+      "cause": "the webcam turned off in the OS or with a function key",
+      "action": "Turn the webcam back on in the OS settings or with its function key"
+    },
+    "firstStep": "Check the camera's privacy settings and its function key",
+    "appliesWhen": "the camera is present but has been turned off in software or with a key",
+    "explanation": "A laptop camera can be turned off with a function key or in the operating system. Check those options before replacing a webcam.",
+    "related": [
+      "core1-s-webcam-covered",
+      "core1-s-webcam-failed",
+      "core1-s-mic-disabled"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-webcam-failed",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the camera is missing from Device Manager even after a driver update",
+      "the built-in camera stopped working after the display took a hard knock",
+      "a USB webcam works with the same apps while the built-in camera does not",
+      "the camera is turned on in the OS settings but no app finds it"
+    ],
+    "answer": {
+      "cause": "a failed webcam module",
+      "action": "Replace the webcam module in the display with an identical part"
+    },
+    "appliesWhen": "the built-in camera is no longer detected after damage",
+    "explanation": "When the built-in camera is not detected even with current drivers and its settings turned on, the module has failed. It sits above the screen behind the bezel and is replaced with an identical part.",
+    "related": [
+      "core1-s-webcam-covered",
+      "core1-s-webcam-disabled",
+      "core1-s-mic-muted"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-mic-muted",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "school"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "others in the meeting cannot hear the user",
+      "a small light has glowed on one function key since the microphone went silent",
+      "the meeting app still lists the built-in microphone but shows no input",
+      "the microphone went silent after the user pressed keys at the top of the keyboard"
+    ],
+    "answer": {
+      "cause": "the microphone muted with its hardware key",
+      "action": "Press the microphone key to unmute the microphone"
+    },
+    "appliesWhen": "the microphone has been silenced with its key on the keyboard",
+    "explanation": "Many laptops have a function key that mutes the microphone and lights up while it is on. The microphone is still listed but sends no sound until the key is pressed again.",
+    "related": [
+      "core1-s-mic-disabled",
+      "core1-s-mic-taped",
+      "core1-s-webcam-covered"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-mic-disabled",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "clinic"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the meeting app shows no microphone to choose from",
+      "the microphone stopped working after an administrator tightened privacy settings",
+      "no function key light is on, yet no app can use the microphone"
+    ],
+    "answer": {
+      "cause": "the microphone disabled in the operating system",
+      "action": "Enable the microphone on the Recording tab of the Sound settings"
+    },
+    "appliesWhen": "the microphone has been turned off in the operating system",
+    "explanation": "A microphone can be disabled in the operating system, for example on the Recording tab of the Sound dialog box in Windows. Apps then cannot see it until it is enabled again.",
+    "related": [
+      "core1-s-mic-muted",
+      "core1-s-mic-taped",
+      "core1-s-webcam-disabled"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-mic-taped",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "others say the user sounds muffled and far away",
+      "the muffled sound began after the user put tape over the camera and the small holes beside it",
+      "the input level meter moves but stays low"
+    ],
+    "answer": {
+      "cause": "tape over the microphone openings",
+      "action": "Remove the tape from the microphone openings"
+    },
+    "appliesWhen": "something covers the microphone openings and muffles the sound",
+    "explanation": "The microphone often sits next to the webcam lens. Tape over its openings muffles the sound but does not stop it.",
+    "related": [
+      "core1-s-mic-muted",
+      "core1-s-mic-disabled",
+      "core1-s-webcam-failed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-biometric-reader",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "add a second sign-in factor to the sales laptops",
+    "clues": [
+      "the users want to sign in with a touch instead of typing a code",
+      "the laptops have no built-in way to scan a body feature",
+      "each laptop has a free USB port"
+    ],
+    "answer": {
+      "item": "A USB fingerprint reader"
+    },
+    "itemType": "security measure",
+    "appliesWhen": "users must sign in with a body feature as well as a password",
+    "explanation": "Biometrics identify a person by a physical feature such as a fingerprint. A USB fingerprint reader adds that factor to a laptop that has no built-in sensor, which makes sign-in multifactor.",
+    "related": [
+      "core1-s-cable-lock",
+      "core1-s-privacy-screen",
+      "core1-s-nfc-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-cable-lock",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.6"
+    ],
+    "settings": [
+      "retail",
+      "school",
+      "clinic"
+    ],
+    "need": "keep laptops at a public counter from being carried off",
+    "clues": [
+      "visitors must still be able to use the laptops",
+      "staff often step away from the table",
+      "the table has a sturdy metal leg"
+    ],
+    "answer": {
+      "item": "A cable lock"
+    },
+    "itemType": "security measure",
+    "appliesWhen": "the main risk is someone walking off with the device",
+    "explanation": "A cable lock anchors a laptop to a solid structure, much like a bicycle lock. It is the best way to deter theft of the device itself.",
+    "related": [
+      "core1-s-biometric-reader",
+      "core1-s-privacy-screen",
+      "core1-s-nfc-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-privacy-screen",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "stop people nearby from reading a laptop screen",
+    "clues": [
+      "the user works on payroll data on trains",
+      "strangers often sit beside the user",
+      "the screen must stay easy to read from straight in front"
+    ],
+    "answer": {
+      "item": "A privacy screen filter"
+    },
+    "itemType": "security measure",
+    "appliesWhen": "others nearby must not be able to read the display",
+    "explanation": "A privacy screen narrows the viewing angle so only the person directly in front can read the display. It stops shoulder surfing in public places.",
+    "related": [
+      "core1-s-biometric-reader",
+      "core1-s-cable-lock",
+      "core1-s-nfc-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-nfc-off",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "retail"
+    ],
+    "need": "close a short-range way that a nearby attacker could read data from the laptops",
+    "clues": [
+      "the laptops are never used to tap and pay",
+      "the Wi-Fi and Bluetooth radios must stay available",
+      "security staff worry about a scanner held a few centimeters away"
+    ],
+    "answer": {
+      "item": "Turn off NFC in the operating system"
+    },
+    "itemType": "security measure",
+    "appliesWhen": "a laptop's near-field radio is a risk and is not needed",
+    "explanation": "NFC is a two-way, short-range radio that an attacker with a scanner could try to use. If it is not needed, turn it off on its own in the OS, which leaves the other radios on.",
+    "related": [
+      "core1-s-biometric-reader",
+      "core1-s-cable-lock",
+      "core1-s-privacy-screen"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-ssd-upgrade",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "need": "make an older laptop start and open files much faster",
+    "clues": [
+      "the current drive has spinning platters",
+      "the laptop takes several minutes to start",
+      "the laptop is bumped often in the field",
+      "the laptop runs hot"
+    ],
+    "answer": {
+      "item": "A solid-state drive (SSD)"
+    },
+    "itemType": "component",
+    "appliesWhen": "storage must be faster, cooler, and more shock resistant than a spinning drive",
+    "explanation": "An SSD has no moving parts, so it is much faster than a magnetic drive, makes less heat, and handles bumps better. Replacing the drive is a common way to speed up an older laptop.",
+    "related": [
+      "core1-s-sodimm-upgrade",
+      "core1-s-wifi-card-upgrade",
+      "core1-s-usb-webcam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-sodimm-upgrade",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "need": "add memory to a laptop so more apps can run at once",
+    "clues": [
+      "the installed memory module has 262 pins",
+      "the laptop slows down with many browser tabs open",
+      "an empty memory slot sits under the access cover",
+      "the memory is not soldered to the motherboard"
+    ],
+    "answer": {
+      "item": "A DDR5 SODIMM"
+    },
+    "itemType": "component",
+    "appliesWhen": "the laptop needs more memory and has a free memory slot",
+    "explanation": "Laptops use small outline DIMMs, and a 262-pin module is DDR5 (DDR4 has 260 pins). Versions are not interchangeable, so the new module must match the laptop's slot.",
+    "related": [
+      "core1-s-ssd-upgrade",
+      "core1-s-wifi-card-upgrade",
+      "core1-s-usb-wifi"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-wifi-card-upgrade",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "need": "give a laptop faster Wi-Fi and Bluetooth from inside the case",
+    "clues": [
+      "the current wireless card supports only 802.11n",
+      "the card sits in a 2230 slot held by one screw",
+      "the main and auxiliary antenna leads are already in the case",
+      "the user also needs newer Bluetooth"
+    ],
+    "answer": {
+      "item": "An M.2 Wi-Fi and Bluetooth combo card"
+    },
+    "itemType": "component",
+    "appliesWhen": "the laptop needs newer internal Wi-Fi and Bluetooth and has a slot for it",
+    "explanation": "Laptop wireless cards can be upgraded, and combination Wi-Fi and Bluetooth cards often use the M.2 2230 form factor. The existing antenna leads connect to the new card.",
+    "related": [
+      "core1-s-ssd-upgrade",
+      "core1-s-sodimm-upgrade",
+      "core1-s-usb-webcam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 4: Laptop and Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-usb-wifi",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.5",
+      "220-1201/1.1.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "need": "give a laptop newer Wi-Fi when its wireless cannot be upgraded inside",
+    "clues": [
+      "the wireless chip is soldered to the motherboard",
+      "the laptop has a free USB 3.0 port on each side",
+      "the adapter can be moved to the side that faces the access point"
+    ],
+    "answer": {
+      "item": "A USB Wi-Fi adapter"
+    },
+    "itemType": "component",
+    "appliesWhen": "the laptop has no internal slot for a new wireless card",
+    "explanation": "When there is no M.2 slot for wireless, an external USB Wi-Fi adapter adds the connection. Placing it in the USB port that faces the access point can improve the signal.",
+    "related": [
+      "core1-s-ssd-upgrade",
+      "core1-s-sodimm-upgrade",
+      "core1-s-usb-webcam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-usb-webcam",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "topics": [
+      "220-1201/1.1.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "let users unplug the camera completely when they are not in a meeting",
+    "clues": [
+      "the security team worries that malware could turn on a camera without anyone knowing",
+      "the built-in cameras will be removed",
+      "users also want better video quality"
+    ],
+    "answer": {
+      "item": "An external USB webcam"
+    },
+    "itemType": "component",
+    "appliesWhen": "users must be able to physically disconnect the camera",
+    "explanation": "Some companies remove built-in webcams and use external USB webcams instead. Users can unplug them when not in use, and they often give better video.",
+    "related": [
+      "core1-s-ssd-upgrade",
+      "core1-s-sodimm-upgrade",
+      "core1-s-usb-wifi"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-airplane-on",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the phone has no cellular signal, Wi-Fi, or Bluetooth",
+      "the phone has had no connections since the user got off a flight this morning",
+      "contactless payments fail too",
+      "the user cannot make calls or browse the web"
+    ],
+    "answer": {
+      "cause": "airplane mode left turned on",
+      "action": "Turn off airplane mode in the quick settings or Control Center"
+    },
+    "firstStep": "Check the notification bar for the airplane icon",
+    "appliesWhen": "every radio on the device is off at once, including cellular",
+    "explanation": "Airplane mode turns off the cellular radio and usually Wi-Fi, Bluetooth, and NFC as well. Users often forget to turn it off after a flight.",
+    "related": [
+      "core1-s-hotspot-blocks-wifi",
+      "core1-s-wifi-passcode",
+      "core1-s-location-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 1: Monitoring, Maintaining, and Replacing Mobile Device Hardware"
+  },
+  {
+    "id": "core1-s-hotspot-blocks-wifi",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the phone will not stay on the office Wi-Fi",
+      "the phone that will not join the office Wi-Fi appears as a Wi-Fi network on nearby laptops",
+      "the phone has used only cellular data since the user shared its connection on a trip last week"
+    ],
+    "answer": {
+      "cause": "the mobile hotspot left on, which turns off the phone's Wi-Fi",
+      "action": "Turn off the hotspot and reconnect the phone to the office Wi-Fi"
+    },
+    "appliesWhen": "the phone is still sharing its cellular connection with other devices",
+    "explanation": "When a phone's mobile hotspot is on, its own Wi-Fi is turned off, so it can use only cellular data. Turning the hotspot off lets it join Wi-Fi again.",
+    "related": [
+      "core1-s-airplane-on",
+      "core1-s-wifi-passcode",
+      "core1-s-location-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-wifi-passcode",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the phone sees the office network but fails to join it",
+      "the phone fails to join after the user typed the long passcode on the onscreen keyboard",
+      "other phones join the same network without trouble while this one fails"
+    ],
+    "answer": {
+      "cause": "a mistyped Wi-Fi passcode",
+      "action": "Forget the network and enter the passcode again with care"
+    },
+    "appliesWhen": "the device sees the network but is refused when it joins",
+    "explanation": "A device joins Wi-Fi only when the passcode is right; then it gets an IP address. Long passcodes typed on an onscreen keyboard are easy to get wrong.",
+    "related": [
+      "core1-s-airplane-on",
+      "core1-s-hotspot-blocks-wifi",
+      "core1-s-email-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-location-off",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the map app cannot show where the user is",
+      "other apps work online normally, but the map cannot find the user",
+      "the map has not shown the position since the user turned off several privacy settings last week"
+    ],
+    "answer": {
+      "cause": "location services turned off on the device",
+      "action": "Turn on location services and allow the map app to use them"
+    },
+    "appliesWhen": "apps cannot get the device's position because location is off",
+    "explanation": "GPS and other location-based apps cannot work when location services are off. The setting is turned on in the device's settings, and each app can be allowed separately.",
+    "related": [
+      "core1-s-airplane-on",
+      "core1-s-wifi-passcode",
+      "core1-s-contacts-sync-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-bt-other-phone",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the new phone cannot find the headset that worked with the user's old phone",
+      "the headset that the new phone cannot find is still paired with an old phone that is on in the user's bag",
+      "the headset plays its connected tone but no sound comes from the new phone"
+    ],
+    "answer": {
+      "cause": "the headset still connected to the old phone",
+      "action": "Disconnect or forget the headset on the old phone, then pair it with the new one"
+    },
+    "appliesWhen": "the accessory is still connected to a different phone",
+    "explanation": "A Bluetooth accessory connects to only one mobile device at a time. Unpair or forget it on the old device before pairing it with the new one.",
+    "related": [
+      "core1-s-bt-not-pairing",
+      "core1-s-bt-wrong-pin",
+      "core1-s-airplane-on"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-bt-not-pairing",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the new speaker never shows in the phone's list of devices",
+      "the phone has Bluetooth on and is scanning, but finds nothing",
+      "the speaker that the phone cannot find shows a solid light instead of a flashing one"
+    ],
+    "answer": {
+      "cause": "a speaker that is not in pairing mode",
+      "action": "Press and hold the speaker's Bluetooth button until its light flashes, then scan again"
+    },
+    "appliesWhen": "the accessory was never put into its discovery mode",
+    "explanation": "A Bluetooth accessory must be put into pairing (discovery) mode, often by holding its button until a light flashes. Only then does it show in the phone's list of devices.",
+    "related": [
+      "core1-s-bt-other-phone",
+      "core1-s-bt-wrong-pin",
+      "core1-s-airplane-on"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-bt-wrong-pin",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.2"
+    ],
+    "settings": [
+      "field",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the phone lists the car kit in its scan results, but pairing fails",
+      "pairing fails right after the car kit asks for a code",
+      "pairing failed after the user guessed 1234 at the code prompt"
+    ],
+    "answer": {
+      "cause": "the wrong PIN code entered during pairing",
+      "action": "Pair again and enter the PIN from the device's documentation, such as 0000"
+    },
+    "appliesWhen": "pairing fails at the step that asks for a code",
+    "explanation": "Some Bluetooth devices need a PIN code to pair, and many use a default such as 0000. A wrong code makes the pairing fail even though the device is found.",
+    "related": [
+      "core1-s-bt-other-phone",
+      "core1-s-bt-not-pairing",
+      "core1-s-airplane-on"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-data-cap",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the user reached the monthly data limit in the second week",
+      "the user who hit the data limit early records many videos each day",
+      "the backup app is the top data user in the phone's settings this month"
+    ],
+    "answer": {
+      "cause": "a photo and video backup running over cellular data",
+      "action": "Set the backup app to sync over Wi-Fi only"
+    },
+    "appliesWhen": "large backups use the cellular plan instead of Wi-Fi",
+    "explanation": "Syncing over a cellular connection counts against the plan's data cap. Large photo and video backups should run on Wi-Fi or at off-peak times.",
+    "related": [
+      "core1-s-contacts-sync-off",
+      "core1-s-email-password",
+      "core1-s-mdm-noncompliant"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-email-password",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the phone stopped getting mail the day after the user changed the email password on the PC",
+      "mail on the PC still works, but the phone stopped getting mail",
+      "the phone's mail app keeps asking the user to sign in"
+    ],
+    "answer": {
+      "cause": "an old email password still saved on the phone",
+      "action": "Update the saved password in the phone's mail account settings"
+    },
+    "appliesWhen": "the account password changed but the phone still uses the old one",
+    "explanation": "A mobile mail app keeps the password it was set up with. After a password change elsewhere, the phone fails to sign in until the saved password is updated.",
+    "related": [
+      "core1-s-contacts-sync-off",
+      "core1-s-mdm-noncompliant",
+      "core1-s-wifi-passcode"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-contacts-sync-off",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "new email arrives on the phone, but new contacts do not",
+      "contacts added on the PC never appear on the phone",
+      "calendar events show up on both devices, unlike the new contacts"
+    ],
+    "answer": {
+      "cause": "contact sync turned off for the mail account",
+      "action": "Turn on contact sync for the account in the phone's settings"
+    },
+    "appliesWhen": "mail syncs but one data type, such as contacts, does not",
+    "explanation": "Email, calendars, and contacts usually sync together through the mail account, but each can be turned on or off on its own. When only contacts are missing, their sync setting is off.",
+    "related": [
+      "core1-s-email-password",
+      "core1-s-data-cap",
+      "core1-s-mdm-noncompliant"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-mdm-noncompliant",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "clues": [
+      "the company mail app shows a message about a device policy",
+      "the company apps stopped working the day after the user removed the screen lock",
+      "the phone is enrolled like the others, but only this one is blocked"
+    ],
+    "answer": {
+      "cause": "a phone that no longer meets the MDM security policy",
+      "action": "Set a screen lock that meets the policy so the MDM marks the phone compliant"
+    },
+    "appliesWhen": "a managed device breaks a company policy and is blocked",
+    "explanation": "MDM software checks enrolled devices against company policy. A device out of compliance can be locked out of company resources until the problem, such as a missing screen lock, is fixed.",
+    "related": [
+      "core1-s-email-password",
+      "core1-s-contacts-sync-off",
+      "core1-s-data-cap"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-hotspot",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "field",
+      "warehouse",
+      "retail",
+      "school"
+    ],
+    "need": "get several devices online at a site with no network",
+    "clues": [
+      "the devices have Wi-Fi but no cellular radio",
+      "the devices are spread across different rooms",
+      "no cable can reach all the devices"
+    ],
+    "answer": {
+      "item": "The phone's mobile hotspot"
+    },
+    "itemType": "connection option",
+    "appliesWhen": "several Wi-Fi devices must share a phone's cellular connection at once",
+    "explanation": "A mobile hotspot shares the phone's cellular Internet connection with other Wi-Fi devices. It can serve several devices at once, though speed, data cost, and security are trade-offs.",
+    "related": [
+      "core1-s-tethering",
+      "core1-s-esim",
+      "core1-s-airplane-mode"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-tethering",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "field",
+      "warehouse",
+      "retail",
+      "home-office"
+    ],
+    "need": "get one laptop online at a site with no network",
+    "clues": [
+      "the laptop's Wi-Fi adapter has failed",
+      "a USB cable for the phone is at hand",
+      "the phone should charge while it shares data"
+    ],
+    "answer": {
+      "item": "USB tethering to the phone"
+    },
+    "itemType": "connection option",
+    "appliesWhen": "one device must share the phone's cellular data over a cable",
+    "explanation": "Tethering shares the phone's cellular connection with one device, often over a USB cable. It works without Wi-Fi on the laptop and keeps the phone charging.",
+    "related": [
+      "core1-s-hotspot",
+      "core1-s-esim",
+      "core1-s-bt-car"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-esim",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "field"
+    ],
+    "need": "add a local carrier line to a phone for a trip abroad",
+    "clues": [
+      "the phone has no card tray",
+      "the new line must be set up remotely by the carrier",
+      "the home line must stay active on the same phone"
+    ],
+    "answer": {
+      "item": "An eSIM"
+    },
+    "itemType": "connection option",
+    "appliesWhen": "a carrier line must be added remotely without a physical card",
+    "explanation": "An eSIM is built into the phone and is set up remotely by the carrier, so no card is swapped. It can hold more than one line at the same time.",
+    "related": [
+      "core1-s-sim-swap",
+      "core1-s-hotspot",
+      "core1-s-tethering"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-sim-swap",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "field"
+    ],
+    "need": "use a local carrier for cheaper data during a trip abroad",
+    "clues": [
+      "the phone has a small card tray on its side",
+      "the phone is an older model that cannot get a carrier profile over the air",
+      "the user will keep the home card safe to put back after the trip"
+    ],
+    "answer": {
+      "item": "A physical SIM card from a local carrier"
+    },
+    "itemType": "connection option",
+    "appliesWhen": "the phone takes a removable card and has no embedded option",
+    "explanation": "A SIM card holds the account and carrier data that a phone needs to join a cellular network. On a phone with a card tray, a traveler can swap in a local carrier's card and put the original back later.",
+    "related": [
+      "core1-s-esim",
+      "core1-s-hotspot",
+      "core1-s-tethering"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-airplane-mode",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.1"
+    ],
+    "settings": [
+      "clinic",
+      "enterprise",
+      "school"
+    ],
+    "need": "stop all of a phone's radios from sending with one control",
+    "clues": [
+      "the user will switch everything back on as soon as the visit ends",
+      "the phone must stay powered on to show saved files",
+      "the user is entering an area that bans transmitting devices"
+    ],
+    "answer": {
+      "item": "Airplane mode"
+    },
+    "itemType": "connection option",
+    "appliesWhen": "every wireless radio must be turned off while the device stays on",
+    "explanation": "Airplane mode turns off the device's wireless radios, including cellular, Wi-Fi, and Bluetooth, while the device keeps running. Every device must have it.",
+    "related": [
+      "core1-s-hotspot",
+      "core1-s-esim",
+      "core1-s-bt-car"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-bt-car",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.2"
+    ],
+    "settings": [
+      "field",
+      "retail",
+      "office"
+    ],
+    "need": "make hands-free calls in an older car",
+    "clues": [
+      "the car has no CarPlay or Android Auto support",
+      "the car stereo has a wireless phone option",
+      "calls must play through the car speakers"
+    ],
+    "answer": {
+      "item": "Bluetooth pairing with the car's audio system"
+    },
+    "itemType": "connection option",
+    "appliesWhen": "a phone must link to a nearby accessory without a cable",
+    "explanation": "When a car does not support CarPlay or Android Auto, it may still support Bluetooth. Pairing the phone with the car allows hands-free calls and texts.",
+    "related": [
+      "core1-s-hotspot",
+      "core1-s-tethering",
+      "core1-s-airplane-mode"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-mdm",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "control the settings and security on all company-owned phones",
+    "clues": [
+      "the company bought and owns every phone",
+      "a lost phone must be locked or wiped as a whole",
+      "settings and updates must be pushed from one console"
+    ],
+    "answer": {
+      "item": "Mobile device management (MDM)"
+    },
+    "itemType": "management solution",
+    "appliesWhen": "the company must manage and secure whole devices from one console",
+    "explanation": "MDM software enrolls devices and lets admins configure, update, track, lock, and wipe them from one console. It fits corporate-owned devices, where the whole device belongs to the company.",
+    "related": [
+      "core1-s-mam",
+      "core1-s-exchange-sync",
+      "core1-s-cloud-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-mam",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "protect company data on phones that employees own",
+    "clues": [
+      "the phones belong to the employees",
+      "a remote wipe must leave personal photos alone",
+      "only the corporate apps and their data must be controlled"
+    ],
+    "answer": {
+      "item": "Mobile application management (MAM) for the corporate apps"
+    },
+    "itemType": "management solution",
+    "appliesWhen": "only the corporate apps and data on a personal device must be managed",
+    "explanation": "Under a BYOD plan, wiping a whole lost phone would erase the user's own files. MAM installs, controls, and wipes only the corporate apps and their data.",
+    "related": [
+      "core1-s-mdm",
+      "core1-s-exchange-sync",
+      "core1-s-cloud-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-gps",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.3"
+    ],
+    "settings": [
+      "field",
+      "warehouse"
+    ],
+    "need": "track delivery vans precisely on rural roads",
+    "clues": [
+      "the vans often drive where there is no cell coverage",
+      "positions must be accurate to about 10 meters",
+      "the company does not want to pay a carrier for location"
+    ],
+    "answer": {
+      "item": "GPS"
+    },
+    "itemType": "location option",
+    "appliesWhen": "an accurate position is needed outdoors, even without cell reception",
+    "explanation": "GPS uses satellites, is free to use, and is accurate to about 10 meters outdoors. Cellular location needs cell reception, is less precise, and is sold by carriers.",
+    "related": [
+      "core1-s-cell-location",
+      "core1-s-geofence",
+      "core1-s-location-permission"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-cell-location",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.3"
+    ],
+    "settings": [
+      "field",
+      "retail",
+      "enterprise"
+    ],
+    "need": "find the rough position of older company phones in the city",
+    "clues": [
+      "the old phones have no satellite receiver",
+      "a position within a few hundred meters is good enough",
+      "the phones always have strong signal from several towers"
+    ],
+    "answer": {
+      "item": "Cellular location from cell towers"
+    },
+    "itemType": "location option",
+    "appliesWhen": "a rough position is enough and the device has good cell reception",
+    "explanation": "Cellular location estimates a phone's position from its signal to one or more cell towers. It is less precise than GPS but needs no satellite receiver, and more towers make it more accurate.",
+    "related": [
+      "core1-s-gps",
+      "core1-s-geofence",
+      "core1-s-location-permission"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-geofence",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.3",
+      "220-1201/1.3.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "clinic"
+    ],
+    "need": "lock company tablets automatically when they are taken off the site",
+    "clues": [
+      "the property has a clearly mapped boundary",
+      "the tablets already report their location",
+      "staff often forget to leave the tablets behind"
+    ],
+    "answer": {
+      "item": "Geofencing"
+    },
+    "itemType": "location option",
+    "appliesWhen": "an action must start when a device enters or leaves a set area",
+    "explanation": "Geofencing draws a virtual boundary around a real place using location data. When a device enters or leaves that area, an action such as a lock is triggered.",
+    "related": [
+      "core1-s-gps",
+      "core1-s-cell-location",
+      "core1-s-location-permission"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-location-permission",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.3"
+    ],
+    "settings": [
+      "field",
+      "retail",
+      "home-office"
+    ],
+    "need": "let a delivery app use the phone's position without tracking the user all day",
+    "clues": [
+      "the user does not want to be tracked when the app is closed",
+      "the app needs the position during deliveries",
+      "other apps must keep their own settings"
+    ],
+    "answer": {
+      "item": "The app's \"While using the app\" location permission"
+    },
+    "itemType": "location option",
+    "appliesWhen": "one app needs location only while it is open",
+    "explanation": "iOS and Android let each app have its own location permission, such as Never, While Using the App, or Always. While using the app gives location only when the app is open.",
+    "related": [
+      "core1-s-gps",
+      "core1-s-cell-location",
+      "core1-s-geofence"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-cloud-sync",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "need": "keep files, contacts, and calendars the same on a phone, a tablet, and a home PC",
+    "clues": [
+      "the user works from many places",
+      "the devices are rarely near each other",
+      "the data must still be there if the phone is lost"
+    ],
+    "answer": {
+      "item": "A cloud sync service"
+    },
+    "itemType": "sync method",
+    "appliesWhen": "data must match across several devices in different places",
+    "explanation": "Syncing to the cloud keeps the same data on every device over the Internet, and it is the most common option. The data stays safe on the service if a device is lost.",
+    "related": [
+      "core1-s-desktop-sync",
+      "core1-s-exchange-sync",
+      "core1-s-wifi-only-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-desktop-sync",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "enterprise"
+    ],
+    "need": "copy photos and files from a phone to the office PC without the Internet",
+    "clues": [
+      "company policy blocks cloud storage",
+      "the phone and the PC sit on the same desk",
+      "a USB cable is at hand"
+    ],
+    "answer": {
+      "item": "A USB connection to the PC set to file transfer"
+    },
+    "itemType": "sync method",
+    "appliesWhen": "data must move to a nearby computer without an Internet service",
+    "explanation": "A phone connected to a Windows PC by USB shows up in File Explorer once its USB option is set to file transfer. No cloud service or data plan is used.",
+    "related": [
+      "core1-s-cloud-sync",
+      "core1-s-exchange-sync",
+      "core1-s-wifi-only-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-exchange-sync",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "sync company email, contacts, and calendars to staff phones",
+    "clues": [
+      "the company runs Microsoft Exchange Server",
+      "staff use both iOS and Android phones",
+      "meetings must appear on the phones automatically"
+    ],
+    "answer": {
+      "item": "Exchange ActiveSync"
+    },
+    "itemType": "sync method",
+    "appliesWhen": "mail, contacts, and calendars must sync with a Microsoft Exchange server",
+    "explanation": "Exchange ActiveSync syncs email, contacts, and calendars between many kinds of devices and Microsoft Exchange Server.",
+    "related": [
+      "core1-s-cloud-sync",
+      "core1-s-desktop-sync",
+      "core1-s-mam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-wifi-only-sync",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "need": "keep photo backups from using up a small cellular data plan",
+    "clues": [
+      "the user takes hundreds of photos each week",
+      "the user has Wi-Fi at home and at the office",
+      "the backups can wait a few hours"
+    ],
+    "answer": {
+      "item": "Set the backup app to sync over Wi-Fi only"
+    },
+    "itemType": "sync method",
+    "appliesWhen": "syncing must not count against a cellular data cap",
+    "explanation": "Syncing over cellular counts against a plan's data cap. Letting large backups wait for Wi-Fi, or run at off-peak hours, keeps the plan's data for other uses.",
+    "related": [
+      "core1-s-cloud-sync",
+      "core1-s-desktop-sync",
+      "core1-s-exchange-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  },
+  {
+    "id": "core1-s-bt-pairing",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "1",
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "topics": [
+      "220-1201/1.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "smartphone"
+    ],
+    "task": "connecting a new Bluetooth headset to a user's phone",
+    "steps": [
+      {
+        "do": "Enable Bluetooth on the phone",
+        "done": "enabled Bluetooth on the phone"
+      },
+      {
+        "do": "Put the headset into pairing mode",
+        "done": "put the headset into pairing mode"
+      },
+      {
+        "do": "Scan for the headset on the phone and select it",
+        "done": "found the headset on the phone and selected it"
+      },
+      {
+        "do": "Enter the PIN code if the headset asks for one",
+        "done": "entered the headset's PIN code"
+      },
+      {
+        "do": "Test the connection with a call or audio",
+        "done": "tested the connection with a call"
+      }
+    ],
+    "explanation": "CompTIA's Bluetooth setup order is to enable Bluetooth, enable pairing, find the device, enter the PIN code, and test connectivity.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 3: Mobile Device Network Connectivity and Application Support; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 10: Mobile Connectivity and Application Support"
+  }
+]

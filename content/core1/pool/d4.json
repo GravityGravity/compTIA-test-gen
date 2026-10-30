@@ -1,0 +1,2972 @@
+[
+  {
+    "id": "core1-q-examcram-21-01",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "Of the following listed technologies, which one should you select if you want to run an instance of Ubuntu Linux within your Windows 10/11 Pro workstation?",
+    "options": [
+      "Type 1",
+      "Type 2",
+      "Bare metal",
+      "Cross-platform virtualization"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "To run Ubuntu Linux inside a Windows workstation, you need virtualization software with a type 2 hypervisor, such as VMware Workstation or VirtualBox. A type 2 hypervisor runs on top of the host operating system.",
+    "whyWrong": [
+      "A type 1 hypervisor runs directly on server hardware in place of a host operating system, not inside Windows.",
+      null,
+      "Bare metal is another name for a type 1 hypervisor, which runs directly on the hardware without a host OS.",
+      "Cross-platform virtualization means running software built for one platform on another; it is not a hypervisor type."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 1"
+  },
+  {
+    "id": "core1-q-examcram-21-02",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "Which of the following is the greatest risk with a virtual computer?",
+    "options": [
+      "If a virtual computer fails, all other virtual computers immediately go offline.",
+      "If a virtual computer fails, the physical server goes offline.",
+      "If the physical server fails, all other physical servers immediately go offline.",
+      "If the physical server fails, all the virtual computers immediately go offline."
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "The biggest risk of a virtual computer is that it goes offline immediately if the physical server it runs on fails. All the other virtual computers on that server go offline at the same time.",
+    "whyWrong": [
+      "Virtual machines are isolated from each other, so one failing VM does not take down the others.",
+      "A failing virtual machine does not take down the physical server it runs on.",
+      "Physical servers are separate machines, so one server failing does not take the others offline.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 2"
+  },
+  {
+    "id": "core1-q-examcram-21-03",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "Which of the following file extensions is used by VMware by default?",
+    "options": [
+      ".vmdk",
+      ".vdi",
+      ".vhdx",
+      "VT-x"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "VMware uses the .vmdk file extension for its virtual hard drive files by default. The virtual disk file holds the whole drive of the virtual machine on the host's storage.",
+    "whyWrong": [
+      null,
+      ".vdi is the default virtual disk format of VirtualBox.",
+      ".vhdx is the virtual disk format of Hyper-V.",
+      "VT-x is Intel's virtualization extension in the CPU, which must be enabled in the BIOS/UEFI; it is not a file extension."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 3"
+  },
+  {
+    "id": "core1-q-examcram-21-04",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "Which of the following network connection types should be used to allow for connectivity to the external network but keep the VMs on a separate IP network?",
+    "options": [
+      "Bridged",
+      "NAT",
+      "Private",
+      "No networking"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Network Address Translation (NAT) is the most common default network type for VMs. The VMs get their own private IP network but can still reach the external network and the Internet through the host, the same principle as NAT on a SOHO router.",
+    "whyWrong": [
+      "Bridged networking puts the VMs directly on the external network, using addresses from that network.",
+      null,
+      "Private networking lets VMs on one host talk to each other but not to anything beyond the host.",
+      "No networking turns off all network connectivity for the VM."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 4"
+  },
+  {
+    "id": "core1-q-examcram-21-05",
+    "type": "multiple",
+    "structure": "procedure",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "A customer running Windows 10/11 Pro wishes to install a Linux VM in Hyper-V Manager. Which of the following requirements must be met in order for this to happen? (Select all that apply.)",
+    "options": [
+      "Update and secure the host system.",
+      "Ensure that virtualization is enabled in the BIOS/UEFI.",
+      "Ensure that Hyper-V is turned on in Windows Features.",
+      "Restart the system."
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "selectCount": 3,
+    "fixedOrder": false,
+    "explanation": "Virtualization must be enabled in the BIOS/UEFI first. Then turn on Hyper-V in Windows Features, and finally restart the system.",
+    "whyWrong": [
+      "Updating and securing the host system is recommended, but Hyper-V does not require it to run a VM.",
+      null,
+      null,
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 5"
+  },
+  {
+    "id": "core1-q-examcram-21-06",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "A developer wants to test a custom web-based application in an isolated environment. Which of the following should be used?",
+    "options": [
+      "Sandbox",
+      "Virtual machine",
+      "NAT",
+      "VirtualBox"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "The developer should run the custom application in a sandbox, which is designed to run code in isolation. A virtual machine could host the sandbox, but a VM is not isolated or secure by default.",
+    "whyWrong": [
+      null,
+      "A virtual machine is not secure by default; it must be set up as a properly isolated sandbox.",
+      "NAT only translates network addresses; it does not isolate the application, which might need no network at all.",
+      "VirtualBox is virtualization software that could host a sandbox, but on its own it does not isolate the application."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 6"
+  },
+  {
+    "id": "core1-q-examcram-21-07",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "Which statement best describes VDI?",
+    "options": [
+      "It occurs when the number of VMs expands beyond the manageable control of the administrator, and they are omitted from change/life cycle management processes.",
+      "They are technologies that allow the packaging and isolation of applications with their entire runtime environment.",
+      "It gives the VM (also known as the guest) direct access to the hosting computer’s network connection.",
+      "It is the server-based virtualization technology that hosts and manages the virtual desktops."
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Virtual desktop infrastructure (VDI) is a server-based virtualization technology that hosts and manages virtual desktops. It creates the desktop images, manages the desktops on the servers, and gives clients network access to them.",
+    "whyWrong": [
+      "This describes virtual machine sprawl, where VMs grow beyond the administrator's control.",
+      "This describes containers, which package an application with its whole runtime environment.",
+      "This describes bridged networking, which gives the guest direct access to the host's network connection.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 21: Virtualization Concepts, Cram Quiz question 7"
+  },
+  {
+    "id": "core1-q-examcram-x1-22",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "You are the system administrator for a medium-sized enterprise organization. You configure a server to host several virtual machines (VMs). Now, you are ready to begin provisioning the VMs. Which of the following should you implement to perform this task?",
+    "options": [
+      "Remote Desktop Services",
+      "Hypervisor",
+      "Virtual LAN",
+      "Disk Management",
+      "Device Manager"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A hypervisor is the software that hosts and provisions virtual machines. For a medium-sized enterprise, consider a type 1 hypervisor such as ESXi or Hyper-V on Windows Server rather than a type 2 hypervisor such as VirtualBox.",
+    "whyWrong": [
+      "Remote Desktop Services lets you connect to and control Windows systems remotely; it does not host VMs.",
+      null,
+      "A virtual LAN regroups systems logically on a switch and is not required to run virtual machines.",
+      "Disk Management is a Windows tool for configuring storage drives.",
+      "Device Manager is a Windows tool for configuring the devices in a computer."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – A+ Core 1 (220-1201) Practice Exam, Practice Exam question 22"
+  },
+  {
+    "id": "core1-q-examcram-x1-24",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "Your guest virtual machines get direct access to the hosting computer’s network connection. What is another name for this?",
+    "options": [
+      "NAT",
+      "Private virtual network",
+      "Host-only networking",
+      "Bridged networking"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "With bridged networking, virtual machines get direct access to the hosting computer's network connection and can reach other systems on the LAN and the Internet. It is also called external or public networking.",
+    "whyWrong": [
+      "With NAT, guests reach the external network only indirectly, using addresses on a separate private IP network.",
+      "A private virtual network lets guests talk only to each other, not to the external network.",
+      "Host-only networking lets guests communicate with each other and the host, but not out to the external network or Internet.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – A+ Core 1 (220-1201) Practice Exam, Practice Exam question 24"
+  },
+  {
+    "id": "core1-q-docter-c1-11-06",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "You have been asked to configure a client-side virtualization solution with three guest OSs. Each one needs Internet access. How should you configure the solution in the most cost-effective way?",
+    "options": [
+      "Three physical NICs",
+      "One physical NIC, three virtual NICs, and one virtual switch",
+      "One physical NIC, one virtual NIC, and three virtual switches",
+      "One physical NIC, three virtual NICs, and three virtual switches"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Each virtual machine uses its own virtual NIC, so you need three virtual NICs. The virtual NICs connect to one virtual switch managed by the hypervisor, and the virtual switch uses the one physical NIC on the host.",
+    "whyWrong": [
+      "Three physical NICs cost more and are not needed, because VMs can share one physical NIC.",
+      null,
+      "Each guest OS needs its own virtual NIC, so one virtual NIC is not enough.",
+      "One virtual switch can serve all three virtual NICs, so three virtual switches are not needed."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 6"
+  },
+  {
+    "id": "core1-q-docter-c1-11-07",
+    "type": "single",
+    "structure": "calculation",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "You have been asked to install Linux in a VM on a Windows 11 client. The Windows 11 client needs 4 GB of RAM, and Linux needs 2 GB of RAM. How much RAM does the system need at a minimum?",
+    "options": [
+      "4 GB",
+      "6 GB",
+      "8 GB",
+      "Unable to determine from the question"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "There needs to be enough RAM to support both OSs at the same time, so the minimum is 4 GB plus 2 GB, or 6 GB. More is better, because the hypervisor and applications also use memory.",
+    "whyWrong": [
+      "4 GB covers only the Windows 11 host and leaves nothing for the Linux VM.",
+      null,
+      "8 GB would work, but it is more than the minimum.",
+      "The question gives both requirements, so the minimum can be determined."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 7"
+  },
+  {
+    "id": "core1-q-docter-c1-11-09",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "You have been asked to set up client-side virtualization on an office computer. The host OS is Windows 11, and there will be three Windows 11 guest OSs. Which of the following is true about the need for antivirus security?",
+    "options": [
+      "The host OS needs an antivirus program, but virtual machines can't be affected by viruses.",
+      "The host OS antivirus software will also protect the guest OSs on the VMs.",
+      "Installing antivirus software on the virtual switch will protect all guest OSs.",
+      "The host OS and each guest OS need their own antivirus software installed."
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Each instance of an OS that you run requires its own security software. A virtual machine can be infected just like a physical computer, so the host and every guest need antivirus software.",
+    "whyWrong": [
+      "Virtual machines can be infected by viruses just like physical computers.",
+      "Antivirus software on the host does not scan or protect the separate guest OSs.",
+      "A virtual switch only connects VMs to the network and cannot run antivirus software.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 9"
+  },
+  {
+    "id": "core1-q-docter-c1-11-10",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "You need to set up a temporary operating system environment to quickly test a piece of software your manager wants to install on the network. Which should you use?",
+    "options": [
+      "AAA server",
+      "Sandbox",
+      "SCADA",
+      "Application virtualization"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A sandbox is a temporary, isolated operating system environment, like a light version of a virtual machine. It is ideal for testing software because nothing in it affects the real system.",
+    "whyWrong": [
+      "An AAA server handles authentication, authorization, and accounting.",
+      null,
+      "SCADA is an environment that controls industrial systems and is often legacy.",
+      "Application virtualization is used to run legacy apps or apps for another platform, not as a disposable test OS."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 10"
+  },
+  {
+    "id": "core1-q-docter-c1-11-11",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "You have been asked to set up client-side virtualization on a computer at work. The manager asks for a Type 2 hypervisor. What is the disadvantage of using that type of hypervisor?",
+    "options": [
+      "The guest OS will compete for resources with the host OS.",
+      "The guest OS will be forced to a lower priortity with the CPU than the host OS.",
+      "The guest OS will be forced to use less RAM than the host OS.",
+      "The virtual guest OS will not be able to get on the physical network."
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A Type 2 hypervisor runs on top of an existing OS, so OSs installed in VMs compete for resources with the host OS. The amount of resources each guest OS gets can be configured.",
+    "whyWrong": [
+      null,
+      "The guest OS is not automatically given a lower CPU priority than the host.",
+      "The guest OS is not forced to use less RAM; the amount is configurable.",
+      "A virtual guest OS can get on the physical network when it is configured properly."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 11"
+  },
+  {
+    "id": "core1-q-docter-c1-11-12",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.4"
+    ],
+    "stem": "Your software development team has created an app that needs to be quickly deployed to all network users, using virtualization. Which technology is BEST suited for this purpose?",
+    "options": [
+      "Type 1 hypervisor",
+      "Type 2 hypervisor",
+      "Containers",
+      "VDI"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Containers are used to quickly deploy single apps with all of the files needed to run them, regardless of the platform the user has. A container is much lighter than a full virtual machine.",
+    "whyWrong": [
+      "A Type 1 hypervisor virtualizes entire machines, not single apps.",
+      "A Type 2 hypervisor virtualizes entire machines on top of a host OS.",
+      null,
+      "VDI is the virtual desktop infrastructure, which delivers whole desktops rather than single apps."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 12"
+  },
+  {
+    "id": "core1-q-docter-c1-11-16",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "A software developer wants to be able to test their in-progress apps in three different OSs. Which type of setup is BEST for their Windows 11 client computer?",
+    "options": [
+      "Type 1 hypervisor",
+      "Type 2 hypervisor",
+      "Containers",
+      "VDI"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A Type 2 hypervisor is the best choice. It runs on top of the developer's Windows workstation and can virtualize other OSs as needed for testing.",
+    "whyWrong": [
+      "A Type 1 (bare-metal) hypervisor replaces the host OS and is better suited to server virtualization.",
+      null,
+      "Containers help deploy finished apps across environments but do not give full separate OSs for testing.",
+      "VDI is the virtual desktop infrastructure for hosting desktops centrally, not a setup for one workstation."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 16"
+  },
+  {
+    "id": "core1-q-docter-c1-11-18",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "A cloud provider is asking if you know what all of the software and hardware is that's needed to create an appropriate virtual environment for your users. What are they referring to?",
+    "options": [
+      "Type 1 hypervisor",
+      "Type 2 hypervisor",
+      "Containers",
+      "VDI"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "The virtual desktop infrastructure (VDI) is the hardware and software needed to create a virtual desktop environment for users. The desktops run on central servers and users connect to them over the network.",
+    "whyWrong": [
+      "A Type 1 hypervisor is the software that creates and manages VMs, not the full set of hardware and software.",
+      "A Type 2 hypervisor is software that runs VMs on a host OS, not the whole environment.",
+      "Containers are used for app virtualization, not for full virtual desktop environments.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 18"
+  },
+  {
+    "id": "core1-q-aio-22-01",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "MOST LIKELY",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "Upgrading which component of a host machine would MOST LIKELY enable you to run more virtual machines simultaneously?",
+    "options": [
+      "CPU",
+      "Hard drive",
+      "RAM",
+      "Windows"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Adding more RAM will enable you to run more VMs at the same time, because each running VM needs its own share of the host's memory. Upgrading a hard drive could help, but it is not the best answer here.",
+    "whyWrong": [
+      "A faster CPU helps VMs run faster, but memory is usually what limits how many can run at once.",
+      "More or faster disk space could help, but RAM limits the number of running VMs more.",
+      null,
+      "Windows is an operating system, not a hardware component you upgrade to add capacity."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 1",
+    "note": "All-in-One 11e (220-1101/1102) Ch. 22: host RAM is not listed under 4.1 Requirements (security, network, storage); closest topic."
+  },
+  {
+    "id": "core1-q-aio-22-02",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "Which of the following could an organization use to enable its users to access their files and applications from multiple devices?",
+    "options": [
+      "Virtual desktop",
+      "Client-side virtual machine",
+      "File-synchronization service",
+      "Virtual memory"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Users can access a virtual desktop, which may include their files and applications, from different devices. The desktop runs on a server, so the same environment follows the user to any device.",
+    "whyWrong": [
+      null,
+      "A client-side VM runs on one computer, so the user cannot reach it from other devices.",
+      "A file-synchronization service shares files across devices but not applications.",
+      "Virtual memory is disk space that the OS uses as extra RAM, not a way to share files or applications."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 2"
+  },
+  {
+    "id": "core1-q-aio-22-03",
+    "type": "multiple",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "What feature lets you save a VM’s state so you can quickly restore to that point? (Choose two.)",
+    "options": [
+      "Checkpoint",
+      "Save",
+      "Snapshot",
+      "Zip"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "selectCount": 2,
+    "fixedOrder": false,
+    "explanation": "The saved state of a VM is called a snapshot or a checkpoint (the Hyper-V term). It lets you quickly return the VM to that point, but it is not a true backup.",
+    "whyWrong": [
+      null,
+      "Save is not the name of the feature that captures a restorable VM state.",
+      null,
+      "Zip compresses files into an archive; it does not save a VM's state."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 3",
+    "note": "All-in-One 11e (220-1101/1102) Ch. 22: snapshots are not listed under 4.1; closest topic is Purpose of virtual machines (sandbox, test development)."
+  },
+  {
+    "id": "core1-q-aio-22-04",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "What do you need to install a legal copy of Windows 10 into a virtual machine using VirtualBox?",
+    "options": [
+      "A valid Windows 10 license",
+      "Valid Windows 10 installation media",
+      "A valid ESXi key",
+      "A second NIC"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "You need a valid Windows 10 license to run Windows legally in a VM. A VM counts as a separate computer for licensing, even when the host already has a licensed copy.",
+    "whyWrong": [
+      null,
+      "Installation media are easy to download; the license is what makes the copy legal.",
+      "ESXi is a VMware Type 1 hypervisor, and VirtualBox needs no ESXi key.",
+      "A VM does not need a second physical NIC to install Windows."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 4",
+    "note": "All-in-One 11e (220-1101/1102) Ch. 22: licensing is not listed under 4.1 Requirements; closest topic. Licensing is also 220-1202 4.6."
+  },
+  {
+    "id": "core1-q-aio-22-05",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "Which of the following is an advantage of a virtual machine over a physical machine?",
+    "options": [
+      "Increased performance",
+      "Hardware consolidation",
+      "No backups needed",
+      "Operating systems included"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A big benefit of hardware virtualization is hardware consolidation. Several VMs can run on one physical server, so fewer machines are needed.",
+    "whyWrong": [
+      "A VM usually runs a little slower than the same OS on dedicated hardware.",
+      null,
+      "VMs still need backups, just like physical machines.",
+      "Each VM needs its own operating system, which must be installed and licensed."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 5"
+  },
+  {
+    "id": "core1-q-aio-22-08",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "Which kind of hypervisor is installed and run from within a full operating system?",
+    "options": [
+      "Bare-metal",
+      "Virtual-metal",
+      "Type-1",
+      "Type-2"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A Type 2 hypervisor runs inside a full operating system, as VirtualBox does on Windows. A Type 1 hypervisor runs directly on the hardware.",
+    "whyWrong": [
+      "A bare-metal hypervisor runs directly on the hardware, not inside an OS.",
+      "Virtual-metal is not a hypervisor type.",
+      "A Type 1 hypervisor is a bare-metal hypervisor that runs without a host OS.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 8"
+  },
+  {
+    "id": "core1-q-aio-22-09",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "When a virtual machine is not running, how is it stored?",
+    "options": [
+      "Firmware",
+      "RAM drive",
+      "Optical disc",
+      "Files"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "VMs are just files, usually stored on a hard drive. The virtual hard disk and the VM's configuration are kept as files on the host's storage.",
+    "whyWrong": [
+      "Firmware is software stored on hardware chips, not where a VM is kept.",
+      "A RAM drive loses its contents when the power is off, so it cannot store a VM.",
+      "A VM is not normally stored on an optical disc.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 9",
+    "note": "All-in-One 11e (220-1101/1102) Ch. 22: closest topic is Requirements (storage)."
+  },
+  {
+    "id": "core1-q-neil-04-o41-08",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "A company is going to employ two consultants to help with data migration. The consultants will be able to connect to the desktops that the company allocates through a thin client to prevent anyone from downloading the company data. The configuration of each desktop must remain consistent. Which of the following will the IT team roll out to meet their needs and ensure the company has total control over the data?",
+    "options": [
+      "Surface laptops",
+      "VDI",
+      "Terminal servers",
+      "IaaS"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A Virtual Desktop Infrastructure (VDI) gives each consultant a virtual desktop from a pool of desktops with the same configuration, so the desktops stay consistent. The data is processed on the virtual desktop in the data center, not on the user's device, so it cannot be downloaded. The consultants need only a low-specification thin client, and the company keeps total control of the data.",
+    "whyWrong": [
+      "Once data is downloaded to a laptop, the company loses control of it, which is what it wants to prevent.",
+      null,
+      "Terminal servers are an older shared-session technology and do not give each consultant a consistent, separate desktop the way VDI does.",
+      "IaaS provides only the hardware, so the company would still have to build and maintain the desktops and might not keep them consistent."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 8",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2. VDI is current 220-1201/4.1 (desktop virtualization)."
+  },
+  {
+    "id": "core1-q-neil-04-o41-16",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1",
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.1.3",
+      "220-1201/4.2.1"
+    ],
+    "stem": "What type of cloud service is VDI?",
+    "options": [
+      "SaaS",
+      "DaaS",
+      "PaaS",
+      "IaaS"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Virtual Desktop Infrastructure (VDI) is the provision of desktops. The cloud service that provides it is Desktop as a Service (DaaS), in which the provider hosts and delivers virtual desktops to users.",
+    "whyWrong": [
+      "SaaS delivers a finished application, such as Office 365, rather than a whole desktop.",
+      null,
+      "PaaS gives developers a platform to build their own applications.",
+      "IaaS provides raw hardware on which the customer installs, configures, and patches its own systems."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 16",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2. DaaS is not named in the current objectives; VDI is current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o41-19",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "Due to COVID, a financial company is moving all its workers to a work-from-home model. The company must ensure that stringent financial regulations are enforced at all times and that they can control users’ desktops and prevent the exfiltration of data. Which of the following solutions will the company implement?",
+    "options": [
+      "VDI",
+      "SaaS",
+      "VPN",
+      "RDP"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Virtual Desktop Infrastructure (VDI) gives each remote worker a virtual desktop from a centrally managed pool with the same configuration. The data is processed on the virtual desktop in the data center, so it stays under the company's control, and the company can enforce its policies on every desktop.",
+    "whyWrong": [
+      null,
+      "SaaS leases individual applications over the internet, so the company would not control the users' desktops.",
+      "A VPN creates an encrypted tunnel across the internet, but it does not provide or control desktops.",
+      "RDP is a protocol for remote connections to a Windows computer, and by itself it does not give centrally controlled desktops that prevent data exfiltration."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 19",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2. VDI is current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o41-21",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "What is one of the disadvantages of using VDI on-premises?",
+    "options": [
+      "Recovering a virtual desktop using a snapshot is very slow",
+      "Network failure means that no local processing of data can take place",
+      "The connection can be achieved by using Citrix",
+      "Disaster recovery is provided by the cloud provider"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "With VDI, the virtual desktop runs on a virtual host, and nothing is processed on the local device. If the network fails, users cannot reach their desktops, so no work can be done.",
+    "whyWrong": [
+      "Recovering a virtual desktop from a snapshot is fast, so this is not a disadvantage.",
+      null,
+      "Connecting through Citrix is fast because the thin client sends only mouse clicks and keystrokes, which makes it an advantage.",
+      "Disaster recovery provided by a cloud provider is an advantage, and it does not apply to an on-premises VDI."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 21",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2. VDI is current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-01",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "What type of hypervisor runs on a bare-metal virtual platform?",
+    "options": [
+      "Type 1",
+      "Type 2",
+      "Type 3",
+      "Type 4"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A Type 1 hypervisor runs directly on the bare-metal hardware, with no host operating system under it. Examples are Microsoft Hyper-V, VMware ESXi, and Citrix XenServer.",
+    "whyWrong": [
+      null,
+      "A Type 2 hypervisor runs as an application on top of a host operating system such as Windows.",
+      "There is no Type 3 hypervisor; hypervisors are classed only as Type 1 or Type 2.",
+      "There is no Type 4 hypervisor; only Type 1 and Type 2 exist."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 1",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-03",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "An attacker gained access to a vulnerable guest computer and managed to attack the hypervisor, which resulted in a total failure of the virtual network. What type of attack was carried out?",
+    "options": [
+      "Pivoting",
+      "VM sprawl",
+      "Snapshot",
+      "VM escape"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A virtual machine (VM) escape is an attack in which an attacker breaks out of a guest virtual machine to attack another guest, the hypervisor, or the host. Because the hypervisor controls every guest, a successful escape can bring down the whole virtual environment.",
+    "whyWrong": [
+      "Pivoting is using one compromised computer as a base to attack other systems on the network, not breaking out of a guest to the hypervisor.",
+      "VM sprawl is unmanaged virtual machines added to the virtual network.",
+      "A snapshot is a saved state of a virtual machine that it can roll back to, not an attack.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 3",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1. Security is a virtualization requirement in current 4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-04",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.5"
+    ],
+    "stem": "What type of hypervisor does Oracle VirtualBox for Windows 10 run on?",
+    "options": [
+      "Type 3",
+      "Type 2",
+      "Type 5",
+      "Type 1"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Oracle VirtualBox is a Type 2 hypervisor: it runs as an application on top of a host operating system such as Windows 10. A Type 1 hypervisor, in contrast, runs directly on the hardware.",
+    "whyWrong": [
+      "There is no Type 3 hypervisor.",
+      null,
+      "There is no Type 5 hypervisor.",
+      "A Type 1 hypervisor runs on bare metal with no host operating system, such as Hyper-V or VMware ESXi, which is not how VirtualBox runs on Windows 10."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 4",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-05",
+    "type": "multiple",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "What are the THREE main reasons that an IT team would create a sandbox? (Choose three.)",
+    "options": [
+      "To help prevent fires from spreading",
+      "To test new versions of software",
+      "To test new hardware",
+      "To examine applications that potentially contain malware",
+      "To ensure that new software patches do not have an adverse effect on business applications"
+    ],
+    "answer": [
+      1,
+      3,
+      4
+    ],
+    "selectCount": 3,
+    "fixedOrder": false,
+    "explanation": "A sandbox is an isolated virtual machine that lets you test new software safely. It is also used to examine applications that might contain malware and to check that new patches do not harm business applications, without risk to the production network.",
+    "whyWrong": [
+      "A software sandbox has nothing to do with stopping fires from spreading.",
+      null,
+      "A sandbox is a virtual environment for testing software, so it cannot test new hardware.",
+      null,
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 5",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-06",
+    "type": "multiple",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "A manufacturer of pressure-relieving mattresses has a legacy application that tests cell movement. It needs to run on a Windows 98 operating system, which is a legacy system that is no longer supported. The company is updating all of the servers to Server 2022, with Windows 11 desktops, and plans to outsource the rewriting of the legacy application so that it is Windows 11 compliant. What should the manufacturer do in the meantime? (Choose two.)",
+    "options": [
+      "Build a Linux workstation and use it to run the legacy application",
+      "Create a sandbox for the legacy application",
+      "Build a virtual machine with the Windows 98 operating system",
+      "Install Hyper-V on one of the Windows 11 desktops in the manufacturing department",
+      "Install the application on a SQL server"
+    ],
+    "answer": [
+      2,
+      3
+    ],
+    "selectCount": 2,
+    "fixedOrder": false,
+    "explanation": "Virtualization can run a legacy operating system and application on current hardware. The company can build a virtual machine with Windows 98 and the legacy application, then enable Hyper-V on a Windows 11 desktop and run the virtual machine there until the rewritten application is ready.",
+    "whyWrong": [
+      "The application was built for Windows, so it is unlikely to run on a Linux workstation.",
+      "A sandbox is an isolated test environment, not a way to keep a legacy production application running on its old operating system.",
+      null,
+      null,
+      "A SQL server is a database server, and the Windows 98 application would not run on its modern operating system anyway."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 6",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-08",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "Which of the following describes cross-platform virtualization?",
+    "options": [
+      "Installing virtual machines on Hyper-V, ESX, and Xen",
+      "Installing and networking multiple sandboxes",
+      "Testing multiple software applications, one after another, in a single sandbox",
+      "Testing software applications under multiple operating systems and workloads"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Cross-platform virtualization means testing software applications under multiple operating systems, each with its own resource limits, before release. Virtual machines make it easy to run all these operating systems on one host.",
+    "whyWrong": [
+      "Installing virtual machines on different hypervisors is not cross-platform virtualization, which is about testing software across operating systems.",
+      "Connecting several sandboxes together builds a test network, not a test of an application on different operating systems.",
+      "Testing applications one after another in a single sandbox uses only one operating system.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 8",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-09",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "A company has a virtual network running 10 host machines, each with 50 guest machines. Yesterday, an attacker successfully connected to the host’s physical network card and exchanged packets directly with a guest operating system, bypassing the host operating system. Which of the following BEST describes how the attacker gained access?",
+    "options": [
+      "The attacker used a NAT",
+      "The attacker joined the local area network of the host",
+      "The attacker used a virtual private network",
+      "The attacker used a bridged network"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "In bridged networking, a guest virtual machine connects through the host's physical network card directly to the physical network, with its own address. Traffic to the guest does not pass through the host operating system, so an attacker on the physical network can reach the guest directly.",
+    "whyWrong": [
+      "NAT hides guests behind the host's address, so outside devices cannot reach a guest directly.",
+      "Joining the host's local area network does not by itself let traffic reach a guest unless the guest is bridged to that network.",
+      "A virtual private network creates an encrypted tunnel to a network; it does not explain direct access to a guest through the host's network card.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 9",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1. Network requirements for virtual machines are current 4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-10",
+    "type": "multiple",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.3"
+    ],
+    "stem": "A university professor teaches a computer class 10 times a week. The professor wants to ensure that they have a rapid solution to set the desktops up for their next group at the end of each session. To do this, they plan to build a master image of the operating system that can be rolled out so that all desktops will reset once the students have logged off. Which of the following technologies should the professor implement? (Choose two.)",
+    "options": [
+      "They should create a ghost image so that they can reimage each machine",
+      "They need to build a virtual machine environment and take a snapshot",
+      "They need to take a system image and roll it out between classes",
+      "They need to create a data backup",
+      "They need to implement a VDI environment that utilizes VDE"
+    ],
+    "answer": [
+      1,
+      4
+    ],
+    "selectCount": 2,
+    "fixedOrder": false,
+    "explanation": "The easiest way to meet the professor's goal is VDI with non-persistent virtual desktops: when students log off, each desktop reverts to the master image without saving changes. Another way is to build virtual machines, take a snapshot, and revert to it between classes.",
+    "whyWrong": [
+      "Reimaging each machine from a ghost image can take a long time and is not quick enough between classes.",
+      null,
+      "Rolling out a system image between classes takes about as long as reimaging, so it is not a rapid solution.",
+      "A data backup saves files but does not reset the desktops to a clean state.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 10",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1. VDE: virtual desktop experience."
+  },
+  {
+    "id": "core1-q-neil-04-o42-11",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "Which of the following BEST describes virtual machine sprawl?",
+    "options": [
+      "A virtual machine overutilizing resources",
+      "An isolation virtual machine for application testing",
+      "An unmanaged virtual machine on the network",
+      "The host machine is running out of resources due to overconsumption"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Virtual machine sprawl is when unmanaged virtual machines are placed on a virtual network. It is a security risk because these machines may not be patched, and an attacker could use them to gain access to the network.",
+    "whyWrong": [
+      "A virtual machine that overuses resources is a performance problem, not VM sprawl.",
+      "An isolated virtual machine for testing applications is a sandbox.",
+      null,
+      "A host running out of resources because servers overconsume them is system sprawl, not VM sprawl."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 11",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-12",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "A system administrator plans to implement VDI and wants to ensure that the storage for the virtual machine is both fault tolerant and has fast disk access. Which of the following should the administrator implement to fulfill these requirements?",
+    "options": [
+      "RAID 0 using SSD",
+      "LAN",
+      "Fibre Channel SAN",
+      "RAID 5 using HDDs"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Fibre Channel gives a very fast connection to a storage area network (SAN). A SAN uses fast disks that are configured with built-in redundancy, so the VDI storage is both fault tolerant and fast.",
+    "whyWrong": [
+      "RAID 0 stripes data with no redundancy, so it is not fault tolerant.",
+      "A local area network connects devices but is not a storage solution.",
+      null,
+      "RAID 5 is fault tolerant, but hard disk drives are too slow for the fast access that VDI needs."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 12",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1. Storage requirements for virtual machines are current 4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-13",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "If you wanted to separate a guest machine from the host or another virtual machine, which of the following would you implement?",
+    "options": [
+      "DMZ",
+      "Isolation",
+      "Docker",
+      "Snapshot"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Isolation separates a virtual machine from the host and from other virtual machines. If one guest is compromised, the isolation keeps the attack from reaching the others.",
+    "whyWrong": [
+      "A DMZ (screened subnet) is a network segment between the internal LAN and the internet, not a way to separate virtual machines.",
+      null,
+      "Docker is a container platform that separates applications from the infrastructure for developers.",
+      "A snapshot is a saved state of a virtual machine that you can revert to."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 13",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1. Security requirements for virtual machines are current 4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-14",
+    "type": "multiple",
+    "structure": "scenario",
+    "qualifier": "MOST LIKELY",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.2"
+    ],
+    "stem": "A company’s virtual network has been flooded with rogue virtual machines, which were not patched when the other virtual machines were updated. This is a security risk as these unmanaged devices could be used to gain access to the company’s network. The company has now employed a security consultant to remedy the situation. Which of the following is the consultant MOST LIKELY to recommend? (Choose two.)",
+    "options": [
+      "Deploy virtual machines using an image template",
+      "Install anti-virus software on unmanaged virtual machines",
+      "Deploy SolarWinds Virtualization Manager",
+      "Remove the unmanaged virtual machines"
+    ],
+    "answer": [
+      0,
+      2
+    ],
+    "selectCount": 2,
+    "fixedOrder": false,
+    "explanation": "The problem is virtual machine sprawl, the deployment of unmanaged virtual machines onto the network. The consultant would recommend deploying virtual machines only from a patched image template, so every machine starts from a consistent baseline. A virtualization management tool with sprawl management, such as SolarWinds Virtualization Manager, then finds unmanaged machines and prevents sprawl.",
+    "whyWrong": [
+      null,
+      "Antivirus alone does not fix unmanaged virtual machines, which may have many unpatched vulnerabilities besides malware.",
+      null,
+      "Removing the unmanaged machines helps once, but it does not stop new ones from appearing."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 14",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-17",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.4"
+    ],
+    "stem": "What is the benefit of using container virtualization?",
+    "options": [
+      "It allows you to create a virtual machine backup",
+      "It allows you to test malware",
+      "It allows you to separate your applications from the infrastructure and deploy and test code rapidly",
+      "It prevents virtual machine escape"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Container virtualization, for example Docker, virtualizes only the application layer and runs on top of the host operating system. It separates applications from the infrastructure, so developers can write, deploy, and test code quickly.",
+    "whyWrong": [
+      "A backup of a virtual machine is a snapshot, not a container.",
+      "Malware is tested in a sandbox, which is an isolated virtual machine.",
+      null,
+      "Containers share the host kernel, so they do not prevent virtual machine escape attacks."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 17",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-neil-04-o42-18",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "topics": [
+      "220-1201/4.1.1"
+    ],
+    "stem": "What is application virtualization?",
+    "options": [
+      "Putting an application into a sandbox for testing",
+      "Installing an application locally on a virtual machine",
+      "Putting the application inside a container",
+      "Running an application from a remote server that has additional resources"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Application virtualization runs an application from a remote server, but it looks to the user as if it runs locally. This is useful when a computer or virtual machine does not have enough resources to run the application itself.",
+    "whyWrong": [
+      "A sandbox is an isolated virtual machine for testing applications, patches, and malware, not application virtualization.",
+      "Installing an application locally on a virtual machine is an ordinary installation, not application virtualization.",
+      "A container, such as Docker, packages an application with its dependencies for development and deployment, which is containerization.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 18",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1."
+  },
+  {
+    "id": "core1-q-examcram-22-01",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Which of the following types of cloud services offers email through a web browser?",
+    "options": [
+      "SaaS",
+      "IaaS",
+      "PaaS",
+      "Community cloud"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Software as a Service (SaaS) provides applications, such as web-based email, over the Internet, while a third party stores the data. It is the most commonly recognized cloud service.",
+    "whyWrong": [
+      null,
+      "Infrastructure as a Service (IaaS) offers networking, storage, load balancing, routing, and VM hosting.",
+      "Platform as a Service (PaaS) offers easy-to-configure operating systems and on-demand computing for developing applications.",
+      "A community cloud is a deployment model in which several organizations share a cloud, not a type of service."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts, Cram Quiz question 1"
+  },
+  {
+    "id": "core1-q-examcram-22-02",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Your organization requires more control over its data and infrastructure. Money is apparently not an issue. There are only 2 admins and about 30 users who will have access to the data in the cloud. Which of the following cloud types is the BEST option?",
+    "options": [
+      "Public",
+      "Private",
+      "Hybrid",
+      "Community"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A private cloud gives the most control over data and resources where there are few users and a healthy budget. Its resources can be entirely internal, or part of them can come from a third party.",
+    "whyWrong": [
+      "A public cloud serves the general public over the Internet and gives the organization the least control.",
+      null,
+      "A hybrid cloud mixes public and private clouds, which this organization does not need with its budget and few users.",
+      "A community cloud is shared by several organizations, which this organization does not need."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts, Cram Quiz question 2"
+  },
+  {
+    "id": "core1-q-examcram-22-03",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "You require the ability to quickly and efficiently add to your cloud-based network whenever necessary. What is the term for this?",
+    "options": [
+      "Measured services",
+      "Metered utilization",
+      "Rapid elasticity",
+      "On-demand service"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Rapid elasticity is the ability to build a cloud-based network or extend an existing one quickly and efficiently. Resources scale up when demand grows and back down when it falls.",
+    "whyWrong": [
+      "Measured service means the provider monitors the customer's usage so that it can bill correctly.",
+      "Metered utilization means the customer can use as many resources as needed and pays only for what was used.",
+      null,
+      "On-demand service means the cloud service is available whenever the user needs it, at all times."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts, Cram Quiz question 3"
+  },
+  {
+    "id": "core1-q-examcram-22-04",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "What is the term for multiple customers sharing the same underlying cloud infrastructure while maintaining data and operational isolation between tenants?",
+    "options": [
+      "Resource pooling",
+      "Multitenancy",
+      "High availability (HA)",
+      "Rapid elasticity"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Multitenancy means multiple customers (tenants) share the same underlying cloud infrastructure, such as hardware, storage, and networking. Each tenant's data and operations stay isolated from the others.",
+    "whyWrong": [
+      "Resource pooling is the provider's ability to allocate and reassign resources dynamically as needed.",
+      null,
+      "High availability keeps a service running continuously through redundancy and failover.",
+      "Rapid elasticity is the ability to scale resources up or down quickly in response to demand."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 22: Cloud Computing Concepts, Cram Quiz question 4"
+  },
+  {
+    "id": "core1-q-examcram-x1-21",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Which of the following features allows users to store files in cloud-based storage when needed but can be removed when space is freed up locally?",
+    "options": [
+      "Shared resources",
+      "Metered utilization",
+      "On-demand",
+      "Resource pooling"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "On-demand means a cloud service is available whenever the user needs it, 24/7. It lets a user store data in the cloud when needed and remove it when space is freed up on the local system.",
+    "whyWrong": [
+      "Shared resources means different customers share servers and infrastructure in a public cloud.",
+      "Metered utilization gives access to almost unlimited resources but bills only for what is used.",
+      null,
+      "Resource pooling groups the provider's servers so customers can use them in a highly available, scalable way."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – A+ Core 1 (220-1201) Practice Exam, Practice Exam question 21"
+  },
+  {
+    "id": "core1-q-examcram-x1-23",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "You are part of a team that has decided to make use of a cloud provider for some of your organization’s technology needs. Your top priority is to offload some of your networking, storage, and VM hosting to the cloud. Which of the following services BEST suits your needs?",
+    "options": [
+      "SaaS",
+      "IaaS",
+      "PaaS",
+      "Hybrid cloud"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Infrastructure as a Service (IaaS) is the best fit. It provides networking services, storage, load balancing, routing, VM hosting, and more.",
+    "whyWrong": [
+      "Software as a Service (SaaS) provides ready-made applications such as Gmail or Microsoft 365.",
+      null,
+      "Platform as a Service (PaaS) provides an environment to develop and test applications in the cloud.",
+      "A hybrid cloud is a deployment model that mixes public and private clouds, not a service that offloads infrastructure."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – A+ Core 1 (220-1201) Practice Exam, Practice Exam question 23"
+  },
+  {
+    "id": "core1-q-examcram-x1-77",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Your organization has paid access to virtually unlimited cloud resources but pays only for the resources that are used. What is this called?",
+    "options": [
+      "Rapid elasticity",
+      "Community cloud",
+      "Metered services",
+      "High availability"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "With metered services (metered utilization), an organization has access to virtually unlimited cloud resources but pays only for the resources it uses. The provider measures the usage and bills for it.",
+    "whyWrong": [
+      "Rapid elasticity is the ability of a cloud network to grow or shrink quickly as the organization needs.",
+      "A community cloud is a deployment model in which several organizations share a cloud, not a billing method.",
+      null,
+      "High availability means the cloud service is always on and available whenever needed."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – A+ Core 1 (220-1201) Practice Exam, Practice Exam question 77"
+  },
+  {
+    "id": "core1-q-examcram-x1-83",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Which of the following best explains why multitenancy is a cost-effective approach for cloud providers?",
+    "options": [
+      "It allows providers to assign each customer a dedicated virtual server, increasing billing efficiency.",
+      "It enables multiple customers to share the same physical resources while maintaining secure data isolation.",
+      "It reduces the need for synchronization services by consolidating all client data into a single database.",
+      "It improves network availability by routing each tenant’s traffic through separate, physical network interfaces."
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Multitenancy lets multiple customers share the same physical resources, such as servers, storage, and network, while each tenant's data stays securely isolated. This shared environment improves resource use and scalability and lowers the provider's costs.",
+    "whyWrong": [
+      "A dedicated virtual server for each customer goes against multitenancy, which is about sharing infrastructure.",
+      null,
+      "Putting all client data in a single database is a security risk that goes against tenant data isolation.",
+      "Separate physical interfaces per tenant waste hardware; providers use virtual network segmentation instead."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – A+ Core 1 (220-1201) Practice Exam, Practice Exam question 83"
+  },
+  {
+    "id": "core1-q-docter-c1-11-01",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "You have been asked to identify the right type of cloud service to help the team of developers to provide programming elements such as runtime environments. Which service do you recommend?",
+    "options": [
+      "PaaS",
+      "IaaS",
+      "SaaS",
+      "DaaS"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Platform as a service (PaaS) is the right level of service for a developer team. It provides infrastructure, like IaaS, and also supplies the programming elements they need, such as runtime environments.",
+    "whyWrong": [
+      null,
+      "IaaS provides only the infrastructure, such as servers and storage, without runtime environments.",
+      "SaaS provides finished apps and is too high a level of service for developers who need a platform.",
+      "DaaS is not one of the cloud models in the current exam objectives."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 1"
+  },
+  {
+    "id": "core1-q-docter-c1-11-02",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "You are setting up a cloud contract with a provider. Your team needs the ability to quickly increase capacity to meet peak demands. What do you request?",
+    "options": [
+      "Elasticity",
+      "Availability",
+      "Resource pooling",
+      "Metered utilization"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "The ability to expand services quickly refers to elasticity (or rapid elasticity). The provider adds capacity during peak demand and removes it when demand drops.",
+    "whyWrong": [
+      null,
+      "Availability is the guaranteed uptime of the services, not the ability to grow capacity.",
+      "All cloud services use resource pooling, so it is not a feature that gives quick extra capacity.",
+      "Metered utilization is how providers track usage and charge for it."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 2"
+  },
+  {
+    "id": "core1-q-docter-c1-11-03",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Your company wants to move to a cloud provider to be able to scale resources quickly, but it is concerned about the security of confidential information. Which of the following types of cloud models is the BEST fit for your company?",
+    "options": [
+      "Public",
+      "Private",
+      "Community",
+      "Hybrid"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A hybrid cloud provides the best of public and private clouds. You get the scalability and cost effectiveness of a public cloud and the security you need for confidential files on the private part of the cloud.",
+    "whyWrong": [
+      "A public cloud scales well, but confidential data would sit on shared provider resources.",
+      "A private cloud protects data but loses the quick, low-cost scaling of a public cloud.",
+      "A community cloud is shared by several organizations with common goals, not one company's mix of needs.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 3"
+  },
+  {
+    "id": "core1-q-docter-c1-11-04",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "You have been asked to advise a group of several universities that want to combine research efforts and store data in the cloud. Which type of cloud solution is the BEST choice for them?",
+    "options": [
+      "Public",
+      "Private",
+      "Community",
+      "Hybrid"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "When multiple organizations with similar objectives want to combine efforts in a cloud, the best choice is generally a community cloud. It gives the flexibility and scalability of a public cloud while limiting users to a smaller, trusted group.",
+    "whyWrong": [
+      "A public cloud is open to any customer, not limited to a trusted group of universities.",
+      "A private cloud serves a single organization, not several.",
+      null,
+      "A hybrid cloud combines public and private parts, but for a single company's use."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 4"
+  },
+  {
+    "id": "core1-q-docter-c1-11-05",
+    "type": "multiple",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Your manager wants to use the cloud because everyone seems to be talking about it. What should you include when you are listing the benefits of using the cloud? (Choose all that apply.)",
+    "options": [
+      "Increased security",
+      "Increased scalability",
+      "Lower cost",
+      "Improved reliability"
+    ],
+    "answer": [
+      1,
+      2,
+      3
+    ],
+    "selectCount": 3,
+    "fixedOrder": false,
+    "explanation": "Cloud solutions are great for enhancing scalability and reliability while generally lowering costs. Providers spread workloads across large, redundant data centers and charge only for what is used.",
+    "whyWrong": [
+      "Security can be a concern in the cloud because the resources are not locally controlled and managed.",
+      null,
+      null,
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 5"
+  },
+  {
+    "id": "core1-q-docter-c1-11-13",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Which type of cloud is generally most cost effective for companies to use?",
+    "options": [
+      "Private",
+      "Public",
+      "Hybrid",
+      "Community"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Public clouds are usually the most cost effective. The client does not need to purchase any hardware, and the cloud provider benefits from economies of scale.",
+    "whyWrong": [
+      "A private cloud requires dedicated hardware for one organization, so it costs more.",
+      null,
+      "A hybrid cloud includes a private part, which adds cost compared to a public cloud.",
+      "A community cloud spreads the cost over a few organizations but still costs more than a public cloud."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 13"
+  },
+  {
+    "id": "core1-q-docter-c1-11-15",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Your manager read that multiple client companies might share the same hardware in a cloud and is extremely concerned about the security of company data. What should you tell them?",
+    "options": [
+      "Data security is a serious concern in a multitenancy environment, so the data should be limited to non-sensitive materials.",
+      "Thanks to the use of containers, data from different companies is always separated to help avoid data security issues.",
+      "Cloud providers guarantee that clients will not share the same storge devices, so data security is not a significant issue.",
+      "Multiple tenants may share the same hardware, but their data and apps are separated to avoid data security issues."
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Multitenancy happens all the time in cloud computing, meaning that multiple clients share the same hardware resources. Their apps and data are kept separate, which avoids data security issues.",
+    "whyWrong": [
+      "Multitenancy keeps each client's data separate, so sensitive data does not have to be avoided for that reason alone.",
+      "Separation in a multitenant cloud does not depend on containers.",
+      "Cloud providers do not guarantee separate storage devices; clients often share the same hardware.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 15"
+  },
+  {
+    "id": "core1-q-docter-c1-11-17",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "A manager is demanding more storage space for his department, immediately. What type of cloud solution is BEST in this case?",
+    "options": [
+      "IaaS",
+      "SaaS",
+      "PaaS",
+      "VDI"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Infrastructure as a service (IaaS) provides hardware resources, which include storage space. The manager needs only more storage, so IaaS is the fitting level of service.",
+    "whyWrong": [
+      null,
+      "SaaS provides finished apps, which the manager does not need here.",
+      "PaaS adds software development tools, which are not needed for extra storage.",
+      "VDI is the virtual desktop infrastructure, not a storage service."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 17"
+  },
+  {
+    "id": "core1-q-docter-c1-11-19",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "MOST LIKELY",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "On the latest invoice from your CSP, you notice an egress surcharge. What is this MOST LIKELY for?",
+    "options": [
+      "Downloading data from the cloud.",
+      "Uploading data to the cloud.",
+      "Creating new containers for applications.",
+      "Creating new virtual desktop infrastructure (VDI) instances."
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Ingress (uploading data) and egress (downloading data) may be part of metered utilization in a cloud agreement. Generally, ingress is free, but many cloud providers charge for data egress.",
+    "whyWrong": [
+      null,
+      "Uploading data to the cloud is ingress, which is usually free.",
+      "Egress refers to data leaving the cloud, not to creating containers.",
+      "Egress refers to data leaving the cloud, not to creating VDI instances."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 19"
+  },
+  {
+    "id": "core1-q-docter-c1-11-20",
+    "type": "single",
+    "structure": "calculation",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "A CSP is setting up services for three client companies. Each client has contracted for 10 TB storage space. How much storage space does the cloud provider need to have, in total, to satisfy the contracts?",
+    "options": [
+      "10 TB, because clients will share hardware in a multitenancy environment.",
+      "20 TB, because clients will share hardware in a multitenancy environment.",
+      "30 TB, because that is what the clients contracted in total.",
+      "60 TB, because the CSP must have reserve storage space in reserve for elasticity."
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "If the CSP has guaranteed three clients 10 TB each, then it needs at least 30 TB of available storage space. Clients may share hardware in a multitenancy environment, but each is guaranteed its contracted amount.",
+    "whyWrong": [
+      "Sharing hardware does not let three 10 TB contracts fit in 10 TB of storage.",
+      "Sharing hardware does not let three 10 TB contracts fit in 20 TB of storage.",
+      null,
+      "Extra storage for elasticity is a good idea but is not required to meet the contracts."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Volume 1 – Chapter 11: Virtualization and Cloud Computing, Review Questions question 20"
+  },
+  {
+    "id": "core1-q-aio-22-06",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Janelle wants to start a new photo-sharing service for real pictures of Bigfoot, but doesn’t own any servers. How can she quickly create a new server to run her service?",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Community cloud",
+      "Hybrid cloud"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Using the public cloud will enable Janelle to quickly create the servers she needs without buying hardware. A public cloud provider rents computing resources to anyone on demand.",
+    "whyWrong": [
+      null,
+      "A private cloud needs the organization's own servers, which Janelle does not have.",
+      "A community cloud is shared by several organizations with common needs, not set up quickly by one person.",
+      "A hybrid cloud joins a private cloud to a public one, but Janelle has no private cloud."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 6"
+  },
+  {
+    "id": "core1-q-aio-22-07",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "After the unforeseen failure of her Bigfoot-picture-sharing service, bgFootr— which got hacked when she failed to stay on top of her security updates—Janelle has a great new idea for a new service to report Loch Ness Monster sightings. What service would help keep her from having to play system administrator?",
+    "options": [
+      "Software as a Service",
+      "Infrastructure as a Service",
+      "Platform as a Service",
+      "Network as a Service"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "By switching to a PaaS, Janelle can concentrate on creating her service and leave the lower-level administration, such as OS updates, to the PaaS provider. Platform as a Service gives her a managed platform to run her own code.",
+    "whyWrong": [
+      "SaaS provides ready-made applications, not a platform where she can run her own service.",
+      "IaaS provides virtual servers, so she would still have to administer and patch the OS.",
+      null,
+      "Network as a Service provides network connectivity, not a platform to run her application."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 7"
+  },
+  {
+    "id": "core1-q-aio-22-10",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "BigTracks is a successful Bigfoot-tracking company using an internal service to manage all of its automated Bigfoot monitoring stations. A Bigfoot migration has caused a massive increase in the amount of audio and video sent back from their stations. In order to add short-term capacity, they can create new servers in the public cloud. What model of cloud computing does this describe?",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Community cloud",
+      "Hybrid cloud"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "BigTracks is creating a hybrid cloud by connecting its internal private cloud to a public cloud to quickly expand capacity. Using the public cloud only for extra short-term demand is a common hybrid cloud pattern.",
+    "whyWrong": [
+      "The company keeps its internal service, so it is not using only a public cloud.",
+      "Adding servers in the public cloud goes beyond a private cloud.",
+      "A community cloud is shared by organizations with common needs; this is not one.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Certification All-in-One Exam Guide, 11th ed. – Chapter 22: Virtualization, Chapter Review question 10"
+  },
+  {
+    "id": "core1-q-neil-04-o41-01",
+    "type": "single",
+    "structure": "select-item",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "What type of cloud service would you use if you wanted to move 100 desktops to the cloud?",
+    "options": [
+      "SaaS",
+      "IaaS",
+      "SECaaS",
+      "MaaS"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Infrastructure as a Service (IaaS) is a cloud service model in which the cloud service provider (CSP) supplies the hardware, such as servers, storage, and networking, but nothing else. To move desktop computers to the cloud, the customer then installs, configures, and patches the operating system on that infrastructure.",
+    "whyWrong": [
+      "Software as a Service (SaaS) leases a finished application, such as Salesforce, and does not host the customer's own desktops.",
+      null,
+      "Security as a Service (SECaaS) delivers security functions such as cloud identity management, not desktop infrastructure.",
+      "Monitoring as a Service (MaaS) has the provider watch your network and servers for you; it does not host desktops."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 1",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-02",
+    "type": "single",
+    "structure": "select-item",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "In which type of cloud model does a company have most of its workforce on-premises and its mobile salesforce in the cloud?",
+    "options": [
+      "Hybrid",
+      "Private",
+      "Community",
+      "Public"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "With a hybrid cloud, a company keeps part of its infrastructure on-premises and runs other parts in the cloud. Here the main workforce uses the on-premises systems while the mobile salesforce works from the cloud.",
+    "whyWrong": [
+      null,
+      "A private cloud is a single-tenant model dedicated to one organization; it does not describe a split between on-premises and cloud use.",
+      "A community cloud is shared by organizations from the same industry that pool their resources.",
+      "A public cloud is a multi-tenant model in which the provider hosts many different companies on the same servers."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 2",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-03",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "An organization is expanding, and it needs to increase its storage space and compute resources to meet the demand of its customers. Most of the workforce operates as remote workers. Which of the following BEST describes the cloud service required?",
+    "options": [
+      "PaaS",
+      "SaaS",
+      "IaaS",
+      "DRaaS"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Infrastructure as a Service (IaaS) provides storage space and compute resources that a company can add as demand grows. The company installs, configures, and patches its own operating systems on that hardware.",
+    "whyWrong": [
+      "Platform as a Service (PaaS) gives developers the tools and platform to build their own software, not raw storage and compute capacity.",
+      "Software as a Service (SaaS) delivers ready-made applications on a subscription basis.",
+      null,
+      "Disaster Recovery as a Service (DRaaS) is used to recover systems after a major disaster, not to expand everyday capacity."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 3",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-04",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "A company wants to migrate its email and business applications to the cloud. Which of the following cloud services will be used to meet the objective?",
+    "options": [
+      "PaaS",
+      "SaaS",
+      "IaaS",
+      "MaaS"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Software as a Service (SaaS) provides ready-made software that the provider hosts and maintains. Microsoft 365 is an example: it includes Outlook for email along with other business applications.",
+    "whyWrong": [
+      "Platform as a Service (PaaS) gives developers tools to build their own custom software rather than ready-made email and business applications.",
+      null,
+      "Infrastructure as a Service (IaaS) provides only hardware, so the company would still have to install and run its own email servers and applications.",
+      "Monitoring as a Service (MaaS) is a service in which a provider monitors your network; it does not host email or business applications."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 4",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-05",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "The Chief Executive Officer wants to ensure that when the company moves to the cloud, it retains total control over the storage and management of proprietary data. Which cloud model is the BEST for this?",
+    "options": [
+      "Hybrid cloud",
+      "Community cloud",
+      "Public cloud",
+      "Private cloud"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A private cloud is single-tenant, so the company has total control over all its assets, including the storage and management of proprietary data. No other organization shares the infrastructure.",
+    "whyWrong": [
+      "A hybrid cloud mixes on-premises and cloud resources, and its public cloud part is shared, so the company would not control all of it.",
+      "A community cloud is shared by several organizations from the same industry, so control is shared as well.",
+      "A public cloud is multi-tenant, with many companies on the same resources, so one company cannot have total control.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 5",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-06",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "A salesperson from a Cloud Service Provider (CSP) is trying to sell a company metered utilization as part of a cloud package. Which of the following describes what they are selling?",
+    "options": [
+      "Unlimited resources for free",
+      "A reserve pool of resources",
+      "Pay only for the resources consumed",
+      "Restriction on the allocation of critical resources"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Metered utilization measures the resources that a customer consumes, so the customer pays only for what it uses. The provider tracks usage such as storage, CPU, and data transfer (ingress and egress) and bills from those measurements.",
+    "whyWrong": [
+      "No cloud service, including a metered one, gives unlimited resources for free.",
+      "A reserve pool of resources is not what metering means; metering is about measuring and billing actual consumption.",
+      null,
+      "Metered utilization does not restrict critical resources; customers can buy as many resources as they need."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 6",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-07",
+    "type": "single",
+    "structure": "select-item",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Which of the following cloud models would allow three universities to share resources in a cloud environment?",
+    "options": [
+      "Private cloud",
+      "Public cloud",
+      "Community cloud",
+      "Hybrid cloud"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "In a community cloud, organizations with the same needs, such as a group of universities, hospitals, or law firms, share the cost of creating and running cloud resources. Each member uses the shared environment for its common requirements.",
+    "whyWrong": [
+      "A private cloud serves a single tenant and does not share its resources with other organizations.",
+      "In a public cloud, many unrelated customers rent the provider's resources but do not jointly build or share a common environment.",
+      null,
+      "A hybrid cloud combines one company's on-premises environment with cloud resources."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 7",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-09",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "A company would like to enable its developers to create bespoke applications. These applications will require two separate servers, one for PHP and the other for MySQL. What cloud service should they purchase?",
+    "options": [
+      "SaaS",
+      "IaaS",
+      "PaaS",
+      "Private cloud"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "With Platform as a Service (PaaS), the cloud service provider supplies the platform, such as web and database servers and development tools, so the company's developers can build their own bespoke applications. Here, the provider would supply the PHP and MySQL servers.",
+    "whyWrong": [
+      "With SaaS, the vendor has already built the application, such as Office 365 or Salesforce, so there is nothing for developers to create.",
+      "IaaS provides only the hardware, so the company would have to install and maintain the operating systems and the PHP and MySQL software itself.",
+      null,
+      "A private cloud is a deployment model, not a service that provides a development platform."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 9",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-10",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1",
+      "220-1201/4.2.2"
+    ],
+    "stem": "What type of cloud model is known as multi-tenant?",
+    "options": [
+      "Private",
+      "Community",
+      "Hybrid",
+      "Public"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "The public cloud model is known as multi-tenant because the cloud service provider hosts many different companies on the same servers. Each tenant's data is kept logically separate, but the hardware is shared.",
+    "whyWrong": [
+      "A private cloud is single-tenant: only one organization is hosted, and it has exclusive access to its resources.",
+      "A community cloud is shared only by organizations from the same industry, so it is not the model known as multi-tenant.",
+      "A hybrid cloud combines on-premises infrastructure with cloud resources.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 10",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-11",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "A law firm is going to migrate its currently on-premises infrastructure to the cloud. The firm stores a large number of wills and probates, property, and trust deeds. This data must be retained for a minimum of six years. What type of cloud model BEST fits this law firm’s needs?",
+    "options": [
+      "Public cloud",
+      "Private cloud",
+      "Hybrid cloud",
+      "Community cloud"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A private cloud lets the law firm isolate its data entirely from all other organizations, because it is the only tenant on its hosts. This gives the firm full control over sensitive records that it must keep for years.",
+    "whyWrong": [
+      "A public cloud is multi-tenant, so the firm's data would sit on servers shared with other companies.",
+      null,
+      "A hybrid cloud keeps part of the infrastructure on-premises, but the firm wants to move all of it to the cloud.",
+      "In a community cloud, firms from the same industry share costs and resources, so the firm would not keep full control of its data."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 11",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-12",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Which of the following describes why a cloud provider would store hardware in its data center that is not dedicated to any single customer?",
+    "options": [
+      "Dynamic resource allocation",
+      "Backup pool",
+      "Shared resources",
+      "System sprawl"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Shared resources means that the cloud provider keeps a pool of hardware that it can allocate to any of its customers as they need it. Dedicated resources, in contrast, are reserved for one customer only.",
+    "whyWrong": [
+      "Dynamic resource allocation is a host adjusting CPU or RAM to a workload as demand changes, not the reason hardware is kept undedicated.",
+      "A backup pool is not a cloud computing concept.",
+      null,
+      "System sprawl is when servers consume more resources than the virtual environment has available."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 12",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-13",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Which of the following means that the server experiences very little downtime (also known as the “ five nines”)?",
+    "options": [
+      "VDI",
+      "High Availability (HA)",
+      "Clustering",
+      "Shared resources"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "High availability (HA) means that a server or service experiences very little downtime. The term \"five nines\" means 99.999% uptime, which is only about five minutes of downtime a year.",
+    "whyWrong": [
+      "VDI is a pool of virtual desktops, not a measure of uptime.",
+      null,
+      "Clustering is one way to achieve high availability, with a passive server taking over when the active one fails, but it is not the term for very little downtime.",
+      "Shared resources are a pool of provider hardware that can be allocated to any customer."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 13",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-14",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "A famous toy company sees an increase in sales over the winter holidays and, consequently, needs to purchase more VDI and CPU resources to match customer demand leading up to Christmas. However, they need to be able to revert to normal resource consumption in January. What aspect of cloud computing would the toy company find useful?",
+    "options": [
+      "Shared resources",
+      "Clustering",
+      "Rapid elasticity",
+      "Metered utilization"
+    ],
+    "answer": [
+      2
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Rapid elasticity lets the toy company increase cloud resources quickly when demand rises before the holidays and decrease them again in January. The company pays for the extra resources only while it uses them.",
+    "whyWrong": [
+      "Shared resources describe the provider's pool of hardware that any customer can use, not the ability to scale up and back down.",
+      "Clustering pairs an active server with a standby server for failover, which does not add capacity for seasonal demand.",
+      null,
+      "Metered utilization measures and bills the resources consumed, but it does not itself scale them."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 14",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-15",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "What type of cloud allows access to data even if the internet fails?",
+    "options": [
+      "Private",
+      "Community",
+      "SaaS",
+      "Public"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A company can host a private cloud on its own network, so its cloud data stays available even if the internet connection goes down. Clouds that are hosted by a provider are reached over the internet.",
+    "whyWrong": [
+      null,
+      "A community cloud is maintained by a provider and reached over the internet, so it is unavailable when the internet fails.",
+      "SaaS applications are hosted by the vendor and accessed over the internet.",
+      "A public cloud is reached over the internet, so it cannot be accessed when the internet connection fails."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 15",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-17",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1",
+      "220-1201/4.2.2"
+    ],
+    "stem": "What type of cloud model is known as single-tenant?",
+    "options": [
+      "Hybrid",
+      "Private",
+      "Community",
+      "Public"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "The private cloud model is known as single-tenant because only one organization is hosted in that cloud. It can be hosted on the company's own infrastructure or by a provider.",
+    "whyWrong": [
+      "A hybrid cloud combines an on-premises environment with cloud resources, so it is not defined by tenancy.",
+      null,
+      "A community cloud hosts several organizations from the same industry that share resources.",
+      "A public cloud is multi-tenant because the provider hosts many companies on the same servers."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 17",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-18",
+    "type": "multiple",
+    "structure": "select-item",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "Which of the following are only SaaS products? (Choose two.)",
+    "options": [
+      "Office 365",
+      "Developer tools",
+      "Home Depot",
+      "Spotify"
+    ],
+    "answer": [
+      0,
+      3
+    ],
+    "selectCount": 2,
+    "fixedOrder": false,
+    "explanation": "Software as a Service (SaaS) is a cloud service in which a company develops an application and leases it, often on a subscription or pay-as-you-go basis. Users reach it through a web browser or app. Office 365 (with its built-in email) and the music platform Spotify are both SaaS products.",
+    "whyWrong": [
+      null,
+      "Developer tools, such as Azure developer tools, are Platform as a Service (PaaS) because they give developers an environment to build their own applications.",
+      "Home Depot is a retail store that sells DIY products, not a SaaS product.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 18",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-20",
+    "type": "single",
+    "structure": "recall",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "Which of the following is an automated advantage of cloud storage?",
+    "options": [
+      "Resource exhaustion",
+      "Dynamic resource allocation",
+      "File sharing",
+      "File synchronization"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "File synchronization is an automated advantage of cloud storage: the cloud keeps a file up to date across different devices, such as a smartphone and a tablet. When the file changes on one device, the other devices get the new version without user action.",
+    "whyWrong": [
+      "Resource exhaustion means a computer is running out of resources such as CPU, RAM, or disk space, which is a problem rather than an advantage.",
+      "Dynamic resource allocation means a host gets resources as it needs them, and it is not a cloud storage feature.",
+      "File sharing gives other people access to files, but it is not automatic; someone has to share the file first.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 20",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-22",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.1"
+    ],
+    "stem": "An IT company is going to move 10 servers and 50 desktops to the cloud. Which of the following cloud services will they migrate to?",
+    "options": [
+      "PaaS",
+      "SaaS",
+      "MaaS",
+      "IaaS"
+    ],
+    "answer": [
+      3
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Infrastructure as a Service (IaaS) provides the hardware, so the company can move all 10 servers and 50 desktops to the cloud. It will still need to install, configure, and patch the operating systems itself.",
+    "whyWrong": [
+      "PaaS gives developers tools to create their own software and mobile applications, not servers and desktops to migrate.",
+      "SaaS provides ready-made software such as Microsoft 365 or Salesforce.",
+      "MaaS lets a provider continuously monitor your network and applications, but it does not host servers or desktops.",
+      null
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 22",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o41-23",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": "BEST",
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "New Zealand has just won the rugby World Cup final, and the official All Blacks online store cannot cope with the number of New Zealanders wanting to purchase their World Cup memorabilia. The store manager contacts their cloud provider for additional resources, which the cloud provider adds within 30 minutes. Which of the following concepts BEST describes what the cloud provider has just done?",
+    "options": [
+      "Rapid deployment",
+      "Rapid elasticity",
+      "Load balancing",
+      "Metered service"
+    ],
+    "answer": [
+      1
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "Rapid elasticity lets cloud resources be increased or decreased quickly according to demand. The provider added resources within minutes when the store's traffic spiked, and it can remove them when demand falls.",
+    "whyWrong": [
+      "Rapid deployment is not the cloud characteristic for scaling resources up and down with demand.",
+      null,
+      "A load balancer spreads client requests across a group of web servers, but it does not add new resources.",
+      "Metered service measures the resources a customer consumes so that the provider can bill for them."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.1 question 23",
+    "note": "Neil chapter 4, old objective 220-1101/4.1 (cloud computing); current 220-1201/4.2."
+  },
+  {
+    "id": "core1-q-neil-04-o42-02",
+    "type": "single",
+    "structure": "scenario",
+    "qualifier": null,
+    "exam": "220-1201",
+    "domain": "4",
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "topics": [
+      "220-1201/4.2.2"
+    ],
+    "stem": "A company is using VMware’s ESX Server to provide its virtual network. It will be running five database servers, each of which will require an increase in CPU and RAM. How can this be achieved?",
+    "options": [
+      "Resource pooling",
+      "System sprawl",
+      "Network segmentation",
+      "Metered utilization"
+    ],
+    "answer": [
+      0
+    ],
+    "selectCount": 1,
+    "fixedOrder": false,
+    "explanation": "A resource pool collects CPU and RAM from the hosts so that it can be allocated to a group of virtual machines, such as the database servers. The servers can then use the extra CPU and RAM as they need it.",
+    "whyWrong": [
+      null,
+      "System sprawl is when server consumption exceeds the host's resources, which is a problem, not a way to add resources.",
+      "Network segmentation divides a network into parts and does not manage CPU or RAM.",
+      "Metered utilization is how a cloud provider measures and charges for resources consumed."
+    ],
+    "origin": "book",
+    "source": "CompTIA A+ Practice Tests Core 1 (220-1101) and Core 2 (220-1102) (Neil) – Chapter 4: Virtualization and Cloud Computing, Objective 4.2 question 2",
+    "note": "Neil chapter 4, old objective 220-1101/4.2 (virtualization); current 220-1201/4.1. Resource pooling is not named in the current objectives; closest is 4.2 shared resources."
+  }
+]

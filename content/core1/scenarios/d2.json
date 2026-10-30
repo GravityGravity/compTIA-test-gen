@@ -1,0 +1,717 @@
+[
+  {
+    "id": "core1-s-ip-dhcp-off",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "ip-workstation",
+      "laptop"
+    ],
+    "clues": [
+      "every device that joins the network gets an address that starts with 169.254",
+      "only newly connected devices fail to get online while devices that connected before yesterday still browse",
+      "new devices have been unable to get online since a coworker changed settings on the office's internet box yesterday",
+      "the devices that cannot get online can reach each other but not the internet"
+    ],
+    "answer": {
+      "cause": "the DHCP server on the SOHO router is turned off",
+      "action": "Turn the DHCP server back on in the router's LAN settings"
+    },
+    "firstStep": "Run ipconfig on an affected device to see the address it has",
+    "appliesWhen": "many devices give themselves 169.254 addresses because nothing on the LAN hands out addresses",
+    "explanation": "A Windows client that cannot reach a DHCP server gives itself an APIPA address in 169.254.0.0/16 and cannot reach other networks. When every newly connected device does this, the source of addresses is down; here the router's DHCP service was switched off. Turning it back on lets the clients get a full IP configuration again.",
+    "related": [
+      "core1-s-ip-old-static",
+      "core1-s-ip-no-gateway",
+      "core1-s-ip-conflict",
+      "core1-s-ip-wrong-mask"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-old-static",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the laptop has had no network access since it was moved here from the branch office last week",
+      "the laptop that reaches nothing on the LAN shows 10.1.1.40 in ipconfig while every other device uses 192.168.0.x",
+      "the laptop cannot ping the router at 192.168.0.1",
+      "the laptop cannot open any website or shared folder even though its network adapter's link light is on"
+    ],
+    "answer": {
+      "cause": "a static address left over from another network",
+      "action": "Set the adapter to obtain an IP address automatically"
+    },
+    "firstStep": "Run ipconfig to compare the laptop's address with the LAN's addresses",
+    "appliesWhen": "the hand-set address is on a different network number from the rest of the LAN",
+    "explanation": "A host can talk directly only to hosts with the same network number. An address typed in for the branch office does not match this LAN, so the laptop cannot reach even the router. Switching to a dynamic address lets the LAN's DHCP server give it a correct one.",
+    "related": [
+      "core1-s-ip-dhcp-off",
+      "core1-s-ip-no-gateway",
+      "core1-s-ip-conflict",
+      "core1-s-ip-wrong-mask"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-no-gateway",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "ip-workstation"
+    ],
+    "clues": [
+      "websites fail to load even though the PC opens shared folders on the other office PCs",
+      "every website and outside server times out",
+      "the PC cannot reach the internet but can ping the router at 192.168.0.1",
+      "the PC lost internet access after a technician entered its address and mask by hand last week"
+    ],
+    "answer": {
+      "cause": "a default gateway left out of the PC's static settings",
+      "action": "Enter the router's LAN address as the default gateway"
+    },
+    "firstStep": "Run ipconfig to check the PC's IP settings",
+    "appliesWhen": "the PC reaches hosts on its own LAN but has no address to send traffic for other networks to",
+    "explanation": "Traffic for other networks goes to the default gateway, which in a SOHO network is the router's LAN address. With no gateway set, the PC reaches hosts on its own network but nothing beyond it.",
+    "related": [
+      "core1-s-ip-dhcp-off",
+      "core1-s-ip-old-static",
+      "core1-s-ip-conflict",
+      "core1-s-ip-wrong-mask"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-conflict",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "ip-workstation"
+    ],
+    "clues": [
+      "a Windows warning says that its address is already in use on the network",
+      "the PC's network connection drops in and out",
+      "the connection drops started the day a network printer was set up with settings typed in by hand",
+      "the new network printer also goes offline at the same moments that the PC loses its connection"
+    ],
+    "answer": {
+      "cause": "an IP address conflict with a newly added device",
+      "action": "Move the device with the hand-set address to a free address outside the DHCP range"
+    },
+    "appliesWhen": "two devices on the LAN have been given the same address",
+    "explanation": "Each host on a network needs its own address. A device set by hand to an address that the DHCP server also hands out causes a conflict, and Windows warns about it and loses its connection. Static addresses should sit outside the DHCP range.",
+    "related": [
+      "core1-s-ip-dhcp-off",
+      "core1-s-ip-old-static",
+      "core1-s-ip-no-gateway",
+      "core1-s-ip-wrong-mask"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-wrong-mask",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "ip-workstation"
+    ],
+    "clues": [
+      "the PC that cannot reach the internet shows 255.255.255.240 in ipconfig while the other PCs show 255.255.255.0",
+      "the PC reaches the printer at 192.168.0.25 but not the router at 192.168.0.1",
+      "the PC cannot reach the internet even though its address, 192.168.0.20, matches the office records"
+    ],
+    "answer": {
+      "cause": "a wrong subnet mask in the static settings",
+      "action": "Change the subnet mask to 255.255.255.0 to match the rest of the LAN"
+    },
+    "firstStep": "Run ipconfig to compare the PC's settings with those of a working PC",
+    "appliesWhen": "the PC's mask does not match the mask that the rest of the LAN uses",
+    "explanation": "The subnet mask tells the PC which addresses are on its own network. With 255.255.255.240, the PC at 192.168.0.20 treats only .16 to .31 as local, so the printer at .25 works but the router at .1 looks remote and cannot be reached.",
+    "related": [
+      "core1-s-ip-dhcp-off",
+      "core1-s-ip-old-static",
+      "core1-s-ip-no-gateway",
+      "core1-s-ip-conflict"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-static-printer",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "set up the office's new network printer so that every PC can always find it at the same address",
+    "clues": [
+      "the PCs send print jobs to the printer by its IP address",
+      "the router hands out .100 to .199, and the printer is planned for .20",
+      "the router does not offer address reservations"
+    ],
+    "answer": {
+      "item": "A static IP address"
+    },
+    "itemType": "addressing method",
+    "appliesWhen": "a printer, server, or router must keep one address that is set on the device itself",
+    "explanation": "A static address is typed into the device and never changes, which suits printers, servers, and routers that other hosts find by address. It should sit outside the DHCP range so that it is never handed to another device.",
+    "related": [
+      "core1-s-ip-dhcp-clients",
+      "core1-s-ip-apipa-lab",
+      "core1-s-ip-alternate-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-dhcp-clients",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "connect thirty staff laptops to the office LAN with as little setup as possible",
+    "clues": [
+      "staff bring laptops in and out every day",
+      "the laptops must also work on other networks without changes",
+      "each laptop also needs a mask, a gateway, and a DNS server"
+    ],
+    "answer": {
+      "item": "Dynamic addressing from a DHCP server"
+    },
+    "itemType": "addressing method",
+    "appliesWhen": "many client devices must get a full IP configuration without manual setup",
+    "explanation": "With dynamic addressing, a DHCP server such as the SOHO router gives each client an address from its scope, together with the mask, gateway, and DNS servers. It is the Windows default and the usual choice for client computers.",
+    "related": [
+      "core1-s-ip-static-printer",
+      "core1-s-ip-apipa-lab",
+      "core1-s-ip-alternate-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-apipa-lab",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "let four PCs in a training room share files when the room has no router or server",
+    "clues": [
+      "the PCs connect through one unmanaged switch",
+      "the PCs talk only to each other and never to the internet",
+      "the PCs are left at the default Windows IP settings"
+    ],
+    "answer": {
+      "item": "Automatic Private IP Addressing (APIPA)"
+    },
+    "itemType": "addressing method",
+    "appliesWhen": "a small isolated LAN has no DHCP server and needs no access to other networks",
+    "explanation": "A Windows client set to obtain an address that finds no DHCP server gives itself an address in 169.254.0.0/16 with mask 255.255.0.0. PCs on the same isolated LAN can talk to each other this way with no setup, but they have no gateway to other networks.",
+    "related": [
+      "core1-s-ip-static-printer",
+      "core1-s-ip-dhcp-clients",
+      "core1-s-ip-alternate-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-alternate-config",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "let a laptop use the office's DHCP server at work and fixed settings on a home network",
+    "clues": [
+      "the laptop is set to obtain an address automatically",
+      "the home network uses 192.168.50.0/24 and its router hands out no addresses",
+      "the user must not have to change network settings on each trip"
+    ],
+    "answer": {
+      "item": "An alternate IP configuration"
+    },
+    "itemType": "addressing method",
+    "appliesWhen": "one adapter needs DHCP on one network and a hand-set fallback on another",
+    "explanation": "On a Windows adapter set to obtain an address automatically, the Alternate Configuration tab holds a second set of IP settings. The laptop uses them when no DHCP server answers, so it works at the office and at home with no changes.",
+    "related": [
+      "core1-s-ip-static-printer",
+      "core1-s-ip-dhcp-clients",
+      "core1-s-ip-apipa-lab"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-set-gateway",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "let a PC with hand-typed IP settings reach websites and other networks",
+    "clues": [
+      "the PC already reaches every host on its own LAN",
+      "the router's LAN side is 192.168.0.1",
+      "traffic for other networks has nowhere to go"
+    ],
+    "answer": {
+      "item": "The default gateway"
+    },
+    "itemType": "IP setting",
+    "appliesWhen": "a host must send traffic for other networks to the router",
+    "explanation": "The default gateway is the router address that a host sends traffic to when the destination is on another network. It must be on the same network as the host, and without it the host cannot reach the internet.",
+    "related": [
+      "core1-s-ip-set-mask",
+      "core1-s-ip-set-dns",
+      "core1-s-ip-set-prefix"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-set-mask",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "tell a PC with a static address of 192.168.0.40 which part of the address is the network and which is the host",
+    "clues": [
+      "the network part is 192.168.0 and the host part is 40",
+      "the value has 255 in each octet of the network part and 0 in the host part",
+      "the settings dialog often fills this in after the address is typed"
+    ],
+    "answer": {
+      "item": "The subnet mask"
+    },
+    "itemType": "IP setting",
+    "appliesWhen": "the host must know which bits of its IPv4 address are the network number",
+    "explanation": "An IPv4 subnet mask is a 32-bit value that separates the network part of an address from the host part. For 192.168.0.40 on a typical SOHO LAN it is 255.255.255.0.",
+    "related": [
+      "core1-s-ip-set-gateway",
+      "core1-s-ip-set-dns",
+      "core1-s-ip-set-prefix"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-set-dns",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "let a PC with hand-typed IP settings open websites by name",
+    "clues": [
+      "the PC already reaches outside hosts when the technician uses their numbers",
+      "the PC's static settings already include the address, mask, and gateway",
+      "the ISP gave the office two addresses for this field"
+    ],
+    "answer": {
+      "item": "The DNS server address"
+    },
+    "itemType": "IP setting",
+    "appliesWhen": "the host must turn host and domain names into IP addresses",
+    "explanation": "Computers connect by IP address, so a DNS server translates names such as www.example.com into addresses. A static configuration needs at least one DNS server address, often one run by the ISP.",
+    "related": [
+      "core1-s-ip-set-gateway",
+      "core1-s-ip-set-mask",
+      "core1-s-ip-set-prefix"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-set-prefix",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "show how many bits of the office's new IPv6 addresses make up the network part",
+    "clues": [
+      "an IPv6 address has no dotted value like 255.255.255.0",
+      "the value is a number from 1 to 128 written after a slash",
+      "the office's IPv6 network is written as 2001:db8:3c4d::/48"
+    ],
+    "answer": {
+      "item": "The prefix length"
+    },
+    "itemType": "IP setting",
+    "appliesWhen": "an IPv6 address must state how much of it is the network part",
+    "explanation": "IPv6 does not use a subnet mask. A prefix length from 1 to 128, written after a slash, gives the number of bits that identify the network.",
+    "related": [
+      "core1-s-ip-set-gateway",
+      "core1-s-ip-set-mask",
+      "core1-s-ip-set-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-ipv6-loopback",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "test the IPv6 stack on a PC without sending anything over the network",
+    "clues": [
+      "the PC's network cable is unplugged during the test",
+      "the PC runs IPv6 next to IPv4",
+      "the matching IPv4 self-test already works"
+    ],
+    "answer": {
+      "item": "::1"
+    },
+    "itemType": "address",
+    "appliesWhen": "the technician must test IPv6 on the local machine itself",
+    "explanation": "::1 is the IPv6 loopback address, the counterpart of 127.0.0.1 in IPv4. A ping to it tests the TCP/IP stack on the local machine without using the network.",
+    "related": [
+      "core1-s-ip-link-local",
+      "core1-s-ip-private-range",
+      "core1-s-ip-public-wan"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-link-local",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "find the IPv6 address that Windows set up on its own for use only on the local network segment",
+    "clues": [
+      "ipconfig lists more than one IPv6 address on the adapter",
+      "the office has no IPv6 router yet",
+      "every IPv6-enabled adapter must have one, even with no router"
+    ],
+    "answer": {
+      "item": "The address that starts with fe80"
+    },
+    "itemType": "address",
+    "appliesWhen": "the host needs its self-assigned IPv6 address for the local link",
+    "explanation": "Every IPv6 interface has a link-local address in fe80::/10, often built from the adapter's MAC address. It works only on the local segment, much like an APIPA address in IPv4.",
+    "related": [
+      "core1-s-ip-ipv6-loopback",
+      "core1-s-ip-private-range",
+      "core1-s-ip-public-wan"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-private-range",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "number the devices on a new office LAN with addresses that the internet does not route",
+    "clues": [
+      "the router will translate all LAN traffic to the one ISP address",
+      "certain address ranges may be used by anyone inside their own network",
+      "the office has about 40 devices"
+    ],
+    "answer": {
+      "item": "A range such as 192.168.1.0/24"
+    },
+    "itemType": "address",
+    "appliesWhen": "internal hosts need addresses that are not used on the internet and sit behind NAT",
+    "explanation": "192.168.0.0/16, 172.16.0.0/12, and 10.0.0.0/8 are the private IPv4 ranges. They are not routed on the internet, so a SOHO LAN uses them behind a NAT router that shares one public address.",
+    "related": [
+      "core1-s-ip-ipv6-loopback",
+      "core1-s-ip-link-local",
+      "core1-s-ip-public-wan"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-public-wan",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "give the office router's internet-facing port the address that hosts on the internet will see",
+    "clues": [
+      "the address must be unique across the whole internet",
+      "the router's WAN port connects to the cable modem",
+      "the LAN side of the router already uses 192.168.0.1"
+    ],
+    "answer": {
+      "item": "A public address from the ISP"
+    },
+    "itemType": "address",
+    "appliesWhen": "a device must be reached directly from the internet",
+    "explanation": "A public IP address is visible on the internet and is assigned by the ISP; IANA coordinates these addresses worldwide. A SOHO router gets one on its WAN port and uses NAT so that every private host on the LAN shares it.",
+    "related": [
+      "core1-s-ip-ipv6-loopback",
+      "core1-s-ip-link-local",
+      "core1-s-ip-private-range"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "core1-s-ip-calc-hosts",
+    "kind": "calculation",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "calculation": "subnet-hosts",
+    "prefixMin": 24,
+    "prefixMax": 30,
+    "explanation": "Usable hosts are 2 to the power of the host bits, less the network and broadcast addresses.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  },
+  {
+    "id": "core1-s-ip-calc-network",
+    "kind": "calculation",
+    "exam": "220-1201",
+    "domain": "2",
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "topics": [
+      "220-1201/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "calculation": "network-address",
+    "prefixMin": 24,
+    "prefixMax": 28,
+    "explanation": "The network address is the first address of the block, where every host bit is 0.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 7: Introduction to TCP/IP"
+  }
+]

@@ -1,0 +1,4879 @@
+[
+  {
+    "id": "core1-s-mb-post-beeps",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "a series of short beeps sounds every time the PC is switched on",
+      "the screen stays black after the startup beeps",
+      "the case fans and the power light come on, but the PC never shows a picture",
+      "the PC has beeped at startup since it was carried to a new desk last week"
+    ],
+    "answer": {
+      "cause": "a memory module that has worked loose in its slot",
+      "action": "Reseat the memory modules firmly until the slot latches lock"
+    },
+    "firstStep": "Look up the beep code in the motherboard manual",
+    "appliesWhen": "the PC beeps at power-on and stops because a memory module is not fully seated",
+    "explanation": "POST checks the RAM early, and when it cannot use a module it stops and sounds a beep code instead of showing video. Moving a PC or heating and cooling over time can loosen a module. Look up the pattern in the motherboard documentation, then reseat the module.",
+    "related": [
+      "core1-s-mb-blank-onboard",
+      "core1-s-mb-psu-dead",
+      "core1-s-mb-ram-firmware",
+      "core1-s-mb-cmos-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-cmos-battery",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the clock shows a date years in the past after each cold start",
+      "custom firmware settings are lost whenever the PC is unplugged overnight",
+      "after a night unplugged, the PC opens the firmware setup screen instead of loading Windows",
+      "the seven-year-old PC now shows a warning about the system time at each startup"
+    ],
+    "answer": {
+      "cause": "a dead CMOS battery",
+      "action": "Replace the coin cell on the motherboard and enter the firmware settings again"
+    },
+    "firstStep": "Test the coin cell's voltage with a multimeter",
+    "appliesWhen": "the date, time, and firmware settings reset each time the PC loses wall power",
+    "explanation": "The small lithium coin cell (often a CR2032) keeps the clock and firmware settings while the PC is unplugged. When it runs down, the date returns to a default and the other settings are lost. Replace it, then set the date, time, and settings again.",
+    "related": [
+      "core1-s-mb-ram-firmware",
+      "core1-s-mb-post-beeps",
+      "core1-s-mb-swollen-caps",
+      "core1-s-mb-power-strip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-swollen-caps",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "several small cylinders on the motherboard bulge at the top",
+      "brown crust has leaked from the top of the bulging parts on the board",
+      "the PC restarts on its own several times a day",
+      "the random restarts continue after a clean reinstall of Windows"
+    ],
+    "answer": {
+      "cause": "swollen capacitors on the motherboard",
+      "action": "Replace the motherboard"
+    },
+    "appliesWhen": "parts on the board are visibly bulging or leaking and the PC restarts without warning",
+    "explanation": "Capacitors that fail swell from gas inside them and can leak electrolyte, which makes the PC restart, shut down, or crash. Replacing single capacitors takes special training, so the usual fix is a new motherboard. Do not touch the residue.",
+    "related": [
+      "core1-s-mb-psu-overload",
+      "core1-s-mb-ram-faulty",
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-psu-burning"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-psu-burning",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "a sharp burning smell comes from the rear vent next to the AC cord",
+      "a thin wisp of smoke rose from the back grille of the PC",
+      "the burning smell is strongest at the top rear corner of the case",
+      "the burning smell started today on a PC that has run for years without trouble"
+    ],
+    "answer": {
+      "cause": "a power supply that is about to fail",
+      "action": "Replace the power supply with a new unit"
+    },
+    "firstStep": "Shut the PC down and unplug it at once",
+    "appliesWhen": "a burning smell or smoke comes from the power supply area of the case",
+    "explanation": "A burning smell or smoke from the power supply means it is close to failing and could short out or start a fire. Never open a power supply, because its capacitors hold a dangerous charge; replace the whole unit.",
+    "related": [
+      "core1-s-mb-swollen-caps",
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-cable-fan",
+      "core1-s-mb-psu-overload"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-psu-dead",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "nothing happens when the front power button is pressed",
+      "no lights or fans come on at all when the PC is switched on",
+      "a desk lamp works in the same wall outlet that the dead PC uses",
+      "a new AC cord made no difference to the dead PC",
+      "the PC has not powered on since a thunderstorm passed through last night"
+    ],
+    "answer": {
+      "cause": "a dead power supply",
+      "action": "Replace the power supply with a known good unit"
+    },
+    "firstStep": "Test the unit with a power supply tester",
+    "appliesWhen": "the PC shows no sign of life even though the outlet and the AC cord are good",
+    "explanation": "When the outlet and the cord are good but nothing at all lights or spins, the power supply is the most likely failed part, often after a spike. A PSU tester or a known good unit confirms it.",
+    "related": [
+      "core1-s-mb-power-strip",
+      "core1-s-mb-post-beeps",
+      "core1-s-mb-blank-onboard",
+      "core1-s-mb-psu-overload"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-power-strip",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC and its monitor both show no lights and will not turn on",
+      "a desk lamp plugged in beside the dead PC under the desk is also dark",
+      "the PC and monitor have been dead since a cleaner worked under the desk this morning",
+      "the wall outlet next to the door works, but nothing under the desk powers on"
+    ],
+    "answer": {
+      "cause": "a power strip that is switched off or tripped",
+      "action": "Switch on or reset the power strip, or plug the PC into a working outlet"
+    },
+    "appliesWhen": "every device on the same power strip is dead at once",
+    "explanation": "When the PC, the monitor, and a lamp on the same strip are all dark, the problem is before the PC: the strip was switched off, tripped, or unplugged. Always check the power source before you open the case.",
+    "related": [
+      "core1-s-mb-psu-dead",
+      "core1-s-mb-post-beeps",
+      "core1-s-mb-cmos-battery",
+      "core1-s-mb-blank-onboard"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-dust-overheat",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "warehouse",
+      "field"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC shuts down after about 30 minutes of work",
+      "after each shutdown the PC starts again normally once it has cooled for a while",
+      "the PC that keeps shutting down sits on the floor of a dusty loading area",
+      "very little air comes out of the rear vents before each shutdown",
+      "the firmware shows the processor near its maximum temperature after a few minutes"
+    ],
+    "answer": {
+      "cause": "dust clogging the heat sink and fans",
+      "action": "Clean the heat sink, fans, and vents with compressed air"
+    },
+    "firstStep": "Check the processor temperature and fan speeds in the firmware setup",
+    "appliesWhen": "the PC overheats in a dirty place because dust blocks the air flow",
+    "explanation": "Dust and dirt build up on fans and heat sinks in dirty places such as warehouses, so heat cannot leave the case and the PC shuts down to protect itself. Blow the dust out with compressed air, holding the fans still.",
+    "related": [
+      "core1-s-mb-cpu-fan",
+      "core1-s-mb-heatsink-loose",
+      "core1-s-mb-psu-overload",
+      "core1-s-mb-swollen-caps"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-cpu-fan",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the firmware shows 0 RPM on the processor cooler header",
+      "the PC shuts down a few minutes after it starts",
+      "the inside of the case is clean, yet the PC shuts down after a few minutes",
+      "the early shutdowns began when a loud whine that came from the PC for weeks suddenly stopped"
+    ],
+    "answer": {
+      "cause": "a failed CPU fan",
+      "action": "Replace the CPU fan with one that fits the heat sink and socket"
+    },
+    "appliesWhen": "the processor cooler has stopped turning, so the PC overheats within minutes",
+    "explanation": "A fan that has stopped cannot move heat away from the processor, so the PC overheats and shuts down quickly. A noisy bearing often comes before the fan stops. Fit a compatible replacement fan.",
+    "related": [
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-heatsink-loose",
+      "core1-s-mb-psu-fan",
+      "core1-s-mb-ram-faulty"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-heatsink-loose",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC has shut down under load since the processor was upgraded",
+      "the processor temperature climbs past 95 °C within minutes",
+      "the cooler's fan spins at full speed while the processor overheats",
+      "the cooler on the overheating processor moves when it is touched lightly"
+    ],
+    "answer": {
+      "cause": "a heat sink that is not seated firmly on the CPU",
+      "action": "Clean off the old thermal paste, apply new paste, and fasten the heat sink securely"
+    },
+    "appliesWhen": "the processor overheats right after it was installed because the cooler does not sit flat on it",
+    "explanation": "Heat moves from the processor to the heat sink only through firm contact and a thin layer of thermal paste. A loose cooler or air gaps in the paste make the CPU overheat fast, even with a working fan. Clean, re-paste, and fasten it.",
+    "related": [
+      "core1-s-mb-cpu-fan",
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-psu-overload",
+      "core1-s-mb-ram-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-ram-faulty",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "different applications close without warning",
+      "a blue stop screen appears a few times a week",
+      "the stop screens show the same memory address each time",
+      "the crashes continue although the system drive passes all its health checks",
+      "the crashes continued after a clean reinstall of Windows"
+    ],
+    "answer": {
+      "cause": "a faulty memory module",
+      "action": "Replace the failing memory module"
+    },
+    "firstStep": "Run the Windows Memory Diagnostic tool",
+    "appliesWhen": "applications crash and stop screens appear because a memory module is failing",
+    "explanation": "Failing RAM often looks like a software problem: application crashes and proprietary crash screens such as the Windows BSOD. An error at the same memory address each time points to physical memory. A memory test confirms it.",
+    "related": [
+      "core1-s-mb-swollen-caps",
+      "core1-s-mb-low-ram",
+      "core1-s-mb-heatsink-loose",
+      "core1-s-mb-psu-overload"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-ram-firmware",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the startup screen reports less RAM than was installed",
+      "the new modules are on the qualified list, but the PC does not count all the new memory",
+      "the new modules work in another PC, but this PC reports less memory than is installed",
+      "reseating the new modules did not change the low memory total"
+    ],
+    "answer": {
+      "cause": "firmware that is too old to recognize the new memory",
+      "action": "Update (flash) the UEFI/BIOS firmware"
+    },
+    "appliesWhen": "compatible new memory is not recognized because the firmware is out of date",
+    "explanation": "When new, compatible RAM is not counted at POST, the firmware may not have the code to identify it. Flashing the UEFI/BIOS to the latest version adds support for newer parts.",
+    "related": [
+      "core1-s-mb-post-beeps",
+      "core1-s-mb-cmos-battery",
+      "core1-s-mb-ram-faulty",
+      "core1-s-mb-low-ram"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-low-ram",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC is slow whenever several programs are open",
+      "the Task Manager view shows memory use above 90 percent while the PC crawls",
+      "the PC that slows down with several programs open has only 4 GB installed",
+      "the PC is quick again after a restart until the user opens the usual programs"
+    ],
+    "answer": {
+      "cause": "too little RAM for the user's workload",
+      "action": "Add more RAM to the PC"
+    },
+    "appliesWhen": "the PC is slow because memory use is near 100 percent with the user's normal programs",
+    "explanation": "When physical memory runs out, Windows moves data to the paging file on the drive, which is much slower, so the whole PC feels sluggish. More RAM fixes this.",
+    "related": [
+      "core1-s-mb-ram-faulty",
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-ram-firmware",
+      "core1-s-mb-cpu-fan"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-psu-overload",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "pc-gaming"
+    ],
+    "clues": [
+      "the PC restarts as soon as a 3D game starts",
+      "the restarts began after a high-end graphics card was added last week",
+      "the PC was stable before the upgrade, but now it restarts under heavy load",
+      "temperatures stay normal before each restart"
+    ],
+    "answer": {
+      "cause": "a power supply too small for the new components",
+      "action": "Install a power supply with a higher wattage rating"
+    },
+    "appliesWhen": "the PC restarts under load after an upgrade added parts that draw more power",
+    "explanation": "New parts such as a large graphics card can draw more power than the old supply can give, so the PC restarts under load. When you upgrade components, check whether the power supply needs an upgrade too.",
+    "related": [
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-swollen-caps",
+      "core1-s-mb-ram-faulty",
+      "core1-s-mb-heatsink-loose"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power"
+  },
+  {
+    "id": "core1-s-mb-cable-fan",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "a loud ticking or buzzing sound comes from inside the case",
+      "the noise began after a technician added a second drive",
+      "the noise changes when the side panel is pressed",
+      "temperatures are normal despite the noise in the case"
+    ],
+    "answer": {
+      "cause": "a cable touching a fan blade",
+      "action": "Reroute and tie the cables away from the fans"
+    },
+    "appliesWhen": "a buzzing or ticking noise started after work inside the case left something in the path of a fan",
+    "explanation": "A wire brushing a CPU or case fan makes a buzzing or ticking noise. Route and tie the cables clear of the fans; this also improves air flow.",
+    "related": [
+      "core1-s-mb-psu-fan",
+      "core1-s-mb-cpu-fan",
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-swollen-caps"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-psu-fan",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "a loud whine comes from the back corner where the AC cord plugs in",
+      "the whine gets louder and quieter by turns",
+      "little air comes out of the rear vent by the AC cord, which used to blow warm air",
+      "the CPU and case fans run quietly while the rear corner whines"
+    ],
+    "answer": {
+      "cause": "a failing fan inside the power supply",
+      "action": "Replace the whole power supply without opening it"
+    },
+    "appliesWhen": "a loud whine comes from the power supply corner and little air leaves its vent",
+    "explanation": "A failing power supply fan can whine or change speed, and it soon lets the supply overheat. For the A+ exam, never open the power supply to fix the fan; replace the unit.",
+    "related": [
+      "core1-s-mb-cable-fan",
+      "core1-s-mb-cpu-fan",
+      "core1-s-mb-dust-overheat",
+      "core1-s-mb-swollen-caps"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 23: Troubleshooting Motherboards, CPUs, RAM, and Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mb-blank-onboard",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "topics": [
+      "220-1201/5.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the screen has stayed black since a graphics card was installed yesterday",
+      "the PC beeps once at startup, yet nothing appears on the screen",
+      "the drive light flickers as if Windows is loading, but the screen shows nothing",
+      "the monitor shows its no-signal message"
+    ],
+    "answer": {
+      "cause": "a monitor cable plugged into the motherboard's video port",
+      "action": "Connect the monitor cable to a port on the new graphics card"
+    },
+    "appliesWhen": "a new graphics card is installed but the monitor is still connected to the motherboard's own video port",
+    "explanation": "Most motherboards turn off their built-in video when an expansion graphics card is installed. The PC boots normally, but a monitor on the motherboard port gets no signal. Move the cable to the graphics card.",
+    "related": [
+      "core1-s-mb-post-beeps",
+      "core1-s-mb-psu-dead",
+      "core1-s-mb-ram-firmware",
+      "core1-s-mb-power-strip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-click",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "laptop"
+    ],
+    "clues": [
+      "a regular clicking sound comes from the drive",
+      "files take a long time to open",
+      "the computer froze twice with a loud click",
+      "the drive that clicks is five years old"
+    ],
+    "answer": {
+      "cause": "a failing mechanical hard drive",
+      "action": "Replace the hard drive with a new drive"
+    },
+    "firstStep": "Back up the important data at once",
+    "appliesWhen": "a mechanical drive clicks in a regular rhythm and starts to lock up",
+    "explanation": "A regular, rhythmic clicking from a hard drive means it is failing or has failed. Do not wait: copy the data to a good drive and replace the failing one.",
+    "related": [
+      "core1-s-drive-sata-cable",
+      "core1-s-drive-fragmented",
+      "core1-s-drive-full",
+      "core1-s-drive-p2p-busy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-grinding",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "a grinding, scraping noise comes from the drive bay",
+      "the noise sounds like fingernails on a chalkboard",
+      "the PC stopped responding while the noise was loud",
+      "the noise is not from the fans, which were just replaced"
+    ],
+    "answer": {
+      "cause": "read/write heads that have crashed into the disk platters",
+      "action": "Power off at once, recover what data is possible, and replace the drive"
+    },
+    "appliesWhen": "a mechanical drive makes a grinding or scraping noise because its heads touch the platters",
+    "explanation": "A grinding or scraping noise from a mechanical drive means the motor has failed or the heads are cutting into the platters. Stop using the drive, get the data off it if you can, and replace it.",
+    "related": [
+      "core1-s-mb-cable-fan",
+      "core1-s-drive-smart",
+      "core1-s-drive-fragmented",
+      "core1-s-drive-sata-cable"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-boot-order",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC tries to start from the network and then reports that no bootable device was found",
+      "the system drive is listed in the firmware setup, but Windows does not load on its own",
+      "the PC starts Windows only when the drive is chosen from the one-time startup menu",
+      "the PC has not loaded Windows on its own since the firmware was updated yesterday"
+    ],
+    "answer": {
+      "cause": "a wrong boot order in the firmware",
+      "action": "Put the system drive first in the UEFI/BIOS boot sequence"
+    },
+    "appliesWhen": "the drive is detected and works, but the firmware tries other devices first",
+    "explanation": "The firmware boots from the devices in the order it lists. If the network or another device comes first, the PC can report that no bootable device was found even though the system drive is fine. A firmware update or reset can change the order.",
+    "related": [
+      "core1-s-drive-sata-cable",
+      "core1-s-drive-ahci-reset",
+      "core1-s-drive-uninitialized",
+      "core1-s-drive-click"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-sata-cable",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the firmware setup does not list the system drive",
+      "the PC has reported that no bootable device was found since it was moved to another office yesterday",
+      "the drive spins up and is quiet at startup, but the firmware cannot see it",
+      "the missing drive is detected when it is fitted in another PC"
+    ],
+    "answer": {
+      "cause": "a loose or damaged SATA data cable",
+      "action": "Reseat the data cable at both ends or replace it"
+    },
+    "appliesWhen": "the firmware cannot detect a quiet, working drive because its data connection is loose",
+    "explanation": "If the firmware does not detect a drive that spins normally, check the connections first. A SATA data cable can work loose when a PC is moved, or it can be damaged. Reseat it or try a new cable.",
+    "related": [
+      "core1-s-drive-boot-order",
+      "core1-s-drive-click",
+      "core1-s-drive-uninitialized",
+      "core1-s-drive-raid-controller"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-uninitialized",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the second drive installed in the PC today does not appear in File Explorer",
+      "the firmware lists the new drive, but Windows shows no drive letter for it",
+      "the new disk that is missing from File Explorer shows only unallocated space in Disk Management",
+      "the new drive passes the maker's diagnostic test, but the user cannot save files to it"
+    ],
+    "answer": {
+      "cause": "a new drive that has not been set up with a partition and a volume",
+      "action": "Initialize the disk in Disk Management, then create and format a volume with a drive letter"
+    },
+    "appliesWhen": "the firmware sees a new drive but Windows has no volume on it",
+    "explanation": "Windows can use a drive only after it is initialized, partitioned, formatted, and given a drive letter. If the firmware detects the drive but File Explorer does not show it, prepare it in Disk Management.",
+    "related": [
+      "core1-s-drive-sata-cable",
+      "core1-s-drive-boot-order",
+      "core1-s-drive-ahci-reset",
+      "core1-s-drive-raid-controller"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-full",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "laptop"
+    ],
+    "clues": [
+      "the system drive has 3 GB free out of 500 GB",
+      "saving files takes much longer than it used to",
+      "a low disk space warning keeps appearing",
+      "saving is slow even though the drive passes a S.M.A.R.T. health check"
+    ],
+    "answer": {
+      "cause": "a system drive that is almost full",
+      "action": "Free up space with Disk Cleanup or move files to another drive"
+    },
+    "appliesWhen": "the drive is slow because it has almost no free space left",
+    "explanation": "A drive needs free space (at least 10 percent) for temporary files and the paging file. With almost none left, reads and writes take much longer. Remove files and unused apps or move data to another drive.",
+    "related": [
+      "core1-s-drive-fragmented",
+      "core1-s-drive-p2p-busy",
+      "core1-s-drive-smart",
+      "core1-s-drive-click"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-fragmented",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "files on the mechanical drive take a little longer to open every month",
+      "the slow mechanical drive still has 40 percent free space",
+      "the PC has slowed since the scheduled drive maintenance was turned off two years ago",
+      "the drive passes a S.M.A.R.T. health check although files open more slowly each month"
+    ],
+    "answer": {
+      "cause": "a heavily fragmented hard disk drive",
+      "action": "Analyze and defragment the drive with Optimize Drives"
+    },
+    "appliesWhen": "a mechanical drive slows down over time because its files are stored in scattered pieces",
+    "explanation": "When file pieces are scattered across a mechanical drive, the heads move more to read them and read/write times grow. Defragmenting puts the data back in order. Do not defragment SSDs often.",
+    "related": [
+      "core1-s-drive-full",
+      "core1-s-drive-p2p-busy",
+      "core1-s-drive-low-iops",
+      "core1-s-drive-smart"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-p2p-busy",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the drive activity light stays lit and the PC is sluggish even when the user is idle",
+      "the Task Manager view shows an unknown app reading and writing the disk all day",
+      "the PC has been sluggish since the user installed a free movie download app last month",
+      "the drive has plenty of free space, but its activity light never goes out"
+    ],
+    "answer": {
+      "cause": "file-sharing software that keeps the drive busy",
+      "action": "Remove the peer-to-peer file-sharing software and scan for malware"
+    },
+    "appliesWhen": "an unwanted app such as a torrent client keeps the drive working all the time",
+    "explanation": "A drive light that blinks far more than usual shows that the drive is working hard. Torrent and other P2P clients, or malware, can keep a drive busy and slow everything else. Remove them and scan the drive.",
+    "related": [
+      "core1-s-drive-full",
+      "core1-s-drive-fragmented",
+      "core1-s-drive-smart",
+      "core1-s-drive-click"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-smart",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "laptop"
+    ],
+    "clues": [
+      "a S.M.A.R.T. warning appears at startup",
+      "wmic diskdrive get status reports Pred Fail",
+      "the drive diagnostic tool shows the reallocated sector count rising each week",
+      "the drive still works for now, but the warning appears at every startup"
+    ],
+    "answer": {
+      "cause": "a drive that is predicting its own failure",
+      "action": "Back up the data and replace the drive before it fails"
+    },
+    "appliesWhen": "the drive's own monitoring data warns of a coming failure",
+    "explanation": "S.M.A.R.T. monitors drive health and can warn before a drive fails; a status other than OK, or a rising count of bad sectors, is a reason to act. Back up now and plan the replacement.",
+    "related": [
+      "core1-s-drive-full",
+      "core1-s-drive-fragmented",
+      "core1-s-drive-p2p-busy",
+      "core1-s-drive-low-iops"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-low-iops",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "pc-server"
+    ],
+    "clues": [
+      "users wait several seconds each time they save a record",
+      "a benchmark shows 40 percent fewer operations per second than the drive's rating",
+      "saves have grown slower steadily over six months",
+      "the slow drives are SSDs and are less than half full"
+    ],
+    "answer": {
+      "cause": "aging drives whose IOPS are too low for the workload",
+      "action": "Replace the drives with new, faster SSDs"
+    },
+    "appliesWhen": "a benchmark shows the drives deliver far fewer IOPS than their rating, and the number keeps falling",
+    "explanation": "IOPS measures how many reads and writes a drive completes each second. Results 10 to 20 percent below the vendor's numbers are normal, but 25 percent or more below, or a steady decline, means the drives need attention or replacement.",
+    "related": [
+      "core1-s-drive-fragmented",
+      "core1-s-drive-full",
+      "core1-s-drive-p2p-busy",
+      "core1-s-drive-smart"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-mirror-degraded",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "pc-server"
+    ],
+    "clues": [
+      "the array utility at startup shows the volume as degraded",
+      "an amber light is lit on one drive bay",
+      "the server still starts and all files open, despite the array warning at startup",
+      "the degraded volume was built from two drives that hold the same data"
+    ],
+    "answer": {
+      "cause": "a failed drive in the RAID 1 mirror",
+      "action": "Replace the failed drive and rebuild the mirror"
+    },
+    "appliesWhen": "one drive of a two-drive mirror has failed while the data stays available",
+    "explanation": "A RAID 1 mirror keeps a full copy on each drive, so one failure leaves a degraded but working volume. Replace the failed member and rebuild the array before the other drive fails too. RAID is not a backup.",
+    "related": [
+      "core1-s-drive-stripe-failed",
+      "core1-s-drive-ahci-reset",
+      "core1-s-drive-raid-controller",
+      "core1-s-drive-sata-cable"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-stripe-failed",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-gaming"
+    ],
+    "clues": [
+      "the data volume made of two drives is gone",
+      "one of the two drives no longer spins up",
+      "the lost volume was set up for speed with no redundancy",
+      "the other drive tests good, but the volume cannot be opened"
+    ],
+    "answer": {
+      "cause": "a failed drive in a striped RAID 0 array",
+      "action": "Replace the drive, create the array again, and restore the data from backup"
+    },
+    "appliesWhen": "one drive of a stripe set has failed, so the whole volume and its data are lost",
+    "explanation": "RAID 0 spreads data across the drives with no redundancy, so one failed drive destroys the whole volume. Replace the drive, rebuild the array, and restore the data from the backup.",
+    "related": [
+      "core1-s-drive-mirror-degraded",
+      "core1-s-drive-ahci-reset",
+      "core1-s-drive-raid-controller",
+      "core1-s-drive-uninitialized"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-ahci-reset",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the array disappeared right after a firmware update",
+      "the array setup screen no longer opens at startup",
+      "the firmware lists each drive as a separate disk instead of the array",
+      "the PC reports that no bootable device was found"
+    ],
+    "answer": {
+      "cause": "the SATA mode reset from RAID to AHCI",
+      "action": "Set the SATA mode back to RAID in the UEFI/BIOS setup"
+    },
+    "appliesWhen": "the drives are fine but the firmware's SATA setting no longer enables the array",
+    "explanation": "Motherboard RAID works only when the SATA mode is set to RAID. A firmware update or a reset to defaults returns it to AHCI, so the array utility does not load and the array is missing. Change the setting back.",
+    "related": [
+      "core1-s-drive-raid-controller",
+      "core1-s-drive-mirror-degraded",
+      "core1-s-drive-boot-order",
+      "core1-s-drive-sata-cable"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "core1-s-drive-raid-controller",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "pc-server"
+    ],
+    "clues": [
+      "no drive of the array appears at startup",
+      "the add-in card's setup screen no longer appears at startup",
+      "the add-in card's status light is dark and the array is missing",
+      "each missing drive tests good in another server"
+    ],
+    "answer": {
+      "cause": "a failed RAID controller card",
+      "action": "Replace the RAID controller card with a compatible model"
+    },
+    "appliesWhen": "all the drives are good but the add-in card that runs the array has failed",
+    "explanation": "When every drive of an array is missing but each drive works elsewhere, the controller is the shared failure point. Check that the card is seated, then replace it with a compatible controller and import the array.",
+    "related": [
+      "core1-s-drive-ahci-reset",
+      "core1-s-drive-mirror-degraded",
+      "core1-s-drive-sata-cable",
+      "core1-s-drive-stripe-failed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-nas-alarm",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "clinic"
+    ],
+    "devices": [
+      "storage-nas"
+    ],
+    "clues": [
+      "the NAS beeps loudly every few seconds",
+      "one drive bay on the NAS shows a red light",
+      "the shared folders still open but more slowly than before",
+      "the beeping NAS holds four drives with parity across them"
+    ],
+    "answer": {
+      "cause": "a failed drive in the RAID 5 array",
+      "action": "Replace the failed drive and let the array rebuild"
+    },
+    "firstStep": "Check the management utility for the alert",
+    "appliesWhen": "an alarm sounds because one drive of a parity array has failed",
+    "explanation": "NAS and RAID devices sound alarms and light a bay LED when a drive fails. RAID 5 keeps working with one failed drive, but a second failure loses the array, so replace the drive and rebuild.",
+    "related": [
+      "core1-s-drive-raid-controller",
+      "core1-s-drive-full",
+      "core1-s-drive-low-iops",
+      "core1-s-drive-ahci-reset"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-drive-power-corrupt",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "topics": [
+      "220-1201/5.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "files saved during storms are often corrupt",
+      "files saved while the office lights dim at copier startup open corrupted",
+      "the drive passes S.M.A.R.T. and surface tests, yet some saved files are corrupt",
+      "the PC that saves corrupt files is plugged straight into the wall outlet"
+    ],
+    "answer": {
+      "cause": "power surges and drops that interrupt writes to the drive",
+      "action": "Connect the PC to a UPS or a surge suppressor"
+    },
+    "appliesWhen": "files are corrupted because unstable power interrupts writes to a healthy drive",
+    "explanation": "A file written during a surge or drop can be stored corrupt even on a healthy drive. Check that the power supply is big enough and protect the PC with a UPS or power conditioning.",
+    "related": [
+      "core1-s-drive-smart",
+      "core1-s-drive-p2p-busy",
+      "core1-s-drive-click",
+      "core1-s-drive-fragmented"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 24: Troubleshooting Storage Drives and RAID Arrays"
+  },
+  {
+    "id": "core1-s-video-input-source",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "the monitor shows a no-signal message on a black screen",
+      "the monitor's power light is on, but the screen shows no picture",
+      "the screen has been blank since the PC was moved from an HDMI cable to a DisplayPort cable today",
+      "the PC starts normally and the drive light flickers, but the monitor shows nothing"
+    ],
+    "answer": {
+      "cause": "the monitor set to the wrong input",
+      "action": "Select the correct input source in the monitor's on-screen menu"
+    },
+    "appliesWhen": "the monitor is on but looks for the signal on a different port",
+    "explanation": "A monitor with several ports shows a black screen when its on-screen display is set to one port and the PC is connected to another. Choose the matching input in the OSD.",
+    "related": [
+      "core1-s-video-cable",
+      "core1-s-video-driver",
+      "core1-s-video-refresh",
+      "core1-s-video-backlight"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-cable",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "the image flickers when the desk is bumped",
+      "the screen goes black for a second and then returns",
+      "the plug at the back of the flickering monitor has a bent pin",
+      "the flicker stays when a known good monitor is connected"
+    ],
+    "answer": {
+      "cause": "a loose or damaged video cable",
+      "action": "Reseat the video cable or replace it with a quality cable"
+    },
+    "appliesWhen": "the image cuts out or flickers when the connection is moved",
+    "explanation": "Poor connections and worn or damaged cables cause flicker, fuzziness, and random blackouts. Check the plugs and the whole cable length, and replace a damaged cable.",
+    "related": [
+      "core1-s-video-input-source",
+      "core1-s-video-refresh",
+      "core1-s-video-backlight",
+      "core1-s-video-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-bulb",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "display-projector"
+    ],
+    "clues": [
+      "the fan runs but no light comes from the lens",
+      "a warning light on the case is lit and nothing appears on the screen",
+      "the projector that shows no image has run for thousands of hours",
+      "the laptop shows the presentation on its own screen, but nothing is projected"
+    ],
+    "answer": {
+      "cause": "a burnt-out projector lamp",
+      "action": "Replace the lamp with the approved type for the model and reset the lamp counter"
+    },
+    "appliesWhen": "the projector powers on but gives no light at all",
+    "explanation": "A projector lamp has a limited life, and when it burns out no light comes from the lens. Let the projector cool and unplug it, fit the exact lamp type, then reset the lamp hour counter in the OSD.",
+    "related": [
+      "core1-s-video-projector-heat",
+      "core1-s-video-input-source",
+      "core1-s-video-focus",
+      "core1-s-video-keystone"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-focus",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "display-projector"
+    ],
+    "clues": [
+      "the projected text is blurry everywhere on the screen",
+      "the image has been blurry since the projector was moved farther from the screen this morning",
+      "the laptop's own screen is sharp while the projected image is soft",
+      "the blurry image has a normal rectangle shape"
+    ],
+    "answer": {
+      "cause": "a projector that is out of focus",
+      "action": "Adjust the focus ring or focus setting on the projector"
+    },
+    "appliesWhen": "a projected image is blurry all over after the projector moved",
+    "explanation": "A projector must be focused for its distance to the screen. After it is moved, turn the focus ring on the lens or use the focus setting in its menu.",
+    "related": [
+      "core1-s-video-keystone",
+      "core1-s-video-resolution",
+      "core1-s-video-bulb",
+      "core1-s-video-projector-heat"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-resolution",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "text looks soft and blurry on the new monitor",
+      "circles look stretched into ovals",
+      "on the blurry monitor, the Display settings page shows a value that is not marked as recommended",
+      "the same PC looked sharp on the old monitor, but text is soft on the new one"
+    ],
+    "answer": {
+      "cause": "a resolution that does not match the monitor's native resolution",
+      "action": "Set the display to its recommended native resolution"
+    },
+    "appliesWhen": "the image is fuzzy or stretched because the resolution or aspect ratio does not match the panel",
+    "explanation": "A flat panel looks sharp only at its native resolution. A different resolution or aspect ratio makes the image fuzzy, stretched, or boxed in. Choose the recommended resolution in Display settings.",
+    "related": [
+      "core1-s-video-scaling",
+      "core1-s-video-focus",
+      "core1-s-video-driver",
+      "core1-s-video-color"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-scaling",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor",
+      "laptop"
+    ],
+    "clues": [
+      "icons and text look huge",
+      "dialog boxes do not fit and their buttons are cut off",
+      "icons look huge even though the resolution is set to the recommended value",
+      "text and icons have looked huge since a visitor changed the display options yesterday"
+    ],
+    "answer": {
+      "cause": "a display scale setting that is set too high",
+      "action": "Lower the scale percentage in Windows Display settings"
+    },
+    "appliesWhen": "items on screen are oversized although the resolution is correct",
+    "explanation": "Windows scaling enlarges text and items at the same resolution. Too high a scale makes everything oversized and cuts off windows; set a lower percentage in Display settings.",
+    "related": [
+      "core1-s-video-resolution",
+      "core1-s-video-driver",
+      "core1-s-video-color",
+      "core1-s-video-refresh"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-burn-in",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "retail",
+      "clinic",
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "a faint outline of the taskbar stays visible over every image",
+      "the ghost outline matches the dashboard that the display showed all day for two years",
+      "the ghost image is still there after the screen was off for a day",
+      "the panel with the ghost image is an OLED display"
+    ],
+    "answer": {
+      "cause": "permanent burn-in on the panel",
+      "action": "Replace the display"
+    },
+    "appliesWhen": "a faint copy of an old static image stays on screen whatever is shown",
+    "explanation": "A static image shown for a long time can wear OLED pixels unevenly and leave a permanent ghost image. Power cycling helps only short-term image retention; real burn-in needs a new display.",
+    "related": [
+      "core1-s-video-dead-pixels",
+      "core1-s-video-color",
+      "core1-s-video-backlight",
+      "core1-s-video-cable"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-dead-pixels",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor",
+      "laptop"
+    ],
+    "clues": [
+      "a few tiny black dots stay in the same place on the screen",
+      "the dots show up best on a white background",
+      "a screen repair utility made no change to the black dots",
+      "the dots appear on every picture and in the firmware screen"
+    ],
+    "answer": {
+      "cause": "dead pixels on the LCD panel",
+      "action": "Replace the monitor or have the panel replaced under warranty"
+    },
+    "appliesWhen": "a few points on the panel never light up",
+    "explanation": "Dead pixels never light, so they show as black dots on a white screen. Repair utilities and power cycling sometimes free a stuck pixel, but a dead one means replacing the panel.",
+    "related": [
+      "core1-s-video-burn-in",
+      "core1-s-video-color",
+      "core1-s-video-cable",
+      "core1-s-video-backlight"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-refresh",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "the screen seems to flicker slightly all the time",
+      "the user gets headaches after an hour at the flickering screen",
+      "the flicker started after the display settings were reset",
+      "the cable and monitor work without flicker on another PC"
+    ],
+    "answer": {
+      "cause": "a refresh rate set too low for the monitor",
+      "action": "Raise the refresh rate in Advanced display settings"
+    },
+    "appliesWhen": "the screen flickers steadily because the image is redrawn too few times a second",
+    "explanation": "The refresh rate is how often the image is redrawn each second. Set too low, or to a rate the monitor does not support, it causes flicker or a flashing screen. Set it to a rate the monitor supports.",
+    "related": [
+      "core1-s-video-cable",
+      "core1-s-video-backlight",
+      "core1-s-video-driver",
+      "core1-s-video-resolution"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-backlight",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the image is very dark even with every adjustment at maximum",
+      "a flashlight held at the screen shows the image faintly",
+      "the screen flickered for weeks before it went dark",
+      "the laptop shows a bright image on an external monitor"
+    ],
+    "answer": {
+      "cause": "a failing backlight",
+      "action": "Replace the backlight or the display panel"
+    },
+    "appliesWhen": "the image is barely visible and no setting makes it bright enough",
+    "explanation": "A flat panel makes its image bright with a backlight. When the backlight (or its inverter) fails, the image is still there but very dim, and flicker often comes first. Replace the failed part.",
+    "related": [
+      "core1-s-video-brightness",
+      "core1-s-video-cable",
+      "core1-s-video-refresh",
+      "core1-s-video-color"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-brightness",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the screen became dark after a child played with the keyboard",
+      "the image is clear but dark",
+      "the screen is equally dark on battery and on AC power",
+      "the dark screen has never flickered"
+    ],
+    "answer": {
+      "cause": "a brightness setting that is turned all the way down",
+      "action": "Raise the brightness with the function keys or the display settings"
+    },
+    "appliesWhen": "the screen is dim only because the brightness control is set low",
+    "explanation": "A dim image is often only a setting. On a laptop, the function keys change brightness; on a monitor, use the OSD. Set brightness first, then contrast.",
+    "related": [
+      "core1-s-video-backlight",
+      "core1-s-video-color",
+      "core1-s-video-scaling",
+      "core1-s-video-refresh"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-color",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "photos look too blue on one monitor only",
+      "the two monitors show the same image in different colors",
+      "the colors changed after a coworker pressed the buttons on that monitor last week",
+      "the blue-tinted monitor's cable shows correct colors on the other monitor"
+    ],
+    "answer": {
+      "cause": "monitor color settings that are out of adjustment",
+      "action": "Calibrate the monitor or reset it to factory settings in its on-screen menu"
+    },
+    "appliesWhen": "the colors are wrong because the monitor's color, brightness, or contrast settings were changed",
+    "explanation": "Wrong colors on one display, with a good cable, usually come from its own settings. Reset the monitor in its OSD, or calibrate it with the Windows Display Color Calibration tool (dccw).",
+    "related": [
+      "core1-s-video-cable",
+      "core1-s-video-burn-in",
+      "core1-s-video-driver",
+      "core1-s-video-resolution"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-audio-output",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the video plays on the meeting room TV but no sound comes from it",
+      "the audio plays quietly from the keyboard area instead of the TV",
+      "the TV stays silent although its volume is up and it is not muted",
+      "one HDMI cable carries the picture to the TV, but no sound reaches it"
+    ],
+    "answer": {
+      "cause": "a sound output setting that points to the built-in speakers instead of the display",
+      "action": "Choose the TV as the output device in Sound settings"
+    },
+    "appliesWhen": "the display can play sound but Windows sends the audio to another device",
+    "explanation": "HDMI and DisplayPort carry audio as well as video, but Windows must use the display as its output device. Pick it in Sound settings and check the volume mixer.",
+    "related": [
+      "core1-s-video-dvi-audio",
+      "core1-s-video-input-source",
+      "core1-s-video-cable",
+      "core1-s-video-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-dvi-audio",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "display-monitor"
+    ],
+    "clues": [
+      "the monitor's built-in speakers stay silent",
+      "the silent monitor is connected with a wide white plug that has thumbscrews",
+      "no sound plays from the monitor although the correct output device is chosen in Sound settings",
+      "the monitor's speakers work when it is connected to a game console"
+    ],
+    "answer": {
+      "cause": "a DVI connection, which carries no audio",
+      "action": "Connect the monitor with an HDMI or DisplayPort cable instead"
+    },
+    "appliesWhen": "the picture works but the cable type cannot carry sound to the display",
+    "explanation": "DVI carries only video, so speakers in a monitor get no sound over it. HDMI and DisplayPort carry both video and audio.",
+    "related": [
+      "core1-s-video-audio-output",
+      "core1-s-video-cable",
+      "core1-s-video-input-source",
+      "core1-s-video-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-projector-heat",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "display-projector"
+    ],
+    "clues": [
+      "the projector turns itself off after about 40 minutes",
+      "it turns on again after it has cooled down",
+      "a temperature warning light flashes just before it goes off",
+      "a layer of dust covers the intake grille of the projector that keeps shutting off"
+    ],
+    "answer": {
+      "cause": "a projector overheating because its air filter is clogged",
+      "action": "Clean or replace the projector's air filter and clear the vents"
+    },
+    "appliesWhen": "the projector shuts down by itself after it has run for a while because hot air cannot leave it",
+    "explanation": "Projectors make a lot of heat and shut themselves off when they overheat. Clean the air filter, keep the vents clear, give the unit room to exhaust, and check the cooling fan.",
+    "related": [
+      "core1-s-video-bulb",
+      "core1-s-video-cable",
+      "core1-s-video-focus",
+      "core1-s-video-keystone"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-video-keystone",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "display-projector"
+    ],
+    "clues": [
+      "the projected image is wider at the top than at the bottom",
+      "the misshapen image comes from a projector on a low table aimed up at the screen",
+      "the laptop's own screen looks normal while the projected image is out of shape",
+      "the text in the misshapen image is sharp in the middle"
+    ],
+    "answer": {
+      "cause": "a projector that is tilted with no keystone correction",
+      "action": "Adjust the keystone correction on the projector"
+    },
+    "appliesWhen": "a projected image is shaped like a trapezoid because the projector is aimed at an angle",
+    "explanation": "A projector aimed up or down at the screen makes a trapezoid-shaped image. Keystone correction in the projector's menu squares the image again.",
+    "related": [
+      "core1-s-video-focus",
+      "core1-s-video-resolution",
+      "core1-s-video-bulb",
+      "core1-s-video-projector-heat"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues"
+  },
+  {
+    "id": "core1-s-video-driver",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.3"
+    ],
+    "topics": [
+      "220-1201/5.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "laptop"
+    ],
+    "clues": [
+      "the display settings offer only a low resolution after an update",
+      "the Device Manager list shows a basic display adapter since the update",
+      "games show odd blocks and lines",
+      "the monitor that now offers only low resolutions works well on another PC"
+    ],
+    "answer": {
+      "cause": "a corrupt or wrong display driver",
+      "action": "Roll back or reinstall the correct display driver"
+    },
+    "appliesWhen": "the image is distorted or stuck at a low resolution because the video driver is wrong or damaged",
+    "explanation": "A failed, wrong, or bad update to the video driver can leave Windows in low-resolution mode or distort the image. Update the driver in Device Manager, or roll it back to the version that worked.",
+    "related": [
+      "core1-s-video-resolution",
+      "core1-s-video-scaling",
+      "core1-s-video-cable",
+      "core1-s-video-refresh"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 25: Troubleshooting Video Issues; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-battery-health",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device lasts only half a morning on a full charge",
+      "the battery health page in settings reports only 68 percent",
+      "the device that runs out of charge so fast is four years old and is charged every night",
+      "the device shuts off at 20 percent while it runs a normal app"
+    ],
+    "answer": {
+      "cause": "a worn battery that has lost most of its capacity",
+      "action": "Replace the battery, or the device if the battery cannot be replaced"
+    },
+    "firstStep": "Check the battery health page in the device settings",
+    "appliesWhen": "the device is old and its battery runs down very fast with normal use",
+    "explanation": "A battery handles only a few hundred charge cycles, so a phone charged daily wears its battery out in three to five years. Low maximum capacity and sudden shutdowns mean the battery must be replaced.",
+    "related": [
+      "core1-s-mob-swollen-battery",
+      "core1-s-mob-charge-cable",
+      "core1-s-mob-dirty-port",
+      "core1-s-mob-overheat-apps"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-swollen-battery",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the screen has lifted away from the frame along one edge",
+      "the back of the case bulges and the device rocks on a flat desk",
+      "the case began to bulge after the device was left on a cheap car charger for weeks",
+      "the case seam has cracked open near the bottom"
+    ],
+    "answer": {
+      "cause": "a swollen lithium-ion battery",
+      "action": "Power the device off, unplug it, and send it for battery replacement or safe recycling"
+    },
+    "appliesWhen": "the case is pushed out of shape because the battery inside has expanded",
+    "explanation": "Overcharging, age, the wrong charger, or a defect can make the cells swell and push the screen and case apart. A swollen battery can catch fire, so stop using and charging the device and have the battery removed and recycled.",
+    "related": [
+      "core1-s-mob-battery-health",
+      "core1-s-mob-broken-screen",
+      "core1-s-mob-overheat-apps",
+      "core1-s-mob-damaged-port"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-broken-screen",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the screen has not worked properly since the device fell face down on a tile floor",
+      "a web of cracks spreads out from one corner",
+      "tiny glass slivers come off when the user swipes",
+      "parts of the picture show black blotches under the cracks"
+    ],
+    "answer": {
+      "cause": "physical impact damage to the display",
+      "action": "Replace the cracked display assembly or the device"
+    },
+    "appliesWhen": "the device was dropped and the front glass and panel are cracked",
+    "explanation": "A drop can crack the cover glass and the panel under it, and broken glass can cut the user. The fix is a new display assembly or a new device; screen protectors and drop-resistant cases help prevent it.",
+    "related": [
+      "core1-s-mob-digitizer",
+      "core1-s-mob-swollen-battery",
+      "core1-s-mob-liquid",
+      "core1-s-mob-touch-calibration"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-charge-cable",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device charges only when the cord is held at a certain angle",
+      "the charging cord is frayed and bent sharply just behind the plug",
+      "one connector end of the charging cord has a brown burn mark",
+      "the device charges normally from a coworker's cord but not from its own"
+    ],
+    "answer": {
+      "cause": "a damaged charging cable",
+      "action": "Replace the charging cable with a good one"
+    },
+    "firstStep": "Inspect the cable for cuts, bends, and burn marks",
+    "appliesWhen": "the cord is cut, bent, or burned and the device charges only with other cords",
+    "explanation": "The cable is the first thing to check when a mobile device charges poorly, and it is the most common culprit. Rips, sharp bends, and burn marks mean the cable must be replaced.",
+    "related": [
+      "core1-s-mob-dirty-port",
+      "core1-s-mob-damaged-port",
+      "core1-s-mob-battery-health",
+      "core1-s-mob-swollen-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-dirty-port",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the charging plug no longer clicks all the way in",
+      "the device that charges only now and then is carried loose in a pocket every day",
+      "a flashlight shows gray fluff stuck at the back of the charging opening",
+      "several known good cords charge the device only now and then"
+    ],
+    "answer": {
+      "cause": "lint and debris packed in the charging port",
+      "action": "Clean out the charging port with compressed air and a nonmetal pick"
+    },
+    "firstStep": "Look into the charging port with a flashlight",
+    "appliesWhen": "the connector opening is packed with lint and the plug cannot seat fully",
+    "explanation": "Pocket lint builds up in the charging port until the plug cannot make full contact. Clear it with compressed air and a toothpick or cotton swab, with the device turned off.",
+    "related": [
+      "core1-s-mob-charge-cable",
+      "core1-s-mob-damaged-port",
+      "core1-s-mob-battery-health",
+      "core1-s-mob-liquid"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices"
+  },
+  {
+    "id": "core1-s-mob-damaged-port",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the charging opening is bent out of shape after the device fell on its cord",
+      "no cable charges the device or connects it to a computer",
+      "the charging opening is clean, but its center tab is cracked",
+      "the device charges normally on a wireless pad but not from any cable"
+    ],
+    "answer": {
+      "cause": "a physically damaged charging port",
+      "action": "Have the port repaired or replace the device"
+    },
+    "appliesWhen": "the connector itself is bent or broken and no cable works in it",
+    "explanation": "A port that is visibly bent or broken cannot be fixed by cleaning or a new cable. The only remedy is to replace the port, which on many phones means replacing the device.",
+    "related": [
+      "core1-s-mob-dirty-port",
+      "core1-s-mob-charge-cable",
+      "core1-s-mob-battery-health",
+      "core1-s-mob-liquid"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-airplane",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "all Wi-Fi, cellular data, and Bluetooth links stopped at the same moment",
+      "the device has had no connections since the user got off a flight this morning",
+      "the earbuds and the car audio both fail to connect",
+      "the signal bars are gone even next to the office access point"
+    ],
+    "answer": {
+      "cause": "airplane mode left turned on",
+      "action": "Turn off airplane mode in the quick settings"
+    },
+    "appliesWhen": "every radio on the device is off at once because of one setting",
+    "explanation": "Airplane mode turns off all the radios at once, so Wi-Fi, cellular, and Bluetooth fail together. Check that it is off before you troubleshoot each connection.",
+    "related": [
+      "core1-s-mob-wifi-range",
+      "core1-s-mob-wifi-profile",
+      "core1-s-mob-malware",
+      "core1-s-mob-liquid"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-wifi-range",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device keeps dropping the Wi-Fi connection at the far end of the building",
+      "the dropped connection is strong again in the room next to the access point",
+      "the connection drops at the user's desk, which has two cinder-block walls between it and the access point",
+      "other devices at the same desk drop the Wi-Fi too"
+    ],
+    "answer": {
+      "cause": "a weak Wi-Fi signal from distance and walls",
+      "action": "Move closer to the access point or add an access point near the user"
+    },
+    "appliesWhen": "the device is far from the access point or behind thick walls",
+    "explanation": "Poor or intermittent connectivity on mobile devices usually comes from distance, and steel or cinder-block walls shorten the range a lot. Moving closer or adding an access point fixes it.",
+    "related": [
+      "core1-s-mob-airplane",
+      "core1-s-mob-wifi-profile",
+      "core1-s-mob-degraded",
+      "core1-s-mob-malware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-wifi-profile",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device has not joined the office Wi-Fi since the wireless password changed over the weekend",
+      "the device shows the office network but keeps saying it cannot join",
+      "cellular data and Bluetooth work normally, but the office Wi-Fi will not connect",
+      "a new laptop joins the same network without trouble while the device cannot"
+    ],
+    "answer": {
+      "cause": "a saved Wi-Fi profile with an old passphrase",
+      "action": "Forget the network and join it again with the new passphrase"
+    },
+    "appliesWhen": "the network's password changed and the device still tries the old one",
+    "explanation": "A device keeps the passphrase it saved when it first joined a network. After the passphrase changes, forgetting the network and joining it again stores the new one.",
+    "related": [
+      "core1-s-mob-airplane",
+      "core1-s-mob-wifi-range",
+      "core1-s-mob-malware",
+      "core1-s-mob-os-outdated"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-liquid",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device has acted up since it slipped into a sink full of water",
+      "the speaker sounds muffled and the picture flickers",
+      "the device that fell in the water has no IP67 or IP68 rating",
+      "fog shows under the camera lens"
+    ],
+    "answer": {
+      "cause": "liquid damage inside the device",
+      "action": "Power it off at once, remove the case and SIM card, and let it dry fully before testing"
+    },
+    "appliesWhen": "the device was dropped in or soaked with a liquid",
+    "explanation": "Liquid can short the circuits while the device is on. Turn it off, take off the case and remove the cards, dry it, and let it dry for about 48 hours before you power it on.",
+    "related": [
+      "core1-s-mob-swollen-battery",
+      "core1-s-mob-broken-screen",
+      "core1-s-mob-damaged-port",
+      "core1-s-mob-digitizer"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-overheat-apps",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device gets too hot to hold during long navigation runs",
+      "the device overheats where it sits on the dashboard in direct sunlight inside a thick rubber case",
+      "the battery drains fast while the map app runs",
+      "the device warns that charging is paused until it cools"
+    ],
+    "answer": {
+      "cause": "heavy app use in a hot spot with poor airflow",
+      "action": "Close the heavy apps, use a case with better airflow, and keep the device out of direct sunlight"
+    },
+    "appliesWhen": "a demanding app runs for a long time while the device sits in heat or in a case that traps heat",
+    "explanation": "GPS, games, and streaming apps work the processor and battery hard, and direct sun and a tight case trap the heat. Removing the heat sources and closing the apps lets the device cool; if it still overheats, test the battery.",
+    "related": [
+      "core1-s-mob-battery-health",
+      "core1-s-mob-swollen-battery",
+      "core1-s-mob-degraded",
+      "core1-s-mob-malware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-digitizer",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "taps in the lower third of the display do nothing",
+      "the display ignores taps there even though the picture looks perfect and has no cracks",
+      "the dead touch area stays after a restart",
+      "the stylus also fails in the same area"
+    ],
+    "answer": {
+      "cause": "a failed digitizer",
+      "action": "Replace the digitizer or the display unit that contains it"
+    },
+    "firstStep": "Restart the device to rule out a frozen app",
+    "appliesWhen": "the picture is fine but the device does not register touches in some or all areas",
+    "explanation": "The digitizer is the touch layer on or in the display. When touch fails in an area after a restart and the picture is fine, the digitizer has failed and must be replaced.",
+    "related": [
+      "core1-s-mob-touch-calibration",
+      "core1-s-mob-broken-screen",
+      "core1-s-mob-stylus-battery",
+      "core1-s-mob-degraded"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-touch-calibration",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "laptop",
+      "tablet"
+    ],
+    "clues": [
+      "each tap lands about a centimeter to the left of the finger",
+      "the tap offset is the same everywhere on the display",
+      "taps have landed off target since the display was replaced",
+      "a mouse points accurately while touch taps miss"
+    ],
+    "answer": {
+      "cause": "a touchscreen that is out of calibration",
+      "action": "Calibrate the touchscreen in Tablet PC Settings"
+    },
+    "appliesWhen": "touches register in every area but land at an offset from the finger",
+    "explanation": "When every touch is shifted by the same amount, the touch input no longer lines up with the picture. In Windows, Control Panel > Tablet PC Settings > Calibrate lines them up again.",
+    "related": [
+      "core1-s-mob-digitizer",
+      "core1-s-mob-cursor-drift",
+      "core1-s-mob-stylus-battery",
+      "core1-s-mob-broken-screen"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-cursor-drift",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the pointer creeps slowly toward one side when no one touches anything",
+      "the laptop with the drifting pointer has a small red nub between the G and H keys",
+      "the creep starts after the user steers with that nub",
+      "an external mouse stays still when the user lets go of it, but the built-in pointer keeps creeping"
+    ],
+    "answer": {
+      "cause": "a point stick that does not re-center",
+      "action": "Move the point stick back and forth to re-center it, then calibrate or disable it"
+    },
+    "appliesWhen": "the pointer slowly moves by itself after the built-in stick is used",
+    "explanation": "Cursor drift usually comes from a point stick that does not return to center after use. Moving it back and forth, calibrating it in Mouse properties, or rebooting fixes it; if not, disable or replace it.",
+    "related": [
+      "core1-s-mob-touch-calibration",
+      "core1-s-mob-digitizer",
+      "core1-s-mob-stylus-battery",
+      "core1-s-mob-malware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-stylus-battery",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "tablet"
+    ],
+    "clues": [
+      "the active pen draws nothing on the tablet",
+      "finger touch works everywhere on the display, but the pen does not",
+      "the small light on the pen does not come on",
+      "the pen that draws nothing has not been charged since it was issued"
+    ],
+    "answer": {
+      "cause": "a dead battery in the active stylus",
+      "action": "Charge or replace the stylus battery"
+    },
+    "appliesWhen": "a powered pen does nothing while finger touch works",
+    "explanation": "A powered stylus needs its own battery, so check the battery first when only the pen fails. After that, check the tip, the pairing, and any screen protector.",
+    "related": [
+      "core1-s-mob-digitizer",
+      "core1-s-mob-touch-calibration",
+      "core1-s-mob-cursor-drift",
+      "core1-s-mob-broken-screen"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-malware",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "pop-up ads appear even on the home screen",
+      "data use has tripled this month",
+      "the ads started after the user installed a game from a website instead of the store",
+      "the battery drains much faster than last week"
+    ],
+    "answer": {
+      "cause": "a malicious app installed from outside the official store",
+      "action": "Remove the app, run a mobile antimalware scan, and update the operating system"
+    },
+    "appliesWhen": "an app from an untrusted source shows ads and uses data and battery in the background",
+    "explanation": "Malicious apps are the most common way that mobile devices get malware, and apps from outside the official stores are not vetted. Remove the app, scan the device, update the OS, and install apps only from official stores.",
+    "related": [
+      "core1-s-mob-degraded",
+      "core1-s-mob-overheat-apps",
+      "core1-s-mob-no-storage",
+      "core1-s-mob-airplane"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-no-storage",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "every new app download stops with an error",
+      "the device that cannot install apps holds thousands of photos and videos",
+      "the storage page shows only 200 MB free",
+      "updates for the installed apps also fail"
+    ],
+    "answer": {
+      "cause": "full device storage",
+      "action": "Delete unused apps, large files, and cached data to free space"
+    },
+    "firstStep": "Check the free space on the storage settings page",
+    "appliesWhen": "the device has almost no free space left for new apps",
+    "explanation": "An app cannot install without enough free storage. Deleting unused apps, moving photos and videos off the device, and clearing caches frees the space.",
+    "related": [
+      "core1-s-mob-os-outdated",
+      "core1-s-mob-degraded",
+      "core1-s-mob-malware",
+      "core1-s-mob-wifi-profile"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-os-outdated",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "the store says the app is not compatible with this device",
+      "the user of the device that cannot install the app has postponed every system update for over a year",
+      "the app will not install even though the device has 40 GB free",
+      "the same app installs on a coworker's device of the same model"
+    ],
+    "answer": {
+      "cause": "an operating system version that is too old for the app",
+      "action": "Update the operating system and try the install again"
+    },
+    "appliesWhen": "the app needs a newer OS version than the one installed",
+    "explanation": "Many apps require a minimum OS version. A device that skips system updates cannot install them, even with plenty of space.",
+    "related": [
+      "core1-s-mob-no-storage",
+      "core1-s-mob-malware",
+      "core1-s-mob-degraded",
+      "core1-s-mob-wifi-profile"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-mob-degraded",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.4"
+    ],
+    "topics": [
+      "220-1201/5.4.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "retail",
+      "field"
+    ],
+    "devices": [
+      "smartphone",
+      "tablet"
+    ],
+    "clues": [
+      "apps open slowly and menus lag behind each tap",
+      "dozens of apps stay open in the app switcher of the slow device",
+      "the slow device has not been restarted in weeks",
+      "the device lags even though storage has plenty of free space"
+    ],
+    "answer": {
+      "cause": "too many apps running in the background",
+      "action": "Close the background apps and restart the device"
+    },
+    "appliesWhen": "the device is slow because many apps stay open and it is never restarted",
+    "explanation": "Background apps use memory and processor time, and a device that runs for weeks without a restart slows down. Closing them and restarting frees resources; if it is still slow, update the OS and apps.",
+    "related": [
+      "core1-s-mob-no-storage",
+      "core1-s-mob-malware",
+      "core1-s-mob-overheat-apps",
+      "core1-s-mob-battery-health"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 26: Troubleshooting Mobile Devices; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-net-wifi-distance",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail",
+      "warehouse"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the connection drops several times an hour at the far end of the building",
+      "the dropping connection stays stable in the room with the access point",
+      "the Wi-Fi icon shows only one bar at the user's desk",
+      "file copies slow to a crawl before each drop"
+    ],
+    "answer": {
+      "cause": "a weak signal from too much distance to the access point",
+      "action": "Move the client closer to the access point or add another access point"
+    },
+    "firstStep": "Check the signal strength at the user's location",
+    "appliesWhen": "the client is far from the access point and the signal is weak",
+    "explanation": "Distance is the most common cause of intermittent wireless connectivity, because the signal and the data rate fall fast as the client moves away. Moving closer or adding an access point restores a strong signal.",
+    "related": [
+      "core1-s-net-interference",
+      "core1-s-net-wifi-jitter",
+      "core1-s-net-congestion",
+      "core1-s-net-isp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-net-interference",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "the Wi-Fi drops every day while the break room microwave runs",
+      "the laptop drops Wi-Fi even though it is close to the access point",
+      "the drops happen on a network that shares channel 6 with a dozen nearby networks",
+      "the Wi-Fi drops stop late at night"
+    ],
+    "answer": {
+      "cause": "external interference on the 2.4 GHz band",
+      "action": "Move the clients to the 5 GHz band or change the wireless channel"
+    },
+    "appliesWhen": "microwaves, motors, or neighbor networks disturb the signal even near the access point",
+    "explanation": "Microwave ovens, motors, fluorescent lights, and nearby networks on the same channel disturb the 2.4 GHz band. A different channel or the 5 GHz band avoids the noise.",
+    "related": [
+      "core1-s-net-wifi-distance",
+      "core1-s-net-wifi-jitter",
+      "core1-s-net-congestion",
+      "core1-s-net-latency"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-net-congestion",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "the whole office network is slow from 9 to 11 every morning",
+      "the slowdown matches the hours when many users stream video",
+      "the slow office network runs on old 100 Mbps switches",
+      "the network slowdown goes away in the evening"
+    ],
+    "answer": {
+      "cause": "network congestion from too much traffic",
+      "action": "Upgrade the slow switches and limit bandwidth-heavy traffic"
+    },
+    "appliesWhen": "many users load the network at the same time and the equipment is old",
+    "explanation": "Slow speeds on a busy wired network usually mean the network carries more traffic than it can handle. Faster switches, VLANs, and less streaming reduce the load; the network is only as fast as its slowest part.",
+    "related": [
+      "core1-s-net-duplex",
+      "core1-s-net-latency",
+      "core1-s-net-isp",
+      "core1-s-net-wifi-distance"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-duplex",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "clues": [
+      "only one wired PC copies files very slowly",
+      "the slow copies began after someone changed the network adapter's link settings by hand last month",
+      "the switch log shows many late collisions on that PC's port",
+      "the slow PC's patch cable passes a cable tester"
+    ],
+    "answer": {
+      "cause": "a speed or duplex mismatch between the NIC and the switch port",
+      "action": "Set the NIC and the switch port to auto-negotiate speed and duplex"
+    },
+    "appliesWhen": "the adapter and the switch port are set to different link speeds or duplex modes",
+    "explanation": "When one end is forced to a fixed speed or half duplex and the other end is not, the link works but with many errors and low throughput. Letting both ends auto-negotiate fixes it.",
+    "related": [
+      "core1-s-net-congestion",
+      "core1-s-net-flap-cable",
+      "core1-s-net-latency",
+      "core1-s-net-sfp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-apipa",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "the PC cannot reach shares, printers, or the internet",
+      "ipconfig on the PC that cannot reach the network shows an address that starts with 169.254",
+      "several PCs on the same floor lost all network access at the same time this morning",
+      "the link light on the adapter is on, but the PC cannot reach any network resource"
+    ],
+    "answer": {
+      "cause": "a DHCP server that does not answer",
+      "action": "Restore the DHCP server, then run ipconfig /release and ipconfig /renew"
+    },
+    "firstStep": "Run ipconfig /all to check the IP address",
+    "appliesWhen": "the clients give themselves 169.254 addresses because no server hands out leases",
+    "explanation": "A Windows client that gets no answer from a DHCP server assigns itself an APIPA address in 169.254.0.0/16 and can reach only other APIPA hosts. Fix the DHCP server, then renew the leases.",
+    "related": [
+      "core1-s-net-dns",
+      "core1-s-net-gateway",
+      "core1-s-net-ip-conflict",
+      "core1-s-net-auth-server"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-dns",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "websites will not open by name",
+      "ping 8.8.8.8 gets replies while websites fail to open",
+      "a share that fails by name opens when the user types the server's IP address",
+      "name lookups have failed since someone typed the IP settings by hand on this PC yesterday"
+    ],
+    "answer": {
+      "cause": "a wrong DNS server address",
+      "action": "Correct the DNS server setting and flush the DNS cache"
+    },
+    "firstStep": "Ping a remote host by IP address and then by name",
+    "appliesWhen": "hosts answer by IP address but names do not resolve",
+    "explanation": "If a host answers by IP address but not by name, name resolution is failing. Check the DNS server in ipconfig /all, correct it, and run ipconfig /flushdns.",
+    "related": [
+      "core1-s-net-gateway",
+      "core1-s-net-apipa",
+      "core1-s-net-ip-conflict",
+      "core1-s-net-isp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-gateway",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "the PC opens local file shares and the local printer but no internet sites",
+      "no internet sites load, even by IP address",
+      "ping to the router's address times out",
+      "other PCs on the same switch browse the internet normally, unlike this PC"
+    ],
+    "answer": {
+      "cause": "a wrong default gateway setting",
+      "action": "Correct the default gateway in the IP settings"
+    },
+    "appliesWhen": "local hosts work but nothing outside the local network answers",
+    "explanation": "A client needs a default gateway to reach anything beyond its own subnet. Local access with no outside access on one PC points to a wrong gateway in its IP settings.",
+    "related": [
+      "core1-s-net-dns",
+      "core1-s-net-apipa",
+      "core1-s-net-ip-conflict",
+      "core1-s-net-isp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-ip-conflict",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "a Windows pop-up warns about a conflict with another device on the network",
+      "the PC loses its connection every few minutes",
+      "the drops began after a coworker typed a fixed IP setting into his new PC last week",
+      "the connection still drops after the PC is restarted and its lease is renewed"
+    ],
+    "answer": {
+      "cause": "a duplicate IP address on the network",
+      "action": "Give the static host an address outside the DHCP scope"
+    },
+    "appliesWhen": "two hosts use the same IP address",
+    "explanation": "Every host needs a unique IP address. A static address typed inside the DHCP scope gets handed out again by the server, so move the static host outside the scope or reserve its address.",
+    "related": [
+      "core1-s-net-apipa",
+      "core1-s-net-dns",
+      "core1-s-net-gateway",
+      "core1-s-net-flap-cable"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-voip-qos",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "retail"
+    ],
+    "clues": [
+      "desk phone calls sound robotic and words drop out",
+      "the call problem is worst while the nightly backup copies files to the cloud",
+      "the choppy calls cross a router that still runs its factory settings",
+      "the calls break up although the phones are wired and data transfers finish normally"
+    ],
+    "answer": {
+      "cause": "voice traffic competing with bulk data and no traffic priority",
+      "action": "Configure QoS on the router to give voice traffic priority"
+    },
+    "appliesWhen": "voice calls break up only while large transfers share the link",
+    "explanation": "VoIP needs a steady flow of small packets, and bulk transfers delay them. Quality of service lets the router send voice packets first, so calls stay clear when the link is busy.",
+    "related": [
+      "core1-s-net-wifi-jitter",
+      "core1-s-net-latency",
+      "core1-s-net-congestion",
+      "core1-s-net-isp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-wifi-jitter",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "enterprise"
+    ],
+    "devices": [
+      "laptop"
+    ],
+    "clues": [
+      "video calls freeze for a second and then catch up",
+      "ping times to the gateway swing between 5 and 300 ms",
+      "the frozen calls run over a crowded wireless network",
+      "the same call is smooth from a desktop on an Ethernet cable"
+    ],
+    "answer": {
+      "cause": "variable delay on a busy wireless link",
+      "action": "Connect the laptop with an Ethernet cable for calls"
+    },
+    "appliesWhen": "delay changes from moment to moment on a wireless connection",
+    "explanation": "Jitter is delay that changes from packet to packet, and it is more common on wireless links. A wired connection gives a steadier path; moving closer or using QoS also helps.",
+    "related": [
+      "core1-s-net-voip-qos",
+      "core1-s-net-wifi-distance",
+      "core1-s-net-interference",
+      "core1-s-net-latency"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting"
+  },
+  {
+    "id": "core1-s-net-flap-cable",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "clues": [
+      "the PC's link light on the switch goes off and on over and over",
+      "a continuous ping shows bursts of lost replies",
+      "the cord of the PC that keeps losing its link is flattened where a chair rolls over it",
+      "only this one PC keeps losing its network link"
+    ],
+    "answer": {
+      "cause": "a damaged patch cable",
+      "action": "Replace the patch cable and test the new one with a cable tester"
+    },
+    "firstStep": "Check the port's link light on the switch",
+    "appliesWhen": "the link goes up and down because the cord to the PC is crushed or worn",
+    "explanation": "Port flapping is a link that keeps going up and down. A crushed patch cable is a common cause; replace and test it, then check the duplex and power-saving settings if it continues.",
+    "related": [
+      "core1-s-net-sfp",
+      "core1-s-net-duplex",
+      "core1-s-net-congestion",
+      "core1-s-net-ip-conflict"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-sfp",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "school",
+      "office"
+    ],
+    "clues": [
+      "the workstation loses access to the servers in bursts several times a minute",
+      "the fiber uplink between the two switches goes down and up many times a minute",
+      "the switch error log shows the uplink problem on only one end",
+      "the workstation's own patch cord tests fine, but the drops to the servers continue"
+    ],
+    "answer": {
+      "cause": "a faulty SFP transceiver",
+      "action": "Reseat the SFP module, then replace it with a known good one if the link still flaps"
+    },
+    "appliesWhen": "a fiber link between switches flaps and its pluggable module is bad",
+    "explanation": "SFPs are small hot-swappable transceivers used on gigabit and faster links. When an uplink flaps, reseat the SFPs and swap in known good ones.",
+    "related": [
+      "core1-s-net-flap-cable",
+      "core1-s-net-duplex",
+      "core1-s-net-congestion",
+      "core1-s-net-isp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-latency",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "every web page and remote session lags on one PC",
+      "netstat -a on the lagging PC lists dozens of established connections",
+      "a file-sharing program runs in the background of the lagging PC",
+      "other PCs on the same network respond quickly while this one lags"
+    ],
+    "answer": {
+      "cause": "too many open connections from background programs",
+      "action": "Close the unneeded programs and limit the data streams"
+    },
+    "appliesWhen": "one host has many open connections that use up its bandwidth",
+    "explanation": "Many open connections, such as torrent software, use the bandwidth and raise latency on that host. Closing the programs fixes it, and dozens of unknown connections may also be a sign of malware.",
+    "related": [
+      "core1-s-net-congestion",
+      "core1-s-net-voip-qos",
+      "core1-s-net-wifi-jitter",
+      "core1-s-net-isp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-isp",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail",
+      "clinic"
+    ],
+    "clues": [
+      "every device loses the internet for a few minutes several times a day",
+      "local file shares and printers keep working during the internet drops",
+      "the modem's online light blinks during each drop",
+      "the router and switch show no errors during the internet drops"
+    ],
+    "answer": {
+      "cause": "a problem on the internet provider's line",
+      "action": "Power cycle the modem and router, and contact the ISP if the drops continue"
+    },
+    "appliesWhen": "every user loses only the internet while the local network keeps working",
+    "explanation": "When all devices lose only internet access and the LAN keeps working, the fault is at the modem or beyond it. Restart the modem and router, then contact the ISP about outages or line noise.",
+    "related": [
+      "core1-s-net-gateway",
+      "core1-s-net-dns",
+      "core1-s-net-congestion",
+      "core1-s-net-wifi-distance"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-auth-caps",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "clues": [
+      "the keyboard's A indicator light is lit while the password is rejected",
+      "the rejected password shows every letter as a capital when the user reveals it",
+      "the sign-in screen rejects the password but shows no lockout message"
+    ],
+    "answer": {
+      "cause": "the Caps Lock key left on",
+      "action": "Turn off Caps Lock and type the password again"
+    },
+    "appliesWhen": "the right password fails only because the letters are typed in the wrong case",
+    "explanation": "The most common cause of an authentication failure is a wrongly typed password. Passwords are case-sensitive, so check the Caps Lock key before you look at the account or the server.",
+    "related": [
+      "core1-s-net-auth-lockout",
+      "core1-s-net-auth-time",
+      "core1-s-net-auth-server"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-auth-lockout",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "clues": [
+      "sign-in has failed since the user mistyped the password several times this morning",
+      "the sign-in now fails even with the right password",
+      "a coworker signs in on the same PC while the user is refused",
+      "the message says the user cannot sign in at this time"
+    ],
+    "answer": {
+      "cause": "a locked user account",
+      "action": "Unlock the account in Active Directory and reset the password if needed"
+    },
+    "appliesWhen": "repeated wrong passwords have locked the account",
+    "explanation": "Too many failed sign-ins lock the account, and then even the right password fails. An administrator unlocks it in Active Directory, and resets the password if the user has forgotten it.",
+    "related": [
+      "core1-s-net-auth-caps",
+      "core1-s-net-auth-time",
+      "core1-s-net-auth-server"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-auth-time",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "clues": [
+      "the PC where the domain sign-in fails has a clock 25 minutes behind",
+      "domain sign-in fails on a PC that was off the network for a month",
+      "the user's account signs in fine on other PCs but not on this one",
+      "the error says the domain cannot verify the sign-in"
+    ],
+    "answer": {
+      "cause": "a client clock out of sync with the domain controller",
+      "action": "Sync the PC's clock with the network time server"
+    },
+    "appliesWhen": "the client's clock differs a lot from the server's time",
+    "explanation": "Domain sign-in needs the client and server clocks to be close. Syncing the client with the NTP server fixes this type of authentication failure.",
+    "related": [
+      "core1-s-net-auth-caps",
+      "core1-s-net-auth-lockout",
+      "core1-s-net-auth-server"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-net-auth-server",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "topics": [
+      "220-1201/5.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "school"
+    ],
+    "clues": [
+      "no user in the branch office can sign in to the domain",
+      "only laptops that signed in before still open, with cached credentials",
+      "ping to the branch domain controller times out",
+      "users at the main office sign in normally while the branch cannot"
+    ],
+    "answer": {
+      "cause": "an unreachable authentication server",
+      "action": "Restore the domain controller or the link to it"
+    },
+    "appliesWhen": "the server that checks credentials is down or cannot be reached",
+    "explanation": "If many users fail to authenticate at once, check that the authentication server, such as a domain controller or RADIUS server, is online and reachable. Escalate the problem if the server is outside your scope.",
+    "related": [
+      "core1-s-net-auth-caps",
+      "core1-s-net-auth-lockout",
+      "core1-s-net-auth-time",
+      "core1-s-net-apipa"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 27: Troubleshooting Wired and Wireless Network Problems; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 12: Core Hardware and Network Troubleshooting",
+    "devices": []
+  },
+  {
+    "id": "core1-s-print-white-lines",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "thin white streaks run from the top to the bottom of every page",
+      "the streaks are always in the same place",
+      "the printer with the white streaks is old and rarely serviced",
+      "the streaks appear although the toner level reads 70 percent"
+    ],
+    "answer": {
+      "cause": "toner and debris stuck on the transfer corona wire",
+      "action": "Clean the corona wires with the corona brush"
+    },
+    "appliesWhen": "white streaks run down every page of a laser printer",
+    "explanation": "Foreign matter on the transfer corona wire keeps toner from reaching the paper at those spots, which leaves white streaks. Clean the corona wires with the small brush that comes with many laser printers.",
+    "related": [
+      "core1-s-print-black-lines",
+      "core1-s-print-ghosting",
+      "core1-s-print-low-toner",
+      "core1-s-print-speckle"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-black-lines",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "a dark line runs down every page in the same place",
+      "the line stays after the paper path is cleaned",
+      "the printer with the dark line uses a cheap recycled toner cartridge",
+      "the line appeared after the cartridge was dropped"
+    ],
+    "answer": {
+      "cause": "a scratched imaging drum",
+      "action": "Replace the toner cartridge or the imaging drum"
+    },
+    "appliesWhen": "a dark line runs down every page because the drum surface is scratched",
+    "explanation": "A scratch on the drum does not hold its charge, so toner sticks to it and prints a line down the page. Replace the cartridge, or the drum if the printer has a separate one.",
+    "related": [
+      "core1-s-print-white-lines",
+      "core1-s-print-ghosting",
+      "core1-s-print-speckle",
+      "core1-s-print-formatter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-inkjet-nozzle",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.1"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "clues": [
+      "thin blank lines run through every line of text",
+      "the gaps in the text began after the printer sat unused for a month",
+      "the nozzle check page shows gaps in the black pattern",
+      "the blank lines appear although the ink levels read more than half full"
+    ],
+    "answer": {
+      "cause": "dried ink clogging the printhead nozzles",
+      "action": "Run the printhead cleaning utility, and replace the cartridge if lines remain"
+    },
+    "appliesWhen": "an inkjet sat unused and gaps run through the printed text",
+    "explanation": "Ink dries in the tiny nozzles if an inkjet is not used every week or two, and each blocked nozzle leaves a blank line. The cleaning utility clears them; if not, a new cartridge with a new printhead does.",
+    "related": [
+      "core1-s-print-stepper",
+      "core1-s-print-speckle",
+      "core1-s-print-driver",
+      "core1-s-print-impact-ribbon"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-impact-pin",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.1"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "clues": [
+      "a thin white line runs through the middle of every line of characters",
+      "the line is at the same height in each character",
+      "a new ribbon did not remove the white line",
+      "the printer with the gap in its characters prints multipart invoices all day"
+    ],
+    "answer": {
+      "cause": "a broken pin in the printhead",
+      "action": "Replace the printhead"
+    },
+    "appliesWhen": "an impact printer leaves the same gap in every character after a new ribbon",
+    "explanation": "A dot-matrix printhead forms each character with a row of pins. If one pin breaks or sticks, the same dot is missing in every character, so the printhead must be replaced.",
+    "related": [
+      "core1-s-print-impact-ribbon",
+      "core1-s-print-impact-platen",
+      "core1-s-print-stepper"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-driver",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-mfd"
+    ],
+    "clues": [
+      "a one-page letter comes out as many pages of strange symbols",
+      "only jobs sent from one PC print badly",
+      "a configuration page printed from the printer panel looks fine while jobs from one PC are garbled",
+      "the PC that sends garbled jobs was set up with a driver for a different model"
+    ],
+    "answer": {
+      "cause": "a wrong or corrupt printer driver",
+      "action": "Install the correct driver for the printer model and operating system"
+    },
+    "firstStep": "Print a configuration page from the printer's own panel",
+    "appliesWhen": "garbled output comes from one PC while the printer's own test page is clean",
+    "explanation": "The driver turns the job into the printer's language, such as PCL or PostScript. A wrong or corrupt driver sends data the printer cannot read, so it prints garbage; install the right driver and language setting.",
+    "related": [
+      "core1-s-print-formatter",
+      "core1-s-print-spooler",
+      "core1-s-print-error-job",
+      "core1-s-print-ip-changed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-formatter",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "pages show wavy lines and random patterns of dots",
+      "jobs from every PC come out scrambled the same way",
+      "the configuration page printed from the panel is also scrambled",
+      "a new driver did not fix the scrambled pages"
+    ],
+    "answer": {
+      "cause": "a failed formatter board",
+      "action": "Replace the formatter board"
+    },
+    "appliesWhen": "every job and the printer's own test page come out scrambled",
+    "explanation": "The formatter board turns the data the printer receives into commands for its parts. When even the printer's own page is scrambled, the fault is inside the printer, and the formatter board must be replaced.",
+    "related": [
+      "core1-s-print-driver",
+      "core1-s-print-black-lines",
+      "core1-s-print-spooler",
+      "core1-s-print-ghosting"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-exit-rollers",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "paper jams just as each page reaches the output tray",
+      "pages show creases at the trailing edge",
+      "the receptionist has to pull each page out while it is still printing to avoid a jam",
+      "the rear door shows the stuck sheet at the very end of the path"
+    ],
+    "answer": {
+      "cause": "worn exit rollers",
+      "action": "Replace all the exit rollers"
+    },
+    "appliesWhen": "pages jam right at the end of the paper path",
+    "explanation": "Exit rollers guide the paper out to the tray, and pulling pages out wears them. A jam just before the output tray points to them; replace them all at once because one worn roller is enough to jam.",
+    "related": [
+      "core1-s-print-static-strip",
+      "core1-s-print-pickup-roller",
+      "core1-s-print-separation-pad",
+      "core1-s-print-gear"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-static-strip",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "pages jam right after they pass the transfer area",
+      "the stuck sheets cling to the toner cartridge",
+      "a thin part just past the transfer roller is bent and loose",
+      "the jams happen even though the paper is dry and of the right weight"
+    ],
+    "answer": {
+      "cause": "a damaged static-charge eliminator strip",
+      "action": "Replace the static-charge eliminator strip"
+    },
+    "appliesWhen": "pages stick to the cartridge and jam just after the transfer step",
+    "explanation": "The static-charge eliminator strip drains the transfer charge from the paper. If it is damaged, the charge stays on the page and the page sticks to the cartridge and jams.",
+    "related": [
+      "core1-s-print-exit-rollers",
+      "core1-s-print-pickup-roller",
+      "core1-s-print-damp-paper",
+      "core1-s-print-separation-pad"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-low-toner",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "the print gets lighter on every page",
+      "the whole page is evenly pale",
+      "the printer panel shows a supply warning",
+      "shaking the cartridge makes the next few pages darker"
+    ],
+    "answer": {
+      "cause": "a toner cartridge that is almost empty",
+      "action": "Replace the toner cartridge with a manufacturer-approved one"
+    },
+    "appliesWhen": "the whole page is evenly light and gets lighter as more pages print",
+    "explanation": "Faded prints on a laser printer most often mean low toner. Shaking the cartridge spreads the toner that is left for a short time, but the cartridge must be replaced.",
+    "related": [
+      "core1-s-print-white-lines",
+      "core1-s-print-speckle",
+      "core1-s-print-ghosting",
+      "core1-s-print-formatter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-impact-ribbon",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "clues": [
+      "characters on the receipts look pale and gray",
+      "the print has slowly faded over the last few weeks",
+      "the faded characters are complete with no missing dots",
+      "the fading printer has printed thousands of forms since it was last serviced"
+    ],
+    "answer": {
+      "cause": "a worn-out ink ribbon",
+      "action": "Replace the ribbon"
+    },
+    "appliesWhen": "an impact printer's characters fade evenly over time",
+    "explanation": "An impact printer strikes the ribbon to put ink on the page, and the ribbon runs dry with use. Faded but complete characters mean the ribbon must be replaced.",
+    "related": [
+      "core1-s-print-impact-pin",
+      "core1-s-print-impact-platen",
+      "core1-s-print-stepper"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-pickup-roller",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet"
+    ],
+    "clues": [
+      "the printer reports no paper picked up although the tray is full",
+      "sometimes the paper moves only partway in",
+      "the rubber rollers in the printer that will not feed look shiny and smooth",
+      "the printer that fails to pick up paper has printed over 200,000 pages"
+    ],
+    "answer": {
+      "cause": "worn pickup rollers",
+      "action": "Replace the pickup rollers or install the maintenance kit"
+    },
+    "appliesWhen": "the printer fails to pull paper from a full tray because the rollers are smooth",
+    "explanation": "Pickup rollers use friction to pull each sheet in, and they wear smooth with use. Replace them, or install the maintenance kit that includes rollers, pads, and the fuser.",
+    "related": [
+      "core1-s-print-separation-pad",
+      "core1-s-print-gear",
+      "core1-s-print-tray-seated",
+      "core1-s-print-exit-rollers"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-separation-pad",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet"
+    ],
+    "clues": [
+      "two or three sheets go through together on many jobs",
+      "the multiple feeds happen even with fresh paper from a dry, sealed pack",
+      "the small cork patch under the pickup roller is glazed and slick",
+      "the printer that feeds several sheets at once sits in a dry, air-conditioned room"
+    ],
+    "answer": {
+      "cause": "a worn separation pad",
+      "action": "Replace the separation pad"
+    },
+    "appliesWhen": "the printer pulls several sheets at once even with good dry paper",
+    "explanation": "The separation pad holds back the sheets below the top one so the roller picks one at a time. A worn pad lets several sheets through together.",
+    "related": [
+      "core1-s-print-damp-paper",
+      "core1-s-print-pickup-roller",
+      "core1-s-print-exit-rollers",
+      "core1-s-print-static-strip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-damp-paper",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.6"
+    ],
+    "settings": [
+      "warehouse",
+      "office",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "the printer pulls several sheets at once almost every time",
+      "the multiple feeds get worse in summer when the room is very humid",
+      "the sheets that stick together come from opened reams on an open shelf next to the printer",
+      "a fresh ream from a sealed pack feeds one sheet at a time"
+    ],
+    "answer": {
+      "cause": "damp paper that sticks together",
+      "action": "Keep the paper wrapped until use and lower the humidity in the room"
+    },
+    "appliesWhen": "the paper has absorbed moisture from humid air",
+    "explanation": "Paper that is not dry sticks together and feeds in groups. Keep it wrapped until it is needed and keep the humidity around 50 percent or lower.",
+    "related": [
+      "core1-s-print-separation-pad",
+      "core1-s-print-pickup-roller",
+      "core1-s-print-static-strip",
+      "core1-s-print-exit-rollers"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-impact-platen",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.6"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "clues": [
+      "the five-part shipping forms bunch up and jam",
+      "single sheets print without trouble while the multipart forms jam",
+      "the forms tear at the tractor holes",
+      "on the printer that jams forms, the thickness lever beside the roller sits at its lowest mark"
+    ],
+    "answer": {
+      "cause": "a platen gap set for paper that is too thin",
+      "action": "Adjust the platen gap for the thickness of the forms"
+    },
+    "appliesWhen": "thick multipart forms jam while single sheets feed fine",
+    "explanation": "Impact printers print multipart forms, and the platen gap must match the paper thickness. A gap set for thin paper makes thick forms bind and jam.",
+    "related": [
+      "core1-s-print-impact-ribbon",
+      "core1-s-print-impact-pin",
+      "core1-s-print-stepper"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-error-job",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet",
+      "print-mfd"
+    ],
+    "clues": [
+      "nothing prints and twelve jobs wait behind the first one in the queue",
+      "the oldest job shows the status Error",
+      "the stuck first job was a huge PDF that the user cancelled on the printer panel",
+      "the jobs behind the first one have shown the status Waiting all morning"
+    ],
+    "answer": {
+      "cause": "one failed job that blocks the jobs behind it",
+      "action": "Cancel the job that shows the error"
+    },
+    "firstStep": "Open the print queue and check the status of each job",
+    "appliesWhen": "the first job in the queue has an error and the rest wait behind it",
+    "explanation": "Jobs print in order, so a job in an error state blocks every job behind it. Cancel or restart that job and the next one moves to the top.",
+    "related": [
+      "core1-s-print-offline",
+      "core1-s-print-spooler",
+      "core1-s-print-ip-changed",
+      "core1-s-print-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-offline",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet",
+      "print-mfd"
+    ],
+    "clues": [
+      "this PC has not printed since someone clicked an option in the queue's Printer menu yesterday",
+      "the printer icon on this PC is grayed out",
+      "other PCs print to the same printer normally, but this PC cannot",
+      "the jobs from this PC wait in the queue, but none shows an error"
+    ],
+    "answer": {
+      "cause": "the printer set to work offline on that PC",
+      "action": "Clear the Use Printer Offline option and resume printing"
+    },
+    "appliesWhen": "jobs wait only on one PC because its queue is set offline or paused",
+    "explanation": "When the printer is set offline or paused on one PC, its jobs wait in the queue while other PCs print. Clear the option from the queue's Printer menu and the jobs print.",
+    "related": [
+      "core1-s-print-error-job",
+      "core1-s-print-spooler",
+      "core1-s-print-ip-changed",
+      "core1-s-print-wireless"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "core1-s-print-speckle",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet"
+    ],
+    "clues": [
+      "random dots appear all over the printed pages",
+      "the dots are in different places on each page",
+      "the speckled pages come from a printer that handles labels and envelopes every day",
+      "the specks get worse after each batch of envelopes"
+    ],
+    "answer": {
+      "cause": "paper dust and glue residue inside the printer",
+      "action": "Clean the inside of the printer with compressed air or a toner vacuum"
+    },
+    "appliesWhen": "random dots appear because dirt has built up inside the printer",
+    "explanation": "Paper dust and residue from envelopes, labels, and staples build up inside the printer and leave random specks. Cleaning it out clears them; use a toner vacuum where loose toner is present.",
+    "related": [
+      "core1-s-print-ghosting",
+      "core1-s-print-low-toner",
+      "core1-s-print-white-lines",
+      "core1-s-print-black-lines"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-ghosting",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "a faint copy of the previous page shows on each new page",
+      "the faint image is offset down the sheet",
+      "the faint copies started after a box of pages printed at once",
+      "the main image is sharp and dark under the faint copy"
+    ],
+    "answer": {
+      "cause": "a broken cleaning blade or failing erasure lamps",
+      "action": "Replace the toner cartridge, then the erasure lamps if the images remain"
+    },
+    "appliesWhen": "faint images of earlier pages repeat on new pages",
+    "explanation": "Ghosting happens when old toner or old charges stay on the drum. A broken cleaning blade is in the toner cartridge, which is the cheaper part, so replace the cartridge first and the erasure lamps if that does not help.",
+    "related": [
+      "core1-s-print-black-lines",
+      "core1-s-print-speckle",
+      "core1-s-print-white-lines",
+      "core1-s-print-formatter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-stepper",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.10"
+    ],
+    "settings": [
+      "office",
+      "warehouse",
+      "retail",
+      "home-office"
+    ],
+    "devices": [
+      "print-inkjet",
+      "print-impact"
+    ],
+    "clues": [
+      "the printer makes a grinding noise when the carriage starts to move",
+      "lines of print are spaced unevenly down the page",
+      "the grinding started after someone pushed the carriage by hand while the printer was on",
+      "the carriage sometimes stops partway across"
+    ],
+    "answer": {
+      "cause": "a damaged stepper motor",
+      "action": "Replace the stepper motor, or the printer if the repair costs too much"
+    },
+    "appliesWhen": "a moving part grinds and the print spacing goes wrong because a motor is damaged",
+    "explanation": "Stepper motors move the printhead and the paper. Forcing them by hand while the power is on damages them, so they lose precision, space the print unevenly, and grind; a motor costs about half the price of a new printer.",
+    "related": [
+      "core1-s-print-gear",
+      "core1-s-print-pickup-roller",
+      "core1-s-print-impact-platen",
+      "core1-s-print-inkjet-nozzle"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-gear",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.10"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "a grinding sound comes from the tray area each time a page is picked",
+      "the paper often fails to feed",
+      "with the tray out, a flashlight shows the pickup roller skipping as it turns",
+      "the grinding stops when the printer is idle"
+    ],
+    "answer": {
+      "cause": "a broken pickup drive gear",
+      "action": "Replace the pickup drive gear"
+    },
+    "firstStep": "Print a test page with the tray out and watch the pickup roller",
+    "appliesWhen": "a grinding noise comes with each pick because the gear that drives the roller is missing teeth",
+    "explanation": "A pickup drive gear or clutch with missing teeth makes the roller skip and grind. If the roller turns evenly, the rollers are worn instead; if it skips, replace the gear.",
+    "related": [
+      "core1-s-print-pickup-roller",
+      "core1-s-print-stepper",
+      "core1-s-print-exit-rollers",
+      "core1-s-print-separation-pad"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-staple-jam",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.11"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-mfd"
+    ],
+    "clues": [
+      "stapled jobs stop and the finisher halts with an error",
+      "copies without staples finish normally, but stapled jobs halt",
+      "the stapled jobs have stopped since the staple cartridge was refilled this morning",
+      "a bent staple is visible at the front of the stapler head"
+    ],
+    "answer": {
+      "cause": "a staple jam in the finisher",
+      "action": "Open the finisher and clear the jammed staples"
+    },
+    "appliesWhen": "a full stapler stops stapling and a bent staple sits in the head",
+    "explanation": "A finisher staples, punches, and collates the output. When it stops stapling with a full cartridge, a jam in the stapler head is the usual cause; clear it as the manual shows.",
+    "related": [
+      "core1-s-print-staples-empty",
+      "core1-s-print-punch-full",
+      "core1-s-print-orientation",
+      "core1-s-print-tray-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-staples-empty",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.11"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-mfd"
+    ],
+    "clues": [
+      "copies come out of the finisher without staples",
+      "the copies have no staples although the stapler head is clean and nothing is bent",
+      "the staples stopped after the department printed hundreds of stapled reports this week",
+      "the stapler unit clicks but nothing comes out"
+    ],
+    "answer": {
+      "cause": "an empty staple cartridge",
+      "action": "Load a new staple cartridge"
+    },
+    "appliesWhen": "the finisher runs normally but has used up its staples",
+    "explanation": "A finisher that clicks but does not staple, with no jam inside, has run out of staples. Load a new staple cartridge.",
+    "related": [
+      "core1-s-print-staple-jam",
+      "core1-s-print-punch-full",
+      "core1-s-print-orientation",
+      "core1-s-print-tray-config"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-punch-full",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.11"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-mfd"
+    ],
+    "clues": [
+      "the finisher stops every job that asks for holes",
+      "jobs without holes finish normally while hole-punch jobs stop",
+      "the little bin under the punch unit has not been emptied in months, and hole-punch jobs now stop",
+      "bits of punched paper spill out when the finisher door is opened to clear a stopped hole-punch job"
+    ],
+    "answer": {
+      "cause": "a full hole-punch waste bin",
+      "action": "Empty the hole-punch waste bin"
+    },
+    "appliesWhen": "only jobs that need holes stop and paper bits fill the punch area",
+    "explanation": "The punch unit drops the paper circles into a waste bin. When the bin is full, the finisher stops punching, so empty it and clear any loose bits.",
+    "related": [
+      "core1-s-print-staple-jam",
+      "core1-s-print-staples-empty",
+      "core1-s-print-tray-config",
+      "core1-s-print-orientation"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-orientation",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.12"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet",
+      "print-mfd"
+    ],
+    "clues": [
+      "a wide spreadsheet prints with its right side cut off",
+      "the columns are cut at the same place on every page",
+      "the same file printed without cut-off columns from another PC",
+      "the preview of the cut-off spreadsheet shows a tall page"
+    ],
+    "answer": {
+      "cause": "the page set to portrait instead of landscape",
+      "action": "Set the orientation to landscape in Printing Preferences"
+    },
+    "appliesWhen": "a wide document is cut off on the right side because it prints on a tall page",
+    "explanation": "Portrait pages are taller than wide and landscape pages are wider than tall. A wide sheet printed in portrait loses its right side; change the orientation in Printing Preferences.",
+    "related": [
+      "core1-s-print-paper-size",
+      "core1-s-print-tray-config",
+      "core1-s-print-driver",
+      "core1-s-print-offline"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-paper-size",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.13"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-mfd"
+    ],
+    "clues": [
+      "legal-size documents from Tray 2 lose the bottom few inches",
+      "the cut-off pages began after someone loaded Tray 2 with letter paper last week",
+      "letter-size jobs from Tray 1 print fine while legal jobs from Tray 2 are cut off",
+      "the printer properties still list Tray 2 as legal although its legal jobs come out cut off"
+    ],
+    "answer": {
+      "cause": "a tray set to a different paper size than it holds",
+      "action": "Set the correct paper size for the tray in the printer properties"
+    },
+    "appliesWhen": "the tray's size setting does not match the paper loaded in it",
+    "explanation": "The printer pulls paper from the tray that it thinks holds the right size. If a tray holds letter paper but is set as legal, legal jobs print on letter sheets and lose the bottom.",
+    "related": [
+      "core1-s-print-orientation",
+      "core1-s-print-tray-config",
+      "core1-s-print-tray-seated",
+      "core1-s-print-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-tray-config",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.13"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-mfd"
+    ],
+    "clues": [
+      "users cannot use the new optional tray that was added under the printer",
+      "users cannot select the new tray in the print dialog",
+      "the new tray is missing from the print dialog although the printer panel shows it with paper",
+      "the printer driver lists only Tray 1 and the manual feed, not the new tray"
+    ],
+    "answer": {
+      "cause": "an installable tray that is not enabled in the driver",
+      "action": "Enable the new tray in the driver's device settings"
+    },
+    "appliesWhen": "the printer sees the tray but the PCs do not offer it",
+    "explanation": "An added tray must also be set up in the printer's device settings on each PC or print server. Until then the driver does not offer it, even though the printer sees it.",
+    "related": [
+      "core1-s-print-tray-seated",
+      "core1-s-print-paper-size",
+      "core1-s-print-orientation",
+      "core1-s-print-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-tray-seated",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.13"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-mfd"
+    ],
+    "clues": [
+      "the printer panel reports that Tray 2 is open or missing",
+      "the tray warning appeared after the paper guides were moved for a smaller size",
+      "the tray sticks out a little past the front of the printer",
+      "the warning started after the tray was refilled"
+    ],
+    "answer": {
+      "cause": "a tray that is not pushed fully into place",
+      "action": "Square the paper guides and push the tray in until it clicks"
+    },
+    "firstStep": "Pull the tray out and check how it seats in its slot",
+    "appliesWhen": "the printer does not detect a tray that is crooked or not pushed in",
+    "explanation": "The printer senses a tray only when it sits fully and squarely in its slot. Check that it is seated and aligned and that the guides fit the paper; then check the tray settings and firmware.",
+    "related": [
+      "core1-s-print-tray-config",
+      "core1-s-print-paper-size",
+      "core1-s-print-pickup-roller",
+      "core1-s-print-separation-pad"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "core1-s-print-ip-changed",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.14"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-mfd"
+    ],
+    "clues": [
+      "nobody can print to the network printer after a power outage",
+      "the configuration page shows a different address than last week",
+      "the printer that nobody can reach gets its settings from the network automatically",
+      "the PCs that cannot print have printer ports that point to the old number"
+    ],
+    "answer": {
+      "cause": "a printer address that DHCP changed",
+      "action": "Reserve a fixed IP address for the printer and point the printer ports to it"
+    },
+    "firstStep": "Print a configuration page to see the printer's IP address",
+    "appliesWhen": "the printer's IP address changed and the PCs still send jobs to the old one",
+    "explanation": "PCs send jobs to the printer's IP address, so a new DHCP lease breaks every mapping. Reserve a static address for the printer and update the ports.",
+    "related": [
+      "core1-s-print-wireless",
+      "core1-s-print-offline",
+      "core1-s-print-error-job",
+      "core1-s-print-spooler"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-wireless",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.14"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "print-inkjet",
+      "print-mfd"
+    ],
+    "clues": [
+      "the printer stopped working after the router was replaced",
+      "the printer's panel shows no Wi-Fi bars",
+      "the printer that stopped working on Wi-Fi prints fine over a USB cable",
+      "the laptops now join a network with a new name and passphrase, but they cannot find the printer"
+    ],
+    "answer": {
+      "cause": "a printer still set up for the old wireless network",
+      "action": "Connect the printer to the new wireless network from its control panel"
+    },
+    "appliesWhen": "a wireless printer lost its network because the network name or passphrase changed",
+    "explanation": "A wireless printer joins the network that it was set up for. After a new router with a new name or passphrase, it must be joined to the new network; a USB cable is a way to test it meanwhile.",
+    "related": [
+      "core1-s-print-ip-changed",
+      "core1-s-print-offline",
+      "core1-s-print-spooler",
+      "core1-s-print-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  },
+  {
+    "id": "core1-s-print-spooler",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "5",
+    "objectives": [
+      "220-1201/5.6"
+    ],
+    "topics": [
+      "220-1201/5.6.15"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school",
+      "home-office"
+    ],
+    "devices": [
+      "print-laser",
+      "print-inkjet",
+      "print-mfd"
+    ],
+    "clues": [
+      "jobs stay in the queue and none prints",
+      "choosing Cancel on the stuck jobs does nothing",
+      "jobs to every printer on this PC are stuck",
+      "the printer prints its own test page normally while jobs from the PC stay stuck"
+    ],
+    "answer": {
+      "cause": "a stalled Print Spooler service",
+      "action": "Stop the Print Spooler, delete the files in the spool folder, and start the service again"
+    },
+    "appliesWhen": "jobs cannot be cancelled and no printer on the PC works",
+    "explanation": "The print spooler prepares jobs for the printer. When it stalls, jobs freeze and cannot be cancelled; stop the service, clear C:\\Windows\\System32\\spool\\PRINTERS, and start it again (for example with net stop spooler and net start spooler).",
+    "related": [
+      "core1-s-print-error-job",
+      "core1-s-print-offline",
+      "core1-s-print-driver",
+      "core1-s-print-ip-changed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 13: Mobile Device, Display, and Printer Troubleshooting"
+  }
+]

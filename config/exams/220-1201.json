@@ -3,7 +3,7 @@
   "certification": "a-plus",
   "name": "Core 1 Exam",
   "shortName": "Core 1",
-  "active": false,
+  "active": true,
   "content": "core1",
   "questionCount": { "min": 75, "max": 90 },
   "timeLimitMinutes": 90,

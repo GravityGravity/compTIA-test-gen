@@ -1,0 +1,5093 @@
+[
+  {
+    "id": "core1-s-mobo-atx",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "need": "choose the board for a new tower workstation",
+    "clues": [
+      "the build needs two full-length graphics cards side by side",
+      "the user wants four memory modules installed",
+      "the full-size tower case takes boards 12 by 9.6 inches",
+      "the build also needs a sound card and a capture card"
+    ],
+    "answer": {
+      "item": "An ATX motherboard"
+    },
+    "itemType": "motherboard form factor",
+    "appliesWhen": "a full-size tower needs the most memory and expansion slots",
+    "explanation": "Full-size ATX boards measure 12 × 9.6 inches and usually have four DIMM slots and two or more x16 slots. That room makes ATX the choice for a tower with many cards and memory modules.",
+    "related": [
+      "core1-s-mobo-microatx",
+      "core1-s-mobo-mini-itx",
+      "core1-s-mobo-multisocket"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-mobo-microatx",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.1"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "home-office"
+    ],
+    "need": "choose the board for a compact office desktop",
+    "clues": [
+      "the slim case takes boards up to 9.6 inches square but not 12-inch boards",
+      "the user needs a graphics card and a second card in the small case",
+      "two memory modules are all the user will ever need",
+      "the board must also fit a standard ATX case later if needed"
+    ],
+    "answer": {
+      "item": "A microATX motherboard"
+    },
+    "itemType": "motherboard form factor",
+    "appliesWhen": "a smaller square board with a few expansion slots is enough",
+    "explanation": "microATX boards are up to 9.6 × 9.6 inches, use the same power connectors as ATX, and fit in ATX cases. They trade some DIMM and expansion slots for a smaller size, but still have more than one slot.",
+    "related": [
+      "core1-s-mobo-atx",
+      "core1-s-mobo-mini-itx",
+      "core1-s-mobo-multisocket"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-mobo-mini-itx",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.1"
+    ],
+    "settings": [
+      "home-office",
+      "retail",
+      "office"
+    ],
+    "need": "choose the board for a tiny home theater PC under a TV",
+    "clues": [
+      "two memory modules will be plenty",
+      "only one expansion card will ever be installed",
+      "the small PC must stay quiet and use little power",
+      "the case takes boards no larger than 170 mm on each side"
+    ],
+    "answer": {
+      "item": "A mini-ITX motherboard"
+    },
+    "itemType": "motherboard form factor",
+    "appliesWhen": "the PC must be as small as possible and needs at most one expansion card",
+    "explanation": "Mini-ITX boards are 6.7 × 6.7 inches (170 mm) with normally one PCIe slot. They are made for small, low-power systems such as home theater PCs.",
+    "related": [
+      "core1-s-mobo-atx",
+      "core1-s-mobo-microatx",
+      "core1-s-mobo-multisocket"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-mobo-multisocket",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.3"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "choose the board for a rack server that runs large simulations",
+    "clues": [
+      "the simulations already keep every core of a single processor busy",
+      "the server must hold two Xeon CPUs at the same time",
+      "the workload needs more memory slots and PCIe lanes than one processor gives"
+    ],
+    "answer": {
+      "item": "A multisocket motherboard"
+    },
+    "itemType": "motherboard",
+    "appliesWhen": "the workload needs two or more physical CPUs in one system",
+    "explanation": "A multisocket board holds two or more CPUs, which adds processing power, memory slots, and PCIe lanes. It is used in high-end servers and workstations for parallel work.",
+    "related": [
+      "core1-s-mobo-atx",
+      "core1-s-mobo-microatx",
+      "core1-s-mobo-mini-itx"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cpu-arm",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.7"
+    ],
+    "settings": [
+      "field",
+      "retail",
+      "clinic"
+    ],
+    "need": "choose the processor for a fanless handheld device that runs all day",
+    "clues": [
+      "the battery must stay small to keep the device light",
+      "the device must stay cool in the user's hand",
+      "the software is built for mobile chips like those in phones",
+      "the case is sealed against dust and rain"
+    ],
+    "answer": {
+      "item": "An ARM processor"
+    },
+    "itemType": "processor",
+    "appliesWhen": "the device is mobile and must run cool on little power",
+    "explanation": "ARM processors use a reduced instruction set, so they run cooler and use less power than x86-64 CPUs. That is why phones, tablets, and other mobile devices use them.",
+    "related": [
+      "core1-s-cpu-x64",
+      "core1-s-cpu-more-cores",
+      "core1-s-cpu-igpu"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cpu-x64",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "need": "choose the processor for a desktop that will have 32 GB of RAM",
+    "clues": [
+      "a 32-bit processor could use only about 4 GB of that memory",
+      "the user still runs some old 32-bit Windows programs",
+      "the desktop runs standard Windows software built for Intel and AMD PCs"
+    ],
+    "answer": {
+      "item": "A 64-bit x86-64 processor"
+    },
+    "itemType": "processor",
+    "appliesWhen": "the PC runs standard 64-bit desktop software and needs more than 4 GB of RAM",
+    "explanation": "Older 32-bit x86 CPUs can address only 4 GB of RAM, while x86-64 CPUs support far more. x86-64 CPUs also run 32-bit software, so old programs still work.",
+    "related": [
+      "core1-s-cpu-arm",
+      "core1-s-cpu-more-cores",
+      "core1-s-cpu-igpu"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cpu-more-cores",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.7"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "need": "speed up video encoding on an editor's PC",
+    "clues": [
+      "the encoding software splits its work across every thread it finds",
+      "the Task Manager graph shows all logical processors at full load during each render",
+      "the Device Manager list shows only four logical processors",
+      "the clock rate is already high but renders are still slow"
+    ],
+    "answer": {
+      "item": "A CPU with more cores and threads"
+    },
+    "itemType": "processor",
+    "appliesWhen": "the software spreads its work across many threads at once",
+    "explanation": "Multicore CPUs have several physical cores in one package, and multithreading lets each core run two threads. Software that splits work into threads runs faster when more cores and threads are available.",
+    "related": [
+      "core1-s-cpu-arm",
+      "core1-s-cpu-x64",
+      "core1-s-cpu-igpu"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cpu-igpu",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.7"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "retail"
+    ],
+    "need": "choose the processor for low-cost office PCs with no graphics card",
+    "clues": [
+      "the small cases have no free expansion slot",
+      "the monitor will plug into the video port on the board's rear panel",
+      "users only run email, a browser, and spreadsheets"
+    ],
+    "answer": {
+      "item": "A CPU with an integrated GPU"
+    },
+    "itemType": "processor",
+    "appliesWhen": "the PC has no video card and its display connects to the board's own video port",
+    "explanation": "Many Intel and AMD CPUs include a graphics unit; AMD calls these APUs. With a compatible board, the monitor plugs into the board's video port and no video card is needed.",
+    "related": [
+      "core1-s-cpu-arm",
+      "core1-s-cpu-x64",
+      "core1-s-cpu-more-cores"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-boot-order",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "school",
+      "clinic",
+      "retail"
+    ],
+    "need": "install Windows on a new PC from a USB flash drive",
+    "clues": [
+      "the flash drive starts Windows Setup on another PC",
+      "the PC keeps trying the blank SSD first and reports no operating system",
+      "the firmware has to start the installer before anything on the SSD"
+    ],
+    "answer": {
+      "item": "The boot options (boot order)"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "the PC must start from a different device than it tries first",
+    "explanation": "The boot order sets which device the firmware starts from. Put the flash drive first for the install, then set the system drive first again.",
+    "related": [
+      "core1-s-uefi-usb-perm",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-admin-pw",
+      "core1-s-uefi-vt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-usb-perm",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "need": "stop anyone from using flash drives on the high-security PCs",
+    "clues": [
+      "a flash drive found in the parking lot infected a PC last month",
+      "staff charge their phones from these PCs over cables that can also move files",
+      "the keyboards and mice on these PCs are PS/2"
+    ],
+    "answer": {
+      "item": "USB permissions (disable the USB ports)"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "the ports themselves must be turned off so no flash drive can be used",
+    "explanation": "The firmware can turn USB ports off or block starting from USB. That stops USB drop attacks, where an infected flash drive is left for someone to plug in.",
+    "related": [
+      "core1-s-uefi-boot-order",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-admin-pw",
+      "core1-s-uefi-boot-pw"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-secure-boot",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "clinic"
+    ],
+    "need": "stop rootkits from loading before Windows starts",
+    "clues": [
+      "a rootkit replaced the startup loader on another company PC",
+      "the firmware must load only startup files signed by a trusted vendor",
+      "the PCs have UEFI firmware and run Windows 11"
+    ],
+    "answer": {
+      "item": "Secure Boot"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "the firmware must check the signature of every startup file",
+    "explanation": "Secure Boot lets UEFI firmware check the digital signature of the boot loader and other boot files. Files that are not signed or were tampered with do not load, which blocks many rootkits.",
+    "related": [
+      "core1-s-uefi-boot-order",
+      "core1-s-uefi-tpm",
+      "core1-s-uefi-admin-pw",
+      "core1-s-uefi-usb-perm"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-admin-pw",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "school",
+      "retail",
+      "enterprise"
+    ],
+    "need": "stop students from changing firmware settings on the lab PCs",
+    "clues": [
+      "students have been changing the startup device order",
+      "the lab PCs must still start Windows after a power cut with no prompt",
+      "students already sign in to Windows with their own accounts"
+    ],
+    "answer": {
+      "item": "A BIOS/UEFI administrator (supervisor) password"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "only the setup utility must be locked while the PC still starts on its own",
+    "explanation": "The administrator or supervisor password is asked for only when someone opens the firmware setup. The PC still starts the operating system normally, so it suits public PCs.",
+    "related": [
+      "core1-s-uefi-boot-pw",
+      "core1-s-uefi-usb-perm",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-boot-order"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-boot-pw",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "home-office",
+      "field",
+      "office"
+    ],
+    "need": "make sure no one but the owner can start a sensitive laptop at all",
+    "clues": [
+      "the laptop holds client legal files and travels often",
+      "a prompt must appear right after power-on, before anything loads",
+      "the owner accepts typing a second secret at every start"
+    ],
+    "answer": {
+      "item": "A boot (user) password"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "a secret must be entered before the PC starts any operating system",
+    "explanation": "The boot or user password is asked for before the firmware starts any operating system. It means users must know a second password, so most organizations use it only where it is needed.",
+    "related": [
+      "core1-s-uefi-admin-pw",
+      "core1-s-uefi-usb-perm",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-tpm"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-tpm",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4",
+      "220-1201/3.5.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "turn on BitLocker drive encryption on the office desktops",
+    "clues": [
+      "the BitLocker setup says a required security chip was not found",
+      "the board has a built-in cryptoprocessor that is turned off in the firmware",
+      "the Windows 11 upgrade check also fails on these PCs"
+    ],
+    "answer": {
+      "item": "Enable the TPM in the BIOS/UEFI"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "the board already has a cryptoprocessor chip that only needs to be turned on",
+    "explanation": "The Trusted Platform Module is a chip on the board that stores encryption keys. BitLocker and Windows 11 need TPM 2.0, and on many boards it must be turned on in the firmware first.",
+    "related": [
+      "core1-s-uefi-hsm",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-boot-pw",
+      "core1-s-uefi-vt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-hsm",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.6"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "need": "add hardware key storage to an older server that has no TPM",
+    "clues": [
+      "the auditors require keys that never leave dedicated hardware",
+      "the keys must live in a removable device with its own crypto chip",
+      "the server must create and manage many encryption keys quickly"
+    ],
+    "answer": {
+      "item": "A hardware security module (HSM)"
+    },
+    "itemType": "security device",
+    "appliesWhen": "the system has no TPM chip, or many keys must be made and managed in a separate device",
+    "explanation": "An HSM is a separate device, such as a PCIe card or USB unit, with its own cryptoprocessor that creates, stores, and manages keys. It gives TPM-like protection to a system that has no TPM and can serve many keys fast.",
+    "related": [
+      "core1-s-uefi-tpm",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-boot-pw",
+      "core1-s-uefi-usb-perm"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-vt",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.5"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "need": "run virtual machines on a developer's desktop",
+    "clues": [
+      "the hypervisor install stops with a message that a CPU extension is turned off",
+      "the processor's spec sheet lists hardware virtualization support",
+      "the Hyper-V manager cannot start any guest machine"
+    ],
+    "answer": {
+      "item": "Intel VT-x or AMD-V (SVM) in the BIOS/UEFI"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "a hypervisor needs the CPU's hardware extension for guest machines",
+    "explanation": "Hypervisors need the CPU's hardware virtualization extension, which is often turned off by default. Turn on Intel VT-x, or AMD-V (often labeled SVM), in the firmware's CPU menu.",
+    "related": [
+      "core1-s-uefi-tpm",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-boot-order",
+      "core1-s-uefi-fan-curve"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-fan-curve",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "make an editing PC quiet while it is idle",
+    "clues": [
+      "the case fans run at full speed even when the PC does nothing",
+      "all fans are plugged into the board's own 4-pin headers",
+      "the user wants the fans to speed up only under heavy load"
+    ],
+    "answer": {
+      "item": "The fan speed settings in the BIOS/UEFI"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "fans on the board's headers run at the wrong speed for the load",
+    "explanation": "The firmware can set fan speeds or profiles such as quiet or optimal for fans connected to the board's headers. A 4-pin fan lets the board control its speed with PWM.",
+    "related": [
+      "core1-s-uefi-temp-limit",
+      "core1-s-uefi-vt",
+      "core1-s-uefi-boot-order",
+      "core1-s-uefi-usb-perm"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-uefi-temp-limit",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "enterprise",
+      "warehouse",
+      "office"
+    ],
+    "need": "make a PC in a hot storeroom warn the user before it overheats",
+    "clues": [
+      "the case vents face a wall only a few centimeters away",
+      "the PC shut down without any warning twice last summer",
+      "the board has sensors for the CPU and chipset"
+    ],
+    "answer": {
+      "item": "Temperature monitoring with a warning and shutdown limit"
+    },
+    "itemType": "BIOS/UEFI setting",
+    "appliesWhen": "the PC must react on its own when a sensor passes a set heat limit",
+    "explanation": "Board sensors report the temperature of the CPU, GPU, and chipset. In the firmware you can set a maximum temperature that warns the user, shuts the PC down, or both.",
+    "related": [
+      "core1-s-uefi-fan-curve",
+      "core1-s-uefi-vt",
+      "core1-s-uefi-secure-boot",
+      "core1-s-uefi-boot-pw"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-card-sound",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.8"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "record music in a home studio with clean audio",
+    "clues": [
+      "the built-in audio adds hiss to every recording",
+      "the producer needs a higher sampling rate and signal-to-noise ratio",
+      "the setup needs extra inputs and 7.1 surround outputs"
+    ],
+    "answer": {
+      "item": "A dedicated sound card"
+    },
+    "itemType": "expansion card",
+    "appliesWhen": "the built-in audio is not good enough for audio work",
+    "explanation": "Built-in audio is fine for most users, but audio editors need a card with a higher sampling rate and signal-to-noise ratio. A good add-on card also gives more inputs and outputs.",
+    "related": [
+      "core1-s-card-video",
+      "core1-s-card-capture",
+      "core1-s-card-nic",
+      "core1-s-card-esata"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-card-video",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.8"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "run 3D design software and games smoothly",
+    "clues": [
+      "the processor's built-in graphics stutters in 3D scenes",
+      "the 3D software lists a minimum amount of dedicated graphics memory",
+      "the user wants to drive two high-refresh monitors"
+    ],
+    "answer": {
+      "item": "A dedicated video card (GPU)"
+    },
+    "itemType": "expansion card",
+    "appliesWhen": "the display output itself must be faster than built-in graphics can make it",
+    "explanation": "A video card creates the image sent to the monitors and has its own GPU and memory. It goes in a PCIe x16 slot and is much faster than built-in graphics for 3D work.",
+    "related": [
+      "core1-s-card-sound",
+      "core1-s-card-capture",
+      "core1-s-card-nic",
+      "core1-s-card-esata"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-card-capture",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.8"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "need": "save a game console's gameplay as files on a PC for editing",
+    "clues": [
+      "the console has only an HDMI output",
+      "the streamer wants to show live console play in streaming software",
+      "the PC already has a good graphics card for its own monitor"
+    ],
+    "answer": {
+      "item": "A video capture card"
+    },
+    "itemType": "expansion card",
+    "appliesWhen": "a signal from another device must be brought into the PC and recorded",
+    "explanation": "A capture card takes a video signal from another source, such as a console or camera, and turns it into data the PC can record or stream. It does the opposite of a video card, which sends images out.",
+    "related": [
+      "core1-s-card-sound",
+      "core1-s-card-video",
+      "core1-s-card-nic",
+      "core1-s-card-esata"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-card-nic",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.8"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "add more wired connections to a Linux file server",
+    "clues": [
+      "the server has only one built-in RJ-45 port",
+      "two links must be bonded for more bandwidth",
+      "the server must stay online if one cable fails"
+    ],
+    "answer": {
+      "item": "A network interface card with more ports"
+    },
+    "itemType": "expansion card",
+    "appliesWhen": "the computer needs more or faster wired Ethernet connections",
+    "explanation": "An add-on NIC gives one or more extra RJ-45 ports. The ports can be teamed for link aggregation or redundancy.",
+    "related": [
+      "core1-s-card-sound",
+      "core1-s-card-video",
+      "core1-s-card-capture",
+      "core1-s-card-esata"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies",
+    "devices": []
+  },
+  {
+    "id": "core1-s-card-esata",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2",
+      "220-1201/3.5.8"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "connect an external SATA drive enclosure to a desktop",
+    "clues": [
+      "the enclosure has no USB port",
+      "the desktop has no such port on its rear panel",
+      "a free PCIe x1 slot is available"
+    ],
+    "answer": {
+      "item": "An eSATA expansion card"
+    },
+    "itemType": "expansion card",
+    "appliesWhen": "an external drive uses the external version of SATA and the PC lacks that port",
+    "explanation": "eSATA is the external form of SATA. Few boards have the port, so an eSATA adapter card in a PCIe slot adds it.",
+    "related": [
+      "core1-s-card-sound",
+      "core1-s-card-video",
+      "core1-s-card-capture",
+      "core1-s-card-nic"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-con-pcie-x16",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "install a new high-end graphics card",
+    "clues": [
+      "the card's edge connector has 16 lanes",
+      "the card needs the fastest slot that links straight to the processor",
+      "the board also has two short x1 slots free"
+    ],
+    "answer": {
+      "item": "A PCIe x16 slot"
+    },
+    "itemType": "motherboard connector",
+    "appliesWhen": "a full-length, 16-lane card such as a graphics card is installed",
+    "explanation": "Graphics cards are usually PCIe x16 cards, and an x16 card fits only an x16 slot. The x16 slots connect directly to the CPU.",
+    "related": [
+      "core1-s-con-m2",
+      "core1-s-con-sata",
+      "core1-s-con-pci",
+      "core1-s-con-usb-header"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-con-m2",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "add an NVMe SSD to a small PC with no drive bays",
+    "clues": [
+      "the drive is a small gumstick-shaped circuit board",
+      "the case has no room for drive cables",
+      "the drive must get its power and data from the board itself"
+    ],
+    "answer": {
+      "item": "An M.2 slot"
+    },
+    "itemType": "motherboard connector",
+    "appliesWhen": "a small card-style drive connects straight to the board with no cables",
+    "explanation": "M.2 slots hold M.2 SSDs, including NVMe drives, right on the board. The drive gets power and data from the slot, so no cables are needed.",
+    "related": [
+      "core1-s-con-pcie-x16",
+      "core1-s-con-sata",
+      "core1-s-con-pci",
+      "core1-s-con-usb-header"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-con-sata",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "connect a second 2.5-inch SSD inside a desktop",
+    "clues": [
+      "the drive has a 7-pin data socket",
+      "the drive is not an NVMe module and has no edge connector",
+      "a cable must run from the drive to the board"
+    ],
+    "answer": {
+      "item": "A SATA port"
+    },
+    "itemType": "motherboard connector",
+    "appliesWhen": "an internal 2.5- or 3.5-inch drive connects with a 7-pin data cable",
+    "explanation": "Internal hard drives, SSDs, and optical drives use 7-pin SATA data cables. The board has several SATA ports for them.",
+    "related": [
+      "core1-s-con-pcie-x16",
+      "core1-s-con-m2",
+      "core1-s-con-pci",
+      "core1-s-con-usb-header"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-con-pci",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "warehouse",
+      "office"
+    ],
+    "need": "reuse an old 32-bit parallel interface card in a new PC",
+    "clues": [
+      "the card is a specialized lab controller from about 2008",
+      "the card's edge connector does not match any lane-based slot",
+      "the vendor does not make a newer version of the card"
+    ],
+    "answer": {
+      "item": "A legacy PCI slot"
+    },
+    "itemType": "motherboard connector",
+    "appliesWhen": "an old 32-bit parallel card must be installed",
+    "explanation": "PCI is the older parallel bus that PCIe replaced. Its cards fit only PCI slots, which few new boards still have.",
+    "related": [
+      "core1-s-con-pcie-x16",
+      "core1-s-con-m2",
+      "core1-s-con-sata",
+      "core1-s-con-usb-header"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-con-usb-header",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "make the case's front USB ports work after a build",
+    "clues": [
+      "the front USB ports have a cable that ends in a multi-pin plug inside the case",
+      "the cable must connect to pins on the board itself",
+      "the rear USB ports already work"
+    ],
+    "answer": {
+      "item": "An internal USB header"
+    },
+    "itemType": "motherboard connector",
+    "appliesWhen": "front-panel USB ports need a connection to pins on the board",
+    "explanation": "Front-panel USB ports connect to internal USB headers on the board. Headers are rows of pins for case ports, buttons, LEDs, and fans.",
+    "related": [
+      "core1-s-con-pcie-x16",
+      "core1-s-con-m2",
+      "core1-s-con-sata",
+      "core1-s-con-pci"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cool-liquid",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "cool an overclocked high-end processor as well as possible",
+    "clues": [
+      "the processor runs at full load for hours during renders",
+      "air coolers still let the processor reach its heat limit",
+      "the user accepts checking tubes and coolant now and then"
+    ],
+    "answer": {
+      "item": "A liquid cooling system"
+    },
+    "itemType": "cooling method",
+    "appliesWhen": "the CPU makes more heat than air cooling can remove",
+    "explanation": "Liquid cooling moves heat to a radiator with a pump and coolant, and it removes heat the most efficiently of all PC cooling methods. It suits hot, overclocked CPUs, but it can leak and needs some maintenance.",
+    "related": [
+      "core1-s-cool-passive",
+      "core1-s-cool-exhaust-fan",
+      "core1-s-cool-thermal-pad"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cool-passive",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "home-office",
+      "retail"
+    ],
+    "need": "cool a low-power chip in a silent media PC",
+    "clues": [
+      "the chip is rated at about 10 W",
+      "the case has no fan mounts",
+      "there is room above the chip for a finned metal block"
+    ],
+    "answer": {
+      "item": "A passive heat sink"
+    },
+    "itemType": "cooling method",
+    "appliesWhen": "a low-heat chip can be cooled with no moving parts",
+    "explanation": "A heat sink conducts heat away from a chip through its metal fins. A passive heat sink has no fan, so it is silent and suits chips that make little heat, such as a chipset.",
+    "related": [
+      "core1-s-cool-liquid",
+      "core1-s-cool-exhaust-fan",
+      "core1-s-cool-thermal-pad"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cool-exhaust-fan",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "get hot air out of a case that runs warm",
+    "clues": [
+      "the only fan moving air out of the case is the one in the power supply",
+      "the CPU and GPU coolers work normally",
+      "a mounting spot with four screw holes at the back of the chassis is empty"
+    ],
+    "answer": {
+      "item": "An extra case exhaust fan"
+    },
+    "itemType": "cooling method",
+    "appliesWhen": "warm air builds up inside the case because too little air leaves it",
+    "explanation": "Powerful systems need at least one exhaust fan at the back, and often a front intake fan. Air should come in at the front and leave at the back or top.",
+    "related": [
+      "core1-s-cool-liquid",
+      "core1-s-cool-passive",
+      "core1-s-cool-thermal-pad"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cool-thermal-pad",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "fit a new stock cooler that has a pre-applied layer on its base",
+    "clues": [
+      "the cooler came in the box with the processor",
+      "the CPU's top surface is clean and bare",
+      "the user has no tube of compound at hand"
+    ],
+    "answer": {
+      "item": "The factory-applied thermal pad on the cooler"
+    },
+    "itemType": "cooling method",
+    "appliesWhen": "a new cooler already has its own thermal material applied",
+    "explanation": "Thermal material fills the tiny gaps between the CPU and the heat sink. Many new coolers come with a factory-applied pad or compound, so a first install needs nothing more; a reinstall needs fresh paste.",
+    "related": [
+      "core1-s-cool-liquid",
+      "core1-s-cool-passive",
+      "core1-s-cool-exhaust-fan"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory",
+    "devices": []
+  },
+  {
+    "id": "core1-s-cool-old-paste",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-gaming",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the CPU gets very hot within minutes of starting",
+      "the overheating began after the cooler was taken off to clean it",
+      "the processor overheats even though the cooler is firmly locked down and its fan spins at normal speed",
+      "a dry and cracked gray layer is seen on the overheating processor once its cooler is lifted"
+    ],
+    "answer": {
+      "cause": "old or missing thermal paste between the CPU and the heat sink",
+      "action": "Clean off the old paste with isopropyl alcohol and apply fresh thermal paste"
+    },
+    "firstStep": "Check the CPU temperature and fan speed in the BIOS/UEFI",
+    "appliesWhen": "the cooler was removed and refitted without fresh paste",
+    "explanation": "Thermal paste fills the small gaps between the CPU cap and the heat sink. Each time a heat sink is removed, the old paste must be cleaned off and new paste applied.",
+    "related": [
+      "core1-s-cool-cpu-fan-header",
+      "core1-s-cool-pump",
+      "core1-s-cool-heatsink-loose",
+      "core1-s-cool-fan-hub"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory"
+  },
+  {
+    "id": "core1-s-cool-cpu-fan-header",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9",
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-gaming",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the PC shuts down a few minutes after each start",
+      "the hardware monitor shows the CPU overheating with 0 RPM for its cooler",
+      "the PC that keeps shutting down has its cooler's small 4-pin lead hanging loose next to the socket",
+      "the PC still shuts itself down even though the case fans and the power supply fan spin normally"
+    ],
+    "answer": {
+      "cause": "a CPU fan that is not plugged into its motherboard header",
+      "action": "Connect the CPU fan's lead to the CPU_FAN header"
+    },
+    "firstStep": "Check the CPU fan speed in the BIOS/UEFI hardware monitor",
+    "appliesWhen": "the processor cooler's fan has no power from the board",
+    "explanation": "The CPU fan gets power from the CPU fan header on the board. When it is not connected, the CPU overheats and the system shuts down to protect itself.",
+    "related": [
+      "core1-s-cool-old-paste",
+      "core1-s-cool-pump",
+      "core1-s-cool-heatsink-loose",
+      "core1-s-cool-fan-hub"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-cool-pump",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "pc-gaming",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the radiator fans spin but the CPU still overheats",
+      "the tube at the overheating CPU's block is hot while the radiator stays cool",
+      "the gentle hum from the CPU block stopped around the time the overheating began",
+      "the processor under a five-year-old closed-loop cooler now reaches its heat limit within minutes"
+    ],
+    "answer": {
+      "cause": "a failed pump in the liquid cooling system",
+      "action": "Replace the closed-loop liquid cooler"
+    },
+    "appliesWhen": "the coolant no longer moves between the CPU block and the radiator",
+    "explanation": "A liquid cooler relies on its pump to carry hot coolant to the radiator. Pumps can fail over time, and then the radiator fans cannot remove the CPU's heat.",
+    "related": [
+      "core1-s-cool-old-paste",
+      "core1-s-cool-cpu-fan-header",
+      "core1-s-cool-heatsink-loose",
+      "core1-s-cool-fan-hub"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "core1-s-cool-heatsink-loose",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-gaming",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the PC reboots at random under load",
+      "the CPU runs hot under load and its cooler wobbles when touched",
+      "the PC overheats under load with one plastic push-pin anchor of the cooler not locked",
+      "the random reboots began after a technician moved the PC to another desk last week"
+    ],
+    "answer": {
+      "cause": "a heat sink that is not seated flush on the CPU",
+      "action": "Reseat the heat sink with fresh paste and lock every anchor"
+    },
+    "appliesWhen": "the heat sink has come loose and no longer sits flat on the CPU",
+    "explanation": "A loose heat sink cannot draw heat away from the CPU, which can cause overheating and random reboots. It must sit flush, with every anchor locked.",
+    "related": [
+      "core1-s-cool-old-paste",
+      "core1-s-cool-cpu-fan-header",
+      "core1-s-cool-pump",
+      "core1-s-cool-fan-hub"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "core1-s-cool-fan-hub",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4",
+      "220-1201/3.5.9"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "pc-gaming",
+      "pc-desktop"
+    ],
+    "clues": [
+      "the BIOS/UEFI shows only one fan where the case has five",
+      "changing the fan profile speeds up all case fans together or not at all",
+      "the case fans cannot be controlled one by one even though four of the board's five fan headers are empty"
+    ],
+    "answer": {
+      "cause": "case fans connected through a fan hub instead of separate board headers",
+      "action": "Connect each case fan to its own motherboard fan header"
+    },
+    "appliesWhen": "the board cannot see or control each fan because the fans share one hub",
+    "explanation": "The board controls only fans plugged into its fan headers. A fan hub shows all its fans as one, so their speeds cannot be set one by one.",
+    "related": [
+      "core1-s-cool-old-paste",
+      "core1-s-cool-cpu-fan-header",
+      "core1-s-cool-pump",
+      "core1-s-cool-heatsink-loose"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "core1-s-mobo-wrong-socket",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-gaming"
+    ],
+    "clues": [
+      "the new processor will not sit flat in the socket",
+      "the contacts do not match even when the pin 1 marks on the processor and the socket line up",
+      "the processor that will not seat is from a different maker than the board's chipset"
+    ],
+    "answer": {
+      "cause": "a CPU made for a different socket than the motherboard has",
+      "action": "Exchange the CPU for one on the motherboard's CPU support list"
+    },
+    "appliesWhen": "the CPU and the board use different socket types",
+    "explanation": "Intel and AMD CPUs use different sockets, and each socket accepts only its own CPUs. Check the board's CPU support list for the socket and the chipset before buying.",
+    "related": [
+      "core1-s-mobo-old-firmware",
+      "core1-s-uefi-usb-first",
+      "core1-s-card-monitor-onboard",
+      "core1-s-mobo-front-panel",
+      "core1-s-mobo-cmos-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 1: Motherboards, Processors, and Memory"
+  },
+  {
+    "id": "core1-s-mobo-old-firmware",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the PC shows no image even though the new processor fits the socket",
+      "the PC has shown no image since the processor upgrade though its fans spin",
+      "the processor that gives no image is a newer generation than the board was sold with",
+      "the PC starts normally when the old processor is put back in the same board"
+    ],
+    "answer": {
+      "cause": "motherboard firmware that is too old to support the new CPU",
+      "action": "Flash the BIOS/UEFI to a version that supports the new CPU"
+    },
+    "appliesWhen": "a newer CPU fits the socket but the board's firmware does not know it",
+    "explanation": "A CPU can share a socket with older models and still need newer firmware. Check the board's support list and update the BIOS/UEFI before or during the upgrade.",
+    "related": [
+      "core1-s-mobo-wrong-socket",
+      "core1-s-uefi-usb-first",
+      "core1-s-card-monitor-onboard",
+      "core1-s-mobo-front-panel",
+      "core1-s-mobo-cmos-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 17: CPUs"
+  },
+  {
+    "id": "core1-s-uefi-usb-first",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "school",
+      "clinic",
+      "retail"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC shows a black screen with a blinking cursor at the top left",
+      "a flash drive that holds only photos sat in a USB port when the PC failed to start",
+      "the PC fails to start Windows only on days when something is plugged into it",
+      "the operating system sometimes does not load even though the system drive passes the maker's diagnostic test"
+    ],
+    "answer": {
+      "cause": "a boot order that tries USB devices before the system drive",
+      "action": "Set the system drive first in the boot options"
+    },
+    "firstStep": "Remove the flash drive and restart the PC",
+    "appliesWhen": "the firmware tries a removable device before the drive that has the OS",
+    "explanation": "The boot order decides which device the firmware tries first. When USB is first, an inserted flash drive stops the OS from loading, so the system drive should be first.",
+    "related": [
+      "core1-s-mobo-wrong-socket",
+      "core1-s-mobo-old-firmware",
+      "core1-s-card-monitor-onboard",
+      "core1-s-mobo-front-panel",
+      "core1-s-mobo-cmos-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "core1-s-card-monitor-onboard",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-gaming"
+    ],
+    "clues": [
+      "the screen has stayed black since a new video card was installed today",
+      "the monitor shows a no-signal message while the new card's fans spin",
+      "the monitor that stays black is plugged into the port above the rear USB ports",
+      "the picture was fine before the upgrade, when the monitor used the same rear port"
+    ],
+    "answer": {
+      "cause": "a monitor cable plugged into the board's own video port instead of the card",
+      "action": "Plug the monitor cable into a port on the video card"
+    },
+    "appliesWhen": "the display is connected to the integrated video port while a video card is in use",
+    "explanation": "When a video card is installed, most boards turn off their built-in video. The monitor must be connected to a port on the card.",
+    "related": [
+      "core1-s-mobo-wrong-socket",
+      "core1-s-mobo-old-firmware",
+      "core1-s-uefi-usb-first",
+      "core1-s-mobo-front-panel",
+      "core1-s-mobo-cmos-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "core1-s-mobo-front-panel",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the case button has done nothing since the motherboard was replaced",
+      "the PC will not turn on from the case button though a light on the board shows standby power",
+      "the PC that ignores its case button starts when two pins on the board's edge are briefly touched",
+      "the case button has not worked since the thin 2-pin plugs from the case were connected to the new board without the manual"
+    ],
+    "answer": {
+      "cause": "the case's power switch lead on the wrong front panel header pins",
+      "action": "Connect the POWER SW lead to the pins shown in the motherboard manual"
+    },
+    "appliesWhen": "the case button's lead is not on its own header pins",
+    "explanation": "The front panel header connects the case's power and reset buttons and LEDs to the board. Each lead must go on the pins named in the manual, and the LEDs must also be the right way round.",
+    "related": [
+      "core1-s-mobo-wrong-socket",
+      "core1-s-mobo-old-firmware",
+      "core1-s-uefi-usb-first",
+      "core1-s-card-monitor-onboard",
+      "core1-s-mobo-cmos-battery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-mobo-cmos-battery",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "topics": [
+      "220-1201/3.5.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office",
+      "school",
+      "clinic",
+      "retail"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the clock shows a date years in the past at each start",
+      "the boot order goes back to defaults whenever the PC is unplugged",
+      "the eight-year-old PC shows a checksum error message at startup"
+    ],
+    "answer": {
+      "cause": "a dead CMOS battery",
+      "action": "Replace the CR2032 battery on the motherboard"
+    },
+    "firstStep": "Check the date and time in the BIOS/UEFI setup",
+    "appliesWhen": "the PC loses its firmware settings and time whenever it is unplugged",
+    "explanation": "The firmware settings and the clock are kept by a small lithium battery on the board. When it dies, the date and settings reset each time the PC loses power.",
+    "related": [
+      "core1-s-mobo-wrong-socket",
+      "core1-s-mobo-old-firmware",
+      "core1-s-uefi-usb-first",
+      "core1-s-card-monitor-onboard",
+      "core1-s-mobo-front-panel"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 16: Motherboards and Add-on Cards"
+  },
+  {
+    "id": "core1-s-psu-redundant",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.4"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "keep a file server running if its power supply fails",
+    "clues": [
+      "the server holds the shared files for the whole company",
+      "a failed supply must be swapped without shutting the server down",
+      "each supply can plug into a different power circuit"
+    ],
+    "answer": {
+      "item": "Redundant power supplies"
+    },
+    "itemType": "power supply",
+    "appliesWhen": "the system must keep running when one supply fails",
+    "explanation": "A redundant setup has two or more power supplies, each with its own cord, all running at once. If one fails, the other carries the load with no downtime, and many units are hot-swappable.",
+    "related": [
+      "core1-s-psu-modular",
+      "core1-s-psu-80plus",
+      "core1-s-psu-wattage",
+      "core1-s-psu-autoswitch"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-psu-modular",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.5"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "build a tidy small PC with good airflow",
+    "clues": [
+      "loose spare cables blocked the airflow in the last build",
+      "the builder wants to attach only the leads the parts need",
+      "more leads may be added later for new drives"
+    ],
+    "answer": {
+      "item": "A modular power supply"
+    },
+    "itemType": "power supply",
+    "appliesWhen": "only the cables the build needs should be attached",
+    "explanation": "A modular power supply has detachable cables, so only the needed leads are connected. That keeps the case tidy and helps airflow.",
+    "related": [
+      "core1-s-psu-redundant",
+      "core1-s-psu-80plus",
+      "core1-s-psu-wattage",
+      "core1-s-psu-autoswitch"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-psu-80plus",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "need": "lower the power bill of PCs that run all day",
+    "clues": [
+      "the PCs work at a moderate load most of the time",
+      "the owner wants less power lost as heat",
+      "the budget allows a little more now for savings later"
+    ],
+    "answer": {
+      "item": "An 80 Plus Gold power supply"
+    },
+    "itemType": "power supply",
+    "appliesWhen": "less power should be lost when the supply changes AC to DC",
+    "explanation": "A power supply loses some power as heat when it turns AC into DC. The 80 Plus rating means at least 80 percent is converted, and higher levels such as Gold waste less.",
+    "related": [
+      "core1-s-psu-redundant",
+      "core1-s-psu-modular",
+      "core1-s-psu-wattage",
+      "core1-s-psu-autoswitch"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-psu-wattage",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.6"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "add a second graphics card to a workstation",
+    "clues": [
+      "the parts list adds up to 780 W at full load",
+      "the current 500 W unit already runs near its limit",
+      "the user plans to add more drives next year"
+    ],
+    "answer": {
+      "item": "A power supply with a higher wattage rating"
+    },
+    "itemType": "power supply",
+    "appliesWhen": "the parts need more power than the current supply can give",
+    "explanation": "The wattage rating is the most power a supply can give at full load. Add up what all the parts need, then choose a supply above that total with room for growth.",
+    "related": [
+      "core1-s-psu-redundant",
+      "core1-s-psu-modular",
+      "core1-s-psu-80plus",
+      "core1-s-psu-autoswitch"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-psu-autoswitch",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "ship the same PC model to offices in the United States and Europe",
+    "clues": [
+      "some offices have 120 VAC outlets and others 230 VAC",
+      "users must not have to set any switch on the back",
+      "the label must list the whole input range"
+    ],
+    "answer": {
+      "item": "An auto-switching power supply rated 100–240 VAC"
+    },
+    "itemType": "power supply",
+    "appliesWhen": "the PC must work on both 110–120 VAC and 220–240 VAC with no switch",
+    "explanation": "The United States supplies 110–120 VAC, and Europe 220–240 VAC. A universal-input supply detects the voltage, so the same PC works on both without setting a switch.",
+    "related": [
+      "core1-s-psu-redundant",
+      "core1-s-psu-modular",
+      "core1-s-psu-80plus",
+      "core1-s-psu-wattage"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-pcon-sata",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "power a new 2.5-inch SSD",
+    "clues": [
+      "the drive has a flat 15-pin power socket",
+      "the drive can use 3.3 V, 5 V, and 12 V",
+      "the drive's 7-pin data cable is already connected"
+    ],
+    "answer": {
+      "item": "A SATA power connector"
+    },
+    "itemType": "power connector",
+    "appliesWhen": "a modern internal drive needs power through a flat 15-pin socket",
+    "explanation": "SATA power connectors have 15 pins and carry 3.3 V, 5 V, and 12 V. They power SATA hard drives, SSDs, and optical drives.",
+    "related": [
+      "core1-s-pcon-molex",
+      "core1-s-pcon-pcie",
+      "core1-s-pcon-eatx12v",
+      "core1-s-pcon-20plus4"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies",
+    "devices": []
+  },
+  {
+    "id": "core1-s-pcon-molex",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.2"
+    ],
+    "settings": [
+      "warehouse",
+      "office"
+    ],
+    "need": "power an old IDE drive moved into a newer PC",
+    "clues": [
+      "the drive has a thick 4-pin power socket",
+      "the drive needs only 5 V and 12 V",
+      "the drive is too old to have a flat power socket"
+    ],
+    "answer": {
+      "item": "A Molex connector"
+    },
+    "itemType": "power connector",
+    "appliesWhen": "an older drive or fan has a thick 4-pin power socket",
+    "explanation": "The Molex connector is a thick 4-pin plug that carries 5 V and 12 V. Older PATA drives and some fans use it.",
+    "related": [
+      "core1-s-pcon-sata",
+      "core1-s-pcon-pcie",
+      "core1-s-pcon-eatx12v",
+      "core1-s-pcon-20plus4"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-pcon-pcie",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "power a graphics card that draws more than its slot can supply",
+    "clues": [
+      "the card has an 8-pin power socket on its edge",
+      "the card's manual lists about 200 W of total board power",
+      "the socket is meant for the graphics card rather than the processor"
+    ],
+    "answer": {
+      "item": "A 6+2-pin PCIe power connector"
+    },
+    "itemType": "power connector",
+    "appliesWhen": "an expansion card needs extra 12 V power beyond what its slot gives",
+    "explanation": "PCIe slots give up to 75 W, so stronger graphics cards need 6-pin or 8-pin PCIe power leads. The 6+2-pin plug fits either socket.",
+    "related": [
+      "core1-s-pcon-sata",
+      "core1-s-pcon-molex",
+      "core1-s-pcon-eatx12v",
+      "core1-s-pcon-20plus4"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-pcon-eatx12v",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.2",
+      "220-1201/3.6.3"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "give the processor its own 12 V supply on a new board",
+    "clues": [
+      "the board has an 8-pin socket near the CPU socket",
+      "the supply has several 8-pin leads with different labels",
+      "the board does not POST with only the main lead connected"
+    ],
+    "answer": {
+      "item": "The 8-pin EATX12V connector"
+    },
+    "itemType": "power connector",
+    "appliesWhen": "the board has an extra 4- or 8-pin socket that feeds the CPU",
+    "explanation": "Most boards have a 4-pin or 8-pin 12 V socket for the CPU, called EATX12V, as well as the main connector. Do not confuse it with the 8-pin PCIe lead; check the label.",
+    "related": [
+      "core1-s-pcon-sata",
+      "core1-s-pcon-molex",
+      "core1-s-pcon-pcie",
+      "core1-s-pcon-20plus4"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-pcon-20plus4",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.3"
+    ],
+    "settings": [
+      "warehouse",
+      "office"
+    ],
+    "need": "connect a new power supply to an older board with a 20-pin main socket",
+    "clues": [
+      "no adapter cable came with the supply",
+      "the new supply's main plug is 24 pins and slightly too long",
+      "four pins on the end of the plug can slide off"
+    ],
+    "answer": {
+      "item": "The 20+4-pin main connector with its 4-pin section detached"
+    },
+    "itemType": "power connector",
+    "appliesWhen": "a 24-pin supply must fit a board with the older 20-pin main socket",
+    "explanation": "ATX12V 2.x boards use a 24-pin main connector, while the original ATX boards used 20 pins. Many supplies have a 20+4-pin plug whose extra 4 pins detach for the older boards.",
+    "related": [
+      "core1-s-pcon-sata",
+      "core1-s-pcon-molex",
+      "core1-s-pcon-pcie",
+      "core1-s-pcon-eatx12v"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power",
+    "devices": []
+  },
+  {
+    "id": "core1-s-psu-low-watt",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.6"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "pc-gaming",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the PC restarts as soon as a 3D game starts",
+      "the restarts began after a high-end graphics card was added last week",
+      "the PC runs office programs fine but restarts under heavy graphics load",
+      "the PC that restarts in games has a supply whose label shows 400 W"
+    ],
+    "answer": {
+      "cause": "a power supply whose wattage is too low for the new card",
+      "action": "Replace the power supply with one rated for the full load plus headroom"
+    },
+    "appliesWhen": "the parts draw more power at full load than the supply can give",
+    "explanation": "A supply with too little wattage can cause brownouts, random reboots, or a PC that will not start. Adding a strong graphics card often pushes the load past the old supply's rating.",
+    "related": [
+      "core1-s-psu-switch-115",
+      "core1-s-psu-switch-230",
+      "core1-s-psu-cpu-lead",
+      "core1-s-psu-gpu-lead"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-psu-switch-115",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC died at its first power-on after it was shipped from a US office to one in Germany",
+      "there was a pop and a burnt smell at the first power-on",
+      "the PC will no longer start though no one ever touched the red switch on the back of the supply"
+    ],
+    "answer": {
+      "cause": "a voltage selector set to 115 VAC on a 230 VAC outlet",
+      "action": "Replace the power supply and set the new unit's switch to 230 VAC"
+    },
+    "appliesWhen": "a supply set for 115 VAC was plugged into a 230 VAC outlet",
+    "explanation": "US outlets give 110–120 VAC and European outlets 220–240 VAC. A dual-voltage supply set to 115 VAC gets about double its voltage on a 230 VAC outlet and is likely damaged.",
+    "related": [
+      "core1-s-psu-low-watt",
+      "core1-s-psu-switch-230",
+      "core1-s-psu-cpu-lead",
+      "core1-s-psu-gpu-lead"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-psu-switch-230",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "pc-desktop"
+    ],
+    "clues": [
+      "the PC has not started since it was moved from a European office to one in the United States",
+      "the fans twitch briefly but the PC does not start",
+      "the PC will not power on with the red switch on the back of the supply in the European setting"
+    ],
+    "answer": {
+      "cause": "a voltage selector set to 230 VAC on a 115 VAC outlet",
+      "action": "Power off, unplug, and set the voltage switch to 115 VAC"
+    },
+    "firstStep": "Check the voltage selector switch on the back of the power supply",
+    "appliesWhen": "a supply set for 230 VAC gets only 110–120 VAC from the outlet",
+    "explanation": "A supply set to 230 VAC gets only half its expected input from a US outlet, so it cannot power the PC. Unplug it before you change the switch.",
+    "related": [
+      "core1-s-psu-low-watt",
+      "core1-s-psu-switch-115",
+      "core1-s-psu-cpu-lead",
+      "core1-s-psu-gpu-lead"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-psu-cpu-lead",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.2",
+      "220-1201/3.6.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "home-office"
+    ],
+    "devices": [
+      "pc-desktop",
+      "pc-gaming"
+    ],
+    "clues": [
+      "the fans spin but there is no POST since the motherboard was replaced",
+      "the main 24-pin lead is firmly in place yet the PC will not POST",
+      "only the large main lead and the drive leads were connected before the failed first start"
+    ],
+    "answer": {
+      "cause": "the 8-pin CPU (EATX12V) power lead not connected",
+      "action": "Connect the 8-pin CPU power lead from the power supply"
+    },
+    "appliesWhen": "the board gets main power but the processor's 12 V socket is empty",
+    "explanation": "The CPU gets its own 12 V feed through the 4- or 8-pin EATX12V socket. Without it the fans can spin, but the CPU cannot run.",
+    "related": [
+      "core1-s-psu-low-watt",
+      "core1-s-psu-switch-115",
+      "core1-s-psu-switch-230",
+      "core1-s-psu-gpu-lead"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-psu-gpu-lead",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "topics": [
+      "220-1201/3.6.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "pc-gaming",
+      "pc-workstation"
+    ],
+    "clues": [
+      "the new graphics card's fans do not spin",
+      "no image comes from any of the card's ports",
+      "the new card shows no sign of life while the old card had no sockets on its edge and took all its power from the slot",
+      "the PC works when the old low-power card is put back"
+    ],
+    "answer": {
+      "cause": "the PCIe power lead not connected to the graphics card",
+      "action": "Connect a 6+2-pin PCIe power lead from the power supply to the card"
+    },
+    "appliesWhen": "a graphics card that needs extra 12 V power has no PCIe power lead",
+    "explanation": "A PCIe slot gives up to 75 W, so stronger cards need 6-pin or 8-pin PCIe power leads. Without them the card does not start.",
+    "related": [
+      "core1-s-psu-low-watt",
+      "core1-s-psu-switch-115",
+      "core1-s-psu-switch-230",
+      "core1-s-psu-cpu-lead"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 18: Power"
+  },
+  {
+    "id": "core1-s-print-loc-jack",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "choose where to put a new department printer",
+    "clues": [
+      "the printer has a wired network port and no Wi-Fi radio",
+      "staff from every desk will walk to it to collect pages",
+      "only some of the wall jacks in the office are patched to the switch"
+    ],
+    "answer": {
+      "item": "A central spot near a working RJ45 wall jack"
+    },
+    "itemType": "location",
+    "appliesWhen": "a wired network printer must reach a live network port and be easy for users to get to",
+    "explanation": "A printer that joins the network by cable must sit near a working RJ45 jack. A central spot also makes it easy for the users to reach.",
+    "related": [
+      "core1-s-print-loc-wifi",
+      "core1-s-print-loc-host",
+      "core1-s-print-loc-vent"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-loc-wifi",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "choose where to put a new wireless printer",
+    "clues": [
+      "the printer has no wired network port",
+      "the chosen corner has no network wall ports",
+      "no one has measured the signal strength in that part of the building"
+    ],
+    "answer": {
+      "item": "A spot well inside the Wi-Fi coverage, confirmed with a site survey"
+    },
+    "itemType": "location",
+    "appliesWhen": "a printer will connect over Wi-Fi and the signal at the planned spot is unknown",
+    "explanation": "A wireless printer needs a strong signal where it sits. A wireless site survey shows whether the planned spot is well inside the Wi-Fi area, close to an access point.",
+    "related": [
+      "core1-s-print-loc-jack",
+      "core1-s-print-loc-host",
+      "core1-s-print-loc-vent"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-loc-host",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [],
+    "need": "choose where to put a printer that one desktop will share",
+    "clues": [
+      "the printer connects only by a USB cable",
+      "the team sits together in one area of the office",
+      "the host desktop stays on during work hours"
+    ],
+    "answer": {
+      "item": "A shared area next to the PC it will connect to"
+    },
+    "itemType": "location",
+    "appliesWhen": "a USB printer is shared from one PC, so it must sit beside that PC in a common area",
+    "explanation": "A USB printer that a PC shares must be close to that PC. A community area next to it lets the other users collect their printouts.",
+    "related": [
+      "core1-s-print-loc-jack",
+      "core1-s-print-loc-wifi",
+      "core1-s-print-loc-vent"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-loc-vent",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "choose where to put a large new laser printer",
+    "clues": [
+      "the printer gives off a lot of heat while it runs",
+      "the user wants to tuck it into a closed cabinet under the desk",
+      "the printer's corona wires produce ozone"
+    ],
+    "answer": {
+      "item": "A well-ventilated open area with space around it"
+    },
+    "itemType": "location",
+    "appliesWhen": "a printer gives off heat or ozone and must not be closed in",
+    "explanation": "Laser printers make heat and some ozone, so they need good airflow. A closed cubbyhole lets heat build up and shortens the printer's life.",
+    "related": [
+      "core1-s-print-loc-jack",
+      "core1-s-print-loc-wifi",
+      "core1-s-print-loc-host"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-drv-pcl",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "install a driver for a new general office printer",
+    "clues": [
+      "users print everyday letters, spreadsheets, and reports",
+      "no one prints professional graphics on this printer",
+      "the office wants the most widely used driver type for general documents"
+    ],
+    "answer": {
+      "item": "A PCL driver"
+    },
+    "itemType": "driver",
+    "appliesWhen": "the printer is for typical office documents such as letters and spreadsheets",
+    "explanation": "PCL is the more common driver type and is meant for general office printing. It handles letters, spreadsheets, and reports well.",
+    "related": [
+      "core1-s-print-drv-ps",
+      "core1-s-print-drv-ipp",
+      "core1-s-print-drv-mac"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-drv-ps",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "install a driver for the marketing team's printer",
+    "clues": [
+      "the marketing team prints professional graphics and presentations",
+      "the same files must print the same on every printer brand the team uses",
+      "fonts and shapes must print exactly as they look on screen"
+    ],
+    "answer": {
+      "item": "A PostScript driver"
+    },
+    "itemType": "driver",
+    "appliesWhen": "the users print professional graphics and complex page layouts",
+    "explanation": "PostScript describes the page with draw and position commands and is the driver type for professional graphics and presentations. It suits high-end printers that print complex layouts.",
+    "related": [
+      "core1-s-print-drv-pcl",
+      "core1-s-print-drv-ipp",
+      "core1-s-print-drv-mac"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-drv-ipp",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "need": "set up printing on the new computers",
+    "clues": [
+      "the computers run Windows 11",
+      "the printer supports Microsoft's modern print platform",
+      "the company wants to stop installing third-party printer drivers"
+    ],
+    "answer": {
+      "item": "The Windows IPP inbox class driver"
+    },
+    "itemType": "driver",
+    "appliesWhen": "Windows 11 computers print to a printer that supports the modern print platform without a vendor driver",
+    "explanation": "Windows 11 pushes the IPP inbox class driver, part of Microsoft's modern print platform. When the printer supports it, no third-party driver needs to be installed.",
+    "related": [
+      "core1-s-print-drv-pcl",
+      "core1-s-print-drv-ps",
+      "core1-s-print-drv-mac"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "core1-s-print-drv-mac",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "need": "let new staff print to the existing network printer",
+    "clues": [
+      "the new staff use Mac computers",
+      "only Windows drivers are loaded on the print server",
+      "the Windows users already print without problems"
+    ],
+    "answer": {
+      "item": "The macOS version of the printer driver"
+    },
+    "itemType": "driver",
+    "appliesWhen": "clients of another operating system need their own driver for the same printer",
+    "explanation": "A driver must be written for both the printer and the operating system. A print server needs a driver for every type of client that connects, so the Macs need the macOS driver.",
+    "related": [
+      "core1-s-print-drv-pcl",
+      "core1-s-print-drv-ps",
+      "core1-s-print-drv-ipp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-con-usb",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4"
+    ],
+    "settings": [
+      "home-office"
+    ],
+    "devices": [],
+    "need": "connect a small printer at a home office desk",
+    "clues": [
+      "only one computer will ever print to it",
+      "the printer sits right next to the computer",
+      "the user does not want the printer on the network"
+    ],
+    "answer": {
+      "item": "A USB cable to the computer"
+    },
+    "itemType": "connection",
+    "appliesWhen": "one computer prints to a local printer that sits next to it",
+    "explanation": "USB is the most common local printer connection. It is simple, fast, and the computer finds the printer by itself.",
+    "related": [
+      "core1-s-print-con-eth",
+      "core1-s-print-con-wifi",
+      "core1-s-print-con-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-con-eth",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "connect the new department printer to the network",
+    "clues": [
+      "the printer must have the most stable connection possible",
+      "there is a free RJ45 port in the wall behind it",
+      "twenty users will print to it all day"
+    ],
+    "answer": {
+      "item": "A wired Ethernet connection"
+    },
+    "itemType": "connection",
+    "appliesWhen": "a shared printer needs the most stable network link and a wall port is close by",
+    "explanation": "A hardwired connection is the most stable way to put a printer on the network. The printer's built-in NIC lets every user send jobs to it.",
+    "related": [
+      "core1-s-print-con-usb",
+      "core1-s-print-con-wifi",
+      "core1-s-print-con-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-con-wifi",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "connect a printer that sits on a rolling cart",
+    "clues": [
+      "every room it visits is covered by the office access points",
+      "no network cable can reach the places where it stops",
+      "it must stay connected to the office network all the time"
+    ],
+    "answer": {
+      "item": "The office Wi-Fi network in infrastructure mode"
+    },
+    "itemType": "connection",
+    "appliesWhen": "a printer must stay on the network without a cable",
+    "explanation": "Joining the existing Wi-Fi network in infrastructure mode keeps the printer on the network wherever the signal reaches. A cable or a short-range link would not follow the cart.",
+    "related": [
+      "core1-s-print-con-usb",
+      "core1-s-print-con-eth",
+      "core1-s-print-con-bt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-con-bt",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4"
+    ],
+    "settings": [
+      "retail",
+      "field"
+    ],
+    "devices": [],
+    "need": "let a sales rep print from a phone to a small portable printer",
+    "clues": [
+      "the phone and the printer are within a few meters of each other",
+      "there is no network at the trade show booth",
+      "the link is needed only for a short time"
+    ],
+    "answer": {
+      "item": "A Bluetooth connection"
+    },
+    "itemType": "connection",
+    "appliesWhen": "a phone prints to a nearby portable printer for a short time with no network",
+    "explanation": "Bluetooth is a short-range link of about 10 meters that pairs a phone with a printer directly. It needs no network and suits a temporary connection.",
+    "related": [
+      "core1-s-print-con-usb",
+      "core1-s-print-con-eth",
+      "core1-s-print-con-wifi"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sh-share",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [],
+    "need": "let three coworkers print to a USB printer on the manager's desktop",
+    "clues": [
+      "the printer has no network port",
+      "the manager's desktop stays on during work hours",
+      "the office has no server"
+    ],
+    "answer": {
+      "item": "Turn on file and printer sharing and share the printer from that PC"
+    },
+    "itemType": "method",
+    "appliesWhen": "a USB printer on one PC must be used by a few others and that PC is always on",
+    "explanation": "A printer attached to a Windows PC must be shared before other computers can print to it. Turn on file and printer sharing, then share the printer on its Sharing tab.",
+    "related": [
+      "core1-s-print-sh-server",
+      "core1-s-print-sh-pool",
+      "core1-s-print-sh-cloud",
+      "core1-s-print-sh-tcpip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sh-server",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [],
+    "need": "manage printing for 60 printers in the building",
+    "clues": [
+      "permissions must be set for each group on each printer",
+      "clients on Windows, macOS, and Linux must get their drivers from one place",
+      "printing must not depend on a user's desktop being on"
+    ],
+    "answer": {
+      "item": "A print server"
+    },
+    "itemType": "method",
+    "appliesWhen": "many printers need central control, permissions, and drivers for every client type",
+    "explanation": "A print server hosts the printers, processes the jobs, and gives granular control over permissions. It holds the drivers for every client type that connects.",
+    "related": [
+      "core1-s-print-sh-share",
+      "core1-s-print-sh-pool",
+      "core1-s-print-sh-cloud",
+      "core1-s-print-sh-tcpip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sh-pool",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "spread a heavy print load across three identical printers",
+    "clues": [
+      "the three printers sit side by side in one copy room",
+      "users should see one printer name",
+      "jobs pile up on one printer while the others stand idle"
+    ],
+    "answer": {
+      "item": "Printer pooling on the Ports tab"
+    },
+    "itemType": "method",
+    "appliesWhen": "several identical printers in one place should share the jobs under one name",
+    "explanation": "Printer pooling links several physical printers to one printer name, and a job prints on any free device. All the pooled printers must be in the same place so users find their pages.",
+    "related": [
+      "core1-s-print-sh-share",
+      "core1-s-print-sh-server",
+      "core1-s-print-sh-cloud",
+      "core1-s-print-sh-tcpip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sh-cloud",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [],
+    "need": "print a report on a printer in a branch office in another city",
+    "clues": [
+      "the user is not on the branch office network",
+      "the company already pays for an online print service",
+      "no VPN is set up between the offices"
+    ],
+    "answer": {
+      "item": "Cloud printing"
+    },
+    "itemType": "method",
+    "appliesWhen": "a user must print to a printer in a remote office through an online service",
+    "explanation": "Cloud-based printing lets a user print to a printer in another city by selecting it from a list. It does not need a direct connection to that office's network.",
+    "related": [
+      "core1-s-print-sh-share",
+      "core1-s-print-sh-server",
+      "core1-s-print-sh-pool",
+      "core1-s-print-sh-tcpip"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "core1-s-print-sh-tcpip",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5",
+      "220-1201/3.7.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "add a network printer that Windows did not find on its own",
+    "clues": [
+      "the printer's panel shows a fixed 192.168.1.40, in the same subnet as the PCs",
+      "the printer's web page opens when its address is typed in a browser",
+      "the printer is plugged straight into the network switch"
+    ],
+    "answer": {
+      "item": "Add the printer with a TCP/IP address or hostname"
+    },
+    "itemType": "method",
+    "appliesWhen": "a network printer has a known IP address but is not found automatically",
+    "explanation": "A network-aware printer is a host with its own IP address. Adding it by that address sends jobs straight to the printer, so no PC has to act as the print server.",
+    "related": [
+      "core1-s-print-sh-share",
+      "core1-s-print-sh-server",
+      "core1-s-print-sh-pool",
+      "core1-s-print-sh-cloud"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-set-duplex",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "cut the department's paper use in half",
+    "clues": [
+      "most jobs are long reports",
+      "the reports are read once and then filed",
+      "each sheet comes out with text on only one face"
+    ],
+    "answer": {
+      "item": "Duplex printing"
+    },
+    "itemType": "print setting",
+    "appliesWhen": "pages must be printed on both sides of the sheet",
+    "explanation": "Duplexing prints on both sides of the paper, which halves the sheets a long report uses. Most printers are not set to duplex by default.",
+    "related": [
+      "core1-s-print-set-landscape",
+      "core1-s-print-set-tray",
+      "core1-s-print-set-quality",
+      "core1-s-print-set-collate"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-set-landscape",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "print a wide spreadsheet so that every column fits on the page",
+    "clues": [
+      "the right-hand columns are cut off",
+      "the sheet is much wider than it is tall",
+      "shrinking the text makes it too small to read"
+    ],
+    "answer": {
+      "item": "Landscape orientation"
+    },
+    "itemType": "print setting",
+    "appliesWhen": "the content is wider than it is tall, such as a spreadsheet or slides",
+    "explanation": "Orientation sets whether the page is printed vertically or horizontally. A wide spreadsheet fits best when the page is turned sideways.",
+    "related": [
+      "core1-s-print-set-duplex",
+      "core1-s-print-set-tray",
+      "core1-s-print-set-quality",
+      "core1-s-print-set-collate"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-set-tray",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "print contracts on legal-size paper",
+    "clues": [
+      "the legal sheets are loaded in the second drawer",
+      "jobs keep coming out on letter paper from the first drawer",
+      "the drawer guides are already set for the longer sheets"
+    ],
+    "answer": {
+      "item": "The paper tray (paper source) setting"
+    },
+    "itemType": "print setting",
+    "appliesWhen": "a job must come from a particular drawer that holds another paper size",
+    "explanation": "Tray settings choose which drawer, and which paper size, a job uses. In Windows they are in Printing preferences, often in the Advanced section.",
+    "related": [
+      "core1-s-print-set-duplex",
+      "core1-s-print-set-landscape",
+      "core1-s-print-set-quality",
+      "core1-s-print-set-collate"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-set-quality",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail"
+    ],
+    "devices": [],
+    "need": "print a brochure with detailed photos for customers",
+    "clues": [
+      "fine details in the photos look rough",
+      "the printer is set to its normal mode",
+      "speed matters less than how the brochure looks"
+    ],
+    "answer": {
+      "item": "A higher print quality (DPI) setting"
+    },
+    "itemType": "print setting",
+    "appliesWhen": "output with graphics must show more detail",
+    "explanation": "Quality is the print resolution in dots per inch. 600 DPI is letter quality, but 1200 or 2400 DPI shows graphics with more detail.",
+    "related": [
+      "core1-s-print-set-duplex",
+      "core1-s-print-set-landscape",
+      "core1-s-print-set-tray",
+      "core1-s-print-set-collate"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-set-collate",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "print 30 copies of a 10-page handout",
+    "clues": [
+      "the last job came out as all the page 1s, then all the page 2s",
+      "staff spent an hour sorting pages by hand",
+      "each copy must be a complete set in page order"
+    ],
+    "answer": {
+      "item": "Collate"
+    },
+    "itemType": "print setting",
+    "appliesWhen": "several copies of a multipage job must each come out as a complete ordered set",
+    "explanation": "Collating prints page 1, 2, 3 of one copy and then starts the next copy. It saves the users from sorting the pages by hand.",
+    "related": [
+      "core1-s-print-set-duplex",
+      "core1-s-print-set-landscape",
+      "core1-s-print-set-tray",
+      "core1-s-print-set-quality"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sec-auth",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.7"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "need": "make sure only staff can use the lobby multifunction printer",
+    "clues": [
+      "visitors have been making copies on it",
+      "staff do not carry ID cards",
+      "the device can check network account credentials"
+    ],
+    "answer": {
+      "item": "User authentication at the device"
+    },
+    "itemType": "security feature",
+    "appliesWhen": "users must prove who they are with credentials before they use the device",
+    "explanation": "User authentication makes each person sign in before the device copies, scans, or prints. Without valid credentials a visitor cannot use it.",
+    "related": [
+      "core1-s-print-sec-badge",
+      "core1-s-print-sec-hold",
+      "core1-s-print-sec-audit"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sec-badge",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.7"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "let staff sign in to the multifunction printer quickly",
+    "clues": [
+      "users find typing a password on the touchscreen slow",
+      "every employee carries a company ID card",
+      "the device has a slot on its side for scanning cards"
+    ],
+    "answer": {
+      "item": "Badging with a badge reader"
+    },
+    "itemType": "security feature",
+    "appliesWhen": "staff carry ID cards and should sign in to the device by scanning them",
+    "explanation": "Badging signs a user in when they scan their work badge at the device's reader. It is faster than typing a username and password and still identifies the user.",
+    "related": [
+      "core1-s-print-sec-auth",
+      "core1-s-print-sec-hold",
+      "core1-s-print-sec-audit"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sec-hold",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "keep HR printouts from sitting in the output tray",
+    "clues": [
+      "the human resources team prints confidential personnel files",
+      "the printer is in a busy shared hallway",
+      "staff want the job to start only when they are standing at the device"
+    ],
+    "answer": {
+      "item": "Secured prints that hold each job until the user releases it"
+    },
+    "itemType": "security feature",
+    "appliesWhen": "a confidential job must wait at the printer until its owner is there",
+    "explanation": "A secured prints feature holds the job until the user authenticates at the printer and starts it. Confidential pages are never left in the tray.",
+    "related": [
+      "core1-s-print-sec-auth",
+      "core1-s-print-sec-badge",
+      "core1-s-print-sec-audit"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-sec-audit",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.7"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [],
+    "need": "find out who printed a leaked document last week",
+    "clues": [
+      "the document was printed on a shared printer",
+      "dozens of staff use the printer every day",
+      "the event is already in the past"
+    ],
+    "answer": {
+      "item": "Audit logs"
+    },
+    "itemType": "security feature",
+    "appliesWhen": "someone must find out after the fact who printed what, where, and when",
+    "explanation": "Audit logs record who printed which document, when, and where. Auditing usually has to be enabled before the event, on the printer or in Windows.",
+    "related": [
+      "core1-s-print-sec-auth",
+      "core1-s-print-sec-badge",
+      "core1-s-print-sec-hold"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-email",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.8"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "retail"
+    ],
+    "devices": [],
+    "need": "send a signed two-page form to a customer at once",
+    "clues": [
+      "the customer is outside the company",
+      "the file will be small",
+      "the customer has no access to the company's file shares"
+    ],
+    "answer": {
+      "item": "Scan to email"
+    },
+    "itemType": "scan option",
+    "appliesWhen": "a small scan must go straight to a person's inbox",
+    "explanation": "Scan to email sends the scanned file, usually as a PDF, to a recipient. It is the most common way to send a scan to someone.",
+    "related": [
+      "core1-s-print-scan-smb",
+      "core1-s-print-scan-cloud",
+      "core1-s-print-scan-adf",
+      "core1-s-print-scan-flatbed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-smb",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "store scanned invoices on the company file server",
+    "clues": [
+      "the scans are often too large for the mail server",
+      "the accounting team opens them from a share on a Windows server",
+      "the files must stay inside the company network"
+    ],
+    "answer": {
+      "item": "Scan to a network folder over SMB"
+    },
+    "itemType": "scan option",
+    "appliesWhen": "scans must be saved to a shared folder on a server, often because they are too large for email",
+    "explanation": "Scan to folder saves the file in a shared network folder using the Server Message Block protocol. The device must be set up for SMB scanning and the share must be secured.",
+    "related": [
+      "core1-s-print-scan-email",
+      "core1-s-print-scan-cloud",
+      "core1-s-print-scan-adf",
+      "core1-s-print-scan-flatbed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-cloud",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.8"
+    ],
+    "settings": [
+      "office",
+      "field"
+    ],
+    "devices": [],
+    "need": "save scanned drawings where remote staff can open them",
+    "clues": [
+      "the staff work from home and on the road",
+      "the company keeps its files in OneDrive",
+      "there is no VPN to the office"
+    ],
+    "answer": {
+      "item": "Scan to a cloud service"
+    },
+    "itemType": "scan option",
+    "appliesWhen": "scans must go to an online storage service that remote users reach",
+    "explanation": "Scan to cloud saves the file in a service such as OneDrive, Google Drive, or Dropbox. Remote users open it there without a link to the office network.",
+    "related": [
+      "core1-s-print-scan-email",
+      "core1-s-print-scan-smb",
+      "core1-s-print-scan-adf",
+      "core1-s-print-scan-flatbed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-adf",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [],
+    "need": "scan a 40-page contract into one file",
+    "clues": [
+      "the pages are loose and unstapled",
+      "placing each page on the glass would take too long",
+      "the pages are all the same letter size"
+    ],
+    "answer": {
+      "item": "The automatic document feeder (ADF)"
+    },
+    "itemType": "scan option",
+    "appliesWhen": "many loose pages must be scanned in one job",
+    "explanation": "An ADF pulls a stack of loose pages through the scanner one at a time, often up to 50 pages in one job. No one has to place each page on the glass.",
+    "related": [
+      "core1-s-print-scan-email",
+      "core1-s-print-scan-smb",
+      "core1-s-print-scan-cloud",
+      "core1-s-print-scan-flatbed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-flatbed",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.9"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [],
+    "need": "scan two pages from a bound book",
+    "clues": [
+      "the book cannot be taken apart",
+      "the item is too thick to go through the feed rollers",
+      "the pages must lie flat to scan cleanly"
+    ],
+    "answer": {
+      "item": "The flatbed scanner glass"
+    },
+    "itemType": "scan option",
+    "appliesWhen": "a bound, thick, or fragile item must be laid on the glass",
+    "explanation": "A flatbed scanner scans one item laid face down on the glass under the lid. It handles books and fragile items that cannot be fed through rollers.",
+    "related": [
+      "core1-s-print-scan-email",
+      "core1-s-print-scan-smb",
+      "core1-s-print-scan-cloud",
+      "core1-s-print-scan-adf"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-new-seal",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "print-laser",
+      "print-mfd"
+    ],
+    "clues": [
+      "pages have come out blank since the printer was unboxed and set up today",
+      "every page comes out completely blank",
+      "nothing appears on the pages even though the display shows the supply as full",
+      "a test page from the control panel is also blank"
+    ],
+    "answer": {
+      "cause": "the protective strip still on the new toner cartridge",
+      "action": "Remove the cartridge and pull off its protective strip"
+    },
+    "appliesWhen": "a new printer or cartridge still has its shipping tape in place",
+    "explanation": "Toner cartridges ship with a protective strip that keeps the toner in. If it is not removed the printer cannot print, and it can even be damaged.",
+    "related": [
+      "core1-s-print-wrong-pdl",
+      "core1-s-print-old-firmware",
+      "core1-s-print-wrong-tray",
+      "core1-s-print-subnet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-wrong-pdl",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "clues": [
+      "pages fill with strange symbols and lines of code",
+      "a one-page document prints many pages",
+      "jobs from the PC print garbage while a test page from the printer's own panel prints correctly",
+      "the garbled pages began after the printer was added on the PC with a generic model name"
+    ],
+    "answer": {
+      "cause": "the wrong printer driver on the PC",
+      "action": "Install the correct driver for the printer model and operating system"
+    },
+    "firstStep": "Print a test page from the printer's control panel",
+    "appliesWhen": "the PC sends the job in a page language the printer does not use",
+    "explanation": "With the wrong driver the PC sends commands in the wrong page-description language. The printer prints those commands as text, often over many pages.",
+    "related": [
+      "core1-s-print-new-seal",
+      "core1-s-print-old-firmware",
+      "core1-s-print-host-off",
+      "core1-s-print-subnet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-old-firmware",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "clues": [
+      "a security bulletin lists the printer model as vulnerable",
+      "the mobile printing option in the new manual is missing from the menus",
+      "the printer lacks features that the current manual lists and has run the same embedded software since it was bought"
+    ],
+    "answer": {
+      "cause": "outdated printer firmware",
+      "action": "Download the latest firmware from the manufacturer's website and install it"
+    },
+    "appliesWhen": "the printer's embedded software is old and lacks fixes or features",
+    "explanation": "Firmware is the printer's embedded software, like a motherboard's BIOS. Updates add features such as mobile printing and fix bugs and security holes.",
+    "related": [
+      "core1-s-print-wrong-pdl",
+      "core1-s-print-new-seal",
+      "core1-s-print-subnet",
+      "core1-s-print-wrong-tray"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-host-off",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "print-inkjet",
+      "print-laser"
+    ],
+    "clues": [
+      "coworkers cannot print early in the morning",
+      "printing works again once the owner arrives",
+      "the printer that coworkers cannot reach in the morning is connected by USB to a coworker's desktop",
+      "jobs from coworkers fail even though the printer itself is on and ready"
+    ],
+    "answer": {
+      "cause": "the PC that shares the printer is turned off",
+      "action": "Connect the printer to the network or keep the sharing PC turned on"
+    },
+    "firstStep": "Check that the sharing computer is powered on",
+    "appliesWhen": "the computer that shares a USB printer is off or asleep",
+    "explanation": "A printer shared from a Windows PC works only while that PC is on, because the PC acts as the print server. A network printer removes that dependency.",
+    "related": [
+      "core1-s-print-subnet",
+      "core1-s-print-pool-rooms",
+      "core1-s-print-bonjour",
+      "core1-s-print-wrong-pdl"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-subnet",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "clues": [
+      "the printer was added by its number but jobs never arrive",
+      "a ping to the printer fails",
+      "the printer that never receives jobs shows 10.0.0.50 on its panel while the PCs use 192.168.1.x numbers",
+      "only printing fails while other network devices work normally"
+    ],
+    "answer": {
+      "cause": "the printer's IP address is on a different subnet",
+      "action": "Give the printer an IP address on the same subnet as the computers"
+    },
+    "firstStep": "Check the network settings on the printer's control panel",
+    "appliesWhen": "the printer's network settings put it on another subnet from the computers",
+    "explanation": "A TCP/IP printer needs an IP address on the same subnet as the computers that add it. With an address from another subnet the jobs cannot reach it.",
+    "related": [
+      "core1-s-print-bonjour",
+      "core1-s-print-host-off",
+      "core1-s-print-wrong-pdl",
+      "core1-s-print-pool-rooms"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-bonjour",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4",
+      "220-1201/3.7.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "clues": [
+      "the Macs on the second floor cannot find the printer automatically",
+      "the Macs on the first floor where the printer sits find it at once",
+      "the second-floor Macs that cannot find the printer reach the internet and the file server normally",
+      "the second-floor Macs cannot discover the printer even though it prints for anyone who has already added it by address"
+    ],
+    "answer": {
+      "cause": "the printer is on the other side of a router from the Macs",
+      "action": "Add the printer by its IP address instead of waiting for discovery"
+    },
+    "appliesWhen": "automatic discovery fails because the printer is in another broadcast domain",
+    "explanation": "Bonjour finds devices only within one broadcast domain. It does not see a printer on the other side of a router, so the printer must be added by its address.",
+    "related": [
+      "core1-s-print-subnet",
+      "core1-s-print-host-off",
+      "core1-s-print-pool-rooms",
+      "core1-s-print-wrong-pdl"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-pool-rooms",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "users cannot find their printouts",
+      "jobs sent to one printer name come out on any of several devices",
+      "some lost printouts turn up on two devices on another floor"
+    ],
+    "answer": {
+      "cause": "a printer pool that includes printers in different rooms",
+      "action": "Keep only printers that sit in the same room in the pool"
+    },
+    "appliesWhen": "pooled printers are spread out, so jobs come out far away",
+    "explanation": "Printer pooling sends a job to any printer in the pool. When the pooled printers are in different places, users walk around looking for their pages.",
+    "related": [
+      "core1-s-print-host-off",
+      "core1-s-print-subnet",
+      "core1-s-print-bonjour",
+      "core1-s-print-wrong-tray"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-wrong-tray",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "clues": [
+      "the printer asks for letter paper though legal sheets are loaded in drawer 2",
+      "jobs stop and wait for someone to press OK",
+      "the printer still asks for letter paper even though the drawer guides are set for the longer sheets"
+    ],
+    "answer": {
+      "cause": "the tray paper size setting does not match the loaded paper",
+      "action": "Set the drawer's paper size in the printer settings to match the paper"
+    },
+    "appliesWhen": "the configured paper size for a drawer differs from the paper in it",
+    "explanation": "Tray settings tell the printer what paper size each drawer holds. When the setting and the paper differ, the printer stops and asks for the paper it expects.",
+    "related": [
+      "core1-s-print-new-seal",
+      "core1-s-print-old-firmware",
+      "core1-s-print-pool-rooms",
+      "core1-s-print-wrong-pdl"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-denied",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "print-mfd"
+    ],
+    "clues": [
+      "scans to the file server fail with an access denied error",
+      "only scans to the file share fail while scan to email works from the same device",
+      "scans to the destination share have failed since it was created yesterday"
+    ],
+    "answer": {
+      "cause": "the share does not allow the scanner to write files",
+      "action": "Give the scanner's account write permission on the share"
+    },
+    "appliesWhen": "the destination share or its permissions do not let the device save files",
+    "explanation": "Scan to folder uses SMB, and the destination share must be set up and secured for the device. If its account cannot write there, every scan fails with access denied.",
+    "related": [
+      "core1-s-print-scan-size",
+      "core1-s-print-subnet",
+      "core1-s-print-old-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-scan-size",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.8"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "print-mfd"
+    ],
+    "clues": [
+      "short scans arrive in the inbox but long ones never do",
+      "a 90-page color scan never arrives",
+      "the mail server returns a message that the attachment is too big"
+    ],
+    "answer": {
+      "cause": "the scanned file is larger than the email size limit",
+      "action": "Scan the large job to a network folder over SMB instead"
+    },
+    "appliesWhen": "a scan is too large to be sent by email",
+    "explanation": "Mail servers limit the size of a message. A large scan can be saved to a network folder over SMB instead, which has no such limit.",
+    "related": [
+      "core1-s-print-scan-denied",
+      "core1-s-print-subnet",
+      "core1-s-print-old-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-install",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1",
+      "220-1201/3.7.2",
+      "220-1201/3.7.3",
+      "220-1201/3.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "task": "installing a new multifunction printer",
+    "steps": [
+      {
+        "do": "Choose a proper setup location for the device",
+        "done": "chosen a proper setup location for the device"
+      },
+      {
+        "do": "Connect the device to its port and to power",
+        "done": "connected the device to its port and to power"
+      },
+      {
+        "do": "Install the driver, update the firmware, and calibrate the device",
+        "done": "installed the driver, updated the firmware, and calibrated the device"
+      },
+      {
+        "do": "Configure the options and settings",
+        "done": "configured the options and settings"
+      },
+      {
+        "do": "Print a test page",
+        "done": "printed a test page"
+      },
+      {
+        "do": "Verify that it works with the operating system and applications",
+        "done": "verified that it works with the operating system and applications"
+      },
+      {
+        "do": "Show users the device's basic functions",
+        "done": "shown users the device's basic functions"
+      }
+    ],
+    "explanation": "The usual order for installing a printer is location, connection, driver and firmware, settings, test page, compatibility check, and user training.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-unbox",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "print-mfd",
+      "print-laser"
+    ],
+    "task": "unboxing a heavy new multifunction printer",
+    "steps": [
+      {
+        "do": "Cut the box tape carefully",
+        "done": "cut the box tape carefully"
+      },
+      {
+        "do": "Remove the packing materials",
+        "done": "removed the packing materials"
+      },
+      {
+        "do": "Lift the printer out with a second person",
+        "done": "lifted the printer out with a second person"
+      },
+      {
+        "do": "Place the printer on a flat, stable surface",
+        "done": "placed the printer on a flat, stable surface"
+      },
+      {
+        "do": "Remove the protective tape, including inside the trays and under the scanner lid",
+        "done": "removed the protective tape, including inside the trays and under the scanner lid"
+      },
+      {
+        "do": "Install the paper trays and then the toner cartridges",
+        "done": "installed the paper trays and then the toner cartridges"
+      },
+      {
+        "do": "Recycle the packing materials and the box",
+        "done": "recycled the packing materials and the box"
+      }
+    ],
+    "explanation": "Unbox in a safe order: open the box, take out the packing, team-lift the device onto a stable surface, remove the tape, then fit the trays and supplies. Keep the box until the device passes inspection, then recycle it.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-win-share",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [],
+    "task": "sharing a USB printer from a Windows desktop",
+    "steps": [
+      {
+        "do": "Open the Network and Sharing Center",
+        "done": "opened the Network and Sharing Center"
+      },
+      {
+        "do": "Select Change advanced sharing settings",
+        "done": "selected Change advanced sharing settings"
+      },
+      {
+        "do": "Turn on file and printer sharing",
+        "done": "turned on file and printer sharing"
+      },
+      {
+        "do": "Open the printer's Sharing tab in Printer properties",
+        "done": "opened the printer's Sharing tab in Printer properties"
+      },
+      {
+        "do": "Select Share this printer and give it a share name",
+        "done": "selected Share this printer and given it a share name"
+      },
+      {
+        "do": "Set the Print permission on the Security tab",
+        "done": "set the Print permission on the Security tab"
+      },
+      {
+        "do": "Add the shared printer on a client PC and print a test page",
+        "done": "added the shared printer on a client PC"
+      }
+    ],
+    "explanation": "Sharing in Windows has two parts: printer sharing must be turned on for the computer, and then the printer itself is shared. Permissions on the Security tab control who can print.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 19: Multifunction Devices/Printers"
+  },
+  {
+    "id": "core1-s-print-tcpip-add",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "topics": [
+      "220-1201/3.7.4",
+      "220-1201/3.7.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic",
+      "school"
+    ],
+    "devices": [],
+    "task": "adding a new network printer to a Windows 11 PC by its address",
+    "steps": [
+      {
+        "do": "Connect the printer to the network and power it on",
+        "done": "connected the printer to the network and powered it on"
+      },
+      {
+        "do": "Set an IP address on the printer for the PCs' subnet",
+        "done": "set an IP address on the printer for the PCs' subnet"
+      },
+      {
+        "do": "Open Printers & scanners and select Add device",
+        "done": "opened Printers & scanners and selected Add device"
+      },
+      {
+        "do": "Choose to add a printer using a TCP/IP address or hostname",
+        "done": "chosen to add a printer using a TCP/IP address or hostname"
+      },
+      {
+        "do": "Enter the printer's IP address and a port name",
+        "done": "entered the printer's IP address and a port name"
+      },
+      {
+        "do": "Select the printer's make and model and install the driver",
+        "done": "selected the printer's make and model and installed the driver"
+      },
+      {
+        "do": "Print a test page",
+        "done": "printed a test page"
+      }
+    ],
+    "explanation": "A TCP/IP printer needs an address on the same subnet before the PC can add it. The PC then adds a port for that address and installs the driver.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-maint-count",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "the display shows a service message",
+      "the service message appeared on a printer that has printed about 200,000 pages",
+      "the printer that shows the service message has paper pickup rollers worn smooth",
+      "pages still print normally despite the service message on the display"
+    ],
+    "answer": {
+      "cause": "the page count reached the maintenance interval",
+      "action": "Install the maintenance kit and reset the page counter"
+    },
+    "appliesWhen": "the printer's page counter reached the service interval",
+    "explanation": "Laser printers count pages and show a maintenance message at the set interval. The kit replaces worn parts such as the fuser, rollers, and separation pads, and the counter must then be reset.",
+    "related": [
+      "core1-s-print-toner-low",
+      "core1-s-print-laser-calib",
+      "core1-s-print-toner-spill"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-toner-low",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "print has grown lighter over several days",
+      "the display shows a supply warning as the print gets lighter",
+      "the fading is even across the whole sheet",
+      "print has faded on a printer that has had nothing replaced for a year"
+    ],
+    "answer": {
+      "cause": "a nearly empty toner cartridge",
+      "action": "Replace the toner cartridge with the model the manufacturer specifies"
+    },
+    "appliesWhen": "the consumable that makes the image on laser pages is running out",
+    "explanation": "Toner is the laser printer's consumable, and pages fade evenly as it runs out. Use the cartridge model the manufacturer specifies, not a refilled one.",
+    "related": [
+      "core1-s-print-maint-count",
+      "core1-s-print-laser-calib",
+      "core1-s-print-toner-spill"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-laser-calib",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "text sits too close to one edge of the page",
+      "lines on the test page print slightly out of place",
+      "the misplaced printing began after the rollers and fuser were replaced yesterday",
+      "margins on printed pages no longer match the margins set in the document"
+    ],
+    "answer": {
+      "cause": "the printer was not calibrated after maintenance",
+      "action": "Run the printer's calibration routine"
+    },
+    "appliesWhen": "margins or colors are out of line after parts or supplies were changed",
+    "explanation": "Calibration sets the horizontal and vertical print positions and the margins so text and images print straight. It should be run after maintenance, from the printer's firmware or from Windows.",
+    "related": [
+      "core1-s-print-maint-count",
+      "core1-s-print-toner-low",
+      "core1-s-print-toner-spill"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "core1-s-print-toner-spill",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "clues": [
+      "black powder coats the inside of the front cover",
+      "gray smudges show on the back of pages",
+      "the smudged pages began after a cartridge was dropped while it was being changed"
+    ],
+    "answer": {
+      "cause": "loose toner spilled inside the printer",
+      "action": "Clean out the printer with a toner vacuum"
+    },
+    "appliesWhen": "loose powder from a cartridge has spread inside the printer",
+    "explanation": "Spilled toner smears pages and should not be breathed in. A toner vacuum picks it up; compressed air is used only outdoors, and the residue is then vacuumed.",
+    "related": [
+      "core1-s-print-maint-count",
+      "core1-s-print-toner-low",
+      "core1-s-print-laser-calib"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "core1-s-print-ink-clog",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "clues": [
+      "thin white lines run across the printed photos",
+      "the white lines appeared the first time the printer was used after two months",
+      "photos print with gaps even though the ink levels show plenty left",
+      "a test pattern has missing bars"
+    ],
+    "answer": {
+      "cause": "clogged printhead nozzles",
+      "action": "Run the printhead cleaning cycle"
+    },
+    "firstStep": "Print a nozzle check pattern",
+    "appliesWhen": "dried ink blocks part of the printhead",
+    "explanation": "Ink dries in the printhead when the printer sits unused, so some lines do not print. The printer's cleaning routine clears the printhead; a cleaning solution helps when the routine is not enough.",
+    "related": [
+      "core1-s-print-ink-align",
+      "core1-s-print-ink-empty",
+      "core1-s-print-ink-jam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-ink-align",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "clues": [
+      "vertical lines look jagged",
+      "colors are slightly offset from the black text",
+      "the jagged printing began after the ink supplies were changed this morning"
+    ],
+    "answer": {
+      "cause": "the cartridges were not aligned after they were replaced",
+      "action": "Run the alignment (calibration) routine"
+    },
+    "appliesWhen": "new cartridges are out of line with each other",
+    "explanation": "Inkjet printers should be calibrated after cartridges are replaced so lines line up and colors blend. The routine prints a pattern and asks which set looks best.",
+    "related": [
+      "core1-s-print-ink-clog",
+      "core1-s-print-ink-empty",
+      "core1-s-print-ink-jam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-ink-empty",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "clues": [
+      "the printer stops and will not print anything",
+      "the display shows the cyan level at zero and a stop message",
+      "the printer will not print even black text though the other colors are still half full"
+    ],
+    "answer": {
+      "cause": "an empty ink cartridge",
+      "action": "Replace the empty cartridge with a new one from the manufacturer"
+    },
+    "appliesWhen": "one color has run out and the printer stops",
+    "explanation": "Some inkjet printers stop working when just one cartridge is empty. A new cartridge from the manufacturer fixes it; refill kits can leak and print badly.",
+    "related": [
+      "core1-s-print-ink-clog",
+      "core1-s-print-ink-align",
+      "core1-s-print-ink-jam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-ink-jam",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "clues": [
+      "the display reports a jam after nearly every page",
+      "the jams began after a stuck sheet was pulled out in pieces last week",
+      "the printer clicks while it tries to pull in a sheet and then reports a jam"
+    ],
+    "answer": {
+      "cause": "torn paper caught in the rollers and feeder",
+      "action": "Open the printer and remove the paper scraps from the rollers and feeder"
+    },
+    "appliesWhen": "bits of paper are left in the paper path",
+    "explanation": "Bits of a torn sheet left in the roller or feeder block the next page. Inkjet maintenance includes clearing jams and removing any caught paper.",
+    "related": [
+      "core1-s-print-ink-clog",
+      "core1-s-print-ink-align",
+      "core1-s-print-ink-empty"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "core1-s-print-therm-dirty",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail",
+      "warehouse",
+      "clinic"
+    ],
+    "devices": [
+      "print-thermal"
+    ],
+    "clues": [
+      "a faint blank streak runs down every printout",
+      "the printouts with the blank streak come from a print head ringed with paper dust",
+      "the streak on the printouts has grown over months of all-day use at a busy counter"
+    ],
+    "answer": {
+      "cause": "a dirty heating element",
+      "action": "Clean the heating element with a thermal printer cleaning pen or card"
+    },
+    "appliesWhen": "dust or residue on the heating element keeps part of the paper from being heated",
+    "explanation": "Dust and residue on the heating element stop it heating that part of the paper. Unplug the printer, let it cool, and clean the element with a cleaning pen or card.",
+    "related": [
+      "core1-s-print-therm-flip",
+      "core1-s-print-therm-stored",
+      "core1-s-print-therm-feed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-therm-flip",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail",
+      "warehouse",
+      "clinic"
+    ],
+    "devices": [
+      "print-thermal"
+    ],
+    "clues": [
+      "printouts come out completely blank",
+      "printouts have been blank since the roll was changed a few minutes ago",
+      "scratching the outer face of the roll that prints blank leaves no dark mark"
+    ],
+    "answer": {
+      "cause": "the paper roll is loaded upside down",
+      "action": "Reload the roll with the coated side facing the print head"
+    },
+    "firstStep": "Scratch both sides of the paper with a fingernail to find the coated side",
+    "appliesWhen": "the coated side of the paper faces away from the head",
+    "explanation": "Only the coated side of thermal paper darkens with heat. If the roll is loaded the wrong way the head heats the plain side and nothing shows.",
+    "related": [
+      "core1-s-print-therm-dirty",
+      "core1-s-print-therm-stored",
+      "core1-s-print-therm-feed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-therm-stored",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail",
+      "warehouse",
+      "clinic"
+    ],
+    "devices": [
+      "print-thermal"
+    ],
+    "clues": [
+      "new rolls are already gray before anything prints",
+      "the gray rolls all come from a box that sits on a sunny windowsill",
+      "printouts are hard to read on the dark background"
+    ],
+    "answer": {
+      "cause": "the spare rolls were stored in heat and sunlight",
+      "action": "Replace the darkened rolls and store spares in a cool, dark place"
+    },
+    "appliesWhen": "the paper has darkened from heat or sunlight in storage",
+    "explanation": "Thermal paper turns dark when it gets warm, even before it prints. Spare rolls must be kept away from direct sunlight and heat.",
+    "related": [
+      "core1-s-print-therm-dirty",
+      "core1-s-print-therm-flip",
+      "core1-s-print-therm-feed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "core1-s-print-therm-plain",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail",
+      "warehouse",
+      "clinic"
+    ],
+    "devices": [
+      "print-thermal"
+    ],
+    "clues": [
+      "printouts have come out blank since the rolls began coming from a cheaper supplier",
+      "printouts are fine whenever an old roll from the former supplier is loaded",
+      "the paper that prints blank does not darken when it is scratched on either side"
+    ],
+    "answer": {
+      "cause": "plain paper instead of heat-sensitive paper",
+      "action": "Load the special thermal paper made for the printer"
+    },
+    "appliesWhen": "the roll is ordinary paper with no heat-sensitive coating",
+    "explanation": "Thermal printers print only on special heat-sensitive paper. Ordinary paper has no coating, so the heated head leaves no mark.",
+    "related": [
+      "core1-s-print-therm-dirty",
+      "core1-s-print-therm-stored",
+      "core1-s-print-therm-feed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-therm-feed",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail",
+      "warehouse",
+      "clinic"
+    ],
+    "devices": [
+      "print-thermal"
+    ],
+    "clues": [
+      "the paper stops moving after a few lines",
+      "the printer makes a grinding sound",
+      "bits of a torn printout are visible near the rubber roller where the paper stalls"
+    ],
+    "answer": {
+      "cause": "debris blocking the feed assembly",
+      "action": "Remove the debris from the feed assembly with compressed air or a computer vacuum"
+    },
+    "appliesWhen": "debris in the paper path stops the paper from moving",
+    "explanation": "The feed assembly moves the paper past the head on a rubber platen roller. Debris there stops the paper; remove it with compressed air or a vacuum after the printer is unplugged and cool.",
+    "related": [
+      "core1-s-print-therm-dirty",
+      "core1-s-print-therm-flip",
+      "core1-s-print-therm-stored"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-imp-ribbon",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "clues": [
+      "print on the invoices is faint and gray",
+      "the fading is even across every character",
+      "the print has faded on a printer that has had no supplies changed for many months"
+    ],
+    "answer": {
+      "cause": "a worn-out ink ribbon",
+      "action": "Replace the ribbon with the model the manufacturer specifies"
+    },
+    "appliesWhen": "the inked strip the pins strike has run dry",
+    "explanation": "An impact printer's pins strike an inked ribbon, which dries out with use. A dry ribbon prints faint, even characters and must be replaced with the manufacturer's model.",
+    "related": [
+      "core1-s-print-imp-pin",
+      "core1-s-print-imp-tractor",
+      "core1-s-print-ink-clog"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-imp-pin",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "clues": [
+      "a thin white line runs through every line of text",
+      "the gap is at the same height in every character",
+      "a new ribbon did not remove the white line through the text"
+    ],
+    "answer": {
+      "cause": "a bent or broken pin in the printhead",
+      "action": "Replace the printhead with an authorized part"
+    },
+    "appliesWhen": "one pin of the print head no longer strikes the ribbon",
+    "explanation": "A dot-matrix print head forms characters from a matrix of 9 or 24 pins. When one pin fails, the same row of dots is missing in every character.",
+    "related": [
+      "core1-s-print-imp-ribbon",
+      "core1-s-print-imp-tractor",
+      "core1-s-print-ink-clog"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-imp-tractor",
+    "kind": "fault",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "clues": [
+      "the paper drifts to one side and jams",
+      "torn bits of the perforated side strips are inside the printer",
+      "the jams began after the box of continuous paper was changed this morning"
+    ],
+    "answer": {
+      "cause": "continuous paper loaded out of line on the tractor feed",
+      "action": "Clear out the torn strips and reload the paper straight on the tractor pins"
+    },
+    "appliesWhen": "the continuous paper is not lined up on the feed pins",
+    "explanation": "Impact printers pull continuous paper by the holes on its sides. Paper loaded out of line feeds crookedly and jams, and torn strips must be cleared out.",
+    "related": [
+      "core1-s-print-imp-ribbon",
+      "core1-s-print-imp-pin",
+      "core1-s-print-ink-jam"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-type-impact",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail"
+    ],
+    "devices": [],
+    "need": "print invoices that make copies for the customer and the shop",
+    "clues": [
+      "each invoice form has three layered sheets",
+      "the copies underneath are marked only by force on the top sheet",
+      "the forms come as continuous paper with holes along the sides"
+    ],
+    "answer": {
+      "item": "An impact (dot-matrix) printer"
+    },
+    "itemType": "printer type",
+    "appliesWhen": "multipart forms need a physical strike to mark every copy",
+    "explanation": "Multipart paper makes copies only when force is applied to the top sheet. Impact printers strike the paper through a ribbon; laser, inkjet, and thermal printers do not.",
+    "related": [
+      "core1-s-print-type-thermal",
+      "core1-s-print-type-laser",
+      "core1-s-print-type-inkjet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-type-thermal",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail"
+    ],
+    "devices": [],
+    "need": "print receipts at each checkout lane",
+    "clues": [
+      "the printer must be small and quiet",
+      "no ink, toner, or ribbon should ever need changing",
+      "receipts come off a narrow roll"
+    ],
+    "answer": {
+      "item": "A thermal printer"
+    },
+    "itemType": "printer type",
+    "appliesWhen": "receipts print on a roll at a point-of-sale station with no ink to change",
+    "explanation": "Thermal printers heat special coated paper to make the image, so they use no ink, toner, or ribbon. They are the usual printer for point-of-sale receipts.",
+    "related": [
+      "core1-s-print-type-impact",
+      "core1-s-print-type-laser",
+      "core1-s-print-type-inkjet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-type-laser",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [],
+    "need": "print hundreds of text pages a day for the whole office",
+    "clues": [
+      "the printer must print 40 or more pages per minute",
+      "the text must be crisp at letter quality",
+      "the cost per page must stay low at high volume"
+    ],
+    "answer": {
+      "item": "A laser printer"
+    },
+    "itemType": "printer type",
+    "appliesWhen": "an office needs fast, high-volume printing on cut sheets",
+    "explanation": "Laser printers print 10 to 100 pages per minute at 600 DPI or more. They are the most common business printer for high volumes of documents.",
+    "related": [
+      "core1-s-print-type-impact",
+      "core1-s-print-type-thermal",
+      "core1-s-print-type-inkjet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "core1-s-print-type-inkjet",
+    "kind": "requirement",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office"
+    ],
+    "devices": [],
+    "need": "print color photos in a small home office",
+    "clues": [
+      "the user prints only a few pages a week",
+      "the budget for the printer itself is small",
+      "photo prints matter more than speed"
+    ],
+    "answer": {
+      "item": "A color inkjet printer"
+    },
+    "itemType": "printer type",
+    "appliesWhen": "a home user prints a few color photos and graphics",
+    "explanation": "Inkjet printers are common in home offices and mostly print color photos and graphics. They are cheap to buy and simple to maintain.",
+    "related": [
+      "core1-s-print-type-impact",
+      "core1-s-print-type-thermal",
+      "core1-s-print-type-laser"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance"
+  },
+  {
+    "id": "core1-s-print-laser-kit",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "task": "applying a maintenance kit to a laser printer",
+    "steps": [
+      {
+        "do": "Turn off and unplug the printer and let the fuser cool",
+        "done": "turned off and unplugged the printer and let the fuser cool"
+      },
+      {
+        "do": "Remove the old fuser, rollers, and separation pads",
+        "done": "removed the old fuser, rollers, and separation pads"
+      },
+      {
+        "do": "Clean out loose toner and dust with a toner vacuum",
+        "done": "cleaned out loose toner and dust with a toner vacuum"
+      },
+      {
+        "do": "Install the new fuser, rollers, and separation pads from the kit",
+        "done": "installed the new fuser, rollers, and separation pads from the kit"
+      },
+      {
+        "do": "Power on the printer and reset the maintenance page counter",
+        "done": "powered on the printer and reset the maintenance page counter"
+      },
+      {
+        "do": "Run the calibration routine",
+        "done": "run the calibration routine"
+      },
+      {
+        "do": "Print a test page",
+        "done": "printed a test page"
+      }
+    ],
+    "explanation": "The fuser runs at about 200 °C, so let it cool before you touch it. After the new parts are in, reset the counter so the maintenance message clears, then calibrate and test.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 28: Troubleshooting Printers"
+  },
+  {
+    "id": "core1-s-print-laser-toner",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "print-laser"
+    ],
+    "task": "replacing the toner cartridge in a laser printer",
+    "steps": [
+      {
+        "do": "Open the printer and take out the old toner cartridge",
+        "done": "taken out the old toner cartridge"
+      },
+      {
+        "do": "Put the old cartridge, held level, in a bag for recycling",
+        "done": "put the old cartridge in a bag for recycling"
+      },
+      {
+        "do": "Unpack the new cartridge and pull off its protective tape strip",
+        "done": "unpacked the new cartridge and pulled off its protective tape strip"
+      },
+      {
+        "do": "Insert the new cartridge and close the cover",
+        "done": "inserted the new cartridge and closed the cover"
+      },
+      {
+        "do": "Run the printer's cleaning or calibration routine",
+        "done": "run the printer's cleaning or calibration routine"
+      },
+      {
+        "do": "Print a test page",
+        "done": "printed a test page"
+      }
+    ],
+    "explanation": "Carry the old cartridge level and do not shake it, so toner does not spill. The new cartridge's tape strip must come off before it goes in, or the printer cannot print.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-ink-solution",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "task": "cleaning an inkjet printer's printheads with a cleaning solution",
+    "steps": [
+      {
+        "do": "Open the top cover and start a self-cleaning cycle",
+        "done": "opened the top cover and started a self-cleaning cycle"
+      },
+      {
+        "do": "Pull the power plug when the printhead moves off its resting place",
+        "done": "pulled the power plug once the printhead moved off its resting place"
+      },
+      {
+        "do": "Soak up the excess ink in the parking pads with a cotton swab",
+        "done": "soaked up the excess ink in the parking pads"
+      },
+      {
+        "do": "Saturate the sponge pads with the cleaning solution from the syringe",
+        "done": "saturated the sponge pads with the cleaning solution"
+      },
+      {
+        "do": "Plug the printer back in so the printheads park, then turn it off",
+        "done": "plugged the printer back in, let the printheads park, and turned it off"
+      },
+      {
+        "do": "Let the solution sit for at least 3 hours",
+        "done": "let the solution sit for at least 3 hours"
+      },
+      {
+        "do": "Run three cleaning cycles, with a nozzle check after each one",
+        "done": "run three cleaning cycles with a nozzle check after each"
+      }
+    ],
+    "explanation": "Unplugging the printer while the head is away from its rest lets you reach the pads without damaging the head. The heads then park on the soaked pads so the solution can work.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-ink-cart",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.2"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "school"
+    ],
+    "devices": [
+      "print-inkjet"
+    ],
+    "task": "replacing an empty cartridge in an inkjet printer",
+    "steps": [
+      {
+        "do": "Check the ink levels on the printer's display to find the empty cartridge",
+        "done": "checked the ink levels to find the empty cartridge"
+      },
+      {
+        "do": "Open the cover so the carriage moves to the change position",
+        "done": "opened the cover so the carriage moved to the change position"
+      },
+      {
+        "do": "Remove the empty cartridge",
+        "done": "removed the empty cartridge"
+      },
+      {
+        "do": "Remove the protective tape from the new cartridge",
+        "done": "removed the protective tape from the new cartridge"
+      },
+      {
+        "do": "Snap the new cartridge into its slot and close the cover",
+        "done": "snapped the new cartridge into its slot and closed the cover"
+      },
+      {
+        "do": "Run the alignment (calibration) routine",
+        "done": "run the alignment routine"
+      },
+      {
+        "do": "Print a test page",
+        "done": "printed a test page"
+      }
+    ],
+    "explanation": "Check which cartridge is low before you open the printer, and remove the new cartridge's tape before it goes in. Calibrate every time cartridges are replaced.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-therm-clean",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.3"
+    ],
+    "settings": [
+      "retail",
+      "warehouse",
+      "clinic"
+    ],
+    "devices": [
+      "print-thermal"
+    ],
+    "task": "cleaning a thermal receipt printer and loading new paper",
+    "steps": [
+      {
+        "do": "Turn off and unplug the printer",
+        "done": "turned off and unplugged the printer"
+      },
+      {
+        "do": "Let the heating element cool down",
+        "done": "let the heating element cool down"
+      },
+      {
+        "do": "Open the cover and take out the paper roll",
+        "done": "opened the cover and taken out the paper roll"
+      },
+      {
+        "do": "Remove dust and debris with compressed air or a computer vacuum",
+        "done": "removed the dust and debris"
+      },
+      {
+        "do": "Wipe the heating element with a cleaning pen or card",
+        "done": "wiped the heating element with a cleaning pen"
+      },
+      {
+        "do": "Load a new roll of thermal paper with the coated side toward the head",
+        "done": "loaded a new roll of thermal paper"
+      },
+      {
+        "do": "Print a test receipt",
+        "done": "printed a test receipt"
+      }
+    ],
+    "explanation": "The heating element gets hot, so unplug the printer and let it cool before you clean. Contain the debris when you use compressed air.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  },
+  {
+    "id": "core1-s-print-imp-ribbon-swap",
+    "kind": "procedure",
+    "exam": "220-1201",
+    "domain": "3",
+    "objectives": [
+      "220-1201/3.8"
+    ],
+    "topics": [
+      "220-1201/3.8.4"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "print-impact"
+    ],
+    "task": "replacing the ribbon in a dot-matrix printer",
+    "steps": [
+      {
+        "do": "Turn off the printer",
+        "done": "turned off the printer"
+      },
+      {
+        "do": "Open the cover and move the print head to the middle",
+        "done": "opened the cover and moved the print head to the middle"
+      },
+      {
+        "do": "Remove the old ribbon cartridge",
+        "done": "removed the old ribbon cartridge"
+      },
+      {
+        "do": "Inspect the print head for damage or bent pins",
+        "done": "inspected the print head for damage"
+      },
+      {
+        "do": "Install the new ribbon cartridge with the ribbon between the head and the paper",
+        "done": "installed the new ribbon cartridge"
+      },
+      {
+        "do": "Turn the ribbon knob to take up the slack",
+        "done": "turned the ribbon knob to take up the slack"
+      },
+      {
+        "do": "Close the cover and print a test page",
+        "done": "closed the cover"
+      }
+    ],
+    "explanation": "With the old ribbon out, check the print head for damage and replace a damaged head with an authorized part. The new ribbon must run between the head and the paper and be tight.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 20: Printer Maintenance; CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 5: Printers and Multifunction Devices"
+  }
+]

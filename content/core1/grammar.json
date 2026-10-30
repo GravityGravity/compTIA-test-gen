@@ -1,0 +1,105 @@
+{
+  "laptop": [
+    "the laptop",
+    "a company laptop",
+    "a work laptop",
+    "a Windows laptop",
+    "a two-year-old laptop"
+  ],
+  "smartphone": [
+    "the smartphone",
+    "a company phone",
+    "a work phone",
+    "an Android phone",
+    "an iPhone"
+  ],
+  "tablet": [
+    "the tablet",
+    "a company tablet",
+    "an iPad",
+    "an Android tablet"
+  ],
+  "field": [
+    "a construction company",
+    "a delivery company",
+    "a field service company",
+    "a landscaping business"
+  ],
+  "ip-workstation": [
+    "the office PC",
+    "a Windows desktop",
+    "the front-desk computer",
+    "a workstation",
+    "a desktop PC"
+  ],
+  "pc-workstation": [
+    "a video editing workstation",
+    "the graphics workstation",
+    "a 3D design workstation"
+  ],
+  "print-laser": [
+    "the laser printer",
+    "the office laser printer",
+    "a network laser printer",
+    "the department's laser printer",
+    "the shared laser printer",
+    "a monochrome laser printer"
+  ],
+  "print-inkjet": [
+    "the inkjet printer",
+    "a color inkjet printer",
+    "the photo inkjet printer",
+    "an all-in-one inkjet printer"
+  ],
+  "print-thermal": [
+    "the receipt printer",
+    "the point-of-sale receipt printer",
+    "the label printer"
+  ],
+  "print-impact": [
+    "the dot-matrix printer",
+    "the impact printer",
+    "the invoice printer",
+    "the invoice printer in the back office"
+  ],
+  "print-mfd": [
+    "the multifunction printer",
+    "the new multifunction device",
+    "the all-in-one printer",
+    "the office copier",
+    "the multifunction device on the second floor"
+  ],
+  "pc-desktop": [
+    "a desktop computer",
+    "an office desktop PC",
+    "a tower workstation",
+    "a three-year-old desktop PC"
+  ],
+  "pc-gaming": [
+    "a gaming PC",
+    "a graphics workstation",
+    "a video editing workstation"
+  ],
+  "pc-server": [
+    "a file server",
+    "a small tower server",
+    "a database server"
+  ],
+  "storage-nas": [
+    "a network-attached storage box",
+    "the office NAS",
+    "a four-bay NAS device"
+  ],
+  "display-monitor": [
+    "an external monitor",
+    "a desktop monitor",
+    "a widescreen monitor",
+    "a flat-panel display"
+  ],
+  "display-projector": [
+    "the conference room projector",
+    "a ceiling-mounted projector",
+    "a classroom projector",
+    "a portable projector"
+  ]
+}
