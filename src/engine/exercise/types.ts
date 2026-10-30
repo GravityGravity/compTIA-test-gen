@@ -19,6 +19,8 @@ export interface TypedQuestion {
   answer: string
   /** Every typed form that counts as correct (the answer first). */
   accepted: string[]
+  /** Definition Exercise: the term's acronyms, which also count as correct. */
+  acronyms?: string[]
   /** Acronym Exercise only: one sentence on what the acronym means. */
   meaning?: string
   objectives: string[]

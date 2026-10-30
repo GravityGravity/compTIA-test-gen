@@ -1,5 +1,6 @@
 import type { AcronymRecord, DefinitionRecord } from '@shared/types'
 import { ConfigError } from './config'
+import { normalizeAnswer } from './normalize'
 
 // Light checks on the content records: the fields the app reads. tools/extract/check_content.py
 // does the full content check during development.
@@ -72,4 +73,27 @@ export function answerPhrases(
     ...acronyms.flatMap((r) => [r.acronym, r.expanded, ...r.acceptedAnswers]),
     ...definitions.flatMap((r) => [r.term, ...r.acceptedAnswers])
   ]
+}
+
+/**
+ * Gives each definition the acronyms of its term: the acronym records of the same certification
+ * whose expanded form or accepted answers match the term or one of its accepted answers.
+ */
+export function linkAcronyms(
+  definitions: readonly DefinitionRecord[],
+  acronyms: readonly AcronymRecord[]
+): DefinitionRecord[] {
+  const byName = new Map<string, AcronymRecord[]>()
+  for (const a of acronyms)
+    for (const name of new Set([a.expanded, ...a.acceptedAnswers].map(normalizeAnswer)))
+      byName.set(name, [...(byName.get(name) ?? []), a])
+
+  return definitions.map((d) => {
+    const names = new Set([d.term, ...d.acceptedAnswers].map(normalizeAnswer))
+    const found = [...names]
+      .flatMap((name) => byName.get(name) ?? [])
+      .filter((a) => a.certifications.some((c) => d.certifications.includes(c)))
+      .map((a) => a.acronym)
+    return found.length > 0 ? { ...d, acronyms: [...new Set(found)] } : d
+  })
 }

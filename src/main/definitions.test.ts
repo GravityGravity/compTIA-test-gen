@@ -2,14 +2,18 @@ import { describe, expect, it } from 'vitest'
 import { generateExercise } from '@engine/exercise/generate'
 import { multipleChoiceQuestion } from '@engine/exercise/multipleChoice'
 import { buildPool } from '@engine/exercise/pool'
+import { gradeTyped } from '@engine/exercise/grade'
+import { typedQuestion } from '@engine/exercise/typed'
+import { createSpellChecker } from '@engine/spell'
 import { normalizeAnswer } from '@engine/normalize'
 import { createRandom } from '@engine/random'
 import { loadCatalog } from './catalog'
-import { loadContent } from './content'
+import { loadContent, spellData } from './content'
 
 // The Definition Exercise against the real config and content.
 const catalog = loadCatalog(process.cwd())
-const { definitions } = loadContent(process.cwd())
+const content = loadContent(process.cwd())
+const { definitions } = content
 const config = catalog.exercises.find((e) => e.id === 'definition-exercise')!
 const choiceType = config.questionTypes.find((qt) => qt.type === 'multiple-choice')!
 if (choiceType.type !== 'multiple-choice') throw new Error('no multiple-choice type')
@@ -49,5 +53,27 @@ describe.each(['a-plus', 'network-plus'])('Definition Exercise for %s', (cert) =
       const typed = questions.filter((q) => q.kind === 'typed')
       for (const q of typed) expect(definitions.find((r) => r.id === q.recordId)!.typeable).toBe(true)
     }
+  })
+})
+
+describe('typed definition questions', () => {
+  const data = spellData(content)
+  const spell = createSpellChecker(data.aff, data.dic, data.words)
+  const typedType = config.questionTypes.find((qt) => qt.type === 'typed')!
+  if (typedType.type !== 'typed') throw new Error('no typed type')
+
+  it('accept the acronym of the term', () => {
+    const dhcp = definitions.find((d) => d.certifications.includes('a-plus') && d.acronyms?.includes('DHCP'))!
+    const q = typedQuestion(typedType, dhcp)
+    expect(gradeTyped(q, 'DHCP', spell).correct).toBe(true)
+    expect(gradeTyped(q, 'dhcp', spell).correct).toBe(true)
+    expect(gradeTyped(q, dhcp.term, spell).correct).toBe(true)
+  })
+
+  it('link many terms to their acronyms in both certifications', () => {
+    for (const cert of ['a-plus', 'network-plus'])
+      expect(definitions.filter((d) => d.certifications.includes(cert) && d.acronyms).length).toBeGreaterThan(
+        50
+      )
   })
 })

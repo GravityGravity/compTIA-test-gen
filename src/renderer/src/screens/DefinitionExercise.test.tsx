@@ -5,7 +5,7 @@ import { choiceQuestion, definitionExercise, exams, fakeSpell, typedDefinition }
 import { ExerciseResultsScreen } from './ExerciseResultsScreen'
 import { ExerciseScreen } from './ExerciseScreen'
 
-const spell = fakeSpell('firewall')
+const spell = fakeSpell('firewall fw')
 
 function setup() {
   const onFinish = vi.fn()
@@ -56,7 +56,7 @@ describe('Definition Exercise', () => {
     expect(screen.getByText('Type the term for this definition.')).toBeInTheDocument()
     await user.type(screen.getByLabelText('Your answer'), 'firewall{Enter}')
     expect(screen.getByRole('status')).toHaveTextContent('Correct')
-    expect(screen.getByRole('status')).toHaveTextContent('The term is Firewall.')
+    expect(screen.getByRole('status')).toHaveTextContent('The term is Firewall (FW).')
     await user.click(screen.getByRole('button', { name: 'See results' }))
     expect(onFinish).toHaveBeenCalledWith(
       [
@@ -65,6 +65,15 @@ describe('Definition Exercise', () => {
       ],
       false
     )
+  })
+
+  it('accepts the acronym of the term', async () => {
+    const { user } = setup()
+    await user.keyboard('a')
+    await user.click(screen.getByRole('button', { name: 'Check answer' }))
+    await user.click(screen.getByRole('button', { name: 'Next question' }))
+    await user.type(screen.getByLabelText('Your answer'), 'fw{Enter}')
+    expect(screen.getByRole('status')).toHaveTextContent('Correct')
   })
 
   it('shows the chosen option in the results', () => {

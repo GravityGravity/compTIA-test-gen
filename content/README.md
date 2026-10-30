@@ -73,7 +73,7 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 |---|---|
 | `term` | The term. It is the typed answer, so it is never an acronym: use the full name (`Dynamic Host Configuration Protocol`, not `DHCP`). |
 | `definition` | One sentence, about 30 words or fewer, in our own words (never copied from a book). It must not contain the term or an accepted answer, and it must fit no other term in the same group. |
-| `acceptedAnswers` | Spelling variants of the term only. Never an acronym. |
+| `acceptedAnswers` | Spelling variants of the term only. Never an acronym: the app links the term's acronym from `content/acronyms/` when it loads (an acronym record of the same certification whose `expanded` or `acceptedAnswers` matches the term), and accepts it as a typed answer. |
 | `typeable` | `false`: multiple choice only (the term cannot fairly be typed from memory). |
 | `group` | Topic slug. Multiple-choice distractors come from the same group first, so they are plausible. A group with fewer than 4 records gets its other distractors from the same certification. A record with the same term or definition as the target is never a distractor. |
 | `objectives` | At least one. |

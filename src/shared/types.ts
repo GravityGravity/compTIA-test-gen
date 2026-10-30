@@ -91,6 +91,12 @@ export interface DefinitionRecord extends ContentRecordBase {
   definition: string
   typeable: boolean
   group: string
+  /**
+   * The acronyms of the term, from content/acronyms/ (same certification, where the expanded form or
+   * an accepted answer is the term). Not in the content files: the app links them when it loads.
+   * A typed answer may be the acronym.
+   */
+  acronyms?: string[]
 }
 
 export interface ContentByKind {

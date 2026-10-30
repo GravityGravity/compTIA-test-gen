@@ -160,7 +160,7 @@ These are two separate modules. Each module practices one thing only. They can s
 - Acronym Exercise (approved 2026-10-30): type the answer ONLY, and every question is acronym → expanded form. No multiple-choice questions and no other direction.
 - Definition Exercise:
   - Multiple choice: either direction (term → definition, or definition → term).
-  - Type the answer: definition → term ONLY. Never ask the user to type a definition sentence.
+  - Type the answer: definition → term ONLY. Never ask the user to type a definition sentence. Typing the term's acronym also counts as correct (for example DHCP for Dynamic Host Configuration Protocol), when an acronym record of the same certification matches the term.
 
 Rules:
 - Each module uses its own config file in `config/exercises/` (approved 2026-10-30): question count, time limit, what happens at time up, the selection method, and the question types with a count for each. Do not hard-code these values. Current values:
@@ -201,7 +201,7 @@ Acronym and definition records (approved). The full field list and the content r
 - Pools: `content/acronyms/<cert>.json` (one file per certification) and `content/definitions/<cert>/<domain>.json` (one file per exam domain). Each file is a JSON array.
 - Shared fields: `id`, `acceptedAnswers`, `certifications`, `exams`, `objectives` (`<exam>/<objective>`), `origin`, `source`, optional `note`.
 - Acronym fields: `acronym`, `expanded`, `meaning`, `official`. `meaning` is one sentence (10–25 words, our own words) that says what the thing is or does. Every acronym is asked as a typed question, so every expanded form must be typeable, and `acceptedAnswers` lists every other valid wording. Pool scope: the official list plus vetted book extras (`official: false`, `origin: "book"`). Where the official list has an error or the two A+ lists differ, `expanded` has the correct form and `acceptedAnswers` keeps the official wording (except plain typos); a `note` says why.
-- Definition fields: `term`, `definition`, `typeable`, `group`. Pool scope: the terms named in the objectives plus book glossary terms that match a current objective. Definitions are one sentence (about 30 words or fewer) in our own words. They never contain the term. The term is the typed answer, so it is never an acronym.
+- Definition fields: `term`, `definition`, `typeable`, `group`. Pool scope: the terms named in the objectives plus book glossary terms that match a current objective. Definitions are one sentence (about 30 words or fewer) in our own words. They never contain the term. The term is the typed answer, so the `term` field is never an acronym. The app also accepts the term's acronym as a typed answer (approved 2026-10-30): when it loads the content, it links each definition to the acronym records of the same certification whose expanded form or accepted answers match the term or its accepted answers. The content files do not list the acronym.
 - One record per certification: an acronym on both lists has an A+ record and a Network+ record.
 - Definition distractors come from the same `group` first. A record that shares the term or the definition with the target is never a distractor.
 

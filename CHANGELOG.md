@@ -2,6 +2,16 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definition Exercise: accept the acronym
+
+Decision (approved): in a typed Definition Exercise question, typing the term's acronym counts as correct (for example DHCP for Dynamic Host Configuration Protocol).
+
+Changes:
+- When the app loads the content, it links each definition to the acronym records of the same certification whose expanded form or accepted answers match the term or its accepted answers (`linkAcronyms` in `src/engine/content.ts`). 276 typeable terms get an acronym. The content files are unchanged.
+- The feedback shows the acronym after the term: "The term is Dynamic Host Configuration Protocol (DHCP)."
+- `CLAUDE.md`, `docs/spec.md`, `content/README.md`: the rule that the user never types an acronym now applies to the Acronym Exercise only.
+- Tests: 103 Vitest tests, including the real DHCP record graded by its acronym.
+
 ## 2026-10-30 – Definition Exercise
 
 Decisions:

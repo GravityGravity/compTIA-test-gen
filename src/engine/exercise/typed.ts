@@ -28,7 +28,8 @@ export function typedQuestion(config: TypedConfig, record: AcronymRecord | Defin
     prompt: 'definition',
     text: record.definition,
     answer: record.term,
-    accepted: [record.term, ...record.acceptedAnswers],
+    accepted: [record.term, ...record.acceptedAnswers, ...(record.acronyms ?? [])],
+    ...(record.acronyms ? { acronyms: record.acronyms } : {}),
     objectives: record.objectives
   }
 }

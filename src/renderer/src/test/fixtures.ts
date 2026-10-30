@@ -162,6 +162,7 @@ export const typedDefinition: TypedQuestion = {
   prompt: 'definition',
   text: 'A device or program that allows or blocks traffic based on rules.',
   answer: 'Firewall',
-  accepted: ['Firewall'],
+  accepted: ['Firewall', 'FW'],
+  acronyms: ['FW'],
   objectives: []
 }

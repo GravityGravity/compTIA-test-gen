@@ -73,7 +73,7 @@ Both modules:
 - After each answer, the app shows whether it is correct and shows the correct answer.
 - Acronym Exercise feedback: the answer box also shows one sentence on what the acronym means and, when the acronym is tied to an exam objective, a small tag for each objective (exam, objective number, and domain name).
 - Acronym Exercise: a "Not sure" button next to "Check answer" lets the user skip typing. The app shows the correct answer, and the question counts as incorrect. The results show "Not sure" as the answer.
-- Type-the-answer questions use one direction only (see the table). The user never types a definition sentence or an acronym.
+- Type-the-answer questions use one direction only (see the table). The user never types a definition sentence, and the Acronym Exercise never asks for an acronym. In a Definition Exercise typed question, the term's acronym also counts as correct.
 - Type-the-answer spelling:
   - When a typed word has a spelling error, the app underlines the word with a red squiggle line.
   - An answer with a spelling error is incorrect.
@@ -81,7 +81,7 @@ Both modules:
 - On the results screen, "Try again" starts a new exercise of the same module and certification at once, with a new set of questions. It skips the setup screen.
 - Question pools (approved):
   - Acronym Exercise: the official acronym list for the certification, plus acronyms from the current books that match a current objective. Where the official list has an error, the app shows the correct expanded form and also accepts the official wording.
-  - Definition Exercise: the terms named in the exam objectives, plus book glossary terms that match a current objective. The typed answer is always the term's full name, never an acronym.
+  - Definition Exercise: the terms named in the exam objectives, plus book glossary terms that match a current objective. The expected typed answer is the term's full name. Its acronym (from the Acronym Exercise records of the same certification) is also accepted.
 
 ## Out of Scope
 - Performance-based questions (PBQs) in the current version. See Future.

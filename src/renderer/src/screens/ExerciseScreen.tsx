@@ -320,7 +320,8 @@ function Feedback({
   else
     body = (
       <p>
-        The term is <b>{question.answer}</b>.{spellingNote}
+        The term is <b>{question.answer}</b>
+        {question.acronyms && <> ({question.acronyms.join(', ')})</>}.{spellingNote}
       </p>
     )
 

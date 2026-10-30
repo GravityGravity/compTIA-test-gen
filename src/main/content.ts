@@ -1,7 +1,7 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { join, relative } from 'node:path'
 import dictionary from 'dictionary-en'
-import { answerPhrases, parseAcronym, parseDefinition } from '@engine/content'
+import { answerPhrases, linkAcronyms, parseAcronym, parseDefinition } from '@engine/content'
 import { wordsOf } from '@engine/spell'
 import type { ContentByKind, SpellData } from '@shared/types'
 
@@ -24,9 +24,10 @@ function readRecords<T>(root: string, dir: string, parse: (raw: unknown, where: 
 
 /** Reads and checks content/acronyms/ and content/definitions/. `root` holds the `content/` folder. */
 export function loadContent(root: string): ContentByKind {
+  const acronyms = readRecords(root, 'acronyms', parseAcronym)
   return {
-    acronyms: readRecords(root, 'acronyms', parseAcronym),
-    definitions: readRecords(root, 'definitions', parseDefinition)
+    acronyms,
+    definitions: linkAcronyms(readRecords(root, 'definitions', parseDefinition), acronyms)
   }
 }
 
