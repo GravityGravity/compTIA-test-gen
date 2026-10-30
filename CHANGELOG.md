@@ -2,6 +2,21 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definitions: Network+ Domain 1 (Networking Concepts)
+
+- New `content/definitions/network-plus/d1-networking-concepts.json`: 203 terms for objectives 1.1–1.8, in 33 groups.
+  - Written from the Network+ books only: Exam Cram and West chapters and both glossaries.
+  - Protocols use their full names as the term, and the definition gives the port.
+- Decisions on conflicts:
+  - Secure Access Service Edge is the term; the objectives' "Secure Access Secure Edge" is an accepted answer.
+  - Collapsed core and spine and leaf are separate terms (Exam Cram), not synonyms (West).
+  - Playbook and template are separate terms (Exam Cram).
+  - Direct attach copper is the factory-made cable; twinaxial is the cable type it uses.
+  - Fibre Channel is one record for objectives 1.2 and 1.5.
+  - Long-Term Evolution is described as 4G.
+- `content/README.md`: the Network+ Domain 1 groups. Group names are unique within a certification.
+- Network+ definitions stay one domain per batch. Domains 2–5 are not started.
+
 ## 2026-10-30 – Definitions: the rest of A+ (Core 1 Domains 3–5, Core 2 Domains 1–4)
 
 Decisions:

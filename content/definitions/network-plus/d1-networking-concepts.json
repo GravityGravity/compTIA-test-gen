@@ -1,0 +1,4162 @@
+[
+  {
+    "id": "netplus-def-physical-layer",
+    "term": "Physical layer",
+    "definition": "OSI Layer 1, which defines cables, connectors, pinouts, voltages, and signal frequencies and sends raw bits over the medium; hubs and cabling work here.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-data-link-layer",
+    "term": "Data link layer",
+    "definition": "OSI Layer 2, which builds frames, uses MAC hardware addresses to deliver them on the local network, and detects errors; switches and access points work here.",
+    "acceptedAnswers": [
+      "Datalink layer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-network-layer",
+    "term": "Network layer",
+    "definition": "OSI Layer 3, which uses logical IP addresses and routing to choose a path and move packets between different networks; routers work here.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-transport-layer",
+    "term": "Transport layer",
+    "definition": "OSI Layer 4, which breaks data into segments, adds port numbers for the right service, and handles flow control and error checking with TCP or UDP.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-session-layer",
+    "term": "Session layer",
+    "definition": "OSI Layer 5, which sets up, coordinates, and ends the conversations between applications on two devices and keeps their data exchange in sync.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-presentation-layer",
+    "term": "Presentation layer",
+    "definition": "OSI Layer 6, which translates data formats such as ASCII, JPEG, and MPEG, and handles encryption and decryption, for example with TLS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-application-layer",
+    "term": "Application layer",
+    "definition": "OSI Layer 7, which gives programs access to network services through protocols such as HTTP, DNS, SMTP, and SSH; it is not the user's program itself.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-media-access-control-sublayer",
+    "term": "Media Access Control sublayer",
+    "definition": "Lower half of OSI Layer 2 that holds the hardware address burned into each NIC and controls when a device may use the medium.",
+    "acceptedAnswers": [
+      "MAC sublayer",
+      "Media Access Control layer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-logical-link-control-sublayer",
+    "term": "Logical Link Control sublayer",
+    "definition": "Upper half of OSI Layer 2, defined in IEEE 802.2, that handles error control and flow control for frames.",
+    "acceptedAnswers": [
+      "LLC sublayer",
+      "Logical Link Control layer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-layers",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-encapsulation",
+    "term": "Encapsulation",
+    "definition": "The process on a sending host of adding a header, and at Layer 2 a trailer, to data as it moves down through the layers of the stack.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "glossary",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Glossary; checked against CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-decapsulation",
+    "term": "Decapsulation",
+    "definition": "The process on a receiving host of stripping off each layer's header and trailer as data moves up the stack, the reverse of what the sender added.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-protocol-data-unit",
+    "term": "Protocol data unit",
+    "definition": "The general name for the unit of data handled at any OSI layer, such as a frame at Layer 2 or a packet at Layer 3.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-frame",
+    "term": "Frame",
+    "definition": "The Layer 2 unit of data: a payload wrapped in a header with MAC addresses and a trailer with an error check.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-packet",
+    "term": "Packet",
+    "definition": "The Layer 3 unit of data: a transport layer message plus a header that carries the source and destination IP addresses.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-segment",
+    "term": "Segment",
+    "definition": "The Layer 4 unit of data when TCP is used: a piece of application data with a header holding port numbers and sequence information.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-datagram",
+    "term": "Datagram",
+    "definition": "The Layer 4 unit of data when the connectionless UDP is used, with a small header of source and destination ports and no sequencing.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1"
+    ],
+    "group": "osi-encapsulation",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 1: Introduction to Networking"
+  },
+  {
+    "id": "netplus-def-router",
+    "term": "Router",
+    "definition": "Layer 3 device that joins separate networks and forwards each packet toward its destination IP address by looking up the next hop in its table.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-forwarding",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-switch",
+    "term": "Switch",
+    "definition": "Layer 2 device that learns the MAC addresses of connected devices and forwards each frame only out the port of the destination, allowing full duplex.",
+    "acceptedAnswers": [
+      "Network switch",
+      "Layer 2 switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-forwarding",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-multilayer-switch",
+    "term": "Multilayer switch",
+    "definition": "Device that forwards frames within the LAN by MAC address and also routes packets between subnets, working at both Layer 2 and Layer 3.",
+    "acceptedAnswers": [
+      "Layer 3 switch",
+      "Multi-layer switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-forwarding",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-content-switch",
+    "term": "Content switch",
+    "definition": "Specialized device that reads which application data is meant for, often from its port, and spreads requests across matching servers; also called a load-balancing switch.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-forwarding",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-access-point",
+    "term": "Access point",
+    "definition": "Layer 2 transceiver with antennas that creates a WLAN and bridges wireless clients to the wired Ethernet network in infrastructure mode.",
+    "acceptedAnswers": [
+      "Wireless access point"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-forwarding",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-wireless-lan-controller",
+    "term": "Wireless LAN controller",
+    "definition": "Central device that many access points authenticate with when they boot, and that manages their settings, often in branch and remote office deployments.",
+    "acceptedAnswers": [
+      "Wireless controller",
+      "WLAN controller",
+      "Wireless local area network controller"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-forwarding",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-firewall",
+    "term": "Firewall",
+    "definition": "Hardware or software device at a network's entry and exit points, or between segments, that allows or blocks traffic by inbound and outbound rules ending in implicit deny.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-intrusion-detection-system",
+    "term": "Intrusion detection system",
+    "definition": "Passive security system that watches traffic for attacks, logs what it finds, and alerts an administrator, but does not block the traffic itself.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-intrusion-prevention-system",
+    "term": "Intrusion prevention system",
+    "definition": "Active security system that scans traffic inline for attack signatures or unusual activity and automatically blocks or shuts down the threat.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-signature-based-detection",
+    "term": "Signature-based detection",
+    "definition": "Method of spotting attacks by comparing traffic against a database of known attack patterns, so it catches known threats but can miss brand-new ones.",
+    "acceptedAnswers": [
+      "Misuse detection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-behavior-based-detection",
+    "term": "Behavior-based detection",
+    "definition": "Method of spotting attacks by looking for deviations from normal activity, such as unusually high traffic or policy violations, rather than known patterns.",
+    "acceptedAnswers": [
+      "Anomaly-based detection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-proxy-server",
+    "term": "Proxy server",
+    "definition": "Server between clients and the Internet that sends web requests on the clients' behalf, and can cache pages and filter which sites users may reach.",
+    "acceptedAnswers": [
+      "Proxy",
+      "Forward proxy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-reverse-proxy-server",
+    "term": "Reverse proxy server",
+    "definition": "Server placed in front of web servers that receives requests from outside clients for them, often caching content and spreading the load.",
+    "acceptedAnswers": [
+      "Reverse proxy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-vpn-concentrator",
+    "term": "VPN concentrator",
+    "definition": "Dedicated enterprise device that terminates and secures many simultaneous encrypted tunnels from remote users into the company network.",
+    "acceptedAnswers": [
+      "Virtual private network concentrator"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-security",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-network-attached-storage",
+    "term": "Network-attached storage",
+    "definition": "Storage appliance on the LAN that uses TCP/IP and file-sharing protocols such as SMB or NFS, so clients see it as a file server with file-level access.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-storage",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-storage-area-network",
+    "term": "Storage area network",
+    "definition": "Dedicated high-speed network that gives servers block-level access to shared storage, so each server sees it as a local disk; costlier than a file appliance.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-storage",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-internet-small-computer-systems-interface",
+    "term": "Internet Small Computer Systems Interface",
+    "definition": "Protocol that carries SCSI storage commands over IP on ordinary Ethernet, giving block-level storage access without a separate Fibre Channel network.",
+    "acceptedAnswers": [
+      "Internet Small Computer System Interface"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-storage",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-fibre-channel",
+    "term": "Fibre Channel",
+    "definition": "High-performance storage networking technology with its own protocol, used to connect servers to storage; it can also be carried over Ethernet as FCoE.",
+    "acceptedAnswers": [
+      "Fiber Channel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2",
+      "N10-009/1.5"
+    ],
+    "group": "appliance-storage",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-load-balancer",
+    "term": "Load balancer",
+    "definition": "Hardware or software that spreads client requests across several servers, often behind one virtual IP address, to raise performance, redundancy, and availability.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-content-delivery-network",
+    "term": "Content delivery network",
+    "definition": "Geographically distributed set of edge servers that cache web content close to users and serve it from the nearest one to cut latency.",
+    "acceptedAnswers": [
+      "Content distribution network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-quality-of-service",
+    "term": "Quality of service",
+    "definition": "Set of methods that classify and prioritize traffic so latency-sensitive data such as voice and video gets the bandwidth it needs on a busy network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-time-to-live",
+    "term": "Time to live",
+    "definition": "Value in the IP header that each router lowers by one; when it reaches zero the packet is dropped and an ICMP Time Exceeded message is sent, preventing endless loops.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-differentiated-services-code-point",
+    "term": "Differentiated services code point",
+    "definition": "Field in the IP header that marks a packet's traffic class so Layer 3 devices can give it the right priority across routed networks.",
+    "acceptedAnswers": [
+      "Differentiated services",
+      "DiffServ"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-traffic",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-class-of-service",
+    "term": "Class of service",
+    "definition": "Priority value carried in a Layer 2 Ethernet frame tag that tells switches which kind of payload, such as voice or data, the frame holds.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "group": "appliance-traffic",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-public-cloud",
+    "term": "Public cloud",
+    "definition": "Deployment model in which a provider owns the infrastructure, keeps it on its own premises, and offers it to the general public, usually pay-as-you-go.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-private-cloud",
+    "term": "Private cloud",
+    "definition": "Deployment model whose infrastructure is for the exclusive use of one organization, on or off premises, which is often both provider and consumer.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-hybrid-cloud",
+    "term": "Hybrid cloud",
+    "definition": "Deployment model that binds two or more distinct cloud types, such as an on-premises private one and a public one, so data and applications can move between them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-multicloud",
+    "term": "Multicloud",
+    "definition": "Deployment that links services from several different cloud providers, often picking the best provider for each workload, so they work together.",
+    "acceptedAnswers": [
+      "Multi-cloud"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-software-as-a-service",
+    "term": "Software as a Service",
+    "definition": "Service model in which the provider runs a complete application, such as webmail, that users reach through a browser while the provider manages everything beneath it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-platform-as-a-service",
+    "term": "Platform as a Service",
+    "definition": "Service model in which developers deploy and control their own applications on a provider-managed environment of operating system, runtime, and hardware.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-infrastructure-as-a-service",
+    "term": "Infrastructure as a Service",
+    "definition": "Service model in which the provider supplies virtual servers, storage, and networking, and the customer manages the operating systems and applications on them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-models",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-scalability",
+    "term": "Scalability",
+    "definition": "The ability of a cloud deployment to grow its compute, storage, or network capacity to handle a heavier workload without disrupting the service.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-characteristics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-elasticity",
+    "term": "Elasticity",
+    "definition": "The ability to add and release cloud resources quickly, often automatically, as demand rises and falls, so capacity seems unlimited.",
+    "acceptedAnswers": [
+      "Rapid elasticity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-characteristics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-multitenancy",
+    "term": "Multitenancy",
+    "definition": "Arrangement in which workloads from many separate customers share the same provider hardware, saving cost but requiring isolation between them.",
+    "acceptedAnswers": [
+      "Multi-tenancy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-characteristics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-resource-pooling",
+    "term": "Resource pooling",
+    "definition": "Cloud characteristic in which a provider combines hardware, storage, and services into shared pools that it assigns to many customers as needed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-characteristics",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-cloud-bursting",
+    "term": "Cloud bursting",
+    "definition": "Sending overflow traffic or workloads from an organization's own servers to a cloud provider's resources when the local servers become too busy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-characteristics",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-network-functions-virtualization",
+    "term": "Network functions virtualization",
+    "definition": "Replacing dedicated hardware such as firewalls, routers, and load balancers with software versions running in virtual machines on standard servers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-characteristics",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-virtual-private-cloud",
+    "term": "Virtual private cloud",
+    "definition": "Isolated, logically separate network inside a public cloud where the customer defines its own IP ranges, subnets, route tables, and access controls.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-network-security-group",
+    "term": "Network security group",
+    "definition": "Virtual firewall in the cloud with prioritized allow and deny rules by IP address and port, attached to subnets, network interfaces, or single VMs.",
+    "acceptedAnswers": [
+      "Security group"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-network-security-list",
+    "term": "Network security list",
+    "definition": "Older cloud filtering method in which a set of traffic rules is tied to a subnet, so every virtual NIC in that subnet follows those rules.",
+    "acceptedAnswers": [
+      "Security list"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-internet-gateway",
+    "term": "Internet gateway",
+    "definition": "Cloud gateway that is the entry and exit point between a VPC and the Internet, letting public-subnet resources send and receive Internet traffic.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-nat-gateway",
+    "term": "NAT gateway",
+    "definition": "Cloud gateway that lets resources in a private subnet start outbound Internet connections behind its public IP address, while blocking connections started from outside.",
+    "acceptedAnswers": [
+      "Network address translation gateway"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-cloud-gateway",
+    "term": "Cloud gateway",
+    "definition": "General name for a component that connects an on-premises network or a cloud subnet with cloud resources or the Internet and routes traffic between them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "glossary",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Glossary; checked against CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-direct-connect",
+    "term": "Direct Connect",
+    "definition": "Cloud connectivity option that uses a dedicated private line from the customer to the provider, not the public Internet, for steady low-latency performance.",
+    "acceptedAnswers": [
+      "AWS Direct Connect",
+      "Direct connection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 7: Cloud Computing Concepts and Options"
+  },
+  {
+    "id": "netplus-def-virtual-private-network",
+    "term": "Virtual private network",
+    "definition": "Encrypted tunnel across a public network such as the Internet that links a remote user or another site, or a cloud, to a private network as if local.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2",
+      "N10-009/1.3"
+    ],
+    "group": "cloud-networking",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-file-transfer-protocol",
+    "term": "File Transfer Protocol",
+    "definition": "Unencrypted protocol that uploads, downloads, and manages files on a server over TCP, using port 21 for control and port 20 for data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-secure-file-transfer-protocol",
+    "term": "Secure File Transfer Protocol",
+    "definition": "Encrypted file transfer that runs inside an SSH session on TCP port 22, replacing the cleartext file protocol that uses ports 20 and 21.",
+    "acceptedAnswers": [
+      "SSH File Transfer Protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-trivial-file-transfer-protocol",
+    "term": "Trivial File Transfer Protocol",
+    "definition": "Bare-bones file transfer over UDP port 69 with no login or directory browsing, often used to load firmware or configuration files onto network devices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-secure-shell",
+    "term": "Secure Shell",
+    "definition": "Encrypted remote command-line access to a device on TCP port 22, the secure replacement for the cleartext terminal protocol on port 23.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-telnet",
+    "term": "Telnet",
+    "definition": "Old virtual terminal protocol on TCP port 23 that opens a remote command-line session but sends everything, passwords included, in cleartext.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-remote-desktop-protocol",
+    "term": "Remote Desktop Protocol",
+    "definition": "Microsoft protocol on TCP port 3389 that shows a remote Windows computer's graphical desktop and sends local keyboard and mouse input to it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-server-message-block",
+    "term": "Server Message Block",
+    "definition": "Protocol on TCP port 445 that shares files and printers on Windows networks; Samba provides the same service on Linux systems.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-file-remote",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-hypertext-transfer-protocol",
+    "term": "Hypertext Transfer Protocol",
+    "definition": "Unencrypted protocol on TCP port 80 that web browsers use to request pages and other content from web servers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-web-mail-voice",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-hypertext-transfer-protocol-secure",
+    "term": "Hypertext Transfer Protocol Secure",
+    "definition": "Web traffic encrypted with TLS on TCP port 443, used for logins, online shopping, and most websites today.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-web-mail-voice",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-simple-mail-transfer-protocol",
+    "term": "Simple Mail Transfer Protocol",
+    "definition": "Protocol that sends and relays email between mail servers in cleartext on TCP port 25.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-web-mail-voice",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-simple-mail-transfer-protocol-secure",
+    "term": "Simple Mail Transfer Protocol Secure",
+    "definition": "Mail-sending protocol wrapped in TLS for encryption and authentication, using TCP port 587 in the exam objectives.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-web-mail-voice",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-session-initiation-protocol",
+    "term": "Session Initiation Protocol",
+    "definition": "Signaling protocol that sets up, maintains, and ends VoIP calls and other multimedia sessions, using port 5060 unencrypted and 5061 with TLS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-web-mail-voice",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-domain-name-system",
+    "term": "Domain Name System",
+    "definition": "Service that resolves hostnames such as www.example.com to IP addresses, using UDP and TCP port 53.",
+    "acceptedAnswers": [
+      "Domain Name Service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-dynamic-host-configuration-protocol",
+    "term": "Dynamic Host Configuration Protocol",
+    "definition": "Service that automatically leases IP addresses and settings to clients from a scope, using UDP port 67 on the server and 68 on the client.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-network-time-protocol",
+    "term": "Network Time Protocol",
+    "definition": "Protocol on UDP port 123 that keeps device clocks in sync through a hierarchy of time servers, which logging and authentication depend on.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-simple-network-management-protocol",
+    "term": "Simple Network Management Protocol",
+    "definition": "Protocol that lets a management station poll and configure devices on UDP port 161 and receive unsolicited trap alerts from them on port 162.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-syslog",
+    "term": "Syslog",
+    "definition": "Standard for sending event and log messages from routers, switches, firewalls, and servers to a central log server, using UDP port 514.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-lightweight-directory-access-protocol",
+    "term": "Lightweight Directory Access Protocol",
+    "definition": "Protocol on port 389 that queries and updates directory services such as Active Directory for user, group, and resource information, without encryption.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-lightweight-directory-access-protocol-over-ssl",
+    "term": "Lightweight Directory Access Protocol over SSL",
+    "definition": "Directory query protocol that sets up an SSL or TLS session before any messages are sent, using port 636 instead of unencrypted port 389.",
+    "acceptedAnswers": [
+      "Lightweight Directory Access Protocol over TLS",
+      "Secure Lightweight Directory Access Protocol",
+      "Secure LDAP"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-structured-query-language-server",
+    "term": "Structured Query Language Server",
+    "definition": "Microsoft database server that applications reach on TCP port 1433 by default to run queries against its relational databases.",
+    "acceptedAnswers": [
+      "SQL Server",
+      "Microsoft SQL Server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-network-services",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-internet-control-message-protocol",
+    "term": "Internet Control Message Protocol",
+    "definition": "Network layer protocol that reports errors such as destination unreachable and time exceeded, and carries the echo requests and replies used by ping.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-transmission-control-protocol",
+    "term": "Transmission Control Protocol",
+    "definition": "Connection-oriented transport protocol that opens a session with a three-way handshake, then sequences, acknowledges, and resends data for reliable delivery.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-user-datagram-protocol",
+    "term": "User Datagram Protocol",
+    "definition": "Connectionless transport protocol with a small header and no acknowledgments or resends, used for DNS queries, DHCP, TFTP, streaming, and voice.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-generic-routing-encapsulation",
+    "term": "Generic Routing Encapsulation",
+    "definition": "Tunneling protocol, IP protocol number 47, that wraps almost any packet inside a new IP header to link two endpoints, but adds no encryption itself.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-internet-protocol-security",
+    "term": "Internet Protocol Security",
+    "definition": "Network layer protocol suite that authenticates and encrypts IP packets between hosts or sites, often for VPNs, in transport or tunnel mode.",
+    "acceptedAnswers": [
+      "IP Security"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-authentication-header",
+    "term": "Authentication Header",
+    "definition": "IPsec protocol that authenticates the sender and checks the integrity of each packet but does not encrypt the payload.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-encapsulating-security-payload",
+    "term": "Encapsulating Security Payload",
+    "definition": "IPsec protocol that encrypts the packet contents for confidentiality and can also authenticate them, unlike the integrity-only IPsec option.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-internet-key-exchange",
+    "term": "Internet Key Exchange",
+    "definition": "Protocol that negotiates security associations and exchanges and authenticates keys between IPsec peers before protected traffic flows; version 2 is current.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ip-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-three-way-handshake",
+    "term": "Three-way handshake",
+    "definition": "The SYN, SYN-ACK, ACK exchange that opens a TCP session between two hosts before any data is sent.",
+    "acceptedAnswers": [
+      "TCP three-way handshake"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-connection-oriented-protocol",
+    "term": "Connection-oriented protocol",
+    "definition": "Protocol that sets up a session and confirms delivery, resending lost data at the cost of more overhead; TCP is the main example.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-connectionless-protocol",
+    "term": "Connectionless protocol",
+    "definition": "Protocol that sends data best-effort with no session setup or delivery confirmation, giving low overhead; UDP is the main example.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-well-known-ports",
+    "term": "Well-known ports",
+    "definition": "Port numbers 0 through 1023, assigned by IANA to standard services such as SSH on 22 and HTTPS on 443.",
+    "acceptedAnswers": [
+      "Well-known port"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-registered-ports",
+    "term": "Registered ports",
+    "definition": "Port numbers 1024 through 49151, which vendors register with IANA for specific applications, such as RDP on 3389 and SQL Server on 1433.",
+    "acceptedAnswers": [
+      "Registered port"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-dynamic-ports",
+    "term": "Dynamic ports",
+    "definition": "Port numbers 49152 through 65535, picked temporarily by clients for their side of a session and never assigned to a standard service.",
+    "acceptedAnswers": [
+      "Dynamic port",
+      "Dynamic and private ports",
+      "Ephemeral ports",
+      "Ephemeral port"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-socket",
+    "term": "Socket",
+    "definition": "Combination of an IP address and a TCP or UDP port number, written with a colon such as 10.1.1.5:22, that identifies one end of a connection.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "proto-ports-transport",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-unicast",
+    "term": "Unicast",
+    "definition": "One-to-one traffic from a single sender to a single destination address; most traffic, such as web browsing, works this way.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "traffic-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-multicast",
+    "term": "Multicast",
+    "definition": "One-to-many traffic sent to a group address so that only the devices that joined that group receive it, used for streaming video.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "traffic-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-anycast",
+    "term": "Anycast",
+    "definition": "One-to-nearest traffic in which several servers share one address and routing delivers each packet to the closest one, used by DNS and CDNs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "traffic-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-broadcast",
+    "term": "Broadcast",
+    "definition": "One-to-all traffic sent to every device on the local segment, such as to 255.255.255.255 or FF:FF:FF:FF:FF:FF, and not forwarded by routers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "group": "traffic-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 1: Networking Models, Ports, Protocols, and Services"
+  },
+  {
+    "id": "netplus-def-cellular",
+    "term": "Cellular",
+    "definition": "Wireless WAN service from a mobile carrier whose coverage area is split into cells, each served by a tower; generations include LTE and 5G.",
+    "acceptedAnswers": [
+      "Cellular network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-satellite",
+    "term": "Satellite",
+    "definition": "Wireless Internet link through a dish that needs a clear view of the sky; reaches remote areas but has high latency from the long signal path.",
+    "acceptedAnswers": [
+      "Satellite Internet"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-wireless",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-long-term-evolution",
+    "term": "Long-Term Evolution",
+    "definition": "Cellular data standard sold as 4G that greatly raised mobile data speeds and is still widely used alongside 5G.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-wireless",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 9: Wide Area Networking"
+  },
+  {
+    "id": "netplus-def-wi-fi",
+    "term": "Wi-Fi",
+    "definition": "Common name for the IEEE 802.11 family of wireless LAN standards, which connect devices to access points by radio in the 2.4, 5, and 6 GHz bands.",
+    "acceptedAnswers": [
+      "WiFi"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-wireless",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-coaxial-cable",
+    "term": "Coaxial cable",
+    "definition": "Cable with one copper core, an insulator, a braided metal shield, and a jacket; RG-6 carries cable Internet and TV with F-type connectors.",
+    "acceptedAnswers": [
+      "Coax"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-twinaxial-cable",
+    "term": "Twinaxial cable",
+    "definition": "Shielded copper cable like coax but with two inner conductors per pair, used for very short, very fast links of about 10 meters or less.",
+    "acceptedAnswers": [
+      "Twinax",
+      "Twinax cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-direct-attach-copper-cable",
+    "term": "Direct attach copper cable",
+    "definition": "Fixed-length, factory-built copper cable with a transceiver such as SFP+ or QSFP already on each end, linking switches and servers in a rack.",
+    "acceptedAnswers": [
+      "Direct attach copper",
+      "Direct attach cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-unshielded-twisted-pair",
+    "term": "Unshielded twisted pair",
+    "definition": "Copper cable of four twisted wire pairs with no foil or braid, the cheapest and most common LAN cable, run up to 100 meters.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-shielded-twisted-pair",
+    "term": "Shielded twisted pair",
+    "definition": "Copper cable of twisted wire pairs wrapped in foil or braid that must be grounded, used where electromagnetic interference is high.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-plenum",
+    "term": "Plenum",
+    "definition": "The air-handling space between a drop ceiling and the structural ceiling, or under a raised floor, where fire-rated cable is required.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-cable-jackets",
+    "origin": "glossary",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Glossary; checked against CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-plenum-cable",
+    "term": "Plenum cable",
+    "definition": "Cable with a fire-retardant jacket, often Teflon, that makes little non-toxic smoke; required in air-handling ceiling spaces when no conduit is used.",
+    "acceptedAnswers": [
+      "Plenum-rated cable",
+      "Plenum-grade cable",
+      "Plenum-grade cabling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-cable-jackets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-non-plenum-cable",
+    "term": "Non-plenum cable",
+    "definition": "Cheaper standard cable with a PVC jacket that gives off toxic smoke when it burns, so it may not run through air-handling spaces.",
+    "acceptedAnswers": [
+      "Nonplenum cable",
+      "PVC cable",
+      "Polyvinyl chloride cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-cable-jackets",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-riser-rated-cable",
+    "term": "Riser-rated cable",
+    "definition": "Cable with a thicker fire-retardant jacket made for vertical runs between building floors, but not rated for air-handling ceiling spaces.",
+    "acceptedAnswers": [
+      "Riser cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-cable-jackets",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-fiber-optic-cable",
+    "term": "Fiber-optic cable",
+    "definition": "Cable that carries data as pulses of light through glass or plastic strands, so it is immune to EMI and suits long, fast, hard-to-tap links.",
+    "acceptedAnswers": [
+      "Fibre-optic cable",
+      "Optical fiber cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-single-mode-fiber",
+    "term": "Single-mode fiber",
+    "definition": "Optical cable with a narrow 8 to 10 micron core that carries one laser light path, giving the longest distances and highest speeds.",
+    "acceptedAnswers": [
+      "Single-mode fibre",
+      "Singlemode fiber",
+      "Single-mode fiber-optic cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-multimode-fiber",
+    "term": "Multimode fiber",
+    "definition": "Optical cable with a wider 50 or 62.5 micron core that carries many light paths from LEDs or lasers, cheaper but limited to a few hundred meters.",
+    "acceptedAnswers": [
+      "Multimode fibre",
+      "Multi-mode fiber",
+      "Multimode fiber-optic cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-cladding",
+    "term": "Cladding",
+    "definition": "Glass or plastic layer around the core of an optical cable that reflects light back into the core so the signal stays inside.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-transceiver",
+    "term": "Transceiver",
+    "definition": "Hot-swappable module that plugs into a switch or router port to connect it to fiber or copper cable, chosen by speed, protocol, and connector.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-transceivers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-small-form-factor-pluggable",
+    "term": "Small form-factor pluggable",
+    "definition": "Hot-swappable transceiver module, typically for 1 Gbps links, that fits a switch port and accepts fiber or copper connectors.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-transceivers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-enhanced-small-form-factor-pluggable",
+    "term": "Enhanced small form-factor pluggable",
+    "definition": "Same-size upgrade of the 1 Gbps pluggable module, used for 10 Gbps links and rated up to about 16 Gbps.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-transceivers",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-quad-small-form-factor-pluggable",
+    "term": "Quad small form-factor pluggable",
+    "definition": "Compact hot-pluggable transceiver that carries four channels in one module, for example 4 × 10 Gbps for a 40 Gbps link.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-transceivers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-bidirectional-transceiver",
+    "term": "Bidirectional transceiver",
+    "definition": "Module that sends and receives on different light wavelengths over a single fiber strand, halving the fiber needed for a full-duplex link.",
+    "acceptedAnswers": [
+      "BiDi transceiver",
+      "WDM transceiver"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-transceivers",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-ethernet",
+    "term": "Ethernet",
+    "definition": "The IEEE 802.3 family of wired LAN standards and the most common transceiver protocol, which frames data with source and destination MAC addresses.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-transceivers",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-def-subscriber-connector",
+    "term": "Subscriber connector",
+    "definition": "Square push-pull fiber connector with a 2.5 mm ferrule that snaps into place and can be paired for full duplex.",
+    "acceptedAnswers": [
+      "Standard connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-local-connector",
+    "term": "Local connector",
+    "definition": "Small fiber connector with a 1.25 mm ferrule and a latch, usually paired for full duplex; the most common connector on modern transceivers.",
+    "acceptedAnswers": [
+      "Lucent connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-straight-tip",
+    "term": "Straight tip",
+    "definition": "Round fiber connector with a 2.5 mm ferrule and a twist-lock bayonet coupling that holds one fiber and cannot do full duplex; found on older networks.",
+    "acceptedAnswers": [
+      "Straight tip connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-multi-fiber-push-on",
+    "term": "Multi-fiber push on",
+    "definition": "High-density fiber connector holding 8, 12, 24, or more fibers in one ferrule, used for 40 and 100 Gbps data center backbone links.",
+    "acceptedAnswers": [
+      "Multifiber push on",
+      "Multi-fiber push on connector",
+      "Multifiber push on connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-mechanical-transfer-registered-jack",
+    "term": "Mechanical transfer registered jack",
+    "definition": "Small fiber connector that holds two fibers in one ferrule, so a single plug gives full duplex; common on multimode links.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-ferrule",
+    "term": "Ferrule",
+    "definition": "Extended tip of a fiber connector that keeps the strand aligned and touches the mating jack; its size, such as 1.25 or 2.5 mm, sets the connector type.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-angled-physical-contact",
+    "term": "Angled physical contact",
+    "definition": "Fiber connector end face polished at 8 degrees to cut back reflection, used mostly on single-mode links.",
+    "acceptedAnswers": [
+      "Angle physical contact"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "glossary",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Glossary; checked against CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-ultra-physical-contact",
+    "term": "Ultra physical contact",
+    "definition": "Fiber connector end face polished flat at zero degrees, giving low insertion loss but more back reflection than the slanted kind.",
+    "acceptedAnswers": [
+      "Ultra polished connector"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-fiber-connectors",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-registered-jack-11",
+    "term": "Registered jack 11",
+    "definition": "Small six-position modular plug used for telephone lines and DSL modems, usually with only two or four wires connected.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-registered-jack-45",
+    "term": "Registered jack 45",
+    "definition": "Eight-position modular plug that terminates twisted-pair Ethernet cable; a little wider than the telephone plug.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 5: Cabling Solutions and Issues"
+  },
+  {
+    "id": "netplus-def-f-type-connector",
+    "term": "F-type connector",
+    "definition": "Threaded screw-on coax connector used mainly with RG-6 for cable and satellite modems; the cable's own center wire forms the pin.",
+    "acceptedAnswers": [
+      "F connector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-bayonet-neill-concelman-connector",
+    "term": "Bayonet Neill–Concelman connector",
+    "definition": "Coax connector that locks with a push-and-twist coupling and has its own center pin, used with RG-59 and older 10BASE2 networks.",
+    "acceptedAnswers": [
+      "Bayonet Neill-Concelman",
+      "British Naval Connector"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "group": "media-copper-connectors",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-def-mesh-topology",
+    "term": "Mesh topology",
+    "definition": "Layout in which every node has a direct link to every other node, giving the most redundancy and fault tolerance but the highest cabling cost.",
+    "acceptedAnswers": [
+      "Mesh",
+      "Full mesh",
+      "Full mesh topology"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-partial-mesh",
+    "term": "Partial mesh",
+    "definition": "Layout in which only some important nodes, such as servers or WAN routers, have redundant direct links to each other, instead of every node linking to all others.",
+    "acceptedAnswers": [
+      "Partial mesh topology",
+      "Hybrid mesh"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-types",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-hybrid-topology",
+    "term": "Hybrid topology",
+    "definition": "Physical layout that combines two or more different basic layouts, for example a star of switches joined to a bus, common in large networks.",
+    "acceptedAnswers": [
+      "Hybrid"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-star-topology",
+    "term": "Star topology",
+    "definition": "Layout in which every device has its own cable to one central switch, so one broken cable affects only one device but the center is a single point of failure.",
+    "acceptedAnswers": [
+      "Star",
+      "Hub and spoke",
+      "Hub and spoke topology",
+      "Star/hub and spoke"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-point-to-point-topology",
+    "term": "Point-to-point topology",
+    "definition": "Layout with a dedicated direct link between exactly two endpoints and no devices in between, such as a leased line joining two sites.",
+    "acceptedAnswers": [
+      "Point to point",
+      "Point-to-point connection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-types",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-spine-and-leaf",
+    "term": "Spine and leaf",
+    "definition": "Two-tier data center switch design where every server-facing switch connects to every backbone switch, so all server-to-server paths cross the same number of hops.",
+    "acceptedAnswers": [
+      "Spine and leaf architecture",
+      "Leaf-spine",
+      "Spine-leaf"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-three-tier-hierarchical-model",
+    "term": "Three-tier hierarchical model",
+    "definition": "Enterprise switching design that splits the network into core, distribution, and access layers, each with its own job and type of switch.",
+    "acceptedAnswers": [
+      "Three-tier architecture",
+      "Three-tiered architecture",
+      "Three-tier model",
+      "Hierarchical model"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-core-layer",
+    "term": "Core layer",
+    "definition": "Top tier of the hierarchical design: the high-speed, highly redundant backbone of the most powerful switches and routers, which move traffic between regions as fast as possible.",
+    "acceptedAnswers": [
+      "Core"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-distribution-layer",
+    "term": "Distribution layer",
+    "definition": "Middle tier of the hierarchical design where routing between VLANs, ACL filtering, and QoS policies are applied, between the backbone and the user-facing switches.",
+    "acceptedAnswers": [
+      "Aggregation layer",
+      "Distribution",
+      "Distribution/aggregation layer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-access-layer",
+    "term": "Access layer",
+    "definition": "Bottom tier of the hierarchical design, where low-cost, high-port-density switches connect end devices such as workstations, printers, and servers.",
+    "acceptedAnswers": [
+      "Edge layer",
+      "Access",
+      "Access/edge layer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-collapsed-core",
+    "term": "Collapsed core",
+    "definition": "Two-tier design that merges the backbone and the middle tier into one layer, cutting cost and hops for small and medium networks but reducing redundancy.",
+    "acceptedAnswers": [
+      "Collapsed core architecture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-north-south-traffic",
+    "term": "North-south traffic",
+    "definition": "Traffic that enters or leaves the data center, such as Internet clients reaching a web server, drawn vertically on network diagrams.",
+    "acceptedAnswers": [
+      "North-south",
+      "North south traffic flow"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-east-west-traffic",
+    "term": "East-west traffic",
+    "definition": "Traffic that stays inside the data center, moving between servers or virtual machines, which has grown with virtualization.",
+    "acceptedAnswers": [
+      "East-west",
+      "East west traffic flow"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 2: Network Topologies, Architectures, and Types"
+  },
+  {
+    "id": "netplus-def-top-of-rack-switching",
+    "term": "Top-of-rack switching",
+    "definition": "Rack design where a switch in each rack connects that rack's servers with short copper cables and uplinks to the aggregation switches, often over fiber.",
+    "acceptedAnswers": [
+      "Top of rack",
+      "Top-of-rack switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.6"
+    ],
+    "group": "topo-architecture",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-public-ip-address",
+    "term": "Public IP address",
+    "definition": "Globally unique, registered IPv4 address that is routable on the Internet, usually assigned by an ISP from blocks managed by IANA and regional registries.",
+    "acceptedAnswers": [
+      "Public address",
+      "Public IPv4 address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-special",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-private-ip-address",
+    "term": "Private IP address",
+    "definition": "IPv4 address for use only inside an internal network; Internet routers drop it, so hosts need NAT to reach the Internet.",
+    "acceptedAnswers": [
+      "Private address",
+      "Private IPv4 address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-special",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-rfc-1918-address-ranges",
+    "term": "RFC 1918 address ranges",
+    "definition": "The three IPv4 blocks reserved for internal use: 10.0.0.0/8, 172.16.0.0/12, and 192.168.0.0/16.",
+    "acceptedAnswers": [
+      "RFC 1918",
+      "RFC 1918 ranges"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-special",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-automatic-private-ip-addressing",
+    "term": "Automatic Private IP Addressing",
+    "definition": "Windows feature that self-assigns an address from 169.254.0.0/16 with no default gateway when no DHCP server answers, so only local communication works.",
+    "acceptedAnswers": [
+      "Automatic Private IP Address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-special",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-loopback-address",
+    "term": "Loopback address",
+    "definition": "Reserved address a host uses to send traffic to itself for testing its own TCP/IP stack: 127.0.0.1 in IPv4 (any 127.x.x.x) and ::1 in IPv6.",
+    "acceptedAnswers": [
+      "Loopback",
+      "Localhost",
+      "Loopback/localhost"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-special",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-subnetting",
+    "term": "Subnetting",
+    "definition": "Borrowing host bits of an address block to create more, smaller networks, which adds broadcast domains but leaves fewer hosts on each one.",
+    "acceptedAnswers": [
+      "Subnet",
+      "Subnets"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-subnet-mask",
+    "term": "Subnet mask",
+    "definition": "32-bit value, such as 255.255.255.0, whose 1 bits show which part of an IPv4 address is the network and whose 0 bits show the host part.",
+    "acceptedAnswers": [
+      "Netmask",
+      "Mask"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-variable-length-subnet-mask",
+    "term": "Variable Length Subnet Mask",
+    "definition": "Method of giving subnets of one network different prefix lengths, so each subnet is sized to its host count, such as /30 for a router link.",
+    "acceptedAnswers": [
+      "Variable Length Subnet Masking",
+      "Variable length subnetting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-classless-inter-domain-routing",
+    "term": "Classless Inter-Domain Routing",
+    "definition": "Addressing method that ignores the A, B, and C boundaries and writes the network bit count after a slash, as in 192.168.2.0/24.",
+    "acceptedAnswers": [
+      "Classless Interdomain Routing",
+      "Classless Inter-Domain Routing notation",
+      "Slash notation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-network-id",
+    "term": "Network ID",
+    "definition": "The part of an IPv4 address shared by every host on the same network or subnet, marked by the 1 bits of the mask.",
+    "acceptedAnswers": [
+      "Network address",
+      "Network portion"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-host-id",
+    "term": "Host ID",
+    "definition": "The part of an IPv4 address that identifies one device within its network or subnet, marked by the 0 bits of the mask.",
+    "acceptedAnswers": [
+      "Node ID",
+      "Host portion"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-supernetting",
+    "term": "Supernetting",
+    "definition": "Combining several contiguous network blocks into one larger range with a shorter prefix, so one route entry can cover them all.",
+    "acceptedAnswers": [
+      "Route aggregation",
+      "Route summarization"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-subnetting",
+    "origin": "glossary",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Glossary; checked against CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-class-a-address",
+    "term": "Class A address",
+    "definition": "IPv4 address with a first octet from 1 to 126, a default mask of 255.0.0.0, and over 16 million hosts per network.",
+    "acceptedAnswers": [
+      "Class A"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-classes",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-class-b-address",
+    "term": "Class B address",
+    "definition": "IPv4 address with a first octet from 128 to 191, a default mask of 255.255.0.0, and up to 65,534 hosts per network.",
+    "acceptedAnswers": [
+      "Class B"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-classes",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-class-c-address",
+    "term": "Class C address",
+    "definition": "IPv4 address with a first octet from 192 to 223, a default mask of 255.255.255.0, and up to 254 hosts per network.",
+    "acceptedAnswers": [
+      "Class C"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-classes",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-class-d-address",
+    "term": "Class D address",
+    "definition": "IPv4 address with a first octet from 224 to 239, reserved for multicast, where one sender reaches a group of hosts.",
+    "acceptedAnswers": [
+      "Class D"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-classes",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-class-e-address",
+    "term": "Class E address",
+    "definition": "IPv4 address with a first octet of 240 or higher, reserved for research and experimental use and not assigned to hosts.",
+    "acceptedAnswers": [
+      "Class E"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-classes",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 3: Network Addressing, Routing, and Switching"
+  },
+  {
+    "id": "netplus-def-classful-addressing",
+    "term": "Classful addressing",
+    "definition": "Older IPv4 scheme where the first octet's range fixes the network and host split, using only the default masks of the address classes.",
+    "acceptedAnswers": [
+      "Classful",
+      "Classful IP addressing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "group": "ipv4-classes",
+    "origin": "glossary",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Glossary; checked against CompTIA Network+ Guide to Networks (West), Cengage – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-def-software-defined-networking",
+    "term": "Software-defined networking",
+    "definition": "Approach that moves forwarding decisions from individual devices into central controller software, so the whole network is configured and automated from one place.",
+    "acceptedAnswers": [
+      "Software-defined network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-software-defined-wide-area-network",
+    "term": "Software-defined wide area network",
+    "definition": "Virtual WAN that uses central software to steer branch traffic over any mix of links, such as MPLS, broadband, LTE, or 5G.",
+    "acceptedAnswers": [
+      "Software-defined WAN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-application-aware",
+    "term": "Application aware",
+    "definition": "SD-WAN ability to identify traffic by the application that sent it, using deep packet inspection, and apply priority, routing, and security per application.",
+    "acceptedAnswers": [
+      "Application awareness",
+      "Application-aware routing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-zero-touch-provisioning",
+    "term": "Zero-touch provisioning",
+    "definition": "Shipping a new branch device that, when powered on, finds the controller and downloads its configuration and policies with no on-site technician.",
+    "acceptedAnswers": [
+      "Zero touch deployment"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-transport-agnostic",
+    "term": "Transport agnostic",
+    "definition": "SD-WAN trait of working over any link type, such as MPLS, broadband, LTE, 5G, or satellite, and picking the best one for each flow.",
+    "acceptedAnswers": [
+      "Transport independent"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-central-policy-management",
+    "term": "Central policy management",
+    "definition": "Defining QoS, routing, and security rules once in a single console and pushing them to every SD-WAN device, so all sites stay consistent.",
+    "acceptedAnswers": [
+      "Centralized policy management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-control-plane",
+    "term": "Control plane",
+    "definition": "The decision-making part of a network device or SDN controller that builds routing and forwarding rules, as opposed to the part that moves the frames.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-data-plane",
+    "term": "Data plane",
+    "definition": "The part of a network device that actually forwards frames and packets out of its ports, following rules set by the decision-making layer.",
+    "acceptedAnswers": [
+      "Infrastructure plane",
+      "Forwarding plane"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-sdn",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-virtual-extensible-lan",
+    "term": "Virtual Extensible LAN",
+    "definition": "Overlay technology that wraps Layer 2 frames in UDP packets with a 24-bit segment ID, giving about 16 million segments over a routed IP network.",
+    "acceptedAnswers": [
+      "Virtual Extensible Local Area Network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-vxlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-data-center-interconnect",
+    "term": "Data center interconnect",
+    "definition": "Links that join two or more data centers so virtual Layer 2 segments can stretch between them for workload moves, replication, and disaster recovery.",
+    "acceptedAnswers": [
+      "Datacenter interconnect"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-vxlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-layer-2-encapsulation",
+    "term": "Layer 2 encapsulation",
+    "definition": "Wrapping a whole Ethernet frame inside another header so it can cross a routed Layer 3 network and be unwrapped intact at the far end.",
+    "acceptedAnswers": [
+      "Layer two encapsulation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-vxlan",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-vxlan-tunnel-endpoint",
+    "term": "VXLAN tunnel endpoint",
+    "definition": "Switch, router, or hypervisor function that wraps and unwraps overlay frames, adding the segment ID and its own source and destination IP addresses.",
+    "acceptedAnswers": [
+      "Virtual Extensible LAN tunnel endpoint"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-vxlan",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-vxlan-network-identifier",
+    "term": "VXLAN network identifier",
+    "definition": "The 24-bit number in an overlay header that marks which virtual segment, or tenant, a wrapped frame belongs to.",
+    "acceptedAnswers": [
+      "Virtual network identifier"
+    ],
+    "typeable": false,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-vxlan",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-zero-trust-architecture",
+    "term": "Zero trust architecture",
+    "definition": "Security model that gives no implicit trust to any user or device, inside or outside the perimeter, and verifies every access request: never trust, always verify.",
+    "acceptedAnswers": [
+      "Zero trust",
+      "Zero trust model"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-policy-based-authentication",
+    "term": "Policy-based authentication",
+    "definition": "Verifying identity with rules that weigh context such as user, device health, location, time, and behavior before access is granted.",
+    "acceptedAnswers": [
+      "Policy based access"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-authorization",
+    "term": "Authorization",
+    "definition": "Deciding which resources and actions a verified identity is allowed to use; in zero trust it is checked continuously, not only once at sign-in.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-least-privilege",
+    "term": "Least privilege",
+    "definition": "Principle of giving each user or device only the minimum access needed for its task, adjusted when roles change.",
+    "acceptedAnswers": [
+      "Least privilege access",
+      "Principle of least privilege"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-microsegmentation",
+    "term": "Microsegmentation",
+    "definition": "Dividing a network into many small isolated zones, each with its own access controls, to stop an attacker from moving laterally.",
+    "acceptedAnswers": [
+      "Micro-segmentation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-secure-access-service-edge",
+    "term": "Secure Access Service Edge",
+    "definition": "Cloud-delivered framework that combines SD-WAN networking with security services such as firewall, secure web gateway, CASB, and zero trust access.",
+    "acceptedAnswers": [
+      "Secure Access Secure Edge"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-security-service-edge",
+    "term": "Security Service Edge",
+    "definition": "The security-only part of the combined cloud edge framework, delivering secure web gateway, CASB, and zero trust access without the SD-WAN networking part.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-infrastructure-as-code",
+    "term": "Infrastructure as code",
+    "definition": "Defining and deploying servers, networks, and storage from machine-readable configuration files or scripts instead of manual setup, so builds are repeatable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-iac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-playbook",
+    "term": "Playbook",
+    "definition": "Automation file, often YAML for a tool like Ansible, that lists tasks to run in order to bring systems to a desired configuration.",
+    "acceptedAnswers": [
+      "Playbooks"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-iac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-template",
+    "term": "Template",
+    "definition": "Predefined blueprint, often JSON or YAML, that describes a resource's structure and settings so the same build can be reused across environments.",
+    "acceptedAnswers": [
+      "Templates"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-iac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-reusable-task",
+    "term": "Reusable task",
+    "definition": "Small coded unit of automation, such as installing a package or setting an interface, that can be called again in many workflows.",
+    "acceptedAnswers": [
+      "Reusable tasks"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-iac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-configuration-drift",
+    "term": "Configuration drift",
+    "definition": "Gradual movement of a system away from its approved settings through manual or undocumented changes, which can break compliance.",
+    "acceptedAnswers": [
+      "Drift"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-iac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-dynamic-inventory",
+    "term": "Dynamic inventory",
+    "definition": "List of managed resources that automation tools build automatically by querying cloud or virtualization platforms, so it stays current as resources change.",
+    "acceptedAnswers": [
+      "Dynamic inventories"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-iac",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-source-control",
+    "term": "Source control",
+    "definition": "Tracking every change to code or configuration files, with who made it and when, so versions can be compared, audited, and rolled back.",
+    "acceptedAnswers": [
+      "Version control",
+      "Revision control"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-source-control",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-central-repository",
+    "term": "Central repository",
+    "definition": "Shared, authoritative store of the code and configuration files, including the version now in production, with access controls on who may change it.",
+    "acceptedAnswers": [
+      "Central repo",
+      "Repository"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-source-control",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-branching",
+    "term": "Branching",
+    "definition": "Making a separate copy of the codebase to develop or test a change in isolation, then merging it back into the main line when approved.",
+    "acceptedAnswers": [
+      "Branch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-source-control",
+    "origin": "objectives",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-conflict-identification",
+    "term": "Conflict identification",
+    "definition": "Detecting when two people changed the same lines or files in different ways, and blocking the merge until someone resolves it.",
+    "acceptedAnswers": [
+      "Merge conflict detection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-source-control",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-commit",
+    "term": "Commit",
+    "definition": "Saving a set of changes to the branch you work on, recorded with an author, time, and message.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-source-control",
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West), Cengage – Chapter 7: Network Architecture"
+  },
+  {
+    "id": "netplus-def-address-exhaustion",
+    "term": "Address exhaustion",
+    "definition": "Running out of the roughly 4.3 billion 32-bit IPv4 addresses, the main reason for moving to 128-bit IPv6.",
+    "acceptedAnswers": [
+      "IPv4 address exhaustion",
+      "IP address exhaustion"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-ipv6",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-internet-protocol-version-6",
+    "term": "Internet Protocol version 6",
+    "definition": "Successor to IPv4 with 128-bit addresses written in hexadecimal, giving about 3.4 x 10^38 addresses so devices no longer need to share them.",
+    "acceptedAnswers": [
+      "IP version 6"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-ipv6",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-dual-stack",
+    "term": "Dual stack",
+    "definition": "Running IPv4 and IPv6 at the same time on the same devices and network, so hosts can reach either kind of system during the transition.",
+    "acceptedAnswers": [
+      "Dual stacked",
+      "Dual stacking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-ipv6",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-tunneling",
+    "term": "Tunneling",
+    "definition": "Encapsulating one protocol inside another, such as IPv6 packets inside IPv4 packets with 6to4 or Teredo, to cross a network that lacks native support.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-ipv6",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  },
+  {
+    "id": "netplus-def-network-address-translation-64",
+    "term": "Network Address Translation 64",
+    "definition": "Edge translation between IPv6 and IPv4 addresses that lets IPv6-only hosts reach IPv4-only services and the reverse.",
+    "acceptedAnswers": [
+      "NAT64 translation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "group": "modern-ipv6",
+    "origin": "objectives",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 4: Network Implementations"
+  }
+]

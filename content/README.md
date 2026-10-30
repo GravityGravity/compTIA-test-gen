@@ -81,7 +81,7 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 
 ## Groups
 
-Definition groups, by file. A group name is used in one file only, so distractors stay within one domain.
+Definition groups, by file. Within a certification, a group name is used in one file only, so distractors stay within one domain.
 
 A+ Core 1 Domain 1 (`core1-d1-mobile-devices.json`, 38 terms): `mobile-hardware`, `physical-security`, `input-accessories`, `mobile-connections`, `cellular-location`, `mobile-management`.
 
@@ -100,6 +100,8 @@ A+ Core 2 Domain 2 (`core2-d2-security.json`, 152 terms): `facility-security`, `
 A+ Core 2 Domain 3 (`core2-d3-software-troubleshooting.json`, 71 terms): `windows-stability`, `windows-performance`, `windows-fixes`, `boot-and-crash`, `mobile-app-symptoms`, `mobile-fixes`, `mobile-security-concerns`, `mobile-security-symptoms`, `pc-security-symptoms`, `browser-symptoms`.
 
 A+ Core 2 Domain 4 (`core2-d4-operational-procedures.json`, 127 terms): `ticketing`, `asset-management`, `support-documents`, `agreements-policies`, `change-planning`, `change-control`, `backup-methods`, `backup-recovery`, `esd-protection`, `personal-safety`, `environmental-controls`, `power-protection`, `incident-response`, `software-licensing`, `regulated-data`, `customer-communication`, `professional-conduct`, `script-file-types`, `scripting-basics`, `remote-access-methods`, `ai-limitations`, `ai-privacy-use`.
+
+Network+ Domain 1 (`network-plus/d1-networking-concepts.json`, 203 terms): `osi-layers`, `osi-encapsulation`, `appliance-forwarding`, `appliance-security`, `appliance-storage`, `appliance-traffic`, `cloud-models`, `cloud-characteristics`, `cloud-networking`, `proto-file-remote`, `proto-web-mail-voice`, `proto-network-services`, `proto-ip-types`, `proto-ports-transport`, `traffic-types`, `media-wireless`, `media-copper`, `media-cable-jackets`, `media-fiber`, `media-transceivers`, `media-fiber-connectors`, `media-copper-connectors`, `topo-types`, `topo-architecture`, `ipv4-special`, `ipv4-subnetting`, `ipv4-classes`, `modern-sdn`, `modern-vxlan`, `modern-zero-trust`, `modern-iac`, `modern-source-control`, `modern-ipv6`.
 
 ## How the acronym files were made
 
