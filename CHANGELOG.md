@@ -2,6 +2,15 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definitions: A+ Core 1 Domain 2 (Networking)
+
+- New `content/definitions/a-plus/core1-d2-networking.json`: 98 terms for objectives 2.1–2.8, in 15 groups.
+  - Written from Exam Cram 2e chapters 4–11.
+  - Protocols use their full names as the term, and the definition gives the port.
+  - Three book terms are added: three-way handshake, channel bonding, port number.
+- Long names that can't fairly be typed are multiple choice only (`typeable: false`). Here, that is DMARC.
+- Bluetooth and NFC are not repeated: they are already in Domain 1.
+
 ## 2026-10-30 – Definitions: A+ Core 1 Domain 1 (Mobile Devices)
 
 - New `content/definitions/a-plus/core1-d1-mobile-devices.json`: 38 terms for objectives 1.1–1.3, in 6 groups.

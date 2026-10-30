@@ -85,6 +85,8 @@ Definition groups are listed here as each domain is written.
 
 A+ Core 1 Domain 1 (`core1-d1-mobile-devices.json`): `mobile-hardware`, `physical-security`, `input-accessories`, `mobile-connections`, `cellular-location`, `mobile-management`.
 
+A+ Core 1 Domain 2 (`core1-d2-networking.json`): `transport`, `web-mail-protocols`, `file-remote-protocols`, `wireless`, `server-roles`, `appliances-systems`, `dns-records`, `email-authentication`, `dhcp-configuration`, `network-devices`, `power-provider-equipment`, `ip-addressing`, `connection-types`, `network-types`, `networking-tools`.
+
 ## How the acronym files were made
 
 1. `tools/extract/seed_acronyms.py <cert>` seeded one record per official acronym from `sources-text/derived/<cert>-acronyms.md` and mapped it to the objectives that name it. It does not overwrite an existing file.

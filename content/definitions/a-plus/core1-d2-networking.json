@@ -1,0 +1,1976 @@
+[
+  {
+    "id": "aplus-def-transmission-control-protocol",
+    "term": "Transmission Control Protocol",
+    "definition": "Connection-oriented transport protocol that sets up a session with a three-way handshake and resends lost data, so delivery is reliable and in order.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "transport",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-user-datagram-protocol",
+    "term": "User Datagram Protocol",
+    "definition": "Connectionless transport protocol that sends data without setting up a session or resending lost packets, used for streaming, voice, DNS, and DHCP.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "transport",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-three-way-handshake",
+    "term": "Three-way handshake",
+    "definition": "The SYN, SYN/ACK, ACK exchange that opens a reliable session between a client and a server before data is sent.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "transport",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-port-number",
+    "term": "Port number",
+    "definition": "A number from 0 to 65535 added to an IP address that tells the receiving host which service or application should get the traffic.",
+    "acceptedAnswers": [
+      "Port"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "transport",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-hypertext-transfer-protocol",
+    "term": "Hypertext Transfer Protocol",
+    "definition": "Unencrypted protocol that web browsers use to request pages from web servers, on TCP port 80.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-hypertext-transfer-protocol-secure",
+    "term": "Hypertext Transfer Protocol Secure",
+    "definition": "Web traffic encrypted with TLS so pages and logins cannot be read in transit, on TCP port 443.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-simple-mail-transfer-protocol",
+    "term": "Simple Mail Transfer Protocol",
+    "definition": "Protocol that sends outgoing email from clients to servers and between mail servers, on TCP port 25.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-post-office-protocol-3",
+    "term": "Post Office Protocol 3",
+    "definition": "Protocol that downloads email from the server to one client and usually deletes it from the server, on TCP port 110.",
+    "acceptedAnswers": [
+      "Post Office Protocol",
+      "Post Office Protocol version 3"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-internet-message-access-protocol",
+    "term": "Internet Message Access Protocol",
+    "definition": "Protocol that reads email while keeping it on the server, so folders stay in sync across several devices, on TCP port 143.",
+    "acceptedAnswers": [
+      "Internet Mail Access Protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-domain-name-system",
+    "term": "Domain Name System",
+    "definition": "Service that resolves host names such as www.example.com to IP addresses, on port 53.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-dynamic-host-configuration-protocol",
+    "term": "Dynamic Host Configuration Protocol",
+    "definition": "Service that hands out IP addresses, subnet masks, gateways, and name server addresses to clients automatically, on UDP ports 67 and 68.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "web-mail-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-file-transfer-protocol",
+    "term": "File Transfer Protocol",
+    "definition": "Unencrypted protocol for uploading and downloading files between a client and a server, on TCP ports 20 and 21.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-secure-shell",
+    "term": "Secure Shell",
+    "definition": "Encrypted protocol for remote command-line access to another computer or network device, on TCP port 22.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-telnet",
+    "term": "Telnet",
+    "definition": "Old, unencrypted remote command-line protocol on TCP port 23 that sends passwords in clear text and should be replaced.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-server-message-block",
+    "term": "Server Message Block",
+    "definition": "Windows protocol for sharing files and printers on a network, on TCP port 445.",
+    "acceptedAnswers": [
+      "Common Internet File System"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-remote-desktop-protocol",
+    "term": "Remote Desktop Protocol",
+    "definition": "Microsoft protocol that shows and controls a remote Windows desktop over the network, on TCP port 3389.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-lightweight-directory-access-protocol",
+    "term": "Lightweight Directory Access Protocol",
+    "definition": "Protocol that queries and updates directory services such as Active Directory, on port 389.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-network-basic-input-output-system",
+    "term": "Network Basic Input/Output System",
+    "definition": "Older Windows naming and session service for local networks, on ports 137 to 139.",
+    "acceptedAnswers": [
+      "NetBIOS over TCP/IP"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "group": "file-remote-protocols",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 4: TCP and UDP Ports and Protocols"
+  },
+  {
+    "id": "aplus-def-2-4-ghz-band",
+    "term": "2.4 GHz band",
+    "definition": "The longest-range Wi-Fi frequency, which passes through walls well but has only three nonoverlapping channels and much interference.",
+    "acceptedAnswers": [
+      "2.4 GHz"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-5-ghz-band",
+    "term": "5 GHz band",
+    "definition": "Wi-Fi frequency with many more channels and higher speeds than the older band, but a shorter range through walls.",
+    "acceptedAnswers": [
+      "5 GHz"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-6-ghz-band",
+    "term": "6 GHz band",
+    "definition": "Newest Wi-Fi frequency, used by Wi-Fi 6E and Wi-Fi 7, with wide, uncrowded channels but the shortest range.",
+    "acceptedAnswers": [
+      "6 GHz"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-channel",
+    "term": "Channel",
+    "definition": "One of the numbered frequency slices within a Wi-Fi band; neighboring networks should use different, nonoverlapping ones such as 1, 6, and 11.",
+    "acceptedAnswers": [
+      "Wireless channel"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-channel-width",
+    "term": "Channel width",
+    "definition": "How much spectrum one Wi-Fi network uses, such as 20, 40, 80, or 160 MHz; wider means faster but more chance of interference.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-channel-bonding",
+    "term": "Channel bonding",
+    "definition": "Combining adjacent channels into one wider channel to increase a wireless network's data rate.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-radio-frequency-identification",
+    "term": "Radio-frequency identification",
+    "definition": "Technology that reads small tags on items or badges with radio waves, used for inventory tracking and building access.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-regulations",
+    "term": "Regulations",
+    "definition": "Government rules, set by the FCC in the United States, on which frequencies, channels, power levels, and antennas wireless devices may use.",
+    "acceptedAnswers": [
+      "Wireless regulations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "group": "wireless",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 5: Wireless Technologies"
+  },
+  {
+    "id": "aplus-def-file-server",
+    "term": "File server",
+    "definition": "A server that stores shared files and folders centrally so users can open, save, and back them up over the network.",
+    "acceptedAnswers": [
+      "Fileshare",
+      "File share"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-print-server",
+    "term": "Print server",
+    "definition": "A server that manages shared printers and their queues so many users can send jobs to them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-mail-server",
+    "term": "Mail server",
+    "definition": "A server that sends, receives, and stores email for an organization's users.",
+    "acceptedAnswers": [
+      "Email server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-web-server",
+    "term": "Web server",
+    "definition": "A server that delivers websites and web applications to browsers over HTTP or HTTPS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-database-server",
+    "term": "Database server",
+    "definition": "A server that stores structured data and answers queries from applications, usually with SQL.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-syslog",
+    "term": "Syslog",
+    "definition": "A standard for collecting log messages from routers, switches, and servers in one central place for monitoring and troubleshooting.",
+    "acceptedAnswers": [
+      "Syslog server"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-authentication-authorization-and-accounting",
+    "term": "Authentication, authorization, and accounting",
+    "definition": "A server role that checks who a user is, decides what they may access, and records what they did, as RADIUS and TACACS+ do.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-network-time-protocol",
+    "term": "Network Time Protocol",
+    "definition": "Protocol that keeps the clocks of computers and network devices in sync with a reliable time source, on UDP port 123.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "server-roles",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-spam-gateway",
+    "term": "Spam gateway",
+    "definition": "An appliance or service in front of the mail server that filters out junk and malicious email before it reaches users.",
+    "acceptedAnswers": [
+      "Email security gateway"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-unified-threat-management",
+    "term": "Unified threat management",
+    "definition": "One appliance that combines firewall, intrusion prevention, antivirus, and content filtering for a network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-load-balancer",
+    "term": "Load balancer",
+    "definition": "A device that spreads incoming requests across several servers so no single server is overloaded.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-proxy-server",
+    "term": "Proxy server",
+    "definition": "A go-between that makes web requests for clients, caching pages and filtering which sites users can reach.",
+    "acceptedAnswers": [
+      "Proxy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-supervisory-control-and-data-acquisition",
+    "term": "Supervisory control and data acquisition",
+    "definition": "A system that monitors and controls industrial equipment, such as power, water, and factory machinery, often on older hardware that is hard to patch.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-internet-of-things",
+    "term": "Internet of Things",
+    "definition": "Everyday network-connected devices, such as thermostats, cameras, and smart speakers, that often have weak default security.",
+    "acceptedAnswers": [
+      "IoT devices"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-embedded-system",
+    "term": "Embedded system",
+    "definition": "A computer built into a device for one dedicated job, often running old software that cannot easily be updated.",
+    "acceptedAnswers": [
+      "Legacy system",
+      "Legacy/embedded system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "group": "appliances-systems",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 6: Networked Hosts"
+  },
+  {
+    "id": "aplus-def-a-record",
+    "term": "A record",
+    "definition": "DNS entry that maps a host name to an IPv4 address.",
+    "acceptedAnswers": [
+      "Address record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-aaaa-record",
+    "term": "AAAA record",
+    "definition": "DNS entry that maps a host name to an IPv6 address.",
+    "acceptedAnswers": [
+      "Quad A record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-canonical-name-record",
+    "term": "Canonical name record",
+    "definition": "DNS entry that makes one host name an alias that points to another host name.",
+    "acceptedAnswers": [
+      "CNAME record",
+      "Alias record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-mail-exchanger-record",
+    "term": "Mail exchanger record",
+    "definition": "DNS entry that names the server that accepts email for a domain.",
+    "acceptedAnswers": [
+      "MX record",
+      "Mail exchange record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-text-record",
+    "term": "Text record",
+    "definition": "DNS entry that holds free-form text, often used to publish email authentication policies.",
+    "acceptedAnswers": [
+      "TXT record"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dns-records",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-sender-policy-framework",
+    "term": "Sender Policy Framework",
+    "definition": "A DNS policy that lists which mail servers are allowed to send email for a domain, so receivers can spot forged senders.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "email-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-domainkeys-identified-mail",
+    "term": "DomainKeys Identified Mail",
+    "definition": "A method that adds a digital signature to outgoing email, checked with a public key in DNS, to prove the message was not altered.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "email-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-domain-based-message-authentication-reporting-and-conformance",
+    "term": "Domain-based Message Authentication, Reporting, and Conformance",
+    "definition": "A DNS policy that tells receivers what to do with email that fails sender checks and sends reports back to the domain owner.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "email-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-spam-management",
+    "term": "Spam management",
+    "definition": "Using DNS email policies and filtering to stop forged and unwanted messages from reaching users.",
+    "acceptedAnswers": [
+      "Spam filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "email-authentication",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-scope",
+    "term": "Scope",
+    "definition": "The range of IP addresses, with its subnet mask and options, that a DHCP server may hand out on one network.",
+    "acceptedAnswers": [
+      "DHCP scope"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dhcp-configuration",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-lease",
+    "term": "Lease",
+    "definition": "The length of time a client may keep an assigned IP address before it must renew it with the server.",
+    "acceptedAnswers": [
+      "DHCP lease"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dhcp-configuration",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-reservation",
+    "term": "Reservation",
+    "definition": "A DHCP setting that always gives the same IP address to one device, matched by its MAC address.",
+    "acceptedAnswers": [
+      "DHCP reservation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dhcp-configuration",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-exclusion",
+    "term": "Exclusion",
+    "definition": "Addresses inside the DHCP range that the server will never hand out, usually because devices use them as static addresses.",
+    "acceptedAnswers": [
+      "DHCP exclusion",
+      "Exclusion range"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "dhcp-configuration",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-router",
+    "term": "Router",
+    "definition": "A device that connects different networks and forwards packets between them by IP address, such as a LAN and the internet.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-switch",
+    "term": "Switch",
+    "definition": "A device that connects computers on a LAN and forwards frames only to the port of the destination MAC address.",
+    "acceptedAnswers": [
+      "Network switch"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-managed-switch",
+    "term": "Managed switch",
+    "definition": "A configurable LAN device that supports VLANs, port settings, and monitoring through a management interface.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-unmanaged-switch",
+    "term": "Unmanaged switch",
+    "definition": "A plug-and-play LAN device with no settings, common in small offices and homes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-access-point",
+    "term": "Access point",
+    "definition": "A device that connects wireless clients to a wired network by creating a Wi-Fi network.",
+    "acceptedAnswers": [
+      "Wireless access point"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-firewall",
+    "term": "Firewall",
+    "definition": "A device or program that allows or blocks network traffic based on rules about addresses, ports, and protocols.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-patch-panel",
+    "term": "Patch panel",
+    "definition": "A panel in a wiring closet where building cable runs end in ports, so short cables can connect them to switches.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-network-interface-card",
+    "term": "Network interface card",
+    "definition": "The adapter in a computer that connects it to a network, wired or wireless, and holds its MAC address.",
+    "acceptedAnswers": [
+      "Network adapter",
+      "Network interface controller"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-media-access-control-address",
+    "term": "Media access control address",
+    "definition": "The 48-bit hardware address burned into a network adapter, written as six pairs of hexadecimal digits.",
+    "acceptedAnswers": [
+      "MAC address",
+      "Physical address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "network-devices",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-power-over-ethernet",
+    "term": "Power over Ethernet",
+    "definition": "Sending electrical power along an Ethernet cable with the data, so access points, phones, and cameras need no separate power supply.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "power-provider-equipment",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-power-over-ethernet-injector",
+    "term": "Power over Ethernet injector",
+    "definition": "A small device that adds power to one Ethernet cable when the switch cannot supply it.",
+    "acceptedAnswers": [
+      "PoE injector"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "power-provider-equipment",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-cable-modem",
+    "term": "Cable modem",
+    "definition": "The device that connects a home or office to an internet provider over the coaxial cable used for television.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "power-provider-equipment",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-optical-network-terminal",
+    "term": "Optical network terminal",
+    "definition": "The provider device at the customer site that converts the fiber signal into Ethernet.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "group": "power-provider-equipment",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 8: Network Devices"
+  },
+  {
+    "id": "aplus-def-internet-protocol-version-4",
+    "term": "Internet Protocol version 4",
+    "definition": "The 32-bit addressing scheme written as four decimal numbers from 0 to 255, such as 192.168.1.10.",
+    "acceptedAnswers": [
+      "IPv4"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-internet-protocol-version-6",
+    "term": "Internet Protocol version 6",
+    "definition": "The 128-bit addressing scheme written as eight groups of hexadecimal digits separated by colons.",
+    "acceptedAnswers": [
+      "IPv6"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-private-ip-address",
+    "term": "Private IP address",
+    "definition": "An address from the ranges 10.x, 172.16–31.x, or 192.168.x that works inside a LAN but is not routed on the internet.",
+    "acceptedAnswers": [
+      "Private address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-public-ip-address",
+    "term": "Public IP address",
+    "definition": "A globally unique address assigned by a provider that can be reached across the internet.",
+    "acceptedAnswers": [
+      "Public address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-automatic-private-ip-addressing",
+    "term": "Automatic Private IP Addressing",
+    "definition": "Windows self-assigns a 169.254.x.x address when no DHCP server answers, allowing only local communication.",
+    "acceptedAnswers": [
+      "Automatic Private Internet Protocol Addressing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-static-ip-address",
+    "term": "Static IP address",
+    "definition": "An address typed in by hand that never changes, used for servers, printers, and network devices.",
+    "acceptedAnswers": [
+      "Static address",
+      "Static IP"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-dynamic-ip-address",
+    "term": "Dynamic IP address",
+    "definition": "An address handed out automatically by a DHCP server, which can change over time.",
+    "acceptedAnswers": [
+      "Dynamic address",
+      "Dynamic IP"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-subnet-mask",
+    "term": "Subnet mask",
+    "definition": "The value, such as 255.255.255.0, that shows which part of an IPv4 address is the network and which part is the host.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-default-gateway",
+    "term": "Default gateway",
+    "definition": "The router address a computer sends traffic to when the destination is on another network.",
+    "acceptedAnswers": [
+      "Gateway"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "group": "ip-addressing",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 9: SOHO Network Configuration"
+  },
+  {
+    "id": "aplus-def-satellite-internet",
+    "term": "Satellite internet",
+    "definition": "Internet service sent from orbiting satellites to a dish, available almost anywhere but often with high latency.",
+    "acceptedAnswers": [
+      "Satellite"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "connection-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-fiber",
+    "term": "Fiber",
+    "definition": "Internet service that uses light over glass strands, giving the fastest speeds and very low interference.",
+    "acceptedAnswers": [
+      "Fiber internet",
+      "Fiber-optic internet"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "connection-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-cable-internet",
+    "term": "Cable internet",
+    "definition": "Internet service over the coaxial lines of a television provider, with bandwidth shared among nearby subscribers.",
+    "acceptedAnswers": [
+      "Cable"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "connection-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-digital-subscriber-line",
+    "term": "Digital subscriber line",
+    "definition": "Internet service over ordinary telephone lines, with speed that drops as the distance to the provider office grows.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "connection-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-cellular",
+    "term": "Cellular",
+    "definition": "Internet access over a mobile carrier's 4G or 5G network, through a phone, hotspot, or mobile broadband modem.",
+    "acceptedAnswers": [
+      "Cellular internet"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "connection-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-wireless-internet-service-provider",
+    "term": "Wireless internet service provider",
+    "definition": "A provider that delivers internet over fixed radio links to an antenna mounted on the building, common in rural areas.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "connection-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-local-area-network",
+    "term": "Local area network",
+    "definition": "A network of computers in one building or site, such as an office or home.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-wide-area-network",
+    "term": "Wide area network",
+    "definition": "A network that links sites across large distances, such as cities or countries, usually over provider lines.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-personal-area-network",
+    "term": "Personal area network",
+    "definition": "A very small network around one person, such as a phone linked to earbuds and a watch.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-metropolitan-area-network",
+    "term": "Metropolitan area network",
+    "definition": "A network that spans a city or campus, larger than one site but smaller than a national network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-storage-area-network",
+    "term": "Storage area network",
+    "definition": "A dedicated high-speed network that gives servers block-level access to shared disk storage.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-wireless-local-area-network",
+    "term": "Wireless local area network",
+    "definition": "A network in one building or site whose devices connect by Wi-Fi instead of cables.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 10: Network Types"
+  },
+  {
+    "id": "aplus-def-virtual-local-area-network",
+    "term": "Virtual local area network",
+    "definition": "A logical network created on a managed switch that separates groups of ports into their own broadcast domains.",
+    "acceptedAnswers": [
+      "Virtual LAN"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-virtual-private-network",
+    "term": "Virtual private network",
+    "definition": "An encrypted tunnel across the internet that lets a remote user or site reach a private network securely.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "group": "network-types",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 7: Network Configuration Concepts"
+  },
+  {
+    "id": "aplus-def-crimper",
+    "term": "Crimper",
+    "definition": "A tool that presses a connector, such as an RJ45 plug, onto the end of a network cable.",
+    "acceptedAnswers": [
+      "Crimping tool"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-cable-stripper",
+    "term": "Cable stripper",
+    "definition": "A tool that removes the outer jacket of a cable to expose the wires inside without cutting them.",
+    "acceptedAnswers": [
+      "Wire stripper"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-punchdown-tool",
+    "term": "Punchdown tool",
+    "definition": "A tool that pushes individual wires into the slots of a patch panel or keystone jack and trims the excess.",
+    "acceptedAnswers": [
+      "Punch down tool"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-cable-tester",
+    "term": "Cable tester",
+    "definition": "A device that checks each wire in a cable for continuity, shorts, and correct pin order.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-toner-probe",
+    "term": "Toner probe",
+    "definition": "A two-part kit that sends a signal down a wire and traces it to find which cable is which in a bundle or wall.",
+    "acceptedAnswers": [
+      "Tone generator and probe",
+      "Toner"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-loopback-plug",
+    "term": "Loopback plug",
+    "definition": "A plug that sends a port's transmit signal back to its receive pins to test whether the port works.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-wi-fi-analyzer",
+    "term": "Wi-Fi analyzer",
+    "definition": "Software that shows nearby wireless networks, their channels, and their signal strength, to choose the least crowded channel.",
+    "acceptedAnswers": [
+      "Wireless analyzer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  },
+  {
+    "id": "aplus-def-network-tap",
+    "term": "Network tap",
+    "definition": "A hardware device placed in a cable run that copies all the traffic passing through to a monitoring tool.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/2.8"
+    ],
+    "group": "networking-tools",
+    "origin": "objectives",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 11: Networking Tools"
+  }
+]
