@@ -79,6 +79,17 @@ Same fields as the acronym record except `acronym`, `expanded`, `meaning` and `o
 | `objectives` | At least one. |
 | `origin` | `objectives` (named in an objective), `glossary` (from a book glossary and matched to an objective), or `book` (from a chapter). |
 
+## Configs
+
+The app reads these records through the configs in `config/` (approved 2026-10-30):
+
+- `config/certifications/<cert>.json` – `id` (the file name), `name`, `active`, and `exams` (exam codes in picker order). The exercise setup shows an exam picker when there is more than one exam, plus "Both".
+- `config/exercises/<module>.json` – `id`, `name`, `active`, `content` (`acronyms` or `definitions`), `certifications`, `questionCount`, `timeLimitMinutes`, `onTimeUp` (`end`), `selection` (`random`), and `questionTypes`. Each question type has a `type` (`typed` or `multiple-choice`) and a `count`; the counts add up to `questionCount`.
+  - `typed`: `prompt` and `answer` (`acronym` → `expanded`, or `definition` → `term`), and `requires: "typeable"` for definitions.
+  - `multiple-choice` (definitions only): `direction` (`random`, `term-to-definition`, or `definition-to-term`), `directions` (the ones `random` picks from), and `choices`.
+
+A record is in an exercise's pool when its `certifications` is the selected certification and its `exams` includes a selected exam. Run `tools/extract/check_config.py` to check the configs and that each pool is big enough.
+
 ## Groups
 
 Definition groups, by file. Within a certification, a group name is used in one file only, so distractors stay within one domain.

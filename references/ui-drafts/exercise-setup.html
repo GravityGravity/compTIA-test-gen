@@ -26,7 +26,7 @@
       <h2 class="h3" id="certTitle">Select a certification</h2>
       <p class="small">The exercise uses only the acronyms for this certification.</p>
     </div>
-    <div class="stack-2" role="radiogroup" aria-labelledby="certTitle">
+    <div class="stack-2" role="radiogroup" aria-labelledby="certTitle" id="certs">
       <button class="choice" role="radio" aria-checked="true" data-c="a-plus">
         <span class="dot"></span>
         <span class="stack-2"><span class="h4">CompTIA A+ (Core 1 and Core 2)</span><span class="small">222 acronyms</span></span>
@@ -40,20 +40,57 @@
     </div>
   </section>
 
+  <!-- Shown only when the certification config lists more than one exam. "Both" is the default.
+       A record is in the pool when its exams list includes a selected exam. -->
+  <section class="card stack-6" aria-labelledby="examTitle" id="examCard">
+    <div class="stack-2">
+      <h2 class="h3" id="examTitle">Select an exam</h2>
+      <p class="small">Acronyms on both exam lists appear under Core 1 and under Core 2.</p>
+    </div>
+    <div class="stack-2" role="radiogroup" aria-labelledby="examTitle" id="exams">
+      <button class="choice" role="radio" aria-checked="true" data-n="222">
+        <span class="dot"></span>
+        <span class="stack-2"><span class="h4">Both (Core 1 and Core 2)</span><span class="small">222 acronyms</span></span>
+      </button>
+      <button class="choice" role="radio" aria-checked="false" data-n="207">
+        <span class="dot"></span>
+        <span class="stack-2"><span class="h4">Core 1 (220-1201)</span><span class="small">207 acronyms</span></span>
+      </button>
+      <button class="choice" role="radio" aria-checked="false" data-n="216">
+        <span class="dot"></span>
+        <span class="stack-2"><span class="h4">Core 2 (220-1202)</span><span class="small">216 acronyms</span></span>
+      </button>
+    </div>
+  </section>
+
   <!-- Values come from the exercise config. -->
   <section class="card stack-6" aria-labelledby="sumTitle">
     <h2 class="h3" id="sumTitle">What to expect</h2>
     <dl class="facts" style="max-width:480px">
       <div><dt>Questions</dt><dd>20</dd></div>
       <div><dt>Question type</dt><dd>Type the expanded form of each acronym</dd></div>
-      <div><dt>Time</dt><dd>30 minutes</dd></div>
+      <div><dt>Time</dt><dd>12 minutes</dd></div>
     </dl>
-    <p>A typed answer with a spelling error is incorrect. Close matches are not accepted.</p>
+    <p>A typed answer with a spelling error is incorrect. Close matches are not accepted. When the time runs out, the exercise ends and unanswered questions count as incorrect.</p>
     <div class="btn-row">
       <a class="btn btn-primary" href="exercise-question.html">Start exercise</a>
       <a class="btn btn-outline" href="home.html">Back to home</a>
     </div>
   </section>
 </main>
+<script>
+function radios(group, onPick) {
+  const items = [...group.querySelectorAll('[role="radio"]')];
+  items.forEach(b => b.onclick = () => {
+    if (b.getAttribute("aria-disabled") === "true") return;
+    items.forEach(x => x.setAttribute("aria-checked", x === b));
+    onPick(b);
+  });
+}
+radios(document.getElementById("certs"), b => {
+  document.getElementById("examCard").hidden = b.dataset.c !== "a-plus";
+});
+radios(document.getElementById("exams"), () => {});
+</script>
 </body>
 </html>

@@ -64,8 +64,11 @@ These are two separate modules. Each module practices one thing only.
 | Definition Exercise | Terms and definitions only | Either direction: term → select the definition, or definition → select the term | Definition → type the term (only this direction) |
 
 Both modules:
-- Before an exercise begins, the user selects the certification to review (A+ Core 1 and Core 2, or Network+).
-- Each exercise has about 20 questions and a 30-minute time limit.
+- Before an exercise begins, the user selects the certification to review (A+ or Network+). For A+, the user also selects the exam: Core 1, Core 2, or Both (the default). Network+ has one exam.
+- Each exercise has 20 questions, chosen at random with no repeats. The Acronym Exercise has a 12-minute time limit and the Definition Exercise a 15-minute time limit.
+- The Definition Exercise has 14 multiple-choice questions (each in a random direction) and 6 type-the-answer questions.
+- When the time runs out, the exercise ends and the results open. Questions not answered count as incorrect and show "Not answered".
+- These values come from the module configs in `config/exercises/`.
 - Question formats: the Acronym Exercise has type-the-answer questions only. The Definition Exercise has multiple choice and type the answer.
 - After each answer, the app shows whether it is correct and shows the correct answer.
 - Acronym Exercise feedback: the answer box also shows one sentence on what the acronym means and, when the acronym is tied to an exam objective, a small tag for each objective (exam, objective number, and domain name).

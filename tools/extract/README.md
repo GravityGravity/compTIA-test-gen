@@ -22,10 +22,12 @@ Content tools:
 ```bash
 tools/extract/.venv/bin/python -I tools/extract/seed_acronyms.py a-plus
 tools/extract/.venv/bin/python -I tools/extract/check_content.py
+tools/extract/.venv/bin/python -I tools/extract/check_config.py
 ```
 
 - `seed_acronyms.py {a-plus,network-plus}` – one draft record for each official acronym in `content/acronyms/<cert>.json`, mapped to the objectives that name it. It does not overwrite an existing file: after seeding, the file is edited by hand (see `content/README.md`).
 - `check_content.py` – checks every record in `content/acronyms/` and `content/definitions/`: fields, unique ids and answers, objective ids, definitions that give away the term, typed answers that are acronyms, and small groups. Prints the counts for each certification. Exit code 1 when there are errors.
+- `check_config.py` – checks the configs in `config/certifications/` and `config/exercises/`: fields, known certifications and exams, question-type counts that add up to `questionCount`, typed questions in one direction only, and that every certification and exam choice has enough records (and enough typeable records). Prints the pool sizes. Exit code 1 when there are errors.
 
 - `extract_books.py [book-key ...]` – one Markdown file for each chapter in `sources-text/<category>/<book-key>/`, plus a `_chapters.tsv` (file, exam, objectives, title). With no keys it extracts all books in `BOOKS`.
 - `derive_terms.py` – for each certification (A+ and Network+, kept apart), the official acronym list with notes (`a-plus-acronyms.md`, which merges 220-1201 and 220-1202, and `network-plus-acronyms.md`) and the acronym pairs found in its books (`acronym-candidates.md`, `network-plus-acronym-candidates.md`), in `sources-text/derived/`.

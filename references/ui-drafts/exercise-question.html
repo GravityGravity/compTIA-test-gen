@@ -51,7 +51,7 @@
       <span class="h4" id="count">Question 1 of 20</span>
       <div class="bar" aria-hidden="true"><i id="fill" style="width:5%"></i></div>
     </div>
-    <span class="small">Time left <span class="timer" id="timer">30:00</span></span>
+    <span class="small">Time left <span class="timer" id="timer">12:00</span></span>
     <button class="btn btn-outline btn-sm" id="endBtn">End exercise</button>
   </div>
 
@@ -174,9 +174,12 @@ document.addEventListener("keydown", e => {
 $("endBtn").onclick = () => { $("endDlg").hidden = false; $("eNo").focus(); };
 $("eNo").onclick = () => { $("endDlg").hidden = true; };
 
-let left = 30 * 60;
+// The time limit comes from the exercise config (Acronym Exercise: 12 minutes). Open with #timeup to
+// start at 5 seconds and see the time-up behavior: the exercise ends and the results open.
+let left = location.hash === "#timeup" ? 5 : 12 * 60;
 setInterval(() => {
   left = Math.max(0, left - 1);
+  if (left === 0) location.href = "exercise-results.html#timeup";
   $("timer").textContent = [Math.floor(left / 60), left % 60].map(n => String(n).padStart(2, "0")).join(":");
   $("timer").classList.toggle("low", left <= 300);
 }, 1000);

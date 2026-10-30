@@ -1,0 +1,15 @@
+{
+  "id": "definition-exercise",
+  "name": "Definition Exercise",
+  "active": true,
+  "content": "definitions",
+  "certifications": ["a-plus", "network-plus"],
+  "questionCount": 20,
+  "timeLimitMinutes": 15,
+  "onTimeUp": "end",
+  "selection": "random",
+  "questionTypes": [
+    { "type": "multiple-choice", "direction": "random", "directions": ["term-to-definition", "definition-to-term"], "choices": 4, "count": 14 },
+    { "type": "typed", "prompt": "definition", "answer": "term", "requires": "typeable", "count": 6 }
+  ]
+}

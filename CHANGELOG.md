@@ -2,6 +2,21 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Exercise configs
+
+Decisions (approved):
+- Definition Exercise: 20 questions in 15 minutes: 14 multiple choice (4 choices; each picks its direction at random) and 6 typed (definition → term, `typeable` records only).
+- Acronym Exercise: 20 typed questions in 12 minutes. The earlier 30-minute limit is gone.
+- Time up: the exercise ends at once and the results open. Unanswered questions count as incorrect and show "Not answered".
+- Setup: certification, then exam when the certification has more than one (A+: Core 1, Core 2, or Both, the default). A record is in the pool when its `exams` includes a selected exam.
+- Selection: plain random, no repeats within one exercise.
+
+Changes:
+- New `config/`: `certifications/a-plus.json`, `certifications/network-plus.json`, `exercises/acronym.json`, `exercises/definition.json`.
+- New `tools/extract/check_config.py`: checks the config fields, the question-type counts, and that every certification and exam choice has enough records. The smallest pool is A+ Core 1 acronyms with 207 records.
+- `CLAUDE.md`, `docs/spec.md`, `content/README.md`, `tools/extract/README.md`: the configs and the decisions above.
+- UI drafts: an exam picker on the setup screen (A+ only), a 12-minute timer, time-up to results (`#timeup`), a "Not answered" row and time-up notice in the results, and 12 and 15 min on the home screen.
+
 ## 2026-10-30 – Definitions: Network+ Domains 2–5
 
 Decisions:

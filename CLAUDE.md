@@ -31,7 +31,8 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - `sources-text/derived/a-plus-acronyms.md` – The two official acronym lists merged, with notes where they differ. The main source for `content/acronyms/`.
 - `sources-text/derived/acronym-candidates.md` – Acronym and expanded-form pairs found in the books, marked when they are on the official list. A helper, not a source of truth.
 - `sources-text/network/` – Network+ (N10-009): the official objectives and acronym list (`objectives-n10-009/`) and three books. `sources-text/derived/network-plus-acronyms.md` and `network-plus-acronym-candidates.md` are the Network+ acronym files.
-- `tools/extract/` – Dev-only Python tools (see its `README.md`): the book extractor, `seed_acronyms.py` (seeds acronym records from the official lists), and `check_content.py` (validates the acronym and definition records). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
+- `tools/extract/` – Dev-only Python tools (see its `README.md`): the book extractor, `seed_acronyms.py` (seeds acronym records from the official lists), `check_content.py` (validates the acronym and definition records), and `check_config.py` (validates the configs in `config/`). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
+- `config/` – Configs the app loads: `certifications/` (one per certification: name, `active`, exam codes) and `exercises/` (one per exercise module). Exam configs will go in `config/exams/`. See `content/README.md` for the fields.
 - `content/` – Question records, terms, and noun pools that the app uses. Subfolders: `core1/`, `core2/`, `acronyms/`, `definitions/`, `network/`. See `content/README.md` for the record formats.
 <!-- Add the code folders when they exist. -->
 
@@ -95,7 +96,7 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Create questions from the facts in each chapter.
 - When a chapter has practice questions, add each one to the question pool in `content/`. Keep the question, the answers, and the explanation. Set the `origin` field to `book`.
 - Create content one domain at a time. Stop after each domain so the user can review it. Exceptions (approved): acronyms are made and reviewed as one batch for each certification. The A+ definitions after Core 1 Domain 2 (Core 1 Domains 3–5 and all of Core 2) are made and reviewed as one batch. The Network+ definitions after Domain 1 (Domains 2–5) are made and reviewed as one batch.
-- Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`.
+- Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`, and `tools/extract/check_config.py` after each change to `config/` or to the exercise content.
 - Add a `source` field (book and chapter) to each content record.
 - For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`; for Network+, `network-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).
 - Use the official objectives in `sources-text/general/objectives-220-120*/` to check that each content record matches a current objective.
@@ -148,7 +149,12 @@ These are two separate modules. Each module practices one thing only. They can s
   - Type the answer: definition → term ONLY. Never ask the user to type a definition sentence.
 
 Rules:
-- Each module uses its own config file: question count (about 20), time limit (30 minutes), and, for the Definition Exercise, the mix of multiple-choice and type-the-answer questions. Do not hard-code these values.
+- Each module uses its own config file in `config/exercises/` (approved 2026-10-30): question count, time limit, what happens at time up, the selection method, and the question types with a count for each. Do not hard-code these values. Current values:
+  - Acronym Exercise (`acronym.json`): 20 typed questions, 12 minutes.
+  - Definition Exercise (`definition.json`): 20 questions, 15 minutes: 14 multiple choice (4 choices; each question picks its direction at random) and 6 typed (definition → term, `typeable` records only).
+- Setup (approved): the user selects a certification, then an exam when the certification config lists more than one (A+: Core 1, Core 2, or Both; Both is the default). Network+ has one exam, so no exam picker. A record is in the pool when its `exams` list includes a selected exam.
+- Selection (approved): plain random from the pool, no repeats within one exercise.
+- Time up (approved): the exercise ends at once and the results open. Unanswered questions count as incorrect and show "Not answered".
 - Keep acronyms and definitions in separate content: `content/acronyms/` and `content/definitions/`. Do not mix them in one exercise.
 - Each acronym and definition record has a certification field (`["a-plus"]` or `["network-plus"]`). The app selects only the records for the certification that the user selected.
 - Definition Exercise multiple-choice distractors come from the same module's content for the same certification: other terms or definitions.
