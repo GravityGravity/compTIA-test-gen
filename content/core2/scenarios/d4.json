@@ -1,0 +1,4267 @@
+[
+  {
+    "id": "core2-s-doc-incident-report",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "write up a malware outbreak that took the file server offline, for review by the executives",
+    "itemType": "document",
+    "clues": [
+      "the event is over and the servers are back online",
+      "the record must give the root cause and the services that were affected",
+      "times must be written in UTC",
+      "the write-up should say how to stop the same event from happening again"
+    ],
+    "answer": {
+      "item": "Incident report"
+    },
+    "appliesWhen": "an unusual event such as an outage or a security breach must be recorded with its cause, actions, and impact",
+    "explanation": "An incident report records an unusual event from start to end: date and time, summary, root cause, actions taken, remediation, services impacted, and recommendations.",
+    "related": [
+      "core2-s-doc-sop",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-sla-internal",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-sop",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "give every technician one written, step-by-step way to do a routine task",
+    "itemType": "document",
+    "clues": [
+      "the task is done several times each week",
+      "new technicians keep missing small steps",
+      "the text must be plain enough for almost anyone to follow",
+      "the steps should describe the process rather than a particular tool"
+    ],
+    "answer": {
+      "item": "Standard operating procedure (SOP)"
+    },
+    "appliesWhen": "a routine task must be done the same way every time by following written steps",
+    "explanation": "A standard operating procedure lists the steps of a routine operation in plain language. It focuses on the process, so the small steps are not missed when technicians are busy.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-sla-internal",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-custom-install",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "record how a licensed engineering application is set up so the next technician does not start from scratch",
+    "itemType": "document",
+    "clues": [
+      "only one technician knows the setup steps today",
+      "the setup questions are answered differently for each department",
+      "the version, the 32-bit or 64-bit edition, and the license details must be listed",
+      "it must say which users and devices may have the software"
+    ],
+    "answer": {
+      "item": "Software package custom installation procedure"
+    },
+    "appliesWhen": "the steps, version, licensing, and allowed users and devices for setting up one software package must be written down",
+    "explanation": "A custom installation procedure records how one software package is set up: the version, the edition, the licensing, and who and which devices may have it. It saves time on later installs and passes the knowledge to the team.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-sop",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-sla-internal",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-onboarding",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "make sure a new hire has an account, a computer, and building access on the first day",
+    "itemType": "document",
+    "clues": [
+      "the HR department has sent the start date of a new employee",
+      "the person needs a domain account and an email mailbox",
+      "the password policy and the acceptable use policy must be reviewed with the person",
+      "a badge for the right areas of the building is required"
+    ],
+    "answer": {
+      "item": "New-user setup checklist"
+    },
+    "appliesWhen": "a person joins the company or a new role and needs accounts, equipment, and access",
+    "explanation": "A new-user setup checklist is followed during onboarding. It lists the account, the device, the building access, and the policies to review, so nothing is forgotten on the first day.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-sop",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-sla-internal",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-offboarding",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "remove an employee's access to company systems as soon as the person leaves",
+    "itemType": "document",
+    "clues": [
+      "the HR department says an employee leaves the company on Friday",
+      "the domain account must be disabled, not deleted",
+      "the person's badge and security clearances must be revoked",
+      "the company laptop must be returned"
+    ],
+    "answer": {
+      "item": "User off-boarding checklist"
+    },
+    "appliesWhen": "a person leaves the company or a role and the person's access and equipment must be taken back",
+    "explanation": "A user off-boarding checklist makes sure access ends promptly when a person leaves. Accounts are disabled rather than deleted, clearances are revoked, and equipment is collected.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-sop",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-sla-internal",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-sla-external",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "hold an outside cloud email provider to a stated uptime and response time",
+    "itemType": "document",
+    "clues": [
+      "the company pays a third party for its email service",
+      "the provider must commit to 99.99 percent uptime",
+      "penalties must apply when the provider misses its targets",
+      "the way performance is monitored and reported must be written down"
+    ],
+    "answer": {
+      "item": "External service-level agreement (SLA)"
+    },
+    "appliesWhen": "an outside provider must commit in a contract to uptime, response times, and penalties",
+    "explanation": "An external service-level agreement is part of the contract with a third-party provider. It sets the uptime and response targets, how they are measured, and the remedies when the provider breaches them.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-sop",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-internal",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-sla-internal",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "set the response and resolution times that the help desk team promises to the sales department",
+    "itemType": "document",
+    "clues": [
+      "both groups are departments of the same company",
+      "the sales team wants its tickets answered within one hour",
+      "the help desk wants clear targets it can be held accountable to",
+      "no outside vendor is involved"
+    ],
+    "answer": {
+      "item": "Internal service-level agreement (SLA)"
+    },
+    "appliesWhen": "two teams of the same company must agree on response times, resolution times, and quality targets",
+    "explanation": "An internal service-level agreement sets performance goals between teams of the same organization. It states the response and resolution times so each team knows what is expected and can be held accountable.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-sop",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-kb-article"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-kb-article",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "share the fix for a new problem so that other technicians and users can find it later",
+    "itemType": "document",
+    "clues": [
+      "the problem had not been seen before",
+      "the solution took several hours of research",
+      "the fix should be searchable by keyword",
+      "end users may use it to solve the problem themselves"
+    ],
+    "answer": {
+      "item": "Knowledge base article"
+    },
+    "appliesWhen": "a solved problem should be written up so others can search for it and fix it themselves",
+    "explanation": "A knowledge base article records the symptoms and the solution of an issue in a searchable form. Other technicians and users can then solve the same issue without repeating the research.",
+    "related": [
+      "core2-s-doc-incident-report",
+      "core2-s-doc-sop",
+      "core2-s-doc-custom-install",
+      "core2-s-doc-onboarding",
+      "core2-s-doc-offboarding",
+      "core2-s-doc-sla-external",
+      "core2-s-doc-sla-internal"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-asset-cmdb",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.2"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "see how servers, software, and services depend on each other before a change is approved",
+    "itemType": "asset management tool",
+    "clues": [
+      "the team must judge which systems a server change will affect",
+      "the records should cover hardware, software, systems, and even staff",
+      "faster root cause analysis is wanted during outages"
+    ],
+    "answer": {
+      "item": "Configuration management database (CMDB)"
+    },
+    "appliesWhen": "the configuration items and the relationships between them must be known for changes and incidents",
+    "explanation": "A configuration management database stores the configuration items of the organization and how they relate. It shows the impact of a proposed change and speeds up root cause analysis.",
+    "related": [
+      "core2-s-doc-asset-tags",
+      "core2-s-doc-asset-inventory",
+      "core2-s-doc-asset-licensing",
+      "core2-s-doc-asset-assigned"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-asset-tags",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.2"
+    ],
+    "settings": [
+      "school",
+      "office"
+    ],
+    "need": "identify each loaner laptop quickly and track when it is checked out and returned",
+    "itemType": "asset management tool",
+    "clues": [
+      "a handheld scanner is available at the IT desk",
+      "devices go missing from the loaner cart",
+      "each device needs a permanent ID that matches its record in the asset system"
+    ],
+    "answer": {
+      "item": "Asset tags with barcodes"
+    },
+    "appliesWhen": "each physical device needs a permanent, scannable ID that links it to its asset record",
+    "explanation": "Asset tags carry an ID, often as a barcode, that is attached to the device and entered in the asset management system. A scanner reads it quickly, which makes check-in, check-out, and tracking easy.",
+    "related": [
+      "core2-s-doc-asset-cmdb",
+      "core2-s-doc-asset-inventory",
+      "core2-s-doc-asset-licensing",
+      "core2-s-doc-asset-assigned"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-asset-inventory",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.2"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "keep count of a small stock of spare keyboards, mice, and monitors",
+    "itemType": "asset management tool",
+    "clues": [
+      "the stock is small and low in value",
+      "a simple spreadsheet is enough",
+      "no agent software is wanted on the devices"
+    ],
+    "answer": {
+      "item": "Inventory list"
+    },
+    "appliesWhen": "only a small amount of low-value equipment must be counted",
+    "explanation": "An inventory list, such as a simple spreadsheet of item types and quantities, is enough for a small stock of consumables. A full asset management system is only needed when the stock grows large in quantity and value.",
+    "related": [
+      "core2-s-doc-asset-cmdb",
+      "core2-s-doc-asset-tags",
+      "core2-s-doc-asset-licensing",
+      "core2-s-doc-asset-assigned"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-asset-licensing",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "make sure the company does not run more copies of a paid application than it is allowed",
+    "itemType": "asset management tool",
+    "clues": [
+      "the application is licensed per device",
+      "the vendor plans an audit next month",
+      "some copies may be on computers that no longer use them"
+    ],
+    "answer": {
+      "item": "Software license tracking in the asset management system"
+    },
+    "appliesWhen": "the number of installed copies of software must be checked against what the company is allowed to use",
+    "explanation": "Asset management systems can collect the software installed on each device and its license usage. Comparing that with the licenses bought keeps the company within its license terms.",
+    "related": [
+      "core2-s-doc-asset-cmdb",
+      "core2-s-doc-asset-tags",
+      "core2-s-doc-asset-inventory",
+      "core2-s-doc-asset-assigned"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-asset-assigned",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "know which employee holds each company laptop so it can be collected when the person leaves",
+    "itemType": "asset management tool",
+    "clues": [
+      "laptops are handed out to staff for home and office work",
+      "the HR department tells IT when a person's employment ends",
+      "a manager is responsible for the group of laptops"
+    ],
+    "answer": {
+      "item": "Assigned user field in each asset record"
+    },
+    "appliesWhen": "the person who holds each device must be known for returns and terminations",
+    "explanation": "Recording the assigned user of each asset tells the responsible manager who has which device. When someone is terminated, the device can be identified and collected.",
+    "related": [
+      "core2-s-doc-asset-cmdb",
+      "core2-s-doc-asset-tags",
+      "core2-s-doc-asset-inventory",
+      "core2-s-doc-asset-licensing"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-procurement",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "task": "buying new workstations for a department by following the procurement life cycle",
+    "steps": [
+      {
+        "do": "Identify the need that the new workstations must meet",
+        "done": "identified the need that the new workstations must meet"
+      },
+      {
+        "do": "Obtain comparative quotes from several vendors",
+        "done": "obtained comparative quotes from several vendors"
+      },
+      {
+        "do": "Submit the purchase for budget approval",
+        "done": "submitted the purchase for budget approval"
+      },
+      {
+        "do": "Negotiate the contract and scope of work with the chosen vendor",
+        "done": "negotiated the contract and scope of work with the chosen vendor"
+      },
+      {
+        "do": "Receive the workstations and check that the order is complete",
+        "done": "received the workstations and checked that the order is complete"
+      },
+      {
+        "do": "Approve the vendor's invoice for payment",
+        "done": "approved the vendor's invoice for payment"
+      }
+    ],
+    "explanation": "The procurement life cycle starts with the need, then quotes, then budget approval. The contract is negotiated before the order, and payment waits until the goods are received in full.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-ticket-category",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "send each new support request automatically to the right support group",
+    "itemType": "ticket field",
+    "clues": [
+      "database problems should go to the database administrators",
+      "phone problems should go to the phone team",
+      "managers want reports on which kinds of problems are most common"
+    ],
+    "answer": {
+      "item": "Category"
+    },
+    "appliesWhen": "a ticket must be routed to the right group or counted by type of problem",
+    "explanation": "The category field groups tickets by kind of problem. It can route a ticket automatically to the right team and shows which kinds of problems get the most tickets.",
+    "related": [
+      "core2-s-doc-ticket-severity",
+      "core2-s-doc-ticket-device",
+      "core2-s-doc-ticket-progress"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-ticket-severity",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "show how badly a problem affects the user's work so that urgent tickets are handled first",
+    "itemType": "ticket field",
+    "clues": [
+      "one user's email client is sending spam to the whole company",
+      "another user only reports a slow mouse",
+      "the drop-down offers low, mid, and high"
+    ],
+    "answer": {
+      "item": "Severity"
+    },
+    "appliesWhen": "the impact or urgency of a problem must be recorded so tickets can be prioritized",
+    "explanation": "The severity field records how much the problem affects the user and the business. A high-severity issue, such as malware spreading through email, is worked before a minor annoyance.",
+    "related": [
+      "core2-s-doc-ticket-category",
+      "core2-s-doc-ticket-device",
+      "core2-s-doc-ticket-progress"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-ticket-device",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "record which computer has the problem, with its operating system version and service tag",
+    "itemType": "ticket field",
+    "clues": [
+      "the user has a laptop, a desktop, and two printers",
+      "the ticket may be escalated to another technician",
+      "a known issue affects only one model"
+    ],
+    "answer": {
+      "item": "Device information"
+    },
+    "appliesWhen": "the exact device, its model, OS version, and service tag must be known to work the issue",
+    "explanation": "Device information identifies the exact device with the issue, including its type, OS version, and service tag. Another technician may find that the model or version is the key to the problem.",
+    "related": [
+      "core2-s-doc-ticket-category",
+      "core2-s-doc-ticket-severity",
+      "core2-s-doc-ticket-progress"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-ticket-progress",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "keep the user and other technicians up to date on a ticket that will take several days",
+    "itemType": "ticket field",
+    "clues": [
+      "the fix needs a part from the vendor",
+      "the user may ask a supervisor to review the work",
+      "daily updates to the user are expected"
+    ],
+    "answer": {
+      "item": "Progress notes"
+    },
+    "appliesWhen": "the work done so far on an open ticket must be recorded and shared",
+    "explanation": "Progress notes record each step taken toward a resolution. They keep the user informed and let anyone who picks up the ticket see where the work stands.",
+    "related": [
+      "core2-s-doc-ticket-category",
+      "core2-s-doc-ticket-severity",
+      "core2-s-doc-ticket-device"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-fault-escalation-notes",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "help-desk-system"
+    ],
+    "clues": [
+      "the level 2 technician has to call the user and ask the same questions again",
+      "the escalated ticket says only that the PC is broken",
+      "the user complains that nobody read the first call",
+      "no device or contact details were recorded"
+    ],
+    "answer": {
+      "cause": "the ticket was escalated without a clear issue description and user details",
+      "action": "Record a clear issue description, the user's contact details, and the device before escalating"
+    },
+    "appliesWhen": "a ticket is passed to another level without the details the next technician needs",
+    "explanation": "An escalated ticket must let the next technician continue without starting over. Without a clear description, contact details, and device information, the user has to explain everything again.",
+    "related": [
+      "core2-s-doc-fault-no-kb",
+      "core2-s-doc-fault-offboarding",
+      "core2-s-doc-fault-no-followup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-doc-fault-no-kb",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3",
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "help-desk-system"
+    ],
+    "clues": [
+      "technicians spend hours on a problem that was solved last month",
+      "the earlier ticket was closed with only the word fixed",
+      "a search of the support portal finds nothing about the problem"
+    ],
+    "answer": {
+      "cause": "the solution was never written up as a searchable article",
+      "action": "Write a knowledge base article from the resolution of the earlier ticket"
+    },
+    "appliesWhen": "a solved problem was not documented where others can search for it",
+    "explanation": "When a resolution is not documented, the same research is repeated each time the problem returns. A knowledge base article written from the ticket lets others find the fix by keyword.",
+    "related": [
+      "core2-s-doc-fault-escalation-notes",
+      "core2-s-doc-fault-offboarding",
+      "core2-s-doc-fault-no-followup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-fault-offboarding",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.3"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "user-accounts"
+    ],
+    "clues": [
+      "a person who left two weeks ago still signs in to email",
+      "the HR department sent the termination notice on time",
+      "the person's badge still opens the server room",
+      "nobody signed off on the exit steps"
+    ],
+    "answer": {
+      "cause": "the user off-boarding checklist was not followed",
+      "action": "Disable the account and revoke the badge by completing the off-boarding checklist"
+    },
+    "appliesWhen": "a former employee keeps access because the exit steps were skipped",
+    "explanation": "The off-boarding checklist disables accounts and revokes clearances as soon as HR reports a departure. If it is not followed, a former employee keeps access to company systems.",
+    "related": [
+      "core2-s-doc-fault-escalation-notes",
+      "core2-s-doc-fault-no-kb",
+      "core2-s-doc-fault-no-followup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "core2-s-doc-fault-no-followup",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "topics": [
+      "220-1202/4.1.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "help-desk-system"
+    ],
+    "clues": [
+      "a ticket was closed as resolved last week",
+      "the user is still using the temporary work-around",
+      "the user says the final fix never worked",
+      "nobody contacted the user before the ticket was closed"
+    ],
+    "answer": {
+      "cause": "the ticket was closed without a follow-up with the user",
+      "action": "Follow up with the user to confirm the fix works before closing the ticket"
+    },
+    "appliesWhen": "a ticket is closed before the user confirms the resolution works",
+    "explanation": "A follow-up just before closing confirms that the resolution actually works for the user. Without it, the user may keep relying on the work-around.",
+    "related": [
+      "core2-s-doc-fault-escalation-notes",
+      "core2-s-doc-fault-no-kb",
+      "core2-s-doc-fault-offboarding"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-rollback",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "return a firewall to its earlier configuration quickly if a firmware upgrade fails",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the change board asked what happens if the upgrade fails",
+      "the original configuration has been saved",
+      "the steps to reverse the change must be written in advance"
+    ],
+    "answer": {
+      "item": "Rollback plan"
+    },
+    "appliesWhen": "a failed change must be reversed to the original configuration",
+    "explanation": "A rollback plan, also called a backout plan, lists the steps to return to the original state when the primary plan fails. It is mostly the original configuration plus the steps to put it back.",
+    "related": [
+      "core2-s-change-backup-plan",
+      "core2-s-change-sandbox",
+      "core2-s-change-risk",
+      "core2-s-change-scope"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-backup-plan",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "make sure every critical system and its data can be restored after a failed change",
+    "itemType": "part of the change plan",
+    "clues": [
+      "copies of all critical data must be made before the work starts",
+      "the copies must be checked to show they can be restored",
+      "it is written together with the steps to reverse the change"
+    ],
+    "answer": {
+      "item": "Backup plan"
+    },
+    "appliesWhen": "critical systems and data must be copied and verified before any change is made",
+    "explanation": "The backup plan makes and verifies complete backups of critical systems before the change. If the change fails badly, the systems can be restored to their earlier working state.",
+    "related": [
+      "core2-s-change-rollback",
+      "core2-s-change-sandbox",
+      "core2-s-change-responsible",
+      "core2-s-change-risk"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-sandbox",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "try a new patch on cloned servers before it reaches the production network",
+    "itemType": "part of the change plan",
+    "clues": [
+      "virtual machines can be cloned into an isolated network",
+      "snapshots let the test run again and again",
+      "the primary plan still has bugs to work out"
+    ],
+    "answer": {
+      "item": "Sandbox testing"
+    },
+    "appliesWhen": "a change must be tried in an isolated copy of the environment before production",
+    "explanation": "Sandbox testing puts the change into an isolated environment that matches production, often cloned virtual machines. The plan can be tested and fine-tuned without risk to live systems.",
+    "related": [
+      "core2-s-change-rollback",
+      "core2-s-change-backup-plan",
+      "core2-s-change-peer-review",
+      "core2-s-change-user-acceptance"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-responsible",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "name one person who oversees the e-waste disposal process and answers questions about it",
+    "itemType": "part of the change plan",
+    "clues": [
+      "a new e-waste company is being chosen",
+      "the process needs a main point of contact",
+      "changes to the process must be coordinated by one owner"
+    ],
+    "answer": {
+      "item": "Responsible staff member"
+    },
+    "appliesWhen": "a process needs one assigned owner who is the point of contact for changes to it",
+    "explanation": "Every documented business process has a responsible staff member who oversees it. That person is the main contact and a stakeholder in any change that affects the process.",
+    "related": [
+      "core2-s-change-cab",
+      "core2-s-change-peer-review",
+      "core2-s-change-request-form",
+      "core2-s-change-purpose"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-request-form",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "submit a proposed switch firmware upgrade for formal review",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the technical testing and the risk review are complete",
+      "the paperwork must list the item, the reason, the priority, and the duration",
+      "the board will not discuss changes that are not on paper"
+    ],
+    "answer": {
+      "item": "Change request form"
+    },
+    "appliesWhen": "a proposed change must be put in writing with its item, reason, priority, and plan for review",
+    "explanation": "The change process starts with a request form that details the item to be changed, the reason, the priority, the plan, the rollback plan, and the duration. It is presented to the change board for a decision.",
+    "related": [
+      "core2-s-change-cab",
+      "core2-s-change-purpose",
+      "core2-s-change-scope",
+      "core2-s-change-risk"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-change-purpose",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "explain to the board why a Windows security patch must be installed, with the vendor's article attached",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the board asks why the work is necessary",
+      "the reason is the security of the operating system",
+      "the vendor's documentation describes the flaw that is fixed"
+    ],
+    "answer": {
+      "item": "Purpose of the change"
+    },
+    "appliesWhen": "the plan must say why the change is necessary",
+    "explanation": "The purpose of the change explains why it is needed, for example security, performance, a legal need, or a software bug. It includes vendor documentation such as the knowledge base article for a patch.",
+    "related": [
+      "core2-s-change-scope",
+      "core2-s-change-risk",
+      "core2-s-change-request-form",
+      "core2-s-change-user-acceptance"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-scope",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "list how many systems and people a change to the ordering system will affect, and when it will happen",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the change affects sales staff, customers, and deliveries",
+      "the board needs to judge how big the change is",
+      "the date, time, and duration must be included"
+    ],
+    "answer": {
+      "item": "Scope of the change"
+    },
+    "appliesWhen": "the plan must say which systems and people the change affects, and when and for how long",
+    "explanation": "The scope of the change describes the systems, sites, and people that the change affects, and the date, time, and duration. It lets the board see how big the change is.",
+    "related": [
+      "core2-s-change-purpose",
+      "core2-s-change-risk",
+      "core2-s-change-request-form",
+      "core2-s-change-maintenance-window"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-risk",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "judge how likely a change is to fail or cause harm to other systems, and rate it",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the server provides a critical organization-wide service",
+      "a failure could also break other connected systems",
+      "the board uses low, moderate, and high levels"
+    ],
+    "answer": {
+      "item": "Risk analysis"
+    },
+    "appliesWhen": "the chance of failure or unwanted side effects of a change must be judged and given a level",
+    "explanation": "Risk analysis looks for the chance that a change fails or causes problems elsewhere. A highly integrated system that provides a critical service gets a high risk level.",
+    "related": [
+      "core2-s-change-scope",
+      "core2-s-change-purpose",
+      "core2-s-change-peer-review",
+      "core2-s-change-rollback"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-cab",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "get a proposed change approved by stakeholders from across the business before it is made",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the group meets every week by conference call",
+      "only approved changes may be carried out",
+      "members come from several business units, not only IT"
+    ],
+    "answer": {
+      "item": "Change advisory board approval"
+    },
+    "appliesWhen": "a proposed change needs a formal decision from the stakeholders before it is carried out",
+    "explanation": "The change advisory board evaluates proposed changes and approves or denies them. Only approved changes may be carried out, which reduces the impact on daily operations.",
+    "related": [
+      "core2-s-change-request-form",
+      "core2-s-change-peer-review",
+      "core2-s-change-responsible",
+      "core2-s-change-user-acceptance"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-peer-review",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "have colleagues in other departments check whether a shipping system change could disrupt their own work",
+    "itemType": "part of the change plan",
+    "clues": [
+      "the accounting team uses data from the shipping system",
+      "the change looked fine in IT's own tests",
+      "the IT team alone may not see every effect on other business processes"
+    ],
+    "answer": {
+      "item": "Peer review"
+    },
+    "appliesWhen": "people in other departments must check a change for effects on their own processes",
+    "explanation": "A peer review with colleagues in other departments finds effects that IT may not see, such as a shipping change that breaks accounting reports. Those effects then go into the risk analysis.",
+    "related": [
+      "core2-s-change-cab",
+      "core2-s-change-risk",
+      "core2-s-change-user-acceptance",
+      "core2-s-change-sandbox"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-user-acceptance",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "confirm that the staff who use a new application interface agree it works before the rollout is finished",
+    "itemType": "part of the change plan",
+    "clues": [
+      "users will test in person or at their own pace",
+      "a strict time frame for testing is given",
+      "the result is recorded in the change documentation"
+    ],
+    "answer": {
+      "item": "End-user acceptance"
+    },
+    "appliesWhen": "the people who use a changed system must test it and agree that it works",
+    "explanation": "End-user acceptance means the people affected by the change test it, in person or at their own pace, and agree it works. Their acceptance is documented before the change is complete.",
+    "related": [
+      "core2-s-change-sandbox",
+      "core2-s-change-peer-review",
+      "core2-s-change-cab",
+      "core2-s-change-purpose"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-maintenance-window",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "schedule the reboot of a busy server at the time that disrupts the business least",
+    "itemType": "part of the change plan",
+    "clues": [
+      "system use is lowest after 10 p.m. on Sundays",
+      "a set time frame is already reserved for regular updates",
+      "the change is routine and not urgent"
+    ],
+    "answer": {
+      "item": "Maintenance window"
+    },
+    "appliesWhen": "a change must be timed for the period reserved for maintenance when use is lowest",
+    "explanation": "A maintenance window is a scheduled period, usually off-peak, for regular updates and changes. Scheduling the change inside it keeps disruption to the business low.",
+    "related": [
+      "core2-s-change-scope",
+      "core2-s-change-request-form",
+      "core2-s-change-cab",
+      "core2-s-change-risk"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-fault-no-rollback",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "change-system"
+    ],
+    "clues": [
+      "a switch firmware upgrade failed overnight",
+      "nobody saved the original configuration",
+      "the network was down for hours while staff rebuilt the settings by hand"
+    ],
+    "answer": {
+      "cause": "the change had no rollback plan",
+      "action": "Write a rollback plan with the saved configuration before the next change"
+    },
+    "appliesWhen": "a failed change cannot be reversed because no backout steps were prepared",
+    "explanation": "A rollback plan holds the original configuration and the steps to restore it. Without one, a failed change has to be undone by hand, which makes the outage much longer.",
+    "related": [
+      "core2-s-change-fault-unapproved",
+      "core2-s-change-fault-freeze",
+      "core2-s-change-fault-no-uat"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-fault-unapproved",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "change-system"
+    ],
+    "clues": [
+      "a technician changed a server setting without telling anyone",
+      "the accounting application stopped working the next morning",
+      "no request form or approval exists for the change"
+    ],
+    "answer": {
+      "cause": "the change was made without going through change board approval",
+      "action": "Submit every change on a request form for approval before making it"
+    },
+    "appliesWhen": "a change was made outside the change management process",
+    "explanation": "Changes must be requested and approved before they are made, so that their effects on other departments are reviewed. An unauthorized change can break systems that IT did not think about.",
+    "related": [
+      "core2-s-change-fault-no-rollback",
+      "core2-s-change-fault-freeze",
+      "core2-s-change-fault-no-uat"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-change-fault-freeze",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "change-system"
+    ],
+    "clues": [
+      "a routine update was installed during end-of-quarter financial reporting",
+      "the finance system went down at a critical time",
+      "the change calendar was locked for the quarter close"
+    ],
+    "answer": {
+      "cause": "a non-emergency change was made during a change freeze",
+      "action": "Hold routine changes until the change freeze ends"
+    },
+    "appliesWhen": "a routine change is made in a period when only emergency changes are allowed",
+    "explanation": "A change freeze stops routine changes during critical business periods to keep systems stable. Only emergency changes or approved exceptions may be made then.",
+    "related": [
+      "core2-s-change-fault-no-rollback",
+      "core2-s-change-fault-unapproved",
+      "core2-s-change-fault-no-uat"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-fault-no-uat",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "change-system"
+    ],
+    "clues": [
+      "after an application upgrade, staff cannot find the tools they need",
+      "calls to the help desk tripled in one day",
+      "nobody outside IT tried the new version first"
+    ],
+    "answer": {
+      "cause": "the change skipped end-user acceptance testing",
+      "action": "Have a group of users test and accept the change before the full rollout"
+    },
+    "appliesWhen": "a change to what users see was rolled out without users testing it first",
+    "explanation": "When a change affects how users work, a group of users should test and accept it before the rollout. Skipping this step leaves problems to be found by everyone at once.",
+    "related": [
+      "core2-s-change-fault-no-rollback",
+      "core2-s-change-fault-unapproved",
+      "core2-s-change-fault-freeze"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-change-process",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.2"
+    ],
+    "topics": [
+      "220-1202/4.2.2",
+      "220-1202/4.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "task": "making a configuration change to a production server through the change management process",
+    "steps": [
+      {
+        "do": "Document the purpose and scope of the change",
+        "done": "documented the purpose and scope of the change"
+      },
+      {
+        "do": "Perform a risk analysis and write the rollback plan",
+        "done": "performed a risk analysis and written the rollback plan"
+      },
+      {
+        "do": "Test the change in a sandbox",
+        "done": "tested the change in a sandbox"
+      },
+      {
+        "do": "Submit the change request form to the change advisory board",
+        "done": "submitted the change request form to the change advisory board"
+      },
+      {
+        "do": "Get the change board's approval",
+        "done": "got the change board's approval"
+      },
+      {
+        "do": "Implement the change during the maintenance window",
+        "done": "implemented the change during the maintenance window"
+      },
+      {
+        "do": "Get end-user acceptance and document the change",
+        "done": "got end-user acceptance and documented the change"
+      }
+    ],
+    "explanation": "The change is planned and tested first: purpose and scope, risk and rollback, then sandbox testing. Only then is the request submitted and approved, and the change is made in the maintenance window and confirmed by users.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-full",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "make the first backup of a new file server so that later backups have a starting point",
+    "itemType": "backup type",
+    "clues": [
+      "the weekend gives a long backup window",
+      "every file must be copied whatever the state of its archive bit",
+      "no earlier backup of the server exists"
+    ],
+    "answer": {
+      "item": "Full backup"
+    },
+    "appliesWhen": "the entire data set must be copied, and a long backup window is available",
+    "explanation": "A full backup copies the whole data set and clears the archive bits. It takes the longest, so it is usually run on weekends, and incremental or differential backups build on it.",
+    "related": [
+      "core2-s-backup-incremental",
+      "core2-s-backup-differential",
+      "core2-s-backup-synthetic"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-incremental",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "make the smallest and fastest backup each weeknight after Sunday's full backup",
+    "itemType": "backup type",
+    "clues": [
+      "the nightly backup window is short",
+      "only files changed since the previous night's job should be copied",
+      "a longer restore that needs several backup sets is acceptable",
+      "the archive bit should be cleared after each job"
+    ],
+    "answer": {
+      "item": "Incremental backup"
+    },
+    "appliesWhen": "nightly backups must be as small and fast as possible and a longer restore is acceptable",
+    "explanation": "An incremental backup copies only the files changed since the last full or incremental backup and then clears the archive bit. Backups are small, but a restore needs the full backup and every incremental after it.",
+    "related": [
+      "core2-s-backup-full",
+      "core2-s-backup-differential",
+      "core2-s-backup-synthetic"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-differential",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "keep weeknight backups short while making sure a restore needs only two backup sets",
+    "itemType": "backup type",
+    "clues": [
+      "the nightly job must not clear the archive bit",
+      "each night copies everything changed since Sunday's full backup",
+      "the nightly jobs may grow larger through the week"
+    ],
+    "answer": {
+      "item": "Differential backup"
+    },
+    "appliesWhen": "a restore must need only the last full backup plus one more backup set",
+    "explanation": "A differential backup copies everything changed since the last full backup and does not clear the archive bit. A restore needs only the full backup and the latest differential.",
+    "related": [
+      "core2-s-backup-full",
+      "core2-s-backup-incremental",
+      "core2-s-backup-synthetic"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-synthetic",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "get a new full backup each week without copying the whole data set from the server again",
+    "itemType": "backup type",
+    "clues": [
+      "the backup software can merge the last full backup with the later incrementals",
+      "a restore should need only one backup set",
+      "the server cannot handle the load of a complete backup every week"
+    ],
+    "answer": {
+      "item": "Synthetic full backup"
+    },
+    "appliesWhen": "a full backup must be built from existing backups without reading the whole data set again",
+    "explanation": "A synthetic full backup is made by the backup software from the last full backup and the later incrementals or differentials. It works as a full backup for a restore without the overhead of a real one.",
+    "related": [
+      "core2-s-backup-full",
+      "core2-s-backup-incremental",
+      "core2-s-backup-differential"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-restore-inplace",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "put back a project folder that a user deleted from a department share, where it was before",
+    "itemType": "recovery method",
+    "clues": [
+      "the user wants the files back in the same share",
+      "last night's backup contains the folder",
+      "nothing else in the share needs to be compared or kept"
+    ],
+    "answer": {
+      "item": "In-place recovery"
+    },
+    "appliesWhen": "data must go back to its original location, overwriting what is there",
+    "explanation": "An in-place or overwrite recovery writes the backed-up data back to its original location. It is the obvious choice when a deleted or corrupted folder must return to where it was.",
+    "related": [
+      "core2-s-backup-restore-alternate",
+      "core2-s-backup-restore-image",
+      "core2-s-backup-restore-previous"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-restore-alternate",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "let a user compare last month's copies of some files with the current ones",
+    "itemType": "recovery method",
+    "clues": [
+      "the user is not sure the current files are correct",
+      "the current files must stay exactly as they are",
+      "the restored copies should be clearly labeled so nobody works in them by mistake"
+    ],
+    "answer": {
+      "item": "Alternative location recovery"
+    },
+    "appliesWhen": "the restored data must not touch the original location, or the original location is unavailable",
+    "explanation": "An alternative location recovery restores the data somewhere other than its original place. The current data is left alone, so it is a low-risk way to compare old and new files.",
+    "related": [
+      "core2-s-backup-restore-inplace",
+      "core2-s-backup-restore-image",
+      "core2-s-backup-restore-previous"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-restore-image",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "rebuild a failed server on new hardware with its operating system, settings, and files at once",
+    "itemType": "recovery method",
+    "clues": [
+      "the server's motherboard failed and the hardware was replaced",
+      "reinstalling the operating system from scratch would take too long",
+      "the backups capture the complete server"
+    ],
+    "answer": {
+      "item": "Image-based (bare-metal) restore"
+    },
+    "appliesWhen": "a complete system must be rebuilt on new hardware from a backup of the whole machine",
+    "explanation": "An image-based backup captures the complete server, so a bare-metal restore puts everything back on new hardware. It spares the technician from reinstalling the server from scratch.",
+    "related": [
+      "core2-s-backup-restore-inplace",
+      "core2-s-backup-restore-alternate",
+      "core2-s-backup-restore-previous"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-restore-previous",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "let users get back their own earlier copies of a spreadsheet on a file share without calling IT",
+    "itemType": "recovery method",
+    "clues": [
+      "snapshots of the volume are taken every hour",
+      "the user saved over the spreadsheet an hour ago",
+      "users should not need a technician for single-file restores"
+    ],
+    "answer": {
+      "item": "Previous Versions from shadow copies"
+    },
+    "appliesWhen": "a user must restore an earlier snapshot of a single file on their own",
+    "explanation": "Volume Shadow Copy takes snapshots of a volume, and users open the Previous Versions tab of a file or folder to restore an earlier copy. Users can recover single files without help from IT.",
+    "related": [
+      "core2-s-backup-restore-inplace",
+      "core2-s-backup-restore-alternate",
+      "core2-s-backup-restore-image"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-rotate-gfs",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "keep daily, weekly, and monthly backups for a year with the same set of tapes",
+    "itemType": "backup rotation scheme",
+    "clues": [
+      "the last backup of each week becomes the weekly set",
+      "the last weekly backup of each month is kept for a year",
+      "the monthly copies are stored in an offsite vault"
+    ],
+    "answer": {
+      "item": "Grandfather-father-son (GFS)"
+    },
+    "appliesWhen": "daily, weekly, and monthly backup sets must be rotated and kept for different lengths of time",
+    "explanation": "GFS uses three sets of backups: daily (son), weekly (father), and monthly (grandfather). Daily backups are promoted to weekly and weekly to monthly, so data is kept longer with the same number of tapes.",
+    "related": [
+      "core2-s-backup-rotate-321",
+      "core2-s-backup-rotate-10tape",
+      "core2-s-backup-rotate-onsite"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-rotate-321",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "protect the sales data against both an accidental deletion and a fire at the office",
+    "itemType": "backup rotation scheme",
+    "clues": [
+      "the live data plus two backup copies are required",
+      "the backups must be on two different kinds of media",
+      "at least one backup must be kept at another site"
+    ],
+    "answer": {
+      "item": "3-2-1 backup rule"
+    },
+    "appliesWhen": "the data needs several copies on different media with one copy kept offsite",
+    "explanation": "The 3-2-1 rule keeps three copies of the data: the production data and two backups on two kinds of media, one of them offsite. An onsite copy covers deletions and the offsite copy covers a disaster at the site.",
+    "related": [
+      "core2-s-backup-rotate-gfs",
+      "core2-s-backup-rotate-10tape",
+      "core2-s-backup-rotate-onsite"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-rotate-10tape",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "use a simple two-week cycle in which each tape is used once before the set is reused",
+    "itemType": "backup rotation scheme",
+    "clues": [
+      "one tape is used for each workday",
+      "the whole set is recycled after two weeks",
+      "the second Friday's full backup may be archived"
+    ],
+    "answer": {
+      "item": "10-tape rotation"
+    },
+    "appliesWhen": "a small set of tapes must cover two weeks of daily backups and then be reused",
+    "explanation": "The 10-tape rotation uses one tape for each workday over two weeks and then recycles the set. It is simple and gives easy access to recent backups.",
+    "related": [
+      "core2-s-backup-rotate-gfs",
+      "core2-s-backup-rotate-321",
+      "core2-s-backup-rotate-onsite"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-rotate-onsite",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "need": "restore files that users deleted quickly, without downloading them over the Internet",
+    "itemType": "backup rotation scheme",
+    "clues": [
+      "the office has a slow Internet connection",
+      "most restores are single files that a user deleted",
+      "the backup device must be physically available to the staff"
+    ],
+    "answer": {
+      "item": "Onsite backup to local storage"
+    },
+    "appliesWhen": "fast restores and physical control of the backup device matter most",
+    "explanation": "Onsite backups on local storage are physically available and quick to restore, with no download from a cloud provider. They are usually paired with offsite copies to cover a disaster at the site.",
+    "related": [
+      "core2-s-backup-rotate-gfs",
+      "core2-s-backup-rotate-321",
+      "core2-s-backup-rotate-10tape"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-fault-untested",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "backup-system"
+    ],
+    "clues": [
+      "the backup software reported success every night",
+      "the restore fails after the server drive crashes",
+      "nobody had ever restored a file from the backup set",
+      "the backup media cannot be read"
+    ],
+    "answer": {
+      "cause": "the backups were never tested with a trial restore",
+      "action": "Schedule regular test restores and compare the restored data with the original"
+    },
+    "firstStep": "Try restoring the backup to a test system",
+    "appliesWhen": "backups have never been proven by restoring them",
+    "explanation": "A backup is not safe until it has been restored successfully; media failure is the most common problem. Regular test restores to a test system show whether the data can really be recovered.",
+    "related": [
+      "core2-s-backup-fault-chain",
+      "core2-s-backup-fault-onsite-only",
+      "core2-s-backup-fault-test-frequency"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-fault-chain",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.1",
+      "220-1202/4.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "backup-system"
+    ],
+    "clues": [
+      "the full backup from Sunday restored without errors",
+      "files changed on Monday and Tuesday are missing after the restore",
+      "only the Wednesday incremental was applied after the full backup"
+    ],
+    "answer": {
+      "cause": "the earlier incremental backups were not restored",
+      "action": "Restore the full backup, then each incremental backup in date order"
+    },
+    "appliesWhen": "a restore leaves out backup sets that the backup method depends on",
+    "explanation": "Each incremental backup holds only the changes since the backup before it. A restore needs the full backup and then every incremental in order, ending with the latest.",
+    "related": [
+      "core2-s-backup-fault-untested",
+      "core2-s-backup-fault-onsite-only",
+      "core2-s-backup-fault-test-frequency"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-backup-fault-onsite-only",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "backup-system"
+    ],
+    "clues": [
+      "a fire destroyed the server room",
+      "the backup drives sat on a shelf in the same room",
+      "no copy of the data could be recovered anywhere"
+    ],
+    "answer": {
+      "cause": "all backups were stored at the same site as the server",
+      "action": "Keep at least one backup copy offsite"
+    },
+    "appliesWhen": "every backup copy is at the same location as the original data",
+    "explanation": "A disaster that destroys the data center can destroy backups kept in the same place. Rotating a copy offsite, as the 3-2-1 rule requires, protects against that.",
+    "related": [
+      "core2-s-backup-fault-untested",
+      "core2-s-backup-fault-chain",
+      "core2-s-backup-fault-test-frequency"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-backup-fault-test-frequency",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "topics": [
+      "220-1202/4.3.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "backup-system"
+    ],
+    "clues": [
+      "the yearly restore test passed in January",
+      "the tape drive started writing bad data in March",
+      "in August a restore found months of unreadable backups"
+    ],
+    "answer": {
+      "cause": "backup testing is not done often enough",
+      "action": "Test restores at least once a month"
+    },
+    "appliesWhen": "restore tests are so far apart that failing backups go unnoticed for months",
+    "explanation": "Once a year is not enough for backup testing; at least monthly test restores are recommended. Frequent testing catches failing media before the backups are needed.",
+    "related": [
+      "core2-s-backup-fault-untested",
+      "core2-s-backup-fault-chain",
+      "core2-s-backup-fault-onsite-only"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 58: Change Management and Backup Methods"
+  },
+  {
+    "id": "core2-s-safety-wrist-strap",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "replace a memory module in a desktop PC",
+    "itemType": "precaution",
+    "clues": [
+      "the work area has a carpeted floor",
+      "the heating has made the air very dry",
+      "memory chips can be damaged by a charge too small to feel",
+      "the technician will work inside the case for several minutes"
+    ],
+    "answer": {
+      "item": "Wearing an antistatic wrist strap connected to ground"
+    },
+    "appliesWhen": "the technician's body must stay at the same charge as the computer while working inside the case",
+    "explanation": "An ESD strap bleeds static charge away from the technician's body through a resistor, usually 1 megohm. It keeps the technician and the computer at the same potential while parts are handled.",
+    "related": [
+      "core2-s-safety-esd-mat",
+      "core2-s-safety-antistatic-bag",
+      "core2-s-safety-self-ground",
+      "core2-s-safety-handle-edges"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-esd-mat",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "set up a repair bench where motherboards and adapter cards are laid out",
+    "itemType": "precaution",
+    "clues": [
+      "parts will rest on the bench while they are out of a computer",
+      "a part can be damaged just by setting it on an ordinary surface",
+      "the bench has a ground point for a cable",
+      "several boards will be out at the same time"
+    ],
+    "answer": {
+      "item": "Placing a grounded antistatic mat on the bench"
+    },
+    "appliesWhen": "parts and computers must rest on a surface that drains static charge away",
+    "explanation": "An ESD mat is connected to ground and drains charge from anything placed on it. A wrist strap can clip to the mat so the technician and the parts are at the same potential.",
+    "related": [
+      "core2-s-safety-wrist-strap",
+      "core2-s-safety-antistatic-bag",
+      "core2-s-safety-self-ground",
+      "core2-s-safety-handle-edges"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-antistatic-bag",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.6",
+      "220-1202/4.4.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "store a spare graphics card on a shelf until next week",
+    "itemType": "precaution",
+    "clues": [
+      "the card will sit in the IT storeroom for several days",
+      "static charges must collect on the outside and not on the card",
+      "the card was just removed from a working PC"
+    ],
+    "answer": {
+      "item": "Keeping the card in an antistatic bag"
+    },
+    "appliesWhen": "a part is stored or carried and must be shielded from stray static charges",
+    "explanation": "Antistatic bags make static charges collect on their slightly conductive outer surface instead of on the part. Keep the bags that new parts arrive in for this use.",
+    "related": [
+      "core2-s-safety-wrist-strap",
+      "core2-s-safety-esd-mat",
+      "core2-s-safety-handle-edges",
+      "core2-s-safety-self-ground"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-self-ground",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.1",
+      "220-1202/4.4.4"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "reseat a loose RAM module at a user's desk",
+    "itemType": "precaution",
+    "clues": [
+      "the technician left the antistatic gear at the main office",
+      "no mat or strap is available on site",
+      "the PC is turned off but still plugged in"
+    ],
+    "answer": {
+      "item": "Touching bare metal on the case before handling the part"
+    },
+    "appliesWhen": "no antistatic gear is at hand and the technician must equalize charge with the computer",
+    "explanation": "Self-grounding drains charge from the technician by touching an unpainted metal part of the case. It is less effective than a strap and mat, but it equalizes the potential when no gear is available.",
+    "related": [
+      "core2-s-safety-wrist-strap",
+      "core2-s-safety-esd-mat",
+      "core2-s-safety-antistatic-bag",
+      "core2-s-safety-handle-edges"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-handle-edges",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.4"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "install a new memory module and a network card",
+    "itemType": "precaution",
+    "clues": [
+      "the technician is already wearing a grounded strap",
+      "the parts have exposed chips and gold contacts",
+      "touching the contacts can leave oils and static on them"
+    ],
+    "answer": {
+      "item": "Holding each part by its edges or metal bracket"
+    },
+    "appliesWhen": "a part is being installed and its chips and contacts must not be touched",
+    "explanation": "Components should be held by their edges, and adapter cards by the metal bracket or board edge. This keeps hands off the chips, contacts, and circuits.",
+    "related": [
+      "core2-s-safety-wrist-strap",
+      "core2-s-safety-esd-mat",
+      "core2-s-safety-antistatic-bag",
+      "core2-s-safety-self-ground"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-unplug",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8",
+      "220-1202/4.4.3"
+    ],
+    "settings": [
+      "office",
+      "warehouse"
+    ],
+    "need": "replace a failed case fan in a desktop computer",
+    "itemType": "precaution",
+    "clues": [
+      "the computer is still connected to the wall outlet",
+      "the outlet wiring in the old building has never been checked",
+      "the technician's hands will be near the power supply"
+    ],
+    "answer": {
+      "item": "Turning off the computer and disconnecting it from power"
+    },
+    "appliesWhen": "hands will be inside powered equipment and electrical shock must be prevented",
+    "explanation": "Before any repair inside a computer, turn it off and disconnect it from the AC outlet or use the kill switch. A badly wired outlet can keep a circuit live even when it is switched off.",
+    "related": [
+      "core2-s-safety-replace-psu",
+      "core2-s-safety-rack-ground",
+      "core2-s-safety-cool-down",
+      "core2-s-safety-report-outlet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-replace-psu",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.3"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "deal with a desktop whose power supply has stopped working",
+    "itemType": "precaution",
+    "clues": [
+      "the power supply label says it has no serviceable parts inside",
+      "capacitors inside can keep a charge after it is unplugged",
+      "a new unit costs less than the time a repair would take"
+    ],
+    "answer": {
+      "item": "Replacing the whole power supply instead of opening it"
+    },
+    "appliesWhen": "a sealed part that can hold a dangerous charge has failed",
+    "explanation": "A power supply is a field-replaceable unit that holds a charge even when unplugged. Replace it rather than open it, and recycle the old one by local rules.",
+    "related": [
+      "core2-s-safety-unplug",
+      "core2-s-safety-rack-ground",
+      "core2-s-safety-report-outlet",
+      "core2-s-safety-cool-down"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-rack-ground",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.3"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "prepare new metal network racks in a server room",
+    "itemType": "precaution",
+    "clues": [
+      "a power fault in the racks needs a safe path to earth",
+      "each rack will hold many powered devices",
+      "the local electrical code sets the rules for the connection"
+    ],
+    "answer": {
+      "item": "Bonding the racks to building ground with grounding bars and heavy wire"
+    },
+    "appliesWhen": "metal racks or cases must give fault current a safe path to earth",
+    "explanation": "Equipment grounding connects grounding bars on the racks to a grounded point with thick, low-gauge wire such as 6 AWG. Check the local code, and get an electrician involved when unsure.",
+    "related": [
+      "core2-s-safety-unplug",
+      "core2-s-safety-replace-psu",
+      "core2-s-safety-report-outlet",
+      "core2-s-safety-cable-guard"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-report-outlet",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.3",
+      "220-1202/4.4.7"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "set up a new computer next to a wall outlet that sparks when used",
+    "itemType": "precaution",
+    "clues": [
+      "the outlet is in the customer's home",
+      "the technician is not a licensed electrician",
+      "the computer has not been plugged in yet"
+    ],
+    "answer": {
+      "item": "Telling the customer to have an electrician repair the outlet first"
+    },
+    "appliesWhen": "a building's electrical wiring is faulty and must be fixed by a qualified electrician",
+    "explanation": "Technicians should not repair AC outlets or building wiring. Tell the customer or a manager about the problem and recommend an electrician before going further.",
+    "related": [
+      "core2-s-safety-unplug",
+      "core2-s-safety-replace-psu",
+      "core2-s-safety-rack-ground",
+      "core2-s-safety-cable-report"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-cable-guard",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.5"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "school"
+    ],
+    "need": "connect a printer whose cable must cross a busy walkway",
+    "itemType": "precaution",
+    "clues": [
+      "people walk through the area all day",
+      "carts could crush a loose cable",
+      "the cable cannot be run through the ceiling today"
+    ],
+    "answer": {
+      "item": "Covering the cable with a floor cable guard"
+    },
+    "appliesWhen": "a cable must cross a walkway where it could trip people or be crushed",
+    "explanation": "Cables on the floor are a trip hazard. A floor cable guard holds them in place and protects them from being crushed where they must cross a traffic area.",
+    "related": [
+      "core2-s-safety-cable-ties",
+      "core2-s-safety-cable-report",
+      "core2-s-safety-lift-legs",
+      "core2-s-safety-rack-ground"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-cable-ties",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "tidy the tangle of power and network cables behind a row of desks",
+    "itemType": "precaution",
+    "clues": [
+      "loose cables hang down to the floor",
+      "cleaners have tripped on the loops",
+      "the cables can be routed along the desk frames"
+    ],
+    "answer": {
+      "item": "Bundling and routing the cables with cable ties"
+    },
+    "appliesWhen": "loose cables must be bundled and kept out of the way",
+    "explanation": "Cable management routes cables away from traffic and keeps them stowed and tie-wrapped. Cable ties hold two or more cables together so they do not form trip hazards.",
+    "related": [
+      "core2-s-safety-cable-guard",
+      "core2-s-safety-cable-report",
+      "core2-s-safety-rack-ground",
+      "core2-s-safety-lift-legs"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-cable-report",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.5",
+      "220-1202/4.4.7"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "deal with a network cable hanging out of a ceiling tile in a hallway",
+    "itemType": "precaution",
+    "clues": [
+      "the technician does not know what data the cable carries",
+      "network wiring is regulated like other electrical work",
+      "people walk under the cable all day"
+    ],
+    "answer": {
+      "item": "Reporting the cable to the network administrator or a manager"
+    },
+    "appliesWhen": "a permanent network cable is out of place and only qualified installers should move it",
+    "explanation": "Network cables should be inside the walls and ceiling. A technician who finds a stray one should alert the network administrator or manager instead of rerouting it.",
+    "related": [
+      "core2-s-safety-cable-guard",
+      "core2-s-safety-cable-ties",
+      "core2-s-safety-report-outlet",
+      "core2-s-safety-recycle"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-recycle",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.7"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "get rid of a stack of old CRT monitors and dead laptops",
+    "itemType": "precaution",
+    "clues": [
+      "the devices contain lead and other harmful materials",
+      "the city fines businesses that put e-waste in the regular trash",
+      "none of the devices work anymore"
+    ],
+    "answer": {
+      "item": "Recycling them according to local government regulations"
+    },
+    "appliesWhen": "old equipment must be disposed of in a way that follows the law",
+    "explanation": "Electronic equipment is e-waste and must be recycled by company policy and local government regulations or ordinances. Many towns offer free drop-off or pickup programs.",
+    "related": [
+      "core2-s-safety-osha-policy",
+      "core2-s-safety-report-outlet",
+      "core2-s-safety-cable-report",
+      "core2-s-safety-replace-psu"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-osha-policy",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.7"
+    ],
+    "settings": [
+      "office",
+      "warehouse"
+    ],
+    "need": "write the safety rules for a new computer repair shop",
+    "itemType": "precaution",
+    "clues": [
+      "the shop is in the United States",
+      "employees will lift equipment and work with electricity",
+      "the owner wants the rules to stand up to an inspection"
+    ],
+    "answer": {
+      "item": "Making the safety policies comply with OSHA and other government regulations"
+    },
+    "appliesWhen": "workplace safety rules must meet the law for employee safety",
+    "explanation": "OSHA requires employers to provide a workplace free of recognized hazards. A company's safety policies and procedures should always comply with government regulations.",
+    "related": [
+      "core2-s-safety-recycle",
+      "core2-s-safety-report-outlet",
+      "core2-s-safety-lift-legs",
+      "core2-s-safety-fire-extinguisher"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-lift-legs",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8"
+    ],
+    "settings": [
+      "warehouse",
+      "office"
+    ],
+    "need": "pick up a box of toner cartridges from the floor",
+    "itemType": "precaution",
+    "clues": [
+      "the box weighs less than a quarter of the technician's body weight",
+      "the box sits on the floor next to the printer",
+      "back injuries are a common way IT workers get hurt"
+    ],
+    "answer": {
+      "item": "Bending the knees and lifting with the legs while keeping the back straight"
+    },
+    "appliesWhen": "a load is light enough for one person but must be lifted without straining the back",
+    "explanation": "Squat close to the item, keep the back straight, and lift slowly with the legs without twisting. Keep the load close to the body.",
+    "related": [
+      "core2-s-safety-get-help",
+      "core2-s-safety-cable-guard",
+      "core2-s-safety-fire-extinguisher",
+      "core2-s-safety-goggles-mask"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-get-help",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8"
+    ],
+    "settings": [
+      "warehouse",
+      "enterprise"
+    ],
+    "need": "move a large UPS battery unit to another rack",
+    "itemType": "precaution",
+    "clues": [
+      "the unit weighs more than a quarter of the technician's body weight",
+      "a coworker and a service cart are nearby",
+      "the path to the rack is long"
+    ],
+    "answer": {
+      "item": "Getting a coworker to help and moving the unit on a cart"
+    },
+    "appliesWhen": "a load is too heavy for one person to lift safely",
+    "explanation": "An item heavier than about one quarter of your body weight needs a second person. A cart saves trips and strain, as long as it is not overloaded.",
+    "related": [
+      "core2-s-safety-lift-legs",
+      "core2-s-safety-cable-guard",
+      "core2-s-safety-goggles-mask",
+      "core2-s-safety-fire-extinguisher"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-fire-extinguisher",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "deal with a small fire that has started in a power strip under a desk",
+    "itemType": "precaution",
+    "clues": [
+      "the fire is small and has just started",
+      "emergency services have already been called",
+      "the burning item is electrical"
+    ],
+    "answer": {
+      "item": "Using a Class C rated fire extinguisher"
+    },
+    "appliesWhen": "a small electrical fire must be put out after emergency services are called",
+    "explanation": "Electrical fires need an extinguisher rated for Class C, such as a CO2 BC or a multipurpose ABC unit. If the fire is too big, leave the building.",
+    "related": [
+      "core2-s-safety-unplug",
+      "core2-s-safety-goggles-mask",
+      "core2-s-safety-lift-legs",
+      "core2-s-safety-call-911"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-call-911",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8",
+      "220-1202/4.4.3"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "help a coworker who is lying on the floor under a live electrical wire",
+    "itemType": "precaution",
+    "clues": [
+      "the coworker does not respond",
+      "the wire is still connected to power",
+      "nobody has called for help yet"
+    ],
+    "answer": {
+      "item": "Calling emergency services before doing anything else"
+    },
+    "appliesWhen": "a person may be hurt by electricity or fire and no one has called for help",
+    "explanation": "Never touch a person under a live wire. Call emergency services first; then, if told to, move the wire with a dry wooden stick and give first aid.",
+    "related": [
+      "core2-s-safety-fire-extinguisher",
+      "core2-s-safety-unplug",
+      "core2-s-safety-report-outlet",
+      "core2-s-safety-get-help"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-safety-goggles-mask",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8"
+    ],
+    "settings": [
+      "warehouse",
+      "office"
+    ],
+    "need": "blow years of dust out of a dirty tower PC with compressed air",
+    "itemType": "precaution",
+    "clues": [
+      "thick clouds of dust will blow out of the case",
+      "the particles could get into the technician's eyes",
+      "the dust could also be breathed in"
+    ],
+    "answer": {
+      "item": "Wearing safety goggles and an air filter mask"
+    },
+    "appliesWhen": "particles or debris could get into the eyes or lungs",
+    "explanation": "Personal safety equipment includes safety goggles and air filtration masks. Wear them whenever work could throw debris into the eyes or put dust into the air.",
+    "related": [
+      "core2-s-safety-lift-legs",
+      "core2-s-safety-cool-down",
+      "core2-s-safety-fire-extinguisher",
+      "core2-s-safety-unplug"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns"
+  },
+  {
+    "id": "core2-s-safety-cool-down",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "topics": [
+      "220-1202/4.4.8",
+      "220-1202/4.4.4"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "remove a jammed page near the fuser of a laser printer",
+    "itemType": "precaution",
+    "clues": [
+      "the printer finished a large job a minute ago",
+      "the fuser area runs very hot",
+      "the printer also uses high voltage inside"
+    ],
+    "answer": {
+      "item": "Turning off the printer and letting it cool before reaching in"
+    },
+    "appliesWhen": "a part may be hot or charged and must be left to cool after power off",
+    "explanation": "A laser printer fuser runs hot and the printer uses high voltages. Turn it off, unplug it, and wait about 15 minutes for hot parts to cool.",
+    "related": [
+      "core2-s-safety-unplug",
+      "core2-s-safety-goggles-mask",
+      "core2-s-safety-replace-psu",
+      "core2-s-safety-handle-edges"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 59: Safety Procedures"
+  },
+  {
+    "id": "core2-s-prof-formal-attire",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.1"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "get a projector working in the boardroom before a meeting with investors",
+    "itemType": "response",
+    "clues": [
+      "the executive floor follows a business formal dress code",
+      "the technician usually works in the warehouse in jeans",
+      "the visit was scheduled a day in advance"
+    ],
+    "answer": {
+      "item": "Dress in business formal clothes for the visit"
+    },
+    "appliesWhen": "the site's dress code is formal and the visit is to executives",
+    "explanation": "Technicians should match the attire of the environment they work in. Business formal, such as a suit and tie or business suit, fits an executive floor.",
+    "related": [
+      "core2-s-prof-casual-attire",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-on-time",
+      "core2-s-prof-positive"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-casual-attire",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.1"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "have email fixed on several desks during a normal workday",
+    "itemType": "response",
+    "clues": [
+      "the staff wear polo shirts and slacks",
+      "the office has no formal dress code",
+      "the technician has a suit available"
+    ],
+    "answer": {
+      "item": "Wear business casual clothes for the visit"
+    },
+    "appliesWhen": "an ordinary office visit calls for neat clothing without a suit",
+    "explanation": "Business casual, such as slacks with a collared shirt or blouse, fits day-to-day office work. Overdressing can make the customer see the technician as out of touch with their needs.",
+    "related": [
+      "core2-s-prof-formal-attire",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-on-time",
+      "core2-s-prof-set-timeline"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-plain-language",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "understand why the home Wi-Fi keeps dropping",
+    "itemType": "response",
+    "clues": [
+      "the customer says he is not technical",
+      "the cause is interference on a crowded wireless channel",
+      "he asked for an explanation he can follow"
+    ],
+    "answer": {
+      "item": "Explain the cause in plain words without jargon or acronyms"
+    },
+    "appliesWhen": "a nontechnical customer needs an explanation they can understand",
+    "explanation": "Speak clearly and avoid jargon, acronyms, and slang with nontechnical customers. Heavy jargon can make a technician seem insecure rather than skilled.",
+    "related": [
+      "core2-s-prof-listen-notes",
+      "core2-s-prof-restate",
+      "core2-s-prof-positive",
+      "core2-s-prof-set-timeline"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-positive",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.3"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "need": "recover a laptop that will not start the day before a deadline",
+    "itemType": "response",
+    "clues": [
+      "the customer says the situation is hopeless",
+      "she is afraid all her files are gone",
+      "the technician has fixed this fault many times"
+    ],
+    "answer": {
+      "item": "Stay calm and positive and assure her the problem will be solved"
+    },
+    "appliesWhen": "a worried customer needs to see confidence that the problem can be fixed",
+    "explanation": "A technician should keep a positive attitude and project confidence even when the customer is frustrated. Calm assurance helps the customer trust the repair.",
+    "related": [
+      "core2-s-prof-stay-calm",
+      "core2-s-prof-set-timeline",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-not-dismiss"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-listen-notes",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.4"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "describe a printing problem that has gone on for a week",
+    "itemType": "response",
+    "clues": [
+      "the customer starts a long, detailed story",
+      "the technician thinks the cause is clear after one sentence",
+      "details later in the story could point to another cause"
+    ],
+    "answer": {
+      "item": "Listen without interrupting and take notes"
+    },
+    "appliesWhen": "the customer is still describing the problem and the details matter",
+    "explanation": "Active listening means letting the customer finish, writing down key points, and not interrupting. The full story often holds clues to the real cause.",
+    "related": [
+      "core2-s-prof-restate",
+      "core2-s-prof-open-questions",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-not-dismiss"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-title",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.5"
+    ],
+    "settings": [
+      "clinic"
+    ],
+    "need": "have a new monitor installed in her office",
+    "itemType": "response",
+    "clues": [
+      "she introduced herself as Dr. Amina Patel",
+      "staff at the site address one another by professional title",
+      "this is the technician's first visit to the site"
+    ],
+    "answer": {
+      "item": "Address the customer by her professional title"
+    },
+    "appliesWhen": "the customer uses a professional title and the culture of the site expects it",
+    "explanation": "Being culturally sensitive includes using appropriate professional titles and designations. It shows respect for the customer's position and background.",
+    "related": [
+      "core2-s-prof-repeat-politely",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-formal-attire",
+      "core2-s-prof-listen-notes"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-repeat-politely",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.5"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "explain a scanner fault to the technician over the phone",
+    "itemType": "response",
+    "clues": [
+      "the customer speaks English as a second language",
+      "the technician did not understand part of the description",
+      "a misunderstanding could lead to the wrong repair"
+    ],
+    "answer": {
+      "item": "Kindly ask the customer to repeat the part that was unclear"
+    },
+    "appliesWhen": "there is a language barrier and the technician did not understand",
+    "explanation": "If there is a language barrier, kindly ask the customer to repeat themselves. Make sure both sides understand each other and work toward the same goal.",
+    "related": [
+      "core2-s-prof-title",
+      "core2-s-prof-restate",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-listen-notes"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-on-time",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.6"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "have a docking station replaced at a 10 a.m. appointment",
+    "itemType": "response",
+    "clues": [
+      "the technician is stuck in traffic",
+      "the technician will arrive about 30 minutes late",
+      "the customer has another meeting an hour after the appointment"
+    ],
+    "answer": {
+      "item": "Call the customer, apologize, and give a new arrival time"
+    },
+    "appliesWhen": "the technician will miss an agreed arrival time",
+    "explanation": "Be punctual, and if you will be late, contact the customer, say so, and apologize. Waiting without notice can make the visit difficult before it starts.",
+    "related": [
+      "core2-s-prof-set-timeline",
+      "core2-s-prof-voicemail",
+      "core2-s-prof-follow-up",
+      "core2-s-prof-positive"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-voicemail",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.7"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "need": "get a slow PC fixed during the lunch break",
+    "itemType": "response",
+    "clues": [
+      "the technician's phone rings with a personal call",
+      "the customer is watching the repair",
+      "the call is not an emergency"
+    ],
+    "answer": {
+      "item": "Let the call go to voicemail and keep working"
+    },
+    "appliesWhen": "a personal call or message arrives while the technician is with a customer",
+    "explanation": "Avoid distractions such as personal calls, texts, and social media while with a customer. Screen calls and let them go to voicemail unless it is an emergency.",
+    "related": [
+      "core2-s-prof-call-back",
+      "core2-s-prof-on-time",
+      "core2-s-prof-listen-notes",
+      "core2-s-prof-set-timeline"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-call-back",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.7"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "have a point-of-sale terminal repaired at the front counter",
+    "itemType": "response",
+    "clues": [
+      "another customer calls the technician about a different job",
+      "the technician is in the middle of the current repair",
+      "no coworker is free to take the other call"
+    ],
+    "answer": {
+      "item": "Tell the caller you are with a customer and will call back shortly"
+    },
+    "appliesWhen": "another customer calls while the technician is working with someone else",
+    "explanation": "If other customers call, explain that you are with a customer and will call them back soon. The customer in front of you should feel they have your full attention.",
+    "related": [
+      "core2-s-prof-voicemail",
+      "core2-s-prof-set-timeline",
+      "core2-s-prof-on-time",
+      "core2-s-prof-listen-notes"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-stay-calm",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.8"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "get a crashed sales database server running again",
+    "itemType": "response",
+    "clues": [
+      "the manager is shouting at the technician",
+      "he blames the IT department for the outage",
+      "the technician did not cause the problem"
+    ],
+    "answer": {
+      "item": "Stay calm, let him vent, and do not argue or get defensive"
+    },
+    "appliesWhen": "an upset customer is angry and the technician must avoid conflict",
+    "explanation": "Never argue with a customer or take a defensive stance. Let them vent, stay calm, and focus on fixing the problem; the goal is to keep the customer, not to win.",
+    "related": [
+      "core2-s-prof-not-dismiss",
+      "core2-s-prof-no-blame",
+      "core2-s-prof-positive",
+      "core2-s-prof-restate"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-not-dismiss",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.8"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "fix a mouse pointer that jumps around the screen",
+    "itemType": "response",
+    "clues": [
+      "the fault looks minor to the technician",
+      "the customer says it ruins her work every day",
+      "she has reported it twice before"
+    ],
+    "answer": {
+      "item": "Treat the problem as seriously as the customer does"
+    },
+    "appliesWhen": "the problem seems small to the technician but matters a lot to the customer",
+    "explanation": "Avoid dismissing customer issues, however simple they seem. Facial expressions and body language should also show that the problem is taken seriously.",
+    "related": [
+      "core2-s-prof-stay-calm",
+      "core2-s-prof-no-blame",
+      "core2-s-prof-listen-notes",
+      "core2-s-prof-positive"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-no-blame",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.8"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "need": "find out why a laptop stopped connecting to the network",
+    "itemType": "response",
+    "clues": [
+      "the technician suspects the user changed a setting",
+      "the user seems embarrassed",
+      "accusing questions can make users defensive"
+    ],
+    "answer": {
+      "item": "Avoid blaming the user and ask what happened before it stopped"
+    },
+    "appliesWhen": "user error is possible but blame would make the customer defensive",
+    "explanation": "Avoid being judgmental about possible user error. Questions such as 'What did you do?' sound like accusations, so use neutral wording that focuses on the fix.",
+    "related": [
+      "core2-s-prof-open-questions",
+      "core2-s-prof-stay-calm",
+      "core2-s-prof-not-dismiss",
+      "core2-s-prof-restate"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-open-questions",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.8"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "get help with a computer that she says acts weird",
+    "itemType": "response",
+    "clues": [
+      "the customer cannot say exactly what is wrong",
+      "yes or no questions have not narrowed the problem",
+      "the technician needs more detail to start"
+    ],
+    "answer": {
+      "item": "Ask open-ended questions, such as when it last worked correctly"
+    },
+    "appliesWhen": "a vague complaint must be narrowed down to a clear problem",
+    "explanation": "Open-ended questions such as 'When was the last time it worked?' help narrow the scope of the issue. They also keep the customer relaxed.",
+    "related": [
+      "core2-s-prof-restate",
+      "core2-s-prof-listen-notes",
+      "core2-s-prof-no-blame",
+      "core2-s-prof-plain-language"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-restate",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.8",
+      "220-1202/4.7.4"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "need": "have an email problem fixed after a long phone description",
+    "itemType": "response",
+    "clues": [
+      "the customer's description was long and somewhat confusing",
+      "the technician wants both sides to agree on the problem",
+      "work has not started yet"
+    ],
+    "answer": {
+      "item": "Restate the issue back to the customer to verify understanding"
+    },
+    "appliesWhen": "the technician has heard the problem and must confirm it was understood",
+    "explanation": "Clarify customer statements by repeating the problem back in your own words. Restating the issue confirms that everyone understands it before work starts.",
+    "related": [
+      "core2-s-prof-open-questions",
+      "core2-s-prof-listen-notes",
+      "core2-s-prof-plain-language",
+      "core2-s-prof-repeat-politely"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-discretion",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.8",
+      "220-1202/4.7.10"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "keep the details of a tense service call out of public view",
+    "itemType": "response",
+    "clues": [
+      "the technician had a hard visit with a rude client yesterday",
+      "the technician wants to vent about it online",
+      "the client is a well-known local firm"
+    ],
+    "answer": {
+      "item": "Keep the details private and do not post about them on social media"
+    },
+    "appliesWhen": "the technician is tempted to share work experiences with others",
+    "explanation": "Use discretion when discussing experiences with customers. Posting about work on social media is unprofessional and could lead to legal action or termination.",
+    "related": [
+      "core2-s-prof-move-papers",
+      "core2-s-prof-close-files",
+      "core2-s-prof-stay-calm",
+      "core2-s-prof-documentation"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-set-timeline",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.9"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "know when a laptop sent in for repair will be ready",
+    "itemType": "response",
+    "clues": [
+      "a replacement screen must be ordered",
+      "parts usually arrive in three days",
+      "the customer needs the laptop for a trip"
+    ],
+    "answer": {
+      "item": "Give a realistic timeline and send regular status updates"
+    },
+    "appliesWhen": "the customer needs to know how long a job will take and how it is going",
+    "explanation": "Once the problem is clear, set a reasonable timeline and keep the customer informed with updates. Allow extra time, and give a new estimate if the job runs longer.",
+    "related": [
+      "core2-s-prof-offer-options",
+      "core2-s-prof-follow-up",
+      "core2-s-prof-documentation",
+      "core2-s-prof-on-time"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-offer-options",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.9"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "decide what to do with a laptop that has a failed motherboard",
+    "itemType": "response",
+    "clues": [
+      "the repair costs almost as much as a new laptop",
+      "the laptop is out of warranty",
+      "the customer has not set a budget"
+    ],
+    "answer": {
+      "item": "Offer repair and replacement options with their costs"
+    },
+    "appliesWhen": "there is more than one way to solve the problem and the customer should choose",
+    "explanation": "Setting expectations includes offering repair or replacement options as needed. The customer can then make an informed choice.",
+    "related": [
+      "core2-s-prof-set-timeline",
+      "core2-s-prof-follow-up",
+      "core2-s-prof-documentation",
+      "core2-s-prof-positive"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-follow-up",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.9"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "be sure last week's network printer repair really solved the problem",
+    "itemType": "response",
+    "clues": [
+      "the job was closed five days ago",
+      "the user has not reported any new trouble",
+      "the fault had come back once before"
+    ],
+    "answer": {
+      "item": "Follow up with the user to verify satisfaction"
+    },
+    "appliesWhen": "a job is finished and the technician must check later that the customer is satisfied",
+    "explanation": "After the job, follow up with the customer at a later date to verify that everything still works and they are satisfied. It is the most overlooked step and builds trust quickly.",
+    "related": [
+      "core2-s-prof-documentation",
+      "core2-s-prof-set-timeline",
+      "core2-s-prof-offer-options",
+      "core2-s-prof-on-time"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-documentation",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.9"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "know exactly what work was done on the file server",
+    "itemType": "response",
+    "clues": [
+      "the technician replaced two drives and updated the firmware",
+      "company policy requires a record of all services",
+      "the customer will be billed for the parts"
+    ],
+    "answer": {
+      "item": "Provide written documentation of the services performed"
+    },
+    "appliesWhen": "the work is done and the customer needs a record of what was done",
+    "explanation": "Be clear about company policies and provide proper documentation on the services provided. A written record supports billing and later support.",
+    "related": [
+      "core2-s-prof-follow-up",
+      "core2-s-prof-set-timeline",
+      "core2-s-prof-offer-options",
+      "core2-s-prof-discretion"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-move-papers",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.10"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "need": "have a printer serviced in the human resources office",
+    "itemType": "response",
+    "clues": [
+      "printed payroll reports are lying in the output tray",
+      "the technician must reach the tray to work",
+      "the papers belong to the customer"
+    ],
+    "answer": {
+      "item": "Ask the customer to move the confidential papers first"
+    },
+    "appliesWhen": "confidential printed material is in the work area",
+    "explanation": "Do not look at or touch confidential materials on a desk or printer. Ask the customer to move them to an area where you cannot see them.",
+    "related": [
+      "core2-s-prof-close-files",
+      "core2-s-prof-discretion",
+      "core2-s-prof-documentation",
+      "core2-s-prof-listen-notes"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "core2-s-prof-close-files",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.7"
+    ],
+    "topics": [
+      "220-1202/4.7.10"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "need": "have a slow PC tuned while she stays at her desk",
+    "itemType": "response",
+    "clues": [
+      "bank statements and legal documents are open on the screen",
+      "the technician needs to use the PC for the repair",
+      "the customer is sitting next to the technician"
+    ],
+    "answer": {
+      "item": "Ask the customer to close the private documents before you start"
+    },
+    "appliesWhen": "private information is shown on a computer the technician must use",
+    "explanation": "Do not look at confidential information located on a computer. Have the customer close or move it so it stays private while you work.",
+    "related": [
+      "core2-s-prof-move-papers",
+      "core2-s-prof-discretion",
+      "core2-s-prof-documentation",
+      "core2-s-prof-voicemail"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 10: Documentation and Professionalism"
+  },
+  {
+    "id": "core2-s-remote-rdp",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "need": "control the full desktop of a Windows 11 Pro PC in another building",
+    "itemType": "remote access tool",
+    "clues": [
+      "remote connections are allowed in System Properties on that PC",
+      "the technician has an account on that PC",
+      "the firewall on that PC allows TCP port 3389",
+      "no user needs to accept the session"
+    ],
+    "answer": {
+      "item": "Remote Desktop Connection"
+    },
+    "appliesWhen": "a technician must take over the graphical desktop of a Windows computer without an invitation",
+    "explanation": "Remote Desktop Connection, or mstsc, uses RDP on TCP port 3389 to show and control a Windows desktop. Home editions can only be the client side.",
+    "related": [
+      "core2-s-remote-remote-assistance",
+      "core2-s-remote-quick-assist",
+      "core2-s-remote-vnc",
+      "core2-s-remote-ssh"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-remote-assistance",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "get help from the help desk while she watches the fix on her screen",
+    "itemType": "remote access tool",
+    "clues": [
+      "the user must invite the technician",
+      "the invitation will be sent by email",
+      "the PC allows assistance connections and remote control"
+    ],
+    "answer": {
+      "item": "Windows Remote Assistance"
+    },
+    "appliesWhen": "a user must invite a technician to view and control their session",
+    "explanation": "Remote Assistance lets a user send an invitation so a technician can view and control the user's own session. Remote Desktop, by contrast, connects without an invitation.",
+    "related": [
+      "core2-s-remote-rdp",
+      "core2-s-remote-quick-assist",
+      "core2-s-remote-videoconf",
+      "core2-s-remote-vnc"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-quick-assist",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "home-office"
+    ],
+    "need": "get help with an app error on a home Windows 11 PC",
+    "itemType": "remote access tool",
+    "clues": [
+      "the PC is behind a home router and firewall",
+      "the technician will give the user a six-digit code",
+      "no third-party software may be installed",
+      "the user can choose view only or full control"
+    ],
+    "answer": {
+      "item": "Quick Assist"
+    },
+    "appliesWhen": "a home user needs built-in screen sharing help that works through routers and firewalls",
+    "explanation": "Quick Assist is built into Windows 11 and connects with a six-digit code that is valid for 10 minutes. It works behind routers and firewalls but has no file transfer.",
+    "related": [
+      "core2-s-remote-remote-assistance",
+      "core2-s-remote-rdp",
+      "core2-s-remote-file-share",
+      "core2-s-remote-desktop-mgmt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-ssh",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "run administrative scripts on an Ubuntu server from the command line",
+    "itemType": "remote access tool",
+    "clues": [
+      "the server has no graphical desktop installed",
+      "the session must be encrypted",
+      "the server accepts connections on TCP port 22"
+    ],
+    "answer": {
+      "item": "SSH"
+    },
+    "appliesWhen": "a technician needs an encrypted text console on a Linux or UNIX system",
+    "explanation": "Secure Shell gives an encrypted command-line session on TCP port 22. OpenSSH and PuTTY are common clients, and the SSH service must run on the target.",
+    "related": [
+      "core2-s-remote-rdp",
+      "core2-s-remote-vnc",
+      "core2-s-remote-winrm",
+      "core2-s-remote-spice"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-vnc",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "need": "control the desktops of a Linux workstation and a Mac from a Windows laptop",
+    "itemType": "remote access tool",
+    "clues": [
+      "the tool must work across several operating systems",
+      "an open source protocol is preferred",
+      "a server component will be installed on each remote host"
+    ],
+    "answer": {
+      "item": "VNC"
+    },
+    "appliesWhen": "a graphical desktop must be shared across many operating systems with an open protocol",
+    "explanation": "Virtual Network Computing is an open, client-server remote control protocol, normally on TCP port 5900. It is not encrypted by default, so add encryption or a VPN.",
+    "related": [
+      "core2-s-remote-rdp",
+      "core2-s-remote-ssh",
+      "core2-s-remote-spice",
+      "core2-s-remote-quick-assist"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-client-vpn",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1",
+      "220-1202/4.9.2"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "reach the file server at the office from a hotel room",
+    "itemType": "remote access tool",
+    "clues": [
+      "the hotel Wi-Fi is public and untrusted",
+      "the laptop must get an internal company address",
+      "all traffic to the office must be encrypted in a tunnel"
+    ],
+    "answer": {
+      "item": "A client-to-site VPN"
+    },
+    "appliesWhen": "one remote user must join the company network securely over the Internet",
+    "explanation": "A client-to-site VPN builds an encrypted tunnel from the laptop to the VPN concentrator. The laptop gets an internal address and works as if it were on the company network.",
+    "related": [
+      "core2-s-remote-site-vpn",
+      "core2-s-remote-rdp",
+      "core2-s-remote-file-share",
+      "core2-s-remote-rmm"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-site-vpn",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "connect a branch office network to headquarters over the Internet",
+    "itemType": "remote access tool",
+    "clues": [
+      "the company wants to drop its leased line",
+      "each location has a VPN concentrator",
+      "every user at the branch needs access, not just one laptop"
+    ],
+    "answer": {
+      "item": "A site-to-site VPN"
+    },
+    "appliesWhen": "two whole networks must be joined securely over the Internet",
+    "explanation": "A site-to-site VPN ties two locations together with a tunnel between VPN concentrators. It is cheaper and more scalable than leased lines.",
+    "related": [
+      "core2-s-remote-client-vpn",
+      "core2-s-remote-rmm",
+      "core2-s-remote-desktop-mgmt",
+      "core2-s-remote-winrm"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-rmm",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "watch patch levels, disk space, and antivirus status on 500 client PCs at many sites",
+    "itemType": "remote access tool",
+    "clues": [
+      "an agent will report back from each PC",
+      "the managed service provider wants one dashboard for all customers",
+      "alerts must arrive when a major change is found"
+    ],
+    "answer": {
+      "item": "An RMM platform"
+    },
+    "appliesWhen": "many endpoints across sites must be monitored and managed from one console",
+    "explanation": "Remote monitoring and management software uses agents to report security, hardware, and application data to one console. Managed service providers use it to maintain many customers.",
+    "related": [
+      "core2-s-remote-desktop-mgmt",
+      "core2-s-remote-winrm",
+      "core2-s-remote-rdp",
+      "core2-s-remote-site-vpn"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-spice",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "need": "open the console of virtual desktops hosted on a Proxmox server",
+    "itemType": "remote access tool",
+    "clues": [
+      "users connect to VDI desktops",
+      "keyboard, audio, and video must work as if they were local",
+      "the protocol must be built for virtual machines"
+    ],
+    "answer": {
+      "item": "SPICE"
+    },
+    "appliesWhen": "users need rich remote access to virtual machine desktops",
+    "explanation": "The Simple Protocol for Independent Computing Environments is an open protocol for reaching virtual desktops. It supports TLS channels and Kerberos authentication.",
+    "related": [
+      "core2-s-remote-vnc",
+      "core2-s-remote-rdp",
+      "core2-s-remote-winrm",
+      "core2-s-remote-ssh"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-winrm",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "run PowerShell commands on 40 Windows servers at once",
+    "itemType": "remote access tool",
+    "clues": [
+      "no graphical session is needed",
+      "the protocol is based on WS-Management and SOAP",
+      "the traffic will use HTTP or HTTPS ports"
+    ],
+    "answer": {
+      "item": "WinRM"
+    },
+    "appliesWhen": "commands and scripts must run remotely on many Windows systems",
+    "explanation": "Windows Remote Management runs commands and PowerShell scripts on remote Windows systems over ports 80 and 443. It must be enabled and configured on each target first.",
+    "related": [
+      "core2-s-remote-ssh",
+      "core2-s-remote-rmm",
+      "core2-s-remote-rdp",
+      "core2-s-remote-desktop-mgmt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-videoconf",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "need": "run a training session where many staff watch one shared screen",
+    "itemType": "remote access tool",
+    "clues": [
+      "attendees will join from their homes",
+      "calendar invites and call-in numbers are needed",
+      "more than 30 people will attend"
+    ],
+    "answer": {
+      "item": "Videoconferencing software"
+    },
+    "appliesWhen": "many people must join a meeting and see a shared screen",
+    "explanation": "Videoconferencing software such as Teams, Webex, or Zoom shares a screen with many people at once. It adds calendar invites, call-in numbers, and attendee management.",
+    "related": [
+      "core2-s-remote-remote-assistance",
+      "core2-s-remote-quick-assist",
+      "core2-s-remote-file-share",
+      "core2-s-remote-desktop-mgmt"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-file-share",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "need": "send a large installer to a user who is getting help through Quick Assist",
+    "itemType": "remote access tool",
+    "clues": [
+      "the screen-sharing tool in use has no file transfer",
+      "the file is too large for email",
+      "the user will download it from a link"
+    ],
+    "answer": {
+      "item": "File transfer software such as OneDrive"
+    },
+    "appliesWhen": "files must move between users and the screen-sharing tool cannot do it",
+    "explanation": "Quick Assist has no file transfer utility, so files go through a sharing service. File transfer software such as OneDrive, Dropbox, or Google Drive shares files both ways.",
+    "related": [
+      "core2-s-remote-videoconf",
+      "core2-s-remote-desktop-mgmt",
+      "core2-s-remote-rdp",
+      "core2-s-remote-client-vpn"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-desktop-mgmt",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "retail",
+      "warehouse"
+    ],
+    "need": "connect to unattended store PCs at any time with no one present",
+    "itemType": "remote access tool",
+    "clues": [
+      "an agent on each PC waits for incoming connections",
+      "the tool must integrate with Intune",
+      "the console should show which devices are online"
+    ],
+    "answer": {
+      "item": "Desktop management software"
+    },
+    "appliesWhen": "unattended computers must accept support connections at any time",
+    "explanation": "Screen-sharing tools such as TeamViewer or Splashtop act as desktop management software when installed to wait for incoming connections. They can integrate with Intune or Jamf.",
+    "related": [
+      "core2-s-remote-rmm",
+      "core2-s-remote-quick-assist",
+      "core2-s-remote-remote-assistance",
+      "core2-s-remote-rdp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "core2-s-remote-nla",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.2"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "need": "make Remote Desktop connections to satellite office PCs harder to attack",
+    "itemType": "security measure",
+    "clues": [
+      "the PCs accept RDP sessions",
+      "users must be checked before a full session starts",
+      "the setting is on by default but was turned off"
+    ],
+    "answer": {
+      "item": "Network Level Authentication"
+    },
+    "appliesWhen": "Remote Desktop users must authenticate before a session is created",
+    "explanation": "Network Level Authentication requires the user's credentials before an RDP session starts. Pair it with strong passwords, and a VPN for connections across the Internet.",
+    "related": [
+      "core2-s-remote-mfa-agent",
+      "core2-s-remote-meeting-password",
+      "core2-s-remote-ssh-not-telnet",
+      "core2-s-remote-rdp-over-vpn"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-rdp-over-vpn",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.2"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "let administrators reach office PCs by RDP from home without exposing port 3389 to the Internet",
+    "itemType": "security measure",
+    "clues": [
+      "the connections cross the public Internet",
+      "the company already has a VPN concentrator",
+      "attackers scan for open remote desktop ports"
+    ],
+    "answer": {
+      "item": "Running the RDP sessions through a VPN tunnel"
+    },
+    "appliesWhen": "a remote control protocol must not be reachable directly from the Internet",
+    "explanation": "Running RDP or SSH through a VPN adds an encrypted tunnel and keeps the remote access port off the Internet. Use it especially when connecting across the Internet.",
+    "related": [
+      "core2-s-remote-nla",
+      "core2-s-remote-mfa-agent",
+      "core2-s-remote-meeting-password",
+      "core2-s-remote-ssh-not-telnet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-ssh-not-telnet",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.2"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "change switch settings remotely while sending admin passwords",
+    "itemType": "security measure",
+    "clues": [
+      "the current tool sends everything in plain text",
+      "the switch supports encrypted shell sessions",
+      "passwords and settings will cross the network"
+    ],
+    "answer": {
+      "item": "Using SSH instead of Telnet"
+    },
+    "appliesWhen": "passwords or settings would cross the network unencrypted",
+    "explanation": "Telnet is not encrypted and is fine only for harmless data such as sensor readings. Passwords and configuration should use an encrypted protocol such as SSH.",
+    "related": [
+      "core2-s-remote-nla",
+      "core2-s-remote-scp",
+      "core2-s-remote-rdp-over-vpn",
+      "core2-s-remote-mfa-agent"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-scp",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.2",
+      "220-1202/4.9.1"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "need": "copy configuration files to a remote Linux server",
+    "itemType": "security measure",
+    "clues": [
+      "plain FTP would send the files unencrypted",
+      "the server already accepts encrypted shell logins",
+      "the files hold passwords"
+    ],
+    "answer": {
+      "item": "Using SCP or SFTP over SSH"
+    },
+    "appliesWhen": "files must be moved across the network without sending them in plain text",
+    "explanation": "SCP and SFTP run over SSH on port 22 and encrypt the files in transit. FTP is not secure and sends data in plain text.",
+    "related": [
+      "core2-s-remote-ssh-not-telnet",
+      "core2-s-remote-rdp-over-vpn",
+      "core2-s-remote-nla",
+      "core2-s-remote-meeting-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-mfa-agent",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.2"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "need": "protect PCs that run a remote support agent exposed to the Internet",
+    "itemType": "security measure",
+    "clues": [
+      "attackers can exploit agents that wait for connections",
+      "passwords alone have been guessed before",
+      "the vendor supports a second sign-in factor"
+    ],
+    "answer": {
+      "item": "Keeping the agent updated and turning on multifactor authentication"
+    },
+    "appliesWhen": "an always-listening remote access agent is exposed to the Internet",
+    "explanation": "An agent that waits for connections and faces the Internet is a target for attackers. Keep the software up to date and use multifactor authentication where it is available.",
+    "related": [
+      "core2-s-remote-nla",
+      "core2-s-remote-meeting-password",
+      "core2-s-remote-rdp-over-vpn",
+      "core2-s-remote-ssh-not-telnet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 64: Remote Access Technologies"
+  },
+  {
+    "id": "core2-s-remote-meeting-password",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "4",
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "topics": [
+      "220-1202/4.9.2"
+    ],
+    "settings": [
+      "school",
+      "enterprise"
+    ],
+    "need": "stop strangers from joining the company's online meetings",
+    "itemType": "security measure",
+    "clues": [
+      "outsiders have guessed meeting IDs before",
+      "the meetings use a videoconferencing service",
+      "a recent meeting was disrupted by trolls"
+    ],
+    "answer": {
+      "item": "Requiring a password to join each meeting"
+    },
+    "appliesWhen": "outsiders could guess a meeting ID and join a private videoconference",
+    "explanation": "Requiring a password to join a meeting stops conference bombing, also called Zoombombing. Without it, anyone who guesses the meeting ID can join.",
+    "related": [
+      "core2-s-remote-mfa-agent",
+      "core2-s-remote-nla",
+      "core2-s-remote-rdp-over-vpn",
+      "core2-s-remote-scp"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  }
+]

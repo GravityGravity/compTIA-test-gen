@@ -249,7 +249,8 @@ def check_pool(rec, exam, domain, file_domain, topics, where, report):
     if not 2 <= len(options) <= 8 or not all(isinstance(o, str) and o.strip() for o in options):
         report.error(where, "options must be 2–8 non-empty strings")
         return True
-    if len({normalize(o) for o in options}) != len(options):
+    # Case and spaces only: punctuation can tell options apart ("SFP" and "SFP+").
+    if len({" ".join(o.lower().split()) for o in options}) != len(options):
         report.error(where, "two options have the same text")
     if (not answer or len(set(answer)) != len(answer)
             or not all(isinstance(a, int) and not isinstance(a, bool) and 0 <= a < len(options) for a in answer)):

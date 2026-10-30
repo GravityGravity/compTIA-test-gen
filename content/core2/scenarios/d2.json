@@ -1,0 +1,5070 @@
+[
+  {
+    "id": "core2-s-winsec-defender-realtime-off",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "stop the built-in antivirus from conflicting with the antimalware suite the company has standardized on",
+    "itemType": "setting",
+    "clues": [
+      "the company has licensed a third-party antimalware suite for every PC",
+      "two scanners running at once slow the PCs and lock files",
+      "the third-party suite has been installed and is up to date",
+      "the change is made from Manage settings under Virus and threat protection"
+    ],
+    "answer": {
+      "item": "Turning off real-time protection in Microsoft Defender Antivirus"
+    },
+    "appliesWhen": "a separate antimalware product must protect the PC without the built-in scanner getting in its way",
+    "explanation": "Real-time protection can be switched off in Manage settings so that Defender does not conflict with another antimalware product. At least one antimalware product must stay active on the PC.",
+    "related": [
+      "core2-s-winsec-defender-definitions",
+      "core2-s-winsec-fw-allow-app",
+      "core2-s-winsec-fw-port-rule"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-defender-definitions",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.1"
+    ],
+    "settings": [
+      "home-office",
+      "clinic"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "make sure the built-in antivirus can recognize the newest threats",
+    "itemType": "method",
+    "clues": [
+      "the laptop has been switched off in a drawer for three months",
+      "the Virus and threat protection page says the protection is out of date",
+      "no third-party antivirus is installed",
+      "a scan will be run right after the change"
+    ],
+    "answer": {
+      "item": "Updating the Microsoft Defender Antivirus definitions"
+    },
+    "appliesWhen": "the antivirus engine is running but its threat signatures are old",
+    "explanation": "An antimalware engine is only as good as its latest definitions. Defender gets new definitions and engine updates through Windows Update, or from Check for updates in Virus and threat protection.",
+    "related": [
+      "core2-s-winsec-defender-realtime-off",
+      "core2-s-winsec-fw-allow-app",
+      "core2-s-winsec-fw-port-rule"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-fw-allow-app",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.2"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "let a video-conferencing program accept incoming calls while the host firewall stays on",
+    "itemType": "firewall setting",
+    "clues": [
+      "the program fails only when the firewall is on",
+      "the firewall must stay on for the private and public profiles",
+      "the program is installed in the usual Program Files folder",
+      "the user does not know which ports the program listens on"
+    ],
+    "answer": {
+      "item": "Allowing the app through Microsoft Defender Firewall"
+    },
+    "appliesWhen": "one known program needs incoming connections and its ports do not matter",
+    "explanation": "By default the firewall blocks unsolicited inbound connections. Adding the program in Allowed apps makes an exception for that program only, so the rest of the PC stays protected.",
+    "related": [
+      "core2-s-winsec-fw-port-rule",
+      "core2-s-winsec-defender-realtime-off",
+      "core2-s-winsec-defender-definitions"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-fw-port-rule",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "warehouse"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "let an inventory server on a workstation accept connections on TCP 8443 only from the office subnet",
+    "itemType": "firewall setting",
+    "clues": [
+      "only one TCP port must be opened",
+      "connections from any other address range must still be blocked",
+      "the rule must apply to the domain profile only",
+      "the technician has administrator rights"
+    ],
+    "answer": {
+      "item": "Creating an inbound port rule in Defender Firewall with Advanced Security"
+    },
+    "appliesWhen": "a single port must be opened with a limited scope of source addresses",
+    "explanation": "Windows Defender Firewall with Advanced Security (wf.msc) can create inbound rules by program, port, or custom settings. A custom scope limits which remote addresses the rule allows.",
+    "related": [
+      "core2-s-winsec-fw-allow-app",
+      "core2-s-winsec-defender-realtime-off",
+      "core2-s-winsec-defender-definitions"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-acct-standard",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.3",
+      "220-1202/2.2.6"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "create an account for a new cashier who will only use the point-of-sale and email programs",
+    "itemType": "account type",
+    "clues": [
+      "the cashier must not install programs",
+      "the cashier must not change system-wide settings",
+      "the cashier needs full use of their own files and profile",
+      "the principle of least privilege applies"
+    ],
+    "answer": {
+      "item": "Standard user account"
+    },
+    "appliesWhen": "a person needs everyday use of the PC without administrative rights",
+    "explanation": "A standard user (a member of the Users group) owns their own data but cannot install software or change system-wide settings by default. Least privilege says users get no more rights than their work needs.",
+    "related": [
+      "core2-s-winsec-acct-admin",
+      "core2-s-winsec-acct-guest",
+      "core2-s-winsec-acct-microsoft",
+      "core2-s-winsec-acct-local",
+      "core2-s-winsec-acct-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-acct-admin",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.3",
+      "220-1202/2.2.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "give a second IT technician the rights to install software, change any setting, and take ownership of files",
+    "itemType": "account type",
+    "clues": [
+      "the technician supports every PC in the branch",
+      "the technician must be able to change permissions on any folder",
+      "the existing account cannot be shared for security reasons"
+    ],
+    "answer": {
+      "item": "Administrator account"
+    },
+    "appliesWhen": "a person must have full control of the operating system",
+    "explanation": "Members of the Administrators group have full control of Windows, including installing software and taking ownership. Because of that power, only people who need it should get this account type.",
+    "related": [
+      "core2-s-winsec-acct-standard",
+      "core2-s-winsec-acct-guest",
+      "core2-s-winsec-acct-microsoft",
+      "core2-s-winsec-acct-local",
+      "core2-s-winsec-acct-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-acct-guest",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.3"
+    ],
+    "settings": [
+      "clinic",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "give a visiting vendor short-term use of a PC with no access to anyone's data",
+    "itemType": "account type",
+    "clues": [
+      "the vendor needs the PC for one afternoon",
+      "the vendor must not install software or hardware",
+      "the vendor must not be able to change the account password",
+      "the account is turned off again when the visit ends"
+    ],
+    "answer": {
+      "item": "Guest account"
+    },
+    "appliesWhen": "a temporary visitor needs very limited, short-term use of the PC",
+    "explanation": "The Guest account gives limited, temporary access and cannot install software, change settings, or reach other users' data. It is disabled by default and should be turned off again after use.",
+    "related": [
+      "core2-s-winsec-acct-standard",
+      "core2-s-winsec-acct-admin",
+      "core2-s-winsec-acct-microsoft",
+      "core2-s-winsec-acct-local",
+      "core2-s-winsec-acct-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-acct-microsoft",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.3"
+    ],
+    "settings": [
+      "home-office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "sign in to a new laptop so that her settings and OneDrive files follow her to her other Windows devices",
+    "itemType": "account type",
+    "clues": [
+      "she already uses Outlook.com email",
+      "she also has a Windows desktop at home",
+      "she wants to buy apps from the Microsoft Store",
+      "she wants online password recovery if she forgets her password"
+    ],
+    "answer": {
+      "item": "Microsoft account"
+    },
+    "appliesWhen": "settings, files, and store apps must sync across several devices",
+    "explanation": "A Microsoft account is linked to an online profile and syncs settings and OneDrive files across devices. It also gives access to the Microsoft Store and online password recovery.",
+    "related": [
+      "core2-s-winsec-acct-standard",
+      "core2-s-winsec-acct-admin",
+      "core2-s-winsec-acct-guest",
+      "core2-s-winsec-acct-local",
+      "core2-s-winsec-acct-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-acct-local",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.3"
+    ],
+    "settings": [
+      "school",
+      "warehouse"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "set up a kiosk PC with an account that is not linked to any online profile",
+    "itemType": "account type",
+    "clues": [
+      "the kiosk has no email address assigned to it",
+      "nothing on the kiosk may sync to other devices",
+      "the account must live only on this one PC",
+      "the PC was set up without an Internet connection"
+    ],
+    "answer": {
+      "item": "Local account"
+    },
+    "appliesWhen": "an account must exist only on one PC with no online services or sync",
+    "explanation": "A local account lives only on that PC and is not linked to Microsoft online services. Its data and settings do not sync to other devices.",
+    "related": [
+      "core2-s-winsec-acct-standard",
+      "core2-s-winsec-acct-admin",
+      "core2-s-winsec-acct-guest",
+      "core2-s-winsec-acct-microsoft",
+      "core2-s-winsec-acct-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-acct-power",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "add an account to the legacy group that an old in-house program checks for when it starts",
+    "itemType": "account type",
+    "clues": [
+      "the program was written for Windows XP",
+      "the program refuses to run unless the user is in that older group",
+      "the group gives no more rights than a standard user in Windows 11",
+      "the user must not become an administrator"
+    ],
+    "answer": {
+      "item": "Power Users group"
+    },
+    "appliesWhen": "an older application expects a legacy group that exists only for backward compatibility",
+    "explanation": "The Power Users group is kept in current Windows only for backward compatibility with older programs. Since Windows 7 it has no more rights than the standard Users group.",
+    "related": [
+      "core2-s-winsec-acct-standard",
+      "core2-s-winsec-acct-admin",
+      "core2-s-winsec-acct-guest",
+      "core2-s-winsec-acct-microsoft",
+      "core2-s-winsec-acct-local"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-login-pin",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.4"
+    ],
+    "settings": [
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "sign in quickly with a short code that would be useless to a thief on any other device",
+    "itemType": "sign-in option",
+    "clues": [
+      "the laptop has no camera or fingerprint reader",
+      "the user finds a long complex password hard to type many times a day",
+      "the code must be tied to this laptop's hardware"
+    ],
+    "answer": {
+      "item": "Windows Hello PIN"
+    },
+    "appliesWhen": "a short code tied to one device is wanted and no biometric hardware is present",
+    "explanation": "A Windows Hello PIN is tied to the device it was set up on, so a captured code does not work anywhere else. It needs no camera or fingerprint reader.",
+    "related": [
+      "core2-s-winsec-login-face",
+      "core2-s-winsec-login-sso",
+      "core2-s-winsec-login-password",
+      "core2-s-winsec-login-fingerprint"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-login-face",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.4"
+    ],
+    "settings": [
+      "clinic",
+      "office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "sign in without touching the keyboard while wearing gloves",
+    "itemType": "sign-in option",
+    "clues": [
+      "the laptop has an infrared depth-sensing camera",
+      "the user's hands are often busy or gloved",
+      "the user wants a biometric, passwordless sign-in"
+    ],
+    "answer": {
+      "item": "Windows Hello facial recognition"
+    },
+    "appliesWhen": "the device has an infrared camera and a hands-free biometric sign-in is wanted",
+    "explanation": "Windows Hello can sign a user in by face when the device has an infrared camera for depth sensing. The biometric data is protected by the TPM.",
+    "related": [
+      "core2-s-winsec-login-pin",
+      "core2-s-winsec-login-sso",
+      "core2-s-winsec-login-password",
+      "core2-s-winsec-login-fingerprint"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-login-fingerprint",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.4"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "sign in with a quick touch instead of typing a password",
+    "itemType": "sign-in option",
+    "clues": [
+      "the laptop has a built-in biometric reader next to the touchpad",
+      "the laptop has no infrared camera",
+      "the user wants a passwordless method based on something they are"
+    ],
+    "answer": {
+      "item": "Windows Hello fingerprint"
+    },
+    "appliesWhen": "the device has a fingerprint reader and a touch-based biometric sign-in is wanted",
+    "explanation": "Windows Hello fingerprint sign-in uses a built-in or USB biometric reader. It is passwordless and based on something the user is.",
+    "related": [
+      "core2-s-winsec-login-pin",
+      "core2-s-winsec-login-face",
+      "core2-s-winsec-login-sso",
+      "core2-s-winsec-login-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-login-sso",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.4",
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "let staff reach the PC, email, and cloud file storage after signing in only once",
+    "itemType": "sign-in option",
+    "clues": [
+      "users complain about remembering many passwords",
+      "the cloud apps trust the company's identity service",
+      "the PCs are joined to the company domain"
+    ],
+    "answer": {
+      "item": "Single sign-on (SSO)"
+    },
+    "appliesWhen": "one sign-in must give access to many systems and applications",
+    "explanation": "Single sign-on lets one set of credentials reach all the systems a user needs, because the resources trust the first authentication. Its weakness is that one stolen sign-in opens every resource.",
+    "related": [
+      "core2-s-winsec-login-pin",
+      "core2-s-winsec-login-face",
+      "core2-s-winsec-login-password",
+      "core2-s-winsec-login-fingerprint"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-login-password",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.4"
+    ],
+    "settings": [
+      "school",
+      "retail"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "sign in to any of forty shared lab desktops with the same credentials",
+    "itemType": "sign-in option",
+    "clues": [
+      "the desktops have no cameras or biometric readers",
+      "students move to a different desktop every class",
+      "a code tied to one device's hardware would not work on the others",
+      "the policy requires long, complex secrets"
+    ],
+    "answer": {
+      "item": "Username and password"
+    },
+    "appliesWhen": "the same credentials must work on many shared PCs that have no biometric hardware",
+    "explanation": "A username and password is the traditional sign-in and works on any PC the account can use. It should be long and complex because it can be stolen and reused.",
+    "related": [
+      "core2-s-winsec-login-pin",
+      "core2-s-winsec-login-face",
+      "core2-s-winsec-login-sso",
+      "core2-s-winsec-login-fingerprint"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-perm-disable-inherit",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.5"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "remove a group's access from one subfolder when that access comes from the parent folder",
+    "itemType": "permission setting",
+    "clues": [
+      "the group's entry is greyed out on the subfolder's Security tab",
+      "the parent folder must keep its current permissions",
+      "the technician wants to keep the other entries as explicit permissions"
+    ],
+    "answer": {
+      "item": "Disabling inheritance on the subfolder"
+    },
+    "appliesWhen": "a subfolder must stop receiving permissions from its parent folder",
+    "explanation": "Inherited permissions cannot be changed on the child folder itself. Disabling inheritance lets the technician convert them to explicit entries and then remove the one that is not wanted.",
+    "related": [
+      "core2-s-winsec-perm-replace-child",
+      "core2-s-winsec-attr-readonly",
+      "core2-s-winsec-attr-show-hidden"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-perm-replace-child",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.5"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "make every subfolder under a project folder use the project folder's permissions again",
+    "itemType": "permission setting",
+    "clues": [
+      "several subfolders were given their own explicit entries over the years",
+      "the parent folder's entries are correct",
+      "all files and folders below must end up matching the parent"
+    ],
+    "answer": {
+      "item": "Replace all child object permission entries with inheritable entries from this object"
+    },
+    "appliesWhen": "permissions must be pushed down to every file and subfolder, overwriting their own entries",
+    "explanation": "This option in Advanced Security Settings propagates the parent's inheritable permissions to all child objects. It replaces explicit entries further down, so it should be used with care.",
+    "related": [
+      "core2-s-winsec-perm-disable-inherit",
+      "core2-s-winsec-attr-readonly",
+      "core2-s-winsec-attr-show-hidden"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-attr-readonly",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.5"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "stop staff from saving changes over a shared form template while still letting them open it",
+    "itemType": "file attribute",
+    "clues": [
+      "staff open the template many times a day",
+      "changes must be saved as a new file instead",
+      "the setting is a checkbox on the General tab of the file's properties"
+    ],
+    "answer": {
+      "item": "Read-only attribute"
+    },
+    "appliesWhen": "a file must open normally but must not be overwritten",
+    "explanation": "When the Read-only attribute is set, nobody can save changes to that file, but the changes can be saved as a new file. It is set on the General tab of the file's properties or with attrib.",
+    "related": [
+      "core2-s-winsec-attr-show-hidden",
+      "core2-s-winsec-perm-disable-inherit",
+      "core2-s-winsec-perm-replace-child"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-attr-show-hidden",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.5"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "see pagefile.sys and bootmgr in File Explorer while troubleshooting",
+    "itemType": "File Explorer setting",
+    "clues": [
+      "the files exist but do not appear in the folder listing",
+      "they are system files that Windows protects",
+      "the change is made on the View tab of File Explorer Options"
+    ],
+    "answer": {
+      "item": "Show hidden files and clear Hide protected operating system files"
+    },
+    "appliesWhen": "hidden and protected system files must be visible in File Explorer",
+    "explanation": "Protected system files stay invisible until both hidden files are shown and the Hide protected operating system files box is cleared. This is done on the View tab of File Explorer Options.",
+    "related": [
+      "core2-s-winsec-attr-readonly",
+      "core2-s-winsec-perm-disable-inherit",
+      "core2-s-winsec-perm-replace-child"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-uac",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.7",
+      "220-1202/2.2.6"
+    ],
+    "settings": [
+      "home-office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "let the family's administrator account run with limited rights day to day but approve system changes when needed",
+    "itemType": "Windows security feature",
+    "clues": [
+      "the parent's account is in the Administrators group",
+      "malware should not get full rights silently",
+      "a prompt should appear before a program changes the system",
+      "the feature is built into Windows"
+    ],
+    "answer": {
+      "item": "User Account Control (UAC)"
+    },
+    "appliesWhen": "programs must ask for approval before they get administrative rights",
+    "explanation": "UAC runs even administrators with a standard token and prompts before giving the full administrative token. This supports least privilege and blocks silent changes by malware.",
+    "related": [
+      "core2-s-winsec-bitlocker",
+      "core2-s-winsec-efs",
+      "core2-s-winsec-login-pin"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-bitlocker",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.8"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "protect everything on a laptop's internal drive if the laptop is lost or stolen",
+    "itemType": "encryption feature",
+    "clues": [
+      "the laptop runs Windows 11 Pro",
+      "the motherboard has a TPM chip",
+      "the drive must stay unreadable if it is put in another computer",
+      "the user should not notice the protection after it is set up"
+    ],
+    "answer": {
+      "item": "BitLocker"
+    },
+    "appliesWhen": "a whole internal drive must be encrypted as data at rest",
+    "explanation": "BitLocker encrypts an entire volume and is transparent to the user once it is set up. Its keys are kept in the TPM, so the drive cannot be read in another system.",
+    "related": [
+      "core2-s-winsec-bitlocker-usb-key",
+      "core2-s-winsec-bitlocker-to-go",
+      "core2-s-winsec-efs"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-bitlocker-usb-key",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.8"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "turn on full-drive encryption on older Windows 11 Pro laptops that have no TPM chip",
+    "itemType": "method",
+    "clues": [
+      "the encryption wizard reports that no TPM was found",
+      "the laptops cannot be replaced this year",
+      "the motherboards have no chip to hold the keys"
+    ],
+    "answer": {
+      "item": "Storing the BitLocker startup key on a USB flash drive"
+    },
+    "appliesWhen": "BitLocker is wanted on a computer without a TPM",
+    "explanation": "BitLocker needs either a TPM or a USB flash drive to hold its keys. Without a TPM, the startup key goes on a USB drive that must be present at boot.",
+    "related": [
+      "core2-s-winsec-bitlocker",
+      "core2-s-winsec-bitlocker-to-go",
+      "core2-s-winsec-efs"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-bitlocker-to-go",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.9"
+    ],
+    "settings": [
+      "clinic",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "encrypt a USB flash drive that staff use to carry patient files between sites",
+    "itemType": "encryption feature",
+    "clues": [
+      "the flash drive could be lost on the way",
+      "staff must unlock the drive with a password on other Windows PCs",
+      "the whole removable drive must be encrypted, not just some files"
+    ],
+    "answer": {
+      "item": "BitLocker To Go"
+    },
+    "appliesWhen": "a removable drive must be fully encrypted",
+    "explanation": "BitLocker To Go uses the same encryption as BitLocker on removable drives such as USB flash drives. Windows asks for the drive's password when it is inserted.",
+    "related": [
+      "core2-s-winsec-bitlocker",
+      "core2-s-winsec-bitlocker-usb-key",
+      "core2-s-winsec-efs"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-efs",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.10"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "encrypt a few folders on a shared PC so that other users who sign in to it cannot read them",
+    "itemType": "encryption feature",
+    "clues": [
+      "only three folders hold the sensitive files",
+      "the PC has no TPM chip",
+      "the drive is formatted with NTFS",
+      "the user is a standard user, not an administrator"
+    ],
+    "answer": {
+      "item": "Encrypting File System (EFS)"
+    },
+    "appliesWhen": "only some files or folders on an NTFS volume must be encrypted for one user",
+    "explanation": "EFS encrypts individual files and folders on NTFS with a certificate stored in the user's profile. It needs no special hardware and any user can turn it on, while BitLocker encrypts a whole volume and needs an administrator.",
+    "related": [
+      "core2-s-winsec-bitlocker",
+      "core2-s-winsec-bitlocker-usb-key",
+      "core2-s-winsec-bitlocker-to-go"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-ad-ou-gpo",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "require longer passwords for the developers than for the rest of the domain",
+    "itemType": "method",
+    "clues": [
+      "the developers' accounts are in the default Users container",
+      "the default domain policy must stay as it is for everyone else",
+      "the developers and their computers should be managed as one department"
+    ],
+    "answer": {
+      "item": "Moving the developers into an OU and linking a GPO to it"
+    },
+    "appliesWhen": "different policy settings must apply to one department only",
+    "explanation": "An organizational unit groups users and computers, often by department. A Group Policy Object linked to that OU applies its rules only to the objects inside it.",
+    "related": [
+      "core2-s-winsec-ad-logon-script",
+      "core2-s-winsec-ad-home-folder",
+      "core2-s-winsec-ad-roaming",
+      "core2-s-winsec-ad-security-group"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-ad-logon-script",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "map the same department drives and printers for each user automatically every time they sign in",
+    "itemType": "method",
+    "clues": [
+      "the tasks must run at sign-in, not at startup",
+      "a batch or PowerShell file is placed in the NETLOGON share",
+      "the setting is in User Configuration of a GPO"
+    ],
+    "answer": {
+      "item": "Assigning a log-in script"
+    },
+    "appliesWhen": "commands must run automatically each time a user signs in to the domain",
+    "explanation": "A log-in script runs tasks such as mapping drives when the user signs in to the domain. It is assigned on the account's Profile tab or in the Scripts (Logon/Logoff) section of a GPO.",
+    "related": [
+      "core2-s-winsec-ad-ou-gpo",
+      "core2-s-winsec-ad-home-folder",
+      "core2-s-winsec-ad-roaming",
+      "core2-s-winsec-ad-security-group"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-ad-home-folder",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "make each user's documents save to a central file server no matter which domain PC they use",
+    "itemType": "method",
+    "clues": [
+      "the documents are backed up only on the server",
+      "users move between PCs during the week",
+      "each user should see the same drive letter for their own folder"
+    ],
+    "answer": {
+      "item": "Connecting the home folder to a network drive (folder redirection)"
+    },
+    "appliesWhen": "a user's documents must be stored centrally on a server share",
+    "explanation": "On the account's Profile tab, Connect maps the home folder to a network drive such as Z: pointing at the user's folder on a server. This is folder redirection, so documents stay central on any PC.",
+    "related": [
+      "core2-s-winsec-ad-ou-gpo",
+      "core2-s-winsec-ad-logon-script",
+      "core2-s-winsec-ad-roaming",
+      "core2-s-winsec-ad-security-group"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-ad-roaming",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "keep a user's desktop, Start menu, and settings the same on every domain computer they sign in to",
+    "itemType": "method",
+    "clues": [
+      "the user works at a different desk each day",
+      "the settings, not just the documents, must follow the user",
+      "the profile path field on the account is empty"
+    ],
+    "answer": {
+      "item": "Configuring a roaming profile"
+    },
+    "appliesWhen": "a user's profile settings must follow the user from one domain PC to the next",
+    "explanation": "A roaming profile is stored on a server share named in the account's profile path. The domain loads it on any PC the user signs in to, so the settings follow the user.",
+    "related": [
+      "core2-s-winsec-ad-ou-gpo",
+      "core2-s-winsec-ad-logon-script",
+      "core2-s-winsec-ad-home-folder",
+      "core2-s-winsec-ad-security-group"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-ad-security-group",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "give 40 accounting staff access to the finance share without editing each account",
+    "itemType": "method",
+    "clues": [
+      "new accounting staff join every month",
+      "access must be removed simply when someone leaves the department",
+      "the permissions are set once on the share and NTFS folder"
+    ],
+    "answer": {
+      "item": "Adding the users to a security group and granting the group access"
+    },
+    "appliesWhen": "many users need the same access to a resource",
+    "explanation": "Security groups let a domain admin set permissions once for the group and control access by membership. New users then get access by being added to the group.",
+    "related": [
+      "core2-s-winsec-ad-ou-gpo",
+      "core2-s-winsec-ad-logon-script",
+      "core2-s-winsec-ad-home-folder",
+      "core2-s-winsec-ad-roaming"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-fault-share-read",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.5"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "clues": [
+      "the user gets Access denied when saving to a shared folder over the network",
+      "the user can open and read files in that folder",
+      "the NTFS permissions give the user Full Control",
+      "the Sharing tab shows the Everyone group with Read only"
+    ],
+    "answer": {
+      "cause": "The Read share permission is more restrictive than the NTFS permissions",
+      "action": "Give the user's group Change or Full Control in the share permissions"
+    },
+    "firstStep": "Compare the share permissions and the NTFS permissions for the user's groups",
+    "appliesWhen": "the share and NTFS permissions differ and the share level is the more restrictive one",
+    "explanation": "When both share and NTFS permissions apply over the network, the more restrictive of the two wins. Read at the share level limits the user to Read even with NTFS Full Control.",
+    "related": [
+      "core2-s-winsec-fault-deny",
+      "core2-s-winsec-fault-elevate",
+      "core2-s-winsec-fault-std-install",
+      "core2-s-winsec-fault-home-bitlocker",
+      "core2-s-winsec-fault-home-domain",
+      "core2-s-winsec-fault-domain-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-fault-deny",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.5"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "clues": [
+      "one user cannot open a project folder that the rest of the team uses",
+      "the user is a member of the team's group, which has Modify",
+      "the user is also in a contractors group",
+      "the Security tab shows a checked box in the Deny column for the contractors group"
+    ],
+    "answer": {
+      "cause": "An explicit Deny on one of the user's groups overrides the Allow from the other group",
+      "action": "Remove the Deny entry or take the user out of the contractors group"
+    },
+    "firstStep": "Check the folder's effective permissions for that user",
+    "appliesWhen": "an explicit Deny on a user or group is blocking access that another group allows",
+    "explanation": "NTFS permissions from several groups add up, but a Deny always wins over an Allow. Removing the Deny or the membership restores the access.",
+    "related": [
+      "core2-s-winsec-fault-share-read",
+      "core2-s-winsec-fault-elevate",
+      "core2-s-winsec-fault-std-install",
+      "core2-s-winsec-fault-home-bitlocker",
+      "core2-s-winsec-fault-home-domain",
+      "core2-s-winsec-fault-domain-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-fault-elevate",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.6",
+      "220-1202/2.2.7"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "clues": [
+      "sfc /scannow says it must be run by an administrator in a console session",
+      "the user's account is in the Administrators group",
+      "the command prompt was opened from Start in the normal way",
+      "no UAC prompt appeared when the window opened"
+    ],
+    "answer": {
+      "cause": "The command prompt is running with the standard user token, not elevated",
+      "action": "Open Command Prompt with Run as administrator and accept the UAC prompt"
+    },
+    "appliesWhen": "an administrator's tool was started without elevated rights",
+    "explanation": "UAC gives administrators a standard token until a program is started with Run as administrator. Only the elevated window has the administrative token that tools such as sfc need.",
+    "related": [
+      "core2-s-winsec-fault-share-read",
+      "core2-s-winsec-fault-deny",
+      "core2-s-winsec-fault-std-install",
+      "core2-s-winsec-fault-home-bitlocker",
+      "core2-s-winsec-fault-home-domain",
+      "core2-s-winsec-fault-domain-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-fault-std-install",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.6"
+    ],
+    "settings": [
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "clues": [
+      "the user cannot install a new PDF editor",
+      "a prompt asks for an administrator's user name and password",
+      "the user's account is only in the Users group",
+      "other users with IT accounts can install it"
+    ],
+    "answer": {
+      "cause": "The user has a standard account, which cannot install software",
+      "action": "Have an administrator enter credentials at the prompt or install the program"
+    },
+    "firstStep": "Check which group the user's account belongs to",
+    "appliesWhen": "a standard user tries to do an administrative task such as installing software",
+    "explanation": "By default, standard users cannot install software or make system-wide changes. UAC asks for administrator credentials, so an administrator must approve or do the install.",
+    "related": [
+      "core2-s-winsec-fault-share-read",
+      "core2-s-winsec-fault-deny",
+      "core2-s-winsec-fault-elevate",
+      "core2-s-winsec-fault-home-bitlocker",
+      "core2-s-winsec-fault-home-domain",
+      "core2-s-winsec-fault-domain-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "core2-s-winsec-fault-home-bitlocker",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.8"
+    ],
+    "settings": [
+      "home-office",
+      "retail"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "clues": [
+      "the owner wants to encrypt the whole internal drive",
+      "the laptop has a TPM 2.0 chip",
+      "the drive encryption applet is missing from Control Panel",
+      "the System > About page shows Windows 11 Home"
+    ],
+    "answer": {
+      "cause": "Windows 11 Home does not include BitLocker",
+      "action": "Upgrade the laptop to Windows 11 Pro and then turn on BitLocker"
+    },
+    "firstStep": "Check the Windows edition in System > About",
+    "appliesWhen": "the Windows edition does not include the needed security feature",
+    "explanation": "BitLocker is only in editions such as Pro, Pro for Workstations, Enterprise, and Education. Upgrading to Pro adds it.",
+    "related": [
+      "core2-s-winsec-fault-share-read",
+      "core2-s-winsec-fault-deny",
+      "core2-s-winsec-fault-elevate",
+      "core2-s-winsec-fault-std-install",
+      "core2-s-winsec-fault-home-domain",
+      "core2-s-winsec-fault-domain-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter), Core 2 – Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-winsec-fault-home-domain",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "clues": [
+      "the option to join a local Active Directory domain is not offered",
+      "other company laptops join the domain without trouble",
+      "the laptop was bought at a retail store",
+      "the domain name and an admin account are correct"
+    ],
+    "answer": {
+      "cause": "The laptop runs Windows Home, which cannot join an Active Directory domain",
+      "action": "Upgrade the laptop to Windows Pro and then join it to the domain"
+    },
+    "firstStep": "Check the Windows edition in System > About",
+    "appliesWhen": "the computer runs an edition of Windows that cannot be domain joined",
+    "explanation": "No Home edition of Windows can connect to Active Directory. An edition such as Pro or Enterprise is needed before the PC can join the domain.",
+    "related": [
+      "core2-s-winsec-fault-share-read",
+      "core2-s-winsec-fault-deny",
+      "core2-s-winsec-fault-elevate",
+      "core2-s-winsec-fault-std-install",
+      "core2-s-winsec-fault-home-bitlocker",
+      "core2-s-winsec-fault-domain-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "core2-s-winsec-fault-domain-dns",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "topics": [
+      "220-1202/2.2.11"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "clues": [
+      "joining the domain fails with a message that the domain controller cannot be contacted",
+      "the PC can browse the Internet",
+      "ipconfig shows a public DNS server address",
+      "the domain name was typed correctly"
+    ],
+    "answer": {
+      "cause": "The PC is using a DNS server that cannot find the domain controller",
+      "action": "Set the PC's DNS server to the domain's DNS server and join again"
+    },
+    "firstStep": "Run ipconfig /all to check which DNS server the PC uses",
+    "appliesWhen": "the PC cannot locate the domain controller by name",
+    "explanation": "A PC finds the domain controller through the domain's DNS server. A public DNS server cannot answer for an internal domain, so the join fails until DNS points to the domain's server.",
+    "related": [
+      "core2-s-winsec-fault-share-read",
+      "core2-s-winsec-fault-deny",
+      "core2-s-winsec-fault-elevate",
+      "core2-s-winsec-fault-std-install",
+      "core2-s-winsec-fault-home-bitlocker",
+      "core2-s-winsec-fault-home-domain"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 38: Windows Networking"
+  },
+  {
+    "id": "core2-s-malware-proc-hijacker",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.1",
+      "220-1202/2.6.2",
+      "220-1202/2.6.3",
+      "220-1202/2.6.5",
+      "220-1202/2.6.6",
+      "220-1202/2.6.8",
+      "220-1202/2.6.9",
+      "220-1202/2.6.10"
+    ],
+    "settings": [
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "task": "removing a browser hijacker from a family PC that runs Windows 11 Home",
+    "steps": [
+      {
+        "do": "Confirm that the pop-ups and the changed home page come from malware",
+        "done": "confirmed that the pop-ups and the changed home page come from malware"
+      },
+      {
+        "do": "Disconnect the PC from the home network and the internet",
+        "done": "disconnected the PC from the home network and the internet"
+      },
+      {
+        "do": "Turn off System Restore and delete the old restore points",
+        "done": "turned off System Restore and deleted the old restore points"
+      },
+      {
+        "do": "Update the anti-malware software and its definitions",
+        "done": "updated the anti-malware software and its definitions"
+      },
+      {
+        "do": "Boot into Safe Mode and run a full scan and removal",
+        "done": "booted into Safe Mode and run a full scan and removal"
+      },
+      {
+        "do": "Schedule regular scans and turn on automatic updates",
+        "done": "scheduled regular scans and turned on automatic updates"
+      },
+      {
+        "do": "Turn System Restore back on and create a new restore point",
+        "done": "turned System Restore back on and created a new restore point"
+      },
+      {
+        "do": "Show the family how the hijacker got in and how to avoid it",
+        "done": "shown the family how the hijacker got in and how to avoid it"
+      }
+    ],
+    "explanation": "The SOHO malware removal procedure starts by verifying the symptoms and isolating the PC, then turns off System Restore so the infection cannot hide in a restore point. Remediation updates the tools before the scan, and the last steps protect the PC and teach the user.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-proc-ransomware-kiosk",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.1",
+      "220-1202/2.6.2",
+      "220-1202/2.6.3",
+      "220-1202/2.6.4",
+      "220-1202/2.6.7",
+      "220-1202/2.6.8",
+      "220-1202/2.6.9",
+      "220-1202/2.6.10"
+    ],
+    "settings": [
+      "retail"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "task": "cleaning a ransomware infection from a store's customer kiosk PC",
+    "steps": [
+      {
+        "do": "Verify that the ransom note and the locked files come from ransomware",
+        "done": "verified that the ransom note and the locked files come from ransomware"
+      },
+      {
+        "do": "Unplug the kiosk from the store network",
+        "done": "unplugged the kiosk from the store network"
+      },
+      {
+        "do": "Disable System Protection on the system drive",
+        "done": "disabled System Protection on the system drive"
+      },
+      {
+        "do": "Wipe the drive and reimage it from a known clean image",
+        "done": "wiped the drive and reimaged it from a known clean image"
+      },
+      {
+        "do": "Restore the kiosk's data files from the last clean backup",
+        "done": "restored the kiosk's data files from the last clean backup"
+      },
+      {
+        "do": "Schedule scans and install the latest updates",
+        "done": "scheduled scans and installed the latest updates"
+      },
+      {
+        "do": "Enable System Protection and create a restore point",
+        "done": "enabled System Protection and created a restore point"
+      },
+      {
+        "do": "Train the store staff to spot the attack that brought it in",
+        "done": "trained the store staff to spot the attack that brought it in"
+      }
+    ],
+    "explanation": "Ransomware spreads fast and encrypts files, so the kiosk is isolated as soon as the infection is confirmed. When the files cannot be recovered, the remediation is to remove the malware by reimaging and then restore the data from a backup.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-malware-proc-rootkit",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.1",
+      "220-1202/2.6.2",
+      "220-1202/2.6.3",
+      "220-1202/2.6.5",
+      "220-1202/2.6.6",
+      "220-1202/2.6.8",
+      "220-1202/2.6.9",
+      "220-1202/2.6.10"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "task": "removing a rootkit that hides from normal scans on a small-office PC",
+    "steps": [
+      {
+        "do": "Check the processes and network connections with Process Explorer and netstat",
+        "done": "checked the processes and network connections with Process Explorer and netstat"
+      },
+      {
+        "do": "Isolate the PC from the office network",
+        "done": "isolated the PC from the office network"
+      },
+      {
+        "do": "Disable System Restore on the PC",
+        "done": "disabled System Restore on the PC"
+      },
+      {
+        "do": "Download the newest definitions for the anti-malware tool",
+        "done": "downloaded the newest definitions for the anti-malware tool"
+      },
+      {
+        "do": "Scan the drive offline from a preinstallation environment",
+        "done": "scanned the drive offline from a preinstallation environment"
+      },
+      {
+        "do": "Set up scheduled scans and automatic updates",
+        "done": "set up scheduled scans and automatic updates"
+      },
+      {
+        "do": "Re-enable System Restore and make a new restore point",
+        "done": "re-enabled System Restore and made a new restore point"
+      },
+      {
+        "do": "Explain to the user what to avoid in the future",
+        "done": "explained to the user what to avoid in the future"
+      }
+    ],
+    "explanation": "A rootkit can hide while Windows runs, so the scan is done from outside the infected system, for example a Microsoft Defender Offline scan or a bootable preinstallation environment. The definitions are updated before that scan, and the protection and education steps come last.",
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-malware-proc-standard",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.1",
+      "220-1202/2.6.2",
+      "220-1202/2.6.3",
+      "220-1202/2.6.4",
+      "220-1202/2.6.8",
+      "220-1202/2.6.9",
+      "220-1202/2.6.10"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "task": "following the SOHO malware removal procedure on a Windows Home laptop",
+    "steps": [
+      {
+        "do": "Investigate and verify the malware symptoms",
+        "done": "investigated and verified the malware symptoms"
+      },
+      {
+        "do": "Quarantine the infected system",
+        "done": "quarantined the infected system"
+      },
+      {
+        "do": "Disable System Restore",
+        "done": "disabled System Restore"
+      },
+      {
+        "do": "Remediate the infected system",
+        "done": "remediated the infected system"
+      },
+      {
+        "do": "Schedule scans and run updates",
+        "done": "scheduled scans and run updates"
+      },
+      {
+        "do": "Enable System Restore and create a restore point",
+        "done": "enabled System Restore and created a restore point"
+      },
+      {
+        "do": "Educate the end user",
+        "done": "educated the end user"
+      }
+    ],
+    "explanation": "CompTIA's malware removal procedure is done in a fixed order: verify, quarantine, disable System Restore, remediate, schedule scans and updates, enable System Restore with a new restore point, and educate the user. Remediation covers updating the tools, scanning and removing, and reimaging as a last resort.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-proc-spyware-remediate",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.4",
+      "220-1202/2.6.5",
+      "220-1202/2.6.6",
+      "220-1202/2.6.7",
+      "220-1202/2.6.8"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "task": "remediating a spyware infection on a laptop that is already quarantined with System Restore off",
+    "steps": [
+      {
+        "do": "Update the anti-malware program and its definitions",
+        "done": "updated the anti-malware program and its definitions"
+      },
+      {
+        "do": "Run a full scan and removal in Safe Mode",
+        "done": "run a full scan and removal in Safe Mode"
+      },
+      {
+        "do": "Run an offline scan from a preinstallation environment for anything left",
+        "done": "run an offline scan from a preinstallation environment for anything left"
+      },
+      {
+        "do": "Reinstall Windows from a clean image if the spyware still returns",
+        "done": "reinstalled Windows from a clean image after the spyware returned"
+      },
+      {
+        "do": "Schedule regular scans and run the latest updates",
+        "done": "scheduled regular scans and run the latest updates"
+      }
+    ],
+    "explanation": "Remediation starts with current definitions, then scans in Safe Mode or a preinstallation environment so the malware is less active. Reimaging or reinstalling is the last resort, and scans and updates are scheduled once the system is clean.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-proc-cryptominer",
+    "kind": "procedure",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.1",
+      "220-1202/2.6.2",
+      "220-1202/2.6.3",
+      "220-1202/2.6.5",
+      "220-1202/2.6.6",
+      "220-1202/2.6.9",
+      "220-1202/2.6.10"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "task": "removing a cryptominer from a slow reception PC that runs Windows 11 Home",
+    "steps": [
+      {
+        "do": "Look for the unknown process that keeps the CPU near full use",
+        "done": "looked for the unknown process that keeps the CPU near full use"
+      },
+      {
+        "do": "Disconnect the PC from the wired and wireless networks",
+        "done": "disconnected the PC from the wired and wireless networks"
+      },
+      {
+        "do": "Turn off System Protection and delete its restore points",
+        "done": "turned off System Protection and deleted its restore points"
+      },
+      {
+        "do": "Update the anti-malware definitions",
+        "done": "updated the anti-malware definitions"
+      },
+      {
+        "do": "Scan and remove the miner in Safe Mode",
+        "done": "scanned and removed the miner in Safe Mode"
+      },
+      {
+        "do": "Turn System Protection on and create a restore point",
+        "done": "turned System Protection on and created a restore point"
+      },
+      {
+        "do": "Teach the receptionist how the miner was downloaded",
+        "done": "taught the receptionist how the miner was downloaded"
+      }
+    ],
+    "explanation": "The technician first verifies that malware causes the slowdown, then isolates the PC and turns off System Protection before any cleanup. The scan comes after the definitions are updated, and a new restore point and user education close the job.",
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-disable-restore",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.3"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "make sure the infection cannot come back from a saved snapshot during the cleanup",
+    "itemType": "action",
+    "clues": [
+      "the laptop runs Windows 11 Home",
+      "the malware is confirmed and the laptop is off the network",
+      "the cleanup has not started yet",
+      "attackers often turn System Protection on to keep a foothold"
+    ],
+    "answer": {
+      "item": "Disable System Restore"
+    },
+    "appliesWhen": "the PC is quarantined and the cleanup is about to start, so old restore points must not keep the malware",
+    "explanation": "Restore points made while the PC was infected can bring the malware back. Turning System Restore off and deleting the points comes after quarantine and before remediation.",
+    "related": [
+      "core2-s-malware-quarantine",
+      "core2-s-malware-update-defs",
+      "core2-s-malware-restore-point",
+      "core2-s-malware-safe-mode"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-quarantine",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "keep a confirmed infection from reaching the other PCs and the shared drives",
+    "itemType": "action",
+    "clues": [
+      "the antivirus has just confirmed a worm on the PC",
+      "the PC maps two shared folders on the file server",
+      "the cleanup will take most of the afternoon"
+    ],
+    "answer": {
+      "item": "Disconnect the PC from the network"
+    },
+    "appliesWhen": "an infection is confirmed and it could spread to other systems",
+    "explanation": "Quarantine comes right after the symptoms are verified. Removing the network connection stops the malware from spreading or sending data out.",
+    "related": [
+      "core2-s-malware-disable-restore",
+      "core2-s-malware-verify",
+      "core2-s-malware-educate",
+      "core2-s-malware-schedule"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-safe-mode",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.6"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "run a removal scan on a PC whose malware closes the scanner as soon as it starts in normal Windows",
+    "itemType": "action",
+    "clues": [
+      "the anti-malware definitions were updated a minute ago",
+      "the PC still boots to the Windows desktop",
+      "the scanner closes a few seconds after it opens"
+    ],
+    "answer": {
+      "item": "Scan in Safe Mode"
+    },
+    "appliesWhen": "the malware stops the scanner while Windows runs normally but Windows still boots",
+    "explanation": "Safe Mode loads only the basic drivers and services, so most malware does not start with it. The scanner can then run and remove the files.",
+    "related": [
+      "core2-s-malware-reimage",
+      "core2-s-malware-update-defs",
+      "core2-s-malware-disable-restore",
+      "core2-s-malware-schedule"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-offline-scan",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.6"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "scan a drive whose malware loads before Windows and hides its own files",
+    "itemType": "action",
+    "clues": [
+      "scans inside Windows report no threats",
+      "netstat shows a process that calls out to an unknown server",
+      "the infection is believed to be a rootkit"
+    ],
+    "answer": {
+      "item": "Scan offline from a preinstallation environment"
+    },
+    "appliesWhen": "the malware hides from any scan that runs inside the infected Windows",
+    "explanation": "A preinstallation environment or the Microsoft Defender Offline scan boots outside the installed Windows. The rootkit is not running then, so the scanner can see its files.",
+    "related": [
+      "core2-s-malware-reimage",
+      "core2-s-malware-verify",
+      "core2-s-malware-update-defs",
+      "core2-s-malware-quarantine"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-malware-update-defs",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.5"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "give the scanner the best chance to detect a threat that was first seen this week",
+    "itemType": "action",
+    "clues": [
+      "the PC has been off the internet for a month",
+      "the threat is a new variant",
+      "the scan is about to start"
+    ],
+    "answer": {
+      "item": "Update the anti-malware definitions"
+    },
+    "appliesWhen": "the scanner's signatures are old and the scan has not been run yet",
+    "explanation": "A scanner can only find what its definitions describe. Updating the anti-malware software is the first part of remediation, before the scan and removal.",
+    "related": [
+      "core2-s-malware-safe-mode",
+      "core2-s-malware-schedule",
+      "core2-s-malware-disable-restore",
+      "core2-s-malware-offline-scan"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-reimage",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.7"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "return a PC to a known clean state after every removal tool has failed",
+    "itemType": "action",
+    "clues": [
+      "scans in Safe Mode and offline scans did not remove the infection",
+      "the malware comes back after each reboot",
+      "the user's files are already backed up"
+    ],
+    "answer": {
+      "item": "Reimage the drive and reinstall Windows"
+    },
+    "appliesWhen": "all scan and removal methods have failed and the infection persists",
+    "explanation": "Reimaging or reinstalling is the last resort of remediation. It removes even persistent malware because the drive starts again from a clean image.",
+    "related": [
+      "core2-s-malware-safe-mode",
+      "core2-s-malware-offline-scan",
+      "core2-s-malware-restore-point",
+      "core2-s-malware-schedule"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-restore-point",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.9"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "give a newly cleaned Windows Home PC a safe point to roll back to after future problems",
+    "itemType": "action",
+    "clues": [
+      "the last scan found no threats",
+      "scheduled scans and updates are already set up",
+      "the restore feature is still turned off from the cleanup"
+    ],
+    "answer": {
+      "item": "Enable System Restore and create a restore point"
+    },
+    "appliesWhen": "the system is clean and there is no fallback point yet",
+    "explanation": "Once the system is clean, System Restore is turned back on and a new restore point is made. It is the step just before educating the user.",
+    "related": [
+      "core2-s-malware-disable-restore",
+      "core2-s-malware-schedule",
+      "core2-s-malware-educate",
+      "core2-s-malware-reimage"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-malware-educate",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.10"
+    ],
+    "settings": [
+      "home-office",
+      "school"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "lower the chance that the user lets the same threat in again",
+    "itemType": "action",
+    "clues": [
+      "the infection came from an attachment in a fake invoice email",
+      "the PC is clean and protected again",
+      "every technical step of the cleanup is finished"
+    ],
+    "answer": {
+      "item": "Educate the user about the threat"
+    },
+    "appliesWhen": "the technical work is done and the user's actions caused the infection",
+    "explanation": "User education is the final step of the procedure. The user learns what led to the infection and what to look for next time.",
+    "related": [
+      "core2-s-malware-schedule",
+      "core2-s-malware-restore-point",
+      "core2-s-malware-quarantine",
+      "core2-s-malware-verify"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-malware-schedule",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.8"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "keep a cleaned home PC protected after the technician leaves",
+    "itemType": "action",
+    "clues": [
+      "the malware has just been removed",
+      "the user never runs scans by hand",
+      "the operating system has missed several patches"
+    ],
+    "answer": {
+      "item": "Schedule scans and turn on automatic updates"
+    },
+    "appliesWhen": "the malware is gone and the PC needs ongoing protection",
+    "explanation": "Regular scans and updates lower the chance of a new infection. Scans can be scheduled in the anti-malware program or in Task Scheduler.",
+    "related": [
+      "core2-s-malware-update-defs",
+      "core2-s-malware-restore-point",
+      "core2-s-malware-educate",
+      "core2-s-malware-reimage"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-malware-verify",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.6"
+    ],
+    "topics": [
+      "220-1202/2.6.1"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "be sure that a slow PC is really infected before making any major changes",
+    "itemType": "action",
+    "clues": [
+      "a process named regsvr32.exe is very busy",
+      "the user only says the PC feels slow",
+      "no antivirus alert has appeared"
+    ],
+    "answer": {
+      "item": "Investigate the symptoms with Process Explorer and netstat"
+    },
+    "appliesWhen": "malware is only suspected and nothing has been confirmed yet",
+    "explanation": "The first step is to investigate and verify that malware causes the symptoms. Process Explorer and netstat -nab show which processes run and which ones open network connections.",
+    "related": [
+      "core2-s-malware-quarantine",
+      "core2-s-malware-offline-scan",
+      "core2-s-malware-educate",
+      "core2-s-malware-disable-restore"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-harden-bitlocker",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "keep the files on the sales team's laptops unreadable if a laptop is stolen",
+    "itemType": "security measure",
+    "clues": [
+      "the laptops run Windows 11 Pro",
+      "the laptops have a TPM chip",
+      "the whole drive must be protected, not only some folders"
+    ],
+    "answer": {
+      "item": "Turning on BitLocker drive encryption"
+    },
+    "appliesWhen": "the data on a Windows drive must stay protected if the device is lost or stolen",
+    "explanation": "BitLocker encrypts the whole volume, which is data-at-rest encryption. A thief who removes the drive cannot read the files without the key.",
+    "related": [
+      "core2-s-harden-cable-lock",
+      "core2-s-harden-bios-system",
+      "core2-s-harden-screensaver-lock",
+      "core2-s-harden-password-manager"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-pw-length",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "stop users from choosing short passwords that are easy to crack",
+    "itemType": "Local Security Policy setting",
+    "clues": [
+      "the computers are not in a domain",
+      "current NIST guidance puts length ahead of complexity",
+      "many users now choose six-character passwords"
+    ],
+    "answer": {
+      "item": "Minimum password length"
+    },
+    "appliesWhen": "every new password must have at least a set number of characters",
+    "explanation": "Minimum password length sets how many characters every password must have. Current NIST guidance says longer passwords protect better than forced character rules.",
+    "related": [
+      "core2-s-harden-pw-history",
+      "core2-s-harden-pw-max-age",
+      "core2-s-harden-lockout",
+      "core2-s-harden-pw-complexity"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-pw-history",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "stop users from going back to one of their last few passwords when a change is required",
+    "itemType": "Local Security Policy setting",
+    "clues": [
+      "users switch between two favorite passwords",
+      "the policy must remember the last five passwords",
+      "the minimum password age is set above zero days"
+    ],
+    "answer": {
+      "item": "Enforce password history"
+    },
+    "appliesWhen": "users must not use their recent passwords again",
+    "explanation": "Enforce password history keeps a list of earlier passwords that cannot be used again. It only works when the minimum password age is above 0 days.",
+    "related": [
+      "core2-s-harden-pw-length",
+      "core2-s-harden-pw-max-age",
+      "core2-s-harden-pw-complexity",
+      "core2-s-harden-lockout"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-pw-max-age",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.2"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "make each password stop working after a set number of days",
+    "itemType": "Local Security Policy setting",
+    "clues": [
+      "the clinic's policy requires password expiration",
+      "the PCs are standalone and not in a domain",
+      "the default is 42 days"
+    ],
+    "answer": {
+      "item": "Maximum password age"
+    },
+    "appliesWhen": "passwords must expire and be changed after a fixed time",
+    "explanation": "Maximum password age sets how long a password can be used before it must be changed, which is password expiration. NIST now suggests changes only after a suspected breach, but the setting is still used.",
+    "related": [
+      "core2-s-harden-pw-length",
+      "core2-s-harden-pw-history",
+      "core2-s-harden-lockout",
+      "core2-s-harden-pw-complexity"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-pw-complexity",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "require passwords that mix uppercase letters, lowercase letters, digits, and symbols",
+    "itemType": "Local Security Policy setting",
+    "clues": [
+      "users choose passwords made only of lowercase words",
+      "the auditor wants three of four character types",
+      "the setting is under Account Policies"
+    ],
+    "answer": {
+      "item": "Password must meet complexity requirements"
+    },
+    "appliesWhen": "passwords must contain several different character types",
+    "explanation": "This policy makes each password meet three of four character groups: uppercase, lowercase, digits, and special characters. It is set in secpol.msc under Account Policies and Password Policy.",
+    "related": [
+      "core2-s-harden-pw-length",
+      "core2-s-harden-pw-history",
+      "core2-s-harden-pw-max-age",
+      "core2-s-harden-lockout"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-lockout",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.5"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "stop someone from guessing a user's password with many tries in a row",
+    "itemType": "Local Security Policy setting",
+    "clues": [
+      "the event log shows hundreds of failed sign-ins on one account",
+      "the account should be blocked for 30 minutes after five bad tries",
+      "the setting is under Account Policies"
+    ],
+    "answer": {
+      "item": "Account lockout threshold"
+    },
+    "appliesWhen": "an account must be blocked after a number of invalid sign-ins",
+    "explanation": "The account lockout threshold locks the account after a set number of invalid logons. The lockout duration and the reset counter are set in the same Account Lockout Policy.",
+    "related": [
+      "core2-s-harden-pw-length",
+      "core2-s-harden-pw-history",
+      "core2-s-harden-pw-max-age",
+      "core2-s-harden-pw-complexity"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-bios-supervisor",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.3"
+    ],
+    "settings": [
+      "school",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "stop students from changing the boot order to start the lab PCs from their own USB drives",
+    "itemType": "security measure",
+    "clues": [
+      "students can open the firmware setup with a key press at startup",
+      "the PCs must still start Windows without a password",
+      "the change must hold even if Windows is reinstalled"
+    ],
+    "answer": {
+      "item": "Setting a BIOS/UEFI supervisor password"
+    },
+    "appliesWhen": "the firmware setup itself must be protected from changes",
+    "explanation": "A supervisor password protects the BIOS/UEFI setup utility, so settings such as the boot order cannot be changed without it. A system password would instead block every startup.",
+    "related": [
+      "core2-s-harden-bios-system",
+      "core2-s-harden-disable-guest",
+      "core2-s-harden-standard-user",
+      "core2-s-harden-autoplay"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-bios-system",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.3"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "make a password necessary before a laptop even starts to load the operating system",
+    "itemType": "security measure",
+    "clues": [
+      "the laptops carry engineering drawings",
+      "an attacker could boot from other media",
+      "the prompt must appear before Windows starts"
+    ],
+    "answer": {
+      "item": "Setting a BIOS/UEFI system password"
+    },
+    "appliesWhen": "nobody may boot the computer at all without a password",
+    "explanation": "The BIOS/UEFI system password is asked for at startup, before any operating system loads. It stops unauthorized boots, while a supervisor password only protects the setup utility.",
+    "related": [
+      "core2-s-harden-bios-supervisor",
+      "core2-s-harden-bitlocker",
+      "core2-s-harden-screensaver-lock",
+      "core2-s-harden-cable-lock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-screensaver-lock",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.4"
+    ],
+    "settings": [
+      "clinic",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "make sure an unattended PC asks for a password after a few idle minutes",
+    "itemType": "security measure",
+    "clues": [
+      "staff often walk away without locking the PC",
+      "patient records are open on the screen",
+      "the setting must lock the PC even when the user forgets"
+    ],
+    "answer": {
+      "item": "Enabling a password-protected screen saver"
+    },
+    "appliesWhen": "a PC must lock itself after it has been idle for a while",
+    "explanation": "With On resume, display logon screen checked, the screen saver locks the session after the idle time. The user must sign in again when coming back.",
+    "related": [
+      "core2-s-harden-cable-lock",
+      "core2-s-harden-logon-hours",
+      "core2-s-harden-password-manager",
+      "core2-s-harden-bitlocker"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-cable-lock",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.4"
+    ],
+    "settings": [
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "windows-laptop"
+    ],
+    "need": "keep a laptop at a busy front desk from being carried away",
+    "itemType": "security measure",
+    "clues": [
+      "the laptop sits on an open counter all day",
+      "the desk has a solid anchor point",
+      "the laptop has a security slot on its side"
+    ],
+    "answer": {
+      "item": "Securing the laptop with a cable lock"
+    },
+    "appliesWhen": "critical hardware must be physically fastened so it cannot be taken",
+    "explanation": "Securing critical hardware is an end-user best practice. A cable lock ties the laptop to the desk, while encryption only protects the data after a theft.",
+    "related": [
+      "core2-s-harden-screensaver-lock",
+      "core2-s-harden-bitlocker",
+      "core2-s-harden-password-manager",
+      "core2-s-harden-bios-system"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-password-manager",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.4",
+      "220-1202/2.7.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "keep a different long password for each of 40 work websites without writing them down",
+    "itemType": "security measure",
+    "clues": [
+      "the user keeps passwords on a sticky note under the keyboard",
+      "the user now reuses one password on many sites",
+      "the passwords must sync to the user's phone"
+    ],
+    "answer": {
+      "item": "Using a password manager"
+    },
+    "appliesWhen": "many unique, strong passwords must be stored and generated safely",
+    "explanation": "A password manager such as Bitwarden or 1Password generates and stores a unique strong password for every account. It removes the need to write passwords down or reuse them.",
+    "related": [
+      "core2-s-harden-screensaver-lock",
+      "core2-s-harden-cable-lock",
+      "core2-s-harden-bitlocker",
+      "core2-s-harden-standard-user"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-standard-user",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "keep an employee from installing software and changing system settings on a shared PC",
+    "itemType": "security measure",
+    "clues": [
+      "the employee's account is in the Administrators group",
+      "the employee only needs the office apps",
+      "the company follows least privilege"
+    ],
+    "answer": {
+      "item": "Making the account a standard user"
+    },
+    "appliesWhen": "a user has more permissions than the job needs",
+    "explanation": "Restricting user permissions follows the principle of least privilege. A standard user cannot install software or change system settings without an administrator.",
+    "related": [
+      "core2-s-harden-disable-guest",
+      "core2-s-harden-logon-hours",
+      "core2-s-harden-account-expiration",
+      "core2-s-harden-rename-admin"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-logon-hours",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.5"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "allow a domain user to sign in only from 8 in the morning to 6 in the evening on weekdays",
+    "itemType": "security measure",
+    "clues": [
+      "the user works a fixed day shift",
+      "after-hours sign-ins to this account have been seen",
+      "the computers are joined to a Windows domain"
+    ],
+    "answer": {
+      "item": "Setting logon hours on the account"
+    },
+    "appliesWhen": "a user may sign in only at certain hours or days",
+    "explanation": "In a domain, the Logon Hours button on the account's Account tab sets the hours when the user may log on. Sign-ins outside those hours are refused.",
+    "related": [
+      "core2-s-harden-account-expiration",
+      "core2-s-harden-standard-user",
+      "core2-s-harden-disable-guest",
+      "core2-s-harden-rename-admin"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-account-expiration",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "make a contractor's account stop working on the last day of a three-month contract",
+    "itemType": "security measure",
+    "clues": [
+      "the contract ends on a known date",
+      "the help desk might forget to disable the account by hand",
+      "the PC runs Windows 11 Pro"
+    ],
+    "answer": {
+      "item": "Setting an account expiration date"
+    },
+    "appliesWhen": "a temporary account must turn off by itself on a known date",
+    "explanation": "An account expiration date disables the account automatically on the chosen day. It is set on the account's Account tab, for example in lusrmgr.msc on Windows 11 Pro.",
+    "related": [
+      "core2-s-harden-logon-hours",
+      "core2-s-harden-disable-guest",
+      "core2-s-harden-standard-user",
+      "core2-s-harden-rename-admin"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-disable-guest",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.5"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "make sure no one can sign in to the PC without a personal account",
+    "itemType": "security measure",
+    "clues": [
+      "an audit found a built-in account that needs no password",
+      "built-in accounts cannot be deleted",
+      "visitors sometimes use the front-office PC"
+    ],
+    "answer": {
+      "item": "Disabling the Guest account"
+    },
+    "appliesWhen": "a built-in account lets people sign in without their own credentials",
+    "explanation": "The Guest account and other unneeded accounts should be disabled in Local Users and Groups. Built-in accounts cannot be deleted, so they are disabled instead.",
+    "related": [
+      "core2-s-harden-standard-user",
+      "core2-s-harden-rename-admin",
+      "core2-s-harden-account-expiration",
+      "core2-s-harden-logon-hours"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-rename-admin",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "make it harder for an attacker to guess the name and password of the built-in full-control account",
+    "itemType": "security measure",
+    "clues": [
+      "attack tools try the default account name first",
+      "the built-in account has a weak password",
+      "the account must stay available for emergencies"
+    ],
+    "answer": {
+      "item": "Renaming the Administrator account and giving it a strong password"
+    },
+    "appliesWhen": "the default administrator account keeps its well-known name or password",
+    "explanation": "Renaming the default Administrator account and setting a strong password removes the name and password attackers expect. It is done in Computer Management under Local Users and Groups.",
+    "related": [
+      "core2-s-harden-disable-guest",
+      "core2-s-harden-standard-user",
+      "core2-s-harden-account-expiration",
+      "core2-s-harden-bios-supervisor"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-autoplay",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.7"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "stop programs on USB drives and discs from starting by themselves when they are inserted",
+    "itemType": "security measure",
+    "clues": [
+      "users bring in USB sticks from home",
+      "the media must be scanned before anything runs",
+      "the setting is under Bluetooth & devices in Settings or in gpedit.msc"
+    ],
+    "answer": {
+      "item": "Turning off AutoPlay"
+    },
+    "appliesWhen": "removable media must not launch anything until it is scanned",
+    "explanation": "With AutoPlay off, removable media cannot start its AutoRun program, so embedded malware has no chance to run before a scan. The Group Policy setting is named Turn off AutoPlay.",
+    "related": [
+      "core2-s-harden-services",
+      "core2-s-harden-standard-user",
+      "core2-s-harden-bios-supervisor",
+      "core2-s-harden-screensaver-lock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-harden-services",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.7"
+    ],
+    "topics": [
+      "220-1202/2.7.8"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "shrink the attack surface of a PC by stopping background features it never uses",
+    "itemType": "security measure",
+    "clues": [
+      "the PC runs several services nobody needs",
+      "each extra service is a possible way in",
+      "the change is made in services.msc"
+    ],
+    "answer": {
+      "item": "Disabling unused services"
+    },
+    "appliesWhen": "background services run that the computer does not need",
+    "explanation": "Setting unneeded services to Disabled reduces the attack surface and frees memory and CPU. Unknown services should be researched first, because some are critical.",
+    "related": [
+      "core2-s-harden-autoplay",
+      "core2-s-harden-standard-user",
+      "core2-s-harden-rename-admin",
+      "core2-s-harden-disable-guest"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 48: Workstation Best Practices"
+  },
+  {
+    "id": "core2-s-mobile-encryption",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.1"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "need": "make the data on a lost phone unreadable even if the thief gets past the lock screen",
+    "itemType": "security measure",
+    "clues": [
+      "the phone may be out of range when a wipe is sent",
+      "the phones hold patient notes",
+      "the data must be protected while it is stored"
+    ],
+    "answer": {
+      "item": "Turning on full device encryption"
+    },
+    "appliesWhen": "stored data must stay unreadable without the correct passcode",
+    "explanation": "Device encryption makes the stored data unreadable without the correct passcode. It still protects the data when a remote wipe cannot reach the device.",
+    "related": [
+      "core2-s-mobile-screen-lock",
+      "core2-s-mobile-locator",
+      "core2-s-mobile-remote-backup",
+      "core2-s-mobile-antimalware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-screen-lock",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.1"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "let a user open the phone quickly with a finger while keeping it locked to anyone else",
+    "itemType": "security measure",
+    "clues": [
+      "the user keeps the phone unlocked because typing a code is slow",
+      "the phone has a fingerprint sensor",
+      "a basic swipe gives no protection"
+    ],
+    "answer": {
+      "item": "Setting a biometric screen lock"
+    },
+    "appliesWhen": "the device needs a fast unlock method that only its owner can use",
+    "explanation": "A fingerprint or facial recognition lock is based on something the user is. It is quick to use and far stronger than a swipe, which has no security.",
+    "related": [
+      "core2-s-mobile-lock-timeout",
+      "core2-s-mobile-encryption",
+      "core2-s-mobile-failed-wipe",
+      "core2-s-mobile-locator"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-lock-timeout",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.1"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "need": "make the phones lock themselves as soon as possible after they are put down",
+    "itemType": "security measure",
+    "clues": [
+      "the phones already require a PIN",
+      "the data on them is confidential",
+      "the phones stay unlocked for five minutes when idle"
+    ],
+    "answer": {
+      "item": "Setting the screen timeout to its lowest value"
+    },
+    "appliesWhen": "an idle device must lock itself very quickly",
+    "explanation": "The screen timeout sets how long the device waits before it locks. In a confidential setting it can be set to the lowest value, such as 10 or 15 seconds.",
+    "related": [
+      "core2-s-mobile-screen-lock",
+      "core2-s-mobile-failed-wipe",
+      "core2-s-mobile-encryption",
+      "core2-s-mobile-os-update"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-config-profile",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.1",
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "iphone",
+      "tablet"
+    ],
+    "need": "apply the same passcode rules, VPN, and app limits to 60 new iPads at once",
+    "itemType": "security measure",
+    "clues": [
+      "the devices are already enrolled in the management server",
+      "every device must get identical settings",
+      "the settings must be built once as a template"
+    ],
+    "answer": {
+      "item": "Deploying a configuration profile"
+    },
+    "appliesWhen": "one set of security settings must be pushed to many enrolled devices",
+    "explanation": "A configuration profile is a set of rules and settings that MDM pushes to the devices. It can restrict app installs, require strong passwords, and set up VPN access.",
+    "related": [
+      "core2-s-mobile-os-update",
+      "core2-s-mobile-antimalware",
+      "core2-s-mobile-content-filter",
+      "core2-s-mobile-remote-backup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-mobile-os-update",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "close a security hole that the phone's vendor has just patched",
+    "itemType": "security measure",
+    "clues": [
+      "a notification says a security patch is ready",
+      "the phone is several versions behind",
+      "the hole is in the operating system itself"
+    ],
+    "answer": {
+      "item": "Installing the latest OS update"
+    },
+    "appliesWhen": "the operating system has a known flaw that a vendor patch fixes",
+    "explanation": "Patch management keeps the mobile OS current, and security patches make up a large part of system updates. On iOS they are under Settings, General, Software Update.",
+    "related": [
+      "core2-s-mobile-app-update",
+      "core2-s-mobile-antimalware",
+      "core2-s-mobile-config-profile",
+      "core2-s-mobile-content-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-app-update",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.2"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "fix a known flaw in the banking app the user installed last year",
+    "itemType": "security measure",
+    "clues": [
+      "the store shows pending updates for several apps",
+      "the phone's operating system is current",
+      "automatic updates are turned off in the store"
+    ],
+    "answer": {
+      "item": "Updating the apps from the app store"
+    },
+    "appliesWhen": "an installed app is out of date and has a known flaw",
+    "explanation": "An out-of-date app can be a serious security risk even on a current OS. Apps are updated from the App Store or Google Play, and both can update apps automatically.",
+    "related": [
+      "core2-s-mobile-os-update",
+      "core2-s-mobile-antimalware",
+      "core2-s-mobile-content-filter",
+      "core2-s-mobile-config-profile"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-antimalware",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.3"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "android-phone",
+      "tablet"
+    ],
+    "need": "detect and block malicious apps on Android phones the way it is done on the office PCs",
+    "itemType": "security measure",
+    "clues": [
+      "the users sometimes sideload apps",
+      "the phone's OS updates are already installed",
+      "updates alone do not target viruses"
+    ],
+    "answer": {
+      "item": "Installing mobile endpoint security software"
+    },
+    "appliesWhen": "a device needs protection that finds and removes viruses and other malware",
+    "explanation": "Endpoint security software for mobile devices includes antivirus and anti-malware apps. Updates fix flaws, but they are not made to fight malware.",
+    "related": [
+      "core2-s-mobile-content-filter",
+      "core2-s-mobile-os-update",
+      "core2-s-mobile-app-update",
+      "core2-s-mobile-encryption"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-content-filter",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.3"
+    ],
+    "settings": [
+      "school"
+    ],
+    "devices": [
+      "tablet"
+    ],
+    "need": "keep students' tablets from opening adult and gambling websites",
+    "itemType": "security measure",
+    "clues": [
+      "the tablets are used by young students",
+      "the school must block certain web categories",
+      "the tablets already have current updates"
+    ],
+    "answer": {
+      "item": "Setting up content filtering"
+    },
+    "appliesWhen": "certain kinds of web content must be blocked on the device",
+    "explanation": "Content filtering is part of mobile endpoint security software. It blocks websites by category or by list.",
+    "related": [
+      "core2-s-mobile-antimalware",
+      "core2-s-mobile-app-update",
+      "core2-s-mobile-os-update",
+      "core2-s-mobile-config-profile"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-locator",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.4"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "see on a map where a phone was left after a business trip",
+    "itemType": "security measure",
+    "clues": [
+      "the phone has location services turned on",
+      "the user thinks it was left in a taxi",
+      "the user hopes to get the phone back with its data"
+    ],
+    "answer": {
+      "item": "Using a locator app such as Find My"
+    },
+    "appliesWhen": "a missing device must be tracked to find out where it is",
+    "explanation": "A locator app such as Google Find My Device or Apple Find My shows where the device is when its location service is on. The user can then decide whether to involve the police.",
+    "related": [
+      "core2-s-mobile-remote-wipe",
+      "core2-s-mobile-remote-backup",
+      "core2-s-mobile-encryption",
+      "core2-s-mobile-screen-lock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-remote-wipe",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.5"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "need": "make sure a stolen phone with client files can no longer give anyone those files",
+    "itemType": "security measure",
+    "clues": [
+      "the phone was taken from a car an hour ago",
+      "the phone is still connected to the cellular network",
+      "the files are backed up in the cloud",
+      "the user has no hope of getting it back"
+    ],
+    "answer": {
+      "item": "Sending a remote wipe command"
+    },
+    "appliesWhen": "a lost or stolen device still online must have its data erased from a distance",
+    "explanation": "A remote wipe deletes the contents of the device from another computer or an MDM server. It works only while the device can reach the internet.",
+    "related": [
+      "core2-s-mobile-locator",
+      "core2-s-mobile-remote-backup",
+      "core2-s-mobile-failed-wipe",
+      "core2-s-mobile-screen-lock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-remote-backup",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.6"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "make sure the photos and settings on a phone can be restored to a new phone if it is lost",
+    "itemType": "security measure",
+    "clues": [
+      "the user has never connected the phone to a computer",
+      "the data should be copied regularly",
+      "a wipe would otherwise lose everything"
+    ],
+    "answer": {
+      "item": "Turning on cloud backup such as iCloud or Google One"
+    },
+    "appliesWhen": "the device's data must be copied regularly to a safe off-device location",
+    "explanation": "Remote backup apps such as iCloud and Google One copy data, photos, and settings to the cloud. The data can then be restored after a loss or a wipe.",
+    "related": [
+      "core2-s-mobile-locator",
+      "core2-s-mobile-remote-wipe",
+      "core2-s-mobile-encryption",
+      "core2-s-mobile-os-update"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-failed-wipe",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.7"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "iphone"
+    ],
+    "need": "erase the iPhone's data automatically if someone keeps guessing the passcode",
+    "itemType": "security measure",
+    "clues": [
+      "the phone is often used in public places",
+      "the data on it is sensitive",
+      "a recent backup is always kept in iCloud"
+    ],
+    "answer": {
+      "item": "Turning on the erase data option after 10 failed passcode attempts"
+    },
+    "appliesWhen": "the device must wipe itself after repeated wrong passcodes",
+    "explanation": "This failed log-in restriction wipes the local data after 10 wrong passcodes in a row. It suits users with sensitive data when a recent backup is always available.",
+    "related": [
+      "core2-s-mobile-lock-timeout",
+      "core2-s-mobile-screen-lock",
+      "core2-s-mobile-remote-backup",
+      "core2-s-mobile-locator"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-mobile-mdm",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "need": "push updates and security settings to 500 company phones from one console",
+    "itemType": "security measure",
+    "clues": [
+      "the phones are a mix of Android and iOS",
+      "the IT team must be able to lock or wipe any phone",
+      "the company has only two mobile admins"
+    ],
+    "answer": {
+      "item": "Mobile device management (MDM)"
+    },
+    "appliesWhen": "many mobile devices must be secured and managed from one central place",
+    "explanation": "MDM software secures, monitors, and manages mobile devices from a central server. It can push updates and settings to hundreds of devices at once.",
+    "related": [
+      "core2-s-mobile-remote-backup",
+      "core2-s-mobile-locator",
+      "core2-s-mobile-antimalware",
+      "core2-s-mobile-content-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-containerization",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "enterprise",
+      "office"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "let staff read work email on their own phones while keeping company data apart from their personal data",
+    "itemType": "security measure",
+    "clues": [
+      "the company allows bring your own device",
+      "employees worry about their privacy",
+      "company data must be removable when someone leaves"
+    ],
+    "answer": {
+      "item": "Separating work apps and data in a managed container"
+    },
+    "appliesWhen": "personal devices must keep work data separate from personal data",
+    "explanation": "In a BYOD setting, MDM can put the work apps and data in a separate container. The company can then remove its own data without touching the user's personal files.",
+    "related": [
+      "core2-s-mobile-locator",
+      "core2-s-mobile-failed-wipe",
+      "core2-s-mobile-lock-timeout",
+      "core2-s-mobile-remote-backup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-cope",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "give staff phones that the company owns and controls but that they may also use for personal calls",
+    "itemType": "device policy",
+    "clues": [
+      "the company wants full control of the hardware",
+      "staff should not have to carry two phones",
+      "the company will buy and prepare each phone"
+    ],
+    "answer": {
+      "item": "Corporate-owned, personally enabled (COPE) devices"
+    },
+    "appliesWhen": "the organization owns and prepares the device but allows personal use",
+    "explanation": "With COPE, the organization owns the device, prepares it for work, and then allows personal use, much like a company car. BYOD is the reverse: the employee owns the device.",
+    "related": [
+      "core2-s-mobile-byod",
+      "core2-s-mobile-cyod",
+      "core2-s-mobile-corporate-only"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-byod",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "let employees use the phones they already own for work to save the cost of new devices",
+    "itemType": "device policy",
+    "clues": [
+      "employees already carry their own smartphones",
+      "the company does not want to buy phones",
+      "a signed user agreement will set the rules"
+    ],
+    "answer": {
+      "item": "Bring your own device (BYOD)"
+    },
+    "appliesWhen": "employees supply their own devices and the company avoids buying them",
+    "explanation": "A BYOD policy lets staff use their own devices and sets minimum requirements such as OS, patches, and antivirus. MDM helps enforce those requirements.",
+    "related": [
+      "core2-s-mobile-cope",
+      "core2-s-mobile-cyod",
+      "core2-s-mobile-corporate-only"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-mobile-cyod",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "let staff pick their work phone from a short list of company-approved models",
+    "itemType": "device policy",
+    "clues": [
+      "the company buys the phones",
+      "staff want some say in the device they use",
+      "the IT team supports only three models"
+    ],
+    "answer": {
+      "item": "Choose your own device (CYOD)"
+    },
+    "appliesWhen": "users choose from a list of devices that the organization approves and provides",
+    "explanation": "With CYOD, users select a device from an approved list and the organization provides it. The BYOD, CYOD, or COPE policy should also say how company data is recovered when someone leaves.",
+    "related": [
+      "core2-s-mobile-cope",
+      "core2-s-mobile-byod",
+      "core2-s-mobile-corporate-only"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "core2-s-mobile-corporate-only",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "topics": [
+      "220-1202/2.8.8"
+    ],
+    "settings": [
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone"
+    ],
+    "need": "make sure the phones used for patient data are owned by the clinic and used for work only",
+    "itemType": "device policy",
+    "clues": [
+      "personal apps are not allowed on the devices",
+      "the clinic must track each device by GPS",
+      "staff must be told that the devices are tracked"
+    ],
+    "answer": {
+      "item": "Corporate-owned devices for work use only"
+    },
+    "appliesWhen": "the organization owns the device and personal use is not allowed",
+    "explanation": "Corporate-owned devices give the organization full control of the data and often let it track the device by GPS. Users must be told about the tracking policy.",
+    "related": [
+      "core2-s-mobile-cope",
+      "core2-s-mobile-byod",
+      "core2-s-mobile-cyod"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-default-password",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "make sure nobody can log in to a newly installed router with credentials published online",
+    "itemType": "security measure",
+    "clues": [
+      "the router still accepts the admin name and password printed in its manual",
+      "lists of factory logins for this model are easy to find on the Internet",
+      "this is the first change being made after unboxing the device",
+      "a separate user login on the device should also differ from the admin login"
+    ],
+    "answer": {
+      "item": "Change the default admin password"
+    },
+    "appliesWhen": "a device still uses the factory login that anyone can look up",
+    "explanation": "Factory credentials are widely published, so changing the admin password is the first step in securing any router. Renaming the admin account, where the router allows it, also blocks guessing against the known username.",
+    "related": [
+      "core2-s-soho-firmware",
+      "core2-s-soho-secure-mgmt",
+      "core2-s-soho-placement",
+      "core2-s-soho-ip-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-ip-filter",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "allow only a short list of known hosts to pass through the router and block every other address",
+    "itemType": "security measure",
+    "clues": [
+      "the office has only six computers, each with a fixed address",
+      "the owner wants a rule list that ends with an implicit deny",
+      "traffic from any address not on the list should be dropped",
+      "the rules are entered on the router, not on each computer"
+    ],
+    "answer": {
+      "item": "IP filtering"
+    },
+    "appliesWhen": "access must be limited to hosts with listed IP addresses",
+    "explanation": "IP filtering compares each packet's address with a rule list on the router and drops anything not explicitly allowed. It works best in a small network where each host has a known address.",
+    "related": [
+      "core2-s-soho-content-filter",
+      "core2-s-soho-disable-ports",
+      "core2-s-soho-default-password",
+      "core2-s-soho-screened-subnet"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-firmware",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "close known security holes in a router that sat in a warehouse for a year before it was installed",
+    "itemType": "security measure",
+    "clues": [
+      "the vendor has posted a newer release with security fixes",
+      "the change log lists vulnerabilities fixed since the device was built",
+      "the device has not yet been configured or put into service",
+      "the owner wants this checked again every month or so"
+    ],
+    "answer": {
+      "item": "Firmware update"
+    },
+    "appliesWhen": "the device's own software is out of date and the vendor has released fixes",
+    "explanation": "Exploits may be found while a device sits on a shelf, so its firmware is upgraded before it is configured and put into service. Reading the vendor's change log shows what each release fixes.",
+    "related": [
+      "core2-s-soho-default-password",
+      "core2-s-soho-secure-mgmt",
+      "core2-s-soho-ip-filter",
+      "core2-s-soho-placement"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-content-filter",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1"
+    ],
+    "settings": [
+      "home-office",
+      "school"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "keep a child's computer from reaching anything but a few approved websites, and only on weekday afternoons",
+    "itemType": "security measure",
+    "clues": [
+      "the computer is picked by its MAC address in the router's settings",
+      "only two domain names should be allowed for that computer",
+      "a schedule should limit the hours the computer can go online",
+      "the rule must still apply if the computer gets a new IP address"
+    ],
+    "answer": {
+      "item": "Content filtering"
+    },
+    "appliesWhen": "certain users or computers must be kept away from particular websites or kinds of content",
+    "explanation": "Content filtering, often found in a router's parental controls section, lets the owner choose which domains a computer may reach and when. Because it follows the MAC address, the rule stays in place when the IP address changes.",
+    "related": [
+      "core2-s-soho-ip-filter",
+      "core2-s-soho-disable-ports",
+      "core2-s-soho-guest",
+      "core2-s-soho-port-forward"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-placement",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "stop visitors and staff from pressing the reset button or plugging cables into the office router",
+    "itemType": "security measure",
+    "clues": [
+      "the router now sits on an open shelf in the waiting area",
+      "anyone who can reach it could hold the reset button and return it to factory settings",
+      "the office has a small storage room with a lock",
+      "there is no server room in the building"
+    ],
+    "answer": {
+      "item": "Move the router into a locked closet or cabinet"
+    },
+    "appliesWhen": "people who should not touch the network device can reach it",
+    "explanation": "A router that anyone can reach can be reset, stolen, or plugged into, so it belongs in a locked wiring closet or cabinet. If no locked room exists, mounting it high or above a drop ceiling makes it harder to reach.",
+    "related": [
+      "core2-s-soho-disable-ports",
+      "core2-s-soho-default-password",
+      "core2-s-soho-secure-mgmt",
+      "core2-s-soho-firmware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-screened-subnet",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1",
+      "220-1202/2.10.3"
+    ],
+    "settings": [
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "let Internet users reach the company web server without giving them any path into the internal LAN",
+    "itemType": "security measure",
+    "clues": [
+      "the web server must answer requests from the Internet",
+      "the accounting PCs must stay unreachable from outside",
+      "the router's firewall can place a host in a separate zone",
+      "only the web ports should be allowed to that host"
+    ],
+    "answer": {
+      "item": "Screened subnet"
+    },
+    "appliesWhen": "a public-facing server must be reachable from the Internet but kept apart from the internal network",
+    "explanation": "A screened subnet, also called a DMZ, is a zone between the Internet and the LAN where public servers sit behind firewall rules. Outside users can reach those servers without reaching internal hosts.",
+    "related": [
+      "core2-s-soho-port-forward",
+      "core2-s-soho-ip-filter",
+      "core2-s-soho-guest",
+      "core2-s-soho-content-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-secure-mgmt",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "keep the router's login and settings from being read by anyone listening on the network",
+    "itemType": "security measure",
+    "clues": [
+      "the router's web page now loads over plain HTTP",
+      "the owner sometimes manages the device from a laptop on Wi-Fi",
+      "remote management from the Internet is not needed",
+      "the router can also be managed with SSH instead of Telnet"
+    ],
+    "answer": {
+      "item": "Secure management access"
+    },
+    "appliesWhen": "the device's admin interface must be encrypted and limited to trusted locations",
+    "explanation": "Secure management access makes the router use encrypted protocols such as HTTPS and SSH for its admin interface, so credentials are not sent in plaintext. Limiting management to the internal network blocks attempts from outside.",
+    "related": [
+      "core2-s-soho-default-password",
+      "core2-s-soho-firmware",
+      "core2-s-soho-placement",
+      "core2-s-soho-ip-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-ssid-change",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "stop the wireless network name from revealing the router's brand and the fact that it was never set up",
+    "itemType": "security measure",
+    "clues": [
+      "the network still shows the name the vendor set at the factory",
+      "a former employee knows the network by its current name",
+      "the owner wants a name with mixed letters and numbers",
+      "this should be done before wireless is turned on for staff"
+    ],
+    "answer": {
+      "item": "Change the SSID"
+    },
+    "appliesWhen": "the wireless network still uses the vendor's name or a name many outsiders know",
+    "explanation": "A default network name tells attackers the router model and suggests other defaults were left in place. Renaming it with a less obvious name adds a small layer of protection.",
+    "related": [
+      "core2-s-soho-ssid-hide",
+      "core2-s-soho-wpa3",
+      "core2-s-soho-guest",
+      "core2-s-soho-default-password"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-ssid-hide",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "keep the office Wi-Fi out of the list of nearby networks that passers-by see on their phones",
+    "itemType": "security measure",
+    "clues": [
+      "every staff device is already connected to the network",
+      "new devices can be added by typing the network name by hand",
+      "the owner understands this alone is weak protection",
+      "the network already uses strong encryption"
+    ],
+    "answer": {
+      "item": "Disable SSID broadcast"
+    },
+    "appliesWhen": "the network name should not show up in normal scans after all clients are connected",
+    "explanation": "With the broadcast turned off, the network does not appear in normal scans, and new clients must enter its name manually. It is weak on its own because sniffers can still find the network.",
+    "related": [
+      "core2-s-soho-ssid-change",
+      "core2-s-soho-wpa3",
+      "core2-s-soho-guest",
+      "core2-s-soho-ip-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-wpa3",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "protect wireless traffic with the strongest protection that the router and all clients support",
+    "itemType": "security measure",
+    "clues": [
+      "the router is set to an older mode that uses TKIP",
+      "all of the laptops and phones are recent models",
+      "the owner wants protection against passphrase-guessing attacks",
+      "the access point offers several security modes in a drop-down list"
+    ],
+    "answer": {
+      "item": "WPA3 encryption"
+    },
+    "appliesWhen": "wireless traffic must be protected with the newest available security mode",
+    "explanation": "WPA3 is the current Wi-Fi security standard, and its SAE exchange replaces the preshared-key handshake of WPA2-Personal. Older modes such as WEP, WPA, and TKIP are deprecated.",
+    "related": [
+      "core2-s-soho-ssid-hide",
+      "core2-s-soho-ssid-change",
+      "core2-s-soho-guest",
+      "core2-s-soho-content-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-guest",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.2"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "home-office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "give visitors Internet access over Wi-Fi without letting them see the office file server or other staff devices",
+    "itemType": "security measure",
+    "clues": [
+      "clients waiting for appointments ask for Wi-Fi",
+      "visitors only need web access, not internal resources",
+      "smart cameras and speakers could also be kept off the main network",
+      "visitor access should use a passphrase and expire after a day"
+    ],
+    "answer": {
+      "item": "Guest network"
+    },
+    "appliesWhen": "visitors or untrusted devices need Internet access isolated from internal resources",
+    "explanation": "A guest network gives visitors Internet access while isolating them from internal resources and from clients on the main network. It still needs a passphrase and encryption, and it should be off when no guests are expected.",
+    "related": [
+      "core2-s-soho-screened-subnet",
+      "core2-s-soho-ssid-hide",
+      "core2-s-soho-wpa3",
+      "core2-s-soho-content-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-disable-ports",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.3"
+    ],
+    "settings": [
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "make sure a laptop plugged into a spare jack on the router gets no network access",
+    "itemType": "security measure",
+    "clues": [
+      "four of the router's eight LAN jacks have nothing connected",
+      "the cleaning crew can reach the area where the router sits",
+      "the router can turn off individual switch ports",
+      "company policy says unused jacks must not give access"
+    ],
+    "answer": {
+      "item": "Disable unused ports"
+    },
+    "appliesWhen": "spare physical ports could let an unknown device connect",
+    "explanation": "A disabled port gives no access even if a rogue computer is plugged into it. Most organizations make this a policy for every unused router and switch port.",
+    "related": [
+      "core2-s-soho-ip-filter",
+      "core2-s-soho-placement",
+      "core2-s-soho-content-filter",
+      "core2-s-soho-port-forward"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-port-forward",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.3"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "need": "let customers on the Internet reach a web server on the LAN through the router's public address",
+    "itemType": "security measure",
+    "clues": [
+      "the server has the internal address 192.168.0.100",
+      "requests to the router's public address on TCP 443 should reach that server",
+      "no other inbound traffic should be allowed",
+      "the owner wants to set the rule by hand, not let devices create it"
+    ],
+    "answer": {
+      "item": "Port forwarding"
+    },
+    "appliesWhen": "inbound traffic on one external port must reach one internal host and port",
+    "explanation": "Port forwarding, also called port mapping, sends traffic that arrives on a chosen WAN port to an internal IP address and port. The firewall should allow only the ports that are needed.",
+    "related": [
+      "core2-s-soho-screened-subnet",
+      "core2-s-soho-disable-ports",
+      "core2-s-soho-ip-filter",
+      "core2-s-soho-content-filter"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-soho-upnp-open",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.1",
+      "220-1202/2.10.3"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "clues": [
+      "the router's port table lists inbound ports nobody configured",
+      "the entries point to a smart camera and a game console",
+      "no one has set up any port rules by hand",
+      "an outside scan shows those ports open on the public address"
+    ],
+    "answer": {
+      "cause": "UPnP is letting devices open inbound ports on their own",
+      "action": "Disable UPnP and remove the unwanted port mappings"
+    },
+    "firstStep": "Check the router's port forwarding table and note which device created each entry",
+    "appliesWhen": "devices on the LAN create port mappings without the owner's approval",
+    "explanation": "UPnP lets clients ask the router to open and forward ports automatically. If the owner does not need it, turning it off and forwarding ports by hand closes those openings.",
+    "related": [
+      "core2-s-soho-weak-encryption",
+      "core2-s-soho-port-missing",
+      "core2-s-soho-hidden-ssid"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-weak-encryption",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "wifi-network"
+    ],
+    "clues": [
+      "unknown devices keep showing up in the router's client list",
+      "the passphrase was changed last week, and strangers joined again",
+      "the router was set up many years ago and never changed",
+      "the security mode shows WEP"
+    ],
+    "answer": {
+      "cause": "the network uses outdated encryption that can be cracked easily",
+      "action": "Change the wireless security mode to WPA3, or WPA2 with AES"
+    },
+    "firstStep": "Check the security mode on the router's wireless settings page",
+    "appliesWhen": "the wireless security mode is an old one such as WEP or WPA with TKIP",
+    "explanation": "WEP and TKIP can be cracked with common tools, so a new passphrase does not keep intruders out for long. WPA3 or WPA2 with AES replaces them.",
+    "related": [
+      "core2-s-soho-upnp-open",
+      "core2-s-soho-port-missing",
+      "core2-s-soho-hidden-ssid"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-port-missing",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.3"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "soho-router"
+    ],
+    "clues": [
+      "the home security camera's video loads on the LAN",
+      "the same camera cannot be reached from a phone on mobile data",
+      "the router's firewall is on with its default rules",
+      "no rule sends any inbound traffic to the camera"
+    ],
+    "answer": {
+      "cause": "the router has no port forwarding rule for the camera",
+      "action": "Create a port forwarding rule to the camera's IP address and port"
+    },
+    "appliesWhen": "a service on the LAN must be reached from the Internet and no rule sends traffic to it",
+    "explanation": "The router's firewall drops inbound traffic that no rule allows, so a device on the LAN is not reachable from outside. A port forwarding rule maps the external port to the device's internal address and port.",
+    "related": [
+      "core2-s-soho-upnp-open",
+      "core2-s-soho-weak-encryption",
+      "core2-s-soho-hidden-ssid"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-soho-hidden-ssid",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "topics": [
+      "220-1202/2.10.2"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "wifi-network"
+    ],
+    "clues": [
+      "a new laptop does not list the office network among nearby networks",
+      "every older device stays connected without trouble",
+      "the router's wireless page shows the network is up",
+      "the network name was kept off the air on purpose"
+    ],
+    "answer": {
+      "cause": "SSID broadcast is disabled on the router",
+      "action": "Connect the laptop by typing the network name and passphrase manually"
+    },
+    "appliesWhen": "a new client cannot see a network that is working for every other device",
+    "explanation": "When the broadcast is off, the network does not appear in scans, but it still works. A new client joins by entering the network name, security type, and passphrase manually.",
+    "related": [
+      "core2-s-soho-weak-encryption",
+      "core2-s-soho-port-missing",
+      "core2-s-soho-upnp-open"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 51: SOHO Security"
+  },
+  {
+    "id": "core2-s-browser-popup",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "clinic"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "stop websites from opening extra windows on their own while still letting the bank's site open its statement window",
+    "itemType": "browser setting",
+    "clues": [
+      "users keep closing small windows that appear over and under the page",
+      "one trusted banking site needs to open a second window",
+      "the address bar shows a notice when such a window is stopped",
+      "site permissions can be changed from the lock icon"
+    ],
+    "answer": {
+      "item": "Pop-up blocker"
+    },
+    "appliesWhen": "unwanted windows must be stopped, with exceptions for trusted sites",
+    "explanation": "The pop-up blocker stops pop-ups and pop-unders and is on for all sites by default in Edge and Chrome. A single site can be allowed from the address bar notice or from that site's permissions.",
+    "related": [
+      "core2-s-browser-adblock",
+      "core2-s-browser-clear-data",
+      "core2-s-browser-private",
+      "core2-s-browser-proxy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-clear-data",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "school",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "remove the history, cookies, saved form entries, and download list left on a shared library computer",
+    "itemType": "browser setting",
+    "clues": [
+      "many people use the same computer during the day",
+      "the next user should not see where the last user went",
+      "the time range can be set to all time",
+      "the option is under Privacy, search, and services in Edge"
+    ],
+    "answer": {
+      "item": "Clear browsing data"
+    },
+    "appliesWhen": "stored history, cookies, and form data must be removed from a browser",
+    "explanation": "Browsing data covers history, download history, cookies, cached files, passwords, autofill data, and site settings. Clearing it removes what earlier sessions left behind.",
+    "related": [
+      "core2-s-browser-clear-cache",
+      "core2-s-browser-private",
+      "core2-s-browser-sync",
+      "core2-s-browser-popup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-clear-cache",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "see the newest version of a web page that a developer just changed, without losing saved logins or history",
+    "itemType": "browser setting",
+    "clues": [
+      "the browser keeps showing the old page layout",
+      "other computers show the new version of the page",
+      "only stored images and files should be removed",
+      "cookies and passwords must stay in place"
+    ],
+    "answer": {
+      "item": "Clear the cache"
+    },
+    "appliesWhen": "the browser shows old copies of page files that were stored locally",
+    "explanation": "The browser stores the files it has rendered so pages load faster. Clearing only the cached images and files makes it download fresh copies of the page.",
+    "related": [
+      "core2-s-browser-clear-data",
+      "core2-s-browser-private",
+      "core2-s-browser-sync",
+      "core2-s-browser-secure-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-private",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "home-office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "check a personal webmail account on a borrowed computer and leave no history, cookies, or logins behind",
+    "itemType": "browser setting",
+    "clues": [
+      "the computer belongs to a coworker",
+      "the session should not use the owner's saved data",
+      "everything from the session must be gone when the window closes",
+      "the user can open it with Ctrl+Shift+N in Edge or Chrome"
+    ],
+    "answer": {
+      "item": "Private-browsing mode"
+    },
+    "appliesWhen": "a single session must leave no browsing data on the computer",
+    "explanation": "Private-browsing mode, called InPrivate in Edge and Incognito in Chrome, stores no browsing data and discards the session's data when the window closes. Extensions are off in it by default.",
+    "related": [
+      "core2-s-browser-clear-data",
+      "core2-s-browser-sync",
+      "core2-s-browser-clear-cache",
+      "core2-s-browser-proxy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "core2-s-browser-sync",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "have favorites, history, and saved passwords appear on a new laptop and a phone automatically",
+    "itemType": "browser setting",
+    "clues": [
+      "the user signs in to the browser with a personal account",
+      "the same browser is installed on every device",
+      "the user wants nothing copied by hand",
+      "a work browser should stay separate from a personal account"
+    ],
+    "answer": {
+      "item": "Browser data synchronization"
+    },
+    "appliesWhen": "a user wants the same browser data on several devices through a signed-in account",
+    "explanation": "When the user signs in to the browser and turns on sync, browsing data follows the account to other devices. Personal and work accounts should stay separate, so a personal account is never synced to a work browser.",
+    "related": [
+      "core2-s-browser-private",
+      "core2-s-browser-clear-data",
+      "core2-s-browser-password-manager",
+      "core2-s-browser-secure-dns"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-adblock",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6",
+      "220-1202/2.11.3"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "stop the banners and sidebar ads on news sites that may lead to adware and track browsing habits",
+    "itemType": "browser setting",
+    "clues": [
+      "the unwanted content is part of the page, not separate windows",
+      "some sites serve malicious ads",
+      "the user can allow a site that asks for an exception",
+      "the tool is added from the browser's store"
+    ],
+    "answer": {
+      "item": "Ad blocker"
+    },
+    "appliesWhen": "advertising inside web pages must be blocked to reduce tracking and malicious ads",
+    "explanation": "An ad blocker extension stops most ads on web pages, which cuts tracking and the risk of malicious ads. Sites that depend on ad income can be allowed as exceptions.",
+    "related": [
+      "core2-s-browser-popup",
+      "core2-s-browser-proxy",
+      "core2-s-browser-secure-dns",
+      "core2-s-browser-clear-data"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "core2-s-browser-proxy",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "send all web requests through a company server that filters banned sites and logs requests centrally",
+    "itemType": "browser setting",
+    "clues": [
+      "management decides which categories of sites are blocked",
+      "the server fetches each page for the client and returns it",
+      "the setting can be pushed to every computer by policy",
+      "the operating system offers a manual setup option and an automatic script option"
+    ],
+    "answer": {
+      "item": "Proxy server setting"
+    },
+    "appliesWhen": "web traffic must go through a server that filters, caches, or logs it",
+    "explanation": "A proxy server fetches web content on behalf of clients, which allows central filtering, caching, and logging. In Windows it is set under Settings > Network & internet > Proxy, often by policy.",
+    "related": [
+      "core2-s-browser-secure-dns",
+      "core2-s-browser-adblock",
+      "core2-s-browser-popup",
+      "core2-s-browser-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-secure-dns",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "home-office",
+      "office",
+      "retail"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "keep anyone on the public network from reading or changing the browser's name lookups",
+    "itemType": "browser setting",
+    "clues": [
+      "the user often works over coffee shop Wi-Fi",
+      "normal lookups are sent in plain text",
+      "the user wants to choose a provider such as Cloudflare",
+      "the option is in the Security part of the privacy settings"
+    ],
+    "answer": {
+      "item": "Secure DNS"
+    },
+    "appliesWhen": "name lookups must be encrypted to stop eavesdropping and tampering",
+    "explanation": "Secure DNS, also called DNS over HTTPS, encrypts the browser's DNS queries so others cannot read or alter them. Edge and Chrome let the user keep the current provider or pick a custom one.",
+    "related": [
+      "core2-s-browser-proxy",
+      "core2-s-browser-adblock",
+      "core2-s-browser-clear-cache",
+      "core2-s-browser-sync"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-password-manager",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.4"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "use a long, different password for each of dozens of websites without writing any of them down",
+    "itemType": "browser setting",
+    "clues": [
+      "the user keeps reusing one password on many sites",
+      "a breach at one site could expose the others",
+      "the stored entries should be protected by one strong master passphrase",
+      "entries should fill in on the right sites automatically"
+    ],
+    "answer": {
+      "item": "Password manager"
+    },
+    "appliesWhen": "many unique website credentials must be stored and filled in securely",
+    "explanation": "A password manager stores each site's credentials in an encrypted vault and fills them in when needed. Unique passwords per site stop a breach at one site from exposing the others.",
+    "related": [
+      "core2-s-browser-sync",
+      "core2-s-browser-private",
+      "core2-s-browser-clear-data",
+      "core2-s-browser-adblock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "core2-s-browser-trusted-download",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.1"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "install a second web browser on a new Windows 11 computer without picking up a fake installer",
+    "itemType": "method",
+    "clues": [
+      "the search results show several download links, some of them ads",
+      "malware is often dressed up as browser installers",
+      "the vendor publishes the installer on its own site",
+      "the address bar should show the vendor's domain"
+    ],
+    "answer": {
+      "item": "Download the installer from the vendor's official website"
+    },
+    "appliesWhen": "software must come from a known, legitimate source",
+    "explanation": "Installers should come only from the vendor, which the address bar's domain confirms. Links from ads or unknown sites may deliver malware dressed up as the browser.",
+    "related": [
+      "core2-s-browser-hash",
+      "core2-s-browser-ext-store",
+      "core2-s-browser-patch",
+      "core2-s-browser-cert-check"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-hash",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "need": "confirm that an offline browser installer kept on a file share has not been changed since it was downloaded",
+    "itemType": "method",
+    "clues": [
+      "a SHA256 value was recorded when the installer was first saved",
+      "the file will be used for many future installs",
+      "the computer has the built-in PowerShell cmdlets",
+      "any mismatch should be treated as an untrusted file"
+    ],
+    "answer": {
+      "item": "Compare the file's hash with Get-FileHash"
+    },
+    "appliesWhen": "a stored file must be checked for tampering against a known value",
+    "explanation": "A hash is a fixed-length summary of a file, and any change to the file changes it. Running Get-FileHash and comparing the result with the stored value shows whether the installer was altered.",
+    "related": [
+      "core2-s-browser-trusted-download",
+      "core2-s-browser-ext-store",
+      "core2-s-browser-patch",
+      "core2-s-browser-cert-check"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-ext-store",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.3"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "add a note-taking tool to the browser with the least chance of getting a malicious add-on",
+    "itemType": "method",
+    "clues": [
+      "a website offers the add-on as a file to load by hand",
+      "the same add-on is listed in the vendor's add-on ecosystem",
+      "the browser warns about add-ons loaded outside its store",
+      "the user wants the add-on to update automatically"
+    ],
+    "answer": {
+      "item": "Install the extension from the browser's official add-on store"
+    },
+    "appliesWhen": "a browser add-on is needed and a vendor-vetted source offers it",
+    "explanation": "The Chrome Web Store and Edge Add-ons are trusted sources because the vendor vets publishers and delivers updates. Sideloaded add-ons are untrusted and may hold malware.",
+    "related": [
+      "core2-s-browser-trusted-download",
+      "core2-s-browser-hash",
+      "core2-s-browser-cert-check",
+      "core2-s-browser-patch"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-cert-check",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.5"
+    ],
+    "settings": [
+      "home-office",
+      "retail",
+      "office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "make sure an online store's connection is encrypted and belongs to the real company before typing in card details",
+    "itemType": "method",
+    "clues": [
+      "the page asks for a credit card number",
+      "the user wants to see who issued the site's certificate",
+      "the address should begin with HTTPS",
+      "the details can be opened from the address bar"
+    ],
+    "answer": {
+      "item": "Check the padlock and view the site's certificate"
+    },
+    "appliesWhen": "a site's secure connection and identity must be confirmed before sensitive data is entered",
+    "explanation": "The padlock shows that TLS encrypts the connection, and the certificate details show who it was issued to and by which CA. Users should not enter personal data on a site without a secure connection.",
+    "related": [
+      "core2-s-browser-trusted-download",
+      "core2-s-browser-hash",
+      "core2-s-browser-ext-store",
+      "core2-s-browser-patch"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "core2-s-browser-patch",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "need": "make sure every staff browser gets security fixes soon after they are released",
+    "itemType": "method",
+    "clues": [
+      "users often leave the browser open for weeks",
+      "the browser downloads fixes in the background",
+      "a notice in the menu asks the user to restart the browser",
+      "the administrator can set a deadline by policy"
+    ],
+    "answer": {
+      "item": "Require the browser to relaunch to apply updates"
+    },
+    "appliesWhen": "browser updates are downloaded but are not applied until the browser restarts",
+    "explanation": "Chrome and Edge download patches silently, but an update is not applied until the browser restarts. A policy that requires a relaunch within a set time makes sure the fixes are applied.",
+    "related": [
+      "core2-s-browser-trusted-download",
+      "core2-s-browser-hash",
+      "core2-s-browser-ext-store",
+      "core2-s-browser-cert-check"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-cert-warning",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.5"
+    ],
+    "settings": [
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "clues": [
+      "the browser shows a full-page warning that the connection is not private",
+      "the warning appears only on the company's time-tracking site",
+      "the site loaded with a padlock until yesterday",
+      "the certificate details show a date that has passed"
+    ],
+    "answer": {
+      "cause": "the site's certificate has expired",
+      "action": "Have the site's administrator renew the certificate and do not bypass the warning"
+    },
+    "firstStep": "View the certificate details from the warning page",
+    "appliesWhen": "a single site shows a certificate warning and its certificate is no longer valid",
+    "explanation": "Browsers warn when a certificate is expired, revoked, or not issued by a trusted CA. Data should not be entered until the site has a valid certificate.",
+    "related": [
+      "core2-s-browser-hijack-extension",
+      "core2-s-browser-stale-cache",
+      "core2-s-browser-extension-conflict",
+      "core2-s-browser-outdated"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-hijack-extension",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.3",
+      "220-1202/2.11.7"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "clues": [
+      "the home page and search engine changed without the user's choice",
+      "a new toolbar appeared after a free video tool was installed",
+      "searches go to an unfamiliar site full of ads",
+      "the browser now runs more slowly"
+    ],
+    "answer": {
+      "cause": "an extension from an untrusted source has taken over the browser settings",
+      "action": "Remove the unknown extension and reset the browser settings"
+    },
+    "firstStep": "Open the browser's extensions page and look for add-ons the user did not choose",
+    "appliesWhen": "unwanted changes to the home page or search appear after untrusted software was installed",
+    "explanation": "Extensions from untrusted sources can change settings, collect data, and slow the browser. Removing the unknown add-on and resetting the browser to defaults undoes its changes.",
+    "related": [
+      "core2-s-browser-cert-warning",
+      "core2-s-browser-stale-cache",
+      "core2-s-browser-extension-conflict",
+      "core2-s-browser-outdated"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "core2-s-browser-stale-cache",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.6"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "clues": [
+      "an intranet page still shows last week's menu and broken images",
+      "the page looks correct on other computers",
+      "the page looks correct in a private window",
+      "the user's extensions are all trusted and unchanged"
+    ],
+    "answer": {
+      "cause": "the browser is loading old copies of the page's files from its cache",
+      "action": "Clear the browser's cached images and files"
+    },
+    "appliesWhen": "a page shows old content only on one browser that has stored copies of its files",
+    "explanation": "The browser keeps copies of page files to load them faster, and an old copy can hide recent changes. Clearing the cached images and files makes it download the current page.",
+    "related": [
+      "core2-s-browser-cert-warning",
+      "core2-s-browser-hijack-extension",
+      "core2-s-browser-extension-conflict",
+      "core2-s-browser-outdated"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-extension-conflict",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.7",
+      "220-1202/2.11.3"
+    ],
+    "settings": [
+      "office",
+      "school"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "clues": [
+      "a web app's buttons do nothing in the user's normal window",
+      "the same web app works in an InPrivate window",
+      "several add-ons were installed from the official store last month",
+      "clearing the cache did not help"
+    ],
+    "answer": {
+      "cause": "an installed extension interferes with the page",
+      "action": "Turn off all extensions, then turn them back on one at a time to find the one at fault"
+    },
+    "appliesWhen": "a page breaks only when the user's add-ons are running",
+    "explanation": "Extensions act on the pages the browser renders, so one can break a site. Private windows run with extensions off by default, which points to an add-on; turning them off and back on one by one finds it.",
+    "related": [
+      "core2-s-browser-cert-warning",
+      "core2-s-browser-hijack-extension",
+      "core2-s-browser-stale-cache",
+      "core2-s-browser-outdated"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "core2-s-browser-outdated",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "2",
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "topics": [
+      "220-1202/2.11.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "web-browser"
+    ],
+    "clues": [
+      "a security scan reports a browser version with known flaws",
+      "the newer version has already been downloaded",
+      "the menu icon shows an update notice",
+      "the user has not closed the browser for three weeks"
+    ],
+    "answer": {
+      "cause": "the downloaded update is waiting for the browser to restart",
+      "action": "Relaunch the browser to apply the pending update"
+    },
+    "appliesWhen": "a browser has a pending update that has not been applied",
+    "explanation": "Browsers download updates in the background but apply them only when they restart. Until then, the old version and its flaws stay in use.",
+    "related": [
+      "core2-s-browser-cert-warning",
+      "core2-s-browser-hijack-extension",
+      "core2-s-browser-stale-cache",
+      "core2-s-browser-extension-conflict"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  }
+]

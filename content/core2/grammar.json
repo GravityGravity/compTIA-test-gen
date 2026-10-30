@@ -1,0 +1,18 @@
+{
+  "windows-pc": ["the Windows 11 desktop", "the Windows 10 workstation", "the Windows PC", "the office desktop"],
+  "windows-laptop": ["the Windows 11 laptop", "the Windows laptop", "the company laptop"],
+  "mac": ["the MacBook", "the iMac", "the Mac laptop"],
+  "linux-pc": ["the Linux workstation", "the Ubuntu desktop", "the Linux laptop"],
+  "device": ["the computer", "the workstation", "the Windows PC", "the laptop"],
+  "android-phone": ["the Android phone", "the company Android phone", "the Samsung phone"],
+  "iphone": ["the iPhone", "the company iPhone"],
+  "tablet": ["the tablet", "the iPad", "the Android tablet"],
+  "soho-router": ["the office wireless router", "the SOHO router", "the small office router"],
+  "web-browser": ["the web browser on a Windows 11 PC", "the browser on a work laptop", "Microsoft Edge on an office computer", "Google Chrome on a desktop PC", "the web browser on a laptop"],
+  "wifi-network": ["the office Wi-Fi network", "the wireless network", "the small office wireless network"],
+  "windows-vm": ["the Windows virtual machine", "the Windows Server VM", "the Windows 11 virtual machine on the host server"],
+  "help-desk-system": ["the help desk ticketing system", "the support ticket system", "the help desk process"],
+  "user-accounts": ["user access to company systems", "the user accounts", "account access"],
+  "change-system": ["a recent change to a business system", "a recent production change", "a server change made last week"],
+  "backup-system": ["the backup system", "the server backups", "the nightly backup jobs"]
+}

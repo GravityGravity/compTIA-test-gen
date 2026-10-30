@@ -2,6 +2,28 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Core 2 exam activated
+
+Decisions:
+- The user approved turning on the Core 2 exam: `config/exams/220-1202.json` has `active: true`. The user can still review the content (the notes on corrected and doubtful book answers are in the pool records).
+
+Changes:
+- `config/exams/220-1202.json`: `active: true`. `check_config.py`, `check_questions.py` (Core 2 active: no errors), 173 Vitest tests, typecheck, lint, and the 5 Playwright tests pass.
+
+## 2026-10-30 – Core 2 exam module: all four domains, for review
+
+Decisions:
+- The exam engine, storage, and screens already existed, so the Core 2 exam needs only content. Domain 1 was built first; the user then asked for Domains 2–4 in one batch (added to the exceptions in `CLAUDE.md`). `220-1202` stays `active: false` until the user has reviewed the content.
+- Book answers follow the Core 1 rule: a wrong answer is corrected, with a note that says "Book answer X corrected: …" (12 questions). A question with no defensible answer is dropped (8, listed with the reason in the triage file). A debatable but defensible answer is kept, with a note.
+- Book explanations are cut to 5 sentences, because the app's tests require it for every asked question. The cut sentences are mostly about the wrong options; those facts are in `whyWrong`.
+- The 32 questions that the Core 1 triage set aside for Core 2 are in the Core 2 pool.
+
+Changes:
+- `content/core2/pool/d1.json`–`d4.json`: 1,234 questions (1,107 from Exam Cram 2e, Docter, Neil, and All-in-One 11e, including both Core 2 practice exams; 127 written for thin topics and as pool scenario questions). All 220 topics have at least 2 questions. Older-objective questions are tagged with the closest current topic and a `note` that names the old objective.
+- `content/core2/scenarios/d1.json`–`d4.json`: 509 records (376 requirement, 124 fault, 9 procedure) for the 25 scenario objectives; every scenario objective has at least 11 records and every topic at least 1. The 2.6 malware removal steps are procedure records in the official order.
+- `content/core2/grammar.json`: device rules (Windows PCs and laptops, Mac, Linux, phones, tablet, SOHO router, browser, Wi-Fi network, VM, and the help desk, change, and backup systems for Domain 4).
+- `sources-text/derived/questions/_triage-core2.json` (not in git): the domain of each All-in-One 11e and practice-exam question (for reuse), the dropped questions with the reason, and the corrected ones.
+
 ## 2026-10-30 – Question tools: book question extractor and question checker
 
 Decisions:

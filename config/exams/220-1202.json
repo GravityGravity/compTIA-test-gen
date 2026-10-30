@@ -3,7 +3,7 @@
   "certification": "a-plus",
   "name": "Core 2 Exam",
   "shortName": "Core 2",
-  "active": false,
+  "active": true,
   "content": "core2",
   "questionCount": { "min": 75, "max": 90 },
   "timeLimitMinutes": 90,

@@ -1,0 +1,3569 @@
+[
+  {
+    "id": "core2-s-win-f-bsod-driver",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the user updated the wireless adapter software yesterday",
+      "a blue stop error screen appears soon after sign-in",
+      "the stop error comes back on every restart",
+      "the PC starts normally in Safe Mode"
+    ],
+    "answer": {
+      "cause": "the newly installed wireless adapter driver is faulty",
+      "action": "Boot into Safe Mode and roll back the wireless adapter driver in Device Manager"
+    },
+    "firstStep": "Note the stop code and the driver file named on the blue screen",
+    "appliesWhen": "a stop error began right after a device driver was updated",
+    "explanation": "A new or corrupt driver is a common cause of a stop error, and Safe Mode loads only basic drivers so Windows can start. Rolling back the driver returns the device to the version that worked.",
+    "related": [
+      "core2-s-win-f-bsod-ram",
+      "core2-s-win-f-instability-update",
+      "core2-s-win-f-app-files",
+      "core2-s-win-f-usb-power"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-bsod-ram",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.1",
+      "220-1202/3.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the stop errors started after more memory was added",
+      "each blue screen shows a different stop code",
+      "the crashes happen at random times, even in Safe Mode",
+      "no drivers or updates were installed recently"
+    ],
+    "answer": {
+      "cause": "a new memory module is not seated correctly or is faulty",
+      "action": "Reseat the new memory modules and test the RAM with a memory diagnostic"
+    },
+    "appliesWhen": "random stop errors started after a memory upgrade",
+    "explanation": "Improperly seated or faulty RAM causes random stop errors with changing codes, even when only basic drivers load. Reseating and testing the memory confirms the fault.",
+    "related": [
+      "core2-s-win-f-bsod-driver",
+      "core2-s-win-f-instability-update",
+      "core2-s-win-f-shutdown-psu",
+      "core2-s-win-f-lowmem-pagefile"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-degraded-cpu",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "every application is slow to respond",
+      "the case fan runs much louder than usual",
+      "the Task Manager Performance tab shows the processor near 100 percent",
+      "memory and disk use are normal"
+    ],
+    "answer": {
+      "cause": "one process is using almost all of the processor time",
+      "action": "Find the process on the Processes tab, then end it or move its work to a quieter time"
+    },
+    "appliesWhen": "one busy process is holding the processor at full load",
+    "explanation": "Task Manager shows which of the CPU, memory, disk, network, and GPU areas is overloaded. Sorting the Processes tab by CPU shows the process that causes the load.",
+    "related": [
+      "core2-s-win-f-degraded-ram",
+      "core2-s-win-f-lowmem-process",
+      "core2-s-win-f-instability-update",
+      "core2-s-win-f-profile-startup"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-degraded-ram",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.2",
+      "220-1202/3.1.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the drive activity light stays on almost all the time",
+      "switching between open programs is very slow",
+      "the user keeps a database, a browser, and email open all day",
+      "the processor is not busy when the slowdown happens"
+    ],
+    "answer": {
+      "cause": "the PC does not have enough RAM, so Windows keeps paging memory to the drive",
+      "action": "Add more RAM to the computer"
+    },
+    "firstStep": "Check memory use on the Task Manager Performance tab",
+    "appliesWhen": "the PC runs out of physical memory under its normal workload",
+    "explanation": "When physical memory runs out, Windows swaps less active memory pages to the page file on the drive. That causes heavy drive activity and slow programs, so more RAM is the lasting fix.",
+    "related": [
+      "core2-s-win-f-degraded-cpu",
+      "core2-s-win-f-lowmem-pagefile",
+      "core2-s-win-f-app-requirements",
+      "core2-s-win-f-profile-roaming"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-lowmem-process",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.7"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "a low memory warning appears after the PC has run for several hours",
+      "the warning does not appear right after a restart",
+      "one program's memory use keeps growing on the Processes tab",
+      "the PC has the amount of RAM the vendor recommends"
+    ],
+    "answer": {
+      "cause": "one program is using much more memory than it normally needs",
+      "action": "End the program, then update or repair it so it stops using so much memory"
+    },
+    "appliesWhen": "a single process keeps taking more memory than it should",
+    "explanation": "A low memory warning means Windows cannot page out any more memory. When one process keeps growing on a PC with enough RAM, that process is the problem, not the hardware.",
+    "related": [
+      "core2-s-win-f-degraded-ram",
+      "core2-s-win-f-degraded-cpu",
+      "core2-s-win-f-lowmem-pagefile",
+      "core2-s-win-f-app-requirements"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-lowmem-pagefile",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.7",
+      "220-1202/3.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "low memory warnings started after a user changed the virtual memory settings",
+      "the page file is now set to a few hundred megabytes",
+      "programs close without warning when several are open",
+      "the drive has plenty of free space"
+    ],
+    "answer": {
+      "cause": "the page file was set too small",
+      "action": "Set the page file back to a system-managed size in the Virtual Memory settings"
+    },
+    "appliesWhen": "the page file was made too small for the workload",
+    "explanation": "Windows moves idle memory pages to the page file, so a page file that is too small causes low memory warnings and instability. Letting Windows manage the size, or making it at least 1.5 times the RAM, fixes it.",
+    "related": [
+      "core2-s-win-f-degraded-ram",
+      "core2-s-win-f-lowmem-process",
+      "core2-s-win-f-bsod-ram",
+      "core2-s-win-f-app-files"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-boot-bcd",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the power failed while the PC was installing updates",
+      "the PC now stops with a boot error before the sign-in screen",
+      "the recovery environment opens after two failed starts",
+      "the drive passes the firmware's hardware test"
+    ],
+    "answer": {
+      "cause": "the boot configuration data that the boot manager reads is damaged",
+      "action": "Run Startup Repair from the Windows Recovery Environment"
+    },
+    "appliesWhen": "Windows cannot start because its boot files are damaged but the drive works",
+    "explanation": "The boot manager reads the BCD to find and load Windows, so a damaged BCD stops the boot. Startup Repair in WinRE rebuilds the boot data, much like bootrec /rebuildbcd.",
+    "related": [
+      "core2-s-win-f-no-os-media",
+      "core2-s-win-f-no-os-drive",
+      "core2-s-win-f-bsod-driver",
+      "core2-s-win-f-shutdown-psu"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-no-os-media",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.10",
+      "220-1202/3.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the user copied files from a flash drive before restarting",
+      "the screen says no operating system was found",
+      "the drive is listed in the firmware setup",
+      "the same PC booted normally that morning"
+    ],
+    "answer": {
+      "cause": "the firmware tries to boot from the flash drive left in a USB port",
+      "action": "Remove the flash drive and set the firmware to boot from the internal drive first"
+    },
+    "firstStep": "Check the USB ports and optical drive for media",
+    "appliesWhen": "removable media is left in the PC and the firmware boots from it first",
+    "explanation": "When removable media comes before the internal drive in the boot order, the firmware tries to boot from it and finds no OS. Putting the internal drive first prevents the problem and closes a security gap.",
+    "related": [
+      "core2-s-win-f-boot-bcd",
+      "core2-s-win-f-no-os-drive",
+      "core2-s-win-f-bsod-driver",
+      "core2-s-win-f-shutdown-sleep"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-no-os-drive",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.10"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the screen says no operating system was found",
+      "the internal drive is not listed in the firmware setup",
+      "no media is attached and the boot order is correct",
+      "the PC was moved to a new desk yesterday"
+    ],
+    "answer": {
+      "cause": "the system drive is disconnected or has failed",
+      "action": "Reseat the drive's data and power cables, and replace the drive if the firmware still cannot see it"
+    },
+    "appliesWhen": "the firmware cannot detect the system drive at all",
+    "explanation": "If the firmware cannot see the drive, no repair tool in Windows can help, because WinRE also starts from that drive. Checking the cables comes first, then replacing a failed drive.",
+    "related": [
+      "core2-s-win-f-no-os-media",
+      "core2-s-win-f-boot-bcd",
+      "core2-s-win-f-shutdown-psu",
+      "core2-s-win-f-bsod-ram"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-shutdown-sleep",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the PC turns off when nobody has used it for a while",
+      "the System log shows a normal shutdown entry from the kernel each time",
+      "it never turns off while someone is working on it",
+      "no hardware or drivers were changed"
+    ],
+    "answer": {
+      "cause": "the power plan puts the PC to sleep or turns it off after a short idle time",
+      "action": "Change the sleep and power settings in Power Options so the PC stays on when plugged in"
+    },
+    "appliesWhen": "Windows itself is turning the PC off because of its power settings",
+    "explanation": "Kernel entries in the System log show whether Windows shut down on purpose or lost power. A normal shutdown while idle points to the power settings, not to hardware.",
+    "related": [
+      "core2-s-win-f-shutdown-psu",
+      "core2-s-win-f-bsod-driver",
+      "core2-s-win-f-lowmem-process",
+      "core2-s-win-f-no-os-media"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-shutdown-psu",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.4",
+      "220-1202/3.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the PC turns off suddenly with no warning",
+      "it happens most often when the PC is under heavy load",
+      "the System log shows unexpected shutdowns with no normal shutdown entry",
+      "the user hears no change in the fans before it turns off"
+    ],
+    "answer": {
+      "cause": "the power supply is failing and cuts power to the PC",
+      "action": "Test the power supply and swap in a known good unit"
+    },
+    "firstStep": "Check the System log in Event Viewer for how the PC shut down",
+    "appliesWhen": "the PC loses power suddenly instead of shutting down through Windows",
+    "explanation": "When the log shows a dirty shutdown with no kernel shutdown entry, the PC lost power rather than Windows turning itself off. Intermittent power loss is often caused by the power supply or other failing hardware.",
+    "related": [
+      "core2-s-win-f-shutdown-sleep",
+      "core2-s-win-f-bsod-ram",
+      "core2-s-win-f-instability-update",
+      "core2-s-win-f-no-os-drive"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-service-logon",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "a backup service does not start when Windows starts",
+      "the System log shows event ID 7000 with a logon failure",
+      "the service account's password was reset last week",
+      "the service worked until then"
+    ],
+    "answer": {
+      "cause": "the service still uses the old password of its logon account",
+      "action": "Enter the account's current password on the Log On tab of the service's properties"
+    },
+    "firstStep": "Check the System log in Event Viewer for the service's error",
+    "appliesWhen": "a service fails because its logon account details are wrong",
+    "explanation": "A logon failure in event 7000 from the Service Control Manager points to the account the service runs as. The password on the Log On tab must match the account, and the account must not be locked out.",
+    "related": [
+      "core2-s-win-f-service-conflict",
+      "core2-s-win-f-app-files",
+      "core2-s-win-f-time-ntp",
+      "core2-s-win-f-instability-update"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-service-conflict",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "a service stopped starting after a new application was installed",
+      "the System log shows event ID 7000 for the service",
+      "the error does not mention a logon failure",
+      "the service's logon account is correct"
+    ],
+    "answer": {
+      "cause": "the new application conflicts with resources the service needs",
+      "action": "Reinstall the software that installed the failing service"
+    },
+    "appliesWhen": "a service fails after other software claimed the resources it needs",
+    "explanation": "A service that fails without a logon error is often in conflict with another program's resources. Reinstalling the service's software is the quickest way to restore what it needs.",
+    "related": [
+      "core2-s-win-f-service-logon",
+      "core2-s-win-f-app-files",
+      "core2-s-win-f-instability-update",
+      "core2-s-win-f-lowmem-process"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-app-files",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "a program crashes as soon as it opens",
+      "the problem began after a different program was installed",
+      "an error names a missing DLL file",
+      "other programs on the PC work normally"
+    ],
+    "answer": {
+      "cause": "the program's critical files were overwritten or corrupted",
+      "action": "Repair the program from the Advanced options in Installed apps"
+    },
+    "appliesWhen": "one program's own installed files are missing or damaged",
+    "explanation": "Another installer can overwrite a program's DLL files. A repair checks the installation and replaces the critical files without touching data or settings.",
+    "related": [
+      "core2-s-win-f-app-requirements",
+      "core2-s-win-f-instability-update",
+      "core2-s-win-f-service-conflict",
+      "core2-s-win-f-bsod-driver"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-app-requirements",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.6",
+      "220-1202/3.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the design program crashes when large drawings are opened",
+      "the crashes started after the program was upgraded to a new version",
+      "the PC has less RAM and video memory than the new version requires",
+      "a repair of the program did not help"
+    ],
+    "answer": {
+      "cause": "the PC does not meet the new version's hardware requirements",
+      "action": "Add RAM and a graphics card that meet the vendor's requirements"
+    },
+    "appliesWhen": "the hardware is below what the program's vendor requires",
+    "explanation": "Each program needs a certain amount of RAM, storage, CPU speed, and sometimes GPU memory. If the PC falls below the vendor's requirements, the hardware must be scaled up.",
+    "related": [
+      "core2-s-win-f-app-files",
+      "core2-s-win-f-degraded-cpu",
+      "core2-s-win-f-lowmem-process",
+      "core2-s-win-f-instability-update"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-usb-endpoints",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc"
+    ],
+    "clues": [
+      "a warning says there are not enough USB controller resources",
+      "a keyboard, a mouse, a webcam, and three drives use the fast ports",
+      "the last device connected does not work",
+      "each device works when connected alone"
+    ],
+    "answer": {
+      "cause": "too many devices on the USB 3.0 controller use up its endpoints",
+      "action": "Move the keyboard and mouse to USB 2.0 ports and keep only fast devices on USB 3.0"
+    },
+    "appliesWhen": "too many devices on one controller use up its data endpoints",
+    "explanation": "Each USB controller has a fixed number of endpoints for data. Moving slow devices such as keyboards and mice to the other controller frees endpoints for the devices that need speed.",
+    "related": [
+      "core2-s-win-f-usb-power",
+      "core2-s-win-f-bsod-driver",
+      "core2-s-win-f-app-files",
+      "core2-s-win-f-service-conflict"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-usb-power",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.8"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "several devices are connected through one unpowered hub",
+      "the devices disconnect at random",
+      "the problem gets worse when an external drive spins up",
+      "each device works when connected straight to the PC"
+    ],
+    "answer": {
+      "cause": "the devices draw more power than the hub's port can supply",
+      "action": "Connect the devices through a powered hub or spread them across more ports"
+    },
+    "appliesWhen": "the connected devices need more power than the port supplies",
+    "explanation": "A USB port can supply only a limited current, for example 500 mA for USB 2.0 and 900 mA for USB 3.0. A device that draws more than its share malfunctions or disconnects.",
+    "related": [
+      "core2-s-win-f-usb-endpoints",
+      "core2-s-win-f-shutdown-psu",
+      "core2-s-win-f-bsod-driver",
+      "core2-s-win-f-app-files"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-instability-update",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.9",
+      "220-1202/3.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "several programs began crashing on the same day",
+      "the PC installed Windows updates the night before",
+      "the PC sometimes freezes and has to be restarted",
+      "no new hardware or programs were added"
+    ],
+    "answer": {
+      "cause": "a recent Windows update is causing the instability",
+      "action": "Uninstall the recent update from Update history"
+    },
+    "firstStep": "Check Reliability Monitor for the day the crashes began",
+    "appliesWhen": "the problems began right after an update was installed",
+    "explanation": "Reliability Monitor shows crashes and installed updates on the same timeline. When the trouble starts right after an update, removing that update returns the system to its stable state.",
+    "related": [
+      "core2-s-win-f-app-files",
+      "core2-s-win-f-bsod-ram",
+      "core2-s-win-f-lowmem-process",
+      "core2-s-win-f-service-conflict"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-profile-roaming",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.11"
+    ],
+    "settings": [
+      "enterprise",
+      "school"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "signing in to the domain takes about five minutes",
+      "signing in with a local account takes seconds",
+      "the user stores gigabytes of downloads in the profile",
+      "sign-out is also slow"
+    ],
+    "answer": {
+      "cause": "the large roaming profile has to be copied across the network at each sign-in and sign-out",
+      "action": "Delete temporary and downloaded files to shrink the roaming profile"
+    },
+    "appliesWhen": "a bloated roaming profile is copied from the server at sign-in",
+    "explanation": "A roaming profile loads from a server at sign-in and is written back at sign-out. Removing temporary Internet files and downloads makes it much smaller, so it loads faster.",
+    "related": [
+      "core2-s-win-f-profile-startup",
+      "core2-s-win-f-time-ntp",
+      "core2-s-win-f-degraded-ram",
+      "core2-s-win-f-service-logon"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-profile-startup",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.11",
+      "220-1202/3.1.2"
+    ],
+    "settings": [
+      "home-office",
+      "office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the desktop takes several minutes to become usable after sign-in",
+      "many icons appear in the notification area during that time",
+      "the user signs in with a local account",
+      "the PC runs normally once sign-in has finished"
+    ],
+    "answer": {
+      "cause": "too many programs are set to start when the profile loads",
+      "action": "Disable unneeded startup apps on the Startup tab of Task Manager"
+    },
+    "appliesWhen": "programs set to start at sign-in slow down a local profile",
+    "explanation": "Items that start with the profile can slow a local sign-in. Disabling them in Task Manager one by one, with test sign-ins, shows which ones cause the delay.",
+    "related": [
+      "core2-s-win-f-profile-roaming",
+      "core2-s-win-f-degraded-cpu",
+      "core2-s-win-f-lowmem-process",
+      "core2-s-win-f-instability-update"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-f-time-ntp",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.12",
+      "220-1202/3.1.11"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the PC's clock is several minutes behind",
+      "sign-ins to the domain fail with an error",
+      "websites show certificate errors",
+      "the firewall was recently changed to block more outbound traffic"
+    ],
+    "answer": {
+      "cause": "the PC cannot reach its time server, so the clock has drifted",
+      "action": "Allow the PC to reach the NTP server and sync the clock in Date & time settings"
+    },
+    "firstStep": "Select Sync now in Date & time settings and read the result",
+    "appliesWhen": "the clock has drifted because the PC cannot reach a time server",
+    "explanation": "Windows corrects the real-time clock by querying an NTP server, so blocking the server lets the clock drift. A large drift breaks domain sign-in and makes certificates look invalid.",
+    "related": [
+      "core2-s-win-f-time-vm",
+      "core2-s-win-f-profile-roaming",
+      "core2-s-win-f-service-logon",
+      "core2-s-win-f-app-files"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-f-time-vm",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.12"
+    ],
+    "settings": [
+      "enterprise"
+    ],
+    "devices": [
+      "windows-vm"
+    ],
+    "clues": [
+      "the clock drifts a few minutes each day",
+      "the system runs as a virtual machine on a server",
+      "the host server's clock is correct",
+      "the guest tools were never installed"
+    ],
+    "answer": {
+      "cause": "the virtual machine's emulated clock is not synced to the host",
+      "action": "Install the hypervisor's guest tools or integration services so the guest syncs its clock to the host"
+    },
+    "appliesWhen": "a virtual machine's clock is not synced with its host",
+    "explanation": "A hypervisor emulates the real-time clock, so a guest's clock drifts much more than a physical PC's. The guest tools sync the guest clock to the host, which syncs with an NTP server.",
+    "related": [
+      "core2-s-win-f-time-ntp",
+      "core2-s-win-f-service-logon",
+      "core2-s-win-f-profile-roaming",
+      "core2-s-win-f-degraded-cpu"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-tool-restore",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.9",
+      "220-1202/3.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "return Windows system settings and drivers to the state they were in last week",
+    "itemType": "tool",
+    "clues": [
+      "system protection was turned on before the trouble began",
+      "the problems started after several programs and drivers were installed",
+      "the user's documents must stay as they are"
+    ],
+    "answer": {
+      "item": "System Restore"
+    },
+    "appliesWhen": "Windows must go back to an earlier restore point without touching personal files",
+    "explanation": "System Restore returns system files, settings, and drivers to a restore point. It keeps personal files, but it removes programs, updates, and drivers added after that point.",
+    "related": [
+      "core2-s-win-tool-reliability",
+      "core2-s-win-tool-resmon",
+      "core2-s-win-tool-msconfig",
+      "core2-s-win-tool-eventvwr"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-tool-reliability",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.9",
+      "220-1202/3.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "see on a daily timeline which programs crashed and which updates were installed",
+    "itemType": "tool",
+    "clues": [
+      "a program has crashed now and then for a month",
+      "the user cannot remember when the trouble began",
+      "the technician wants to compare the crash dates with update dates"
+    ],
+    "answer": {
+      "item": "Reliability Monitor"
+    },
+    "appliesWhen": "crashes and updates must be compared on a timeline",
+    "explanation": "Reliability Monitor draws a stability graph and lists program crashes, Windows failures, and updates by date. That shows what changed just before the problems began.",
+    "related": [
+      "core2-s-win-tool-restore",
+      "core2-s-win-tool-resmon",
+      "core2-s-win-tool-msconfig",
+      "core2-s-win-tool-eventvwr"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-tool-resmon",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "see live disk and network activity for each process in more detail than Task Manager",
+    "itemType": "tool",
+    "clues": [
+      "the Task Manager view shows heavy disk use but not which files are involved",
+      "the PC slows down during the afternoon",
+      "the technician wants to filter the activity for one process"
+    ],
+    "answer": {
+      "item": "Resource Monitor"
+    },
+    "appliesWhen": "detailed live performance data for each process is needed",
+    "explanation": "Resource Monitor shows real-time CPU, memory, disk, and network data for every process. Selecting a process filters the other views to show only that process's activity.",
+    "related": [
+      "core2-s-win-tool-restore",
+      "core2-s-win-tool-reliability",
+      "core2-s-win-tool-msconfig",
+      "core2-s-win-tool-eventvwr"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-tool-msconfig",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.4",
+      "220-1202/3.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "start Windows with all third-party services turned off to see if one of them causes the problem",
+    "itemType": "tool",
+    "clues": [
+      "the PC shuts down at random",
+      "the problem started after several programs were installed",
+      "the technician wants to test without deleting any software"
+    ],
+    "answer": {
+      "item": "System Configuration (MSConfig)"
+    },
+    "appliesWhen": "Windows must start with a selective set of services or startup items",
+    "explanation": "On the Services tab of MSConfig, the technician can hide all Microsoft services and disable the rest, then restart and test. Normal startup must be restored afterward.",
+    "related": [
+      "core2-s-win-tool-restore",
+      "core2-s-win-tool-reliability",
+      "core2-s-win-tool-resmon",
+      "core2-s-win-tool-eventvwr"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-tool-eventvwr",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.5",
+      "220-1202/3.1.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "find out why a service failed to start this morning",
+    "itemType": "tool",
+    "clues": [
+      "the service is set to start automatically",
+      "no error message appeared on the screen",
+      "the technician wants the error ID and its description"
+    ],
+    "answer": {
+      "item": "Event Viewer"
+    },
+    "appliesWhen": "the logged reason for a failure must be found",
+    "explanation": "The Service Control Manager writes event ID 7000 to the System log when a service fails to start. The event description gives the reason, for example a logon failure.",
+    "related": [
+      "core2-s-win-tool-restore",
+      "core2-s-win-tool-reliability",
+      "core2-s-win-tool-resmon",
+      "core2-s-win-tool-msconfig"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-m-sfc",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.9"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "check and replace damaged protected Windows files",
+    "itemType": "method",
+    "clues": [
+      "several Windows features have started to show errors",
+      "the technician suspects file corruption",
+      "the PC still starts to the desktop"
+    ],
+    "answer": {
+      "item": "Running sfc /scannow"
+    },
+    "appliesWhen": "protected system files may be corrupt while Windows still runs",
+    "explanation": "The System File Checker scans the protected Windows files and replaces any that fail the integrity check. It can also run offline from WinRE when Windows cannot start.",
+    "related": [
+      "core2-s-win-m-reset",
+      "core2-s-win-m-reimage",
+      "core2-s-win-m-profile",
+      "core2-s-win-m-svc-recovery",
+      "core2-s-win-m-app-repair"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-m-reset",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.9",
+      "220-1202/3.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "reinstall Windows but keep the user's personal files",
+    "itemType": "method",
+    "clues": [
+      "file checks and repairs did not fix the errors",
+      "no restore points exist",
+      "the company does not use a standard image"
+    ],
+    "answer": {
+      "item": "Reset this PC with Keep my files"
+    },
+    "appliesWhen": "Windows must be reinstalled in place while the user's files are kept",
+    "explanation": "Reset this PC reinstalls Windows from a cloud download or a local copy. The Keep my files choice keeps the user's data, while Remove everything wipes it.",
+    "related": [
+      "core2-s-win-m-sfc",
+      "core2-s-win-m-reimage",
+      "core2-s-win-m-profile",
+      "core2-s-win-m-svc-recovery",
+      "core2-s-win-m-app-repair"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-m-reimage",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.9",
+      "220-1202/3.1.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "return a broken PC to the company's standard build as fast as possible",
+    "itemType": "method",
+    "clues": [
+      "the company keeps a standard image with all programs preinstalled",
+      "reinstalling each program by hand would take hours",
+      "the user's files are kept on a server"
+    ],
+    "answer": {
+      "item": "Reimaging the PC with System Image Recovery"
+    },
+    "appliesWhen": "a prepared system image exists and is faster than reinstalling software",
+    "explanation": "When reinstalling software would take longer than restoring a prepared image, reimaging is the fastest fix. System Image Recovery in WinRE reloads the operating system and programs from the image.",
+    "related": [
+      "core2-s-win-m-sfc",
+      "core2-s-win-m-reset",
+      "core2-s-win-m-profile",
+      "core2-s-win-m-svc-recovery",
+      "core2-s-win-m-app-repair"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 53: Troubleshooting Microsoft Windows"
+  },
+  {
+    "id": "core2-s-win-m-profile",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.11"
+    ],
+    "settings": [
+      "office",
+      "home-office"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "give one user a clean sign-in without the clutter that slows it down",
+    "itemType": "method",
+    "clues": [
+      "only this user's sign-in is slow on the PC",
+      "deleting temporary files did not help",
+      "the user's documents must be kept"
+    ],
+    "answer": {
+      "item": "Rebuilding the user profile after backing up its files"
+    },
+    "appliesWhen": "one user's own profile is damaged or bloated",
+    "explanation": "Deleting the profile in the User Profiles settings lets Windows build a new one at the next sign-in. Copy the profile folder first, then copy the user's files back.",
+    "related": [
+      "core2-s-win-m-sfc",
+      "core2-s-win-m-reset",
+      "core2-s-win-m-reimage",
+      "core2-s-win-m-svc-recovery",
+      "core2-s-win-m-app-repair"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-m-svc-recovery",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.5"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "make a service start again by itself when it stops unexpectedly",
+    "itemType": "method",
+    "clues": [
+      "the service crashes about once a week",
+      "nobody is there to start it by hand at night",
+      "the vendor has not released a fix yet"
+    ],
+    "answer": {
+      "item": "Setting restart actions on the Recovery tab of the service's properties"
+    },
+    "appliesWhen": "a service must restart by itself after a failure",
+    "explanation": "The Recovery tab sets what happens on the first, second, and later failures of a service. It can restart the service, run a program, or restart the computer.",
+    "related": [
+      "core2-s-win-m-sfc",
+      "core2-s-win-m-reset",
+      "core2-s-win-m-reimage",
+      "core2-s-win-m-profile",
+      "core2-s-win-m-app-repair"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-win-m-app-repair",
+    "kind": "requirement",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "topics": [
+      "220-1202/3.1.6"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "need": "fix a crashing program while keeping its data and settings",
+    "itemType": "method",
+    "clues": [
+      "the program crashes on start",
+      "its files may have been overwritten by another installer",
+      "the user does not want to set it up again"
+    ],
+    "answer": {
+      "item": "Repairing the program from Installed apps"
+    },
+    "appliesWhen": "one program's own files must be checked and replaced",
+    "explanation": "A repair checks the program's installation and replaces missing critical files such as DLLs. It leaves data and configuration files untouched.",
+    "related": [
+      "core2-s-win-m-sfc",
+      "core2-s-win-m-reset",
+      "core2-s-win-m-reimage",
+      "core2-s-win-m-profile",
+      "core2-s-win-m-svc-recovery"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-app-hung-background",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the notes app shows only a blank screen when it is tapped",
+      "the app was used earlier in the day and then swiped away",
+      "other apps open normally",
+      "the app worked yesterday"
+    ],
+    "answer": {
+      "cause": "the app is still hung in the background and only comes to the foreground",
+      "action": "Force stop the app and open it again"
+    },
+    "appliesWhen": "an app that was never fully closed is stuck in memory",
+    "explanation": "A closed mobile app often moves to the background instead of shutting down. If it hangs there, tapping it only brings the stuck copy forward, so a force stop clears it.",
+    "related": [
+      "core2-s-mob-app-corrupt-cache",
+      "core2-s-mob-app-install-storage",
+      "core2-s-mob-slow-ram"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-app-corrupt-cache",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.1",
+      "220-1202/3.2.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the banking app closes as soon as it opens",
+      "the problem began right after the app updated itself overnight",
+      "a force stop and a restart did not help",
+      "the app's stored login data is not important to keep"
+    ],
+    "answer": {
+      "cause": "the app's cache was corrupted during the update",
+      "action": "Clear the app's cache from its storage settings"
+    },
+    "firstStep": "Restart the device and try the app again",
+    "appliesWhen": "an app stops opening right after it updates itself",
+    "explanation": "Corrupted cache files are a common reason an app fails right after an update. Clearing the cache removes the bad files and does not touch most of the app's data.",
+    "related": [
+      "core2-s-mob-app-hung-background",
+      "core2-s-mob-app-reinstall",
+      "core2-s-mob-app-install-storage"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-app-reinstall",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the scheduling app crashes now and then during the same task",
+      "the cache and the app data were already cleared",
+      "a force stop and a reboot did not stop the crashes",
+      "the user can repeat the steps that make it close"
+    ],
+    "answer": {
+      "cause": "the app's installed files are damaged",
+      "action": "Back up the app's data, then uninstall and reinstall the app from the app store"
+    },
+    "appliesWhen": "an app keeps crashing after the cache, data, and a reboot were tried",
+    "explanation": "When the quick fixes do not stop the crashes, the installed copy itself is likely damaged. A clean reinstall from the official store replaces every file of the app.",
+    "related": [
+      "core2-s-mob-app-corrupt-cache",
+      "core2-s-mob-app-hung-background",
+      "core2-s-mob-app-update-autooff"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-app-update-autooff",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.3"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the messaging app is several versions behind",
+      "the phone is on the office Wi-Fi every day",
+      "other apps on the phone are also out of date",
+      "a manual update from the store page works"
+    ],
+    "answer": {
+      "cause": "automatic app updates are turned off in the app store settings",
+      "action": "Turn on automatic updates in the app store settings"
+    },
+    "firstStep": "Try to update the app manually from the app store",
+    "appliesWhen": "apps install fine but never update on their own",
+    "explanation": "The app stores update apps in the background only when that setting is on. A manual update that works shows the store and the connection are fine.",
+    "related": [
+      "core2-s-mob-app-update-compat",
+      "core2-s-mob-os-update-cellular",
+      "core2-s-mob-app-install-storage"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-app-update-compat",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.3",
+      "220-1202/3.2.4"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the newest version of the travel app will not install",
+      "the device is about six years old",
+      "the app store says the device does not meet the requirements",
+      "plenty of free storage is available"
+    ],
+    "answer": {
+      "cause": "the device does not meet the minimum requirements of the new app version",
+      "action": "Check the app's requirements and keep the current version or move to a supported device"
+    },
+    "appliesWhen": "an older device no longer meets the app's minimum requirements",
+    "explanation": "Developers drop older devices when new features need newer hardware or a newer OS. Check the requirements before an uninstall, because the app may not reinstall at all.",
+    "related": [
+      "core2-s-mob-app-update-autooff",
+      "core2-s-mob-app-install-storage",
+      "core2-s-mob-os-update-unsupported"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-app-install-storage",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.4"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "a large game stops installing partway through",
+      "the device holds thousands of photos and videos",
+      "the Wi-Fi signal is strong",
+      "the app is listed as compatible with the device"
+    ],
+    "answer": {
+      "cause": "the device does not have enough free storage space",
+      "action": "Free up space by removing unused apps and moving photos to cloud storage"
+    },
+    "firstStep": "Check how much free storage space the device has",
+    "appliesWhen": "the device is almost out of storage space",
+    "explanation": "An app needs room for itself plus some extra free space to install. Removing unused apps and moving media off the device makes that room.",
+    "related": [
+      "core2-s-mob-app-update-compat",
+      "core2-s-mob-app-update-autooff",
+      "core2-s-mob-app-corrupt-cache"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-slow-ram",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.5"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "every app is slow to respond to taps",
+      "dozens of apps and browser tabs were opened during the day",
+      "the device has not been restarted in weeks",
+      "memory use is shown near its limit"
+    ],
+    "answer": {
+      "cause": "too many apps are running in the background and fill the RAM",
+      "action": "Close the unused apps and browser tabs or restart the device"
+    },
+    "appliesWhen": "background apps use up the device's memory",
+    "explanation": "Mobile apps go to the background instead of closing, and each one keeps its share of RAM. When RAM is full, the device swaps pages to storage and slows down.",
+    "related": [
+      "core2-s-mob-slow-new-os",
+      "core2-s-mob-app-hung-background",
+      "core2-s-mob-battery-background-app"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-slow-new-os",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.5",
+      "220-1202/3.2.6"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "tablet"
+    ],
+    "clues": [
+      "the device became sluggish right after a major OS upgrade",
+      "the device is several years old",
+      "only a few apps are installed",
+      "storage space is not a problem"
+    ],
+    "answer": {
+      "cause": "the new OS version needs more processing power than the old device has",
+      "action": "Downgrade the device to its earlier factory image"
+    },
+    "appliesWhen": "an older device runs badly after it moves to a much newer OS version",
+    "explanation": "Newer OS versions use more CPU resources, so an old device can run slowly after an upgrade. Going back to the original image usually needs a USB connection to a computer and a full battery.",
+    "related": [
+      "core2-s-mob-slow-ram",
+      "core2-s-mob-os-update-unsupported",
+      "core2-s-mob-battery-old"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "core2-s-mob-os-update-cellular",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.6"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the OS update downloads only a few percent and then stops",
+      "the user is travelling and works only on the cellular network",
+      "the device has enough free storage",
+      "the update is listed for this model"
+    ],
+    "answer": {
+      "cause": "the OS will not download a large update over a metered connection",
+      "action": "Connect to a Wi-Fi network and run the update again"
+    },
+    "firstStep": "Check whether the device is connected to Wi-Fi",
+    "appliesWhen": "an update waits because the device uses only cellular data",
+    "explanation": "Many mobile operating systems treat cellular data as metered and hold back large downloads. On a stable Wi-Fi connection the update can download and install.",
+    "related": [
+      "core2-s-mob-os-update-unsupported",
+      "core2-s-mob-app-update-autooff",
+      "core2-s-mob-app-install-storage"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-os-update-unsupported",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.6"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "no new OS update has been offered for over a year",
+      "coworkers with newer models got the update weeks ago",
+      "the device is seven years old",
+      "a reboot and a strong Wi-Fi connection did not help"
+    ],
+    "answer": {
+      "cause": "the vendor no longer supports the device hardware for OS updates",
+      "action": "Replace the device with a model that still receives updates"
+    },
+    "appliesWhen": "the hardware is older than the vendor's support period",
+    "explanation": "Vendors usually support a device for about five to seven years. After that the hardware is not compatible with new OS versions, so a supported device is the only way to get updates.",
+    "related": [
+      "core2-s-mob-os-update-cellular",
+      "core2-s-mob-app-update-compat",
+      "core2-s-mob-slow-new-os"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-battery-background-app",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.7"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the battery is empty by early afternoon",
+      "the battery usage screen lists a navigation app at the top",
+      "the user does not remember opening that app today",
+      "the phone feels warm in the pocket"
+    ],
+    "answer": {
+      "cause": "a power-hungry app keeps running in the background",
+      "action": "Close the app and limit its background activity"
+    },
+    "firstStep": "Check the battery usage list for apps that use the most power",
+    "appliesWhen": "one app uses much of the battery while it runs in the background",
+    "explanation": "GPS apps and games use a lot of power, even when they run in the background. Closing them and limiting background activity saves battery life.",
+    "related": [
+      "core2-s-mob-battery-signal",
+      "core2-s-mob-battery-old",
+      "core2-s-mob-slow-ram"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-battery-signal",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.7"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the battery drains fast only on days in the basement storeroom",
+      "the signal indicator often shows no bars there",
+      "no app shows high battery use",
+      "the battery lasts all day at home"
+    ],
+    "answer": {
+      "cause": "the phone keeps searching for a cellular signal in a dead spot",
+      "action": "Turn on Airplane mode in the dead spot and turn on only the Wi-Fi that is needed"
+    },
+    "appliesWhen": "the device sits in an area with no cellular signal",
+    "explanation": "In a dead spot the phone keeps trying to find a signal, which drains the battery. Airplane mode turns off all radios, and the user can turn on Wi-Fi alone.",
+    "related": [
+      "core2-s-mob-battery-background-app",
+      "core2-s-mob-battery-old",
+      "core2-s-mob-reboot-overheat"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "core2-s-mob-battery-old",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.7"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the battery no longer lasts half a day",
+      "the device gets hot while it charges",
+      "the device is four years old",
+      "the battery health screen shows a low maximum capacity"
+    ],
+    "answer": {
+      "cause": "the battery is old and has lost much of its capacity",
+      "action": "Have the battery replaced by an authorized service center"
+    },
+    "appliesWhen": "the battery itself is worn out from age",
+    "explanation": "Lithium-ion batteries lose capacity with age and heat. When an old battery no longer holds a charge, replacing it is the fix.",
+    "related": [
+      "core2-s-mob-battery-background-app",
+      "core2-s-mob-battery-signal",
+      "core2-s-mob-reboot-new-app"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-reboot-new-app",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.8"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device restarts on its own several times a day",
+      "the restarts began after a free game was installed last week",
+      "the OS is up to date",
+      "the battery is healthy and charged"
+    ],
+    "answer": {
+      "cause": "the newly installed app is unstable or not compatible with the device",
+      "action": "Uninstall the app that was installed just before the reboots began"
+    },
+    "firstStep": "Ask the user what changed on the device just before the reboots began",
+    "appliesWhen": "the reboots began right after a new app was installed",
+    "explanation": "When random reboots start right after an install, that app is the most likely trigger. Removing it and watching the device confirms the cause.",
+    "related": [
+      "core2-s-mob-reboot-auto-restart",
+      "core2-s-mob-reboot-overheat",
+      "core2-s-mob-battery-old"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-reboot-auto-restart",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.8"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone"
+    ],
+    "clues": [
+      "the phone restarts at almost the same time each night",
+      "no apps were installed recently",
+      "the battery and storage are fine",
+      "the restarts happen while the phone is idle"
+    ],
+    "answer": {
+      "cause": "the Auto Restart feature was turned on by mistake",
+      "action": "Turn off the Auto Restart setting"
+    },
+    "appliesWhen": "the phone reboots on a schedule while it is idle",
+    "explanation": "Some Android phones have a feature that restarts the phone on a schedule. If it was turned on by mistake, the phone seems to reboot at random.",
+    "related": [
+      "core2-s-mob-reboot-new-app",
+      "core2-s-mob-reboot-overheat",
+      "core2-s-mob-slow-ram"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-reboot-overheat",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.8",
+      "220-1202/3.2.7"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the phone restarts during long drives on hot days",
+      "a GPS app runs the whole trip",
+      "the phone sits on the dashboard in direct sun",
+      "the phone works fine indoors"
+    ],
+    "answer": {
+      "cause": "the phone is overheating",
+      "action": "Move the phone out of direct sun, remove its case, and let it cool down"
+    },
+    "appliesWhen": "heat from the sun or a busy app makes the device protect itself",
+    "explanation": "Mobile devices shut down or restart to protect the battery when they get too hot. Direct sun and resource-heavy apps such as GPS raise the temperature quickly.",
+    "related": [
+      "core2-s-mob-reboot-new-app",
+      "core2-s-mob-reboot-auto-restart",
+      "core2-s-mob-battery-signal"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-no-radios",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.9"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device has no cellular service and no Wi-Fi",
+      "the Bluetooth earbuds also stopped connecting",
+      "the user was on a flight yesterday",
+      "a coworker's device works in the same room"
+    ],
+    "answer": {
+      "cause": "Airplane mode is still turned on",
+      "action": "Turn off Airplane mode"
+    },
+    "appliesWhen": "every radio on the device is off at the same time",
+    "explanation": "One setting turns off the cellular, Wi-Fi, Bluetooth, and NFC radios together. Users often turn it on for a flight and forget it.",
+    "related": [
+      "core2-s-mob-wifi-forget",
+      "core2-s-mob-bt-pairing",
+      "core2-s-mob-nfc-case"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-wifi-forget",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.9"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the device no longer joins the office wireless network",
+      "the network passphrase was changed over the weekend",
+      "the device still connects to other networks",
+      "the device keeps saying it cannot join with the saved settings"
+    ],
+    "answer": {
+      "cause": "the saved wireless profile still holds the old passphrase",
+      "action": "Forget the network and join it again with the new passphrase"
+    },
+    "appliesWhen": "a saved network profile no longer matches the network's settings",
+    "explanation": "The device tries the saved settings each time it joins. Removing the saved network and joining again stores the new passphrase.",
+    "related": [
+      "core2-s-mob-no-radios",
+      "core2-s-mob-bt-pairing",
+      "core2-s-mob-wifi-interference"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "core2-s-mob-wifi-interference",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.9"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the wireless connection drops several times an hour",
+      "the drops happen most when the break-room microwave runs",
+      "the device connects to a 2.4 GHz network",
+      "the signal is strong at the desk"
+    ],
+    "answer": {
+      "cause": "interference on the 2.4 GHz band",
+      "action": "Connect the device to an SSID on the 5 GHz band"
+    },
+    "appliesWhen": "other devices on the 2.4 GHz band interrupt the wireless signal",
+    "explanation": "Microwave ovens and Bluetooth devices share the 2.4 GHz band and cause intermittent drops. A 5 GHz network has more channels and less of that interference.",
+    "related": [
+      "core2-s-mob-wifi-forget",
+      "core2-s-mob-no-radios",
+      "core2-s-mob-bt-pairing"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-bt-pairing",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.9"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the new headset does not show up in the device list",
+      "the smartwatch and the car stereo still connect",
+      "the headset is fully charged",
+      "the headset was just taken out of the box"
+    ],
+    "answer": {
+      "cause": "the headset is not in pairing mode",
+      "action": "Put the headset in discoverable mode and pair it with the passcode from its documentation"
+    },
+    "appliesWhen": "the accessory is not discoverable or the pairing code is wrong",
+    "explanation": "A Bluetooth accessory must be turned on and discoverable before a device can pair with it. Some accessories also need a vendor passcode such as 0000 or 1234.",
+    "related": [
+      "core2-s-mob-no-radios",
+      "core2-s-mob-nfc-case",
+      "core2-s-mob-wifi-forget"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-nfc-case",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.9"
+    ],
+    "settings": [
+      "retail",
+      "office",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "tap-to-pay fails at every store",
+      "the payment app shows the card is valid",
+      "the user recently bought a rugged case with a metal back",
+      "other customers pay at the same reader"
+    ],
+    "answer": {
+      "cause": "the metal-backed case blocks the NFC signal",
+      "action": "Remove the case and try the payment again"
+    },
+    "appliesWhen": "a thick or metal case sits over the NFC antenna",
+    "explanation": "NFC works only over a few centimeters and some cases block the antenna. Other customers paying at the same reader rules out the reader.",
+    "related": [
+      "core2-s-mob-no-radios",
+      "core2-s-mob-bt-pairing",
+      "core2-s-mob-wifi-interference"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-rotate-lock",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.10"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the screen stays in portrait when the device is turned sideways",
+      "videos play only in a small window",
+      "a child used the device over the weekend",
+      "the problem happens in every app"
+    ],
+    "answer": {
+      "cause": "the orientation lock is turned on",
+      "action": "Turn off the orientation lock in the quick settings or Control Center"
+    },
+    "appliesWhen": "the rotation lock setting holds the screen in one orientation",
+    "explanation": "Users often turn on the orientation lock by accident. On iOS it is Portrait Orientation Lock in Control Center, and on Android it is the rotation setting in quick settings.",
+    "related": [
+      "core2-s-mob-rotate-sensor",
+      "core2-s-mob-app-hung-background",
+      "core2-s-mob-slow-ram"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mob-rotate-sensor",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.2"
+    ],
+    "topics": [
+      "220-1202/3.2.10"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the screen will not turn to landscape in any app",
+      "the orientation lock is off",
+      "a reboot did not help",
+      "the device was dropped last week"
+    ],
+    "answer": {
+      "cause": "the orientation sensor has failed",
+      "action": "Test the sensors and send the device to a service center if one has failed"
+    },
+    "firstStep": "Reboot the device to close any app that holds the orientation",
+    "appliesWhen": "the screen will not rotate after software causes were ruled out",
+    "explanation": "When the lock is off and a reboot does not help, a hardware fault is likely. A sensor test app or the service center can confirm a bad sensor.",
+    "related": [
+      "core2-s-mob-rotate-lock",
+      "core2-s-mob-app-corrupt-cache",
+      "core2-s-mob-reboot-new-app"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mobsec-sideload-apk",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.1",
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone"
+    ],
+    "clues": [
+      "the user installed a video app from a file on a website",
+      "the phone is much slower since then",
+      "the phone asked to allow installs from unknown sources",
+      "the app asks for access to contacts and messages"
+    ],
+    "answer": {
+      "cause": "a malicious app installed by sideloading an APK",
+      "action": "Uninstall the sideloaded app and scan the phone with antimalware"
+    },
+    "firstStep": "Review the permissions of the newly installed app",
+    "appliesWhen": "an app was installed from a file instead of the official store",
+    "explanation": "Sideloaded APKs skip the checks of the official app store and may carry malware. A video app that wants contacts and messages is a red flag.",
+    "related": [
+      "core2-s-mobsec-dev-mode",
+      "core2-s-mobsec-rooted",
+      "core2-s-mobsec-spoofed-app"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mobsec-dev-mode",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone"
+    ],
+    "clues": [
+      "the MDM console flags the phone as noncompliant",
+      "a computer can control the phone through its USB cable",
+      "a mock location app is selected in the settings",
+      "the user tapped the build number several times after reading a forum post"
+    ],
+    "answer": {
+      "cause": "the hidden settings for app developers were turned on",
+      "action": "Turn off Developer options and USB debugging"
+    },
+    "appliesWhen": "developer settings such as USB debugging or a mock location are on",
+    "explanation": "Developer mode allows USB debugging, sideloading, and mock GPS locations. A mock location can trick location-based security, so it is a security concern on a work phone.",
+    "related": [
+      "core2-s-mobsec-sideload-apk",
+      "core2-s-mobsec-rooted",
+      "core2-s-mobsec-high-traffic"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 54: Troubleshooting Mobile Operating Systems and Applications"
+  },
+  {
+    "id": "core2-s-mobsec-rooted",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "android-phone"
+    ],
+    "clues": [
+      "the MDM blocks company email on the phone",
+      "the phone runs a custom firmware the user flashed",
+      "the vendor's security updates no longer arrive",
+      "the hotspot feature works without a carrier plan"
+    ],
+    "answer": {
+      "cause": "the phone has been rooted",
+      "action": "Restore the vendor's stock OS or replace the phone before it gets company access"
+    },
+    "appliesWhen": "a user has gained super-user access to an Android phone",
+    "explanation": "Rooting gives the user super-user access and often replaces the firmware, which ends vendor patches. MDM policies often block rooted devices from company data.",
+    "related": [
+      "core2-s-mobsec-dev-mode",
+      "core2-s-mobsec-sideload-apk",
+      "core2-s-mobsec-bootleg"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "core2-s-mobsec-jailbreak",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "iphone"
+    ],
+    "clues": [
+      "the MDM reports that the iPhone failed its integrity check",
+      "apps from an unofficial store are on the home screen",
+      "some apps are hidden from the home screen",
+      "the user wanted extra photo modes"
+    ],
+    "answer": {
+      "cause": "the iPhone has been jailbroken",
+      "action": "Restore the iPhone to stock iOS and block it from company data until it is compliant"
+    },
+    "appliesWhen": "a user has removed the iOS restrictions to get root-level access",
+    "explanation": "Jailbreaking changes iOS to get higher access, so malware can install and hide itself. MDM attestation can reveal a jailbroken device.",
+    "related": [
+      "core2-s-mobsec-spoofed-app",
+      "core2-s-mobsec-fake-warning",
+      "core2-s-mobsec-ads"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "core2-s-mobsec-bootleg",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.1",
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone"
+    ],
+    "clues": [
+      "the user installed a free copy of a paid photo editor",
+      "the copy came as an APK from a file-sharing site",
+      "the phone now uses far more data than before",
+      "the battery drains faster than usual"
+    ],
+    "answer": {
+      "cause": "a cracked app that carries malware",
+      "action": "Remove the cracked app, scan the phone, and buy the app from the official store"
+    },
+    "appliesWhen": "a pirated copy of a paid app was installed",
+    "explanation": "A bootleg app is a paid app with its DRM removed, and it often carries malware because that pays the bootlegger. The hidden payload uses data and power.",
+    "related": [
+      "core2-s-mobsec-sideload-apk",
+      "core2-s-mobsec-spoofed-app",
+      "core2-s-mobsec-data-limit"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mobsec-spoofed-app",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the bank app on the phone has only a few hundred downloads",
+      "its publisher name is different from the bank's",
+      "the icon looks a little different from the bank's website",
+      "the user's bank password stopped working"
+    ],
+    "answer": {
+      "cause": "a fake app that copies the look of a legitimate app",
+      "action": "Remove the app, change the bank password, and install the bank's app from its verified publisher"
+    },
+    "firstStep": "Check the app's publisher name and number of downloads in the store",
+    "appliesWhen": "an app pretends to be a well-known app",
+    "explanation": "Spoofed apps imitate a real app to steal data. A different publisher, an odd icon, and few downloads are warning signs.",
+    "related": [
+      "core2-s-mobsec-bootleg",
+      "core2-s-mobsec-sideload-apk",
+      "core2-s-mobsec-fake-warning"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "core2-s-mobsec-high-traffic",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the network traffic stays high even when the device is idle",
+      "the spikes last for hours at night",
+      "the user's habits have not changed",
+      "a new flashlight app was installed this month"
+    ],
+    "answer": {
+      "cause": "a malicious app is sending data from the device",
+      "action": "Find the app that makes the traffic and uninstall it"
+    },
+    "firstStep": "Close apps one at a time while you watch the network traffic",
+    "appliesWhen": "an app sends data out of the device without the user's knowledge",
+    "explanation": "Long traffic spikes can mean data is being stolen from or relayed through the device. When the traffic drops after an app closes, that app is the likely culprit.",
+    "related": [
+      "core2-s-mobsec-data-limit",
+      "core2-s-mobsec-limited-internet",
+      "core2-s-mobsec-camera-spy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mobsec-data-limit",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the carrier sent a notice that the data limit is used up",
+      "the user's use of the phone has not changed",
+      "the battery drains quickly",
+      "the device runs warm while idle"
+    ],
+    "answer": {
+      "cause": "the device is compromised and is used as a bot",
+      "action": "Take the device off the network, isolate it, and scan it for malware"
+    },
+    "appliesWhen": "data use rises without any change in what the user does",
+    "explanation": "Malware can use a device to send spam or attack other systems, which uses up the data plan. A usage baseline from earlier months shows that the use is abnormal.",
+    "related": [
+      "core2-s-mobsec-high-traffic",
+      "core2-s-mobsec-limited-internet",
+      "core2-s-mobsec-sideload-apk"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "core2-s-mobsec-limited-internet",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "web pages load only some of the time on this device",
+      "coworkers on the same network have no problems",
+      "a reboot did not help",
+      "nothing changed in the wireless network or the radio firmware"
+    ],
+    "answer": {
+      "cause": "a malicious app is proxying or monopolizing the connection",
+      "action": "Run an antimalware scan and add a mobile firewall"
+    },
+    "appliesWhen": "the usual network causes are ruled out and only one device has the problem",
+    "explanation": "When the network, firmware, and other users are fine, malware is a likely cause. Malicious apps proxy the connection to sniff credentials, which makes it intermittent.",
+    "related": [
+      "core2-s-mobsec-high-traffic",
+      "core2-s-mobsec-data-limit",
+      "core2-s-mobsec-ads"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mobsec-fake-warning",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "a full-screen warning says the device is infected",
+      "the warning asks the user to install a cleaner app",
+      "the warning appears even when no browser is open",
+      "the device has become sluggish"
+    ],
+    "answer": {
+      "cause": "malware is installed on the device",
+      "action": "Factory reset the device and install antimalware before reinstalling apps"
+    },
+    "appliesWhen": "fake security warnings appear on the device",
+    "explanation": "A fake security warning should be treated as a sign that malware is installed. A factory reset removes it, and antimalware should be in place before the apps return.",
+    "related": [
+      "core2-s-mobsec-ads",
+      "core2-s-mobsec-camera-spy",
+      "core2-s-mobsec-spoofed-app"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-mobsec-ads",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "school",
+      "retail",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "ads cover the home screen several times an hour",
+      "the ads began after a few free games were installed",
+      "the ads appear even when no app is open",
+      "the device is slow to respond"
+    ],
+    "answer": {
+      "cause": "adware came with one of the newly installed apps",
+      "action": "Uninstall the newly installed apps one at a time until the ads stop"
+    },
+    "appliesWhen": "ads appear outside of any app after new apps were installed",
+    "explanation": "A high number of ads is a sign of adware, which usually comes with a malicious app. Removing new apps one by one is quick and shows which app is to blame.",
+    "related": [
+      "core2-s-mobsec-fake-warning",
+      "core2-s-mobsec-limited-internet",
+      "core2-s-mobsec-bootleg"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "core2-s-mobsec-camera-spy",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.3"
+    ],
+    "topics": [
+      "220-1202/3.3.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "clinic"
+    ],
+    "devices": [
+      "android-phone",
+      "iphone",
+      "tablet"
+    ],
+    "clues": [
+      "the user hears shutter sounds when no one is taking pictures",
+      "processor use and battery drain are high",
+      "an unknown app has permission to use the camera",
+      "the device is warm when it is not in use"
+    ],
+    "answer": {
+      "cause": "a Trojan has taken control of the camera",
+      "action": "Force stop the unknown app and remove its camera permission, then scan the device"
+    },
+    "appliesWhen": "an unknown app uses the camera without the user's action",
+    "explanation": "High resource use and power drain can mean a Trojan is using the camera. The camera permission list shows which apps can use it.",
+    "related": [
+      "core2-s-mobsec-high-traffic",
+      "core2-s-mobsec-fake-warning",
+      "core2-s-mobsec-data-limit"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 55: Troubleshooting Mobile Operating Systems Security Issues"
+  },
+  {
+    "id": "core2-s-pcsec-dns-changed",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1",
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the computer cannot reach the file server or the intranet",
+      "popular websites open look-alike pages",
+      "the network adapter shows a good connection",
+      "the IPv4 settings list an unknown name server"
+    ],
+    "answer": {
+      "cause": "malware changed the computer's DNS server settings",
+      "action": "Remove the malware and set the DNS servers back to the correct addresses"
+    },
+    "appliesWhen": "name resolution goes to a server the attacker controls",
+    "explanation": "Some malware changes the DNS servers, so the attacker controls where names resolve. That can block network services and redirect the browser.",
+    "related": [
+      "core2-s-pcsec-proxy",
+      "core2-s-pcsec-hosts-file",
+      "core2-s-pcsec-push-notifications"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-proxy",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1",
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "web pages load slowly in every browser",
+      "extra ads appear on trusted sites",
+      "the system proxy setting lists an unknown address",
+      "the user did not set up a proxy"
+    ],
+    "answer": {
+      "cause": "malware set the system to use a malicious proxy",
+      "action": "Remove the proxy setting and scan the computer for malware"
+    },
+    "firstStep": "Check the system's proxy settings",
+    "appliesWhen": "web traffic goes through a proxy the user did not set",
+    "explanation": "A malicious proxy sends web traffic through the attacker's server, which slows browsing and lets the attacker inject ads. Proxy settings should be checked for changes.",
+    "related": [
+      "core2-s-pcsec-dns-changed",
+      "core2-s-pcsec-cryptominer",
+      "core2-s-pcsec-hijacked-browser"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-desktop-alert",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "a box that looks like a Windows message says a security error was found",
+      "the box shows a phone number for support",
+      "the box asks the user to call right away",
+      "the company's antivirus shows no alert"
+    ],
+    "answer": {
+      "cause": "a fake desktop alert made to trick the user",
+      "action": "Do not call the number, close the alert, and run a full antimalware scan"
+    },
+    "appliesWhen": "a message made to look like Windows asks the user to call a number",
+    "explanation": "Fake desktop alerts copy the look of Windows to social engineer the user. The number reaches scammers who sell software the user does not need.",
+    "related": [
+      "core2-s-pcsec-rogue-av",
+      "core2-s-pcsec-hoax",
+      "core2-s-pcsec-push-notifications"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-rogue-av",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "a security program the company does not use says it found dozens of threats",
+      "the program asks for payment to remove them",
+      "it says the real antivirus is turned off",
+      "the program appeared after a download"
+    ],
+    "answer": {
+      "cause": "rogue antivirus malware",
+      "action": "Do not interact with the program and remove it with the company's real antimalware tool"
+    },
+    "appliesWhen": "an unknown security program reports threats and asks for money",
+    "explanation": "Rogue antivirus software poses as a security product and reports made-up problems. Knowing which antivirus the company actually uses is the best defense.",
+    "related": [
+      "core2-s-pcsec-desktop-alert",
+      "core2-s-pcsec-av-disabled",
+      "core2-s-pcsec-hoax"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "core2-s-pcsec-hoax",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "an email warns of a new virus that destroys hardware",
+      "the email tells the user to forward it to everyone they know",
+      "the antivirus vendor's website lists no such threat",
+      "no computer in the office shows any symptom"
+    ],
+    "answer": {
+      "cause": "a virus hoax",
+      "action": "Check the warning on the CISA or antivirus vendor website and delete the email without forwarding it"
+    },
+    "appliesWhen": "a warning message tells people to spread it but describes no real threat",
+    "explanation": "Hoaxes spread panic through warnings that claim impossible damage. Checking a trusted source and not forwarding the email lets the hoax die out.",
+    "related": [
+      "core2-s-pcsec-desktop-alert",
+      "core2-s-pcsec-rogue-av",
+      "core2-s-pcsec-push-notifications"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-ransomware",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the user's documents all have a new file extension",
+      "the files will not open",
+      "a text file with payment instructions is in every folder",
+      "more files change while the technician watches"
+    ],
+    "answer": {
+      "cause": "ransomware is encrypting the files",
+      "action": "Isolate the computer, remove the malware, and restore the files from a backup"
+    },
+    "firstStep": "Disconnect the computer from the network",
+    "appliesWhen": "files are renamed and locked and a payment note appears",
+    "explanation": "Ransomware encrypts files, renames them with a new extension, and leaves a note in each folder. Isolating the computer stops it from reaching more files on the network.",
+    "related": [
+      "core2-s-pcsec-system-files",
+      "core2-s-pcsec-av-disabled",
+      "core2-s-pcsec-dns-changed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-system-files",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "printing and saving fail in every program",
+      "the antimalware tool removed a rootkit yesterday",
+      "some system files have recent change dates",
+      "access denied errors appear for normal tasks"
+    ],
+    "answer": {
+      "cause": "malware replaced or altered Windows system files",
+      "action": "Run System File Checker to restore the protected system files"
+    },
+    "appliesWhen": "Windows system files were changed or removed by malware",
+    "explanation": "Malware can delete or replace key system files, so the tasks that use them fail. System File Checker restores the trusted versions of missing or altered files.",
+    "related": [
+      "core2-s-pcsec-ransomware",
+      "core2-s-pcsec-update-space",
+      "core2-s-pcsec-av-disabled"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-push-notifications",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1",
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "ads keep appearing as notifications in the corner of the screen",
+      "the notifications appear even when the browser is minimized",
+      "the user clicked Allow on a prize website last week",
+      "a malware scan finds nothing"
+    ],
+    "answer": {
+      "cause": "the user allowed a malicious website to send push notifications",
+      "action": "Remove the website's permission to send notifications in the browser settings"
+    },
+    "appliesWhen": "a website was allowed to send notifications to the desktop",
+    "explanation": "A malicious site can coax the user into allowing push notifications and then push ads that look like OS messages. Reviewing the sites allowed to notify stops them.",
+    "related": [
+      "core2-s-pcsec-desktop-alert",
+      "core2-s-pcsec-popup-blocker-off",
+      "core2-s-pcsec-hijacked-browser"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-update-space",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the nightly update fails with the same error each time",
+      "the system drive has only a few hundred megabytes free",
+      "the internet connection works",
+      "other computers got the update"
+    ],
+    "answer": {
+      "cause": "the system drive does not have enough free space for the update",
+      "action": "Free up space on the system drive and run Windows Update again"
+    },
+    "firstStep": "Run the Windows Update troubleshooter and note the error code",
+    "appliesWhen": "the system drive is nearly full when an update installs",
+    "explanation": "An update needs free space on the system drive, or it fails. After space is freed, running Windows Update again usually installs it.",
+    "related": [
+      "core2-s-pcsec-system-files",
+      "core2-s-pcsec-av-disabled",
+      "core2-s-pcsec-ransomware"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "core2-s-pcsec-av-disabled",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the antivirus program turns itself off",
+      "the antivirus will not update its definitions",
+      "the firewall was turned off without the user's action",
+      "new icons appeared on the desktop"
+    ],
+    "answer": {
+      "cause": "malware is disabling the security software",
+      "action": "Boot into a clean environment and scan with an up-to-date antimalware tool"
+    },
+    "appliesWhen": "the protection tools are turned off by something other than the user",
+    "explanation": "Malware often turns off antivirus and firewall programs so it can run unseen. A scan from a clean boot environment avoids the malware that is running.",
+    "related": [
+      "core2-s-pcsec-rogue-av",
+      "core2-s-pcsec-system-files",
+      "core2-s-pcsec-update-space"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "core2-s-pcsec-popup-blocker-off",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "new windows with ads open on several trusted websites",
+      "the problem is only in one browser",
+      "a full malware scan is clean",
+      "a coworker changed the browser settings to use an old web app"
+    ],
+    "answer": {
+      "cause": "the browser's pop-up blocker was turned off",
+      "action": "Turn the pop-up blocker back on and allow pop-ups only for the sites that need them"
+    },
+    "appliesWhen": "pop-ups appear because the browser no longer blocks them",
+    "explanation": "Modern browsers block pop-ups by default and let the user allow them per site. When the blocker is off, every pop-up gets through.",
+    "related": [
+      "core2-s-pcsec-adware-extension",
+      "core2-s-pcsec-push-notifications",
+      "core2-s-pcsec-cryptominer"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "core2-s-pcsec-adware-extension",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "pop-ups and overlays appear on nearly every page",
+      "the pop-up blocker is on",
+      "a coupon extension was added last week",
+      "the browser has become slow"
+    ],
+    "answer": {
+      "cause": "an adware browser extension",
+      "action": "Remove the extension and scan the computer with antimalware"
+    },
+    "appliesWhen": "a browser add-on injects ads into web pages",
+    "explanation": "Adware and malicious extensions inject pop-ups and overlays even when the blocker is on. They also use resources and slow the browser.",
+    "related": [
+      "core2-s-pcsec-popup-blocker-off",
+      "core2-s-pcsec-hijacked-browser",
+      "core2-s-pcsec-cryptominer"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security; CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues"
+  },
+  {
+    "id": "core2-s-pcsec-cert-clock",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "every secure website shows a certificate warning",
+      "the clock in the taskbar shows a date two years ago",
+      "the warnings say the certificates are not yet valid",
+      "the computer is old and was unplugged for a month"
+    ],
+    "answer": {
+      "cause": "the system date and time are wrong",
+      "action": "Correct the date and time and sync the clock with a time server"
+    },
+    "appliesWhen": "the computer's clock does not match the certificates' valid dates",
+    "explanation": "Browsers compare a certificate's valid dates with the computer's clock. A wrong date makes valid certificates look expired or not yet valid.",
+    "related": [
+      "core2-s-pcsec-cert-self-signed",
+      "core2-s-pcsec-hosts-file",
+      "core2-s-pcsec-proxy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-cert-self-signed",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the warning appears only on the web page of a new network switch",
+      "the certificate's Issued To and Issued By fields are the same",
+      "the address bar shows Not secure",
+      "the switch was set up by the IT team"
+    ],
+    "answer": {
+      "cause": "the device uses a self-signed certificate",
+      "action": "Verify the device and import its certificate into the trusted certificate store"
+    },
+    "firstStep": "View the certificate details in the browser",
+    "appliesWhen": "a certificate is signed by the device itself and not by a trusted CA",
+    "explanation": "Network management pages often use self-signed certificates, which browsers do not trust. After the device is verified, importing its certificate stops the warning.",
+    "related": [
+      "core2-s-pcsec-cert-clock",
+      "core2-s-pcsec-hosts-file",
+      "core2-s-pcsec-dns-changed"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-hosts-file",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "typing the bank's address opens a page that looks almost the same",
+      "the problem happens only on this computer",
+      "the computer uses the same DNS servers as the others",
+      "the fake page asks for the user's login"
+    ],
+    "answer": {
+      "cause": "the hosts file was changed to redirect the site",
+      "action": "Remove the bad entries from the hosts file and scan for malware"
+    },
+    "appliesWhen": "only one computer is redirected while it uses the same DNS servers as the others",
+    "explanation": "Pharming on one computer is often done by adding entries to the hosts file. Those entries win over DNS, so only that computer goes to the fake site.",
+    "related": [
+      "core2-s-pcsec-dns-changed",
+      "core2-s-pcsec-hijacked-browser",
+      "core2-s-pcsec-cert-clock"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-hijacked-browser",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the browser home page changed to an unknown site",
+      "searches go to a search engine the user did not choose",
+      "an unknown toolbar appeared",
+      "the user installed a free program last week"
+    ],
+    "answer": {
+      "cause": "a browser hijacker came with the free program",
+      "action": "Remove the unwanted program and extension and reset the browser settings"
+    },
+    "appliesWhen": "the home page and search engine change without the user's action",
+    "explanation": "A changed home page or search engine is a common sign of spyware that hijacks the browser. Removing it and resetting the browser restores the settings.",
+    "related": [
+      "core2-s-pcsec-adware-extension",
+      "core2-s-pcsec-hosts-file",
+      "core2-s-pcsec-proxy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 56: Troubleshooting PC Security Issues; CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-cryptominer",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the browser makes the processor run at full use",
+      "the fan is loud even when only one page is open",
+      "the problem started after a visit to a streaming site",
+      "closing the visible tab does not help"
+    ],
+    "answer": {
+      "cause": "a hidden pop-under page is running mining JavaScript",
+      "action": "Close all hidden browser windows, scan for malware, and use an ad blocker"
+    },
+    "appliesWhen": "a hidden page or script uses the processor in the background",
+    "explanation": "Pop-under pages open behind the main window and can run scripts that mine cryptocurrency. They use the CPU without the user's consent and slow the whole system.",
+    "related": [
+      "core2-s-pcsec-adware-extension",
+      "core2-s-pcsec-slow-browser",
+      "core2-s-pcsec-proxy"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  },
+  {
+    "id": "core2-s-pcsec-slow-browser",
+    "kind": "fault",
+    "exam": "220-1202",
+    "domain": "3",
+    "objectives": [
+      "220-1202/3.4"
+    ],
+    "topics": [
+      "220-1202/3.4.2"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "enterprise"
+    ],
+    "devices": [
+      "windows-pc",
+      "windows-laptop"
+    ],
+    "clues": [
+      "the browser has become slow and some tabs freeze",
+      "about fifty tabs are open",
+      "the browser menu shows that an update is waiting",
+      "a malware scan is clean"
+    ],
+    "answer": {
+      "cause": "too many open tabs and an update that needs a browser restart",
+      "action": "Close the extra tabs and restart the browser to finish its update"
+    },
+    "appliesWhen": "the browser is slow from heavy use and a pending update",
+    "explanation": "Not every slow browser has malware. Too many open tabs and an update waiting for a restart also slow it down.",
+    "related": [
+      "core2-s-pcsec-cryptominer",
+      "core2-s-pcsec-adware-extension",
+      "core2-s-pcsec-popup-blocker-off"
+    ],
+    "origin": "written",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 7: Troubleshooting Operating Systems and Security"
+  }
+]
