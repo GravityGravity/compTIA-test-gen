@@ -1,6 +1,6 @@
 # CompTIA A+ Practice App
 
-A local desktop app that generates practice exams and exercises for CompTIA A+ Core 1 and Core 2.
+A local desktop app that generates practice exams and exercises for CompTIA A+ Core 1 and Core 2, and Network+ (N10-009).
 Read `docs/spec.md` for the product requirements.
 Read `docs/compTIA-exam-overviews.md` for how each exam is generated.
 
@@ -17,7 +17,7 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 ## Folder Structure
 - `CHANGELOG.md` – A summary of the changes and decisions in each task.
 - `docs/spec.md` – Product requirements.
-- `docs/compTIA-exam-overviews.md` – Exam overviews for Core 1, Core 2, and Network+ (future): question count, time, passing score, domains, weights, question structures, and the structure mix.
+- `docs/compTIA-exam-overviews.md` – Exam overviews for Core 1, Core 2, and Network+: question count, time, passing score, domains, weights, question structures, and the structure mix.
 - `references/exam-simulation-ui.html` – Exam simulation draft. The UI for an exam attempt must follow it.
 - `references/ui-drafts/` – Static HTML drafts of the non-exam screens (home, exam intro, previous attempts, exercise setup, question, results).
 - `references/comptia-ui-style/` – compTIA UI style: `README.md` (rules), `tokens.json` (colors, type, spacing, radius, shadow), `components.css`, and `components/` (Button, Card, Eyebrow, StatTile). All other screens must follow it.
@@ -30,9 +30,9 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - `sources-text/general/objectives-220-1201/`, `objectives-220-1202/` – The official CompTIA exam objectives (every objective and sub-topic) and the official acronym list for each exam.
 - `sources-text/derived/a-plus-acronyms.md` – The two official acronym lists merged, with notes where they differ. The main source for `content/acronyms/`.
 - `sources-text/derived/acronym-candidates.md` – Acronym and expanded-form pairs found in the books, marked when they are on the official list. A helper, not a source of truth.
-- `sources-text/network/` – Network+ (N10-009): the official objectives and acronym list (`objectives-n10-009/`) and three books. `sources-text/derived/network-plus-acronyms.md` and `network-plus-acronym-candidates.md` are the Network+ acronym files. Extracted only; no Network+ content is built yet.
-- `tools/extract/` – Dev-only Python extractor for the books (see its `README.md`). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
-- `content/` – Question records, terms, and noun pools that the app uses. Subfolders: `core1/`, `core2/`, `acronyms/`, `definitions/`, `network/` (later).
+- `sources-text/network/` – Network+ (N10-009): the official objectives and acronym list (`objectives-n10-009/`) and three books. `sources-text/derived/network-plus-acronyms.md` and `network-plus-acronym-candidates.md` are the Network+ acronym files.
+- `tools/extract/` – Dev-only Python tools (see its `README.md`): the book extractor, `seed_acronyms.py` (seeds acronym records from the official lists), and `check_content.py` (validates the acronym and definition records). Not part of the app. Its venv (`tools/extract/.venv/`) is not in git.
+- `content/` – Question records, terms, and noun pools that the app uses. Subfolders: `core1/`, `core2/`, `acronyms/`, `definitions/`, `network/`. See `content/README.md` for the record formats.
 <!-- Add the code folders when they exist. -->
 
 ## Tech Stack
@@ -56,7 +56,7 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Do not add network calls or user accounts.
 - Do not change the tech stack without approval.
 - Do not hard-code Core 1 or Core 2 details. Load each exam from its config, so new exams (for example Network+) can be added later.
-- Show the Network+ Exam module in module selection, greyed out and inactive. The user cannot select it. Do not build its exams or content until the user asks. Control this with an `active` setting in its config, so the module can be activated later without code changes.
+- Network+ is in scope (approved 2026-10-30): build its exam, acronym, and definition content. Each module and certification has an `active` setting in its config. Set it to true when its config and content exist; until then the module shows greyed out in module selection and the user cannot select it. No code changes are needed to activate a module.
 - Do not build performance-based questions (PBQs) until the user asks. Keep the question type as a field in each question, and keep the code for each question type separate, so PBQ types can be added later.
 - Sections marked **Plan with the user** are not decided. Propose a plan and get approval before you write code for them.
 - Update this file when a planned decision is approved.
@@ -93,9 +93,10 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 - Prefer the books for the current objectives (220-1201/1202). The 220-1101/1102 books are older: use them for background, and check their facts against a current book.
 - Create questions from the facts in each chapter.
 - When a chapter has practice questions, add each one to the question pool in `content/`. Keep the question, the answers, and the explanation. Set the `origin` field to `book`.
-- Create content one domain at a time. Stop after each domain so the user can review it.
+- Create content one domain at a time. Stop after each domain so the user can review it. Exception (approved): acronyms are made and reviewed as one batch for each certification.
+- Run `tools/extract/check_content.py` after each change to `content/acronyms/` or `content/definitions/`.
 - Add a `source` field (book and chapter) to each content record.
-- For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).
+- For the Acronym Exercise module, use the acronym list in the official CompTIA exam objectives as the main source (`sources-text/derived/a-plus-acronyms.md`; for Network+, `network-plus-acronyms.md`). Where the Core 1 and Core 2 lists differ, check the objectives and the books for the correct expanded form (for example, XSS not XXS, and Network Address Translation for NAT).
 - Use the official objectives in `sources-text/general/objectives-220-120*/` to check that each content record matches a current objective.
 
 ## Code Style
@@ -107,7 +108,7 @@ Not decided. Plan the build setup with the user. Then add the commands here.
 The exam guide gives a separate structure for EACH exam type:
 - `docs/compTIA-exam-overviews.md` Part 1 – Core 1 (220-1201).
 - `docs/compTIA-exam-overviews.md` Part 2 – Core 2 (220-1202).
-- `docs/compTIA-exam-overviews.md` Part 3 – Network+ (N10-009). Inactive: shown greyed out in module selection. Do not build its exams until the user asks.
+- `docs/compTIA-exam-overviews.md` Part 3 – Network+ (N10-009). In scope. Shown greyed out until its config `active` setting is true.
 
 Each exam type has its own config file. Make each config from the part of the guide for that exam only. Do not mix values between exams. Each config has:
 - The question count, the time limit, and the passing score.
@@ -140,19 +141,20 @@ For each attempt, the app uses the config of the selected exam to:
 
 ### Exercise generation (Acronym Exercise and Definition Exercise modules)
 These are two separate modules. Each module practices one thing only. They can share the same exercise code with different content and configs:
-- Acronym Exercise:
-  - Multiple choice: either direction (acronym → expanded form, or expanded form → acronym).
-  - Type the answer: acronym → expanded form ONLY.
+- Acronym Exercise (approved 2026-10-30): type the answer ONLY, and every question is acronym → expanded form. No multiple-choice questions and no other direction.
 - Definition Exercise:
   - Multiple choice: either direction (term → definition, or definition → term).
   - Type the answer: definition → term ONLY. Never ask the user to type a definition sentence.
 
 Rules:
-- Each module uses its own config file: question count (about 20), time limit (30 minutes), and the mix of multiple-choice and type-the-answer questions. Do not hard-code these values.
+- Each module uses its own config file: question count (about 20), time limit (30 minutes), and, for the Definition Exercise, the mix of multiple-choice and type-the-answer questions. Do not hard-code these values.
 - Keep acronyms and definitions in separate content: `content/acronyms/` and `content/definitions/`. Do not mix them in one exercise.
-- Each acronym and definition record has a certification field (for example `["a-plus"]`, later `["network-plus"]`). The app selects only the records for the certification that the user selected.
-- Multiple-choice distractors come from the same module's content for the same certification: other acronyms for the Acronym Exercise, other terms or definitions for the Definition Exercise.
+- Each acronym and definition record has a certification field (`["a-plus"]` or `["network-plus"]`). The app selects only the records for the certification that the user selected.
+- Definition Exercise multiple-choice distractors come from the same module's content for the same certification: other terms or definitions.
 - Feedback after each answer (approved): the user selects or types an answer, selects "Check answer", sees Correct or Incorrect with the correct answer, then goes to the next question.
+- "Not sure" (approved, Acronym Exercise): an outline button next to "Check answer", enabled even when the field is empty. It shows the correct answer with the label "Not sure" (no text that explains the scoring), counts as incorrect, and the results list shows "Not sure" as the user's answer.
+- Exercise results (approved): "Try again" starts a new exercise at once, with the same module and certification and a new set of questions. It skips the setup screen. "Back to home" goes home.
+- Acronym feedback box (approved): after "Check answer" or "Not sure", the box shows Correct, Incorrect, or Not sure; the acronym and its expanded form; the record's `meaning` sentence; and a small neutral pill tag for each objective in the record's `objectives` (for example "Core 1 · 2.1 Networking", at most 3, then "+n more"). The exam's short name and the domain name come from the exam config. A record with no objectives shows no tag.
 - Before the app compares a typed answer, it ignores letter case, extra spaces, and punctuation.
 - Spelling errors in a typed answer show a red squiggle underline.
 - Grading: a typed answer with a spelling error is incorrect. Do not accept close matches.
@@ -171,8 +173,16 @@ Knowledge questions (definition and recall, select the correct item) need a diff
 7. A random generator with a seed controls all selections.
 8. Save the full question text and answers with each attempt. This lets the user review the exact question after grading.
 
-### Record formats – Plan with the user
-This fault record is a draft. Change it as development continues.
+### Record formats
+Acronym and definition records (approved). The full field list and the content rules are in `content/README.md`.
+- Pools: `content/acronyms/<cert>.json` (one file per certification) and `content/definitions/<cert>/<domain>.json` (one file per exam domain). Each file is a JSON array.
+- Shared fields: `id`, `acceptedAnswers`, `certifications`, `exams`, `objectives` (`<exam>/<objective>`), `origin`, `source`, optional `note`.
+- Acronym fields: `acronym`, `expanded`, `meaning`, `official`. `meaning` is one sentence (10–25 words, our own words) that says what the thing is or does. Every acronym is asked as a typed question, so every expanded form must be typeable, and `acceptedAnswers` lists every other valid wording. Pool scope: the official list plus vetted book extras (`official: false`, `origin: "book"`). Where the official list has an error or the two A+ lists differ, `expanded` has the correct form and `acceptedAnswers` keeps the official wording (except plain typos); a `note` says why.
+- Definition fields: `term`, `definition`, `typeable`, `group`. Pool scope: the terms named in the objectives plus book glossary terms that match a current objective. Definitions are one sentence (about 30 words or fewer) in our own words. They never contain the term. The term is the typed answer, so it is never an acronym.
+- One record per certification: an acronym on both lists has an A+ record and a Network+ record.
+- Definition distractors come from the same `group` first. A record that shares the term or the definition with the target is never a distractor.
+
+Fault and fact records – Plan with the user. This fault record is a draft. Change it as development continues.
 
 ```json
 {

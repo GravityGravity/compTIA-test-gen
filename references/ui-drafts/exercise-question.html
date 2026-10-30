@@ -56,7 +56,7 @@
   </div>
 
   <section class="card stack-6" id="q" aria-live="polite"></section>
-  <p class="draft-note">Draft: three sample questions show the three question forms. The spelling demo knows only a few words; the app uses a full en_US dictionary plus the acronym and term lists.</p>
+  <p class="draft-note">Draft: three sample questions. The Acronym Exercise asks every question this way; the multiple-choice form is kept in the code for the Definition Exercise. The spelling demo knows only a few words; the app uses a full en_US dictionary plus the acronym and term lists.</p>
 </main>
 
 <div class="backdrop" id="endDlg" role="alertdialog" aria-modal="true" aria-labelledby="eTitle" hidden>
@@ -70,20 +70,27 @@
 <script>
 // Sample questions for the draft only.
 const QS = [
-  { kind: "mc", label: "Multiple choice", dir: "Acronym to expanded form", ask: "What does this acronym stand for?", prompt: "DHCP",
-    opts: ["Dynamic Host Configuration Protocol", "Domain Host Control Protocol", "Dynamic Hardware Configuration Process", "Distributed Host Connection Protocol"], a: 0,
-    acr: "DHCP", exp: "Dynamic Host Configuration Protocol" },
-  { kind: "mc", label: "Multiple choice", dir: "Expanded form to acronym", ask: "Which acronym matches this expanded form?", prompt: "Basic Input/Output System", long: true,
-    opts: ["UEFI", "BIOS", "POST", "CMOS"], a: 1, acr: "BIOS", exp: "Basic Input/Output System" },
+  // The Acronym Exercise has typed questions only, always acronym to expanded form.
   { kind: "typed", label: "Type the answer", dir: "Acronym to expanded form", ask: "Type the expanded form of this acronym.", prompt: "DNS", a: "Domain Name System",
-    acr: "DNS", exp: "Domain Name System" },
+    acr: "DNS", exp: "Domain Name System",
+    meaning: "DNS translates host names such as www.example.com into IP addresses, using port 53.",
+    tags: ["Core 1 · 2.1 Networking", "Core 1 · 2.3 Networking", "Core 1 · 2.4 Networking", "Core 2 · 1.7 Operating Systems", "Core 2 · 2.11 Security"] },
+  { kind: "typed", label: "Type the answer", dir: "Acronym to expanded form", ask: "Type the expanded form of this acronym.", prompt: "DHCP", a: "Dynamic Host Configuration Protocol",
+    acr: "DHCP", exp: "Dynamic Host Configuration Protocol",
+    meaning: "DHCP automatically gives clients an IP address, subnet mask, default gateway, and DNS servers, using UDP ports 67 and 68.",
+    tags: ["Core 1 · 2.1 Networking", "Core 1 · 2.3 Networking"] },
+  { kind: "typed", label: "Type the answer", dir: "Acronym to expanded form", ask: "Type the expanded form of this acronym.", prompt: "KVM", a: "Keyboard-Video-Mouse",
+    acr: "KVM", exp: "Keyboard-Video-Mouse",
+    // No objective names KVM, so no tag.
+    meaning: "A KVM switch lets one keyboard, monitor, and mouse control several computers.",
+    tags: [] },
 ];
 // Demo dictionary. The app uses nspell with en_US plus all acronyms and terms from content/.
-const DICT = new Set("domain name system service server dynamic host configuration protocol network the of and".split(" "));
+const DICT = new Set("domain name system service server dynamic host configuration protocol network time keyboard video mouse the of and".split(" "));
 const norm = s => s.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, " ").replace(/\s+/g, " ").trim();
 const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const L = ["A", "B", "C", "D"];
-let i = 0, pick = null, checked = false;
+let i = 0, pick = null, checked = false, unsure = false;
 const $ = id => document.getElementById(id), q = $("q");
 
 function render() {
@@ -105,19 +112,32 @@ function render() {
   }
   let fb = "";
   if (checked) {
-    const ok = Q.kind === "mc" ? pick === Q.a : norm(pick || "") === norm(Q.a);
+    const ok = !unsure && (Q.kind === "mc" ? pick === Q.a : norm(pick || "") === norm(Q.a));
+    // "Not sure" shows the answer and counts as incorrect.
+    const title = ok ? "Correct" : unsure ? "Not sure" : "Incorrect";
+    const extra = !unsure && !ok && Q.kind === "typed" ? " Spelling errors count as incorrect." : "";
     fb = `<div class="feedback ${ok ? "ok" : "bad"}">
       <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${ok ? '<path d="M4 12l5 5L20 6"/>' : '<path d="M6 6l12 12M18 6 6 18"/>'}</svg>
-      <div class="stack-2"><span class="h4">${ok ? "Correct" : "Incorrect"}</span>
-      <p><b>${esc(Q.acr)}</b> stands for <b>${esc(Q.exp)}</b>.${!ok && Q.kind === "typed" ? " Spelling errors count as incorrect." : ""}</p></div></div>`;
+      <div class="stack-2"><span class="h4">${title}</span>
+      <p><b>${esc(Q.acr)}</b> stands for <b>${esc(Q.exp)}</b>.${extra}</p>
+      <p>${esc(Q.meaning)}</p>${tagList(Q.tags)}</div></div>`;
   }
   const last = i === QS.length - 1;
   const ready = Q.kind === "mc" ? pick !== null : !!(pick && pick.trim());
   const actions = checked
     ? (last ? `<a class="btn btn-primary" href="exercise-results.html">See results</a>` : `<button class="btn btn-primary" id="next">Next question</button>`)
-    : `<button class="btn btn-primary" id="check" ${ready ? "" : "disabled"}>Check answer</button>`;
+    : `<button class="btn btn-primary" id="check" ${ready ? "" : "disabled"}>Check answer</button>`
+      + (Q.kind === "typed" ? `<button class="btn btn-outline" id="unsure">Not sure</button>` : "");
   q.innerHTML = head + body + fb + `<div class="btn-row">${actions}</div>`;
   if (Q.kind === "typed") { updateMirror(); if (!checked) $("ans").focus(); }
+}
+
+// One tag for each objective: at most 3, then "+n more". Exam short names and domain names come from the exam config.
+function tagList(tags) {
+  if (!tags.length) return "";
+  const shown = tags.slice(0, 3).map(t => `<span class="tag">${esc(t)}</span>`);
+  if (tags.length > 3) shown.push(`<span class="tag" title="${esc(tags.slice(3).join(", "))}">+${tags.length - 3} more</span>`);
+  return `<div class="tags" aria-label="Exam objectives">${shown.join("")}</div>`;
 }
 
 function updateMirror() {
@@ -133,7 +153,8 @@ q.addEventListener("click", e => {
   const c = e.target.closest("[data-k]");
   if (c && !checked) { pick = +c.dataset.k; render(); return; }
   if (e.target.id === "check") { checked = true; render(); }
-  if (e.target.id === "next") { i++; pick = null; checked = false; render(); }
+  if (e.target.id === "unsure") { checked = true; unsure = true; pick = ""; render(); }
+  if (e.target.id === "next") { i++; pick = null; checked = false; unsure = false; render(); }
 });
 q.addEventListener("input", e => {
   if (e.target.id !== "ans") return;

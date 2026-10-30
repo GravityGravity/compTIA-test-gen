@@ -2,6 +2,70 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Exercise "Try again"
+
+- "Try again" on the exercise results starts a new exercise at once: the same module and certification, a new set of questions, and no setup screen. `references/ui-drafts/exercise-results.html`, `README.md`, `CLAUDE.md`, `docs/spec.md`.
+
+## 2026-10-30 – "Not sure" feedback without a scoring caption
+
+- The "Not sure" feedback no longer says "Not sure counts as incorrect". It still counts as incorrect. `references/ui-drafts/exercise-question.html`, `CLAUDE.md`.
+
+## 2026-10-30 – Acronym meanings and objective tags
+
+Decisions:
+- After each acronym answer, the feedback box shows a one-sentence meaning and a small neutral pill tag for each objective the acronym is tied to (exam, objective number, domain name; at most 3, then "+n more"). There's no tag when no objective names the acronym. Exam short names and domain names come from the exam config.
+- New required acronym field `meaning`: one sentence, 10–25 words, in our own words, with key exam facts such as port numbers.
+
+Changes:
+- `content/acronyms/a-plus.json`, `network-plus.json`: a `meaning` for all 394 records. A+ sentences were checked against Exam Cram 2e and Docter, and Network+ sentences against the Network+ books, where a fact was uncertain.
+- `tools/extract/check_content.py`: `meaning` is required and must be one sentence. The word count is a warning.
+- `references/ui-drafts/drafts.css`: new neutral `.tag` pill (existing tokens only). `exercise-question.html` shows the meaning and the tags.
+- `CLAUDE.md`, `docs/spec.md`, `content/README.md`: the field and the feedback box rule.
+
+## 2026-10-30 – Acronym Exercise: "Not sure" button
+
+Decisions:
+- The Acronym Exercise question has a "Not sure" button (outline style) next to "Check answer". It works even when the field is empty. It shows the correct answer under the label "Not sure" and counts as incorrect. The results list shows "Not sure" as the answer.
+
+Changes:
+- `CLAUDE.md`, `docs/spec.md`: the rule.
+- `references/ui-drafts/exercise-question.html`, `exercise-results.html`, `README.md`: the button, its feedback, and a "Not sure" row in the results.
+
+## 2026-10-30 – Acronym Exercise: typed questions only
+
+Decisions:
+- The Acronym Exercise has type-the-answer questions only. Every question shows the acronym, and the user types the expanded form. There are no multiple-choice questions and no expanded-form → acronym direction. The Definition Exercise is unchanged.
+- Acronym records have no `typeable` and no `group` field: every acronym is typed, and no distractors are needed. Definition records keep both fields.
+- One acronym has one record per certification. A second meaning goes in `acceptedAnswers`.
+
+Changes:
+- `CLAUDE.md`, `docs/spec.md`, `content/README.md`: the new question rule and record format.
+- `content/acronyms/a-plus.json`, `network-plus.json`: removed `typeable` and `group`. DB-9 now accepts the common connector names, so it can be typed.
+- `tools/extract/check_content.py`: acronyms are checked without groups or a typeable flag. Two records with the same acronym are an error. `seed_acronyms.py` no longer writes the two fields.
+- `references/ui-drafts/`: the exercise question, setup, results, and home drafts show typed acronym questions only.
+
+## 2026-10-30 – Network+ in scope; acronym pools for A+ and Network+
+
+Decisions:
+- Network+ is in scope: its exam, acronym, and definition content get built. Each module and certification has an `active` config setting. It is true once its config and content exist; until then the module is greyed out.
+- The Acronym Exercise and the Definition Exercise are separate pools (`content/acronyms/`, `content/definitions/`).
+- Acronym and definition record formats approved (see `content/README.md` and CLAUDE.md "Record formats").
+- Acronym pool: the official list plus vetted book extras. An extra must be used by a current book, match a current objective, not be obsolete, and have one agreed expanded form.
+- Definition pool: the terms named in the objectives plus book glossary terms that match a current objective. Definitions are written in our own words. The typed answer is never an acronym.
+- Where the official list has an error, `expanded` holds the correct form and `acceptedAnswers` keeps the official wording (plain typos excepted). A `note` explains each case.
+- One record per certification. An acronym on both lists has one record in each file.
+- Review order: acronyms first, one batch per certification (an approved exception to "one domain at a time"). Then definitions, one domain per batch.
+
+Changes:
+- `CLAUDE.md`, `docs/spec.md`, `docs/compTIA-exam-overviews.md`: Network+ no longer "inactive, do not build"; the record formats, pool scope, and acronym batch rule.
+- `references/ui-drafts/home.html`, `exercise-setup.html`, `README.md`: Network+ shown as active (the inactive state is described in comments). The acronym counts come from the content (222 and 172).
+- New `tools/extract/seed_acronyms.py` and `tools/extract/check_content.py`; `tools/extract/README.md` has the commands.
+- New `content/acronyms/a-plus.json`: 222 records (200 official, 22 extras), in 17 groups. Fixed: NAT, WISP, IMAP, RADIUS, SAML, VNC, HDMI, CAC, NAS, SPICE, IAM, OTP, PCL. XXS was merged into XSS.
+- New `content/acronyms/network-plus.json`: 172 records (162 official, 10 extras), in 12 groups. Fixed: TACAS+ → TACACS+, IPSec → IPsec, LC, RFID, SSL, LDAPS, and others.
+- New `content/README.md`: the formats, rules, and groups.
+
+Found: in the extracted 220-1201 objectives, two 3.2 lines have a broken character (for example "Shielded twisted pair ըDirect burial"). The extractor should fix it.
+
 ## 2026-10-27 – Network+ sources
 
 Decisions:

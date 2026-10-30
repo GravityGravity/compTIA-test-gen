@@ -1,0 +1,4534 @@
+[
+  {
+    "id": "aplus-acr-aaa",
+    "acronym": "AAA",
+    "expanded": "Authentication, Authorization, and Accounting",
+    "meaning": "AAA is the security framework that verifies who a user is, controls what they may access, and records what they did.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ac",
+    "acronym": "AC",
+    "expanded": "Alternating Current",
+    "meaning": "AC is the type of electrical current from a wall outlet, which reverses direction regularly and is converted to DC by a computer power supply.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-acr-acl",
+    "acronym": "ACL",
+    "expanded": "Access Control List",
+    "meaning": "An ACL is a list of rules attached to a resource or network device that allows or denies specific users, addresses, or traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ad",
+    "acronym": "AD",
+    "expanded": "Active Directory",
+    "meaning": "AD is Microsoft's directory service that centrally stores user and computer accounts on a domain and enforces authentication and Group Policy.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-acr-adf",
+    "acronym": "ADF",
+    "expanded": "Automatic Document Feeder",
+    "meaning": "An ADF on a scanner, copier, or multifunction printer pulls multiple sheets through automatically so each page does not have to be placed by hand.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-aes",
+    "acronym": "AES",
+    "expanded": "Advanced Encryption Standard",
+    "meaning": "AES is a strong symmetric encryption standard, using 128-, 192-, or 256-bit keys, that protects Wi-Fi traffic through WPA2 and WPA3 and encrypted files.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ai",
+    "acronym": "AI",
+    "expanded": "Artificial Intelligence",
+    "meaning": "AI refers to software that performs tasks such as generating content or making decisions, raising technician concerns about data privacy, accuracy, and acceptable use.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.10"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 8: Scripting, Remote Access, and Artificial Intelligence"
+  },
+  {
+    "id": "aplus-acr-amd",
+    "acronym": "AMD",
+    "expanded": "Advanced Micro Devices",
+    "meaning": "AMD is a major maker of x86 processors and graphics cards, and its CPUs use sockets and chipsets different from Intel's.",
+    "acceptedAnswers": [
+      "Advanced Micro Devices, Inc."
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ap",
+    "acronym": "AP",
+    "expanded": "Access Point",
+    "meaning": "An AP connects wireless clients to a wired network and broadcasts the SSID that devices use to join the Wi-Fi network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-apfs",
+    "acronym": "APFS",
+    "expanded": "Apple File System",
+    "meaning": "APFS is the file system used by modern Apple devices, offering encryption, snapshots, and fast cloning for macOS and iOS storage.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-apipa",
+    "acronym": "APIPA",
+    "expanded": "Automatic Private Internet Protocol Addressing",
+    "meaning": "APIPA lets a Windows client assign itself a 169.254.x.x address when no DHCP server responds, so it can reach only local devices.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-arm",
+    "acronym": "ARM",
+    "expanded": "Advanced RISC Machine",
+    "meaning": "ARM is a power-efficient processor architecture used in smartphones, tablets, and some laptops, and it is not compatible with x86 software without translation.",
+    "acceptedAnswers": [
+      "Advanced Reduced Instruction Set Computer Machine"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-atx",
+    "acronym": "ATX",
+    "expanded": "Advanced Technology Extended",
+    "meaning": "ATX is the most common desktop motherboard and power supply form factor, which determines board dimensions, mounting holes, and case compatibility.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-aup",
+    "acronym": "AUP",
+    "expanded": "Acceptable Use Policy",
+    "meaning": "An AUP is a written policy that defines how employees may and may not use company computers, networks, and internet access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-bec",
+    "acronym": "BEC",
+    "expanded": "Business Email Compromise",
+    "meaning": "BEC is a scam in which attackers impersonate or take over a trusted business email account to trick staff into sending money or data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-bios",
+    "acronym": "BIOS",
+    "expanded": "Basic Input/Output System",
+    "meaning": "BIOS is the firmware on the motherboard that initializes hardware at startup, runs POST, and lets a technician change boot order and hardware settings.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1201/3.5",
+      "220-1202/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-bnc",
+    "acronym": "BNC",
+    "expanded": "Bayonet Neill-Concelman",
+    "meaning": "BNC is a twist-lock coaxial connector used for video equipment and older coaxial Ethernet networks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-bsod",
+    "acronym": "BSOD",
+    "expanded": "Blue Screen of Death",
+    "meaning": "A BSOD is the Windows stop error screen shown after a fatal system fault, often caused by bad drivers or failing hardware.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-byod",
+    "acronym": "BYOD",
+    "expanded": "Bring Your Own Device",
+    "meaning": "BYOD is a policy letting employees use personal phones, tablets, or laptops for work, which requires technicians to manage security with tools like MDM.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3",
+      "220-1202/2.5",
+      "220-1202/2.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ca",
+    "acronym": "CA",
+    "expanded": "Certificate Authority",
+    "meaning": "A CA is a trusted organization that issues and signs digital certificates, allowing browsers and systems to verify the identity of websites and users.",
+    "acceptedAnswers": [
+      "Certification Authority"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.11"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-acr-cac",
+    "acronym": "CAC",
+    "expanded": "Common Access Card",
+    "meaning": "A CAC is a smart card used by the US Department of Defense that provides two-factor authentication for logging in and signing documents.",
+    "acceptedAnswers": [
+      "Calling-card Authorization Computer"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Calling-card Authorization Computer\"; the books and the smart card topic (220-1202 2.1) use Common Access Card."
+  },
+  {
+    "id": "aplus-acr-cas",
+    "acronym": "CAS",
+    "expanded": "Column Address Strobe",
+    "meaning": "CAS is the memory timing signal that selects a column in a RAM chip, and CAS latency is the delay measured in clock cycles.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-cifs",
+    "acronym": "CIFS",
+    "expanded": "Common Internet File System",
+    "meaning": "CIFS is a Windows file-sharing protocol, a form of SMB, that lets computers access shared files and printers over a network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-cli",
+    "acronym": "CLI",
+    "expanded": "Command-line Interface",
+    "meaning": "A CLI lets a technician control a computer by typing text commands, such as in Command Prompt, PowerShell, or a Linux terminal.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-acr-cmdb",
+    "acronym": "CMDB",
+    "expanded": "Configuration Management Database",
+    "meaning": "A CMDB is a database that tracks an organization's hardware, software, and other assets and how they relate, supporting change management and troubleshooting.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-cmos",
+    "acronym": "CMOS",
+    "expanded": "Complementary Metal-Oxide Semiconductor",
+    "meaning": "CMOS is a low-power chip technology, and on a motherboard the CMOS memory stores BIOS settings, kept alive by a small battery.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-cname",
+    "acronym": "CNAME",
+    "expanded": "Canonical Name",
+    "meaning": "A CNAME is a DNS record that maps one domain name as an alias to another canonical domain name instead of to an IP address.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-cope",
+    "acronym": "COPE",
+    "expanded": "Corporate-owned, Personally Enabled",
+    "meaning": "COPE is a mobile device model in which the company buys the device and the employee may also use it for personal purposes.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.8"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 49: Mobile Device Security"
+  },
+  {
+    "id": "aplus-acr-cpu",
+    "acronym": "CPU",
+    "expanded": "Central Processing Unit",
+    "meaning": "The CPU is the main processor of a computer, executing program instructions, and is rated by cores, clock speed, and socket type.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5",
+      "220-1202/1.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-db-9",
+    "acronym": "DB-9",
+    "expanded": "Serial Communications D-Shell Connector, 9 pins",
+    "meaning": "DB-9 is a nine-pin D-shaped connector used for RS-232 serial ports, commonly for console cables to network equipment.",
+    "acceptedAnswers": [
+      "D-subminiature 9-pin",
+      "D-sub 9-pin",
+      "D-shell 9-pin connector",
+      "Serial Communications D-Shell Connector 9-pin"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official expanded form is a description. The common names of the connector are accepted too."
+  },
+  {
+    "id": "aplus-acr-dc",
+    "acronym": "DC",
+    "expanded": "Direct Current",
+    "meaning": "DC is electrical current that flows in one direction, and it is the type of power a PC power supply delivers to internal components.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-acr-ddos",
+    "acronym": "DDoS",
+    "expanded": "Distributed Denial of Service",
+    "meaning": "A DDoS attack floods a target with traffic from many compromised systems at once, making a service unavailable to legitimate users.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ddr",
+    "acronym": "DDR",
+    "expanded": "Double Data Rate",
+    "meaning": "DDR is the type of SDRAM that transfers data on both clock edges, and each generation, such as DDR4 and DDR5, uses different, incompatible modules.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dhcp",
+    "acronym": "DHCP",
+    "expanded": "Dynamic Host Configuration Protocol",
+    "meaning": "DHCP automatically assigns IP addresses, subnet masks, gateways, and DNS servers to clients on a network, using UDP ports 67 and 68.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1201/2.3",
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dimm",
+    "acronym": "DIMM",
+    "expanded": "Dual In-line Memory Module",
+    "meaning": "A DIMM is the standard memory module for desktops and servers, and its notch and pin count must match the motherboard's RAM type.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dkim",
+    "acronym": "DKIM",
+    "expanded": "DomainKeys Identified Mail",
+    "meaning": "DKIM adds a digital signature to outgoing email that receiving servers verify using a public key in DNS, helping detect forged messages.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dlp",
+    "acronym": "DLP",
+    "expanded": "Data Loss Prevention",
+    "meaning": "DLP software monitors and blocks sensitive data, such as customer records, from leaving an organization through email, removable drives, or uploads.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dmarc",
+    "acronym": "DMARC",
+    "expanded": "Domain-based Message Authentication, Reporting, and Conformance",
+    "meaning": "DMARC is a DNS-published email policy that tells receivers what to do with messages failing SPF or DKIM checks and reports abuse.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dns",
+    "acronym": "DNS",
+    "expanded": "Domain Name System",
+    "meaning": "DNS translates human-readable domain names into IP addresses, using port 53, and misconfiguration is a common cause of sites failing to load.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1201/2.3",
+      "220-1201/2.4",
+      "220-1202/1.7",
+      "220-1202/2.11"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dos",
+    "acronym": "DoS",
+    "expanded": "Denial of Service",
+    "meaning": "A DoS attack overwhelms a single system or service with requests so that legitimate users cannot access it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dp",
+    "acronym": "DP",
+    "expanded": "DisplayPort",
+    "meaning": "DP is a digital video and audio connector that supports high resolutions and refresh rates and multiple monitors from a single port.",
+    "acceptedAnswers": [
+      "Display Port"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 3: Peripherals, Cables, and Connectors"
+  },
+  {
+    "id": "aplus-acr-drm",
+    "acronym": "DRM",
+    "expanded": "Digital Rights Management",
+    "meaning": "DRM uses technical controls to restrict copying and use of copyrighted digital media and software, which can limit how licensed content is used.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dsl",
+    "acronym": "DSL",
+    "expanded": "Digital Subscriber Line",
+    "meaning": "DSL provides broadband internet over existing telephone lines, with ADSL offering faster downloads than uploads.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5",
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-dvi",
+    "acronym": "DVI",
+    "expanded": "Digital Visual Interface",
+    "meaning": "DVI is a video connector that carries digital, and in some versions analog, signals to a monitor, and it has no audio support.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ecc",
+    "acronym": "ECC",
+    "expanded": "Error-correcting Code",
+    "meaning": "ECC memory detects and corrects single-bit errors on the fly, making it common in servers where data integrity matters.",
+    "acceptedAnswers": [
+      "Error Correction Code"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-edr",
+    "acronym": "EDR",
+    "expanded": "Endpoint Detection and Response",
+    "meaning": "EDR software continuously monitors endpoints for suspicious behavior, records activity, and lets technicians investigate and respond to threats.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-efs",
+    "acronym": "EFS",
+    "expanded": "Encrypting File System",
+    "meaning": "EFS is a Windows NTFS feature that encrypts individual files and folders so only the user who encrypted them can open them.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-eol",
+    "acronym": "EOL",
+    "expanded": "End-of-life",
+    "meaning": "EOL describes a product that the vendor no longer sells or supports with security updates, making it a risk that should be replaced.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1",
+      "220-1202/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-esata",
+    "acronym": "eSATA",
+    "expanded": "External Serial Advanced Technology Attachment",
+    "meaning": "eSATA is an external connector that lets SATA drives attach outside the computer at internal SATA speeds, though it does not supply power.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2",
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-esd",
+    "acronym": "ESD",
+    "expanded": "Electrostatic Discharge",
+    "meaning": "ESD is the sudden flow of static electricity that can damage components, so technicians wear antistatic wrist straps and use mats.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-esim",
+    "acronym": "eSIM",
+    "expanded": "Embedded Subscriber Identity Module",
+    "meaning": "An eSIM is a SIM built into a device that is programmed digitally with a carrier profile, so no physical card is needed.",
+    "acceptedAnswers": [
+      "Embedded SIM"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-eula",
+    "acronym": "EULA",
+    "expanded": "End-user License Agreement",
+    "meaning": "A EULA is the legal agreement a user accepts before installing software, defining how the software may be used and any restrictions.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-exfat",
+    "acronym": "exFAT",
+    "expanded": "Extended File Allocation Table",
+    "meaning": "exFAT is a file system designed for flash drives and external storage that supports large files and works across Windows and macOS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-faas",
+    "acronym": "FaaS",
+    "expanded": "Function As A Service",
+    "meaning": "FaaS is a cloud model in which developers upload small functions that run on demand and are billed per execution, without managing servers.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-fat32",
+    "acronym": "FAT32",
+    "expanded": "32-bit File Allocation Table",
+    "meaning": "FAT32 is a widely compatible file system limited to 4 GB files and, as formatted by Windows, 32 GB volumes.",
+    "acceptedAnswers": [
+      "File Allocation Table 32"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-frt",
+    "acronym": "FRT",
+    "expanded": "Facial Recognition Technology",
+    "meaning": "FRT is a biometric method that identifies or authenticates a person by analyzing the unique features of their face.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ftp",
+    "acronym": "FTP",
+    "expanded": "File Transfer Protocol",
+    "meaning": "FTP transfers files between a client and a server over TCP ports 20 and 21, but it sends data and credentials unencrypted.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-gfs",
+    "acronym": "GFS",
+    "expanded": "Grandfather-Father-Son",
+    "meaning": "GFS is a backup rotation scheme that keeps daily, weekly, and monthly backup sets, giving several restore points over time.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-gpo",
+    "acronym": "GPO",
+    "expanded": "Group Policy Object",
+    "meaning": "A GPO is a collection of settings in Active Directory that administrators apply to users and computers to enforce configuration and security policy.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4",
+      "220-1202/2.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-acr-gps",
+    "acronym": "GPS",
+    "expanded": "Global Positioning System",
+    "meaning": "GPS uses satellite signals to let a mobile device determine its location, supporting navigation, tracking, and location services.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-gpt",
+    "acronym": "GPT",
+    "expanded": "GUID Partition Table",
+    "meaning": "GPT is a modern partition scheme that supports disks over 2 TB and many partitions, and Windows needs it to boot from UEFI.",
+    "acceptedAnswers": [
+      "Globally Unique Identifier Partition Table"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-gpu",
+    "acronym": "GPU",
+    "expanded": "Graphics Processing Unit",
+    "meaning": "A GPU is a processor specialized for rendering graphics and parallel calculations, either integrated in the CPU or on a dedicated video card.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-gui",
+    "acronym": "GUI",
+    "expanded": "Graphical User Interface",
+    "meaning": "A GUI lets users interact with a computer using windows, icons, menus, and a pointer instead of typed commands.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-guid",
+    "acronym": "GUID",
+    "expanded": "Globally Unique Identifier",
+    "meaning": "A GUID is a 128-bit identifier designed to be unique across systems, and GPT uses GUIDs to identify disks and partitions.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-hd",
+    "acronym": "HD",
+    "expanded": "High Definition",
+    "meaning": "HD describes video resolutions higher than standard definition, usually 1280x720 or 1920x1080 pixels.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-hdd",
+    "acronym": "HDD",
+    "expanded": "Hard Disk Drive",
+    "meaning": "An HDD stores data magnetically on spinning platters and is cheaper per gigabyte but slower and more fragile than an SSD.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-hdmi",
+    "acronym": "HDMI",
+    "expanded": "High-Definition Multimedia Interface",
+    "meaning": "HDMI is a common connector that carries digital video and audio together over one cable between devices such as computers, monitors, and televisions.",
+    "acceptedAnswers": [
+      "High-definition Media Interface"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"High-definition Media Interface\"; the books use High-Definition Multimedia Interface."
+  },
+  {
+    "id": "aplus-acr-hsm",
+    "acronym": "HSM",
+    "expanded": "Hardware Security Module",
+    "meaning": "An HSM is a tamper-resistant device that generates and stores cryptographic keys securely and performs encryption operations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-http",
+    "acronym": "HTTP",
+    "expanded": "Hypertext Transfer Protocol",
+    "meaning": "HTTP is the protocol that web browsers use to request web pages from servers on TCP port 80, without encryption.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-https",
+    "acronym": "HTTPS",
+    "expanded": "Hypertext Transfer Protocol Secure",
+    "meaning": "HTTPS is HTTP protected by TLS encryption on TCP port 443, securing web traffic against eavesdropping and tampering.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-iaas",
+    "acronym": "IaaS",
+    "expanded": "Infrastructure as a Service",
+    "meaning": "IaaS is a cloud model in which a provider supplies virtual servers, storage, and networking while the customer manages the operating system and applications.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-iam",
+    "acronym": "IAM",
+    "expanded": "Identity and Access Management",
+    "meaning": "IAM is the set of policies and tools that manage user identities and control what resources each identity can access.",
+    "acceptedAnswers": [
+      "Identity Access Management"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The Core 1 list has \"Identity and Access Management\"; the Core 2 list has \"Identity Access Management\". Both are accepted."
+  },
+  {
+    "id": "aplus-acr-imap",
+    "acronym": "IMAP",
+    "expanded": "Internet Message Access Protocol",
+    "meaning": "IMAP lets email clients read messages that stay stored on the server, so mail syncs across devices, using TCP port 143 or 993 with SSL/TLS.",
+    "acceptedAnswers": [
+      "Internet Mail Access Protocol"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Internet Mail Access Protocol\"; the books use Internet Message Access Protocol (the standard name). Both are accepted."
+  },
+  {
+    "id": "aplus-acr-iops",
+    "acronym": "IOPS",
+    "expanded": "Input/Output Operations Per Second",
+    "meaning": "IOPS measures how many read and write operations a storage device can perform each second, and it is a key performance metric for SSDs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-iot",
+    "acronym": "IoT",
+    "expanded": "Internet of Things",
+    "meaning": "IoT describes everyday network-connected devices such as smart thermostats and cameras, which often have weak security and need segmenting and updating.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ip",
+    "acronym": "IP",
+    "expanded": "Internet Protocol",
+    "meaning": "IP is the network layer protocol that addresses and routes packets between devices, using IPv4 or IPv6 addresses.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1201/2.6",
+      "220-1201/5.5",
+      "220-1202/1.7",
+      "220-1202/2.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ips",
+    "acronym": "IPS",
+    "expanded": "In-plane Switching",
+    "meaning": "IPS is an LCD panel technology known for wide viewing angles and accurate color, making it popular for monitors and professional displays.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ir",
+    "acronym": "IR",
+    "expanded": "Infrared",
+    "meaning": "IR is light just beyond visible red, used in short-range line-of-sight links such as remote controls and some sensors.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-iso",
+    "acronym": "ISO",
+    "expanded": "International Organization for Standardization",
+    "meaning": "An ISO file is a disk image of an optical disc, and ISO also names the international body that publishes technical standards.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-isp",
+    "acronym": "ISP",
+    "expanded": "Internet Service Provider",
+    "meaning": "An ISP is the company that provides a customer's connection to the internet, such as through cable, DSL, fiber, or cellular service.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-itx",
+    "acronym": "ITX",
+    "expanded": "Information Technology eXtended",
+    "meaning": "ITX is a family of small motherboard form factors, including Mini-ITX, used for compact PCs and embedded systems.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-kb",
+    "acronym": "KB",
+    "expanded": "Knowledge Base",
+    "meaning": "A KB is a searchable collection of documented solutions and articles that technicians use to resolve recurring problems faster.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 57: Documentation"
+  },
+  {
+    "id": "aplus-acr-kvm",
+    "acronym": "KVM",
+    "expanded": "Keyboard-Video-Mouse",
+    "meaning": "A KVM switch lets one keyboard, monitor, and mouse control several computers, which is common in server rooms.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-lan",
+    "acronym": "LAN",
+    "expanded": "Local Area Network",
+    "meaning": "A LAN connects computers and devices within a limited area, such as a home, office, or building.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4",
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-lc",
+    "acronym": "LC",
+    "expanded": "Lucent Connector",
+    "meaning": "LC is a small form-factor fiber-optic connector that uses a push-pull latch and is common on modern network equipment.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-lcd",
+    "acronym": "LCD",
+    "expanded": "Liquid Crystal Display",
+    "meaning": "An LCD display uses liquid crystals lit by a backlight to form images, and common panel types include TN, IPS, and VA.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ldap",
+    "acronym": "LDAP",
+    "expanded": "Lightweight Directory Access Protocol",
+    "meaning": "LDAP is the protocol used to query and manage directory services such as Active Directory, using TCP port 389, or 636 when secured.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-led",
+    "acronym": "LED",
+    "expanded": "Light-emitting Diode",
+    "meaning": "An LED is a small semiconductor light source used for status indicators and display backlighting, and it is more efficient than older lamps.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.1",
+      "220-1201/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-lte",
+    "acronym": "LTE",
+    "expanded": "Long-Term Evolution",
+    "meaning": "LTE is a 4G cellular standard that provides high-speed mobile data for phones, tablets, and hotspots.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3",
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mac",
+    "acronym": "MAC",
+    "expanded": "Media Access Control",
+    "meaning": "A MAC address is the unique hardware address burned into a network interface, used to identify devices on a local network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-man",
+    "acronym": "MAN",
+    "expanded": "Metropolitan Area Network",
+    "meaning": "A MAN is a network spanning a city or large campus, larger than a LAN but smaller than a WAN.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mbr",
+    "acronym": "MBR",
+    "expanded": "Master Boot Record",
+    "meaning": "The MBR is the first sector of a disk that holds the boot code and partition table, limited to four primary partitions and 2 TB.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mdm",
+    "acronym": "MDM",
+    "expanded": "Mobile Device Management",
+    "meaning": "MDM software lets administrators enroll, configure, secure, and remotely lock or wipe company and personal mobile devices from a central console.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3",
+      "220-1202/2.1",
+      "220-1202/2.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mdr",
+    "acronym": "MDR",
+    "expanded": "Managed Detection and Response",
+    "meaning": "MDR is an outsourced service in which security specialists monitor an organization's systems around the clock and respond to threats.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mfa",
+    "acronym": "MFA",
+    "expanded": "Multifactor Authentication",
+    "meaning": "MFA requires two or more different kinds of proof, such as a password plus a code or fingerprint, making stolen passwords much less useful.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mfp",
+    "acronym": "MFP",
+    "expanded": "Multifunction Printer",
+    "meaning": "An MFP combines printing with functions such as scanning, copying, and faxing in a single office device.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mmc",
+    "acronym": "MMC",
+    "expanded": "Microsoft Management Console",
+    "meaning": "The MMC is a Windows framework that hosts administrative snap-ins, such as Device Manager and Disk Management, in one console.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-mnda",
+    "acronym": "MNDA",
+    "expanded": "Mutual Non-disclosure Agreement",
+    "meaning": "An MNDA is a contract in which both parties agree to keep each other's shared confidential information private.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-msata",
+    "acronym": "mSATA",
+    "expanded": "Mini-serial Advanced Technology Attachment",
+    "meaning": "mSATA is a small SATA-based card format for SSDs in laptops and compact systems, now largely replaced by M.2.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-msds",
+    "acronym": "MSDS",
+    "expanded": "Material Safety Data Sheet",
+    "meaning": "An MSDS is a document describing a chemical's hazards, handling, and disposal, and it is now called an SDS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 9: Safety and Environmental Concerns",
+    "note": "Older name for the Safety Data Sheet (SDS). The books still use it."
+  },
+  {
+    "id": "aplus-acr-mx",
+    "acronym": "MX",
+    "expanded": "Mail Exchange",
+    "meaning": "An MX record is a DNS entry that identifies the mail servers responsible for accepting email for a domain.",
+    "acceptedAnswers": [
+      "Mail Exchanger"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-nac",
+    "acronym": "NAC",
+    "expanded": "Network Access Control",
+    "meaning": "NAC checks a device's identity and security posture before allowing it onto the network, and it can quarantine noncompliant devices.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-nas",
+    "acronym": "NAS",
+    "expanded": "Network-attached Storage",
+    "meaning": "A NAS is a storage device attached to the network that serves files to multiple users over protocols such as SMB.",
+    "acceptedAnswers": [
+      "Network Access Server"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Network Access Server\"; the books and objective 2.7 (storage area network topics) use Network-attached Storage."
+  },
+  {
+    "id": "aplus-acr-nat",
+    "acronym": "NAT",
+    "expanded": "Network Address Translation",
+    "meaning": "NAT translates private internal IP addresses to a public address at the router, letting many devices share one internet connection.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The Core 1 list has \"Network Access Translation\" (an error); the Core 2 list and the books use Network Address Translation."
+  },
+  {
+    "id": "aplus-acr-nda",
+    "acronym": "NDA",
+    "expanded": "Non-disclosure Agreement",
+    "meaning": "An NDA is a legal agreement requiring a person to keep specified confidential information private, often signed by technicians who see customer data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-netbios",
+    "acronym": "NetBIOS",
+    "expanded": "Network Basic Input/Output System",
+    "meaning": "NetBIOS is an older Windows networking interface for name resolution and file sharing, using ports 137 through 139.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-nfc",
+    "acronym": "NFC",
+    "expanded": "Near-field Communication",
+    "meaning": "NFC allows two devices to exchange small amounts of data within a few centimeters, enabling contactless payments and quick pairing.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.2",
+      "220-1201/2.2",
+      "220-1202/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-nic",
+    "acronym": "NIC",
+    "expanded": "Network Interface Card",
+    "meaning": "A NIC is the hardware that connects a computer to a network, either wired or wireless, and it has a unique MAC address.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5",
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ntfs",
+    "acronym": "NTFS",
+    "expanded": "New Technology File System",
+    "meaning": "NTFS is the standard Windows file system, supporting file permissions, encryption, compression, large volumes, and journaling for reliability.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1",
+      "220-1202/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ntp",
+    "acronym": "NTP",
+    "expanded": "Network Time Protocol",
+    "meaning": "NTP synchronizes clocks across devices on UDP port 123, which matters for logs, certificates, and authentication such as Kerberos.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-nvme",
+    "acronym": "NVMe",
+    "expanded": "Non-volatile Memory Express",
+    "meaning": "NVMe is a fast storage protocol that runs over PCIe, often on M.2 drives, giving much higher speeds than SATA SSDs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-oem",
+    "acronym": "OEM",
+    "expanded": "Original Equipment Manufacturer",
+    "meaning": "An OEM makes the original parts or devices that other companies brand and sell, so OEM parts are generally compatible replacements for technicians.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-oled",
+    "acronym": "OLED",
+    "expanded": "Organic Light-emitting Diode",
+    "meaning": "OLED displays use self-lighting organic pixels with no backlight, giving deep blacks and high contrast, but they are prone to burn-in over time.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ont",
+    "acronym": "ONT",
+    "expanded": "Optical Network Terminal",
+    "meaning": "An ONT is the device at a customer site that converts the provider's fiber optic signal into Ethernet for the local network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-os",
+    "acronym": "OS",
+    "expanded": "Operating System",
+    "meaning": "An OS manages hardware, memory, files, and applications, and provides the interface users and programs rely on, such as Windows, Linux, macOS, or Android.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.7",
+      "220-1201/4.1",
+      "220-1201/5.2",
+      "220-1202/1.1",
+      "220-1202/1.2",
+      "220-1202/1.4",
+      "220-1202/1.5",
+      "220-1202/1.7",
+      "220-1202/1.8",
+      "220-1202/1.9",
+      "220-1202/1.10",
+      "220-1202/2.2",
+      "220-1202/2.4",
+      "220-1202/2.8",
+      "220-1202/3.1",
+      "220-1202/3.2",
+      "220-1202/3.3",
+      "220-1202/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-otp",
+    "acronym": "OTP",
+    "expanded": "One-time Password",
+    "meaning": "An OTP is a password valid for only one login or transaction, which prevents attackers from reusing a captured credential.",
+    "acceptedAnswers": [
+      "One-time Passcode"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official lists have \"One-time Password (or Passcode)\" and \"One-time Password/Passcode\". Both words are accepted."
+  },
+  {
+    "id": "aplus-acr-ou",
+    "acronym": "OU",
+    "expanded": "Organizational Unit",
+    "meaning": "An OU is a container in Active Directory that groups users, computers, and groups so administrators can apply policies and delegate control.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 45: Windows Security Settings"
+  },
+  {
+    "id": "aplus-acr-paas",
+    "acronym": "PaaS",
+    "expanded": "Platform as a Service",
+    "meaning": "PaaS is a cloud model where the provider supplies the runtime, operating system, and tools so customers can build and deploy applications without managing servers.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pam",
+    "acronym": "PAM",
+    "expanded": "Privileged Access Management",
+    "meaning": "PAM tools control, monitor, and record the use of administrator-level accounts to reduce the risk from stolen or misused elevated credentials.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pan",
+    "acronym": "PAN",
+    "expanded": "Personal Area Network",
+    "meaning": "A PAN is a very small network, usually within a few meters, connecting personal devices such as phones, headsets, and watches via Bluetooth or NFC.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pc",
+    "acronym": "PC",
+    "expanded": "Personal Computer",
+    "meaning": "A PC is a general-purpose computer, such as a desktop or laptop, used by one person at a time and serviced by A+ technicians.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/3.4",
+      "220-1202/4.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pci",
+    "acronym": "PCI",
+    "expanded": "Peripheral Component Interconnect",
+    "meaning": "PCI is an older parallel expansion bus that connects add-in cards like network and sound cards to a motherboard, replaced by PCIe.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4",
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pcie",
+    "acronym": "PCIe",
+    "expanded": "Peripheral Component Interconnect Express",
+    "meaning": "PCIe is the serial, lane-based expansion bus for graphics cards, NVMe drives, and other add-in cards, available in x1, x4, x8, and x16 slot sizes.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4",
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pcl",
+    "acronym": "PCL",
+    "expanded": "Printer Command Language",
+    "meaning": "PCL is a page description language developed by HP that printers use to interpret print jobs and render text and graphics on the page.",
+    "acceptedAnswers": [
+      "Printer Control Language"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The acronym list has \"Printer Command Language\"; objective 3.7 has \"Printer Control Language\". Both are accepted."
+  },
+  {
+    "id": "aplus-acr-phi",
+    "acronym": "PHI",
+    "expanded": "Protected Health Information",
+    "meaning": "PHI is individual health information, such as medical records and billing details, that regulations like HIPAA require organizations to protect.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.6"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 61: Incident Response, Communication, and Professionalism"
+  },
+  {
+    "id": "aplus-acr-pii",
+    "acronym": "PII",
+    "expanded": "Personally Identifiable Information",
+    "meaning": "PII is any data that can identify a person, such as a name, Social Security number, or address, and it must be protected from disclosure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.7",
+      "220-1202/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pin",
+    "acronym": "PIN",
+    "expanded": "Personal Identification Number",
+    "meaning": "A PIN is a short numeric code that verifies a user locally, such as for unlocking a device or signing in with Windows Hello.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3",
+      "220-1202/2.2",
+      "220-1202/2.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-piv",
+    "acronym": "PIV",
+    "expanded": "Personal Identity Verification",
+    "meaning": "PIV is a US government smart card standard that stores credentials and certificates for strong, multifactor identification of employees and contractors.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-poe",
+    "acronym": "PoE",
+    "expanded": "Power over Ethernet",
+    "meaning": "PoE sends power and data over the same Ethernet cable, so access points, IP phones, and cameras need no separate power adapter.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pop",
+    "acronym": "POP",
+    "expanded": "Post Office Protocol",
+    "meaning": "POP downloads email from a mail server to one client, used today as POP3 on TCP port 110, or 995 when secured.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-post",
+    "acronym": "POST",
+    "expanded": "Power-on Self-test",
+    "meaning": "POST is the startup firmware check that tests essential hardware like RAM and the CPU, reporting failures through beep codes or error messages.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/5.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-psu",
+    "acronym": "PSU",
+    "expanded": "Power Supply Unit",
+    "meaning": "A PSU converts AC wall power into the lower DC voltages, such as 3.3, 5, and 12 volts, that computer components need.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pup",
+    "acronym": "PUP",
+    "expanded": "Potentially Unwanted Program",
+    "meaning": "A PUP is software a user may not want, such as bundled toolbars or adware, often installed alongside legitimate programs and hurting performance.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-pxe",
+    "acronym": "PXE",
+    "expanded": "Preboot eXecution Environment",
+    "meaning": "PXE lets a computer boot and install an operating system over the network using its network card, without any local drive or media.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-qos",
+    "acronym": "QoS",
+    "expanded": "Quality of Service",
+    "meaning": "QoS settings prioritize certain network traffic, such as voice and video, so time-sensitive applications keep working smoothly when bandwidth is limited.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-qr",
+    "acronym": "QR",
+    "expanded": "Quick Response",
+    "meaning": "A QR code is a two-dimensional matrix barcode that a phone camera scans to open a link, join Wi-Fi, or enroll an authenticator app.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 5: Security Concepts"
+  },
+  {
+    "id": "aplus-acr-radius",
+    "acronym": "RADIUS",
+    "expanded": "Remote Authentication Dial-In User Service",
+    "meaning": "RADIUS is a protocol that provides centralized authentication, authorization, and accounting for network access, commonly used for enterprise Wi-Fi and VPN logins over UDP.",
+    "acceptedAnswers": [
+      "Remote Authentication Dial-in User Server"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Server\"; the books and the RADIUS standard use Service. Both are accepted."
+  },
+  {
+    "id": "aplus-acr-raid",
+    "acronym": "RAID",
+    "expanded": "Redundant Array of Independent Disks",
+    "meaning": "RAID combines multiple physical drives into one logical unit to improve speed, provide fault tolerance, or both, depending on the level used.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4",
+      "220-1201/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ram",
+    "acronym": "RAM",
+    "expanded": "Random-access Memory",
+    "meaning": "RAM is the fast, volatile memory a computer uses to hold running programs and data, and its contents are lost when power is removed.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.1",
+      "220-1201/3.3",
+      "220-1201/5.1",
+      "220-1202/1.3",
+      "220-1202/1.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rdp",
+    "acronym": "RDP",
+    "expanded": "Remote Desktop Protocol",
+    "meaning": "RDP is the Microsoft protocol that gives a user a remote graphical desktop session to another Windows computer over TCP port 3389.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1202/1.3",
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-refs",
+    "acronym": "ReFS",
+    "expanded": "Resilient File System",
+    "meaning": "ReFS is a Microsoft file system designed for resilience and very large volumes, using checksums and self-healing, primarily on servers and Windows Pro for Workstations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rfid",
+    "acronym": "RFID",
+    "expanded": "Radio-frequency Identification",
+    "meaning": "RFID uses radio signals to read data from tags attached to objects or badges, commonly for access control, inventory tracking, and asset management.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rgb",
+    "acronym": "RGB",
+    "expanded": "Red-Green-Blue",
+    "meaning": "RGB is a color model that mixes red, green, and blue light at different intensities to produce the colors shown on displays and lighting.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-risc",
+    "acronym": "RISC",
+    "expanded": "Reduced Instruction Set Computer",
+    "meaning": "RISC is a processor design using a small set of simple instructions, as in ARM chips found in phones, tablets, and some laptops.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rj11",
+    "acronym": "RJ11",
+    "expanded": "Registered Jack 11",
+    "meaning": "RJ11 is a small connector with usually two or four wires, used for telephone lines and DSL modem connections.",
+    "acceptedAnswers": [
+      "Registered Jack Function 11"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rj45",
+    "acronym": "RJ45",
+    "expanded": "Registered Jack 45",
+    "meaning": "RJ45 is the eight-pin modular connector used on twisted-pair Ethernet cables to connect computers, switches, and routers.",
+    "acceptedAnswers": [
+      "Registered Jack Function 45"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rmm",
+    "acronym": "RMM",
+    "expanded": "Remote Monitoring and Management",
+    "meaning": "RMM software lets managed service providers and IT staff remotely monitor, patch, and support many client computers from a central console.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rpm",
+    "acronym": "RPM",
+    "expanded": "Revolutions Per Minute",
+    "meaning": "RPM measures how fast a hard drive's platters spin, with common speeds of 5400 and 7200, and higher values mean faster access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-rps",
+    "acronym": "RPS",
+    "expanded": "Redundant Power Supply",
+    "meaning": "An RPS is a backup power supply, often used in servers, that automatically keeps the system running if the main power supply fails.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.6"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 2: Expansion Cards, Storage Devices, and Power Supplies"
+  },
+  {
+    "id": "aplus-acr-rsr",
+    "acronym": "RSR",
+    "expanded": "Rapid Security Response",
+    "meaning": "RSR is an Apple mechanism for delivering small, quick security fixes to iOS and macOS without a full operating system update.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-s-m-a-r-t",
+    "acronym": "S.M.A.R.T",
+    "expanded": "Self-Monitoring, Analysis, and Reporting Technology",
+    "meaning": "S.M.A.R.T. is a drive feature that monitors internal health indicators and warns of likely failure so data can be backed up in time.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-saas",
+    "acronym": "SaaS",
+    "expanded": "Software as a Service",
+    "meaning": "SaaS is a cloud model where users access finished applications, such as Microsoft 365, through a browser while the provider manages everything underneath.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sae",
+    "acronym": "SAE",
+    "expanded": "Simultaneous Authentication of Equals",
+    "meaning": "SAE is the handshake used by WPA3-Personal that replaces the pre-shared key exchange and resists offline password-guessing attacks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 2 Chapter 6: Securing Operating Systems"
+  },
+  {
+    "id": "aplus-acr-saml",
+    "acronym": "SAML",
+    "expanded": "Security Assertion Markup Language",
+    "meaning": "SAML is an XML-based standard that lets an identity provider pass authentication assertions to other sites, enabling single sign-on across organizations.",
+    "acceptedAnswers": [
+      "Security Assertions Markup Language"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Assertions\"; the books use Security Assertion Markup Language. Both are accepted."
+  },
+  {
+    "id": "aplus-acr-san",
+    "acronym": "SAN",
+    "expanded": "Storage Area Network",
+    "meaning": "A SAN is a dedicated high-speed network that gives servers block-level access to shared storage devices, typically using Fibre Channel or iSCSI.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sas",
+    "acronym": "SAS",
+    "expanded": "Serial Attached SCSI",
+    "meaning": "SAS is a high-performance serial interface for enterprise hard drives and SSDs in servers, offering faster speeds and better reliability than SATA.",
+    "acceptedAnswers": [
+      "Serial Attached Small Computer System Interface"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sata",
+    "acronym": "SATA",
+    "expanded": "Serial Advanced Technology Attachment",
+    "meaning": "SATA is the standard serial interface connecting internal hard drives, SSDs, and optical drives to a motherboard, with SATA III reaching 6 Gbps.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2",
+      "220-1201/3.4",
+      "220-1201/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sc",
+    "acronym": "SC",
+    "expanded": "Subscriber Connector",
+    "meaning": "SC is a square, push-pull fiber optic connector that snaps in place and is widely used on network equipment.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-scada",
+    "acronym": "SCADA",
+    "expanded": "Supervisory Control and Data Acquisition",
+    "meaning": "SCADA systems monitor and control industrial equipment such as power grids and factory machinery, and are a type of industrial control system needing special security.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-scsi",
+    "acronym": "SCSI",
+    "expanded": "Small Computer System Interface",
+    "meaning": "SCSI is an older parallel interface standard for connecting hard drives and other devices, now largely replaced by SATA and SAS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sd",
+    "acronym": "SD",
+    "expanded": "Secure Digital",
+    "meaning": "SD is a small removable flash memory card format used in cameras, phones, and laptops, available in SD, SDHC, and SDXC capacities.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sds",
+    "acronym": "SDS",
+    "expanded": "Safety Data Sheet",
+    "meaning": "An SDS provides details on a chemical's hazards, handling, storage, and first-aid and disposal measures, and technicians consult it for items like toner and batteries.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sfc",
+    "acronym": "SFC",
+    "expanded": "System File Checker",
+    "meaning": "SFC is a Windows command-line tool, run as sfc /scannow, that scans protected system files and replaces corrupted ones with cached copies.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 34: Microsoft Command-Line Tools, Part I"
+  },
+  {
+    "id": "aplus-acr-sftp",
+    "acronym": "SFTP",
+    "expanded": "Secure File Transfer Protocol",
+    "meaning": "SFTP transfers files securely over an encrypted SSH connection using TCP port 22, unlike plain FTP, which sends data in clear text.",
+    "acceptedAnswers": [
+      "SSH File Transfer Protocol"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sim",
+    "acronym": "SIM",
+    "expanded": "Subscriber Identity Module",
+    "meaning": "A SIM is a small card that identifies a mobile subscriber to a cellular network and stores the account details for calls and data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sla",
+    "acronym": "SLA",
+    "expanded": "Service-level Agreement",
+    "meaning": "An SLA is a contract that defines the service level a provider must deliver, such as response times and uptime guarantees.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-smb",
+    "acronym": "SMB",
+    "expanded": "Server Message Block",
+    "meaning": "SMB is the protocol Windows uses to share files, folders, and printers over a network, running on TCP port 445.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1201/3.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sms",
+    "acronym": "SMS",
+    "expanded": "Short Message Service",
+    "meaning": "SMS is the text messaging service on mobile networks, sometimes used to deliver one-time codes, though it is less secure than app-based methods.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-smtp",
+    "acronym": "SMTP",
+    "expanded": "Simple Mail Transfer Protocol",
+    "meaning": "SMTP is the protocol mail clients and servers use to send email, using TCP port 25 between servers and 587 for client submission.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-snmp",
+    "acronym": "SNMP",
+    "expanded": "Simple Network Management Protocol",
+    "meaning": "SNMP lets administrators monitor and manage network devices such as routers, switches, and printers, using UDP port 161 for queries and 162 for traps.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sodimm",
+    "acronym": "SODIMM",
+    "expanded": "Small Outline Dual In-line Memory Module",
+    "meaning": "A SODIMM is a compact memory module used in laptops, mini PCs, and all-in-ones, physically smaller than the DIMMs found in desktops.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-soho",
+    "acronym": "SOHO",
+    "expanded": "Small Office/Home Office",
+    "meaning": "A SOHO is a very small business or home network, usually a few users sharing one router, and is the typical A+ configuration environment.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.6",
+      "220-1202/2.6",
+      "220-1202/2.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sop",
+    "acronym": "SOP",
+    "expanded": "Standard Operating Procedure",
+    "meaning": "An SOP is a documented set of step-by-step instructions that ensures a routine task is performed consistently and correctly every time.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-spf",
+    "acronym": "SPF",
+    "expanded": "Sender Policy Framework",
+    "meaning": "SPF is a DNS record that lists which mail servers may send email for a domain, helping receivers detect spoofed senders.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-spice",
+    "acronym": "SPICE",
+    "expanded": "Simple Protocol for Independent Computing Environments",
+    "meaning": "SPICE is a remote display protocol used to access virtual machines, supporting features like audio, USB redirection, and clipboard sharing.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The Core 1 list has \"Software Process Improvement and Capability Determination\"; objective 220-1202 4.9 (remote access) and the books use the remote protocol meaning."
+  },
+  {
+    "id": "aplus-acr-sql",
+    "acronym": "SQL",
+    "expanded": "Structured Query Language",
+    "meaning": "SQL is the standard language for querying and managing relational databases, and SQL injection attacks abuse it by inserting malicious statements into input fields.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ssd",
+    "acronym": "SSD",
+    "expanded": "Solid-state Drive",
+    "meaning": "An SSD stores data on flash memory with no moving parts, making it faster, quieter, and more shock resistant than a mechanical hard drive.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.1",
+      "220-1201/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ssh",
+    "acronym": "SSH",
+    "expanded": "Secure Shell",
+    "meaning": "SSH provides encrypted remote command-line access and secure file transfer to another system on TCP port 22, replacing insecure Telnet.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ssid",
+    "acronym": "SSID",
+    "expanded": "Service Set Identifier",
+    "meaning": "An SSID is the name a wireless network broadcasts so users can identify and join it, and disabling the broadcast only hides it casually.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-sso",
+    "acronym": "SSO",
+    "expanded": "Single Sign-on",
+    "meaning": "SSO lets a user sign in once and access multiple applications without entering credentials again, reducing password fatigue while centralizing access control.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1",
+      "220-1202/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-st",
+    "acronym": "ST",
+    "expanded": "Straight Tip",
+    "meaning": "ST is a bayonet-style fiber optic connector that twists and locks onto a port, used mostly in older multimode installations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-stp",
+    "acronym": "STP",
+    "expanded": "Shielded Twisted Pair",
+    "meaning": "STP is twisted-pair network cable with metallic shielding around the wires to reduce electromagnetic interference, used in electrically noisy environments.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 6: Networking Fundamentals"
+  },
+  {
+    "id": "aplus-acr-tacacs",
+    "acronym": "TACACS",
+    "expanded": "Terminal Access Controller Access-Control System",
+    "meaning": "TACACS, used today as TACACS+, centralizes authentication, authorization, and accounting for network device administration over TCP port 49.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-tcp",
+    "acronym": "TCP",
+    "expanded": "Transmission Control Protocol",
+    "meaning": "TCP is a connection-oriented transport protocol that provides reliable, ordered delivery using acknowledgments and retransmissions, as used by web and email traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-tkip",
+    "acronym": "TKIP",
+    "expanded": "Temporal Key Integrity Protocol",
+    "meaning": "TKIP is an older encryption protocol introduced with WPA to improve on WEP, and it is deprecated in favor of AES with CCMP.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-tls",
+    "acronym": "TLS",
+    "expanded": "Transport Layer Security",
+    "meaning": "TLS encrypts data in transit between clients and servers, such as HTTPS traffic on TCP port 443, and replaced the older SSL.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1",
+      "220-1202/2.11"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 52: Browser Security"
+  },
+  {
+    "id": "aplus-acr-tn",
+    "acronym": "TN",
+    "expanded": "Twisted Nematic",
+    "meaning": "TN is an LCD panel type with fast response times and low cost, but it has narrow viewing angles and weaker color accuracy than IPS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-totp",
+    "acronym": "TOTP",
+    "expanded": "Time-based One-time Password",
+    "meaning": "TOTP generates a temporary code from a shared secret and the current time, usually changing every 30 seconds, as authenticator apps do.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-tpm",
+    "acronym": "TPM",
+    "expanded": "Trusted Platform Module",
+    "meaning": "A TPM is a motherboard chip that stores encryption keys securely and supports features like BitLocker and Windows 11 security requirements.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5",
+      "220-1202/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-txt",
+    "acronym": "TXT",
+    "expanded": "Text",
+    "meaning": "A TXT is a DNS record type holding free-form text, commonly used to publish email authentication policies such as SPF and DKIM.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-uac",
+    "acronym": "UAC",
+    "expanded": "User Account Control",
+    "meaning": "UAC is a Windows feature that prompts for confirmation or administrator credentials before changes requiring elevated privileges, limiting what malware can do silently.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-udp",
+    "acronym": "UDP",
+    "expanded": "User Datagram Protocol",
+    "meaning": "UDP is a connectionless transport protocol that sends data without acknowledgments, making it fast and suited to streaming, VoIP, DNS, and DHCP.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-uefi",
+    "acronym": "UEFI",
+    "expanded": "Unified Extensible Firmware Interface",
+    "meaning": "UEFI is the modern firmware that replaces BIOS, offering a graphical interface, Secure Boot, GPT disk support, and faster startup.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.5",
+      "220-1202/1.3",
+      "220-1202/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-upnp",
+    "acronym": "UPnP",
+    "expanded": "Universal Plug and Play",
+    "meaning": "UPnP lets networked devices automatically discover each other and open router ports, which is convenient but a security risk, so it is often disabled.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-ups",
+    "acronym": "UPS",
+    "expanded": "Uninterruptible Power Supply",
+    "meaning": "A UPS contains a battery that keeps equipment running briefly during an outage and conditions power, giving time for a safe shutdown.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-usb",
+    "acronym": "USB",
+    "expanded": "Universal Serial Bus",
+    "meaning": "USB is the common interface for connecting peripherals and storage, with USB 2.0 at 480 Mbps and USB 3.x at 5 Gbps or more.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.2",
+      "220-1201/3.2",
+      "220-1201/3.5",
+      "220-1201/3.7",
+      "220-1202/1.2",
+      "220-1202/1.6",
+      "220-1202/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-usb-c",
+    "acronym": "USB-C",
+    "expanded": "Universal Serial Bus Type-C",
+    "meaning": "USB-C is a small, reversible connector that can carry data, video, and power, used by modern phones, laptops, and Thunderbolt 3 and 4 ports.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/1.2",
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-utm",
+    "acronym": "UTM",
+    "expanded": "Unified Threat Management",
+    "meaning": "A UTM device combines security functions like a firewall, intrusion prevention, antivirus, and content filtering into one appliance managed from a single point.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-utp",
+    "acronym": "UTP",
+    "expanded": "Unshielded Twisted Pair",
+    "meaning": "UTP is common Ethernet cable with unshielded twisted wire pairs, in categories such as Cat 5e, Cat 6, and Cat 6a, with 100-meter runs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Complete Study Guide (Docter) – Core 1 Chapter 6: Networking Fundamentals"
+  },
+  {
+    "id": "aplus-acr-va",
+    "acronym": "VA",
+    "expanded": "Vertical Alignment",
+    "meaning": "VA is an LCD panel type offering higher contrast and deeper blacks than IPS or TN, with viewing angles and response times in between.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vdi",
+    "acronym": "VDI",
+    "expanded": "Virtual Desktop Infrastructure",
+    "meaning": "VDI hosts desktop operating systems on central servers and delivers them to users' devices remotely, simplifying management and keeping data off local machines.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vga",
+    "acronym": "VGA",
+    "expanded": "Video Graphics Array",
+    "meaning": "VGA is an older analog video standard and 15-pin connector, now largely replaced by digital interfaces like HDMI and DisplayPort.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vlan",
+    "acronym": "VLAN",
+    "expanded": "Virtual Local Area Network",
+    "meaning": "A VLAN logically divides a switch into separate broadcast domains, so devices on different VLANs cannot communicate without a router.",
+    "acceptedAnswers": [
+      "Virtual LAN"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vm",
+    "acronym": "VM",
+    "expanded": "Virtual Machine",
+    "meaning": "A VM is a software-based computer that runs its own operating system on shared physical hardware, managed by a hypervisor.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vnc",
+    "acronym": "VNC",
+    "expanded": "Virtual Network Computing",
+    "meaning": "VNC lets a user view and control another computer's desktop over a network, using the RFB protocol and typically TCP port 5900.",
+    "acceptedAnswers": [
+      "Virtual Network Computer"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Computer\"; the books use Virtual Network Computing. Both are accepted."
+  },
+  {
+    "id": "aplus-acr-voip",
+    "acronym": "VoIP",
+    "expanded": "Voice over Internet Protocol",
+    "meaning": "VoIP carries voice calls as data packets over an IP network, so it depends on adequate bandwidth, low latency, and QoS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/5.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vpn",
+    "acronym": "VPN",
+    "expanded": "Virtual Private Network",
+    "meaning": "A VPN creates an encrypted tunnel across an untrusted network such as the internet, letting remote users securely reach private resources.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.4",
+      "220-1202/1.7",
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-vram",
+    "acronym": "VRAM",
+    "expanded": "Video Random-access Memory",
+    "meaning": "VRAM is dedicated memory on a graphics card that stores textures and frame data, with more capacity helping handle higher resolutions and complex graphics.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.10"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-wan",
+    "acronym": "WAN",
+    "expanded": "Wide Area Network",
+    "meaning": "A WAN connects networks across large geographic areas, such as the internet linking separate offices, and is usually provided by a telecommunications carrier.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7",
+      "220-1202/1.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-wap",
+    "acronym": "WAP",
+    "expanded": "Wireless Access Point",
+    "meaning": "A WAP connects wireless devices to a wired network, creating a Wi-Fi network and often powered through PoE.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-wep",
+    "acronym": "WEP",
+    "expanded": "Wired Equivalent Privacy",
+    "meaning": "WEP is an obsolete Wi-Fi security protocol with serious flaws that allow keys to be cracked quickly, so it should never be used.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-winrm",
+    "acronym": "WinRM",
+    "expanded": "Windows Remote Management",
+    "meaning": "WinRM is a Windows service for remote management and PowerShell remoting, using HTTP on TCP port 5985 or HTTPS on 5986.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/4.9"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-wisp",
+    "acronym": "WISP",
+    "expanded": "Wireless Internet Service Provider",
+    "meaning": "A WISP provides internet access to customers over wireless radio links, which is common in rural areas where wired service is unavailable.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The official list has \"Written Internet Service Provider\" (an error); objective 2.7 and the books use Wireless Internet Service Provider."
+  },
+  {
+    "id": "aplus-acr-wlan",
+    "acronym": "WLAN",
+    "expanded": "Wireless Local Area Network",
+    "meaning": "A WLAN links devices in a limited area using wireless radio signals, typically Wi-Fi based on the IEEE 802.11 standards.",
+    "acceptedAnswers": [
+      "Wireless LAN"
+    ],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1201/2.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-wpa",
+    "acronym": "WPA",
+    "expanded": "Wi-Fi Protected Access",
+    "meaning": "WPA is the Wi-Fi security standard that replaced WEP, using TKIP encryption and offering stronger protection than WEP.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-wpa2",
+    "acronym": "WPA2",
+    "expanded": "Wi-Fi Protected Access 2",
+    "meaning": "WPA2 secures Wi-Fi using AES encryption with CCMP, and it became the long-standing standard for personal and enterprise wireless networks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-acr-wpa3",
+    "acronym": "WPA3",
+    "expanded": "Wi-Fi Protected Access 3",
+    "meaning": "WPA3 is the newest Wi-Fi security standard, using SAE for stronger password protection and improved encryption, including protection on open networks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA A+ Core 1 and Core 2 Exam Cram, 2nd ed. – Chapter 46: Wireless Security and Malware"
+  },
+  {
+    "id": "aplus-acr-wwan",
+    "acronym": "WWAN",
+    "expanded": "Wireless Wide Area Network",
+    "meaning": "A WWAN provides wireless network connectivity over cellular networks, letting laptops and devices with a SIM or modem get internet access across wide areas.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-xaas",
+    "acronym": "XaaS",
+    "expanded": "Anything As A Service",
+    "meaning": "XaaS is a general term for any cloud service delivered on demand, covering models such as IaaS, PaaS, SaaS, and others.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-xdr",
+    "acronym": "XDR",
+    "expanded": "Extended Detection and Response",
+    "meaning": "XDR collects and correlates security data from endpoints, networks, email, and cloud sources so threats can be detected and handled across the whole environment.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-xfs",
+    "acronym": "XFS",
+    "expanded": "Extended File System",
+    "meaning": "XFS is a high-performance journaling file system for Linux that handles very large files and volumes well, and it is the default on some distributions.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists"
+  },
+  {
+    "id": "aplus-acr-xss",
+    "acronym": "XSS",
+    "expanded": "Cross-site Scripting",
+    "meaning": "XSS is an attack that injects malicious script into a trusted web page so it runs in other users' browsers, often stealing session data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "a-plus"
+    ],
+    "exams": [
+      "220-1201",
+      "220-1202"
+    ],
+    "objectives": [
+      "220-1202/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA A+ Core 1 (220-1201) and Core 2 (220-1202) Exam Objectives – Acronym Lists",
+    "note": "The Core 1 list has the typo \"XXS\"."
+  }
+]

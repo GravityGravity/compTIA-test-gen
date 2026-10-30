@@ -16,7 +16,7 @@
 <div class="hero">
   <div class="page-head">
     <h1 class="display-page"><span class="title-gradient">Acronym Exercise</span></h1>
-    <p class="subtitle">Match acronyms to their expanded forms, then type a few from memory.</p>
+    <p class="subtitle">Type the expanded form of each acronym from memory.</p>
   </div>
 </div>
 
@@ -29,12 +29,13 @@
     <div class="stack-2" role="radiogroup" aria-labelledby="certTitle">
       <button class="choice" role="radio" aria-checked="true" data-c="a-plus">
         <span class="dot"></span>
-        <span class="stack-2"><span class="h4">CompTIA A+ (Core 1 and Core 2)</span><span class="small">312 acronyms</span></span>
+        <span class="stack-2"><span class="h4">CompTIA A+ (Core 1 and Core 2)</span><span class="small">222 acronyms</span></span>
       </button>
-      <!-- Inactive certification: config has active: false. -->
-      <button class="choice" role="radio" aria-checked="false" aria-disabled="true" tabindex="-1">
+      <!-- Counts come from content/. A certification whose config has active: false gets
+           aria-disabled="true", tabindex="-1", and "Coming later" in place of the count. -->
+      <button class="choice" role="radio" aria-checked="false" data-c="network-plus">
         <span class="dot"></span>
-        <span class="stack-2"><span class="h4">CompTIA Network+</span><span class="small">Coming later</span></span>
+        <span class="stack-2"><span class="h4">CompTIA Network+ (N10-009)</span><span class="small">172 acronyms</span></span>
       </button>
     </div>
   </section>
@@ -44,8 +45,7 @@
     <h2 class="h3" id="sumTitle">What to expect</h2>
     <dl class="facts" style="max-width:480px">
       <div><dt>Questions</dt><dd>20</dd></div>
-      <div><dt>Multiple choice</dt><dd>14</dd></div>
-      <div><dt>Type the answer</dt><dd>6</dd></div>
+      <div><dt>Question type</dt><dd>Type the expanded form of each acronym</dd></div>
       <div><dt>Time</dt><dd>30 minutes</dd></div>
     </dl>
     <p>A typed answer with a spelling error is incorrect. Close matches are not accepted.</p>

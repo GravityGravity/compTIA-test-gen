@@ -1,0 +1,3309 @@
+[
+  {
+    "id": "netplus-acr-a",
+    "acronym": "A",
+    "expanded": "Address",
+    "meaning": "The DNS A record maps a host name to an IPv4 address, and a technician checks it when a name fails to resolve.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List",
+    "note": "The DNS A (address) record."
+  },
+  {
+    "id": "netplus-acr-acl",
+    "acronym": "ACL",
+    "expanded": "Access Control List",
+    "meaning": "An ACL is an ordered list of permit and deny rules on a router, firewall, or switch that filters traffic by address, protocol, or port.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ah",
+    "acronym": "AH",
+    "expanded": "Authentication Header",
+    "meaning": "AH is an IPsec protocol that provides integrity and authentication for packets, but unlike ESP it does not encrypt the payload.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ap",
+    "acronym": "AP",
+    "expanded": "Access Point",
+    "meaning": "An AP connects wireless clients to the wired LAN, bridging Wi-Fi to Ethernet and defining the coverage area of a wireless network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2",
+      "N10-009/2.3",
+      "N10-009/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-api",
+    "acronym": "API",
+    "expanded": "Application Programming Interface",
+    "meaning": "An API is a defined set of calls that lets software systems exchange data, enabling network automation and programmatic control of devices and cloud services.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2",
+      "N10-009/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-apipa",
+    "acronym": "APIPA",
+    "expanded": "Automatic Private Internet Protocol Addressing",
+    "meaning": "APIPA lets a client that cannot reach a DHCP server assign itself an address in 169.254.0.0/16, which signals a DHCP failure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-arp",
+    "acronym": "ARP",
+    "expanded": "Address Resolution Protocol",
+    "meaning": "ARP resolves a known IPv4 address to a MAC address on the local network, and attackers can abuse it through ARP spoofing or poisoning.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-aup",
+    "acronym": "AUP",
+    "expanded": "Acceptable Use Policy",
+    "meaning": "An AUP is a policy stating what users may and may not do with company networks and systems, setting expectations for security and conduct.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-bgp",
+    "acronym": "BGP",
+    "expanded": "Border Gateway Protocol",
+    "meaning": "BGP is the exterior gateway routing protocol that exchanges routes between autonomous systems and runs the internet, using TCP port 179.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-bnc",
+    "acronym": "BNC",
+    "expanded": "Bayonet Neill–Concelman",
+    "meaning": "BNC is a twist-lock connector used with coaxial cable, found on older Ethernet networks and on some video and serial-style equipment.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-bss",
+    "acronym": "BSS",
+    "expanded": "Basic Service Set",
+    "meaning": "A BSS is a single wireless network built from one access point and its associated clients, identified by the AP's BSSID.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-acr-bssid",
+    "acronym": "BSSID",
+    "expanded": "Basic Service Set Identifier",
+    "meaning": "A BSSID is the MAC address of an access point's radio, uniquely identifying one BSS even when several networks share an SSID.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-byod",
+    "acronym": "BYOD",
+    "expanded": "Bring Your Own Device",
+    "meaning": "BYOD allows employees to connect personal phones and laptops to the corporate network, which raises security concerns that policies and NAC help manage.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cam",
+    "acronym": "CAM",
+    "expanded": "Content-addressable Memory",
+    "meaning": "CAM is the fast lookup memory in a switch that stores the MAC address table, mapping each MAC address to a switch port.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cdn",
+    "acronym": "CDN",
+    "expanded": "Content Delivery Network",
+    "meaning": "A CDN is a geographically distributed set of servers that caches content close to users, reducing latency and load on the origin server.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cdp",
+    "acronym": "CDP",
+    "expanded": "Cisco Discovery Protocol",
+    "meaning": "CDP is a Cisco-proprietary Layer 2 protocol that shares device name, model, and port information with directly connected Cisco neighbors, aiding network discovery and troubleshooting.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cia",
+    "acronym": "CIA",
+    "expanded": "Confidentiality, Integrity, and Availability",
+    "meaning": "The CIA triad names the three core security goals: keeping data private, keeping it accurate and unaltered, and keeping systems accessible when needed.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cidr",
+    "acronym": "CIDR",
+    "expanded": "Classless Inter-domain Routing",
+    "meaning": "CIDR replaces fixed address classes with variable-length prefixes such as /24, allowing flexible subnetting and route summarization.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cli",
+    "acronym": "CLI",
+    "expanded": "Command-line Interface",
+    "meaning": "A CLI is a text-based interface, such as SSH or console access, used to configure and troubleshoot network devices through typed commands.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cname",
+    "acronym": "CNAME",
+    "expanded": "Canonical Name",
+    "meaning": "A CNAME record makes one DNS name an alias of another canonical name, so several names can point to the same host.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-cpu",
+    "acronym": "CPU",
+    "expanded": "Central Processing Unit",
+    "meaning": "The CPU is the processor that executes instructions in a computer or network device, and high utilization can slow routing, firewalling, and other tasks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-crc",
+    "acronym": "CRC",
+    "expanded": "Cyclic Redundancy Check",
+    "meaning": "CRC is an error-detection check in the Ethernet frame trailer, and rising CRC errors on an interface often point to cabling or duplex problems.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dac",
+    "acronym": "DAC",
+    "expanded": "Direct Attach Copper",
+    "meaning": "A DAC is a twinax copper cable with transceivers built into its ends, used for short, low-cost links between switches and servers in a rack.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-das",
+    "acronym": "DAS",
+    "expanded": "Direct-attached Storage",
+    "meaning": "DAS is storage attached directly to a single server, without going through a network, unlike NAS or a SAN.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dci",
+    "acronym": "DCI",
+    "expanded": "Data Center Interconnect",
+    "meaning": "A DCI is a high-bandwidth link connecting separate data centers, supporting workload mobility, replication, and disaster recovery, often by extending Layer 2 with VXLAN.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ddos",
+    "acronym": "DDoS",
+    "expanded": "Distributed Denial of Service",
+    "meaning": "A DDoS attack floods a target with traffic from many compromised hosts at once, making blocking by a single source address ineffective.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dhcp",
+    "acronym": "DHCP",
+    "expanded": "Dynamic Host Configuration Protocol",
+    "meaning": "DHCP automatically assigns IP addresses, subnet masks, gateways, and DNS servers to clients, using UDP ports 67 and 68.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.4",
+      "N10-009/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dlp",
+    "acronym": "DLP",
+    "expanded": "Data Loss Prevention",
+    "meaning": "DLP tools monitor and block sensitive data, such as personal or financial records, from leaving the organization through email, uploads, or removable media.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dns",
+    "acronym": "DNS",
+    "expanded": "Domain Name System",
+    "meaning": "DNS translates host names into IP addresses, using UDP and TCP port 53, and name resolution failures are a common troubleshooting issue.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.4",
+      "N10-009/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dnssec",
+    "acronym": "DNSSEC",
+    "expanded": "Domain Name System Security Extensions",
+    "meaning": "DNSSEC adds digital signatures to DNS records so resolvers can verify they are authentic and unaltered, protecting against spoofing and cache poisoning.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-doh",
+    "acronym": "DoH",
+    "expanded": "DNS over Hypertext Transfer Protocol Secure",
+    "meaning": "DoH sends DNS queries inside encrypted HTTPS traffic over TCP port 443, hiding lookups from eavesdroppers but making them harder to monitor.",
+    "acceptedAnswers": [
+      "DNS over HTTPS",
+      "Domain Name System over Hypertext Transfer Protocol Secure",
+      "Domain Name System over HTTPS"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dos",
+    "acronym": "DoS",
+    "expanded": "Denial of Service",
+    "meaning": "A DoS attack overwhelms a system or network with requests so legitimate users cannot reach the service, threatening availability.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dot",
+    "acronym": "DoT",
+    "expanded": "DNS over Transport Layer Security",
+    "meaning": "DoT encrypts DNS queries by wrapping them in TLS, using TCP port 853 to protect lookups from interception.",
+    "acceptedAnswers": [
+      "DNS over TLS",
+      "Domain Name System over Transport Layer Security",
+      "Domain Name System over TLS"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-dr",
+    "acronym": "DR",
+    "expanded": "Disaster Recovery",
+    "meaning": "DR is the set of plans for restoring systems and data after an outage or disaster, guided by recovery time and recovery point targets.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-eapol",
+    "acronym": "EAPoL",
+    "expanded": "Extensible Authentication Protocol over LAN",
+    "meaning": "EAPoL carries EAP authentication messages between a device and a switch or access point, forming the transport for 802.1X port-based access control.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-eigrp",
+    "acronym": "EIGRP",
+    "expanded": "Enhanced Interior Gateway Routing Protocol",
+    "meaning": "EIGRP is an advanced distance-vector interior routing protocol, originally Cisco-proprietary, that chooses routes using a composite metric based mainly on bandwidth and delay.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-eol",
+    "acronym": "EOL",
+    "expanded": "End-of-life",
+    "meaning": "EOL means the vendor has stopped selling a product, which signals that support and updates will end and replacement should be planned.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-eos",
+    "acronym": "EOS",
+    "expanded": "End-of-support",
+    "meaning": "EOS is the date after which a vendor no longer provides patches or technical support, leaving unpatched devices as a security risk.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-esp",
+    "acronym": "ESP",
+    "expanded": "Encapsulating Security Payload",
+    "meaning": "ESP is an IPsec protocol, IP protocol 50, that provides encryption plus integrity and authentication for packets in transport or tunnel mode.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ess",
+    "acronym": "ESS",
+    "expanded": "Extended Service Set",
+    "meaning": "An ESS joins multiple access points sharing one SSID into a single wireless network, letting clients roam between APs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-acr-essid",
+    "acronym": "ESSID",
+    "expanded": "Extended Service Set Identifier",
+    "meaning": "An ESSID is the network name shared by all access points in an extended service set, allowing clients to roam between them.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-eula",
+    "acronym": "EULA",
+    "expanded": "End User License Agreement",
+    "meaning": "A EULA is a legal agreement that sets the terms under which a user may install and use software, including limits on copying and use.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-fc",
+    "acronym": "FC",
+    "expanded": "Fibre Channel",
+    "meaning": "FC is a high-speed protocol used mainly to connect servers to a storage area network, running over dedicated fiber or copper cabling and switches.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-fdp",
+    "acronym": "FDP",
+    "expanded": "Fiber Distribution Panel",
+    "meaning": "An FDP is a panel in a telecommunications room that terminates and organizes fiber cables, allowing patching and cross-connecting of fiber links.",
+    "acceptedAnswers": [
+      "Fibre Distribution Panel"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 5: Cabling"
+  },
+  {
+    "id": "netplus-acr-fhrp",
+    "acronym": "FHRP",
+    "expanded": "First Hop Redundancy Protocol",
+    "meaning": "FHRP lets multiple routers share one virtual IP and MAC address as the default gateway, giving seamless failover; HSRP and VRRP are examples.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ftp",
+    "acronym": "FTP",
+    "expanded": "File Transfer Protocol",
+    "meaning": "FTP transfers files between hosts without encryption, using TCP port 21 for control and port 20 for data in active mode.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-gdpr",
+    "acronym": "GDPR",
+    "expanded": "General Data Protection Regulation",
+    "meaning": "GDPR is the European Union regulation governing the collection, storage, and protection of personal data, with strict rules and penalties that affect network data handling.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-gre",
+    "acronym": "GRE",
+    "expanded": "Generic Routing Encapsulation",
+    "meaning": "GRE is a tunneling protocol, IP protocol 47, that encapsulates many kinds of traffic inside IP packets but provides no encryption on its own.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-gui",
+    "acronym": "GUI",
+    "expanded": "Graphical User Interface",
+    "meaning": "A GUI lets administrators configure and manage network devices through windows, menus, and icons, instead of typing commands in a CLI.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-http",
+    "acronym": "HTTP",
+    "expanded": "Hypertext Transfer Protocol",
+    "meaning": "HTTP is the protocol for requesting and delivering web pages, using TCP port 80 and sending data in clear text.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-https",
+    "acronym": "HTTPS",
+    "expanded": "Hypertext Transfer Protocol Secure",
+    "meaning": "HTTPS is HTTP protected by TLS, using TCP port 443 to encrypt web traffic and authenticate the server with a certificate.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-iaas",
+    "acronym": "IaaS",
+    "expanded": "Infrastructure as a Service",
+    "meaning": "IaaS is a cloud model where the provider supplies virtualized servers, storage, and networking, while the customer manages operating systems and applications.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-iac",
+    "acronym": "IaC",
+    "expanded": "Infrastructure as Code",
+    "meaning": "IaC manages and provisions network and server infrastructure using machine-readable definition files and automation tools rather than manual configuration, giving consistent, repeatable deployments.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-iam",
+    "acronym": "IAM",
+    "expanded": "Identity and Access Management",
+    "meaning": "IAM is the framework of policies and tools that manage user identities and control which resources each user is allowed to access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-icmp",
+    "acronym": "ICMP",
+    "expanded": "Internet Control Message Protocol",
+    "meaning": "ICMP carries error and diagnostic messages between devices, and it powers ping and traceroute, which are used to test connectivity.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ics",
+    "acronym": "ICS",
+    "expanded": "Industrial Control System",
+    "meaning": "An ICS is a system that monitors and controls physical industrial processes, such as power or manufacturing, and needs careful network segmentation to stay secure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-idf",
+    "acronym": "IDF",
+    "expanded": "Intermediate Distribution Frame",
+    "meaning": "An IDF is a smaller wiring closet on a floor or area that connects local devices and links back to the main distribution frame.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ids",
+    "acronym": "IDS",
+    "expanded": "Intrusion Detection System",
+    "meaning": "An IDS monitors traffic for suspicious activity and generates alerts, but unlike an IPS it does not block the traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-iiot",
+    "acronym": "IIoT",
+    "expanded": "Industrial Internet of Things",
+    "meaning": "IIoT is the use of network-connected sensors and smart devices in industrial settings such as factories, which adds monitoring capability and security exposure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ike",
+    "acronym": "IKE",
+    "expanded": "Internet Key Exchange",
+    "meaning": "IKE negotiates security associations and exchanges keys for IPsec tunnels, using UDP port 500.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-iot",
+    "acronym": "IoT",
+    "expanded": "Internet of Things",
+    "meaning": "IoT describes everyday devices such as cameras, thermostats, and sensors with network connectivity, which often have weak security and are commonly placed on separate VLANs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ip",
+    "acronym": "IP",
+    "expanded": "Internet Protocol",
+    "meaning": "IP is the Layer 3 protocol that addresses and routes packets between networks, with each host identified by a logical IP address.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/1.7",
+      "N10-009/2.1",
+      "N10-009/3.1",
+      "N10-009/3.4",
+      "N10-009/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ipam",
+    "acronym": "IPAM",
+    "expanded": "Internet Protocol Address Management",
+    "meaning": "IPAM tools plan, track, and manage IP address space along with DHCP and DNS data, helping prevent address conflicts and wasted ranges.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ips",
+    "acronym": "IPS",
+    "expanded": "Intrusion Prevention System",
+    "meaning": "An IPS sits inline with traffic, detects malicious activity, and actively blocks or drops it, unlike an IDS that only alerts.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ipsec",
+    "acronym": "IPsec",
+    "expanded": "Internet Protocol Security",
+    "meaning": "IPsec is a suite of protocols, including AH, ESP, and IKE, that secures IP traffic with authentication and encryption, commonly for VPNs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List",
+    "note": "The official list writes \"IPSec\"; the books and the standard write IPsec."
+  },
+  {
+    "id": "netplus-acr-ipv4",
+    "acronym": "IPv4",
+    "expanded": "Internet Protocol version 4",
+    "meaning": "IPv4 uses 32-bit addresses written in dotted decimal, such as 192.168.1.10, and its limited address space is eased by private ranges and NAT.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 3: Addressing"
+  },
+  {
+    "id": "netplus-acr-is-is",
+    "acronym": "IS-IS",
+    "expanded": "Intermediate System to Intermediate System",
+    "meaning": "IS-IS is a link-state interior routing protocol that runs directly over Layer 2 rather than IP and is common in large service provider networks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-lacp",
+    "acronym": "LACP",
+    "expanded": "Link Aggregation Control Protocol",
+    "meaning": "LACP, defined in IEEE 802.3ad/802.1AX, negotiates bundling multiple physical links into one logical link for more bandwidth and redundancy.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-lan",
+    "acronym": "LAN",
+    "expanded": "Local Area Network",
+    "meaning": "A LAN connects devices within a limited area, such as a building or office, typically using Ethernet switches and Wi-Fi.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8",
+      "N10-009/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-lc",
+    "acronym": "LC",
+    "expanded": "Local Connector",
+    "meaning": "LC is a small form-factor fiber connector with a latch and 1.25-mm ferrule, commonly used on SFP transceivers and in dense patch panels.",
+    "acceptedAnswers": [
+      "Lucent Connector"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List",
+    "note": "The official list has \"Local Connector\"; many books and the A+ list use Lucent Connector. Both are accepted."
+  },
+  {
+    "id": "netplus-acr-ldap",
+    "acronym": "LDAP",
+    "expanded": "Lightweight Directory Access Protocol",
+    "meaning": "LDAP is a protocol for querying and updating directory services such as Active Directory, using TCP and UDP port 389.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ldaps",
+    "acronym": "LDAPS",
+    "expanded": "Lightweight Directory Access Protocol over SSL",
+    "meaning": "LDAPS is LDAP secured with SSL/TLS, using TCP port 636 so directory queries and credentials travel encrypted.",
+    "acceptedAnswers": [
+      "Lightweight Directory Access Protocol Secure",
+      "Lightweight Directory Access Protocol over Secure Sockets Layer"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-lldp",
+    "acronym": "LLDP",
+    "expanded": "Link Layer Discovery Protocol",
+    "meaning": "LLDP is a vendor-neutral Layer 2 protocol, IEEE 802.1AB, that lets neighboring devices advertise their identity and capabilities, aiding network mapping.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mac",
+    "acronym": "MAC",
+    "expanded": "Media Access Control",
+    "meaning": "A MAC address is the 48-bit hardware address burned into a network interface, used at Layer 2 to deliver frames on the local segment.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.2",
+      "N10-009/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mdf",
+    "acronym": "MDF",
+    "expanded": "Main Distribution Frame",
+    "meaning": "The MDF is the main wiring room where service provider connections enter a building and core network equipment connects to the IDFs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mdix",
+    "acronym": "MDIX",
+    "expanded": "Medium Dependent Interface Crossover",
+    "meaning": "MDIX is a switch port feature that automatically detects the cable type and swaps transmit and receive pairs, so crossover cables are not needed.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mfa",
+    "acronym": "MFA",
+    "expanded": "Multifactor Authentication",
+    "meaning": "MFA requires two or more different kinds of proof, such as a password plus a code or token, before granting access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mib",
+    "acronym": "MIB",
+    "expanded": "Management Information Base",
+    "meaning": "A MIB is a database of manageable objects on a device, identified by OIDs, that an SNMP manager queries to monitor the device.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mpo",
+    "acronym": "MPO",
+    "expanded": "Multifiber Push On",
+    "meaning": "MPO is a fiber connector that holds multiple fibers, such as 12 or 24, in one ferrule, used for high-density 40G and 100G links.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mtbf",
+    "acronym": "MTBF",
+    "expanded": "Mean Time Between Failures",
+    "meaning": "MTBF is the average time a repairable device operates between failures, serving as a measure of hardware reliability.",
+    "acceptedAnswers": [
+      "Mean Time Between Failure"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mttr",
+    "acronym": "MTTR",
+    "expanded": "Mean Time To Repair",
+    "meaning": "MTTR is the average time needed to repair a failed system and return it to service, a measure of how quickly outages are resolved.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mtu",
+    "acronym": "MTU",
+    "expanded": "Maximum Transmission Unit",
+    "meaning": "The MTU is the largest packet an interface sends without fragmenting, typically 1500 bytes on Ethernet, and mismatches cause dropped or fragmented traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-mx",
+    "acronym": "MX",
+    "expanded": "Mail Exchange",
+    "meaning": "An MX record in DNS identifies the mail servers that accept email for a domain, with priority values that set the order to try them.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-nac",
+    "acronym": "NAC",
+    "expanded": "Network Access Control",
+    "meaning": "NAC checks a device's identity and security posture before allowing it onto the network, and can quarantine noncompliant devices, often using 802.1X.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-nas",
+    "acronym": "NAS",
+    "expanded": "Network-attached Storage",
+    "meaning": "NAS is a dedicated file-level storage device shared over the network using protocols such as SMB or NFS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-nat",
+    "acronym": "NAT",
+    "expanded": "Network Address Translation",
+    "meaning": "NAT translates private internal IP addresses into public ones at a router or firewall, conserving IPv4 addresses and hiding the internal network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3",
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-nfv",
+    "acronym": "NFV",
+    "expanded": "Network Functions Virtualization",
+    "meaning": "NFV runs network functions such as routers, firewalls, and load balancers as software on virtual machines instead of dedicated hardware appliances.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-nic",
+    "acronym": "NIC",
+    "expanded": "Network Interface Card",
+    "meaning": "A NIC is the adapter that connects a device to the network medium and holds the MAC address used at Layer 2.",
+    "acceptedAnswers": [
+      "Network Interface Cards"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ns",
+    "acronym": "NS",
+    "expanded": "Name Server",
+    "meaning": "An NS record in DNS names the authoritative name servers for a domain, telling resolvers where to send queries for it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ntp",
+    "acronym": "NTP",
+    "expanded": "Network Time Protocol",
+    "meaning": "NTP synchronizes device clocks over UDP port 123, keeping log timestamps and certificate and authentication checks consistent across the network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-nts",
+    "acronym": "NTS",
+    "expanded": "Network Time Security",
+    "meaning": "NTS adds cryptographic authentication and encryption to time synchronization, protecting NTP from spoofing, tampering, and man-in-the-middle attacks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-os",
+    "acronym": "OS",
+    "expanded": "Operating System",
+    "meaning": "An OS manages a device's hardware and software resources, and network technicians check its network settings and compatibility when troubleshooting connectivity.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-osi",
+    "acronym": "OSI",
+    "expanded": "Open Systems Interconnection",
+    "meaning": "The OSI model describes networking in seven layers, from physical to application, giving technicians a common framework for troubleshooting and discussing protocols.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.1",
+      "N10-009/5.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ospf",
+    "acronym": "OSPF",
+    "expanded": "Open Shortest Path First",
+    "meaning": "OSPF is a link-state interior routing protocol that uses cost to choose the shortest path and converges faster than distance-vector protocols like RIP.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ot",
+    "acronym": "OT",
+    "expanded": "Operational Technology",
+    "meaning": "OT covers the hardware and software that monitor and control physical industrial processes, and its networks need careful segmentation from regular IT networks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-paas",
+    "acronym": "PaaS",
+    "expanded": "Platform as a Service",
+    "meaning": "PaaS is a cloud model where the provider supplies the runtime platform and tools, so customers deploy applications without managing servers or operating systems.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-pat",
+    "acronym": "PAT",
+    "expanded": "Port Address Translation",
+    "meaning": "PAT lets many private hosts share one public IP address by tracking each connection with a unique port number.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-pci-dss",
+    "acronym": "PCI DSS",
+    "expanded": "Payment Card Industry Data Security Standard",
+    "meaning": "PCI DSS is the security standard that organizations handling cardholder data must follow, covering controls such as network segmentation, encryption, and access restriction.",
+    "acceptedAnswers": [
+      "Payment Card Industry Data Security Standards"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-pdu",
+    "acronym": "PDU",
+    "expanded": "Power Distribution Unit",
+    "meaning": "A PDU distributes power to multiple devices in a rack and often offers metering or remote switching of individual outlets.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-pki",
+    "acronym": "PKI",
+    "expanded": "Public Key Infrastructure",
+    "meaning": "PKI is the framework of certificate authorities, digital certificates, and key pairs that lets systems verify identities and secure communication with public-key encryption.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-poe",
+    "acronym": "PoE",
+    "expanded": "Power over Ethernet",
+    "meaning": "PoE delivers electrical power and data over the same Ethernet cable, so devices like access points, phones, and cameras need no separate power outlet.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-psk",
+    "acronym": "PSK",
+    "expanded": "Pre-shared Key",
+    "meaning": "A PSK is a shared passphrase configured on both the access point and clients, used in WPA2 and WPA3 personal wireless authentication.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ptp",
+    "acronym": "PTP",
+    "expanded": "Precision Time Protocol",
+    "meaning": "PTP, defined by IEEE 1588, synchronizes clocks with much higher precision than NTP and suits industrial automation, telecommunications, and financial trading.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ptr",
+    "acronym": "PTR",
+    "expanded": "Pointer",
+    "meaning": "A PTR record in DNS maps an IP address back to a hostname, which is called reverse lookup.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-qos",
+    "acronym": "QoS",
+    "expanded": "Quality of Service",
+    "meaning": "QoS prioritizes certain traffic, such as voice and video, over less sensitive data to control latency, jitter, and loss during congestion.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-qsfp",
+    "acronym": "QSFP",
+    "expanded": "Quad Small Form-factor Pluggable",
+    "meaning": "A QSFP is a hot-swappable transceiver module that supports high-speed links, typically 40 Gbps or more, over fiber or copper in switches and routers.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-radius",
+    "acronym": "RADIUS",
+    "expanded": "Remote Authentication Dial-in User Service",
+    "meaning": "RADIUS is a centralized AAA protocol that authenticates users and authorizes network access, commonly for VPNs and 802.1X Wi-Fi, using UDP ports 1812 and 1813.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rbac",
+    "acronym": "RBAC",
+    "expanded": "Role-based Access Control",
+    "meaning": "RBAC grants permissions based on a user's assigned job role rather than the individual, which simplifies administration and enforces least privilege.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 9: Network Security"
+  },
+  {
+    "id": "netplus-acr-rdp",
+    "acronym": "RDP",
+    "expanded": "Remote Desktop Protocol",
+    "meaning": "RDP gives a graphical remote desktop session to a Windows system over TCP port 3389 and should be protected from direct internet exposure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rfid",
+    "acronym": "RFID",
+    "expanded": "Radio-frequency Identification",
+    "meaning": "RFID uses radio signals to read tags attached to objects or badges, commonly for access control and asset tracking over short distances.",
+    "acceptedAnswers": [
+      "Radio Frequency Identifier"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List",
+    "note": "The official list has \"Radio Frequency Identifier\"; the books use Radio-frequency Identification. Both are accepted."
+  },
+  {
+    "id": "netplus-acr-rip",
+    "acronym": "RIP",
+    "expanded": "Routing Information Protocol",
+    "meaning": "RIP is an older distance-vector routing protocol that uses hop count as its metric, with a maximum of 15 hops and slow convergence.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rj",
+    "acronym": "RJ",
+    "expanded": "Registered Jack",
+    "meaning": "RJ describes standardized modular connectors, with RJ-45 used for Ethernet twisted-pair cabling and RJ-11 used for telephone lines.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rpo",
+    "acronym": "RPO",
+    "expanded": "Recovery Point Objective",
+    "meaning": "RPO is the maximum amount of data loss, measured in time, that an organization accepts, and it determines how often backups must occur.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rstp",
+    "acronym": "RSTP",
+    "expanded": "Rapid Spanning Tree Protocol",
+    "meaning": "RSTP, defined in IEEE 802.1w, is a faster version of Spanning Tree that prevents switching loops while converging in seconds instead of tens of seconds.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rto",
+    "acronym": "RTO",
+    "expanded": "Recovery Time Objective",
+    "meaning": "RTO is the maximum acceptable time to restore a system or service after an outage, guiding disaster recovery planning.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-rx",
+    "acronym": "RX",
+    "expanded": "Receiver",
+    "meaning": "RX labels the receiving side of a link, such as a fiber port, and swapped TX and RX strands cause no link.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-saas",
+    "acronym": "SaaS",
+    "expanded": "Software as a Service",
+    "meaning": "SaaS delivers complete applications over the internet on a subscription basis, so the provider manages the infrastructure, platform, and software while customers just use it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-saml",
+    "acronym": "SAML",
+    "expanded": "Security Assertion Markup Language",
+    "meaning": "SAML is an XML-based standard that lets an identity provider pass authentication assertions to other services, enabling web single sign-on across organizations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-san",
+    "acronym": "SAN",
+    "expanded": "Storage Area Network",
+    "meaning": "A SAN is a dedicated high-speed network that gives servers block-level access to shared storage, often using Fibre Channel or iSCSI.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sase",
+    "acronym": "SASE",
+    "expanded": "Secure Access Service Edge",
+    "meaning": "SASE combines wide-area networking such as SD-WAN with cloud-delivered security services, so remote users and branches get consistent protection.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sc",
+    "acronym": "SC",
+    "expanded": "Subscriber Connector",
+    "meaning": "An SC is a push-pull fiber-optic connector with a square body, commonly used on network equipment and patch panels.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-scada",
+    "acronym": "SCADA",
+    "expanded": "Supervisory Control and Data Acquisition",
+    "meaning": "SCADA systems monitor and control industrial equipment such as utilities and manufacturing plants, and their networks should be isolated because they are often insecure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sd-wan",
+    "acronym": "SD-WAN",
+    "expanded": "Software-defined Wide Area Network",
+    "meaning": "SD-WAN uses software-based central control to manage and route traffic across multiple WAN links such as MPLS, broadband, and cellular, improving cost and performance.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sdn",
+    "acronym": "SDN",
+    "expanded": "Software-defined Networking",
+    "meaning": "SDN separates the control plane from the data plane so a central controller programs network devices, allowing automated and flexible configuration.",
+    "acceptedAnswers": [
+      "Software-defined Network"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sfp",
+    "acronym": "SFP",
+    "expanded": "Small Form-factor Pluggable",
+    "meaning": "An SFP is a small hot-swappable transceiver module for switches and routers that supports fiber or copper links, typically up to 1 Gbps.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sftp",
+    "acronym": "SFTP",
+    "expanded": "Secure File Transfer Protocol",
+    "meaning": "SFTP transfers files securely by running over an SSH connection on TCP port 22, unlike FTP, which sends data unencrypted.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-siem",
+    "acronym": "SIEM",
+    "expanded": "Security Information and Event Management",
+    "meaning": "A SIEM collects and correlates logs from many network and security devices to detect threats, raise alerts, and support incident investigation.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sip",
+    "acronym": "SIP",
+    "expanded": "Session Initiation Protocol",
+    "meaning": "SIP sets up, manages, and ends voice and video sessions for VoIP, using TCP or UDP port 5060 or 5061 when encrypted.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sla",
+    "acronym": "SLA",
+    "expanded": "Service-level Agreement",
+    "meaning": "An SLA is a contract defining expected service levels, such as uptime and response times, and the remedies if they are missed.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-slaac",
+    "acronym": "SLAAC",
+    "expanded": "Stateless Address Autoconfiguration",
+    "meaning": "SLAAC lets an IPv6 host build its own address from a router-advertised prefix without needing a DHCPv6 server.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-smb",
+    "acronym": "SMB",
+    "expanded": "Server Message Block",
+    "meaning": "SMB is a protocol for sharing files, printers, and other resources on a network, mostly in Windows environments, using TCP port 445.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-smtp",
+    "acronym": "SMTP",
+    "expanded": "Simple Mail Transfer Protocol",
+    "meaning": "SMTP sends email between mail clients and servers and between servers, using TCP port 25 for server relay.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-smtps",
+    "acronym": "SMTPS",
+    "expanded": "Simple Mail Transfer Protocol Secure",
+    "meaning": "SMTPS wraps SMTP in TLS to encrypt email submission, traditionally on TCP port 465.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-snmp",
+    "acronym": "SNMP",
+    "expanded": "Simple Network Management Protocol",
+    "meaning": "SNMP lets management systems monitor and configure network devices using UDP ports 161 and 162, and SNMPv3 adds authentication and encryption.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-soa",
+    "acronym": "SOA",
+    "expanded": "Start of Authority",
+    "meaning": "The SOA record in DNS holds a zone's primary name server, administrator contact, and serial number and timers that govern zone transfers.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sql",
+    "acronym": "SQL",
+    "expanded": "Structured Query Language",
+    "meaning": "SQL is the language for querying and managing relational databases, and technicians watch for SQL injection attacks against database-backed applications.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sse",
+    "acronym": "SSE",
+    "expanded": "Security Service Edge",
+    "meaning": "SSE is the security half of SASE, delivering cloud-based services such as secure web gateway, CASB, and zero trust network access without the networking component.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ssh",
+    "acronym": "SSH",
+    "expanded": "Secure Shell",
+    "meaning": "SSH gives an encrypted command-line session to a remote device on TCP port 22, replacing Telnet.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ssid",
+    "acronym": "SSID",
+    "expanded": "Service Set Identifier",
+    "meaning": "An SSID is the name a wireless network broadcasts so clients can identify and join it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ssl",
+    "acronym": "SSL",
+    "expanded": "Secure Sockets Layer",
+    "meaning": "SSL is the older, now deprecated encryption protocol for securing connections such as web traffic, replaced by TLS because of known vulnerabilities.",
+    "acceptedAnswers": [
+      "Secure Socket Layer"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-sso",
+    "acronym": "SSO",
+    "expanded": "Single Sign-on",
+    "meaning": "SSO lets a user authenticate once and gain access to multiple applications without logging in again, reducing password fatigue and centralizing access control.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-st",
+    "acronym": "ST",
+    "expanded": "Straight Tip",
+    "meaning": "An ST is a fiber-optic connector that uses a round, spring-loaded bayonet twist-lock, commonly found on older multimode installations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-stp",
+    "acronym": "STP",
+    "expanded": "Shielded Twisted Pair",
+    "meaning": "STP is twisted-pair cabling with metallic shielding around the pairs that reduces electromagnetic interference, and it must be properly grounded to work.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2",
+      "N10-009/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-svi",
+    "acronym": "SVI",
+    "expanded": "Switch Virtual Interface",
+    "meaning": "An SVI is a virtual Layer 3 interface for a VLAN, giving it an IP address so the switch can route between VLANs.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-tacacs-plus",
+    "acronym": "TACACS+",
+    "expanded": "Terminal Access Controller Access-Control System Plus",
+    "meaning": "TACACS+ is a Cisco-originated AAA protocol over TCP port 49 that encrypts the whole payload and separates authentication from authorization, often for device administration.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List",
+    "note": "The official list has the typo \"TACAS+\"."
+  },
+  {
+    "id": "netplus-acr-tcp",
+    "acronym": "TCP",
+    "expanded": "Transmission Control Protocol",
+    "meaning": "TCP is a connection-oriented Layer 4 protocol that provides reliable, ordered delivery using a three-way handshake, acknowledgments, and retransmission.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-tftp",
+    "acronym": "TFTP",
+    "expanded": "Trivial File Transfer Protocol",
+    "meaning": "TFTP is a simple, unauthenticated file transfer protocol on UDP port 69, often used to load device firmware or configuration files.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-tls",
+    "acronym": "TLS",
+    "expanded": "Transport Layer Security",
+    "meaning": "TLS encrypts and authenticates data between applications, such as HTTPS on TCP port 443, and replaces the deprecated SSL.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4",
+      "N10-009/3.4"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 4: Protocols"
+  },
+  {
+    "id": "netplus-acr-ttl",
+    "acronym": "TTL",
+    "expanded": "Time to Live",
+    "meaning": "TTL limits a packet's lifetime by dropping at each router hop, preventing loops, while in DNS it sets how long records are cached.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-tx",
+    "acronym": "TX",
+    "expanded": "Transmitter",
+    "meaning": "TX labels the transmitting side of a connection, such as a fiber transceiver port, and it must connect to the RX on the far end.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-txt",
+    "acronym": "TXT",
+    "expanded": "Text",
+    "meaning": "A TXT record in DNS holds free-form text, commonly used for email authentication such as SPF and DKIM and for domain ownership verification.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-udp",
+    "acronym": "UDP",
+    "expanded": "User Datagram Protocol",
+    "meaning": "UDP is a connectionless Layer 4 protocol with low overhead and no delivery guarantee, suited to real-time traffic like voice, video, and DNS queries.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-ups",
+    "acronym": "UPS",
+    "expanded": "Uninterruptible Power Supply",
+    "meaning": "A UPS supplies battery power during an outage and conditions the incoming power, giving network equipment time to stay up or shut down safely.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-url",
+    "acronym": "URL",
+    "expanded": "Uniform Resource Locator",
+    "meaning": "A URL is the full address of a web resource, combining the protocol, host name, and path used to locate it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-usb",
+    "acronym": "USB",
+    "expanded": "Universal Serial Bus",
+    "meaning": "USB is a common serial connection standard for attaching peripherals and storage, and USB adapters can also provide Ethernet or console access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-utm",
+    "acronym": "UTM",
+    "expanded": "Unified Threat Management",
+    "meaning": "A UTM appliance combines several security functions, such as firewall, intrusion prevention, antivirus, and content filtering, in one device for simpler management.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-utp",
+    "acronym": "UTP",
+    "expanded": "Unshielded Twisted Pair",
+    "meaning": "UTP is unshielded copper twisted-pair cabling, the most common Ethernet cable, with categories like Cat 5e and Cat 6 and a 100-meter limit.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-vfl",
+    "acronym": "VFL",
+    "expanded": "Visual Fault Locator",
+    "meaning": "A VFL shines visible red light into a fiber to show breaks, bends, or bad connectors by leaking light at the fault.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 10: Network Troubleshooting"
+  },
+  {
+    "id": "netplus-acr-vip",
+    "acronym": "VIP",
+    "expanded": "Virtual IP",
+    "meaning": "A VIP is an IP address shared by several devices, as in load balancers and first-hop redundancy, so clients keep one address during failover.",
+    "acceptedAnswers": [
+      "Virtual IP Address",
+      "Virtual Internet Protocol",
+      "Virtual Internet Protocol Address"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-vlan",
+    "acronym": "VLAN",
+    "expanded": "Virtual Local Area Network",
+    "meaning": "A VLAN logically divides a switch into separate broadcast domains, using 802.1Q tags on trunk links to improve security and reduce broadcast traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2",
+      "N10-009/4.2",
+      "N10-009/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-vlsm",
+    "acronym": "VLSM",
+    "expanded": "Variable Length Subnet Mask",
+    "meaning": "VLSM allows subnets of different sizes within one network, which conserves addresses by fitting each subnet's mask to its needed host count.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-voip",
+    "acronym": "VoIP",
+    "expanded": "Voice over IP",
+    "meaning": "VoIP carries voice calls as IP packets over a data network, so it needs QoS to keep latency and jitter low.",
+    "acceptedAnswers": [
+      "Voice over Internet Protocol"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-vpc",
+    "acronym": "VPC",
+    "expanded": "Virtual Private Cloud",
+    "meaning": "A VPC is a logically isolated private network section within a public cloud, where the customer defines subnets, routing, and security controls.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-vpn",
+    "acronym": "VPN",
+    "expanded": "Virtual Private Network",
+    "meaning": "A VPN builds an encrypted tunnel across an untrusted network such as the internet, letting remote users or sites connect securely to a private network.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2",
+      "N10-009/1.3",
+      "N10-009/3.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-vxlan",
+    "acronym": "VXLAN",
+    "expanded": "Virtual Extensible LAN",
+    "meaning": "VXLAN encapsulates Layer 2 frames in UDP so VLAN-like segments can stretch across Layer 3 networks, supporting about 16 million segments in data centers.",
+    "acceptedAnswers": [
+      "Virtual Extensible Local Area Network"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-wan",
+    "acronym": "WAN",
+    "expanded": "Wide Area Network",
+    "meaning": "A WAN connects networks across large geographic areas, such as branch offices to headquarters, usually over leased lines or provider services.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-wlc",
+    "acronym": "WLC",
+    "expanded": "Wireless LAN Controller",
+    "meaning": "A WLC centrally configures, monitors, and manages many lightweight access points, handling roaming, channel assignment, and security policy.",
+    "acceptedAnswers": [
+      "Wireless Local Area Network Controller"
+    ],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-acr-wpa",
+    "acronym": "WPA",
+    "expanded": "Wi-Fi Protected Access",
+    "meaning": "WPA is the first wireless security standard to replace WEP, using TKIP for improved encryption but now considered outdated.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-wpa2",
+    "acronym": "WPA2",
+    "expanded": "Wi-Fi Protected Access 2",
+    "meaning": "WPA2 secures Wi-Fi with AES-based CCMP encryption and offers personal (PSK) or enterprise (802.1X) authentication, though it is weaker than WPA3.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ N10-009 Exam Cram (Dulaney) – Chapter 6: Wireless Solutions"
+  },
+  {
+    "id": "netplus-acr-wpa3",
+    "acronym": "WPA3",
+    "expanded": "Wi-Fi Protected Access 3",
+    "meaning": "WPA3 is the newest Wi-Fi security standard, using SAE in place of the PSK handshake to resist offline password guessing and improve open-network protection.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Network+ Guide to Networks (West) – Chapter 6: Wireless Networking"
+  },
+  {
+    "id": "netplus-acr-wps",
+    "acronym": "WPS",
+    "expanded": "Wi-Fi Protected Setup",
+    "meaning": "WPS simplifies joining a Wi-Fi network with a PIN or button press, but the PIN method is vulnerable to brute force and is usually disabled.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "netplus-acr-zta",
+    "acronym": "ZTA",
+    "expanded": "Zero Trust Architecture",
+    "meaning": "ZTA assumes no user or device is trusted by default, requiring continuous verification and least-privilege access regardless of network location.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "network-plus"
+    ],
+    "exams": [
+      "N10-009"
+    ],
+    "objectives": [
+      "N10-009/1.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"
+  }
+]

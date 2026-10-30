@@ -109,6 +109,10 @@ a:hover { color: var(--brand-hover); text-decoration: underline; }
 .result.pass { color: var(--ok); }
 .result.fail { color: var(--brand); }
 
+/* Neutral info tag, for example an exam objective. Not a result: no ok or brand color. */
+.tag { display: inline-block; font-size: 12px; line-height: 18px; font-weight: 500; padding: 1px 10px; border-radius: var(--radius-pill); border: 1px solid var(--border); background: var(--surface); color: var(--ink-muted); white-space: nowrap; }
+.tags { display: flex; flex-wrap: wrap; gap: var(--space-2); }
+
 /* Segmented filter */
 .seg { display: inline-flex; gap: var(--space-2); flex-wrap: wrap; }
 .seg button { font-family: var(--font-sans); font-size: 13px; line-height: 19px; font-weight: 500; padding: 5px 14px; border-radius: var(--radius-pill); border: 1.5px solid var(--border); background: var(--surface); color: var(--ink); cursor: pointer; }

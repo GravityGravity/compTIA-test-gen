@@ -6,7 +6,7 @@ This file gives the structure of each CompTIA exam in the app. Each part is for 
 |---|---|---|---|
 | 1 | A+ Core 1 | 220-1201 | Current |
 | 2 | A+ Core 2 | 220-1202 | Current |
-| 3 | Network+ | N10-009 | Inactive. Shown greyed out in module selection. Do not build its exams until the user asks. |
+| 3 | Network+ | N10-009 | In scope. Greyed out in module selection until its config is active. |
 
 **A+:** The current exams are **Core 1 (220-1201)** and **Core 2 (220-1202)**, version V15. You must pass the two exams to get the A+ certification. You must take the two exams from the same version.
 
@@ -178,7 +178,7 @@ The question tells you the number of answers to select. You must select all the 
 
 # Part 3: Network+ (N10-009)
 
-**Status:** Inactive module. It shows greyed out in module selection, and the user cannot select it. Do not build its exams until the user asks.
+**Status:** In scope (approved 2026-10-30). Build its config and content. The module shows greyed out in module selection, and the user cannot select it, until its config has `active: true`.
 
 ## Exam Details
 

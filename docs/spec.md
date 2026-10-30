@@ -23,9 +23,9 @@ Use these names in all files and code:
 |---|---|---|
 | Core 1 Exam | Exam structure | Core 1 topics |
 | Core 2 Exam | Exam structure (same as Core 1) | Core 2 topics |
-| Network+ Exam | Exam structure (same as Core 1) | Network+ topics. Inactive for now (see below). |
+| Network+ Exam | Exam structure (same as Core 1) | Network+ topics. Greyed out until its config is active. |
 | Acronym Exercise | Exercise structure (different) | Acronyms only |
-| Definition Exercise | Exercise structure (same as Acronym Exercise) | Terms and definitions only |
+| Definition Exercise | Exercise structure (shares the exercise code with Acronym Exercise) | Terms and definitions only |
 
 ## Requirements
 
@@ -60,19 +60,25 @@ These are two separate modules. Each module practices one thing only.
 
 | Module | Practices | Multiple choice | Type the answer |
 |---|---|---|---|
-| Acronym Exercise | Acronyms only | Either direction: acronym → select the expanded form, or expanded form → select the acronym | Acronym → type the expanded form (only this direction) |
+| Acronym Exercise | Acronyms only | None | Every question: acronym → type the expanded form (only this direction) |
 | Definition Exercise | Terms and definitions only | Either direction: term → select the definition, or definition → select the term | Definition → type the term (only this direction) |
 
 Both modules:
-- Before an exercise begins, the user selects the certification to review (for example A+ Core; Network+ later).
+- Before an exercise begins, the user selects the certification to review (A+ Core 1 and Core 2, or Network+).
 - Each exercise has about 20 questions and a 30-minute time limit.
-- Question formats: multiple choice and type the answer.
+- Question formats: the Acronym Exercise has type-the-answer questions only. The Definition Exercise has multiple choice and type the answer.
 - After each answer, the app shows whether it is correct and shows the correct answer.
+- Acronym Exercise feedback: the answer box also shows one sentence on what the acronym means and, when the acronym is tied to an exam objective, a small tag for each objective (exam, objective number, and domain name).
+- Acronym Exercise: a "Not sure" button next to "Check answer" lets the user skip typing. The app shows the correct answer, and the question counts as incorrect. The results show "Not sure" as the answer.
 - Type-the-answer questions use one direction only (see the table). The user never types a definition sentence or an acronym.
 - Type-the-answer spelling:
   - When a typed word has a spelling error, the app underlines the word with a red squiggle line.
   - An answer with a spelling error is incorrect.
 - The app does not store exercise results.
+- On the results screen, "Try again" starts a new exercise of the same module and certification at once, with a new set of questions. It skips the setup screen.
+- Question pools (approved):
+  - Acronym Exercise: the official acronym list for the certification, plus acronyms from the current books that match a current objective. Where the official list has an error, the app shows the correct expanded form and also accepts the official wording.
+  - Definition Exercise: the terms named in the exam objectives, plus book glossary terms that match a current objective. The typed answer is always the term's full name, never an acronym.
 
 ## Out of Scope
 - Performance-based questions (PBQs) in the current version. See Future.
@@ -81,10 +87,6 @@ Both modules:
 - Languages other than English.
 
 ## Future (not in the current version)
-- Network+ Exam module:
-  - Now: the module shows in module selection, but it is greyed out and inactive. The user cannot select it.
-  - Do not build its exams or content now.
-  - The app design must let the module be activated later without code changes.
 - Performance-based question (PBQ) types. Do not build them now. The app design must let new question types be added later.
 
 ## Acceptance Criteria
@@ -93,6 +95,9 @@ Both modules:
 <!-- blank -->
 
 ### Core 2 Exam module
+<!-- blank -->
+
+### Network+ Exam module
 <!-- blank -->
 
 ### Acronym Exercise module
