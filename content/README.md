@@ -168,7 +168,7 @@ Network+ Domain 5 (`network-plus/d5-network-troubleshooting.json`, 117 terms): `
 | `qualifier` | `BEST`, `FIRST`, `NEXT`, `MOST LIKELY`, `LEAST`, or `null`. The word is in capitals in the stem. |
 | `exam`, `domain` | The exam code and the domain id. The domain matches the file (`d2.json` → `"2"`). |
 | `objectives` | At least one, `<exam>/<objective>`, all in `domain`. |
-| `topics` | At least one, `<exam>/<objective>.<n>`: the n-th top-level bullet under the objective in the official objectives file. `check_questions.py --topics <code>` prints the numbered list. |
+| `topics` | At least one, `<exam>/<objective>.<n>`: the n-th topic under the objective in the official objectives file. A topic is a top-level bullet, a numbered step (the malware removal steps of Core 2 2.6), or a table (the Network+ 1.4 ports table is one topic). `check_questions.py --topics <code>` prints the numbered list. |
 | `stem`, `options` | The question and its options (2–8). For a book question, as the book has them. |
 | `answer` | The indexes of the correct options. One for `single`, `selectCount` for `multiple`. |
 | `selectCount` | The number of answers to select. |

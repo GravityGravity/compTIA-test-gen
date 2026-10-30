@@ -51,7 +51,7 @@ All exam modules use the same exam code. Only the exam config and the content ar
 - The app generates scenario-based questions dynamically from scenario records and a sentence grammar. The sentence structure changes between attempts, so the user cannot memorize the question form. The generator works for every exam module.
 - All other questions come from a question pool for each exam (approved 2026-10-30):
   - The pool has every practice question from the exam's books (chapter quizzes, review questions, practice exams), with the same answers. Questions from books for older objectives are included as they are, tagged with the closest current objective.
-  - New questions written from the books fill the gaps: every topic (top-level bullet under an objective) has at least 1 question, and 2 where the books give enough facts (changed 2026-10-30; was 3).
+  - New questions written from the books fill the gaps: every topic (top-level bullet, numbered step, or table under an objective) has at least 1 question, and 2 where the books give enough facts (changed 2026-10-30; was 3).
   - Each exam's pool has at least 800 questions.
   - Each question is labelled with its domain, objectives, and topics.
 - Each attempt matches the config: the questions for each domain follow the domain weights, and the scenario-based share follows the estimated mix. Part of the scenario share comes from the generator and part from the pool's scenario questions (a config value, default 70% generated).

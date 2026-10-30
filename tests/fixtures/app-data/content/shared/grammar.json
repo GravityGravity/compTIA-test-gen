@@ -29,7 +29,7 @@
   "askAction": [
     "Which action will BEST resolve the problem?",
     "What is the BEST way to fix this problem?",
-    "What should the technician do to resolve the issue?"
+    "Which of the following will MOST LIKELY resolve the issue?"
   ],
   "askFirst": ["What should the technician do FIRST?", "Which of the following should the technician do FIRST?"],
   "firstReason": [

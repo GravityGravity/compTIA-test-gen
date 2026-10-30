@@ -2,6 +2,32 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Question tools: book question extractor and question checker
+
+Decisions:
+- A topic is a top-level bullet, a numbered step (Core 2 2.6 lists the malware removal steps), or a table (the Network+ 1.4 ports table is one topic). Topic counts: Core 1 131, Core 2 220, Network+ 135.
+- The extractor writes staging records (`sources-text/derived/questions/`, not in git), not pool records. Each one has `flags` that say what to check when it is copied into the pool. Questions that refer to a figure, and West's repaired options, are flagged, not dropped.
+- Book answers are kept as the book gives them (for example "A, then D", or an All-in-One key that looks wrong). They are not vetted here.
+- `check_questions.py` lists coverage gaps for exams that are not active yet, instead of failing on them, so it can run after each domain. It counts sentences as an error on written text and as a warning on book text.
+- `askAction` in the shared grammar: "What should the technician do to resolve the issue?" became "Which of the following will MOST LIKELY resolve the issue?", so every `ask…` phrasing has a qualifier word.
+
+Changes:
+- `tools/extract/extract_questions.py`: one parser for each of the 7 book formats, with shared question and answer parsers. Extracted 3,995 questions:
+  - A+: Exam Cram 576, Docter 460, All-in-One 280, Neil 901, all with answers.
+  - Network+: Net Exam Cram 182 and Zacker 1,213, all with answers; West 383, of which 256 have no answer in the book.
+  - The parsers handle:
+    - numbering that restarts or repeats (answers pair by position);
+    - the answer-line forms of each book;
+    - Cram Quiz markers joined to other lines;
+    - West self-checks printed as tables;
+    - West two-column options out of order or under the next question.
+- `tools/extract/check_questions.py`:
+  - Checks the pool and scenario records against the app's rules: fields, ids, objectives, topics, answers, `whyWrong`, related records, and grammar rules.
+  - Also checks the content rules: sentence counts, qualifiers, clues that give the answer away, and near-duplicate stems (a prefix filter keeps this under a second).
+  - Prints the coverage report, with `--topics`, `--gaps`, `--root`, and `--records-only`.
+- Test fixture: a third clue on each requirement record (the rule is 3–6), and the shared grammar copy updated.
+- Docs: the topic definition (`content/README.md`, `docs/exam-modules.md`, `docs/spec.md`, `CLAUDE.md`), the tools and workflow in `docs/exam-modules.md` (check each staging record's flags), and the commands, staging fields, flags, and question formats in `tools/extract/README.md`.
+
 ## 2026-10-30 – Exam engine, attempt storage, and exam screens
 
 Decisions:

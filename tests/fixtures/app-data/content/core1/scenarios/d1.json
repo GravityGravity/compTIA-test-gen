@@ -18,7 +18,7 @@
     "need": "control the settings on all company phones",
     "clues": [
       "the company owns the phones",
-      "the settings must be pushed from one console"
+      "the settings must be pushed from one console", "lost phones must be locked or wiped remotely"
     ],
     "answer": {
       "item": "Mobile device management (MDM)"
@@ -53,7 +53,7 @@
     "need": "get a laptop online at a site with no Wi-Fi",
     "clues": [
       "the phone has a cellular data plan",
-      "only one laptop needs a connection"
+      "only one laptop needs a connection", "no other network is in range"
     ],
     "answer": {
       "item": "A mobile hotspot"
@@ -88,7 +88,7 @@
     "need": "reach the company file server from a hotel",
     "clues": [
       "the hotel Wi-Fi is public",
-      "the traffic must be encrypted"
+      "the traffic must be encrypted", "the server is on the private office network"
     ],
     "answer": {
       "item": "A VPN connection"
@@ -123,7 +123,7 @@
     "need": "use a wireless headset with a phone",
     "clues": [
       "the headset has no cable",
-      "the headset is a few feet from the phone"
+      "the headset is a few feet from the phone", "the headset shows a blinking pairing light"
     ],
     "answer": {
       "item": "Bluetooth pairing"

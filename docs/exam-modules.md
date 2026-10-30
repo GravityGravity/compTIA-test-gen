@@ -63,7 +63,7 @@ Files: `content/<module>/pool/d<N>.json`, one file for each domain.
 - **Questions without an answer.** Some books have questions with no answer key. Write the answer and the explanation from the chapter text. Set `origin: "book"` and `answerOrigin: "written"`.
 - **Duplicates.** When two books have the same question, keep one. `check_questions.py` warns about stems that are almost the same.
 - **Written questions.** After the book questions are in, read the domain's chapters (current books first) and write new questions (`origin: "written"`) for each topic that has fewer than 2 questions. Write them from the facts in the chapters, in our own words.
-- **Coverage.** Every topic (each top-level bullet under an objective) has at least 1 pool question, and 2 is the target (changed 2026-10-30; was 3). Each exam has at least 800 pool questions. More is good when the questions are good.
+- **Coverage.** Every topic (each top-level bullet, numbered step, or table under an objective) has at least 1 pool question, and 2 is the target (changed 2026-10-30; was 3). Each exam has at least 800 pool questions. More is good when the questions are good.
 - **Explanations.** The correct answer has an explanation of 2–5 sentences. Each wrong option has a 1-sentence `whyWrong`. For a book question, add the `whyWrong` sentences that the book does not give.
 
 ### Fields that set how a question is used
@@ -80,7 +80,7 @@ Files: `content/<module>/pool/d<N>.json`, one file for each domain.
 
   Qualifier words and multiple response are not structures in the pool. They are the `qualifier` field and `type: "multiple"`, and they can occur with any structure.
 - `qualifier`: `BEST`, `FIRST`, `NEXT`, `MOST LIKELY`, `LEAST`, or `null`. Write the word in capitals in the stem.
-- `objectives` and `topics`: `<exam>/<objective>` and `<exam>/<objective>.<n>`, where `<n>` is the number of the top-level bullet under the objective (1, 2, …) in the objectives file. `tools/extract/check_questions.py --topics <code>` prints the numbered list.
+- `objectives` and `topics`: `<exam>/<objective>` and `<exam>/<objective>.<n>`, where `<n>` is the number of the topic under the objective (1, 2, …) in the objectives file. A topic is a top-level bullet, a numbered step (when the objective is a list of steps), or a table (one topic for the whole table). `tools/extract/check_questions.py --topics <code>` prints the numbered list.
 
 ## 5. Scenario records
 
@@ -128,15 +128,15 @@ tools/extract/.venv/bin/python -I tools/extract/check_questions.py --topics <cod
 tools/extract/.venv/bin/python -I tools/extract/check_config.py
 ```
 
-- `extract_questions.py` parses a book's questions, options, answers, and explanations into `sources-text/derived/questions/<book>.json`, with the chapter's exam and objectives. It reports questions without answers and answers without questions.
-- `check_questions.py` checks the pool and scenario records and prints the coverage report: questions for each topic, objective, and domain, the pool total, and scenario records for each scenario objective. For an active exam, a topic with no questions, a pool with fewer than 800, or a scenario objective with too few records is an error. A topic with only 1 question is a warning.
+- `extract_questions.py` parses a book's questions, options, answers, and explanations into `sources-text/derived/questions/<book>.json`, with the chapter's exam and objectives. It reports answers without questions, and each record's `flags` say what to check when it is copied into the pool (for example `no-answer`, `figure`, `options-repaired`). These staging records are not content records: the pool record adds the type, structure, qualifier, current objective and topic, and the `whyWrong` sentences.
+- `check_questions.py` checks the pool and scenario records and prints the coverage report: questions for each topic, objective, and domain, the pool total, and scenario records for each scenario objective. For an active exam, a topic with no questions, a pool with fewer than 800, or a scenario objective with too few records is an error, and a topic with only 1 question is a warning. For an exam that is not active yet, these are listed as gaps (`--gaps` lists all), so the report shows what each domain still needs.
 
 ## 7. Workflow
 
 1. Write the exam config (section 2). Run `check_config.py`.
 2. Run `extract_questions.py` for each book of the exam.
 3. Do one domain at a time. Stop after each domain so the user can review it:
-   1. Copy the domain's book questions into `pool/d<N>.json` and tag them (section 4).
+   1. Copy the domain's book questions from the staging files into `pool/d<N>.json` and tag them (section 4). Check each record's `flags` against the chapter: a `figure` question needs its stem rewritten without the figure or is left out; `options-repaired` and `few-options` need the options checked; a `no-answer` question gets an answer written from the chapter (`answerOrigin: "written"`).
    2. Write questions for the topics with fewer than 2.
    3. Write the scenario records and grammar for the domain's scenario objectives (section 5).
    4. Run `check_questions.py` and `npm test` (the test generates many attempts from the real content).
