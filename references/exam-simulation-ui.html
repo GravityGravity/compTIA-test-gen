@@ -15,9 +15,9 @@
 }
 :root,:root[data-theme]{color-scheme:light}
 
-body{background:var(--shell);color:var(--fg);font-family:var(--font);font-size:15px;
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:12px 24px}
-.wrap{max-width:940px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+body{background:var(--shell);color:var(--fg);font-family:var(--font);font-size:16px;line-height:1.5;
+  padding-left:max(clamp(16px,3vw,48px),env(safe-area-inset-left,0px));padding-right:max(clamp(16px,3vw,48px),env(safe-area-inset-right,0px));padding-block:12px 24px}
+.wrap{margin:0 auto;display:flex;flex-direction:column;gap:10px}
 button{font-family:inherit;color:inherit}
 button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 
@@ -43,7 +43,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .lv-opt{display:flex;flex-direction:column;gap:2px;text-align:left;width:100%;padding:12px 14px;background:var(--btn);border:1px solid var(--btn-border);cursor:pointer;font-size:14px}
 .lv-opt:hover{background:var(--btn-hover)}
 .lv-opt b{font-size:15px}
-.lv-opt span{color:var(--muted);font-size:13px;line-height:1.4}
+.lv-opt span{color:var(--muted);font-size:13px;line-height:1.5}
 .lv-opt.pri{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
 .lv-opt.pri span{color:var(--accent-fg);opacity:.9}
 .lv-stay{align-self:center;background:none;border:0;padding:6px 10px;color:var(--accent);font-size:14px;cursor:pointer;text-decoration:underline}
@@ -69,9 +69,9 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .qa{display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:24px;padding:22px 22px 18px}
 .qnum{font-size:12px;color:var(--muted);margin:0 0 6px;letter-spacing:.03em;text-transform:uppercase}
 .chip{display:inline-block;margin-left:8px;padding:2px 8px;border:1px solid var(--sel-border);background:var(--sel);color:var(--fg);border-radius:10px;font-size:11px;letter-spacing:.02em;text-transform:none;vertical-align:1px}
-.stem{margin:0 0 18px;line-height:1.5;max-width:62ch}
+.stem{margin:0 0 18px;line-height:1.5}
 .opts{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:22px}
-.opts li{line-height:1.4}
+.opts li{line-height:1.5}
 .opts li.struck{text-decoration:line-through;color:var(--muted)}
 .keys{display:flex;flex-direction:column;gap:6px}
 .krow{display:grid;grid-template-columns:24px 1fr;align-items:center;gap:10px}
@@ -100,8 +100,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 
 .panel{padding:20px 22px}
 .panel h2{font-size:18px;margin:0 0 4px}
-.panel .sub{color:var(--muted);margin:0 0 16px;font-size:13px}
-.stats{list-style:none;padding:0;margin:4px 0 10px;display:flex;flex-direction:column;gap:4px;font-size:13px;font-variant-numeric:tabular-nums}
+.panel .sub{color:var(--muted);margin:0 0 16px;font-size:14px}
+.stats{list-style:none;padding:0;margin:4px 0 10px;display:flex;flex-direction:column;gap:4px;font-size:14px;font-variant-numeric:tabular-nums}
 .modal{position:fixed;inset:0;z-index:50;background:rgba(20,22,26,.55);display:flex;align-items:center;justify-content:center;padding:16px}
 .dlg{background:var(--card);width:100%;max-width:420px;padding:24px;box-shadow:0 10px 40px var(--shadow);display:flex;flex-direction:column;gap:12px}
 .dlg h2{margin:0;font-size:18px}.dlg p{margin:0;color:var(--muted);line-height:1.5}
@@ -117,18 +117,20 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .cell.ans{background:var(--sel);border-color:var(--sel-border)}
 .cell.flag::after{content:"";position:absolute;top:4px;right:4px;width:8px;height:8px;border-radius:50%;background:var(--flag)}
 .actions{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
-.warn{background:var(--flag-bg);color:var(--fg);border-left:3px solid var(--flag);padding:10px 12px;font-size:13px;margin-bottom:14px}
+.warn{background:var(--flag-bg);color:var(--fg);border-left:3px solid var(--flag);padding:10px 12px;font-size:14px;margin-bottom:14px}
 
 .score{display:flex;gap:28px;flex-wrap:wrap;align-items:baseline;margin:6px 0 16px}
 .score .big{font-size:40px;font-weight:700;font-variant-numeric:tabular-nums}
 .pill{display:inline-block;padding:3px 10px;border-radius:12px;font-size:12px;font-weight:600}
 .pill.pass{background:var(--ok-bg);color:var(--ok)}.pill.fail{background:var(--bad-bg);color:var(--bad)}
-.rlist{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px}
-.rlist>li{border:1px solid var(--line);border-left:4px solid var(--bad);padding:10px 12px;font-size:13px;line-height:1.5}
-.rlist>li{background:#fdf5f4;position:relative;padding-right:40px;cursor:pointer}
+.rlist{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:minmax(0,1fr);align-items:stretch;gap:10px}
+@media (min-width:1280px){.rlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.rlist>li{border:1px solid var(--line);border-left:4px solid var(--bad);padding:14px 16px;font-size:14px;line-height:1.5}
+.rlist>li{background:#fdf5f4;position:relative;padding-right:48px;cursor:pointer}
 .rlist>li.part{border-left-color:var(--flag);background:#fdf9f0}
 .rlist>li.part .mark{color:var(--flag)}
-.pnote{color:var(--flag);font-weight:600;font-size:12px;margin-top:4px}
+.res-ok{background:var(--ok-bg);border-color:var(--ok)}.res-part{background:var(--flag-bg);border-color:var(--flag)}.res-bad{background:var(--bad-bg);border-color:var(--bad)}
+.pnote{color:var(--flag);font-weight:600;font-size:13px;margin-top:4px}
 .rlist>li:hover{border-color:var(--accent)}
 /* Return button (exam header): compTIA UI style pill with the brand-to-plum gradient (tokens brand, plum, on-brand, radius-pill). */
 .ct-btn{font:inherit;font-size:13px;font-weight:700;padding:6px 18px;border:1px solid transparent;border-radius:9999px;background:linear-gradient(90deg,#c8102e,#7a1f7a);color:#fff;cursor:pointer}
@@ -137,8 +139,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 /* Result banner on a reviewed question: a large, clear signal of the result. */
 .verdict{display:flex;align-items:center;gap:14px;padding:14px 18px;margin:0 0 16px;border-left:6px solid var(--vc);background:var(--vbg);color:var(--vc)}
 .verdict svg{flex:none}
-.verdict b{display:block;font-size:22px;line-height:28px}
-.verdict span{display:block;font-size:13px;color:var(--fg)}
+.verdict b{display:block;font-size:22px;line-height:1.5}
+.verdict span{display:block;font-size:14px;color:var(--fg)}
 .key.ro:disabled{opacity:1;cursor:default;text-decoration:none}
 .key.ro.on{background:var(--bad-bg);border:2px solid var(--bad)}
 .key.ro.right{background:var(--ok-bg);border:2px solid var(--ok);font-weight:600}
@@ -148,16 +150,17 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .klegend{margin-left:34px;display:flex;flex-direction:column;gap:4px;font-size:12px;color:var(--muted);padding-top:4px}
 .klegend .sw{display:inline-block;width:11px;height:11px;margin-right:6px;vertical-align:-1px;border:2px solid}
 .sw.ok{border-color:var(--ok);background:var(--ok-bg)}.sw.bad{border-color:var(--bad);background:var(--bad-bg)}
-.explain{margin-top:20px;padding:10px 12px;background:var(--shell);font-size:13px;line-height:1.5;max-width:62ch}
-.rlist .mark{position:absolute;top:10px;right:12px;color:var(--bad);display:grid;place-items:center}
+.explain{margin-top:20px;padding:10px 12px;background:var(--shell);font-size:14px;line-height:1.5}
+.rlist .mark{position:absolute;top:14px;right:16px;color:var(--bad);display:grid;place-items:center}
 .rlist>li.ok .mark{color:var(--ok)}
 .acols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px}
 @media (max-width:520px){.acols{grid-template-columns:1fr}}
 .albl{margin-top:6px;font-weight:600}
 .alist{margin:2px 0 6px;padding-left:20px;display:flex;flex-direction:column;gap:2px}
 .rlist>li.ok{border-left-color:var(--ok);background:#f4faf5}
-.rlist .q{font-weight:600;font-size:14px;margin-bottom:4px}
+.rlist .q{font-weight:600;font-size:15px;margin-bottom:4px}
 .rlist .a{color:var(--muted)}
+.rlist>li{display:flex;flex-direction:column}.rlist>li .a{margin-top:auto;padding-top:8px}
 .filters{display:flex;gap:6px;margin-bottom:10px}
 /* Result filters: round pills. The selected one has a thick black outline (drawn with a shadow so its size does not change)
    and a fill that matches the filter: neutral for All, green for Correct, red for Incorrect. */
@@ -173,6 +176,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:2px solid var(-
 .sm.pri:hover:not(:disabled),.confirm:hover:not(:disabled),.lv-opt.pri:hover{background:var(--accent-hover);border-color:var(--accent-hover)}
 .nav button:hover:not(:disabled),.review:hover,.revisit:hover,.x:hover,.lv-stay:hover{background:var(--btn)}
 .key.on:hover:not(:disabled),.cell.ans:hover{background:#c4e3ef;border-color:var(--sel-border)}
+.cell.res-ok:hover{background:#cfe9d7;border-color:var(--ok)}.cell.res-part:hover{background:#f8e2bd;border-color:var(--flag)}.cell.res-bad:hover{background:#f6d2ce;border-color:var(--bad)}
 .filters button[data-f][aria-pressed="true"]:hover{background:#c4e3ef;border-color:#1a1a1a}
 .filters button[data-f="right"][aria-pressed="true"]:hover{background:#cfe9d6}
 .filters button[data-f="wrong"][aria-pressed="true"]:hover{background:#f6d3cf}
@@ -422,6 +426,9 @@ function renderResults(){
   view.innerHTML=`<div class="panel"><h2>Assessment Results</h2>
    <div class="score"><span class="big">${score}</span><span>out of 900 · ${right} of ${QS.length} correct${part?` · ${part} partially correct`:""}</span><span class="pill ${pass?"pass":"fail"}">${pass?"Pass":"Did not pass"} (${PASS} required)</span><span class="sub" style="margin:0">Time used ${fmt(used)}</span></div>
    <p class="sub" style="margin:-6px 0 14px">Each question is worth ${(900/QS.length).toFixed(2)} points. On multi-answer questions, you get part of the points if all your selected answers are correct.</p>
+   <p class="sub">Select a question to open it.</p>
+   <div class="legend"><span><i class="res-ok"></i>Correct</span><span><i class="res-part"></i>Partially correct</span><span><i class="res-bad"></i>Incorrect</span><span><i></i>Not answered</span></div>
+   <div class="grid">${QS.map((q,k)=>{const o=S.ans[k]===null?"none":isRight(k)?"ok":credit(k)>0?"part":"bad";return `<button class="cell res-${o}" data-rvc="${k}" aria-label="Question ${k+1}, ${{ok:"correct",part:"partially correct",bad:"incorrect",none:"not answered"}[o]}">${k+1}</button>`}).join("")}</div>
    <div class="filters"><button class="sm" data-f="all" aria-pressed="${S.filter==="all"}">All questions</button><button class="sm" data-f="right" aria-pressed="${S.filter==="right"}">Correct only (${right})</button><button class="sm" data-f="wrong" aria-pressed="${S.filter==="wrong"}">Incorrect only (${QS.length-right})</button></div>
    <ul class="rlist">${items.map(({q,k,ok,pc})=>`<li class="${ok?"ok":pc>0?"part":""}" data-rv="${k}" tabindex="0" title="Open this question"><span class="mark" role="img" aria-label="${ok?"Correct":pc>0?"Partially correct":"Incorrect"}">${ok||pc>0?'<svg width="18" height="18" viewBox="0 0 18 18"><path d="M3 9.5l4 4 8-9" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>':'<svg width="16" height="16" viewBox="0 0 16 16"><path d="M3 3l10 10M13 3L3 13" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/></svg>'}</span><div class="q">${k+1}. ${esc(q.q)}</div>
      ${!ok&&pc>0?`<div class="pnote">Partial credit: ${S.ans[k].length} of ${q.a.length} correct answers selected</div>`:""}<div class="acols"><div><div class="albl">Your answer:</div>${S.ans[k]===null?'<ul class="alist"><li><b>Not answered</b></li></ul>':alist(S.ans[k],q)}</div>${ok?"":`<div><div class="albl" style="text-decoration:underline">Correct answer(s):</div>${alist(q.a,q)}</div>`}</div>
@@ -479,6 +486,8 @@ function renderLoading(){
 }
 
 view.addEventListener("click",e=>{
+  const rvc=e.target.closest("[data-rvc]");
+  if(rvc){S.i=+rvc.dataset.rvc;S.mode="rq";render();window.scrollTo(0,0);return;}
   const rv=e.target.closest("[data-rv]");
   if(rv){S.i=+rv.dataset.rv;S.mode="rq";render();window.scrollTo(0,0);return;}
   const t=e.target.closest("button"); if(!t) return;

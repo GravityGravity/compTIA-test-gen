@@ -226,6 +226,11 @@ a:hover {
   box-shadow: var(--shadow-card);
   padding: var(--space-8);
 }
+/* A card inside another card (the Domains card on an exam's page). */
+.card-nested {
+  border: 1px solid var(--border);
+  padding: var(--space-6);
+}
 .card-link {
   transition: box-shadow 0.15s;
 }

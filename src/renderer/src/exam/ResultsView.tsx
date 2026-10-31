@@ -6,6 +6,13 @@ import { SmallCross, Tick } from './icons'
 
 export type ResultFilter = 'all' | 'right' | 'wrong'
 
+const OUTCOME = {
+  ok: 'correct',
+  part: 'partially correct',
+  bad: 'incorrect',
+  none: 'not answered'
+} as const
+
 interface ResultsViewProps {
   exam: AttemptExam
   result: AttemptResult
@@ -31,10 +38,16 @@ function AnswerList({ question, options }: { question: ExamQuestion; options: nu
   )
 }
 
-/** Assessment Results: the score, the per-domain breakdown, and the list of questions with filters. */
+/** Assessment Results: the score, the per-domain breakdown, a grid of all questions, and the list of questions with filters. */
 export function ResultsView(p: ResultsViewProps) {
   const { exam, result, questions } = p
   const total = questions.length
+  const outcomes = questions.map((q, k) => {
+    const mine = p.answers[k] ?? null
+    if (mine === null) return 'none'
+    if (isCorrect(q, mine)) return 'ok'
+    return credit(q, mine) > 0 ? 'part' : 'bad'
+  })
   const items = questions
     .map((q, k) => ({ q, k, ok: isCorrect(q, p.answers[k] ?? null), pc: credit(q, p.answers[k] ?? null) }))
     .filter((x) => p.filter === 'all' || (p.filter === 'wrong' && !x.ok) || (p.filter === 'right' && x.ok))
@@ -64,35 +77,68 @@ export function ResultsView(p: ResultsViewProps) {
         Each question is worth {(exam.maxScore / total).toFixed(2)} points. On multi-answer questions, you get
         part of the points if all your selected answers are correct.
       </p>
-      <table className="domains">
-        <caption className="visually-hidden">Results by domain</caption>
-        <thead>
-          <tr>
-            <th>Domain</th>
-            <th className="num">Correct</th>
-            <th>
-              <span className="visually-hidden">Bar</span>
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          {result.domains.map((d) => (
-            <tr key={d.id}>
-              <td>
-                {d.id}.0 {d.name}
-              </td>
-              <td className="num">
-                {d.correct} of {d.total}
-              </td>
-              <td>
-                <div className="dbar">
-                  <i style={{ width: `${(100 * d.correct) / d.total}%` }} />
-                </div>
-              </td>
+      <div className="domains-box">
+        <table className="domains">
+          <caption className="visually-hidden">Results by domain</caption>
+          <thead>
+            <tr>
+              <th>Domain</th>
+              <th className="num">Correct</th>
+              <th>
+                <span className="visually-hidden">Bar</span>
+              </th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {result.domains.map((d) => (
+              <tr key={d.id}>
+                <td>
+                  {d.id}.0 {d.name}
+                </td>
+                <td className="num">
+                  {d.correct} of {d.total}
+                </td>
+                <td>
+                  <div className="dbar">
+                    <i style={{ width: `${(100 * d.correct) / d.total}%` }} />
+                  </div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="sub">Select a question to open it.</p>
+      <div className="legend">
+        <span>
+          <i className="res-ok" />
+          Correct
+        </span>
+        <span>
+          <i className="res-part" />
+          Partially correct
+        </span>
+        <span>
+          <i className="res-bad" />
+          Incorrect
+        </span>
+        <span>
+          <i />
+          Not answered
+        </span>
+      </div>
+      <div className="grid">
+        {outcomes.map((o, k) => (
+          <button
+            key={k}
+            className={`cell res-${o}`}
+            aria-label={`Question ${k + 1}, ${OUTCOME[o]}`}
+            onClick={() => p.onOpen(k)}
+          >
+            {k + 1}
+          </button>
+        ))}
+      </div>
       <div className="filters">
         <button
           className="sm"

@@ -32,13 +32,13 @@
   background: var(--shell);
   color: var(--fg);
   font-family: var(--font);
-  font-size: 15px;
-  padding: 12px 16px 24px;
+  font-size: 16px;
+  padding: 12px clamp(16px, 3vw, 48px) 24px;
   min-height: 100vh;
   box-sizing: border-box;
 }
+/* The content fills the window width (no fixed maximum), so it adjusts to the screen. */
 .exam .wrap {
-  max-width: 940px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -166,7 +166,7 @@
 .exam .lv-opt span {
   color: var(--muted);
   font-size: 13px;
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .exam .lv-opt.pri {
   background: var(--accent);
@@ -330,7 +330,6 @@
 .exam .stem {
   margin: 0 0 18px;
   line-height: 1.5;
-  max-width: 62ch;
 }
 .exam .opts {
   list-style: none;
@@ -341,7 +340,7 @@
   gap: 22px;
 }
 .exam .opts li {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 .exam .opts li.struck {
   text-decoration: line-through;
@@ -498,7 +497,7 @@
 .exam .panel .sub {
   color: var(--muted);
   margin: 0 0 16px;
-  font-size: 13px;
+  font-size: 14px;
 }
 .exam .stats {
   list-style: none;
@@ -507,7 +506,7 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
-  font-size: 13px;
+  font-size: 14px;
   font-variant-numeric: tabular-nums;
 }
 .exam .modal {
@@ -625,7 +624,7 @@
   color: var(--fg);
   border-left: 3px solid var(--flag);
   padding: 10px 12px;
-  font-size: 13px;
+  font-size: 14px;
   margin-bottom: 14px;
 }
 .exam .score {
@@ -655,25 +654,33 @@
   background: var(--bad-bg);
   color: var(--bad);
 }
+/* The question cards on the results: two columns on a wide window, one column below 1280px.
+   The two cards in a row stretch to the same height. */
 .exam .rlist {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
   gap: 10px;
+}
+@media (min-width: 1280px) {
+  .exam .rlist {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 .exam .rlist > li {
   border: 1px solid var(--line);
   border-left: 4px solid var(--bad);
-  padding: 10px 12px;
-  font-size: 13px;
+  padding: 14px 16px;
+  font-size: 14px;
   line-height: 1.5;
 }
 .exam .rlist > li {
   background: #fdf5f4;
   position: relative;
-  padding-right: 40px;
+  padding-right: 48px;
   cursor: pointer;
 }
 .exam .rlist > li.part {
@@ -686,7 +693,7 @@
 .exam .pnote {
   color: var(--flag);
   font-weight: 600;
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 4px;
 }
 .exam .rlist > li:hover {
@@ -728,11 +735,11 @@
 .exam .verdict b {
   display: block;
   font-size: 22px;
-  line-height: 28px;
+  line-height: 1.5;
 }
 .exam .verdict span {
   display: block;
-  font-size: 13px;
+  font-size: 14px;
   color: var(--fg);
 }
 .exam .key.ro:disabled {
@@ -800,14 +807,13 @@
   margin-top: 20px;
   padding: 10px 12px;
   background: var(--shell);
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.5;
-  max-width: 62ch;
 }
 .exam .rlist .mark {
   position: absolute;
-  top: 10px;
-  right: 12px;
+  top: 14px;
+  right: 16px;
   color: var(--bad);
   display: grid;
   place-items: center;
@@ -837,11 +843,20 @@
 }
 .exam .rlist .q {
   font-weight: 600;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 4px;
 }
 .exam .rlist .a {
   color: var(--muted);
+}
+/* A stretched card keeps its explanation at the bottom. */
+.exam .rlist > li {
+  display: flex;
+  flex-direction: column;
+}
+.exam .rlist > li .a {
+  margin-top: auto;
+  padding-top: 8px;
 }
 .exam .filters {
   display: flex;
@@ -929,12 +944,19 @@
 
 /* Additions: per-domain breakdown on the results, the wrong-option explanations on a reviewed question,
    and the error line when an attempt cannot be saved. Same colors as the draft. */
+/* The domain table sits in an outlined box with a soft shadow. */
+.exam .domains-box {
+  background: var(--card);
+  border: 1px solid var(--line);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 10px 16px;
+  margin: 0 0 18px;
+}
 .exam .domains {
   width: 100%;
-  max-width: 640px;
   border-collapse: collapse;
-  font-size: 13px;
-  margin: 0 0 18px;
+  font-size: 14px;
+  margin: 0;
   font-variant-numeric: tabular-nums;
 }
 .exam .domains th {
@@ -947,6 +969,9 @@
 .exam .domains td {
   padding: 6px 8px 6px 0;
   border-bottom: 1px solid var(--line);
+}
+.exam .domains tr:last-child td {
+  border-bottom: 0;
 }
 .exam .domains .num {
   text-align: right;
@@ -1002,11 +1027,45 @@
   gap: 0;
   margin-left: 0;
   font-size: inherit;
-  line-height: normal;
+  line-height: 1.5;
 }
 .exam .rlist .mark {
   font-size: inherit;
   font-weight: inherit;
   margin-left: 0;
   white-space: normal;
+}
+
+/* The question grid on the results: each cell (and its legend swatch) shows the question's outcome.
+   Not answered keeps the plain grey cell. */
+.exam .res-ok {
+  background: var(--ok-bg);
+  border-color: var(--ok);
+}
+.exam .res-part {
+  background: var(--flag-bg);
+  border-color: var(--flag);
+}
+.exam .res-bad {
+  background: var(--bad-bg);
+  border-color: var(--bad);
+}
+.exam .cell.res-ok:hover {
+  background: #cfe9d7;
+  border-color: var(--ok);
+}
+.exam .cell.res-part:hover {
+  background: #f8e2bd;
+  border-color: var(--flag);
+}
+.exam .cell.res-bad:hover {
+  background: #f6d2ce;
+  border-color: var(--bad);
+}
+
+/* Every line on the exam screens is 1.5 high (approved 2026-10-30). The body's 22px and the
+   app.css classes that the exam markup shares (.card, .bar, .num, ...) do not apply here. */
+.exam,
+.exam * {
+  line-height: 1.5;
 }

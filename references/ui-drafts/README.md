@@ -6,7 +6,7 @@ Exam attempt screens are not here; they follow `../exam-simulation-ui.html`.
 | File | Screen |
 |---|---|
 | `home.html` | Home and module selection: hero band, resume card for an interrupted attempt, exam modules (Core 1, Core 2, Network+, Security+; a module whose config is not active is greyed out), exercise modules, and at the bottom the previous attempts (stats, 3 most recent, "View all"). |
-| `exam-intro.html` | Exam intro before an attempt: count, time, passing score, rules, domain weights. Values come from the exam config. Open with `#saved` to see the card for a saved attempt (Resume, Discard). |
+| `exam-intro.html` | Exam intro before an attempt: one "Before you start" card with the count, time, and passing score, the domain weights under them, then the rules. Values come from the exam config. Open with `#saved` to see the card for a saved attempt (Resume, Discard). |
 | `attempts.html` | Full list of previous attempts, opened only from the home screen. Filter by exam; "Review attempt" opens the shared results and review screens. |
 | `exercise-setup.html` | Exercise setup: select the certification (A+, Network+, or Security+; an inactive one is greyed out), then, for a certification with more than one exam, the exam (Core 1, Core 2, or Both), and what to expect. Values come from the certification and exercise configs. |
 | `exercise-question.html` | Acronym Exercise question: type the expanded form (the only question type), with the red spelling squiggle and a "Not sure" button; the feedback box shows the meaning sentence and a tag for each exam objective. The 12-minute timer comes from the config; open with `#timeup` to see the time-up behavior (the results open at 0). |

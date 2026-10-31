@@ -18,7 +18,7 @@ interface ExamIntroScreenProps {
   onHome: () => void
 }
 
-/** An exam's page: what the attempt is like, its domains, and a saved attempt. All values come from the config. */
+/** An exam's page: what the attempt is like (with its domains) and a saved attempt. All values come from the config. */
 export function ExamIntroScreen(p: ExamIntroScreenProps) {
   const { exam } = p
   const { min, max } = exam.questionCount
@@ -56,6 +56,44 @@ export function ExamIntroScreen(p: ExamIntroScreenProps) {
               ]}
             />
           </div>
+          <section className="card card-nested stack-4" aria-labelledby="domTitle">
+            <div className="stack-2">
+              <h3 className="h3" id="domTitle">
+                Domains
+              </h3>
+              <p>The number of questions from each domain follows its weight.</p>
+            </div>
+            <table className="table">
+              <thead>
+                <tr>
+                  <th>Domain</th>
+                  <th className="num">Weight</th>
+                  <th style={{ width: '30%' }}>
+                    <span className="visually-hidden">Weight bar</span>
+                  </th>
+                  <th className="num">Questions</th>
+                </tr>
+              </thead>
+              <tbody>
+                {plan.map(({ domain, total }) => (
+                  <tr key={domain.id}>
+                    <td>{domain.name}</td>
+                    <td className="num">{domain.weight}%</td>
+                    <td>
+                      <div className="bar">
+                        <i style={{ width: `${Math.round((100 * domain.weight) / heaviest)}%` }} />
+                      </div>
+                    </td>
+                    <td className="num">{total}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="small">
+              Counts are for {/^(8|11|18)/.test(String(sample)) ? 'an' : 'a'} {sample}-question exam. About{' '}
+              {Math.round((100 * scenario) / sample)}% of the questions are scenario-based.
+            </p>
+          </section>
           <ul className="stack-2" style={{ margin: 0, paddingLeft: 20 }}>
             <li>You can pause the exam. The questions are hidden while the timer is stopped.</li>
             <li>
@@ -79,45 +117,6 @@ export function ExamIntroScreen(p: ExamIntroScreenProps) {
               Back to home
             </button>
           </div>
-        </section>
-
-        <section className="card stack-6" aria-labelledby="domTitle">
-          <div className="stack-2">
-            <h2 className="h2" id="domTitle">
-              Domains
-            </h2>
-            <p>The number of questions from each domain follows its weight.</p>
-          </div>
-          <table className="table">
-            <thead>
-              <tr>
-                <th>Domain</th>
-                <th className="num">Weight</th>
-                <th style={{ width: '30%' }}>
-                  <span className="visually-hidden">Weight bar</span>
-                </th>
-                <th className="num">Questions</th>
-              </tr>
-            </thead>
-            <tbody>
-              {plan.map(({ domain, total }) => (
-                <tr key={domain.id}>
-                  <td>{domain.name}</td>
-                  <td className="num">{domain.weight}%</td>
-                  <td>
-                    <div className="bar">
-                      <i style={{ width: `${Math.round((100 * domain.weight) / heaviest)}%` }} />
-                    </div>
-                  </td>
-                  <td className="num">{total}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <p className="small">
-            Counts are for {/^(8|11|18)/.test(String(sample)) ? 'an' : 'a'} {sample}-question exam. About{' '}
-            {Math.round((100 * scenario) / sample)}% of the questions are scenario-based.
-          </p>
         </section>
       </main>
     </>

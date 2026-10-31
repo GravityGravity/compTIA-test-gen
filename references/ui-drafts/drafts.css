@@ -63,6 +63,7 @@ a:hover { color: var(--brand-hover); text-decoration: underline; }
 /* Eyebrow, card, panel */
 .eyebrow { display: block; font-size: 11px; line-height: 16px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); }
 .card { background: var(--surface); border-radius: var(--radius-sm); box-shadow: var(--shadow-card); padding: var(--space-8); }
+.card-nested { border: 1px solid var(--border); padding: var(--space-6); }
 .card-link { transition: box-shadow .15s; }
 .card-link:hover { box-shadow: var(--shadow-card-hover); }
 .panel { background: var(--surface-muted); border-radius: var(--radius-sm); padding: var(--space-6); }
