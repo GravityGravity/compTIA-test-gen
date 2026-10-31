@@ -6,7 +6,7 @@ describe('loadCatalog', () => {
   const catalog = loadCatalog(process.cwd())
 
   it('loads every certification', () => {
-    expect(catalog.certifications.map((c) => c.id)).toEqual(['a-plus', 'network-plus'])
+    expect(catalog.certifications.map((c) => c.id)).toEqual(['a-plus', 'network-plus', 'security-plus'])
   })
 
   it('loads every exercise module', () => {

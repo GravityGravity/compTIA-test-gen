@@ -44,10 +44,13 @@ CALCULATIONS = ("subnet-hosts", "subnet-mask", "network-address", "broadcast-add
 POOL = {"id": str, "type": str, "structure": str, "qualifier": (str, type(None)), "exam": str, "domain": str,
         "objectives": list, "topics": list, "stem": str, "options": list, "answer": list, "selectCount": int,
         "fixedOrder": bool, "explanation": str, "whyWrong": list, "origin": str, "source": str}
-POOL_OPTIONAL = {"answerOrigin": str, "note": str}
+# A record written from online sources (Security+ topics that no book covers) lists its pages in
+# sourceUrls and has verified: false until the verification pass checks it, then the date of the check.
+ONLINE = {"sourceUrls": list, "verified": (bool, str)}
+POOL_OPTIONAL = {"answerOrigin": str, "note": str, **ONLINE}
 SCENARIO = {"id": str, "kind": str, "exam": str, "domain": str, "objectives": list, "topics": list,
             "explanation": str, "origin": str, "source": str}
-SCENARIO_OPTIONAL = {"settings": list, "devices": list, "note": str}
+SCENARIO_OPTIONAL = {"settings": list, "devices": list, "note": str, **ONLINE}
 KIND_FIELDS = {
     "fault": ({"clues": list, "answer": dict, "appliesWhen": str, "related": list}, {"firstStep": str}),
     "requirement": ({"need": str, "itemType": str, "clues": list, "answer": dict, "appliesWhen": str,
@@ -229,9 +232,28 @@ def check_coverage_fields(rec, exam, domain, file_domain, topics, where, report,
             report.error(where, f"topic {t} does not exist (objective {m.group(1)} has {len(topics[m.group(1)][1])})")
 
 
+def check_online(rec, exam, where, report):
+    """sourceUrls and verified go together; an active exam has no unverified record. True when unverified."""
+    if "sourceUrls" not in rec and "verified" not in rec:
+        return False
+    urls, verified = rec.get("sourceUrls"), rec.get("verified")
+    if not urls or not all(isinstance(u, str) and re.match(r"https?://\S+$", u) for u in urls):
+        report.error(where, "sourceUrls must list the http(s) pages the record was written from")
+    if rec.get("origin") != "written":
+        report.error(where, "a record from online sources has origin written")
+    if verified is False:
+        if exam.get("active"):
+            report.error(where, "verified is false: an active exam cannot have unverified online-sourced records")
+        return True
+    if not (isinstance(verified, str) and re.fullmatch(r"\d{4}-\d{2}-\d{2}", verified)):
+        report.error(where, 'verified must be false or the date of the check ("2026-11-02")')
+    return False
+
+
 def check_pool(rec, exam, domain, file_domain, topics, where, report):
     if not check_fields(rec, POOL, POOL_OPTIONAL, where, report):
         return False
+    check_online(rec, exam, where, report)
     module = exam["content"]
     if not rec["id"].startswith(f"{module}-q-"):
         report.error(where, f"id must start with {module}-q-")
@@ -289,6 +311,7 @@ def check_scenario(rec, exam, domain, file_domain, topics, grammar, where, repor
     required, optional = KIND_FIELDS[rec["kind"]]
     if not check_fields(rec, {**SCENARIO, **required}, {**SCENARIO_OPTIONAL, **optional}, where, report):
         return False
+    check_online(rec, exam, where, report)
     if not rec["id"].startswith(f'{exam["content"]}-s-'):
         report.error(where, f'id must start with {exam["content"]}-s-')
     check_coverage_fields(rec, exam, domain, file_domain, topics, where, report, scenario_only=True)
@@ -456,6 +479,8 @@ def coverage(exam, topics, pool, scenarios, report, records_only=False):
     records_per_objective = Counter(o for _, r in scenarios for o in r.get("objectives", []))
     records_per_topic = Counter(t for _, r in scenarios for t in r.get("topics", []))
     structures = Counter(r.get("structure") for _, r in pool)
+    online = [r for _, r in pool + scenarios if "sourceUrls" in r]
+    unverified = sum(1 for r in online if r.get("verified") is False)
     origins = Counter(r.get("origin") for _, r in pool)
     gaps = []
 
@@ -472,6 +497,10 @@ def coverage(exam, topics, pool, scenarios, report, records_only=False):
           + ", ".join(f"{k} {v}" for k, v in sorted(structures.items(), key=lambda kv: str(kv[0]))))
     print(f"  scenario records: {len(scenarios)} "
           + ", ".join(f"{k} {v}" for k, v in sorted(Counter(r.get('kind') for _, r in scenarios).items())))
+    if online:
+        print(f"  online-sourced records: {len(online)}, {unverified} not verified yet")
+    if unverified:
+        gap(f"{unverified} online-sourced records are not verified")
     if len(pool) < MIN_POOL:
         gap(f"the pool has {len(pool)} questions; an exam needs at least {MIN_POOL}")
     empty_topics = thin_topics = 0

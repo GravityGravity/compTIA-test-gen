@@ -47,8 +47,9 @@ describe('loadExamContent', () => {
   it('gives empty content to an exam with no folder', () => {
     const catalog = loadCatalog(process.cwd())
     const all = loadExamContent(process.cwd(), catalog.exams)
-    expect(Object.keys(all).sort()).toEqual(['220-1201', '220-1202', 'N10-009'])
+    expect(Object.keys(all).sort()).toEqual(['220-1201', '220-1202', 'N10-009', 'SY0-801'])
     expect(all['N10-009']!.grammar.askCause).toBeDefined()
+    expect(all['SY0-801']!.grammar.faultOpening).toBeDefined()
   })
 
   it('rejects a record whose domain does not match its file', () => {

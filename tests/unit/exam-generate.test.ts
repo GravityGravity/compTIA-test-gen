@@ -102,7 +102,7 @@ describe('generateExam on the real content', () => {
         expect(questions.length).toBeGreaterThanOrEqual(built.questionCount.min)
         questions.forEach(checkQuestion)
       }
-    })
+    }, 30_000) // 200 attempts can take more than the 5 s default when the suite runs in parallel.
     it.runIf(config.active)(`${config.id} is active, so it has content`, () => {
       expect(hasContent).toBe(true)
     })

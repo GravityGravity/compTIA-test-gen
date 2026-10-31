@@ -1,0 +1,4818 @@
+[
+  {
+    "id": "secplus-def-segmentation",
+    "term": "Segmentation",
+    "definition": "Dividing a network into separate zones, for example with VLANs or subnets, so that a breach in one zone cannot spread freely to the others.",
+    "acceptedAnswers": [
+      "Network segmentation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 9: Explain the purpose of mitigation techniques used to secure the enterprise"
+  },
+  {
+    "id": "secplus-def-access-control-list",
+    "term": "Access control list",
+    "definition": "Ordered set of permit and deny rules on a router, firewall, or file system that decides which users, addresses, or ports may reach a resource.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-hardening",
+    "term": "Hardening",
+    "definition": "Shrinking a system's attack surface by removing unneeded software, services, and accounts, closing unused ports, and applying secure settings and updates.",
+    "acceptedAnswers": [
+      "System hardening"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 9: Explain the purpose of mitigation techniques used to secure the enterprise"
+  },
+  {
+    "id": "secplus-def-sandboxing",
+    "term": "Sandboxing",
+    "definition": "Running untrusted code or a suspicious file in an isolated, restricted environment so it can be tested or observed without being able to harm the host or network.",
+    "acceptedAnswers": [
+      "Sandbox"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-configuration-enforcement",
+    "term": "Configuration enforcement",
+    "definition": "Automatically checking that systems keep their approved secure settings and correcting any device that drifts away from that standard.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 9: Explain the purpose of mitigation techniques used to secure the enterprise"
+  },
+  {
+    "id": "secplus-def-application-control",
+    "term": "Application control",
+    "definition": "Endpoint technique that decides which programs may run on a device, using lists of approved and banned software, to stop malware and unauthorized tools.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 9: Explain the purpose of mitigation techniques used to secure the enterprise; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-group-policy",
+    "term": "Group Policy",
+    "definition": "Windows Active Directory feature that pushes security settings, such as password rules and software restrictions, from a central server to many computers and users.",
+    "acceptedAnswers": [
+      "Group Policy Object"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-security-enhanced-linux",
+    "term": "Security-enhanced Linux",
+    "definition": "Mandatory access control module, first developed by the NSA, built into the kernel of Red Hat and similar open-source systems, that confines processes with security labels.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-mitigation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-honeypot",
+    "term": "Honeypot",
+    "definition": "Decoy system made to look like a valuable, weakly protected server so attackers target it while defenders observe and learn their methods.",
+    "acceptedAnswers": [
+      "Honey pot"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-deception",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 2: Summarize fundamental security concepts"
+  },
+  {
+    "id": "secplus-def-honeynet",
+    "term": "Honeynet",
+    "definition": "Network of several decoy systems built to resemble a real environment, used to lure attackers away from production and study their behavior.",
+    "acceptedAnswers": [
+      "Honey net"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-deception",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 2: Summarize fundamental security concepts"
+  },
+  {
+    "id": "secplus-def-honeyfile",
+    "term": "Honeyfile",
+    "definition": "Decoy document with a tempting name, such as one suggesting stored passwords, that raises an alert as soon as anyone opens it.",
+    "acceptedAnswers": [
+      "Honey file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-deception",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 2: Summarize fundamental security concepts"
+  },
+  {
+    "id": "secplus-def-honeytoken",
+    "term": "Honeytoken",
+    "definition": "Fake data item, such as a bogus database record, API key, or email address, planted so that any use of it reveals a breach and helps trace it.",
+    "acceptedAnswers": [
+      "Honey token"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-deception",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 2: Summarize fundamental security concepts"
+  },
+  {
+    "id": "secplus-def-canary-account",
+    "term": "Canary account",
+    "definition": "Dormant decoy user identity that nobody legitimately uses, often made to look privileged, so any sign-in or other use of it raises an alert.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-deception",
+    "origin": "objectives",
+    "source": "Entity tags in Microsoft Defender for Identity (honeytoken accounts) – Microsoft Learn; Decoy User Credential (D3-DUC) – MITRE D3FEND; SY0-801 objective 4.1",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/defender-for-identity/entity-tags",
+      "https://d3fend.mitre.org/technique/d3f:DecoyUserCredential/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-network-based-intrusion-detection-system",
+    "term": "Network-based intrusion detection system",
+    "definition": "Passive sensor that watches copies of traffic on a network segment, compares it with known attack patterns, and alerts staff without blocking anything.",
+    "acceptedAnswers": [
+      "Network intrusion detection system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-network-based-intrusion-prevention-system",
+    "term": "Network-based intrusion prevention system",
+    "definition": "Inline device placed in the traffic path of a network that inspects packets and automatically drops or blocks those that match an attack.",
+    "acceptedAnswers": [
+      "Network intrusion prevention system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-host-based-intrusion-detection-system",
+    "term": "Host-based intrusion detection system",
+    "definition": "Software installed on a single server or workstation that watches its logs, files, and processes for signs of attack and raises alerts.",
+    "acceptedAnswers": [
+      "Host intrusion detection system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-host-based-intrusion-prevention-system",
+    "term": "Host-based intrusion prevention system",
+    "definition": "Software on a single computer that monitors its activity and actively stops suspicious actions, such as killing a malicious process or dropping a connection.",
+    "acceptedAnswers": [
+      "Host intrusion prevention system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-wireless-intrusion-prevention-system",
+    "term": "Wireless intrusion prevention system",
+    "definition": "Set of radio sensors that watches the airwaves for rogue access points, evil twins, and deauthentication attacks and can contain them automatically.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-signature-based-detection",
+    "term": "Signature-based detection",
+    "definition": "Method of spotting threats that compares activity with a database of known attack patterns; accurate for known threats but blind to new ones until updated.",
+    "acceptedAnswers": [
+      "Signature detection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-anomaly-based-detection",
+    "term": "Anomaly-based detection",
+    "definition": "Method of spotting threats that learns a baseline of normal activity and flags deviations from it, so it can catch new attacks but raises more false alarms.",
+    "acceptedAnswers": [
+      "Behavior-based detection",
+      "Heuristic-based detection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-ids",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-rate-limiting",
+    "term": "Rate limiting",
+    "definition": "Capping how many calls a client or address may send in a set period, which slows brute-force logins, scraping, and denial-of-service floods.",
+    "acceptedAnswers": [
+      "Rate-limiting requests"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-web-application-firewall",
+    "term": "Web application firewall",
+    "definition": "Filter placed in front of web servers that inspects HTTP traffic to block attacks such as SQL injection and cross-site scripting.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-rule-based-firewall",
+    "term": "Rule-based firewall",
+    "definition": "Filter that permits or blocks traffic by working through an ordered list of administrator-defined entries matching addresses, ports, and protocols, ending with an implicit deny.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-unified-threat-management",
+    "term": "Unified threat management",
+    "definition": "All-in-one security appliance that combines firewalling, intrusion prevention, antivirus, content and URL filtering, and VPN in one box, suited to small offices.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-layer-4-firewall",
+    "term": "Layer 4 firewall",
+    "definition": "Filter that decides on traffic using IP addresses, TCP or UDP port numbers, and connection state, without looking at the application data inside.",
+    "acceptedAnswers": [
+      "Transport layer firewall"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-layer-7-firewall",
+    "term": "Layer 7 firewall",
+    "definition": "Filter that inspects the payload of traffic at the top of the OSI model, so it can recognize and control specific programs, commands, or URLs even on a shared port.",
+    "acceptedAnswers": [
+      "Application layer firewall",
+      "Application-level firewall"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-next-generation-firewall",
+    "term": "Next-generation firewall",
+    "definition": "Enterprise filtering device that adds app awareness, deep packet inspection, built-in intrusion prevention, and cloud threat intelligence to traditional port and address rules.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-firewall",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-content-filtering",
+    "term": "Content filtering",
+    "definition": "Blocking or allowing web pages, downloads, and messages according to what they contain or their category, to enforce acceptable use and keep out malicious material.",
+    "acceptedAnswers": [
+      "Content filter"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-content-filter",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-data-loss-prevention",
+    "term": "Data loss prevention",
+    "definition": "Technology that detects sensitive information, such as card numbers or health records, in use, in motion, or at rest and stops it from leaving the organization.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.4"
+    ],
+    "group": "ops-content-filter",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-agent-based-filtering",
+    "term": "Agent-based filtering",
+    "definition": "Web control in which software installed on each user device enforces browsing rules, so protection continues when the device is off the corporate network.",
+    "acceptedAnswers": [
+      "Agent-based web filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-content-filter",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 18: Modifying Enterprise Capabilities to Enhance Security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-centralized-proxy",
+    "term": "Centralized proxy",
+    "definition": "Server-based web control in which every user's web requests pass through one intermediary that inspects them, applies rules, and forwards only approved traffic.",
+    "acceptedAnswers": [
+      "Centralised proxy",
+      "Centralized proxy filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-content-filter",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 18: Modifying Enterprise Capabilities to Enhance Security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-content-categorization",
+    "term": "Content categorization",
+    "definition": "Sorting websites into classes such as news, gambling, or social media so administrators can permit or deny a whole class at once.",
+    "acceptedAnswers": [
+      "Category-based filtering",
+      "Content categorisation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-content-filter",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-reputation-based-filtering",
+    "term": "Reputation-based filtering",
+    "definition": "Allowing or blocking websites by their trust score, which falls when a site has a history of hosting malware, phishing, or spam.",
+    "acceptedAnswers": [
+      "Reputation filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-content-filter",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-endpoint-detection-and-response",
+    "term": "Endpoint detection and response",
+    "definition": "Agent-based tool on computers and servers that continuously records activity, detects suspicious behavior, and lets analysts investigate and isolate an affected machine.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-endpoint",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-extended-detection-and-response",
+    "term": "Extended detection and response",
+    "definition": "Platform that unifies telemetry from endpoints, network, cloud, email, and identity sources to correlate multi-stage attacks and coordinate a single reaction across them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-endpoint",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-antivirus",
+    "term": "Antivirus",
+    "definition": "Program that scans files, memory, and downloads for malicious code, using known signatures and heuristics, and quarantines or removes what it finds.",
+    "acceptedAnswers": [
+      "Anti-virus",
+      "Antivirus software",
+      "Anti-malware"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.4"
+    ],
+    "group": "ops-endpoint",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-mobile-device-management",
+    "term": "Mobile device management",
+    "definition": "Central platform that enrolls phones and tablets, enforces settings such as screen locks, encryption, and app restrictions, and can wipe a lost phone remotely.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-endpoint",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-network-access-control",
+    "term": "Network access control",
+    "definition": "Checking each device's identity and health when it connects and granting full, limited, or no connectivity depending on whether it meets security policy.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-nac",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-captive-portal",
+    "term": "Captive portal",
+    "definition": "Web page that a new user on a guest or hotel network must pass, by accepting terms, signing in, or paying, before wider internet access is allowed.",
+    "acceptedAnswers": [
+      "Captive portals"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-nac",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-ieee-802-1x",
+    "term": "IEEE 802.1X",
+    "definition": "Port-based authentication standard in which a switch or wireless access point blocks a new device's traffic until a RADIUS server verifies its credentials through EAP.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-nac",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-endpoint-posture-assessment",
+    "term": "Endpoint posture assessment",
+    "definition": "Check of a connecting device's security condition, such as patch level, antivirus status, and firewall settings, to confirm it complies before it gets access.",
+    "acceptedAnswers": [
+      "Endpoint posture",
+      "Posture assessment",
+      "Endpoint compliance",
+      "Endpoint posture/compliance"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-nac",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 4.1"
+  },
+  {
+    "id": "secplus-def-persistent-agent",
+    "term": "Persistent agent",
+    "definition": "NAC software that stays installed on a managed device and reports its health every time the device joins the network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-nac",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-dissolvable-agent",
+    "term": "Dissolvable agent",
+    "definition": "Temporary NAC software that a device downloads to check its health when it joins and that deletes itself once the check is complete.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-nac",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-secrets-scanning",
+    "term": "Secrets scanning",
+    "definition": "Automated search of code repositories and their full history for exposed credentials, such as API keys, tokens, and passwords, so they can be revoked and rotated.",
+    "acceptedAnswers": [
+      "Secret scanning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-appsec",
+    "origin": "objectives",
+    "source": "About secret scanning – GitHub Docs; Secrets Management Cheat Sheet – OWASP; SY0-801 objective 4.1",
+    "sourceUrls": [
+      "https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning",
+      "https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_Cheat_Sheet.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-input-validation",
+    "term": "Input validation",
+    "definition": "Checking that all data supplied to a program matches the expected type, format, length, and range before it is processed, which blocks injection and overflow attacks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-appsec",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-secure-cookie",
+    "term": "Secure cookie",
+    "definition": "Small piece of browser-stored session data marked with flags so it is sent only over encrypted connections and cannot be read by page scripts.",
+    "acceptedAnswers": [
+      "Secure cookies"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-appsec",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-static-code-analysis",
+    "term": "Static code analysis",
+    "definition": "Using automated tools to examine a program's source or compiled binaries for flaws, such as buffer overflows or embedded passwords, without running it.",
+    "acceptedAnswers": [
+      "Static analysis",
+      "Static application security testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.3"
+    ],
+    "group": "ops-appsec",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-dynamic-code-analysis",
+    "term": "Dynamic code analysis",
+    "definition": "Examining a program while it runs, sending crafted inputs from the outside the way an attacker would, to find flaws that appear only at run time.",
+    "acceptedAnswers": [
+      "Dynamic analysis",
+      "Dynamic application security testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.3"
+    ],
+    "group": "ops-appsec",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-code-signing",
+    "term": "Code signing",
+    "definition": "Applying the developer's digital signature to software so users can confirm who published it and that it has not been altered since release.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-appsec",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-secure-coding-practices",
+    "term": "Secure coding practices",
+    "definition": "Development guidelines, such as validating input, handling errors safely, and never embedding credentials, that reduce exploitable flaws in software.",
+    "acceptedAnswers": [
+      "Secure coding"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-appsec",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-domain-based-message-authentication-reporting-and-conformance",
+    "term": "Domain-based Message Authentication, Reporting, and Conformance",
+    "definition": "DNS-published email policy that builds on SPF and DKIM, telling receivers whether to deliver, quarantine, or reject failing mail and to send back result summaries.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-email",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-sender-policy-framework",
+    "term": "Sender Policy Framework",
+    "definition": "DNS TXT record that lists the mail servers and IP addresses permitted to deliver email for a domain, so receivers can reject mail from other sources.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-email",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-domainkeys-identified-mail",
+    "term": "DomainKeys Identified Mail",
+    "definition": "Email authentication method in which the originating server adds a digital signature to each message, checked with a public key published in DNS.",
+    "acceptedAnswers": [
+      "Domain Keys Identified Mail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-email",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-brand-indicators-for-message-identification",
+    "term": "Brand Indicators for Message Identification",
+    "definition": "Email specification that lets a domain publish its logo through a DNS record so supporting inboxes show it beside messages that pass authentication under an enforcing DMARC policy.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-email",
+    "origin": "objectives",
+    "source": "FAQs for Marketers & ESPs – BIMI Group; Brand Indicators for Message Identification (Internet-Draft) – IETF Datatracker; SY0-801 objective 4.1",
+    "sourceUrls": [
+      "https://bimigroup.org/faqs-for-senders-esps/",
+      "https://datatracker.ietf.org/doc/draft-brand-indicators-for-message-identification/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-email-gateway",
+    "term": "Email gateway",
+    "definition": "Server or service that inspects all inbound and outbound messages for spam, malware, phishing links, and sensitive data before they reach or leave the organization.",
+    "acceptedAnswers": [
+      "Secure email gateway",
+      "Mail gateway"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "group": "ops-email",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-def-asset-management-life-cycle",
+    "term": "Asset management life cycle",
+    "definition": "The full sequence an organization follows for each hardware, software, or data item, from planning and buying through assignment and tracking to secure retirement.",
+    "acceptedAnswers": [
+      "Asset management lifecycle",
+      "Asset life cycle",
+      "Asset lifecycle"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management; SY0-801 objective 4.2"
+  },
+  {
+    "id": "secplus-def-planning-and-scoping",
+    "term": "Planning and scoping",
+    "definition": "Early stage that works out what the organization actually needs, which existing systems a purchase must work with, and what budget and security limits apply.",
+    "acceptedAnswers": [
+      "Planning/scoping",
+      "Planning",
+      "Scoping"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management; SY0-801 objective 4.2"
+  },
+  {
+    "id": "secplus-def-procurement",
+    "term": "Procurement",
+    "definition": "Buying hardware, software, or data services through approved channels after vetting vendors, total cost, risk, and compliance, often with change board approval.",
+    "acceptedAnswers": [
+      "Acquisition",
+      "Acquisition/procurement",
+      "Procurement process",
+      "Acquisition process"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-asset-assignment",
+    "term": "Asset assignment",
+    "definition": "Allocating each item to a named owner or department and recording it, so someone is accountable for its use, condition, and protection.",
+    "acceptedAnswers": [
+      "Assignment/accounting",
+      "Assignment and accounting",
+      "Assignment"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-asset-tracking",
+    "term": "Asset tracking",
+    "definition": "Ongoing oversight of where each item is, who uses it, and its condition, often with tags, barcodes, RFID, GPS, or MDM, so nothing goes missing.",
+    "acceptedAnswers": [
+      "Monitoring/asset tracking",
+      "Asset monitoring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-decommissioning",
+    "term": "Decommissioning",
+    "definition": "Final stage in which an item is retired from service, its data is removed or destroyed, and its records are updated so it cannot become a forgotten risk.",
+    "acceptedAnswers": [
+      "Disposal",
+      "Disposal/decommissioning",
+      "Decommission"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-asset-register",
+    "term": "Asset register",
+    "definition": "Central record of everything an organization owns, listing each item's location, value, and owner; a device missing from it is likely rogue.",
+    "acceptedAnswers": [
+      "Asset inventory",
+      "Inventory"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-standard-naming-convention",
+    "term": "Standard naming convention",
+    "definition": "Agreed scheme for labeling devices, such as DC1 for domain controllers, so hostnames are consistent and an oddly labeled machine stands out.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-enumeration",
+    "term": "Enumeration",
+    "definition": "Giving every item a unique identifier, such as a serial number, and listing them all so none are overlooked, lost, or stolen.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-asset-classification",
+    "term": "Asset classification",
+    "definition": "Ranking hardware and systems as critical, essential, or non-essential by their value and sensitivity so a failure gets the right level of support.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-total-cost-of-ownership",
+    "term": "Total cost of ownership",
+    "definition": "Full expense of an item over its life, including purchase price, maintenance, support, and replacement parts, not only what is paid up front.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-configuration-management-database",
+    "term": "Configuration management database",
+    "definition": "Central repository that stores details of IT components, their settings, and the relationships between them, often built into IT service platforms.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-asset-tag",
+    "term": "Asset tag",
+    "definition": "Label fixed to a piece of equipment carrying a serial number and a barcode or QR code that staff scan to identify it.",
+    "acceptedAnswers": [
+      "Asset tags"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-records",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-sanitization",
+    "term": "Sanitization",
+    "definition": "Securely removing all data from storage media, for example by overwriting or secure erase commands, so it cannot be recovered and the device can be reused or donated.",
+    "acceptedAnswers": [
+      "Sanitisation",
+      "Data sanitization"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-disposal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-degaussing",
+    "term": "Degaussing",
+    "definition": "Exposing magnetic storage such as hard disks or tapes to a powerful magnetic field so that the data on them becomes unreadable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-disposal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-destruction",
+    "term": "Destruction",
+    "definition": "Ruining drives, disks, and tapes by shredding, crushing, pulverizing, or incineration, so it can never be used or read again.",
+    "acceptedAnswers": [
+      "Physical destruction",
+      "Media destruction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-disposal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management"
+  },
+  {
+    "id": "secplus-def-certificate-of-destruction",
+    "term": "Certificate of destruction",
+    "definition": "Document from a disposal vendor proving that specific equipment or media were disposed of properly, in line with legal and organizational requirements.",
+    "acceptedAnswers": [
+      "Certification",
+      "Destruction certificate"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.2"
+    ],
+    "group": "asset-disposal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 15: Understanding the Security Implications of Hardware, Software, and Data Asset Management"
+  },
+  {
+    "id": "secplus-def-vulnerability-scanner",
+    "term": "Vulnerability scanner",
+    "definition": "Automated tool that probes systems, networks, or applications, compares what it finds with a database of known weaknesses and misconfigurations, and reports them.",
+    "acceptedAnswers": [
+      "Vulnerability scanning",
+      "Vulnerability scan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3",
+      "SY0-801/4.4"
+    ],
+    "group": "vm-identify",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-internet-protocol-address-management",
+    "term": "Internet Protocol Address Management",
+    "definition": "Centralized tool for planning, tracking, and monitoring the numeric host identifiers used across a network, coordinated with the DHCP and DNS servers that assign and resolve them.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-identify",
+    "origin": "objectives",
+    "source": "IP Address Management (IPAM) – Microsoft Learn; What is IPAM? (IP Address Management) – Infoblox; SY0-801 objective 4.3",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/windows-server/networking/technologies/ipam/ipam-top",
+      "https://www.infoblox.com/glossary/ipam-ip-address-management/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-cloud-security-posture-management",
+    "term": "Cloud security posture management",
+    "definition": "Tool that continuously checks cloud accounts and workloads against security benchmarks, flags misconfigurations such as publicly exposed storage buckets, and recommends or automates fixes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-identify",
+    "origin": "objectives",
+    "source": "What is Cloud Security Posture Management (CSPM) – Microsoft Learn; Cloud Security Posture Management (CSPM) – CrowdStrike; SY0-801 objective 4.3",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/azure/defender-for-cloud/concept-cloud-security-posture-management",
+      "https://www.crowdstrike.com/en-us/cybersecurity-101/cloud-security/cloud-security-posture-management-cspm/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-source-code-review",
+    "term": "Source code review",
+    "definition": "Manual line-by-line examination of an application's programming by peers or security specialists to find logic flaws and vulnerabilities before release.",
+    "acceptedAnswers": [
+      "Code review"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-identify",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 4.3"
+  },
+  {
+    "id": "secplus-def-credentialed-scan",
+    "term": "Credentialed scan",
+    "definition": "Vulnerability assessment that logs in to targets with valid accounts, so it can check installed patches, settings, and software from the inside for a deeper result.",
+    "acceptedAnswers": [
+      "Authenticated scan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-identify",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-non-credentialed-scan",
+    "term": "Non-credentialed scan",
+    "definition": "Vulnerability assessment run without logging in, so it sees only what an outside attacker would, such as open ports and exposed services.",
+    "acceptedAnswers": [
+      "Uncredentialed scan",
+      "Unauthenticated scan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-identify",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-package-monitoring",
+    "term": "Package monitoring",
+    "definition": "Continuously watching the third-party libraries and components an application uses for newly disclosed vulnerabilities, outdated versions, or licensing problems.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-identify",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-severity-assessment",
+    "term": "Severity assessment",
+    "definition": "Rating how serious a found weakness is, from scores such as CVSS combined with context like exposure, exploitability, and the value of the affected asset.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management; SY0-801 objective 4.3"
+  },
+  {
+    "id": "secplus-def-penetration-test-report-review",
+    "term": "Penetration test report review",
+    "definition": "Studying the written results of an authorized simulated attack, including the weaknesses that were exploited and the evidence, to plan and rank fixes.",
+    "acceptedAnswers": [
+      "Pen test report review",
+      "Penetration test review"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management; SY0-801 objective 4.3"
+  },
+  {
+    "id": "secplus-def-remediation",
+    "term": "Remediation",
+    "definition": "Fixing a confirmed weakness, for example by patching, changing a configuration, or isolating or replacing the system, to remove or reduce its risk.",
+    "acceptedAnswers": [
+      "Vulnerability remediation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-verification",
+    "term": "Verification",
+    "definition": "Confirming, by combining follow-up scans, audits, and log reviews, that a fix actually worked and the weakness is really gone.",
+    "acceptedAnswers": [
+      "Validation of remediation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-rescanning",
+    "term": "Rescanning",
+    "definition": "Running the same vulnerability assessment again after a fix to show whether the weakness still appears.",
+    "acceptedAnswers": [
+      "Rescan"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-patching",
+    "term": "Patching",
+    "definition": "Applying vendor updates to software, firmware, or operating systems to close known security holes and fix bugs.",
+    "acceptedAnswers": [
+      "Patch management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-false-positive",
+    "term": "False positive",
+    "definition": "Result that reports a vulnerability or attack that does not actually exist, wasting analyst time.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-false-negative",
+    "term": "False negative",
+    "definition": "Result that misses a real vulnerability or attack, reporting a system as clean when it is not, the more dangerous kind of error.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-response",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-internal-reporting",
+    "term": "Internal reporting",
+    "definition": "Sharing vulnerability findings, trends, and remediation status with audiences inside the organization, such as IT teams and executives, tailored to each audience.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-reporting",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management; SY0-801 objective 4.3"
+  },
+  {
+    "id": "secplus-def-external-reporting",
+    "term": "External reporting",
+    "definition": "Sharing vulnerability or incident information with outside parties, such as regulators, vendors, customers, or information-sharing groups, often within legal deadlines.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-reporting",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management; SY0-801 objective 4.3"
+  },
+  {
+    "id": "secplus-def-bug-bounty-program",
+    "term": "Bug bounty program",
+    "definition": "Offer of cash or other rewards to outside researchers for each valid security flaw they find and report in an organization's products or systems.",
+    "acceptedAnswers": [
+      "Bounty program",
+      "Bug bounty"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-reporting",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-responsible-disclosure-policy",
+    "term": "Responsible disclosure policy",
+    "definition": "Published rules explaining how outsiders should privately report a security flaw and how long the organization has to fix it before details go public.",
+    "acceptedAnswers": [
+      "Responsible disclosure",
+      "Responsible disclosure program",
+      "Coordinated vulnerability disclosure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "group": "vm-reporting",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-system-monitoring",
+    "term": "System monitoring",
+    "definition": "Watching servers, workstations, and endpoints for performance metrics such as CPU, memory, and disk use, and comparing them with baselines to spot problems.",
+    "acceptedAnswers": [
+      "Systems monitoring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-resources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-application-monitoring",
+    "term": "Application monitoring",
+    "definition": "Tracking individual software programs' performance, availability, errors, and logs to spot crashes, slowdowns, or attacks against them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-resources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-infrastructure-monitoring",
+    "term": "Infrastructure monitoring",
+    "definition": "Watching the network devices, databases, and cloud services that underpin operations for availability problems, unauthorized access, and misconfigurations.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-resources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-agent-based-monitoring",
+    "term": "Agent-based monitoring",
+    "definition": "Gathering method in which software installed on each device collects detailed performance, configuration, and security data and sends it to a central server such as a SIEM.",
+    "acceptedAnswers": [
+      "Agent-based collection",
+      "Agent-based"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-resources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools; SY0-801 objective 4.4"
+  },
+  {
+    "id": "secplus-def-agentless-monitoring",
+    "term": "Agentless monitoring",
+    "definition": "Gathering method that pulls information remotely through existing protocols such as SNMP or WMI, with no extra software installed on the watched devices.",
+    "acceptedAnswers": [
+      "Agentless collection",
+      "Agentless"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-resources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools; SY0-801 objective 4.4"
+  },
+  {
+    "id": "secplus-def-log-aggregation",
+    "term": "Log aggregation",
+    "definition": "Collecting records from many systems, network devices, and applications into one central location so they can be searched and correlated.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-activities",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-alerting",
+    "term": "Alerting",
+    "definition": "Setting rules and thresholds that notify security staff on their own when specific events or conditions occur, so they can respond quickly.",
+    "acceptedAnswers": [
+      "Automated alerts",
+      "Alerts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-activities",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-alert-tuning",
+    "term": "Alert tuning",
+    "definition": "Adjusting detection rules and thresholds to cut false alarms and analyst overload while still catching real threats.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-activities",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-log-archiving",
+    "term": "Log archiving",
+    "definition": "Moving older event records into long-term storage under a retention policy, for later investigations, forensic evidence, and regulatory compliance.",
+    "acceptedAnswers": [
+      "Archiving"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-activities",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-reporting",
+    "term": "Reporting",
+    "definition": "Turning the results of monitoring and alerting into structured documents, such as compliance records and executive summaries, that show the organization's security state.",
+    "acceptedAnswers": [
+      "Security reporting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-activities",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-dashboard",
+    "term": "Dashboard",
+    "definition": "Visual screen that shows key security and performance metrics, charts, and device status at a glance, often customizable, in a SIEM or monitoring tool.",
+    "acceptedAnswers": [
+      "Dashboards"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4",
+      "SY0-801/4.8"
+    ],
+    "group": "monitor-activities",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-security-information-and-event-management",
+    "term": "Security information and event management",
+    "definition": "Platform that collects and correlates logs from across the network in real time, raising alerts and supporting investigations and compliance reports.",
+    "acceptedAnswers": [
+      "Security information & event management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-tools",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-packet-analyzer",
+    "term": "Packet analyzer",
+    "definition": "Tool, such as Wireshark, that captures network traffic and decodes each frame's headers and payload for troubleshooting or investigation.",
+    "acceptedAnswers": [
+      "Packet analyser",
+      "Protocol analyzer",
+      "Packet sniffer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-tools",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; SY0-801 objective 4.4"
+  },
+  {
+    "id": "secplus-def-network-management-system",
+    "term": "Network management system",
+    "definition": "Central console that polls devices, often through SNMP, and shows their status with colors and thresholds such as up, down, warning, or critical.",
+    "acceptedAnswers": [
+      "Network management systems"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-tools",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-port-mirroring",
+    "term": "Port mirroring",
+    "definition": "Feature on managed network gear that copies traffic from chosen interfaces or VLANs to one interface, where a sniffer or IDS sensor can inspect it without disrupting the flow.",
+    "acceptedAnswers": [
+      "Switched Port Analyzer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-tools",
+    "origin": "objectives",
+    "source": "Configure Catalyst Switched Port Analyzer (SPAN) – Cisco; Configuring Port Mirroring and Analyzers – Juniper Networks (HPE); SY0-801 objective 4.4",
+    "sourceUrls": [
+      "https://www.cisco.com/c/en/us/support/docs/switches/catalyst-6500-series-switches/10570-41.html",
+      "https://networkingdocs.hpe.com/documentation/us/en/software/junos/network-mgmt/topics/topic-map/port-mirroring-and-analyzers-configuring.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-network-tap",
+    "term": "Network tap",
+    "definition": "Hardware device placed on a cable that copies all passing traffic to a monitoring tool without affecting the original flow.",
+    "acceptedAnswers": [
+      "Tap"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-tools",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-netflow",
+    "term": "NetFlow",
+    "definition": "Cisco-developed technology that exports summaries of traffic conversations, such as source, destination, ports, and byte counts, without capturing full packet contents.",
+    "acceptedAnswers": [
+      "Net Flow"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4",
+      "SY0-801/4.8"
+    ],
+    "group": "monitor-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-simple-network-management-protocol",
+    "term": "Simple Network Management Protocol",
+    "definition": "Standard that lets a central manager query and configure routers, switches, and other devices, which also send unsolicited traps when thresholds are crossed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-management-information-base",
+    "term": "Management information base",
+    "definition": "Hierarchical database of object identifiers that describes the values a network device exposes to SNMP managers, such as interface counters.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-protocols",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-syslog",
+    "term": "Syslog",
+    "definition": "Standard for sending event messages from devices and servers to a central collector, each tagged with a facility and a severity level.",
+    "acceptedAnswers": [
+      "System logging protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 17: Understanding Security Alerting and Monitoring Concepts and Tools"
+  },
+  {
+    "id": "secplus-def-security-content-automation-protocol",
+    "term": "Security Content Automation Protocol",
+    "definition": "NIST suite of specifications that standardizes how security tools describe vulnerabilities, configurations, and checks, so scanners can assess compliance without manual work.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "group": "monitor-protocols",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-provisioning",
+    "term": "Provisioning",
+    "definition": "Creating a new account and giving it the permissions, group memberships, and settings a person needs for their role, often triggered automatically when they join.",
+    "acceptedAnswers": [
+      "Account provisioning",
+      "User provisioning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5",
+      "SY0-801/4.6"
+    ],
+    "group": "iam-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-deprovisioning",
+    "term": "Deprovisioning",
+    "definition": "Disabling or removing an account and its rights when a person leaves the organization or changes roles, so the unused login cannot be misused later.",
+    "acceptedAnswers": [
+      "De-provisioning",
+      "Account deprovisioning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-identity-proofing",
+    "term": "Identity proofing",
+    "definition": "Verifying that people really are who they claim to be, for example by checking government ID documents or background information, before an account or credential is issued.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-permission-assignment",
+    "term": "Permission assignment",
+    "definition": "Granting rights such as read, write, or execute to users, groups, or roles; overly broad grants expose data, while overly narrow ones block legitimate work.",
+    "acceptedAnswers": [
+      "Permissions assignment",
+      "Permission assignments"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-access-review",
+    "term": "Access review",
+    "definition": "Periodic check, usually by managers or resource owners, that confirms each user's current rights are still needed for the job and removes those that are not.",
+    "acceptedAnswers": [
+      "Access reviews",
+      "Access recertification"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management; SY0-801 objective 4.5"
+  },
+  {
+    "id": "secplus-def-account-auditing",
+    "term": "Account auditing",
+    "definition": "Examining user records and login activity to find inactive, orphaned, shared, or misused identities and settings that break the organization's policy.",
+    "acceptedAnswers": [
+      "Account audit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management; SY0-801 objective 4.5"
+  },
+  {
+    "id": "secplus-def-user-account",
+    "term": "User account",
+    "definition": "Standard identity given to an ordinary person for daily work, with only the rights that job needs and no power to change system-wide settings.",
+    "acceptedAnswers": [
+      "Standard user account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-privileged-account",
+    "term": "Privileged account",
+    "definition": "Identity with elevated rights, such as an administrator or root login, that can change system settings, install software, or manage other users, so it needs extra protection.",
+    "acceptedAnswers": [
+      "Privileged user account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-global-administrator-account",
+    "term": "Global administrator account",
+    "definition": "Top-level privileged identity whose rights extend across an entire domain, directory, or cloud tenant, so its compromise affects every system and user under it.",
+    "acceptedAnswers": [
+      "Global admin account",
+      "Global privileged account",
+      "Global administrator"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "Microsoft Learn – Microsoft Entra built-in roles; Microsoft Learn – Manage emergency access admin accounts in Microsoft Entra ID; SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/permissions-reference",
+      "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-local-administrator-account",
+    "term": "Local administrator account",
+    "definition": "Privileged identity whose full control is limited to one computer or device and is stored on that machine rather than in a central directory.",
+    "acceptedAnswers": [
+      "Local admin account",
+      "Local privileged account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "Local accounts – Microsoft Learn; Windows LAPS overview – Microsoft Learn; SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/windows/security/identity-protection/access-control/local-accounts",
+      "https://learn.microsoft.com/en-us/windows-server/identity/laps/laps-overview"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-service-account",
+    "term": "Service account",
+    "definition": "Non-human identity that an application, scheduled task, or background process uses to run and reach resources, often with no interactive logon and a long-lived password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2",
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-third-party-account",
+    "term": "Third-party account",
+    "definition": "Identity given to an outside organization such as a supplier, contractor, or partner, which should be limited in scope and time and closely monitored.",
+    "acceptedAnswers": [
+      "Vendor account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "What Is Third-Party Access? – Palo Alto Networks Cyberpedia; Access to AWS accounts owned by third parties – AWS IAM User Guide; SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://www.paloaltonetworks.com/cyberpedia/what-is-third-party-access",
+      "https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-scenarios_third-party.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-emergency-access-account",
+    "term": "Emergency access account",
+    "definition": "Highly privileged, rarely used identity held in reserve for crises, such as when normal admin logins or MFA fail, and closely monitored whenever someone uses it.",
+    "acceptedAnswers": [
+      "Break-glass account",
+      "Emergency account"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-account-types",
+    "origin": "objectives",
+    "source": "Microsoft Learn – Manage emergency access admin accounts in Microsoft Entra ID; AWS Well-Architected Framework, Security Pillar – SEC03-BP03 Establish emergency access process; SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/entra/identity/role-based-access-control/security-emergency-access",
+      "https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_permissions_emergency_process.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-federation",
+    "term": "Federation",
+    "definition": "Trust arrangement between separate organizations or domains in which one side authenticates users and the other accepts that result, so users reach partner resources without new credentials.",
+    "acceptedAnswers": [
+      "Identity federation",
+      "Federated identity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-single-sign-on",
+    "term": "Single sign-on",
+    "definition": "Authentication approach in which a user logs in once with one set of credentials and then reaches many applications without being asked to log in again.",
+    "acceptedAnswers": [
+      "Single signon"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-security-assertion-markup-language",
+    "term": "Security Assertion Markup Language",
+    "definition": "Open XML-based standard that lets an identity provider pass signed statements about a user's authentication and attributes to a service provider, widely used for browser SSO.",
+    "acceptedAnswers": [
+      "Security Assertions Markup Language"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-lightweight-directory-access-protocol",
+    "term": "Lightweight Directory Access Protocol",
+    "definition": "Standard method, on TCP port 389, for searching and updating the central store of users, groups, and computers that a Windows domain controller or similar service keeps.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-open-authorization",
+    "term": "Open Authorization",
+    "definition": "Framework that lets a user grant a third-party app limited access to resources on another site through an access token, without giving that app the user's password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-openid-connect",
+    "term": "OpenID Connect",
+    "definition": "Identity layer built on top of OAuth 2.0 that adds user authentication, letting apps learn who signed in through a signed identity token, as in sign in with Google.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-identity-provider",
+    "term": "Identity provider",
+    "definition": "Trusted system that authenticates users and vouches for them to other applications by issuing assertions or tokens in federated and SSO logins.",
+    "acceptedAnswers": [
+      "Identity providers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4",
+      "SY0-801/4.5"
+    ],
+    "group": "iam-federation",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-multifactor-authentication",
+    "term": "Multifactor authentication",
+    "definition": "Login method that requires proof from two or more different categories, such as something known, something held, and a physical trait, before granting access.",
+    "acceptedAnswers": [
+      "Multi-factor authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-mfa",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-hardware-token",
+    "term": "Hardware token",
+    "definition": "Physical device, such as a key fob or USB key, that generates codes or holds cryptographic keys to prove that the user possesses it during login.",
+    "acceptedAnswers": [
+      "Hard token",
+      "Hardware authentication token"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-mfa",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-software-token",
+    "term": "Software token",
+    "definition": "Authenticator app on a phone or computer that generates login codes or approves sign-in requests, giving proof of possession without a separate physical device.",
+    "acceptedAnswers": [
+      "Soft token"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-mfa",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-biometrics",
+    "term": "Biometrics",
+    "definition": "Verifying identity by measuring a unique physical or behavioral trait, such as a fingerprint, face, iris, or voice, and comparing it with an enrolled template.",
+    "acceptedAnswers": [
+      "Biometric authentication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-mfa",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-one-time-password",
+    "term": "One-time password",
+    "definition": "Code that works for a single login or transaction and then expires, delivered by text message or email or generated by an app or key fob at sign-in.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-mfa",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-backup-code",
+    "term": "Backup code",
+    "definition": "One of a small set of single-use strings, issued in advance and kept safe, that let a user sign in when the usual second factor is lost or unavailable.",
+    "acceptedAnswers": [
+      "Backup codes",
+      "Recovery code"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-mfa",
+    "origin": "objectives",
+    "source": "Google Account Help – Sign in with backup codes; NIST SP 800-63B (look-up secrets); SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://support.google.com/accounts/answer/1187538",
+      "https://pages.nist.gov/800-63-4/sp800-63b.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-rule-based-access-control",
+    "term": "Rule-based access control",
+    "definition": "Model in which administrator-defined conditions, such as firewall or router ACLs, apply equally to every subject to allow or deny a request.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-role-based-access-control",
+    "term": "Role-based access control",
+    "definition": "Model that grants rights through job functions, such as nurse or accountant, so users gain permissions by being placed in the matching group.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-time-based-access-control",
+    "term": "Time-based access control",
+    "definition": "Model that allows logins or resource use only during set hours or weekdays, such as business hours, and denies attempts outside that window.",
+    "acceptedAnswers": [
+      "Time-of-day restrictions",
+      "Time-of-day restriction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management; SY0-801 objective 4.5"
+  },
+  {
+    "id": "secplus-def-mandatory-access-control",
+    "term": "Mandatory access control",
+    "definition": "Model in which the system enforces decisions by comparing classification labels on subjects and objects, such as Secret or Top Secret, and owners cannot change them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-discretionary-access-control",
+    "term": "Discretionary access control",
+    "definition": "Model in which each resource has an owner who decides which users may use it and with what rights, typically through ACLs, as in NTFS.",
+    "acceptedAnswers": [
+      "Discretionary-based access control"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-just-in-time-access",
+    "term": "Just-in-time access",
+    "definition": "Approach that grants elevated rights only when requested and approved, for the short period a task needs, then removes them automatically so no standing privileges remain.",
+    "acceptedAnswers": [
+      "Just-in-time",
+      "Just-in-time permissions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-attribute-based-access-control",
+    "term": "Attribute-based access control",
+    "definition": "Context-aware model that evaluates many characteristics of the user, resource, and environment, such as department, location, and device, in if-then policies.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-models",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-identity-and-access-management",
+    "term": "Identity and access management",
+    "definition": "Overall framework of policies, processes, and tools that creates digital user records, authenticates them, and controls what each one may reach throughout its life cycle.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-mgmt",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-privileged-access-management",
+    "term": "Privileged access management",
+    "definition": "Set of tools and practices that store, broker, monitor, and limit the use of administrator credentials, often with vaulting, session recording, and temporary elevation.",
+    "acceptedAnswers": [
+      "Privilege access management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-mgmt",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-password-vaulting",
+    "term": "Password vaulting",
+    "definition": "Keeping privileged credentials in a central encrypted store that releases them only to approved users for a limited time and can rotate them after use.",
+    "acceptedAnswers": [
+      "Password vault"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-mgmt",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-ephemeral-credentials",
+    "term": "Ephemeral credentials",
+    "definition": "Temporary logins generated automatically for one session or task that become invalid as soon as the task ends, leaving nothing long-lived to steal.",
+    "acceptedAnswers": [
+      "Ephemeral credential"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-mgmt",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-logical-access-policy",
+    "term": "Logical access policy",
+    "definition": "Rule enforced by technology, such as file permissions, ACLs, or conditional login settings, that decides who can reach systems and data.",
+    "acceptedAnswers": [
+      "Technical access policy",
+      "Logical policy",
+      "Technical policy"
+    ],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-mgmt",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management; SY0-801 objective 4.5"
+  },
+  {
+    "id": "secplus-def-administrative-access-policy",
+    "term": "Administrative access policy",
+    "definition": "Rule set in writing by management, such as onboarding approvals, separation of duties, or acceptable use, that guides how rights are granted and used.",
+    "acceptedAnswers": [
+      "Business access policy",
+      "Administrative policy",
+      "Business policy"
+    ],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-access-mgmt",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management; SY0-801 objective 4.5"
+  },
+  {
+    "id": "secplus-def-passkey",
+    "term": "Passkey",
+    "definition": "FIDO credential made of a key pair whose private key stays on the user's device or synced keychain and is unlocked with a fingerprint, face, or PIN, resisting phishing.",
+    "acceptedAnswers": [
+      "Passkeys"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-tools",
+    "origin": "objectives",
+    "source": "FIDO Alliance – Passkeys; Microsoft Learn – Passkeys (FIDO2) authentication in Microsoft Entra ID; SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://fidoalliance.org/passkeys/",
+      "https://learn.microsoft.com/en-us/entra/identity/authentication/concept-authentication-passkeys-fido2"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-password-manager",
+    "term": "Password manager",
+    "definition": "Application that stores a user's many logins in an encrypted vault behind one master secret and can generate strong, unique entries for each site.",
+    "acceptedAnswers": [
+      "Password managers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-tools",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-passwordless-authentication",
+    "term": "Passwordless authentication",
+    "definition": "Login approach that verifies users without any memorized secret, relying instead on biometrics, hardware security keys, smart cards, or certificates.",
+    "acceptedAnswers": [
+      "Passwordless",
+      "Passwordless login"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-tools",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-compromised-credential-monitoring",
+    "term": "Compromised credential monitoring",
+    "definition": "Continuous checking of staff usernames and passwords against data exposed in breaches or sold on the dark web, forcing a reset when a match turns up.",
+    "acceptedAnswers": [
+      "Breached credential monitoring",
+      "Leaked credential monitoring"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-tools",
+    "origin": "objectives",
+    "source": "NIST SP 800-63B – Memorized secret verifiers (check against breach corpuses); Microsoft Learn – Microsoft Entra ID Protection risks (leaked credentials); SY0-801 objective 4.5",
+    "sourceUrls": [
+      "https://pages.nist.gov/800-63-4/sp800-63b.html",
+      "https://learn.microsoft.com/en-us/entra/id-protection/concept-identity-protection-risks"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-password-length",
+    "term": "Password length",
+    "definition": "Policy setting for the minimum number of characters a secret must contain; longer values greatly increase the effort needed for brute-force guessing.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-rules",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-password-complexity",
+    "term": "Password complexity",
+    "definition": "Policy requiring a mix of character types, such as uppercase and lowercase letters, numbers, and symbols, to make a secret less predictable.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-rules",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-password-reuse",
+    "term": "Password reuse",
+    "definition": "Using the same secret on several accounts or recycling an earlier one, so a single leak exposes many systems; history settings are used to block it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-rules",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-def-password-expiration",
+    "term": "Password expiration",
+    "definition": "Policy that forces users to choose a new secret after a fixed period, such as 90 days; current NIST guidance advises a change only after suspected compromise.",
+    "acceptedAnswers": [
+      "Password expiry"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-rules",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-password-age",
+    "term": "Password age",
+    "definition": "Measure of how long a secret has been in use, including a minimum setting that stops users from changing it again right away to cycle back to an old one.",
+    "acceptedAnswers": [
+      "Minimum password age"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "group": "iam-password-rules",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-def-resource-provisioning",
+    "term": "Resource provisioning",
+    "definition": "Automatically creating, changing, or removing virtual machines, storage, databases, and networks from predefined templates and policies so each one is set up consistently.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-use-cases",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations"
+  },
+  {
+    "id": "secplus-def-desired-state-management",
+    "term": "Desired state management",
+    "definition": "Declaring in a file how systems should be configured, then letting automation check them regularly and correct any drift back to that defined setup.",
+    "acceptedAnswers": [
+      "Desired state configuration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-use-cases",
+    "origin": "objectives",
+    "source": "Microsoft Learn – Microsoft Desired State Configuration overview; Microsoft Learn – Configuring the Local Configuration Manager (PowerShell DSC); SY0-801 objective 4.6",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/powershell/dsc/overview",
+      "https://learn.microsoft.com/en-us/powershell/dsc/managing-nodes/metaconfig?view=dsc-1.1"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-anomaly-detection",
+    "term": "Anomaly detection",
+    "definition": "Automated finding of activity that departs from a learned normal pattern, such as an unusual login time or traffic spike, to raise alerts for investigation.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-use-cases",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 17: Understanding Security Alerting and Monitoring Concepts and Tools; SY0-801 objective 4.6"
+  },
+  {
+    "id": "secplus-def-ticket-management",
+    "term": "Ticket management",
+    "definition": "Automatically opening, prioritizing, assigning, escalating, and tracking help desk or incident records when monitoring tools detect an issue.",
+    "acceptedAnswers": [
+      "Ticket creation",
+      "Ticketing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-use-cases",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations"
+  },
+  {
+    "id": "secplus-def-guardrails",
+    "term": "Guardrails",
+    "definition": "Automated limits that block or flag actions outside security policy, such as creating public storage buckets, steering users and systems toward compliant choices.",
+    "acceptedAnswers": [
+      "Guard rails",
+      "Guardrail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-use-cases",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations"
+  },
+  {
+    "id": "secplus-def-enforcing-baselines",
+    "term": "Enforcing baselines",
+    "definition": "Automatically applying and checking a standard secure configuration, such as required patches and settings, on every system and fixing any that do not comply.",
+    "acceptedAnswers": [
+      "Baseline enforcement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-use-cases",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations"
+  },
+  {
+    "id": "secplus-def-continuous-integration",
+    "term": "Continuous integration",
+    "definition": "Development practice in which developers merge code changes into a shared repository often, with each merge triggering an automatic build and tests.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-devops",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 20: Explain the importance of automation and orchestration related to secure operations"
+  },
+  {
+    "id": "secplus-def-continuous-delivery",
+    "term": "Continuous delivery",
+    "definition": "Practice of keeping code always ready to release through automated tests and staging, while a person approves the final push to production.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-devops",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-def-continuous-deployment",
+    "term": "Continuous deployment",
+    "definition": "Practice in which every code change that passes the automated tests is released to production automatically, with no manual approval step.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-devops",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 20: Explain the importance of automation and orchestration related to secure operations"
+  },
+  {
+    "id": "secplus-def-continuous-integration-and-continuous-deployment",
+    "term": "Continuous integration and continuous deployment",
+    "definition": "Combined automated pipeline that takes code from commit through building, testing, and security checks to release, so changes reach users quickly and consistently.",
+    "acceptedAnswers": [
+      "Continuous integration/continuous deployment",
+      "Continuous integration and continuous delivery"
+    ],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-devops",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations; SY0-801 objective 4.6"
+  },
+  {
+    "id": "secplus-def-application-programming-interface",
+    "term": "Application programming interface",
+    "definition": "Defined set of calls that lets one program request data or actions from another, used to connect security tools so they share alerts and trigger responses.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-devops",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations"
+  },
+  {
+    "id": "secplus-def-agentic-ai",
+    "term": "Agentic AI",
+    "definition": "Software that uses a language model to plan and carry out multistep tasks on its own, calling tools and taking actions toward a goal with little human direction.",
+    "acceptedAnswers": [
+      "Agentic artificial intelligence",
+      "AI agent"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-ai",
+    "origin": "objectives",
+    "source": "IBM Think – What is agentic AI?; AWS – What is agentic AI?; SY0-801 objective 4.6",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/agentic-ai",
+      "https://aws.amazon.com/what-is/agentic-ai/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-chatbot",
+    "term": "Chatbot",
+    "definition": "Conversational program that answers typed or spoken questions in natural language, for example letting analysts query logs or users get help desk answers in plain words.",
+    "acceptedAnswers": [
+      "Chat bot"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-ai",
+    "origin": "objectives",
+    "source": "IBM Think – What is a chatbot?; AWS – What is a chatbot?; SY0-801 objective 4.6",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/chatbots",
+      "https://aws.amazon.com/what-is/chatbot/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-predictive-analysis",
+    "term": "Predictive analysis",
+    "definition": "Using statistics and machine learning on historical data to forecast likely future events, such as which systems will probably be attacked or fail next.",
+    "acceptedAnswers": [
+      "Predictive analytics"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-ai",
+    "origin": "objectives",
+    "source": "IBM Think – What is predictive analytics?; Microsoft AI 101 – Predictive AI; SY0-801 objective 4.6",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/predictive-analytics",
+      "https://www.microsoft.com/en-us/ai/ai-101/predictive-ai"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-ai-augmented-baseline",
+    "term": "AI-augmented baseline",
+    "definition": "Normal behavior profile for users, hosts, or networks that machine learning builds and keeps updating automatically, so deviations stand out without manual thresholds.",
+    "acceptedAnswers": [
+      "AI-augmented baselines",
+      "Artificial intelligence-augmented baseline"
+    ],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "group": "auto-ai",
+    "origin": "objectives",
+    "source": "IBM Think – What is user and entity behavior analytics (UEBA)?; Microsoft Learn – Identify advanced threats with UEBA in Microsoft Sentinel; SY0-801 objective 4.6",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/ueba",
+      "https://learn.microsoft.com/en-us/azure/sentinel/identify-threats-with-entity-behavior-analytics"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-incident-response-plan",
+    "term": "Incident response plan",
+    "definition": "Formal document, backed by management, that defines how the organization detects, handles, and recovers from security breaches, including roles, contacts, and escalation steps.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-preparation",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-playbook",
+    "term": "Playbook",
+    "definition": "Step-by-step guide for handling one specific type of attack, such as ransomware or phishing, often automated in a SOAR platform.",
+    "acceptedAnswers": [
+      "Incident response playbook",
+      "Playbooks"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-preparation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-tabletop-exercise",
+    "term": "Tabletop exercise",
+    "definition": "Discussion-based session in which members talk through their actions in a realistic attack scenario in a meeting room, without touching live systems.",
+    "acceptedAnswers": [
+      "Table-top exercise",
+      "Tabletop"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-preparation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-simulation-exercise",
+    "term": "Simulation exercise",
+    "definition": "Drill that acts out a realistic incident or disaster, often with a white team scoring the response, so staff practice real recovery steps under pressure.",
+    "acceptedAnswers": [
+      "Simulation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4",
+      "SY0-801/4.7"
+    ],
+    "group": "ir-preparation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-incident-response-team",
+    "term": "Incident response team",
+    "definition": "Designated group, such as a coordinator, analysts, legal, communications, and management, each member with a defined role when a breach is handled.",
+    "acceptedAnswers": [
+      "Computer security incident response team"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-preparation",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 21: Explain appropriate incident response activities; SY0-801 objective 4.7"
+  },
+  {
+    "id": "secplus-def-detection",
+    "term": "Detection",
+    "definition": "Stage in which signs of a possible breach are first noticed, from alerts, logs, monitoring tools, or user reports, and checked to confirm a real incident.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-identification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-threat-hunting",
+    "term": "Threat hunting",
+    "definition": "Proactive search through networks, endpoints, and logs for hidden attackers that automated tools missed, usually driven by a hypothesis or intelligence feeds.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-identification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-internal-advisory",
+    "term": "Internal advisory",
+    "definition": "Notice issued inside the organization, for example by the security team, that warns staff about a current threat or incident and tells them what to do.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-identification",
+    "origin": "objectives",
+    "source": "NIST SP 800-61 Rev. 2 – Computer Security Incident Handling Guide (communications); CISA – Cybersecurity Alerts & Advisories; SY0-801 objective 4.7",
+    "sourceUrls": [
+      "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf",
+      "https://www.cisa.gov/news-events/cybersecurity-advisories"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-external-advisory",
+    "term": "External advisory",
+    "definition": "Notice published by an outside body, such as a vendor, CERT, or government agency like CISA, that describes a threat or flaw with indicators and mitigations.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-identification",
+    "origin": "objectives",
+    "source": "CISA – Cybersecurity Alerts & Advisories; NIST SP 800-61 Rev. 2 – Computer Security Incident Handling Guide; SY0-801 objective 4.7",
+    "sourceUrls": [
+      "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r2.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-preparation",
+    "term": "Preparation",
+    "definition": "First phase of the response life cycle, in which plans, playbooks, tools, contacts, and trained staff are put in place before any breach occurs.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-containment",
+    "term": "Containment",
+    "definition": "Phase that limits an incident's spread and damage, for example by segmenting networks or disabling accounts, before the cause is removed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-quarantine",
+    "term": "Quarantine",
+    "definition": "Cutting one specific compromised host or file off from the network or system so it cannot communicate or spread, while keeping it for analysis.",
+    "acceptedAnswers": [
+      "Isolation",
+      "Quarantine/isolation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.7"
+  },
+  {
+    "id": "secplus-def-eradication",
+    "term": "Eradication",
+    "definition": "Phase that removes the cause of a breach, such as malware, backdoors, and attacker accounts, and closes the flaw that was exploited.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-recovery",
+    "term": "Recovery",
+    "definition": "Phase that restores affected systems and data to normal operation, validates them, and watches closely for signs that the attacker has returned.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-response",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-negotiation",
+    "term": "Negotiation",
+    "definition": "Communicating with an extortion group, usually through specialists and with legal advice, to verify claims, gain time, or settle terms after a ransomware attack.",
+    "acceptedAnswers": [
+      "Ransom negotiation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-response",
+    "origin": "objectives",
+    "source": "UK NCSC – Guidance for organisations considering payment in ransomware incidents; U.S. Treasury OFAC – Updated advisory on potential sanctions risks for facilitating ransomware payments; SY0-801 objective 4.7",
+    "sourceUrls": [
+      "https://www.ncsc.gov.uk/guidance/organisations-considering-payment-in-ransomware-incidents",
+      "https://ofac.treasury.gov/media/912981/download?inline"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-lessons-learned",
+    "term": "Lessons learned",
+    "definition": "Review held soon after a breach is closed in which the team discusses what happened, what worked, and what to change in plans and controls.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-post",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-root-cause-analysis",
+    "term": "Root cause analysis",
+    "definition": "Investigation that traces an incident back to the underlying flaw or failure that allowed it, so the fix prevents a repeat rather than treating symptoms.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-post",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-five-whys",
+    "term": "Five whys",
+    "definition": "Simple questioning technique, from Lean manufacturing, that asks repeatedly what led to each answer, several times in a row, to drill down from a symptom to its origin.",
+    "acceptedAnswers": [
+      "5 whys",
+      "Five whys technique"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-post",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-post-incident-reporting",
+    "term": "Post-incident reporting",
+    "definition": "Writing the final account of a breach, covering the timeline, impact, actions taken, underlying cause, and recommendations, for management and other stakeholders.",
+    "acceptedAnswers": [
+      "Post-incident report"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-post",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.7"
+  },
+  {
+    "id": "secplus-def-mandatory-notification",
+    "term": "Mandatory notification",
+    "definition": "Disclosure of a breach that a law, regulation, or contract requires, such as telling regulators or affected people within a set deadline.",
+    "acceptedAnswers": [
+      "Mandatory reporting",
+      "Mandatory breach notification"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-notification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.7"
+  },
+  {
+    "id": "secplus-def-customer-notification",
+    "term": "Customer notification",
+    "definition": "Telling affected clients about a breach, what data was involved, and what steps they can take to protect themselves, while keeping their trust.",
+    "acceptedAnswers": [
+      "Notifying customers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-notification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.7"
+  },
+  {
+    "id": "secplus-def-law-enforcement-notification",
+    "term": "Law enforcement notification",
+    "definition": "Telling police or agencies like the FBI about a crime such as ransomware or fraud so they can investigate; they may also ask that evidence be preserved.",
+    "acceptedAnswers": [
+      "Notifying law enforcement",
+      "Law enforcement reporting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "ir-notification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 22: Given a scenario, use data sources to support an investigation; SY0-801 objective 4.7"
+  },
+  {
+    "id": "secplus-def-human-resources",
+    "term": "Human Resources",
+    "definition": "Business unit that handles staff matters and joins an investigation when an employee is involved, for example in insider misuse, discipline, or termination.",
+    "acceptedAnswers": [
+      "Human Resources department"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "ir-notification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-legal-department",
+    "term": "Legal department",
+    "definition": "Counsel that advises during an investigation on evidence handling, privacy laws, disclosure duties, contracts, and possible lawsuits or prosecution.",
+    "acceptedAnswers": [
+      "Legal",
+      "Legal team"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "ir-notification",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-digital-forensics",
+    "term": "Digital forensics",
+    "definition": "Discipline of collecting, preserving, analyzing, and reporting electronic evidence in a way that holds up in legal proceedings.",
+    "acceptedAnswers": [
+      "Computer forensics"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "inv-forensics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-chain-of-custody",
+    "term": "Chain of custody",
+    "definition": "Documented record of every person who handled a piece of evidence, when, and why, from collection to disposal, proving it was not tampered with.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "inv-forensics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-e-discovery",
+    "term": "E-discovery",
+    "definition": "Legal process of identifying, collecting, and producing digitally stored information, such as email and documents, in response to a lawsuit or request.",
+    "acceptedAnswers": [
+      "Electronic discovery",
+      "eDiscovery"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "inv-forensics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-preservation",
+    "term": "Preservation",
+    "definition": "Protecting collected evidence from change or loss for as long as needed, for example by keeping verified copies in secure, tamper-evident storage.",
+    "acceptedAnswers": [
+      "Evidence preservation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "inv-forensics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-evidence-acquisition",
+    "term": "Evidence acquisition",
+    "definition": "Collecting digital evidence from systems, memory, disks, and networks in a controlled way that keeps it intact and verifiable, often following RFC 3227.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "inv-forensics",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-order-of-volatility",
+    "term": "Order of volatility",
+    "definition": "Rule for collecting the most short-lived evidence first, such as CPU cache and RAM, before more lasting data like disks and backups.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "group": "inv-forensics",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-logical-access-log",
+    "term": "Logical access log",
+    "definition": "Record of attempts to reach systems, files, and applications, showing which identity tried, what it touched, and whether its rights allowed it.",
+    "acceptedAnswers": [
+      "Logical access logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-access",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-physical-access-log",
+    "term": "Physical access log",
+    "definition": "Record of entries and exits through doors, gates, and turnstiles, captured by badge readers or visitor sign-in, showing who entered which area and when.",
+    "acceptedAnswers": [
+      "Physical access logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-access",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-authentication-log",
+    "term": "Authentication log",
+    "definition": "Record of login events, including successful and failed sign-ins, the method or factor used, the source address, and lockouts.",
+    "acceptedAnswers": [
+      "Authentication logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-access",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 22: Given a scenario, use data sources to support an investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-audit-log",
+    "term": "Audit log",
+    "definition": "Tamper-resistant chronological record of security-relevant actions, such as permission changes and admin activity, kept to show who did what for accountability.",
+    "acceptedAnswers": [
+      "Audit logs",
+      "Audit trail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-access",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-device-log",
+    "term": "Device log",
+    "definition": "Events recorded by network and infrastructure hardware, such as routers, switches, firewalls, and access points, about configuration changes, errors, and traffic decisions.",
+    "acceptedAnswers": [
+      "Device logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-server-log",
+    "term": "Server log",
+    "definition": "Events recorded by the operating systems and hosted services of back-end machines, such as web, mail, and DNS hosts, including client requests and service errors.",
+    "acceptedAnswers": [
+      "Server logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 22: Given a scenario, use data sources to support an investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-application-log",
+    "term": "Application log",
+    "definition": "Events written by a specific software program about its own operation, such as user actions, errors, and crashes, useful when a breach targets that program.",
+    "acceptedAnswers": [
+      "Application logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation"
+  },
+  {
+    "id": "secplus-def-endpoint-log",
+    "term": "Endpoint log",
+    "definition": "Events recorded on user devices such as laptops, desktops, and phones, including software installs, processes started, and file changes, often gathered by EDR agents.",
+    "acceptedAnswers": [
+      "Endpoint logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation"
+  },
+  {
+    "id": "secplus-def-network-log",
+    "term": "Network log",
+    "definition": "Records of traffic flowing between hosts, such as connections, protocols used, bandwidth, and large transfers, used to spot scanning or data exfiltration.",
+    "acceptedAnswers": [
+      "Network logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation"
+  },
+  {
+    "id": "secplus-def-communication-log",
+    "term": "Communication log",
+    "definition": "Records of messaging activity, such as email, chat, and VoIP calls, showing senders, recipients, and times, used to trace phishing or leaks.",
+    "acceptedAnswers": [
+      "Communication logs"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-metadata",
+    "term": "Metadata",
+    "definition": "Information that describes other information, such as a file's author and timestamps, an email's header path, or a photo's GPS location.",
+    "acceptedAnswers": [
+      "Meta data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-log-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation"
+  },
+  {
+    "id": "secplus-def-internet-protocol-flow-information-export",
+    "term": "Internet Protocol Flow Information Export",
+    "definition": "IETF standard, based on Cisco's version 9 format, that sends summaries of traffic conversations, such as source, destination, ports, and byte counts, from routers and switches to a collector.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 17: Understanding Security Alerting and Monitoring Concepts and Tools"
+  },
+  {
+    "id": "secplus-def-automated-report",
+    "term": "Automated report",
+    "definition": "Summary of security metrics and events that a SIEM or other tool produces on a schedule or when triggered, without manual compilation.",
+    "acceptedAnswers": [
+      "Automated reports"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation"
+  },
+  {
+    "id": "secplus-def-surveillance-footage",
+    "term": "Surveillance footage",
+    "definition": "Recordings from security cameras that can confirm who was physically present at a place and time, supporting badge records and other evidence.",
+    "acceptedAnswers": [
+      "Video footage",
+      "CCTV footage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-packet-capture",
+    "term": "Packet capture",
+    "definition": "Recording of full network frames, including headers and payloads, with a tool such as Wireshark or tcpdump, so traffic can be reconstructed in detail.",
+    "acceptedAnswers": [
+      "Packet captures"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation"
+  },
+  {
+    "id": "secplus-def-log-parsing",
+    "term": "Log parsing",
+    "definition": "Breaking raw event entries into structured fields, such as time, source address, user, and event ID, so they can be searched, filtered, and correlated.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 17: Understanding Security Alerting and Monitoring Concepts and Tools; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-regular-expression",
+    "term": "Regular expression",
+    "definition": "Text pattern written with special symbols that matches strings such as IP addresses or card numbers, used to search logs and in DLP rules.",
+    "acceptedAnswers": [
+      "Regex",
+      "Regexp"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-def-timeline-analysis",
+    "term": "Timeline analysis",
+    "definition": "Ordering events from logs and other evidence by time to reconstruct the sequence of an attack and spot when and how it began.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-data-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-system-image",
+    "term": "System image",
+    "definition": "Complete copy of a computer's storage, including the OS, applications, and data, used to examine or restore that machine later.",
+    "acceptedAnswers": [
+      "Disk image"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-evidence",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-bit-level-copy",
+    "term": "Bit-level copy",
+    "definition": "Exact sector-by-sector duplicate of a drive that includes deleted files, slack, and unallocated space, verified with a hash for forensic use.",
+    "acceptedAnswers": [
+      "Bit-by-bit copy",
+      "Bit-level image",
+      "Bitstream copy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-evidence",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities"
+  },
+  {
+    "id": "secplus-def-memory-dump",
+    "term": "Memory dump",
+    "definition": "Copy of the contents of a running computer's volatile working storage, which can reveal processes, network connections, and encryption keys that vanish at power-off.",
+    "acceptedAnswers": [
+      "RAM dump",
+      "Memory capture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-evidence",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 21: Understanding Appropriate Incident Response Activities; SY0-801 objective 4.8"
+  },
+  {
+    "id": "secplus-def-file-integrity-monitoring",
+    "term": "File integrity monitoring",
+    "definition": "Tool that hashes critical operating system binaries and configuration data and alerts when any of them change unexpectedly, revealing tampering.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-evidence",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 18: Modifying Enterprise Capabilities to Enhance Security"
+  },
+  {
+    "id": "secplus-def-log-integrity",
+    "term": "Log integrity",
+    "definition": "Assurance that recorded events have not been altered or deleted, protected by hashing, write-once storage, and sending copies to a central server.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "group": "inv-evidence",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 22: Using Data Sources to Support an Investigation; SY0-801 objective 4.8"
+  }
+]

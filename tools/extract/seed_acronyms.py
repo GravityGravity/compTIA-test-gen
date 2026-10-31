@@ -4,6 +4,7 @@ Dev-only tool. It is not part of the app.
 
     tools/extract/.venv/bin/python -I tools/extract/seed_acronyms.py a-plus
     tools/extract/.venv/bin/python -I tools/extract/seed_acronyms.py network-plus
+    tools/extract/.venv/bin/python -I tools/extract/seed_acronyms.py security-plus
 
 Reads sources-text/derived/<cert>-acronyms.md and writes content/acronyms/<cert>.json with one record
 for each official acronym. Each record is mapped to the objectives that name the acronym or its
@@ -42,6 +43,15 @@ CERTS = {
         },
         "lists": {"Network+": "N10-009"},
         "source": {("N10-009",): "CompTIA Network+ (N10-009) Exam Objectives – Acronym List"},
+    },
+    "security-plus": {
+        "list": TEXT / "derived" / "security-plus-acronyms.md",
+        "prefix": "secplus-acr-",
+        "objectives": {
+            "SY0-801": TEXT / "sec" / "objectives-sy0-801" / "01-security-sy0-801-exam-objectives.md",
+        },
+        "lists": {"Security+": "SY0-801"},
+        "source": {("SY0-801",): "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"},
     },
 }
 

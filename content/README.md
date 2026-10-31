@@ -4,8 +4,8 @@ The records that the app uses. The app does not read the books; the books in `so
 
 | Folder | Module | Files |
 |---|---|---|
-| `acronyms/` | Acronym Exercise | `a-plus.json`, `network-plus.json`, `security-plus.json` (planned) – one file for each certification |
-| `definitions/` | Definition Exercise | `a-plus/`, `network-plus/`, `security-plus/` (planned) – one file for each exam domain |
+| `acronyms/` | Acronym Exercise | `a-plus.json`, `network-plus.json`, `security-plus.json` – one file for each certification |
+| `definitions/` | Definition Exercise | `a-plus/`, `network-plus/`, `security-plus/` – one file for each exam domain |
 | `core1/`, `core2/`, `network/`, `security/` (planned) | Core 1 Exam, Core 2 Exam, Network+ Exam, Security+ Exam | `pool/d<N>.json` (pool questions, one file for each domain), `scenarios/d<N>.json` (scenario records), `grammar.json` (grammar rules for this exam) |
 | `shared/` | All exam modules | `grammar.json` – grammar rules and noun pools that every exam uses |
 
@@ -35,7 +35,7 @@ The Acronym Exercise has typed questions only: the app shows the acronym and the
 
 | Field | Meaning |
 |---|---|
-| `id` | Stable key: `aplus-acr-…` or `netplus-acr-…`. |
+| `id` | Stable key: `aplus-acr-…`, `netplus-acr-…`, or `secplus-acr-…`. |
 | `acronym` | Shown in the question. Keep the official capitals (`DoS`, `IPsec`). |
 | `expanded` | The correct expanded form, as the objectives and current books write it. The typed answer, and the answer the app shows after "Check answer". |
 | `meaning` | One sentence, 10–25 words, in our own words: what the thing is or does, with key exam facts (for example a port number). Shown in the feedback box after the user answers. |
@@ -130,11 +130,23 @@ Network+ Domain 4 (`network-plus/d4-network-security.json`, 90 terms): `sec-cryp
 
 Network+ Domain 5 (`network-plus/d5-network-troubleshooting.json`, 117 terms): `ts-method-steps`, `ts-method-techniques`, `cable-signal`, `cable-faults`, `interface-issues`, `interface-hardware`, `svc-issue-stp-roles`, `svc-issue-stp-states`, `svc-issue-routing`, `svc-issue-config`, `perf-network`, `perf-wireless`, `tool-commands-reachability`, `tool-commands-host`, `tool-software`, `tool-hardware`, `tool-device-show`.
 
+Security+ Domain 1 (`security-plus/d1-general-security-concepts.json`, 96 terms): `concepts-cia`, `concepts-aaa`, `concepts-principles`, `control-categories`, `control-types`, `change-planning`, `change-execution`, `change-technical`, `pki-keys`, `certificate-trust`, `certificate-lifecycle`, `encryption-levels`, `encryption-types`, `crypto-tools`, `obfuscation`, `hashing`. Obfuscation, tokenization, and data masking are tagged 1.3 and 3.3, so the Domain 3 file does not repeat them.
+
+Security+ Domain 2 (`security-plus/d2-threats-vulnerabilities-attacks.json`, 189 terms): `threat-actors`, `threat-actor-attributes`, `threat-motives-gain`, `threat-motives-cause`, `threat-intel-sources`, `vuln-scoring`, `threat-vector-message`, `threat-vector-file`, `threat-vector-browser`, `threat-vector-network`, `threat-supply-chain`, `threat-vector-devices`, `attack-physical-entry`, `attack-wireless-signal`, `vuln-system-state`, `vuln-app-code`, `vuln-attack-surfaces`, `attack-malware-delivery`, `attack-malware-payload`, `attack-network-traffic`, `attack-phishing`, `attack-social-tactics`, `indicator-artifacts`, `indicator-behavior`, `attack-app-injection`, `attack-app-abuse`, `attack-credential`, `ai-attacks`, `ai-risks`.
+
+Security+ Domain 3 (`security-plus/d3-security-architecture.json`, 121 terms): `arch-cloud`, `arch-infrastructure`, `arch-considerations`, `infra-design`, `infra-zero-trust`, `infra-remote`, `infra-identity`, `data-types-states`, `data-classifications`, `data-methods`, `data-roles`, `data-handling`, `data-lifecycle`, `data-compliance`, `resilience-sites`, `resilience-redundancy`, `resilience-power`, `resilience-backups`, `resilience-continuity`, `resilience-metrics`.
+
+Security+ Domain 4 (`security-plus/d4-security-operations.json`, 228 terms): `ops-mitigation`, `ops-deception`, `ops-ids`, `ops-firewall`, `ops-content-filter`, `ops-endpoint`, `ops-nac`, `ops-appsec`, `ops-email`, `asset-lifecycle`, `asset-records`, `asset-disposal`, `vm-identify`, `vm-response`, `vm-reporting`, `monitor-resources`, `monitor-activities`, `monitor-tools`, `monitor-protocols`, `iam-lifecycle`, `iam-account-types`, `iam-federation`, `iam-mfa`, `iam-access-models`, `iam-access-mgmt`, `iam-password-tools`, `iam-password-rules`, `auto-use-cases`, `auto-devops`, `auto-ai`, `ir-preparation`, `ir-identification`, `ir-response`, `ir-post`, `ir-notification`, `inv-forensics`, `inv-log-access`, `inv-log-sources`, `inv-data-sources`, `inv-evidence`.
+
+Security+ Domain 5 (`security-plus/d5-security-program-management.json`, 136 terms): `gov-artifacts`, `gov-guidance`, `gov-standards`, `gov-policies-org`, `gov-policies-data`, `risk-process`, `risk-analysis`, `risk-treatment`, `vendor-selection`, `vendor-agreements`, `vendor-oversight`, `compliance-programs`, `compliance-consequences`, `compliance-privacy`, `compliance-legal`, `audit-internal`, `audit-external`, `audit-evidence`, `audit-pentest`, `audit-recon-frameworks`, `awareness-training`, `awareness-delivery`, `awareness-topics`.
+
+A Security+ term that more than one objective names has one record, in the file of its main objective, tagged with every objective (for example Snapshot 3.4 and 4.8, Service account 4.5 and 3.2, Simulation exercise 3.4 and 4.7). The concepts Business continuity and Disaster recovery (3.4) and their plans (5.1) are separate records.
+
 ## How the acronym files were made
 
 1. `tools/extract/seed_acronyms.py <cert>` seeded one record per official acronym from `sources-text/derived/<cert>-acronyms.md` and mapped it to the objectives that name it. It does not overwrite an existing file.
 2. By hand: corrected expanded forms where the official list has errors or the two A+ lists differ (each one has a `note`), added objective links the seed missed, and added the extras.
-3. Extras (`official: false`) are kept only when a current book uses them (A+: Exam Cram 2e or Docter; Network+: Exam Cram or West), their topic is a current objective, they are not obsolete, and the books agree on the expanded form.
+3. Extras (`official: false`) are kept only when a current book uses them (A+: Exam Cram 2e or Docter; Network+: Exam Cram or West), their topic is a current objective, they are not obsolete, and the books agree on the expanded form. Security+ has no SY0-801 book, so its extras (80) come from the four SY0-701 books, only where the SY0-801 objectives still cover the topic (2026-10-30). Its official list is short (106) and leaves out common acronyms that the objectives name in full, for example AES, ACL, and RADIUS.
 
 ## Pool question (exam modules)
 
@@ -179,6 +191,7 @@ Network+ Domain 5 (`network-plus/d5-network-troubleshooting.json`, 117 terms): `
 | `answerOrigin` | Optional: `written` when the book gives no answer and we wrote it from the chapter. |
 | `source` | Book, chapter, and question number (for `written`: book and chapter). |
 | `note` | Optional. For an older-objective book question: the old objective and why the current objective was chosen. Not shown in the app. |
+| `sourceUrls`, `verified` | Only for a record written from online sources (Security+ SY0-801 topics that no book covers; also allowed on acronym and definition records): `sourceUrls` lists the pages of the facts, and `verified` is `false` until the verification pass checks the record against at least two independent sources, then the date (`"2026-11-02"`). `source` names the main page. An exam cannot be activated while a record has `verified: false`. |
 
 Rules: copy every book practice question for the exam (older-objective books too, as they are); keep one copy of a question that is in two books; every topic has at least 1 question (2 is the target); each exam has at least 800.
 
@@ -221,6 +234,7 @@ Rules: copy every book practice question for the exam (older-objective books too
 | `explanation` | Why the answer fits the clues: 1–3 sentences. The generator adds a sentence that links the selected clues (and for a FIRST step question, one more), so the asked question has 2–5. |
 | `related` | `fault` and `requirement`: at least 3 records of the same exam and kind with different answers. Their answers are the distractors. |
 | `origin`, `source` | `written`, and the book and chapter of the facts. |
+| `sourceUrls`, `verified` | As for pool questions: only for a record written from online sources. |
 
 ## Grammar files (exam modules)
 

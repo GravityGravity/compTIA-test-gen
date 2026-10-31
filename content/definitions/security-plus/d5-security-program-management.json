@@ -1,0 +1,2982 @@
+[
+  {
+    "id": "secplus-def-guideline",
+    "term": "Guideline",
+    "definition": "Recommended but optional advice that steers behavior and decisions, worded with phrases like should or highly recommended so staff keep some flexibility in how they act.",
+    "acceptedAnswers": [
+      "Guidelines"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-policy",
+    "term": "Policy",
+    "definition": "High-level, mandatory statement from management that sets an organization's rules, goals, and expectations for a subject area, such as acceptable use or information security.",
+    "acceptedAnswers": [
+      "Policies"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance"
+  },
+  {
+    "id": "secplus-def-standard",
+    "term": "Standard",
+    "definition": "Mandatory document that sets specific, measurable requirements, such as a minimum password length or approved encryption algorithms, so security practices stay consistent across the organization.",
+    "acceptedAnswers": [
+      "Standards"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-procedure",
+    "term": "Procedure",
+    "definition": "Detailed, step-by-step set of written instructions that tells staff exactly how to carry out a task in line with the organization's rules.",
+    "acceptedAnswers": [
+      "Procedures"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance"
+  },
+  {
+    "id": "secplus-def-runbook",
+    "term": "Runbook",
+    "definition": "Documented sequence of operational steps, often partly or fully automated, that operators follow to perform a specific routine IT task, such as restarting a service or rotating keys.",
+    "acceptedAnswers": [
+      "Runbooks",
+      "Run book"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-artifacts",
+    "origin": "objectives",
+    "source": "AWS Well-Architected Operational Excellence Pillar – OPS07-BP03 Use runbooks to perform procedures; PagerDuty – What is a runbook?; SY0-801 objective 5.1",
+    "sourceUrls": [
+      "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_ready_to_support_use_runbooks.html",
+      "https://www.pagerduty.com/resources/automation/learn/what-is-a-runbook/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-benchmark",
+    "term": "Benchmark",
+    "definition": "Consensus-based set of recommended secure configuration settings for a specific product, such as an operating system or database, published by a body like the Center for Internet Security.",
+    "acceptedAnswers": [
+      "Benchmarks",
+      "CIS Benchmark"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4",
+      "SY0-801/5.1"
+    ],
+    "group": "gov-guidance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-advisory",
+    "term": "Advisory",
+    "definition": "Published notice from a vendor or an agency such as CISA that warns about a specific vulnerability or active threat, lists affected products, and recommends actions.",
+    "acceptedAnswers": [
+      "Advisories",
+      "Security advisory"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-guidance",
+    "origin": "objectives",
+    "source": "CISA – Cybersecurity Advisories; Microsoft Security Response Center – Security Update Guide; SY0-801 objective 5.1",
+    "sourceUrls": [
+      "https://www.cisa.gov/news-events/cybersecurity-advisories",
+      "https://msrc.microsoft.com/update-guide"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-implementation-guide",
+    "term": "Implementation guide",
+    "definition": "Detailed document, such as those published by the US Department of Defense, that tells administrators exactly how to configure and deploy a specific product securely.",
+    "acceptedAnswers": [
+      "Implementation guides"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-guidance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-reference-architecture",
+    "term": "Reference architecture",
+    "definition": "Proven, documented template design that shows the recommended components, layout, and security controls for a type of system, used as a starting point for new deployments.",
+    "acceptedAnswers": [
+      "Reference architectures"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-guidance",
+    "origin": "objectives",
+    "source": "NIST SP 500-292 – NIST Cloud Computing Reference Architecture; Microsoft Azure Architecture Center; SY0-801 objective 5.1",
+    "sourceUrls": [
+      "https://www.nist.gov/publications/nist-cloud-computing-reference-architecture",
+      "https://learn.microsoft.com/en-us/azure/architecture/browse/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-security-baseline",
+    "term": "Security baseline",
+    "definition": "Approved minimum set of security configuration settings for a type of system, used as the secure starting point for every new build and to detect configuration drift.",
+    "acceptedAnswers": [
+      "Baseline",
+      "Baselines",
+      "Secure baseline"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-standards",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-password-standard",
+    "term": "Password standard",
+    "definition": "Mandatory requirements for how credentials are created, stored, and reset, such as minimum length, salted hashing of stored values, and identity checks before a reset.",
+    "acceptedAnswers": [
+      "Password standards"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-standards",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-physical-security-standard",
+    "term": "Physical security standard",
+    "definition": "Mandatory requirements for protecting facilities and equipment, such as access control vestibules, badge readers, guards, visitor logs, and CCTV coverage.",
+    "acceptedAnswers": [
+      "Physical security standards"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-standards",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-encryption-standard",
+    "term": "Encryption standard",
+    "definition": "Mandatory requirements that name the approved cryptographic algorithms, minimum key lengths, and key lifetimes the organization must use to protect data.",
+    "acceptedAnswers": [
+      "Encryption standards"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-standards",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance"
+  },
+  {
+    "id": "secplus-def-request-for-comments",
+    "term": "Request for Comments",
+    "definition": "Numbered document published through the IETF that describes an internet protocol or practice; some become official internet standards, such as the specifications for TLS or HTTP.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-standards",
+    "origin": "objectives",
+    "source": "IETF – RFCs; RFC Editor – About us; SY0-801 objective 5.1",
+    "sourceUrls": [
+      "https://www.ietf.org/process/rfcs/",
+      "https://www.rfc-editor.org/about/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-information-security-policy",
+    "term": "Information security policy",
+    "definition": "Top-level document that states how the organization protects its data and systems, covering areas such as data classification, access control, encryption, and staff responsibilities.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-org",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-incident-response-policy",
+    "term": "Incident response policy",
+    "definition": "Document that defines how breaches and other security events are reported, contained, and eradicated, and who must be notified, such as the legal and public relations teams.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-org",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance"
+  },
+  {
+    "id": "secplus-def-business-continuity-plan",
+    "term": "Business Continuity Plan",
+    "definition": "Document that keeps essential operations running during and after a major disruption, covering priorities, alternate work sites, communication, and who may invoke it.",
+    "acceptedAnswers": [
+      "Business continuity policy",
+      "Business continuity planning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4",
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-org",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance"
+  },
+  {
+    "id": "secplus-def-disaster-recovery-plan",
+    "term": "Disaster Recovery Plan",
+    "definition": "Subset of the wider continuity effort that details the technical steps to restore IT systems, data, and infrastructure after a major outage or catastrophe, including off-site backups and team roles.",
+    "acceptedAnswers": [
+      "Disaster recovery policy",
+      "Disaster recovery planning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4",
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-org",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance"
+  },
+  {
+    "id": "secplus-def-access-control-policy",
+    "term": "Access control policy",
+    "definition": "Document that sets the rules for granting, reviewing, and removing user permissions, including the permission model used, least privilege, and multifactor authentication requirements.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-org",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-vulnerability-disclosure-policy",
+    "term": "Vulnerability disclosure policy",
+    "definition": "Public statement that tells outside researchers how to report security flaws they find, which systems are in scope, and that good-faith reports will not lead to legal action.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-org",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-acceptable-use-policy",
+    "term": "Acceptable Use Policy",
+    "definition": "Document that tells employees which uses of company computers, email, internet, and social media are allowed or forbidden, usually signed before an account is issued.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-bring-your-own-device",
+    "term": "Bring Your Own Device",
+    "definition": "Policy that lets employees use their personal phones, tablets, or laptops for work, usually with conditions such as enrollment in mobile management, encryption, and remote wipe.",
+    "acceptedAnswers": [
+      "Bring your own device policy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1",
+      "SY0-801/5.6"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-clean-desk-policy",
+    "term": "Clean desk policy",
+    "definition": "Rule that staff clear sensitive papers and removable media from their workspace and lock their screens whenever they leave, so no information is left exposed.",
+    "acceptedAnswers": [
+      "Clear desk policy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "secplus-def-data-classification-policy",
+    "term": "Data classification policy",
+    "definition": "Document that defines the sensitivity labels, such as public, confidential, and restricted, and the handling rules that apply to information at each label.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-data-retention-policy",
+    "term": "Data retention policy",
+    "definition": "Document that states how long each type of record must be kept to meet business and legal needs, and when it must be archived or deleted.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 26: Summarizing Elements of Effective Security Compliance; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-data-disposal-policy",
+    "term": "Data disposal policy",
+    "definition": "Document that sets how storage media and records are sanitized or destroyed at end of life, for example by wiping, degaussing, or shredding, with proof of destruction.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 15: Explain the security implications of proper hardware, software, and data asset management; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-privacy-policy",
+    "term": "Privacy policy",
+    "definition": "Statement that explains what personal information an organization collects, why it uses it, who it shares it with, and how individuals can exercise their rights over it.",
+    "acceptedAnswers": [
+      "Privacy notice"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "group": "gov-policies-data",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 26: Summarizing Elements of Effective Security Compliance; SY0-801 objective 5.1"
+  },
+  {
+    "id": "secplus-def-risk-identification",
+    "term": "Risk identification",
+    "definition": "First step of the management process for threats, in which an organization lists its assets and the threats and vulnerabilities that could harm them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-assessment",
+    "term": "Risk assessment",
+    "definition": "Structured evaluation, done ad hoc, once, on a schedule, or continuously, that scores and categorizes identified threats so the organization can prioritize its responses.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-analysis",
+    "term": "Risk analysis",
+    "definition": "Detailed study of each identified threat's likelihood, impact, owner, and current mitigations, carried out with qualitative ratings or quantitative dollar values.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-register",
+    "term": "Risk register",
+    "definition": "Living document that logs each identified threat with its owner, score, mitigations, and status, used to communicate and review them over time.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-owner",
+    "term": "Risk owner",
+    "definition": "Person or team accountable for a specific identified threat, who decides how it is treated and monitors whether the chosen controls keep working.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-matrix",
+    "term": "Risk matrix",
+    "definition": "Grid that plots likelihood against impact and colors each cell, for example from green to red, to show at a glance which threats need attention first.",
+    "acceptedAnswers": [
+      "Heat map",
+      "Risk heat map"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-business-impact-analysis",
+    "term": "Business Impact Analysis",
+    "definition": "Study that identifies an organization's critical functions and single points of failure and estimates the cost of their disruption, from which recovery targets are set.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-process",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-qualitative-risk-analysis",
+    "term": "Qualitative risk analysis",
+    "definition": "Approach that rates threats with subjective labels such as low, medium, and high, often shown on a color-coded grid, instead of dollar figures.",
+    "acceptedAnswers": [
+      "Qualitative risk assessment",
+      "Qualitative analysis"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-quantitative-risk-analysis",
+    "term": "Quantitative risk analysis",
+    "definition": "Approach that puts numeric values on threats, such as expected dollar loss per year, so the cost of a control can be compared with the loss it prevents.",
+    "acceptedAnswers": [
+      "Quantitative risk assessment",
+      "Quantitative analysis"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-likelihood",
+    "term": "Likelihood",
+    "definition": "Chance that a given threat event will actually occur, rated as low, medium, or high or as a value between 0 and 1.",
+    "acceptedAnswers": [
+      "Probability",
+      "Likelihood/probability"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-impact",
+    "term": "Impact",
+    "definition": "Size of the harm an organization would suffer if a threat event occurred, such as financial loss, downtime, fines, or damaged reputation.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-exposure-factor",
+    "term": "Exposure factor",
+    "definition": "Percentage of an asset's value that one occurrence of a threat is expected to destroy, for example 40 percent if a fire would ruin part of a server room.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-single-loss-expectancy",
+    "term": "Single Loss Expectancy",
+    "definition": "Monetary cost of one occurrence of a threat event, calculated as the asset value multiplied by the exposure factor.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-annualized-rate-of-occurrence",
+    "term": "Annualized Rate of Occurrence",
+    "definition": "Estimated number of times a specific threat event is expected to happen in one year, such as six stolen laptops a year.",
+    "acceptedAnswers": [
+      "Annual rate of occurrence"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-annualized-loss-expectancy",
+    "term": "Annualized Loss Expectancy",
+    "definition": "Projected monetary cost of a threat over a full year, calculated by multiplying the cost of one event by the number of events anticipated per year.",
+    "acceptedAnswers": [
+      "Annual loss expectancy"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-analysis",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-transference",
+    "term": "Risk transference",
+    "definition": "Treatment that shifts the financial consequences of a threat to another party, for example by buying cybersecurity insurance or outsourcing a service.",
+    "acceptedAnswers": [
+      "Risk transfer",
+      "Transferring",
+      "Transference"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-acceptance",
+    "term": "Risk acceptance",
+    "definition": "Treatment in which management knowingly decides to take no further action on a threat because its cost or likelihood is low enough to live with.",
+    "acceptedAnswers": [
+      "Accepting",
+      "Acceptance"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-avoidance",
+    "term": "Risk avoidance",
+    "definition": "Treatment that eliminates exposure to a threat by stopping, or never starting, the activity that creates it.",
+    "acceptedAnswers": [
+      "Avoiding",
+      "Avoidance"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-mitigation",
+    "term": "Risk mitigation",
+    "definition": "Treatment that lowers a threat's likelihood or impact to an acceptable level by adding controls, such as installing antivirus software or patching.",
+    "acceptedAnswers": [
+      "Mitigating",
+      "Mitigation",
+      "Risk reduction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-residual-risk",
+    "term": "Residual risk",
+    "definition": "Exposure that still remains after controls have been applied to a threat, which management must then accept or treat further.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-inherent-risk",
+    "term": "Inherent risk",
+    "definition": "Raw exposure an organization faces from a threat before any controls or other treatments are applied.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-risk-appetite",
+    "term": "Risk appetite",
+    "definition": "Amount and type of exposure an organization is willing to pursue to meet its objectives, often described as expansionary, neutral, or conservative.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "group": "risk-treatment",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-def-request-for-proposal",
+    "term": "Request for Proposal",
+    "definition": "Formal procurement document that describes a requirement in detail and asks vendors to submit complete solutions, including approach, schedule, and price, for evaluation.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-selection",
+    "origin": "objectives",
+    "source": "GSA – How to Respond to Pre-Award Notices (RFI, SSS, RFQ, RFP) – gsa.gov; FAR Part 15; SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://www.gsa.gov/system/files/Pre-Award%20Notices%20-%20508%20-%2008272021.pdf",
+      "https://www.acquisition.gov/far/part-15"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-request-for-information",
+    "term": "Request for Information",
+    "definition": "Early, non-binding procurement document used to learn what solutions and capabilities the market offers before a requirement is fully defined.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-selection",
+    "origin": "objectives",
+    "source": "GSA – How to Respond to Pre-Award Notices (RFI, SSS, RFQ, RFP) – gsa.gov; FAR Part 15 (15.201(e)); SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://www.gsa.gov/system/files/Pre-Award%20Notices%20-%20508%20-%2008272021.pdf",
+      "https://www.acquisition.gov/far/part-15"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-request-for-quote",
+    "term": "Request for Quote",
+    "definition": "Procurement document sent when the requirement is already well defined, asking suppliers mainly for prices and delivery terms for the specified goods or services.",
+    "acceptedAnswers": [
+      "Request for Quotation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-selection",
+    "origin": "objectives",
+    "source": "GSA – How to Respond to Pre-Award Notices (RFI, SSS, RFQ, RFP) – gsa.gov; FAR Part 13; SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://www.gsa.gov/system/files/Pre-Award%20Notices%20-%20508%20-%2008272021.pdf",
+      "https://www.acquisition.gov/far/part-13"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-expression-of-interest",
+    "term": "Expression of Interest",
+    "definition": "Preliminary, non-binding invitation asking suppliers to signal that they want to bid and outline their capability, so a buyer can shortlist who enters a formal tender.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-selection",
+    "origin": "objectives",
+    "source": "Buying for Victoria – Goods and services Expression of Interest templates; Victorian Government – TAFE toolkit: Expression of interest; SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://www.buyingfor.vic.gov.au/goods-and-services-expression-interest-templates",
+      "https://www.vic.gov.au/tafe-toolkit-expression-interest"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-due-diligence",
+    "term": "Due diligence",
+    "definition": "Thorough investigation of a prospective vendor's finances, operations, security practices, regulatory compliance, and track record before a contract is signed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-selection",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-conflict-of-interest",
+    "term": "Conflict of interest",
+    "definition": "Situation in which a decision maker has a personal or business tie to a bidder that could unfairly influence which supplier is chosen.",
+    "acceptedAnswers": [
+      "Conflicts of interest"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-selection",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-service-level-agreement",
+    "term": "Service-Level Agreement",
+    "definition": "Contract between a provider and a customer that commits to measurable performance targets, such as uptime and response times, with penalties or credits if they are missed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-service-level-objective",
+    "term": "Service-level objective",
+    "definition": "Single measurable performance target, such as 99.9 percent monthly uptime or a four-hour fix time, that a provider aims to meet; contracts are built on these targets.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "Google SRE book – Service Level Objectives; AWS – What is a service-level agreement?; SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://sre.google/sre-book/service-level-objectives/",
+      "https://aws.amazon.com/what-is/service-level-agreement/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-memorandum-of-understanding",
+    "term": "Memorandum of Understanding",
+    "definition": "Formal but usually non-binding document in which two or more parties state their shared intent and how they plan to work together.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-memorandum-of-agreement",
+    "term": "Memorandum of Agreement",
+    "definition": "Legally binding document that sets out the terms, conditions, and specific roles and responsibilities of parties working together on a shared goal.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-non-disclosure-agreement",
+    "term": "Non-disclosure Agreement",
+    "definition": "Legally binding contract in which an employee or partner promises not to reveal trade secrets or other confidential information to unauthorized people.",
+    "acceptedAnswers": [
+      "Nondisclosure agreement",
+      "Confidentiality agreement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-master-service-agreement",
+    "term": "Master Service Agreement",
+    "definition": "Umbrella contract that sets the general terms for an ongoing relationship, such as payment, liability, confidentiality, and dispute resolution, so later projects need only short task documents.",
+    "acceptedAnswers": [
+      "Master services agreement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-statement-of-work",
+    "term": "Statement of Work",
+    "definition": "Document that defines one specific project under a contract, including the tasks to perform, deliverables, timeline, and agreed payment.",
+    "acceptedAnswers": [
+      "Work order"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-agreements",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-vendor-assessment",
+    "term": "Vendor assessment",
+    "definition": "Evaluation of a supplier's security posture and dependability using evidence such as penetration test results, internal audit reports, outside auditors' reviews, and questionnaires.",
+    "acceptedAnswers": [
+      "Vendor risk assessment",
+      "Third-party assessment"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-right-to-audit-clause",
+    "term": "Right-to-audit clause",
+    "definition": "Contract term that lets a customer inspect a supplier's systems, records, and processes, often at short notice, to verify that agreed security and compliance requirements are met.",
+    "acceptedAnswers": [
+      "Right to audit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-vendor-registry",
+    "term": "Vendor registry",
+    "definition": "Central inventory of all third parties an organization uses, recording each one's contacts, contracts, data access, criticality, and current risk rating.",
+    "acceptedAnswers": [
+      "Vendor register",
+      "Supplier register",
+      "Vendor inventory"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "NIST Cybersecurity Framework 2.0 – GV.SC (suppliers are known and prioritized by criticality); NIST SP 800-161 Rev. 1; SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://www.nist.gov/cyberframework",
+      "https://csrc.nist.gov/pubs/sp/800/161/r1/upd1/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-supply-chain-analysis",
+    "term": "Supply chain analysis",
+    "definition": "Review of a vendor's own vendors and subcontractors to find weak links that could disrupt service or introduce compromised components.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-service-level-monitoring",
+    "term": "Service-level monitoring",
+    "definition": "Ongoing measurement of a provider's actual uptime, response, and resolution times against the targets promised in its contract, with reports and escalation when they slip.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management; SY0-801 objective 5.3"
+  },
+  {
+    "id": "secplus-def-rules-of-engagement",
+    "term": "Rules of engagement",
+    "definition": "Agreed terms that define the scope, permitted methods, timing, contacts, and data handling for work with a third party, such as an authorized penetration test.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-vendor-lock-in",
+    "term": "Vendor lock-in",
+    "definition": "Dependence on one supplier's proprietary products or formats that makes switching to another provider difficult or costly.",
+    "acceptedAnswers": [
+      "Vendor lockin",
+      "Lock-in"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture; SY0-801 objective 5.3"
+  },
+  {
+    "id": "secplus-def-return-on-investment",
+    "term": "Return on Investment",
+    "definition": "Measure that compares the benefit gained from spending, such as losses avoided by a security control, with its cost, usually expressed as a percentage.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "group": "vendor-oversight",
+    "origin": "objectives",
+    "source": "ENISA – Introduction to Return on Security Investment; Investopedia – Return on Investment; SY0-801 objective 5.3",
+    "sourceUrls": [
+      "https://www.enisa.europa.eu/sites/default/files/publications/Return%20On%20Security%20Investment.pdf",
+      "https://www.investopedia.com/terms/r/returnoninvestment.asp",
+      "https://corporatefinanceinstitute.com/resources/accounting/return-on-investment-roi-formula/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-attestation",
+    "term": "Attestation",
+    "definition": "Formal, often signed, statement by an authorized person or independent party affirming that specific controls or requirements are in place and working.",
+    "acceptedAnswers": [
+      "Attestations",
+      "Compliance attestation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3",
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-programs",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-acknowledgment",
+    "term": "Acknowledgment",
+    "definition": "Record that an employee has received, read, and agreed to follow a policy or completed a course, often collected as a signature or a click in an online system.",
+    "acceptedAnswers": [
+      "Acknowledgement",
+      "Acknowledgments",
+      "Acknowledgements"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-programs",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-due-care",
+    "term": "Due care",
+    "definition": "Ongoing, reasonable actions an organization takes to protect assets and meet its obligations once risks are known, such as maintaining controls and training staff.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-programs",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 26: Summarizing Elements of Effective Security Compliance"
+  },
+  {
+    "id": "secplus-def-anti-money-laundering-counter-terrorism-financing",
+    "term": "Anti-money Laundering/Counter-terrorism Financing",
+    "definition": "Compliance program and training that teaches staff to spot and report attempts to hide the criminal origin of funds or to channel funds to violent extremist groups.",
+    "acceptedAnswers": [
+      "Anti-money laundering and counter-terrorism financing"
+    ],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-programs",
+    "origin": "objectives",
+    "source": "FinCEN – Bank Secrecy Act; FinCEN – History of Anti-Money Laundering Laws; FATF – The FATF Recommendations; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://www.fincen.gov/resources/statutes-and-regulations/bank-secrecy-act",
+      "https://www.fincen.gov/resources/history-anti-money-laundering-laws",
+      "https://www.fatf-gafi.org/en/topics/fatf-recommendations.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-anti-bribery",
+    "term": "Anti-bribery",
+    "definition": "Compliance training and controls that forbid offering, giving, or accepting payments, gifts, or favors meant to improperly influence business or government decisions.",
+    "acceptedAnswers": [
+      "Antibribery",
+      "Anti-bribery training"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-programs",
+    "origin": "objectives",
+    "source": "US Department of Justice – Foreign Corrupt Practices Act; UK Bribery Act 2010; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://www.justice.gov/criminal/criminal-fraud/foreign-corrupt-practices-act",
+      "https://www.legislation.gov.uk/ukpga/2010/23/contents"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-reputational-damage",
+    "term": "Reputational damage",
+    "definition": "Loss of trust among customers, partners, and investors after a breach or violation, which can drive away business and take years to rebuild.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-consequences",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-fine",
+    "term": "Fine",
+    "definition": "Monetary penalty a regulator imposes for a violation, such as up to 4 percent of global annual turnover under the GDPR for the most serious infringements.",
+    "acceptedAnswers": [
+      "Fines",
+      "Financial penalty"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-consequences",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-sanction",
+    "term": "Sanction",
+    "definition": "Legal or regulatory measure imposed against an organization for misconduct, such as trade restrictions, an operating ban, or other formal penalties beyond money.",
+    "acceptedAnswers": [
+      "Sanctions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-consequences",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-loss-of-license",
+    "term": "Loss of license",
+    "definition": "Revocation by a regulator of an organization's permission to operate in a regulated field such as finance or healthcare, halting its core business.",
+    "acceptedAnswers": [
+      "Losing a license",
+      "License revocation",
+      "Loss of licence"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-consequences",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-contractual-impact",
+    "term": "Contractual impact",
+    "definition": "Consequence in which a violation breaches the terms of agreements with customers or partners, leading to cancelled deals, lawsuits, or penalty clauses.",
+    "acceptedAnswers": [
+      "Contractual impacts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-consequences",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-right-to-be-forgotten",
+    "term": "Right to be forgotten",
+    "definition": "Privacy right, in GDPR Article 17, that lets individuals ask an organization to erase their personal information unless a legal reason requires keeping it.",
+    "acceptedAnswers": [
+      "Right to erasure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-opt-in",
+    "term": "Opt-in",
+    "definition": "Consent model in which personal information is used for a purpose, such as marketing, only after the individual actively agrees, for example by ticking an unchecked box.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "objectives",
+    "source": "ICO – What is valid consent?; Regulation (EU) 2016/679 (GDPR) Articles 4(11) and 7; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/consent/what-is-valid-consent/",
+      "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-opt-out",
+    "term": "Opt-out",
+    "definition": "Consent model in which personal information may be used or sold by default until the individual tells the organization to stop, as the CCPA allows for selling such data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "objectives",
+    "source": "California Attorney General – California Consumer Privacy Act (CCPA); ICO – What is valid consent?; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://oag.ca.gov/privacy/ccpa",
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/lawful-basis/consent/what-is-valid-consent/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-data-correction",
+    "term": "Data correction",
+    "definition": "Privacy right that lets individuals have inaccurate or incomplete personal information about them fixed or completed by the organization holding it.",
+    "acceptedAnswers": [
+      "Right to rectification",
+      "Rectification",
+      "Right to correction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "objectives",
+    "source": "ICO – Right to rectification; Regulation (EU) 2016/679 (GDPR) Article 16; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-rectification/",
+      "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-processing-restriction",
+    "term": "Processing restriction",
+    "definition": "Privacy right that lets individuals have an organization keep their personal information stored but stop using it, for example while its accuracy is disputed.",
+    "acceptedAnswers": [
+      "Right to restrict processing",
+      "Restriction of processing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "objectives",
+    "source": "ICO – Right to restrict processing; Regulation (EU) 2016/679 (GDPR) Article 18; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-restrict-processing/",
+      "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-processing-prevention",
+    "term": "Processing prevention",
+    "definition": "Privacy right that lets individuals object to particular uses of their personal information and have them stopped, always for direct marketing and otherwise unless overriding grounds exist.",
+    "acceptedAnswers": [
+      "Right to object"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "objectives",
+    "source": "ICO – Right to object; Regulation (EU) 2016/679 (GDPR) Article 21; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/individual-rights/individual-rights/right-to-object/",
+      "https://eur-lex.europa.eu/eli/reg/2016/679/oj"
+    ],
+    "verified": "2026-10-30",
+    "note": "SY0-801 'Processing prevention' is read as the GDPR right to object (Article 21); check against an SY0-801 book when one exists."
+  },
+  {
+    "id": "secplus-def-data-subject",
+    "term": "Data subject",
+    "definition": "Identifiable living person whose personal information an organization collects, stores, or handles, and who holds the privacy rights over it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-privacy",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-def-legal-hold",
+    "term": "Legal hold",
+    "definition": "Instruction that suspends normal deletion and requires an organization to preserve all relevant records once a lawsuit or investigation is expected.",
+    "acceptedAnswers": [
+      "Litigation hold"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-legal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 21: Explain appropriate incident response activities; SY0-801 objective 5.4"
+  },
+  {
+    "id": "secplus-def-legal-order",
+    "term": "Legal order",
+    "definition": "Binding instruction from a court or authorized agency, such as a subpoena or search warrant, that compels an organization to produce records or take a specific action.",
+    "acceptedAnswers": [
+      "Legal orders",
+      "Court order"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-legal",
+    "origin": "objectives",
+    "source": "United States Courts – Glossary of legal terms; Cornell LII Wex – Subpoena; SY0-801 objective 5.4",
+    "sourceUrls": [
+      "https://www.uscourts.gov/glossary",
+      "https://www.law.cornell.edu/wex/subpoena"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-data-retention-requirement",
+    "term": "Data retention requirement",
+    "definition": "Obligation set by law, regulation, or contract that specifies the minimum or maximum time certain records must be kept before they may be destroyed.",
+    "acceptedAnswers": [
+      "Data retention requirements",
+      "Retention requirement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-legal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 26: Summarizing Elements of Effective Security Compliance; SY0-801 objective 5.4"
+  },
+  {
+    "id": "secplus-def-data-inventory",
+    "term": "Data inventory",
+    "definition": "Catalog of the information an organization holds, recording each set's type, location, owner, and use, to support compliance and audits.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "group": "compliance-legal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 26: Summarizing Elements of Effective Security Compliance"
+  },
+  {
+    "id": "secplus-def-internal-audit",
+    "term": "Internal audit",
+    "definition": "Review performed by an organization's own assurance team, independent of the areas checked, to confirm that its controls, risk management, and governance work as intended.",
+    "acceptedAnswers": [
+      "Internal audits"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-internal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-compliance-audit",
+    "term": "Compliance audit",
+    "definition": "Review that checks whether an organization's activities, transactions, and employee conduct follow the laws, regulations, and policies that apply to it.",
+    "acceptedAnswers": [
+      "Compliance audits"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-internal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-audit-committee",
+    "term": "Audit committee",
+    "definition": "Board-level group that oversees the internal assurance function, reviews its plans and findings, and reports recommendations to the board of directors.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-internal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-self-assessment",
+    "term": "Self-assessment",
+    "definition": "Evaluation in which a team, often guided by internal reviewers, rates its own processes and controls to find weaknesses, with the results used only internally.",
+    "acceptedAnswers": [
+      "Self-assessments"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-internal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-audit-charter",
+    "term": "Audit charter",
+    "definition": "Formal document approved by the board that defines the purpose, authority, scope, and responsibilities of the internal assurance function.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-internal",
+    "origin": "objectives",
+    "source": "The IIA – Global Internal Audit Standards (2024); The IIA – Model Internal Audit Charter; SY0-801 objective 5.5",
+    "sourceUrls": [
+      "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+      "https://www.theiia.org/en/content/guidance/recommended/supplemental/practice-guides/model-internal-audit-activity-charter/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-gap-analysis",
+    "term": "Gap analysis",
+    "definition": "Comparison of an organization's current security controls with the requirements of a framework or target state to find what is missing and plan remediation.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-internal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 26: Summarizing Elements of Effective Security Compliance; SY0-801 objective 5.5"
+  },
+  {
+    "id": "secplus-def-external-audit",
+    "term": "External audit",
+    "definition": "Any formal review of an organization carried out by people from outside it, such as regulators or accounting firms, rather than by its own staff.",
+    "acceptedAnswers": [
+      "External audits"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-external",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-regulatory-audit",
+    "term": "Regulatory audit",
+    "definition": "Review by or for a government authority that checks whether an organization meets the specific rules of its industry, with results reported to that authority.",
+    "acceptedAnswers": [
+      "Regulatory audits"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-external",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-examination",
+    "term": "Examination",
+    "definition": "Detailed review of financial statements, transactions, and supporting documents to verify their accuracy and conformity with accounting standards such as GAAP.",
+    "acceptedAnswers": [
+      "Examinations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-external",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-independent-third-party-audit",
+    "term": "Independent third-party audit",
+    "definition": "Impartial review by an unaffiliated firm that follows a standardized process and issues a formal opinion on an organization's statements and controls, such as a SOC 2 report.",
+    "acceptedAnswers": [
+      "Third-party audit"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-external",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-assessment",
+    "term": "Assessment",
+    "definition": "Evaluation of internal control systems, risk management procedures, and governance structures that ends in improvement recommendations rather than a formal opinion.",
+    "acceptedAnswers": [
+      "Assessments"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-external",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-benchmarking",
+    "term": "Benchmarking",
+    "definition": "Comparing an organization's security practices or metrics against industry peers or recognized best practices to judge its relative maturity.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-external",
+    "origin": "objectives",
+    "source": "ASQ – What is benchmarking?; APQC – What is benchmarking?; Wikipedia – Benchmarking; SY0-801 objective 5.5",
+    "sourceUrls": [
+      "https://asq.org/quality-resources/benchmarking",
+      "https://www.apqc.org/What-Is-Benchmarking",
+      "https://en.wikipedia.org/wiki/Benchmarking"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-sampling",
+    "term": "Sampling",
+    "definition": "Testing a representative subset of items, such as 25 of 1,000 user accounts, and using the results to draw conclusions about the whole population.",
+    "acceptedAnswers": [
+      "Audit sampling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-evidence",
+    "origin": "objectives",
+    "source": "PCAOB AS 2315 – Audit Sampling; NIST SP 800-53A Rev. 5; SY0-801 objective 5.5",
+    "sourceUrls": [
+      "https://pcaobus.org/oversight/standards/auditing-standards/details/AS2315",
+      "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-questionnaire",
+    "term": "Questionnaire",
+    "definition": "Structured set of written items that staff or a vendor fill in to give details about practices, controls, and compliance in a consistent, comparable form.",
+    "acceptedAnswers": [
+      "Questionnaires",
+      "Survey",
+      "Surveys"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-evidence",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 25: Explain the processes associated with third-party risk assessment and management"
+  },
+  {
+    "id": "secplus-def-interview",
+    "term": "Interview",
+    "definition": "Assessment method in which an auditor talks with staff to learn how processes and controls actually work and to clarify evidence from documents.",
+    "acceptedAnswers": [
+      "Interviews"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-evidence",
+    "origin": "objectives",
+    "source": "NIST CSRC Glossary – interview; NIST SP 800-53A Rev. 5; SY0-801 objective 5.5",
+    "sourceUrls": [
+      "https://csrc.nist.gov/glossary/term/interview",
+      "https://csrc.nist.gov/pubs/sp/800/53/a/r5/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-assertion",
+    "term": "Assertion",
+    "definition": "Claim by management that a system, control, or record meets stated criteria, which the auditor then gathers evidence to support or disprove.",
+    "acceptedAnswers": [
+      "Assertions",
+      "Management assertion"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-evidence",
+    "origin": "objectives",
+    "source": "PCAOB AS 1105 – Audit Evidence; Wikipedia – Management assertions; SY0-801 objective 5.5",
+    "sourceUrls": [
+      "https://pcaobus.org/oversight/standards/auditing-standards/details/AS1105",
+      "https://en.wikipedia.org/wiki/Management_assertions"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-functional-testing",
+    "term": "Functional testing",
+    "definition": "Test that verifies each security feature or control operates as specified, for example that an account locks after the set number of failed logins.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-evidence",
+    "origin": "objectives",
+    "source": "NIST CSRC Glossary – functional testing (from NIST SP 800-152); SY0-801 objective 5.5",
+    "sourceUrls": [
+      "https://csrc.nist.gov/glossary/term/functional_testing",
+      "https://csrc.nist.gov/pubs/sp/800/152/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-penetration-testing",
+    "term": "Penetration testing",
+    "definition": "Authorized, simulated attack on systems, networks, or facilities that tries to exploit weaknesses in order to show how a real attacker could break in.",
+    "acceptedAnswers": [
+      "Pen testing",
+      "Penetration test",
+      "Pentest"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3",
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-known-environment",
+    "term": "Known environment",
+    "definition": "Test approach in which the testers receive full details, such as network diagrams, source code, and credentials, before they start.",
+    "acceptedAnswers": [
+      "Known environment penetration testing",
+      "White box testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-partially-known-environment",
+    "term": "Partially known environment",
+    "definition": "Test approach in which the testers get limited inside details, such as some server names or a low-privilege account, simulating an attacker with incomplete insight.",
+    "acceptedAnswers": [
+      "Partially known environment penetration testing",
+      "Gray box testing",
+      "Grey box testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-unknown-environment",
+    "term": "Unknown environment",
+    "definition": "Test approach in which the testers get no inside details at all and must discover everything themselves, as an outside attacker would.",
+    "acceptedAnswers": [
+      "Unknown environment penetration testing",
+      "Black box testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-physical-penetration-testing",
+    "term": "Physical penetration testing",
+    "definition": "Test that tries to defeat locks, badge readers, guards, and cameras to enter buildings or server rooms without authorization.",
+    "acceptedAnswers": [
+      "Physical pen testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-offensive-penetration-testing",
+    "term": "Offensive penetration testing",
+    "definition": "Exercise in which testers actively mimic real attackers' tactics, techniques, and procedures to find and exploit weaknesses, acting as the attacking side.",
+    "acceptedAnswers": [
+      "Red teaming",
+      "Offensive testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-defensive-penetration-testing",
+    "term": "Defensive penetration testing",
+    "definition": "Exercise that measures how well security operations staff detect, contain, and recover from simulated attacks, checking monitoring tools and response procedures.",
+    "acceptedAnswers": [
+      "Blue teaming",
+      "Defensive testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-integrated-penetration-testing",
+    "term": "Integrated penetration testing",
+    "definition": "Exercise in which attacking and defending teams work together, often across digital and physical methods, to give a complete view of security.",
+    "acceptedAnswers": [
+      "Purple teaming",
+      "Integrated testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-pentest",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 27: Understanding Types and Purposes of Audits and Assessments"
+  },
+  {
+    "id": "secplus-def-passive-reconnaissance",
+    "term": "Passive reconnaissance",
+    "definition": "Gathering information about a target without touching its systems, for example through OSINT, search engines, WHOIS lookups, and social media.",
+    "acceptedAnswers": [
+      "Passive recon"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-recon-frameworks",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-active-reconnaissance",
+    "term": "Active reconnaissance",
+    "definition": "Gathering information by directly interacting with a target's systems, for example with port scans, vulnerability scans, and network fingerprinting, which can be detected.",
+    "acceptedAnswers": [
+      "Active recon"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-recon-frameworks",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 27: Explain types and purposes of audits and assessments"
+  },
+  {
+    "id": "secplus-def-mitre-att-ck",
+    "term": "MITRE ATT&CK",
+    "definition": "Public knowledge base that catalogs real adversaries' tactics and techniques in matrices, used to map attacks and to plan detections and assessments.",
+    "acceptedAnswers": [
+      "MITRE ATTACK",
+      "ATT&CK"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-recon-frameworks",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 21: Explain appropriate incident response activities; SY0-801 objective 5.5"
+  },
+  {
+    "id": "secplus-def-cyber-kill-chain",
+    "term": "Cyber Kill Chain",
+    "definition": "Lockheed Martin model that splits an intrusion into seven ordered stages, from reconnaissance and weaponization through delivery and exploitation to actions on objectives.",
+    "acceptedAnswers": [
+      "Kill chain"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-recon-frameworks",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 21: Explain appropriate incident response activities; SY0-801 objective 5.5"
+  },
+  {
+    "id": "secplus-def-diamond-model-of-intrusion-analysis",
+    "term": "Diamond Model of Intrusion Analysis",
+    "definition": "Framework that describes every attack event through four linked elements: adversary, capability, infrastructure, and victim.",
+    "acceptedAnswers": [
+      "Diamond Model"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "group": "audit-recon-frameworks",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 21: Explain appropriate incident response activities; SY0-801 objective 5.5"
+  },
+  {
+    "id": "secplus-def-onboarding-training",
+    "term": "Onboarding training",
+    "definition": "Security awareness course given to new hires before or as they receive accounts, covering key policies, acceptable use, and how to report problems.",
+    "acceptedAnswers": [
+      "Initial training",
+      "Onboarding"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-training",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 28: Implementing Security Awareness Practices; SY0-801 objective 5.6"
+  },
+  {
+    "id": "secplus-def-ongoing-training",
+    "term": "Ongoing training",
+    "definition": "Security awareness sessions repeated throughout employment, such as yearly refreshers, to keep knowledge current and counter complacency.",
+    "acceptedAnswers": [
+      "Recurring training",
+      "Continuous training"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-training",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 28: Given a scenario, implement security awareness practices; SY0-801 objective 5.6"
+  },
+  {
+    "id": "secplus-def-targeted-training",
+    "term": "Targeted training",
+    "definition": "Security awareness content tailored to a specific role or higher-risk group, such as finance staff who handle payment requests or administrators with elevated rights.",
+    "acceptedAnswers": [
+      "Role-based training"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-training",
+    "origin": "objectives",
+    "source": "NIST SP 800-50 Rev. 1 – Building a Cybersecurity and Privacy Learning Program; NIST CSRC Glossary – role-based training; SY0-801 objective 5.6",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://csrc.nist.gov/glossary/term/role_based_training"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-corrective-training",
+    "term": "Corrective training",
+    "definition": "Follow-up security lesson assigned to a user after a mistake, such as clicking a link in a simulated phishing email or breaking a policy.",
+    "acceptedAnswers": [
+      "Remedial training"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-training",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 28: Given a scenario, implement security awareness practices; SY0-801 objective 5.6"
+  },
+  {
+    "id": "secplus-def-phishing-simulation",
+    "term": "Phishing simulation",
+    "definition": "Internal exercise in which the security team sends fake malicious emails to staff to measure who clicks or reports them and to teach recognition.",
+    "acceptedAnswers": [
+      "Phishing campaign",
+      "Simulated phishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-training",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "secplus-def-gamification",
+    "term": "Gamification",
+    "definition": "Use of game elements such as points, quizzes, challenges, and leaderboards in security training to raise engagement and retention.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-training",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "secplus-def-learning-management-system",
+    "term": "Learning Management System",
+    "definition": "Software platform that hosts training courses, assigns them to staff, and tracks enrollment, completion, and quiz scores for reporting.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-delivery",
+    "origin": "objectives",
+    "source": "NIST SP 800-50 Rev. 1 – Building a Cybersecurity and Privacy Learning Program; Adaptive Security – Security awareness training delivery methods; SY0-801 objective 5.6",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://www.adaptivesecurity.com/blog/security-awareness-training-delivery-methods",
+      "https://en.wikipedia.org/wiki/Learning_management_system"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-self-service-portal",
+    "term": "Self-service portal",
+    "definition": "Online site where employees find security resources, guides, and short courses on their own, whenever they need them, without an instructor.",
+    "acceptedAnswers": [
+      "Self-service portals"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-delivery",
+    "origin": "objectives",
+    "source": "NIST SP 800-50 Rev. 1 – Building a Cybersecurity and Privacy Learning Program; Adaptive Security – Security awareness training delivery methods; SY0-801 objective 5.6",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://www.adaptivesecurity.com/blog/security-awareness-training-delivery-methods"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-one-to-one-training",
+    "term": "One-to-one training",
+    "definition": "Delivery method in which a single instructor coaches one employee directly, allowing tailored pacing and immediate feedback.",
+    "acceptedAnswers": [
+      "One-on-one training",
+      "One-to-one"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-delivery",
+    "origin": "objectives",
+    "source": "NIST SP 800-50 Rev. 1 – Building a Cybersecurity and Privacy Learning Program; Adaptive Security – Security awareness training delivery methods; SY0-801 objective 5.6",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://www.adaptivesecurity.com/blog/security-awareness-training-delivery-methods"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-one-to-many-training",
+    "term": "One-to-many training",
+    "definition": "Delivery method in which one presenter teaches a large group at once, such as a classroom lecture, webinar, or all-hands briefing.",
+    "acceptedAnswers": [
+      "One-to-many"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-delivery",
+    "origin": "objectives",
+    "source": "NIST SP 800-50 Rev. 1 – Building a Cybersecurity and Privacy Learning Program; Adaptive Security – Security awareness training delivery methods; SY0-801 objective 5.6",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://www.adaptivesecurity.com/blog/security-awareness-training-delivery-methods"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-personnel-behavior-risk-scoring",
+    "term": "Personnel behavior risk scoring",
+    "definition": "Metric that rates each employee's likelihood of causing a security incident from signals such as phishing simulation results, training completion, and policy violations.",
+    "acceptedAnswers": [
+      "Behavior risk scoring",
+      "Human risk scoring",
+      "Human risk score"
+    ],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-delivery",
+    "origin": "objectives",
+    "source": "Living Security – Human risk scoring guide; Keepnet Labs – What is a human risk score?; NIST SP 800-50 Rev. 1 – Building a Cybersecurity and Privacy Learning Program; SY0-801 objective 5.6",
+    "sourceUrls": [
+      "https://www.livingsecurity.com/blog/human-risk-scoring-guide",
+      "https://keepnetlabs.com/blog/what-is-human-risk-score-and-how-does-it-help-prevent-cybersecurity-incidents",
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-business-email-compromise",
+    "term": "Business Email Compromise",
+    "definition": "Fraud in which an attacker impersonates or takes over an executive's or supplier's mailbox to trick staff into wiring money or changing payment details.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-topics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces; SY0-801 objective 5.6"
+  },
+  {
+    "id": "secplus-def-situational-awareness",
+    "term": "Situational awareness",
+    "definition": "Staying alert to one's surroundings and to signs of threats, such as tailgaters, shoulder surfers, or odd requests, and knowing how to respond.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-topics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "secplus-def-operational-security",
+    "term": "Operational security",
+    "definition": "Practices that protect sensitive details of daily work from adversaries, such as not discussing projects in public, encrypting communications, and locking screens.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-topics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "secplus-def-hybrid-work",
+    "term": "Hybrid work",
+    "definition": "Arrangement in which employees split time between the office and home or other locations, raising risks such as insecure home networks and public Wi-Fi that training must address.",
+    "acceptedAnswers": [
+      "Remote work",
+      "Teleworking",
+      "Hybrid working"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "group": "awareness-topics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 28: Implementing Security Awareness Practices"
+  }
+]

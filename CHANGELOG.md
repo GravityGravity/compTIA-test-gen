@@ -2,6 +2,142 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Definitions: Security+ Domains 2–5
+
+Decisions:
+- Domains 2–5 are made and reviewed as one batch (approved 2026-10-30), as for Network+.
+- 674 new terms (660 typeable), for 770 Security+ definitions in all: Domain 2 189, Domain 3 121, Domain 4 228, Domain 5 136. Every definable term the objectives name, plus SY0-701 book terms that make plausible distractors. Headings and general words (for example "Cost", "Workstations", "Metrics") and terms SY0-801 dropped (for example SDN, DNS sinkhole, risk tolerance, the attack frameworks) are left out.
+- A term that several objectives name has one record, tagged with every objective, in the file of its main objective. The 3.4 concepts Business continuity and Disaster recovery and the 5.1 plans are separate records.
+- 91 terms come from online sources (24 in Domain 2, 15 in Domain 3, 21 in Domain 4, 31 in Domain 5), for example the 2.6 AI threats, passkeys, BIMI, CSPM, the procurement documents (RFP, RFI, RFQ), and the GDPR data subject rights. Each was checked against at least two sources, one authoritative: 50 were correct, 41 got new or second source links or a corrected definition, and 2 were dropped because no reliable source defines them ("data operator", "behavioral testing").
+
+Changes:
+- `content/definitions/security-plus/`: `d2-threats-vulnerabilities-attacks.json`, `d3-security-architecture.json`, `d4-security-operations.json`, `d5-security-program-management.json`.
+- `content/README.md`: the Security+ groups for Domains 2–5 and the one-record rule for shared terms.
+- `CLAUDE.md`: the batch exception and the definitions status.
+
+## 2026-10-30 – Definitions: Security+ Domain 1 (General Security Concepts)
+
+Decisions:
+- 96 terms for objectives 1.1–1.3 in 16 groups (93 typeable). Every term an objective names, plus 17 book terms that make better distractors (`origin: "book"`), such as registration authority, block and stream cipher, pepper, and key stretching. SY0-701 terms that SY0-801 dropped (blockchain, open public ledger, homomorphic encryption) are left out. The three SY0-701 Zero Trust principles (adaptive identity, threat scope reduction, policy-driven access control) are kept under 1.1 "Zero Trust principles".
+- "Fail forward" is in no book, so its definition comes from the AWS Well-Architected and xMatters pages, checked against both (`sourceUrls`, `verified: "2026-10-30"`).
+- The Definition Exercise lists Security+ now; its pool is Domain 1 until Domains 2–5 are added.
+
+Changes:
+- New `content/definitions/security-plus/d1-general-security-concepts.json`; `config/exercises/definition.json` lists `security-plus`.
+- `tools/extract/check_content.py`: acronym and definition records may have `sourceUrls` and `verified` (both or neither; https pages; `verified` false or a date, and false is a warning).
+- `content/README.md` (the groups), `tools/extract/README.md`, and `CLAUDE.md`.
+- Checks: `check_content.py`, `check_config.py`, `npm test`, typecheck, lint, and `npm run test:e2e`.
+
+## 2026-10-30 – Security+ acronyms
+
+Decisions:
+- `content/acronyms/security-plus.json` has 186 records: the 106 official SY0-801 acronyms and 80 book extras. The official list is short and leaves out acronyms the objectives name in full (AES, ACL, RADIUS, PII, GDPR, and others), so the extras come from the four SY0-701 books, only where SY0-801 still covers the topic and the books agree on the expanded form. Left out: acronyms with two meanings in Security+ (MAC, CSP, RDP), obsolete ones (SSL), topics SY0-801 dropped (ABAC, SASE, WPA3, SDN, and others), and acronyms no book expands (RSA, HMAC).
+- Corrected official forms, with the official wording kept as an accepted answer and a note: PDF (Portable Document Format, not "Formats"), SAML (Security Assertion Markup Language, not "Assertions"), and IPsec (capitals as the standard writes them).
+- The Acronym Exercise lists Security+ (`config/exercises/acronym.json`). The Definition Exercise does not yet.
+
+Changes:
+- `tools/extract/seed_acronyms.py`: a `security-plus` entry (prefix `secplus-acr-`); it seeded the 106 official records and their objectives.
+- `content/README.md`, `tools/extract/README.md`, and `CLAUDE.md`.
+- Checks: `check_content.py`, `check_config.py` (186 records for SY0-801), `npm test`, typecheck, lint, and `npm run test:e2e`.
+
+## 2026-10-30 – Security+ exam activated
+
+Decisions:
+- The user reviewed the Security+ (SY0-801) exam module and approved it. `active: true` in `config/certifications/security-plus.json` and `config/exams/SY0-801.json`; the Security+ Exam can now be selected on the home screen.
+- The Acronym and Definition Exercises still list only A+ and Network+ (`config/exercises/`), because Security+ has no acronym or definition records yet.
+
+Changes:
+- The two configs; `CLAUDE.md`, `docs/spec.md`, and `docs/compTIA-exam-overviews.md` say the exam is active.
+- Checks: `check_config.py` and `check_questions.py` (no errors with the exam active: no coverage gaps, no unverified records), `npm test` (the "active, so it has content" test now runs for SY0-801), and `npm run test:e2e`.
+
+## 2026-10-30 – Security+ (SY0-801) exam module content
+
+Decisions:
+- The Security+ exam module after Domain 1 (Domains 2–5) is made and reviewed as one batch (approved 2026-10-30, recorded in `CLAUDE.md`). Domain 1 was built first; all five domains are now ready for review together.
+- SY0-701 book questions are copied as they are and tagged with the closest SY0-801 topic; 37 records note a book key that was wrong (about 23 corrected to another option, the rest kept with a reason). Questions with no defensible single answer, broken options, or a wrong premise were left out (26) and are listed in the triage `drop` list with the reason.
+- Physical-security control measures (bollards, guards, sensors, cameras, fencing, lighting) are tagged to 1.1.2 Control categories, since SY0-801 no longer lists them; vestibules and badges stay in 2.3.14.
+- Gorgotsias exam-simulator questions that repeat a chapter question in another objective (36) were removed; the chapter copy is kept. They are in the triage `duplicate` list.
+- Topics that no SY0-701 book covers (most of 2.6 AI threats, and parts of 2.3, 2.4, 3.2, 4.1, 4.5–4.8, 5.4–5.6) have written records from online sources. All 87 online-sourced records were then checked against at least two independent sources (one authoritative: NIST, OWASP, MITRE, CISA, FBI IC3, Microsoft Learn, AWS, GitHub and others): 87 kept, about 25 with corrected wording or clues, none dropped. All have `verified: "2026-10-30"`.
+- The exam stays `active: false` until the user reviews it.
+
+Changes:
+- `config/certifications/security-plus.json` and `config/exams/SY0-801.json` (not active).
+- `content/security/pool/d1.json`–`d5.json`: 2,098 pool questions (2,018 book, 80 written; 260 book questions without a key got a written answer, `answerOrigin: "written"`). Per domain: 330, 415, 346, 630, 377. Every one of the 201 SY0-801 topics has at least 2.
+- `content/security/scenarios/d1.json`–`d5.json`: 273 scenario records for the 9 scenario objectives (requirement 208, fault 56, procedure 9); every scenario objective has at least 18 records and every topic at least 1.
+- `content/security/grammar.json`: security roles and settings, and Security+ phrasing for the fault and requirement openings and questions (the person is a security role, not a random employee).
+- `tools/extract/check_questions.py`: the optional `sourceUrls` and `verified` fields; the report counts online-sourced records, and an unverified one is a gap (an error for an active exam). Documented in `tools/extract/README.md` (Security+ has 201 topics by the checker's count).
+- `sources-text/derived/questions/_triage-security.json`: the skipped and duplicate questions.
+- `src/main/catalog.test.ts` and `src/main/exams.test.ts`: the lists of certifications and exams include Security+.
+- `tests/unit/exam-generate.test.ts`: the real-content smoke test has a 30 s timeout per exam (with four exams it sometimes passed 5 s when the suite ran in parallel).
+- Checks: `check_questions.py`, `check_config.py`, `check_content.py`, `npm test` (the content smoke test builds 200 Security+ attempts), typecheck, lint, and `npm run test:e2e`.
+
+## 2026-10-30 – Results question cards in two columns
+
+Changes:
+- The question cards on Assessment Results are a grid: two equal columns when the window is at least 1280px wide, one column below that. The two cards in a row stretch to the same height (`align-items: stretch`), and each card is a flex column whose explanation sits at the bottom (`margin-top: auto`, 8px above it). In `src/renderer/src/styles/exam.css` and `references/exam-simulation-ui.html`.
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – Outlined domain table on the results
+
+Changes:
+- The per-domain table on Assessment Results sits in a `.domains-box`: white fill, 1px `--line` outline, a soft shadow (`0 2px 8px rgba(0,0,0,.08)`), and 10px 16px padding. The last row has no bottom line. In `src/renderer/src/exam/ResultsView.tsx` and `src/renderer/src/styles/exam.css` (the table is an app addition, so the draft has none).
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – More padding on the results question cards
+
+Changes:
+- The question cards on Assessment Results have more padding: 14px 16px (was 10px 12px), 48px on the right for the mark (was 40px). The mark moved to 14px from the top and 16px from the right. In `src/renderer/src/styles/exam.css` and `references/exam-simulation-ui.html`.
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – Larger main text on the exam screens
+
+Decisions:
+- The main content text on the exam screens is 1px larger: the question stem and options 16px (was 15px); the results list, panel notes, counts, warning, explanation, result banner line, and domain table 14px (was 13px); the results question line 15px (was 14px); the partial-credit note 13px (was 12px). The header, timers, bottom bar, buttons, pills, and legends keep their sizes.
+
+Changes:
+- `src/renderer/src/styles/exam.css` and `references/exam-simulation-ui.html`.
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – Exam screens fill the window width
+
+Decisions:
+- The exam attempt content (question, review, results, reviewed question) fills the window width instead of stopping at 940px. The side padding grows with the window (16–48px, 3% of the width). The question stem, the explanation box, and the per-domain table no longer have a maximum width. Dialogs keep their fixed widths.
+
+Changes:
+- `src/renderer/src/styles/exam.css` and `references/exam-simulation-ui.html`: removed the `.wrap` 940px, `.stem` and `.explain` 62ch, and `.domains` 640px limits; padding `clamp(16px, 3vw, 48px)`.
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – Question grid on the exam results
+
+Decisions:
+- Assessment Results has a grid of all the questions under the per-domain breakdown, like the Review & Finalize grid. Each cell is colored by outcome: Correct (green), Partially correct (amber, the draft's color for partial credit), Incorrect (red), Not answered (grey), with a legend. A cell opens that question. The grid always shows every question; the filters change only the list.
+
+Changes:
+- `src/renderer/src/exam/ResultsView.tsx`: the legend and the grid. `src/renderer/src/styles/exam.css`: the `res-ok`, `res-part`, and `res-bad` cell colors with darker hovers.
+- `references/exam-simulation-ui.html`: the same grid (cells use `data-rvc`, so "Back to results" still scrolls to the list item).
+- `CLAUDE.md`: the approved exam decisions list the grid.
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – Exam screens: line height 1.5
+
+Decisions:
+- All text on the exam attempt screens (questions, dialogs, review, results) has a line height of 1.5.
+
+Changes:
+- `src/renderer/src/styles/exam.css`: `.exam, .exam * { line-height: 1.5 }`, and the rules that had 1.4, 28px, or `normal` now have 1.5.
+- `references/exam-simulation-ui.html`: the same values (body 1.5; 1.4 and 28px changed to 1.5).
+- A UI-only change: no `npm test` or e2e run.
+
+## 2026-10-30 – Domains moved into the "Before you start" card
+
+Decisions:
+- On an exam's page, the domain table sits inside the "Before you start" card, under the exam values (questions, time, passing score) and above the rules. It keeps its card look (outline and shadow, `card card-nested`) with an `h3` heading.
+
+- UI-only changes (layout, styling, screen markup) no longer run `npm test` or `npm run test:e2e` (approved by the user). `CLAUDE.md` updated.
+
+Changes:
+- `src/renderer/src/screens/ExamIntroScreen.tsx` and `references/ui-drafts/exam-intro.html`: the Domains card moved into the "Before you start" card. New `.card-nested` class (1px `border` outline, smaller padding) in `app.css` and `drafts.css`. `references/ui-drafts/README.md` updated.
+
 ## 2026-10-30 – Core 1 exam activated
 
 Decisions:
@@ -11,7 +147,23 @@ Changes:
 - `config/exams/220-1201.json`: `active: true`. `check_config.py`, `check_questions.py` (Core 1 active: no errors), 173 Vitest tests, typecheck, lint, and the 5 Playwright tests pass.
 - Checked in the built app on the real content: an 80-question Core 1 attempt (generated scenario and pool questions) runs from start to results, with the per-domain breakdown.
 
-## 2026-10-30 – Security+ (SY0-801) added to the docs
+## 2026-10-30 – Security+ sources extracted
+
+Decisions:
+- Book keys: `sec-heuermann-cert-guide`, `sec-neil-cert-guide`, `sec-seidl-practice-tests`, `sec-gorgotsias-practice-tests`, and `objectives-sy0-801`, all in `sources-text/sec/`.
+- The book chapters keep their SY0-701 objective numbers (`Exam: Security+ (SY0-701)`), and the staging questions have `exams: ["SY0-701"]`. The SY0-801 objective is chosen when a question goes into the pool. `sources-index.md` lists the Security+ chapters under the SY0-801 domains and has a SY0-701 → SY0-801 objective map as a starting point.
+- Heuermann's quiz answers are not in this edition (its Appendix A says "in development"). The 267 quiz questions are kept with no answers; per the content rules, their answers are written from the chapters (`answerOrigin: "written"`). Its review questions are short-answer (no options) and are not parsed.
+- The list-number fix for the Neil EPUB (`<ol start>`, `<li value>`) is on only for that book, so the A+ and Network+ text, staging questions, and pool content do not change.
+
+Changes:
+- `tools/extract/extract_books.py`: the SY0-801 objectives parser (`sec_obj_parse`: separate bullet glyphs, one or two columns, 4.2 printed one level deeper) and one extractor for each Security+ book. Gorgotsias: the questions are read from the answer sections, which repeat them, and the book's typos are handled (misnumbered questions, options run into one line, sections that start mid-page). Seidl: numbers printed without a period, soft hyphens.
+- `tools/extract/extract_questions.py`: `SY0-` exam codes and four parsers. Result: 2,692 questions: Seidl 1,005 and Gorgotsias 1,140 (all with answers), Neil 280 (277 with answers; the gaps are book defects in chapters 9, 11, 18, and 27), Heuermann 267 (no answers).
+- `tools/extract/derive_terms.py`: Security+ (106 official acronyms; 19 are in none of the SY0-701 books, for example LLM, CSPM, SSE, and BIMI). `tools/extract/build_index.py`: the Security+ books, SY0-801 domains, and the objective map.
+- The SY0-801 objectives file has 26 objectives and 205 top-level topics.
+- `tools/extract/README.md`, `CLAUDE.md`, `docs/compTIA-exam-overviews.md`: the new books, formats, and results.
+- The A+ and Network+ files in `sources-text/` and `derived/` are unchanged (checked with a diff against a copy made before the run).
+
+## 2026-10-30 – Security+ (SY0-801) added to the docs, with the source rule for new topics
 
 Decisions:
 - Security+ (SY0-801 V8, objectives document version 2.0) is in scope. Its books and objectives are in `sources/sec/`. Certification id `security-plus`, exam config `config/exams/SY0-801.json`, module folder `content/security/`, text folder `sources-text/sec/`. The module stays greyed out until its config and content exist.
@@ -19,12 +171,13 @@ Decisions:
 - "Describe" (2.2, 2.3) is a knowledge verb.
 - All four books are for SY0-701, so they are treated as older-objective books: their practice questions go into the pool as they are, tagged with the closest SY0-801 objective, and written facts are checked against the SY0-801 objectives. The Gorgotsias PBQs are not copied.
 - Risk calculations (ALE = SLE × ARO) are pool questions; the `calculation` generator kind stays subnetting only.
-- Open (plan with the user): how to cover SY0-801 topics that the SY0-701 books do not cover (for example 2.6, AI threats).
+- SY0-801 is released in November 2026; no SY0-801 book exists yet. For SY0-801 topics (approved by the user): use the SY0-701 books first (also chapters that cover a topic under another objective), then the objectives, and online sources only when the books do not cover a topic (for example 2.6, AI threats). Authoritative pages first (CompTIA, NIST, OWASP, MITRE, CISA, vendor docs); never question banks or exam dumps. Online-sourced records get `sourceUrls` and `verified: false`; after the domain's pool is generated, each is verified against at least two independent sources, then fixed or dropped. The exam is not activated while any record is unverified.
 
 Changes:
 - `docs/compTIA-exam-overviews.md`: Part 4 (exam details, domains, structure estimate, objectives with their kind, question structures, sources), the Security+ estimate calculation, and the Security+ source links. The Network+ status now says active.
 - `CLAUDE.md`, `docs/spec.md`, `docs/exam-modules.md`, `content/README.md`, `references/ui-drafts/README.md`, `README.md`, `tools/extract/README.md`: Security+ added to the exam lists, folders, certification ids, source rules, and the exercise setup.
-- No config, content, or code yet. The objectives and books are not extracted into `sources-text/sec/` yet.
+- `content/README.md`: the `sourceUrls` and `verified` fields. `docs/exam-modules.md` and `docs/spec.md`: the online-source rule.
+- No config, content, or code yet. When the Security+ module is built, `check_questions.py` must accept `sourceUrls` and `verified` (it rejects unknown fields now) and report `verified: false` records as an error for an active exam. The objectives and books are not extracted into `sources-text/sec/` yet.
 
 ## 2026-10-30 – Core 2 exam activated
 

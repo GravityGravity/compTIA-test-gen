@@ -4,10 +4,11 @@ Dev-only tool. It is not part of the app.
 
     tools/extract/.venv/bin/python -I tools/extract/derive_terms.py
 
-Writes two files for each certification in sources-text/derived/ (A+ and Network+ are kept apart):
-- a-plus-acronyms.md, network-plus-acronyms.md: the official acronym lists (A+ merges 220-1201 and
+Writes two files for each certification in sources-text/derived/ (A+, Network+, and Security+ are kept apart):
+- a-plus-acronyms.md, network-plus-acronyms.md, security-plus-acronyms.md: the official acronym lists (A+ merges 220-1201 and
   220-1202), with notes where the lists differ or no book uses an acronym. The main source for content/acronyms/.
-- acronym-candidates.md, network-plus-acronym-candidates.md: "Expanded Form (ACRONYM)" pairs found in the book chapters.
+- acronym-candidates.md, network-plus-acronym-candidates.md, security-plus-acronym-candidates.md: "Expanded Form (ACRONYM)"
+  pairs found in the book chapters.
 """
 
 import re
@@ -53,6 +54,8 @@ CERTS = {  # certification: (source categories, {exam: official objectives folde
                "a-plus-acronyms.md", "acronym-candidates.md", "A+"),
     "network-plus": (["network"], {"Network+": "network/objectives-n10-009"},
                      "network-plus-acronyms.md", "network-plus-acronym-candidates.md", "Network+"),
+    "security-plus": (["sec"], {"Security+": "sec/objectives-sy0-801"},
+                      "security-plus-acronyms.md", "security-plus-acronym-candidates.md", "Security+"),
 }
 
 

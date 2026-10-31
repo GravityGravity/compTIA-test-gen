@@ -1,0 +1,21 @@
+{
+  "tech": ["the security administrator", "a security analyst", "the systems administrator", "the IT operations lead", "a junior security analyst"],
+  "bank": ["a regional bank", "a credit union", "an online bank"],
+  "hospital": ["a hospital", "a medical imaging center", "a health insurance provider"],
+  "software-company": ["a software company", "a SaaS provider", "a game studio"],
+  "government-agency": ["a city government office", "a state agency", "a public utility"],
+  "setting": ["#office#", "#enterprise#", "#clinic#", "#bank#", "#hospital#", "#software-company#", "#government-agency#", "#retail#"],
+  "device": ["the server", "the workstation", "the firewall"],
+  "faultOpening": ["#tech.capitalize# at #setting# is investigating a security event:", "At #setting#, #tech# reviews an alert:", "#tech.capitalize# at #setting# is called in because of the following:", "At #setting#, the security team asks #tech# to look into the following:"],
+  "askCause": ["What is the MOST LIKELY cause?", "Which of the following MOST LIKELY explains these findings?", "What is MOST LIKELY happening?"],
+  "askAction": ["Which action BEST addresses this?", "What is the BEST response?", "Which of the following should the team do to BEST address this?"],
+  "askFirst": ["What should the team do FIRST?", "Which of the following should the team do FIRST?"],
+  "firstReason": ["This quick step confirms or contains the issue before the longer fix.", "Confirm and contain first; the fuller remediation comes after."],
+  "wrongFirstFix": ["That may be part of the response, but it is not the first thing the team should do.", "That could come later, but another step comes first."],
+  "requirementOpening": ["#tech.capitalize# at #setting# needs to #need#.", "At #setting#, #tech# must #need#.", "#tech.capitalize# at #setting# is asked to #need#."],
+  "conditionLead": ["Note that #conditions#.", "The team knows that #conditions#.", "Also, #conditions#."],
+  "askItem": ["Which #itemType# should the team use?", "Which #itemType# BEST meets this need?", "Which #itemType# is the BEST choice?"],
+  "stepDone": ["The team has just #done#.", "The team has #done#."],
+  "askNext": ["What should the team do NEXT?", "Which step should the team take NEXT?"],
+  "procedureOpening": ["#tech.capitalize# at #setting# is #task#.", "At #setting#, #tech# is #task#."]
+}

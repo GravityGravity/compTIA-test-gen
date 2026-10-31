@@ -17,7 +17,7 @@ The field lists and examples for each record are in `content/README.md`. This gu
 | Books for the exam | `sources-text/<category>/<book>/`, found with `sources-text/sources-index.md` |
 | Book questions, parsed | `sources-text/derived/questions/<book>.json` (made by `tools/extract/extract_questions.py`) |
 
-Do not mix values or sources between exams. A+ content uses `sources-text/general/` (and `core1/`, `core2/`). Network+ content uses `sources-text/network/` only. Security+ content uses `sources-text/sec/` only.
+Do not mix values or sources between exams. A+ content uses `sources-text/general/` (and `core1/`, `core2/`). Network+ content uses `sources-text/network/` only. Security+ content uses `sources-text/sec/` only, plus online sources for SY0-801 topics that its books do not cover (the rules and the verification pass are in `CLAUDE.md`; the fields `sourceUrls` and `verified` are in `content/README.md`).
 
 ## 2. The exam config
 

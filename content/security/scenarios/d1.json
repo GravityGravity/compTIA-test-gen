@@ -1,0 +1,667 @@
+[
+  {
+    "id": "security-s-cm-backout-plan",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "software-company"
+    ],
+    "need": "prepare a firmware upgrade for the edge firewall",
+    "clues": [
+      "the upgrade could leave the VPN unusable for remote staff",
+      "the firewall must be back in its current state within minutes if anything goes wrong",
+      "the steps to return to the old firmware must be written down before work starts"
+    ],
+    "answer": {
+      "item": "A backout plan"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "a change may fail and the team must be able to return the system to its previous state",
+    "explanation": "A backout plan is a documented procedure, written before the change, that reverts a change that harms security or operations. It keeps a failed change from causing a long outage or leaving systems exposed.",
+    "related": [
+      "security-s-cm-maintenance-window",
+      "security-s-cm-impact-analysis",
+      "security-s-cm-fail-forward"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-impact-analysis",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "bank"
+    ],
+    "need": "decide whether to move the payroll database to a new server",
+    "clues": [
+      "no one has checked which systems and users the move would affect",
+      "the change board wants to know the security risks before it votes",
+      "the payroll application exchanges data with three other services"
+    ],
+    "answer": {
+      "item": "An impact analysis"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "the effects and risks of a proposed change must be understood before it is approved",
+    "explanation": "An impact analysis assesses how a proposed change could affect systems, users, and security before it is approved. It finds risks early so they can be addressed or the change can be rejected.",
+    "related": [
+      "security-s-cm-cab-approval",
+      "security-s-cm-stakeholders",
+      "security-s-cm-dependencies"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-maintenance-window",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "retail",
+      "software-company",
+      "bank"
+    ],
+    "need": "schedule a patch that takes the customer web portal offline",
+    "clues": [
+      "customers use the portal heavily during business hours",
+      "traffic drops sharply late in the evening",
+      "the patch needs the portal service to restart"
+    ],
+    "answer": {
+      "item": "A scheduled maintenance window"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "a change causes downtime and must happen when it affects the fewest users",
+    "explanation": "A maintenance window is a planned time frame for changes, chosen when use is lowest so that downtime affects as few people as possible.",
+    "related": [
+      "security-s-cm-backout-plan",
+      "security-s-cm-cab-approval",
+      "security-s-cm-sop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-cab-approval",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "government-agency",
+      "bank"
+    ],
+    "need": "change the routing configuration of the core router",
+    "clues": [
+      "the change affects every branch office",
+      "company policy says no production change may start without formal sign-off",
+      "the request is documented with its risks and a rollback plan"
+    ],
+    "answer": {
+      "item": "Approval from the change advisory board (CAB)"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "a production change needs formal review and sign-off before it starts",
+    "explanation": "The change advisory board (CAB) evaluates, prioritizes, and approves or rejects proposed changes. Its approval process makes sure a change fits the organization's goals and does not add security risk before work begins.",
+    "related": [
+      "security-s-cm-impact-analysis",
+      "security-s-cm-owner",
+      "security-s-cm-test-results"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-test-results",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "software-company"
+    ],
+    "need": "roll out a new endpoint security agent to every workstation",
+    "clues": [
+      "a pilot group of twenty machines has run the agent for a week",
+      "the change board asked for evidence that the agent does not break business applications",
+      "nobody has reviewed what happened on the pilot machines yet"
+    ],
+    "answer": {
+      "item": "Reviewing the test results"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "the team must show that a change works as intended before it is deployed",
+    "explanation": "Test results show whether a change or new security measure works as intended and does not cause new problems. Reviewing them before deployment gives the evidence the approval process needs.",
+    "related": [
+      "security-s-cm-cab-approval",
+      "security-s-cm-backout-plan",
+      "security-s-cm-sop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-sop",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "government-agency",
+      "hospital"
+    ],
+    "need": "make sure every engineer applies the monthly server patches the same way",
+    "clues": [
+      "two engineers patched the same server type in a different order last month",
+      "one engineer missed a step that left a service disabled",
+      "new staff join the operations team often"
+    ],
+    "answer": {
+      "item": "A standard operating procedure (SOP)"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "a routine task must be done the same way every time",
+    "explanation": "A standard operating procedure (SOP) is a step-by-step instruction set for a routine task. It keeps the work consistent and secure no matter who does it.",
+    "related": [
+      "security-s-cm-update-policies",
+      "security-s-cm-maintenance-window",
+      "security-s-cm-owner"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-owner",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "hospital"
+    ],
+    "need": "find out who is accountable for a change to the customer database",
+    "clues": [
+      "the change request names no responsible person",
+      "two departments each assume the other will check the security settings",
+      "auditors require one named person for each change"
+    ],
+    "answer": {
+      "item": "Assigning an owner to the change"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "a change needs one person who is accountable for carrying it out",
+    "explanation": "Ownership names the person or team responsible and accountable for a change or an asset. Without an owner, tasks such as checking security settings can fall between teams.",
+    "related": [
+      "security-s-cm-stakeholders",
+      "security-s-cm-cab-approval",
+      "security-s-cm-sop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-stakeholders",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "government-agency"
+    ],
+    "need": "plan a migration to a new email platform",
+    "clues": [
+      "the sales team depends on email to reach customers",
+      "the legal department must keep a record of all messages",
+      "the help desk will get many calls if users are not told in advance"
+    ],
+    "answer": {
+      "item": "Identifying and involving the stakeholders"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "the groups affected by a change must be identified and involved",
+    "explanation": "Stakeholders are the people and groups who are affected by a change or who can affect it. Involving them early surfaces their requirements, such as legal record keeping, and avoids surprises.",
+    "related": [
+      "security-s-cm-owner",
+      "security-s-cm-impact-analysis",
+      "security-s-cm-maintenance-window"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-fail-forward",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "software-company",
+      "bank",
+      "retail"
+    ],
+    "need": "recover from a failed release of the online ordering application",
+    "clues": [
+      "the release ran a database migration that removed an old column",
+      "the previous version of the application cannot run against the changed database",
+      "the change policy allows a tested corrective release in this situation"
+    ],
+    "answer": {
+      "item": "Failing forward with a corrective release"
+    },
+    "itemType": "change management practice",
+    "appliesWhen": "a failed change cannot be safely reversed and a tested fix is deployed instead",
+    "explanation": "Failing forward (also called fixing forward or rolling forward) recovers from a failed change by deploying a new corrective change instead of returning to the previous version. It is used when a rollback is impossible or riskier, for example after a data change the old version cannot handle, and the plan should be documented and tested before deployment.",
+    "related": [
+      "security-s-cm-backout-plan",
+      "security-s-cm-version-control",
+      "security-s-cm-test-results"
+    ],
+    "origin": "written",
+    "source": "AWS Well-Architected Framework, Operational Excellence Pillar – OPS06-BP01 Plan for unsuccessful changes; xMatters – After a deployment error, should you fix forward or roll back?",
+    "sourceUrls": [
+      "https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/ops_mit_deploy_risks_plan_for_unsucessful_changes.html",
+      "https://www.xmatters.com/blog/after-a-deployment-error-should-you-fix-forward-or-roll-back/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-cm-allow-list",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.2"
+    ],
+    "settings": [
+      "bank",
+      "office",
+      "enterprise"
+    ],
+    "need": "stop unapproved software from running on the finance workstations",
+    "clues": [
+      "new malware variants appear every day",
+      "the finance team uses only five approved applications",
+      "naming every harmful program in advance is impossible"
+    ],
+    "answer": {
+      "item": "An application allow list"
+    },
+    "itemType": "control",
+    "appliesWhen": "only approved applications may run and everything else must be blocked",
+    "explanation": "An allow list permits only the items on the list and denies everything else. Malware never gets on the list, so it cannot run, which makes allow lists stronger than deny lists when the approved set is small.",
+    "related": [
+      "security-s-cm-deny-list",
+      "security-s-cm-restricted-activities",
+      "security-s-cm-legacy-isolation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-deny-list",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.2"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "enterprise"
+    ],
+    "need": "block one remote access tool that attackers abused in a recent incident",
+    "clues": [
+      "every other installed application must keep working",
+      "the tool's name and file hash are known",
+      "staff install many different approved programs"
+    ],
+    "answer": {
+      "item": "A deny list entry for the tool"
+    },
+    "itemType": "control",
+    "appliesWhen": "a few known items must be blocked while everything else is allowed",
+    "explanation": "A deny list (block list) blocks only the items named on it and allows everything else. It fits when the bad item is known and the allowed software is too varied to list.",
+    "related": [
+      "security-s-cm-allow-list",
+      "security-s-cm-restricted-activities",
+      "security-s-cm-dependencies"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-dependencies",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "government-agency"
+    ],
+    "need": "restart the directory service during tonight's maintenance",
+    "clues": [
+      "several applications sign users in through the service",
+      "one of those applications crashed the last time the service stopped",
+      "no one has recorded which systems rely on the service"
+    ],
+    "answer": {
+      "item": "Mapping the service's dependencies"
+    },
+    "itemType": "action",
+    "appliesWhen": "other systems rely on the component being changed",
+    "explanation": "Dependencies are relationships where one service or application needs another to work. Mapping them before a restart shows which systems will be affected so they can be handled in the plan.",
+    "related": [
+      "security-s-cm-impact-analysis",
+      "security-s-cm-legacy-isolation",
+      "security-s-cm-maintenance-window"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-legacy-isolation",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.2"
+    ],
+    "settings": [
+      "warehouse",
+      "enterprise",
+      "government-agency"
+    ],
+    "need": "keep an old inventory application running safely",
+    "clues": [
+      "the vendor went out of business years ago",
+      "no security patches are available for the application",
+      "the warehouse still uses it every day"
+    ],
+    "answer": {
+      "item": "Isolating the legacy application on its own network segment"
+    },
+    "itemType": "action",
+    "appliesWhen": "an old application that cannot be patched must keep running",
+    "explanation": "Legacy applications are older programs that often lack vendor support and current security features. When one cannot be replaced or patched, isolating it limits what an attacker can reach through it.",
+    "related": [
+      "security-s-cm-allow-list",
+      "security-s-cm-dependencies",
+      "security-s-cm-restricted-activities"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-restricted-activities",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.2"
+    ],
+    "settings": [
+      "software-company",
+      "bank",
+      "enterprise"
+    ],
+    "need": "keep the production servers protected during a release freeze",
+    "clues": [
+      "developers sometimes log in to production servers to test fixes",
+      "auditors flagged changes that were made outside the change process",
+      "only approved deployments should touch production"
+    ],
+    "answer": {
+      "item": "Restricting direct access to the production environment"
+    },
+    "itemType": "control",
+    "appliesWhen": "certain actions must be blocked to protect systems outside the change process",
+    "explanation": "Restricted activities are actions that are limited or prohibited to protect systems, such as direct changes to production. Restricting them forces changes through the approved process.",
+    "related": [
+      "security-s-cm-allow-list",
+      "security-s-cm-deny-list",
+      "security-s-cm-owner"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-update-diagrams",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "bank"
+    ],
+    "need": "close out a change that added a firewall between two network segments",
+    "clues": [
+      "the network team uses the topology drawing to troubleshoot",
+      "the drawing still shows the old traffic path",
+      "a new engineer joins the team next week"
+    ],
+    "answer": {
+      "item": "Updating the network diagrams"
+    },
+    "itemType": "documentation task",
+    "appliesWhen": "a change altered the network or system layout",
+    "explanation": "Updating diagrams keeps drawings of networks and systems accurate after a change. Out-of-date diagrams lead to misunderstandings, misconfigurations, and security gaps.",
+    "related": [
+      "security-s-cm-update-policies",
+      "security-s-cm-version-control",
+      "security-s-cm-sop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-update-policies",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "government-agency"
+    ],
+    "need": "close out a change that replaced the VPN with a new remote access service",
+    "clues": [
+      "the remote work instructions still tell users to start the old client",
+      "the help desk follows a written process that names the old service",
+      "the acceptable use rules mention the old VPN by name"
+    ],
+    "answer": {
+      "item": "Updating the policies and procedures"
+    },
+    "itemType": "documentation task",
+    "appliesWhen": "rules or written steps no longer match the systems after a change",
+    "explanation": "Policies and procedures must be updated when a change makes them out of date. Otherwise staff follow the wrong guidance, which can create security gaps or compliance problems.",
+    "related": [
+      "security-s-cm-update-diagrams",
+      "security-s-cm-sop",
+      "security-s-cm-version-control"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-version-control",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.4"
+    ],
+    "settings": [
+      "software-company",
+      "enterprise",
+      "bank"
+    ],
+    "need": "track changes to the firewall configuration scripts",
+    "clues": [
+      "three engineers edit the same scripts",
+      "last week no one could tell which edit broke a rule",
+      "the team must be able to return to any earlier copy of a script"
+    ],
+    "answer": {
+      "item": "A version control system"
+    },
+    "itemType": "tool",
+    "appliesWhen": "changes to files must be tracked with who made them and earlier versions kept",
+    "explanation": "Version control records each change to a set of files, with when and by whom it was made, so any earlier version can be restored. It also gives an audit trail that helps spot unauthorized changes.",
+    "related": [
+      "security-s-cm-update-diagrams",
+      "security-s-cm-backout-plan",
+      "security-s-cm-sop"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  },
+  {
+    "id": "security-s-cm-process",
+    "kind": "procedure",
+    "exam": "SY0-801",
+    "domain": "1",
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "topics": [
+      "SY0-801/1.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "hospital",
+      "government-agency"
+    ],
+    "task": "making a change to the production firewall rules",
+    "steps": [
+      {
+        "do": "Submit a change request that names the owner and the reason",
+        "done": "submitted a change request that names the owner and the reason"
+      },
+      {
+        "do": "Perform an impact analysis of the change",
+        "done": "performed an impact analysis of the change"
+      },
+      {
+        "do": "Get approval from the change advisory board",
+        "done": "received approval from the change advisory board"
+      },
+      {
+        "do": "Make the change during the maintenance window with the backout plan ready",
+        "done": "made the change during the maintenance window"
+      },
+      {
+        "do": "Verify that the change works as intended",
+        "done": "verified that the change works as intended"
+      },
+      {
+        "do": "Update the diagrams and documentation",
+        "done": "updated the diagrams and documentation"
+      }
+    ],
+    "explanation": "A change starts as a documented request with an owner, is assessed with an impact analysis, and is approved by the change advisory board before any work. It is then made in the maintenance window with a backout plan ready, checked, and the documentation is updated so it matches the new state.",
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 3: Explain the importance of change management processes and the impact to security; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 3: Understanding Change Management’s Security Impact"
+  }
+]

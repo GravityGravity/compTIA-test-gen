@@ -1,0 +1,78 @@
+{
+  "id": "SY0-801",
+  "certification": "security-plus",
+  "name": "Security+ Exam",
+  "shortName": "Security+",
+  "active": true,
+  "content": "security",
+  "questionCount": { "min": 75, "max": 90 },
+  "timeLimitMinutes": 90,
+  "passingScore": 750,
+  "maxScore": 900,
+  "scenarioShare": 33,
+  "generatedScenarioShare": 70,
+  "domains": [
+    {
+      "id": "1",
+      "name": "General Security Concepts",
+      "weight": 16,
+      "objectives": [
+        { "id": "1.1", "kind": "knowledge" },
+        { "id": "1.2", "kind": "scenario" },
+        { "id": "1.3", "kind": "knowledge" }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Threats, Vulnerabilities, and Attacks",
+      "weight": 24,
+      "objectives": [
+        { "id": "2.1", "kind": "knowledge" },
+        { "id": "2.2", "kind": "knowledge" },
+        { "id": "2.3", "kind": "knowledge" },
+        { "id": "2.4", "kind": "knowledge" },
+        { "id": "2.5", "kind": "scenario" },
+        { "id": "2.6", "kind": "knowledge" }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Security Architecture",
+      "weight": 19,
+      "objectives": [
+        { "id": "3.1", "kind": "knowledge" },
+        { "id": "3.2", "kind": "scenario" },
+        { "id": "3.3", "kind": "knowledge" },
+        { "id": "3.4", "kind": "knowledge" }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Security Operations",
+      "weight": 27,
+      "objectives": [
+        { "id": "4.1", "kind": "scenario" },
+        { "id": "4.2", "kind": "knowledge" },
+        { "id": "4.3", "kind": "scenario" },
+        { "id": "4.4", "kind": "knowledge" },
+        { "id": "4.5", "kind": "scenario" },
+        { "id": "4.6", "kind": "scenario" },
+        { "id": "4.7", "kind": "knowledge" },
+        { "id": "4.8", "kind": "scenario" }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Security Program Management and Oversight",
+      "weight": 14,
+      "objectives": [
+        { "id": "5.1", "kind": "knowledge" },
+        { "id": "5.2", "kind": "knowledge" },
+        { "id": "5.3", "kind": "knowledge" },
+        { "id": "5.4", "kind": "knowledge" },
+        { "id": "5.5", "kind": "knowledge" },
+        { "id": "5.6", "kind": "scenario" }
+      ]
+    }
+  ]
+}

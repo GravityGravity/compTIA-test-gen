@@ -24,7 +24,7 @@ Use these names in all files and code:
 | Core 1 Exam | Exam structure | Core 1 topics |
 | Core 2 Exam | Exam structure (same as Core 1) | Core 2 topics |
 | Network+ Exam | Exam structure (same as Core 1) | Network+ topics. Active since 2026-10-30. |
-| Security+ Exam | Exam structure (same as Core 1) | Security+ (SY0-801) topics. In scope (added 2026-10-30); greyed out until its config and content exist. |
+| Security+ Exam | Exam structure (same as Core 1) | Security+ (SY0-801) topics. In scope (added 2026-10-30); active since 2026-10-30 (all five domains have content). |
 | Acronym Exercise | Exercise structure (different) | Acronyms only |
 | Definition Exercise | Exercise structure (shares the exercise code with Acronym Exercise) | Terms and definitions only |
 
@@ -51,7 +51,7 @@ All exam modules use the same exam code. Only the exam config and the content ar
 - The exam has a timer.
 - The app generates scenario-based questions dynamically from scenario records and a sentence grammar. The sentence structure changes between attempts, so the user cannot memorize the question form. The generator works for every exam module.
 - All other questions come from a question pool for each exam (approved 2026-10-30):
-  - The pool has every practice question from the exam's books (chapter quizzes, review questions, practice exams), with the same answers. Questions from books for older objectives are included as they are, tagged with the closest current objective. All the Security+ books are for SY0-701, the exam before SY0-801, so all of them are older-objective books.
+  - The pool has every practice question from the exam's books (chapter quizzes, review questions, practice exams), with the same answers. Questions from books for older objectives are included as they are, tagged with the closest current objective. All the Security+ books are for SY0-701, the exam before SY0-801 (released November 2026), so all of them are older-objective books. For SY0-801 topics that no book covers, questions are written from online sources and verified against at least two independent sources before the exam is activated.
   - New questions written from the books fill the gaps: every topic (top-level bullet, numbered step, or table under an objective) has at least 1 question, and 2 where the books give enough facts (changed 2026-10-30; was 3).
   - Each exam's pool has at least 800 questions.
   - Each question is labelled with its domain, objectives, and topics.

@@ -1,0 +1,4124 @@
+[
+  {
+    "id": "secplus-def-organized-crime",
+    "term": "Organized crime",
+    "definition": "Profit-driven criminal enterprise with a hierarchy and division of labor that runs ransomware, card fraud, and identity theft campaigns, usually well funded and skilled.",
+    "acceptedAnswers": [
+      "Crime syndicate",
+      "Criminal syndicate",
+      "Organized crime group",
+      "Organised crime"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations"
+  },
+  {
+    "id": "secplus-def-terrorist",
+    "term": "Terrorist",
+    "definition": "Threat actor who attacks systems, often critical infrastructure, to cause harm, fear, or disruption in support of a violent political or religious cause.",
+    "acceptedAnswers": [
+      "Cyberterrorist",
+      "Terrorist group"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations; SY0-801 objective 2.2"
+  },
+  {
+    "id": "secplus-def-unskilled-attacker",
+    "term": "Unskilled attacker",
+    "definition": "Low-skill threat actor who runs ready-made programs and attack kits written by others, with little funding and limited understanding of how the attacks actually work.",
+    "acceptedAnswers": [
+      "Script kiddie",
+      "Script kiddies"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-hacktivist",
+    "term": "Hacktivist",
+    "definition": "Threat actor who breaks into or disrupts systems, for example by defacing websites or leaking documents, to promote a social or political cause.",
+    "acceptedAnswers": [
+      "Hacktivists"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-insider-threat",
+    "term": "Insider threat",
+    "definition": "Current or former employee, contractor, or partner who deliberately misuses authorized access to steal data or sabotage systems, often for money or revenge.",
+    "acceptedAnswers": [
+      "Insider",
+      "Malicious insider"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-unintentional-insider",
+    "term": "Unintentional insider",
+    "definition": "Staff member who causes a security incident by mistake, such as clicking a phishing link or misconfiguring a system, with no harmful intent.",
+    "acceptedAnswers": [
+      "Accidental insider",
+      "Accidental threat actor",
+      "Unintentional threat actor",
+      "Accidental/unintentional"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations; SY0-801 objective 2.2"
+  },
+  {
+    "id": "secplus-def-competitor",
+    "term": "Competitor",
+    "definition": "Rival business that attacks or spies on an organization to steal trade secrets, customer lists, or product plans and gain a market advantage.",
+    "acceptedAnswers": [
+      "Competitors",
+      "Corporate competitor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations"
+  },
+  {
+    "id": "secplus-def-state-sponsored-actor",
+    "term": "State-sponsored actor",
+    "definition": "Attacker group working for or funded by a government, with large budgets and top skills, that conducts espionage, sabotage, or cyber warfare against other countries.",
+    "acceptedAnswers": [
+      "Nation-state actor",
+      "Nation state",
+      "State-sponsored attacker",
+      "State actor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-advanced-persistent-threat",
+    "term": "Advanced persistent threat",
+    "definition": "Long-running, stealthy intrusion campaign by a skilled, well-resourced group that gains a foothold in a chosen target and stays undetected for months to steal data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-actors",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-threat-actor",
+    "term": "Threat actor",
+    "definition": "Person or group that intends to compromise the confidentiality, integrity, or availability of systems or data, for gain, for a cause, or for other reasons.",
+    "acceptedAnswers": [
+      "Malicious actor",
+      "Adversary"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actor-attributes",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations"
+  },
+  {
+    "id": "secplus-def-internal-threat-actor",
+    "term": "Internal threat actor",
+    "definition": "Attacker who operates from inside the organization, such as an employee or contractor, and can use existing access and knowledge of its systems.",
+    "acceptedAnswers": [
+      "Internal actor",
+      "Internal threat"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actor-attributes",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-external-threat-actor",
+    "term": "External threat actor",
+    "definition": "Attacker with no authorized access who operates from outside the organization and must rely on reconnaissance, exploits, or social engineering to get in.",
+    "acceptedAnswers": [
+      "External actor",
+      "External threat"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actor-attributes",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-resources-and-funding",
+    "term": "Resources and funding",
+    "definition": "Attribute that measures the money, tools, infrastructure, and people an attacker can draw on, from a lone hobbyist's budget to a government's.",
+    "acceptedAnswers": [
+      "Resources/funding",
+      "Funding"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actor-attributes",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations"
+  },
+  {
+    "id": "secplus-def-level-of-sophistication",
+    "term": "Level of sophistication",
+    "definition": "Attribute that measures an attacker's technical skill, from running downloaded tools to writing custom malware and exploiting flaws nobody else knows about.",
+    "acceptedAnswers": [
+      "Sophistication",
+      "Level of capability",
+      "Level of sophistication/capability"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-actor-attributes",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-financial-gain",
+    "term": "Financial gain",
+    "definition": "Motive of making money from an attack, for example through ransomware payments, card fraud, cryptocurrency theft, or selling stolen data.",
+    "acceptedAnswers": [
+      "Financial",
+      "Financial motivation",
+      "Monetary gain"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-gain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-intellectual-property-theft",
+    "term": "Intellectual property theft",
+    "definition": "Motive of stealing trade secrets, designs, source code, or research so the attacker or its sponsor can copy them instead of developing them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-gain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-extortion",
+    "term": "Extortion",
+    "definition": "Motive of forcing a victim to pay by threatening to leak stolen data, keep systems locked, or continue an attack unless demands are met.",
+    "acceptedAnswers": [
+      "Blackmail"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-gain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-notoriety",
+    "term": "Notoriety",
+    "definition": "Motive of earning status and bragging rights in hacker communities by pulling off a visible attack and getting credit for it.",
+    "acceptedAnswers": [
+      "Fame",
+      "Recognition"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-gain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-general-curiosity",
+    "term": "General curiosity",
+    "definition": "Motive of exploring systems simply to see how they work or whether a break-in is possible, without a clear plan to profit or harm.",
+    "acceptedAnswers": [
+      "Curiosity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-gain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations; SY0-801 objective 2.2"
+  },
+  {
+    "id": "secplus-def-revenge",
+    "term": "Revenge",
+    "definition": "Motive of a disgruntled employee, former partner, or other aggrieved person who attacks to punish an organization or individual for a perceived wrong.",
+    "acceptedAnswers": [
+      "Retaliation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-gain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-espionage",
+    "term": "Espionage",
+    "definition": "Motive of secretly gathering confidential government, military, or business information about a rival, typically through long-running hidden operations.",
+    "acceptedAnswers": [
+      "Cyberespionage",
+      "Cyber espionage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-cause",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-influence",
+    "term": "Influence",
+    "definition": "Motive of shaping how a population or decision maker thinks or acts, for example by spreading disinformation or leaked material before an election.",
+    "acceptedAnswers": [
+      "Influence operations"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-cause",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations; SY0-801 objective 2.2"
+  },
+  {
+    "id": "secplus-def-fear-and-chaos",
+    "term": "Fear and chaos",
+    "definition": "Motive of spreading panic and instability by knocking out services people depend on, such as power, transport, or communications, rather than for profit.",
+    "acceptedAnswers": [
+      "Fear/chaos",
+      "Chaos",
+      "Disruption/chaos",
+      "Disruption and chaos"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-cause",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-ideological-beliefs",
+    "term": "Ideological beliefs",
+    "definition": "Motive rooted in a set of social, religious, or moral convictions that drives attackers to target groups whose values or actions they oppose.",
+    "acceptedAnswers": [
+      "Ideological",
+      "Ideology",
+      "Ideological motivation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-cause",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 5: Comparing and Contrasting Common Threat Actors and Motivations"
+  },
+  {
+    "id": "secplus-def-political-beliefs",
+    "term": "Political beliefs",
+    "definition": "Motive of advancing or opposing a government, party, or law, for example by attacking officials' systems as a form of protest.",
+    "acceptedAnswers": [
+      "Political",
+      "Political motivation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-cause",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-ethical-motivation",
+    "term": "Ethical motivation",
+    "definition": "Motive of attackers who see their actions as right, such as exposing flaws or wrongdoing so they get fixed, even when acting without permission.",
+    "acceptedAnswers": [
+      "Ethical",
+      "Ethics"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.2"
+    ],
+    "group": "threat-motives-cause",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-threat-feed",
+    "term": "Threat feed",
+    "definition": "Continuously updated stream of attack data, such as malicious IP addresses, domains, and file hashes, that security tools can import to block or detect attacks.",
+    "acceptedAnswers": [
+      "Threat intelligence feed",
+      "Threat feeds"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-open-source-intelligence",
+    "term": "Open-source intelligence",
+    "definition": "Information about threats or targets collected from publicly available material such as websites, social media, public records, forums, and code repositories.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-proprietary-threat-intelligence",
+    "term": "Proprietary threat intelligence",
+    "definition": "Curated attack data sold by a paid vendor under subscription, often enriched and filtered for a customer's industry, rather than freely published.",
+    "acceptedAnswers": [
+      "Third-party threat intelligence",
+      "Commercial threat intelligence",
+      "Proprietary intelligence"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-information-sharing-and-analysis-center",
+    "term": "Information Sharing and Analysis Center",
+    "definition": "Member organization for one industry sector, such as finance or health care, where companies trade attack data and warnings with each other and with government.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-dark-web",
+    "term": "Dark web",
+    "definition": "Hidden part of the internet reached only through special software such as Tor, where stolen data, exploits, and attack tools are traded and analysts look for leaks.",
+    "acceptedAnswers": [
+      "Darknet"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-structured-threat-information-expression",
+    "term": "Structured Threat Information Expression",
+    "definition": "Standardized JSON language for describing attack data, such as actors, campaigns, malware, and indicators, so organizations can share it in a common format.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-trusted-automated-exchange-of-indicator-information",
+    "term": "Trusted Automated Exchange of Indicator Information",
+    "definition": "Protocol for automatically sharing STIX-formatted attack data between servers and clients over HTTPS, using a collection or a channel model.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "threat-intel-sources",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-common-vulnerability-scoring-system",
+    "term": "Common Vulnerability Scoring System",
+    "definition": "Open framework that rates the severity of a software flaw from 0.0 to 10.0 using base, threat, and environmental metrics.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "vuln-scoring",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-common-vulnerabilities-and-exposures",
+    "term": "Common Vulnerabilities and Exposures",
+    "definition": "Public list, run by MITRE, that gives each publicly disclosed security flaw a unique identifier so vendors and tools can refer to the same issue.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "vuln-scoring",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-national-vulnerability-database",
+    "term": "National Vulnerability Database",
+    "definition": "US government repository, run by NIST, that enriches each catalogued security flaw with severity ratings, affected products, and fix references.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "vuln-scoring",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 17: Understanding Security Alerting and Monitoring Concepts and Tools"
+  },
+  {
+    "id": "secplus-def-common-weakness-enumeration",
+    "term": "Common Weakness Enumeration",
+    "definition": "Community-developed list of software and hardware flaw types, such as improper input validation, that describes root causes rather than individual bugs in products.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "vuln-scoring",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-def-vulnerability-prioritization",
+    "term": "Vulnerability prioritization",
+    "definition": "Ranking discovered flaws for remediation by severity, exploitability, asset value, and business impact so the most dangerous ones are fixed first.",
+    "acceptedAnswers": [
+      "Prioritization",
+      "Prioritisation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "vuln-scoring",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-vulnerability-classification",
+    "term": "Vulnerability classification",
+    "definition": "Sorting discovered flaws into categories, such as application, operating system, configuration, or hardware weaknesses, to understand them and choose the right fix.",
+    "acceptedAnswers": [
+      "Vulnerability type",
+      "Vulnerability types"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "group": "vuln-scoring",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-short-message-service",
+    "term": "Short Message Service",
+    "definition": "Basic cellular service for brief notes of up to 160 characters between phones, which attackers use to send fake alerts and links and to intercept one-time codes.",
+    "acceptedAnswers": [
+      "Text message",
+      "Text messaging"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-message",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-rich-communication-services",
+    "term": "Rich Communication Services",
+    "definition": "Carrier messaging standard that upgrades phone texting with read receipts, typing indicators, rich media, and branded business messages; scammers also use it to send phishing texts.",
+    "acceptedAnswers": [
+      "Rich Communication Suite"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-message",
+    "origin": "objectives",
+    "source": "Turn on RCS chats in Google Messages – Google Messages Help; RCS for Business – Google for Developers; SY0-801 objective 2.3",
+    "sourceUrls": [
+      "https://support.google.com/messages/answer/7189714",
+      "https://developers.google.com/business-communications/rcs-business-messaging"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-instant-messaging",
+    "term": "Instant messaging",
+    "definition": "Real-time chat apps such as WhatsApp or Signal, often end-to-end encrypted, through which attackers send malicious links and files or socially engineered lures.",
+    "acceptedAnswers": [
+      "Instant message",
+      "Instant messenger"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-message",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-collaboration-tool",
+    "term": "Collaboration tool",
+    "definition": "Shared workspace app such as Microsoft Teams or Slack where an attacker who joins or takes over an account can post malicious links or files that colleagues trust.",
+    "acceptedAnswers": [
+      "Collaboration tools",
+      "Collaboration platform"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-message",
+    "origin": "objectives",
+    "source": "MITRE ATT&CK – T1566.003 Phishing: Spearphishing via Service; MITRE ATT&CK – T1534 Internal Spearphishing; SY0-801 objective 2.3",
+    "sourceUrls": [
+      "https://attack.mitre.org/techniques/T1566/003/",
+      "https://attack.mitre.org/techniques/T1534/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-spam-over-instant-messaging",
+    "term": "Spam over instant messaging",
+    "definition": "Unsolicited bulk advertising or scam messages sent through chat apps instead of email, often carrying links to malicious sites.",
+    "acceptedAnswers": [
+      "Spim"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-message",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "secplus-def-quick-response-code",
+    "term": "Quick Response code",
+    "definition": "Two-dimensional square barcode that phone cameras decode into a link or text, which attackers print or email to send victims to malicious sites.",
+    "acceptedAnswers": [
+      "QR code",
+      "Quick Response codes"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-file",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-embedded-content",
+    "term": "Embedded content",
+    "definition": "Hidden code, links, or data concealed inside an image or other media file that runs or redirects the user when the file is opened or displayed.",
+    "acceptedAnswers": [
+      "Embedded image content"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-file",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-completely-automated-public-turing-test-to-tell-computers-and-humans-apart",
+    "term": "Completely Automated Public Turing test to tell Computers and Humans Apart",
+    "definition": "Challenge-response test, such as reading distorted letters or picking matching pictures, that a website uses to keep automated bots away from logins and forms.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-file",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-embedded-macro",
+    "term": "Embedded macro",
+    "definition": "Small script, usually written in VBA, stored inside an Office document that can run when the file is opened and download or launch malware.",
+    "acceptedAnswers": [
+      "Macro",
+      "Malicious macro",
+      "Embedded macros",
+      "Macro virus"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-file",
+    "origin": "objectives",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl), Sybex – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-rich-text-format",
+    "term": "Rich Text Format",
+    "definition": "Cross-platform word processing file type that can carry embedded objects and links, which attackers send as attachments to exploit reader flaws.",
+    "acceptedAnswers": [
+      "Rich Text Format document"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-file",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-portable-document-format",
+    "term": "Portable Document Format",
+    "definition": "Widely used fixed-layout file type, opened in readers such as Acrobat, that can contain scripts, links, and embedded files, making malicious attachments look like ordinary invoices.",
+    "acceptedAnswers": [
+      "Portable Document Format file"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-file",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-browser-extension",
+    "term": "Browser extension",
+    "definition": "Small add-on that extends Chrome, Edge, or Firefox and can read pages and form data, so a malicious or hijacked one can steal credentials.",
+    "acceptedAnswers": [
+      "Browser extensions",
+      "Browser add-on",
+      "Browser plug-in"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-browser",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-javascript",
+    "term": "JavaScript",
+    "definition": "Scripting language that runs inside web pages in the browser, which attackers abuse to inject malicious code, redirect users, or steal data from sessions.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-browser",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-cookie",
+    "term": "Cookie",
+    "definition": "Small text file a website stores in the browser to remember settings and logins; if stolen, it can let an attacker reuse the victim's signed-in session.",
+    "acceptedAnswers": [
+      "Cookies",
+      "HTTP cookie",
+      "Browser cookie"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-browser",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-session-token",
+    "term": "Session token",
+    "definition": "Unique value a web server issues after login to identify an authenticated user's ongoing visit, so whoever presents it can act as that user.",
+    "acceptedAnswers": [
+      "Session ID",
+      "Session identifier"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-browser",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-infrastructure-device",
+    "term": "Infrastructure device",
+    "definition": "Router, switch, firewall, or other core network appliance whose compromise, often through outdated firmware or default settings, gives attackers control over traffic.",
+    "acceptedAnswers": [
+      "Network infrastructure device",
+      "Infrastructure devices"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-network",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-virtualized-device",
+    "term": "Virtualized device",
+    "definition": "Software version of a firewall, router, or other network gear that runs as a guest on a hypervisor, sharing host hardware and needing the same hardening and updates.",
+    "acceptedAnswers": [
+      "Virtual appliance",
+      "Virtualized devices"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-network",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-session-key",
+    "term": "Session key",
+    "definition": "Temporary symmetric key generated for one connection or exchange to encrypt its traffic, so capturing or cracking it exposes that exchange's data.",
+    "acceptedAnswers": [
+      "Session keys"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-network",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-remote-desktop",
+    "term": "Remote desktop",
+    "definition": "Service that lets a user see and control another computer's graphical screen over the network, a common target for password guessing when exposed online.",
+    "acceptedAnswers": [
+      "Remote Desktop Protocol",
+      "Remote desktop service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-network",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-virtual-network-computing",
+    "term": "Virtual Network Computing",
+    "definition": "Platform-independent remote control system that shares a computer's screen, keyboard, and mouse through the Remote Frame Buffer protocol, often protected only by a weak password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-network",
+    "origin": "objectives",
+    "source": "RFC 6143 – The Remote Framebuffer Protocol; MITRE ATT&CK – T1021.005 Remote Services: VNC; SY0-801 objective 2.3",
+    "sourceUrls": [
+      "https://www.rfc-editor.org/rfc/rfc6143",
+      "https://attack.mitre.org/techniques/T1021/005/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-supply-chain-attack",
+    "term": "Supply chain attack",
+    "definition": "Attack that compromises a trusted vendor, contractor, or product component in order to reach the many organizations that rely on it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-third-party-provider",
+    "term": "Third-party provider",
+    "definition": "Outside company that supplies goods or services and is given access to an organization's data, network, or systems, extending its attack surface.",
+    "acceptedAnswers": [
+      "Third-party vendor",
+      "Third-party providers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-managed-service-provider",
+    "term": "Managed service provider",
+    "definition": "Outside firm that remotely runs a client's IT operations, so one compromise of its tools or accounts can spread to all of its customers at once.",
+    "acceptedAnswers": [
+      "Managed service providers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-logistics-provider",
+    "term": "Logistics provider",
+    "definition": "Company that transports, stores, or delivers goods, whose systems or shipments attackers can target to tamper with hardware or disrupt deliveries.",
+    "acceptedAnswers": [
+      "Logistic provider",
+      "Logistics providers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-software-as-a-service-provider",
+    "term": "Software as a Service provider",
+    "definition": "Vendor that hosts a complete application in the cloud for subscribers and holds their data, so a breach or outage on its side affects every customer.",
+    "acceptedAnswers": [
+      "SaaS provider",
+      "Software as a Service providers"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-hardware-provider",
+    "term": "Hardware provider",
+    "definition": "Company that makes or sells physical devices and components, whose products can arrive with counterfeit parts, tampered firmware, or implanted backdoors.",
+    "acceptedAnswers": [
+      "Hardware supplier"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-software-provider",
+    "term": "Software provider",
+    "definition": "Company that develops applications or code libraries whose compromised build or release process can deliver malicious code to every user of its products.",
+    "acceptedAnswers": [
+      "Software vendor",
+      "Software supplier"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-supply-chain",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-living-off-the-land",
+    "term": "Living off the land",
+    "definition": "Attack technique that relies on the operating system's own administration utilities, such as PowerShell or WMI, instead of malware, so activity blends in with normal work.",
+    "acceptedAnswers": [
+      "Living-off-the-land tools",
+      "Living off the land attack",
+      "Built-in tools"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-devices",
+    "origin": "objectives",
+    "source": "CISA, NSA, FBI and partners – Identifying and Mitigating Living Off the Land Techniques (joint guidance, 2024); CISA – AA23-144A People's Republic of China State-Sponsored Cyber Actor Living off the Land to Evade Detection; SY0-801 objective 2.3",
+    "sourceUrls": [
+      "https://www.cisa.gov/resources-tools/resources/identifying-and-mitigating-living-land-techniques",
+      "https://www.cisa.gov/news-events/cybersecurity-advisories/aa23-144a"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-malicious-universal-serial-bus-device",
+    "term": "Malicious Universal Serial Bus device",
+    "definition": "Thumb-size storage stick or gadget loaded with code that runs when plugged in, often dropped in a lobby or parking lot so a curious employee connects it.",
+    "acceptedAnswers": [
+      "Malicious USB",
+      "Malicious USB device",
+      "Malicious USB drive"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-devices",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-internet-of-things",
+    "term": "Internet of Things",
+    "definition": "Network-connected everyday devices such as cameras, sensors, smart printers, and thermostats, often shipped with weak defaults and rarely updated.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "threat-vector-devices",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 14: Applying Common Security Techniques to Computing Resources"
+  },
+  {
+    "id": "secplus-def-operational-technology",
+    "term": "Operational technology",
+    "definition": "Hardware and software that monitor and control physical processes and machinery, such as industrial control systems and SCADA in plants, utilities, and pipelines.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/3.1"
+    ],
+    "group": "threat-vector-devices",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-tailgating",
+    "term": "Tailgating",
+    "definition": "Slipping through a secured door right behind an authorized person without that person noticing or agreeing.",
+    "acceptedAnswers": [
+      "Tailgate"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 2: Summarizing Fundamental Security Concepts"
+  },
+  {
+    "id": "secplus-def-piggybacking",
+    "term": "Piggybacking",
+    "definition": "Entering a secure area with an authorized person's knowing help, for example by asking an employee to hold the door while carrying boxes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "book",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl), Sybex – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations"
+  },
+  {
+    "id": "secplus-def-shoulder-surfing",
+    "term": "Shoulder surfing",
+    "definition": "Watching a person from nearby or through a camera to capture passwords, PINs, or on-screen data as they type or read it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "objectives",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl), Sybex – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations"
+  },
+  {
+    "id": "secplus-def-skimming",
+    "term": "Skimming",
+    "definition": "Fitting a hidden reader over an ATM or payment terminal slot to copy magnetic stripe or chip data, often with a tiny camera to capture the PIN.",
+    "acceptedAnswers": [
+      "Card skimming"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-forced-entry",
+    "term": "Forced entry",
+    "definition": "Getting into a building, room, or device by breaking it open, such as smashing a window, prying a door, or defeating a lock.",
+    "acceptedAnswers": [
+      "Physical brute force",
+      "Brute-force entry"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-radio-frequency-identification-cloning",
+    "term": "Radio-frequency identification cloning",
+    "definition": "Copying the signal of a contactless door credential with a nearby reader so a duplicate can open the same doors.",
+    "acceptedAnswers": [
+      "RFID cloning",
+      "Badge cloning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-access-control-vestibule",
+    "term": "Access control vestibule",
+    "definition": "Small entry room with two interlocking doors where only one opens at a time, so each person can be checked and following someone in is stopped.",
+    "acceptedAnswers": [
+      "Access vestibule",
+      "Mantrap",
+      "Man trap"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 2: Summarize fundamental security concepts"
+  },
+  {
+    "id": "secplus-def-access-pass",
+    "term": "Access pass",
+    "definition": "Physical credential, often a contactless fob, that a door reader checks before unlocking; a lost, shared, or copied one lets the wrong person in.",
+    "acceptedAnswers": [
+      "Access passes",
+      "Access badge",
+      "Access card",
+      "Key card"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-physical-entry",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 2: Summarize fundamental security concepts; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-bluetooth",
+    "term": "Bluetooth",
+    "definition": "Short-range wireless standard for personal area networks that pairs phones, headsets, and keyboards; left discoverable, it exposes devices to nearby attackers.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-near-field-communication",
+    "term": "Near-field communication",
+    "definition": "Very short-range radio technology, working within a few centimeters, used for tap-to-pay and contactless badges and open to nearby eavesdropping and relay.",
+    "acceptedAnswers": [
+      "Near-field communications"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-radio-frequency",
+    "term": "Radio frequency",
+    "definition": "Electromagnetic signals used by wireless networks, badges, and remote controls, which attackers can capture, replay, or jam from a distance.",
+    "acceptedAnswers": [
+      "Radio frequencies"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.3"
+  },
+  {
+    "id": "secplus-def-bluejacking",
+    "term": "Bluejacking",
+    "definition": "Sending unsolicited messages or contact cards to nearby discoverable Bluetooth devices, mostly annoying rather than harmful.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-bluesnarfing",
+    "term": "Bluesnarfing",
+    "definition": "Stealing data such as contacts, messages, and calendars from a Bluetooth device without the owner's knowledge or permission.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-def-jamming",
+    "term": "Jamming",
+    "definition": "Flooding a Wi-Fi or other airwave channel with noise or constant signals so legitimate devices cannot communicate, a form of denial of service.",
+    "acceptedAnswers": [
+      "Radio jamming",
+      "Wireless jamming"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/2.5"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-rogue-access-point",
+    "term": "Rogue access point",
+    "definition": "Wireless base station connected to a corporate network without approval, bypassing security controls and giving outsiders a way in.",
+    "acceptedAnswers": [
+      "Rogue AP",
+      "Rogue"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-evil-twin",
+    "term": "Evil twin",
+    "definition": "Fake wireless network that copies a legitimate network's name and settings to lure users into connecting so their traffic can be captured.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-wireless-signal",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-unsupported-product",
+    "term": "Unsupported product",
+    "definition": "Hardware or software that has passed its vendor's end of support date, so newly found flaws will never receive fixes.",
+    "acceptedAnswers": [
+      "Unsupported products",
+      "Unsupported system",
+      "Unsupported software"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-unpatched-system",
+    "term": "Unpatched system",
+    "definition": "Computer that still lacks available vendor fixes, leaving publicly known and often already exploited flaws open to attackers.",
+    "acceptedAnswers": [
+      "Unpatched systems"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-obsolete-system",
+    "term": "Obsolete system",
+    "definition": "Outdated technology still in use because the business depends on it, though it runs old software and may not support modern security controls.",
+    "acceptedAnswers": [
+      "Obsolete systems",
+      "Legacy system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-unmanaged-system",
+    "term": "Unmanaged system",
+    "definition": "Endpoint that IT does not track or control centrally, so it misses updates, policy enforcement, and monitoring.",
+    "acceptedAnswers": [
+      "Unmanaged systems",
+      "Unmanaged device"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities; SY0-801 objective 2.4"
+  },
+  {
+    "id": "secplus-def-rogue-device",
+    "term": "Rogue device",
+    "definition": "Unauthorized hardware, such as a hidden wireless router or a small network implant, connected to the corporate network without approval.",
+    "acceptedAnswers": [
+      "Rogue devices"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities; SY0-801 objective 2.4"
+  },
+  {
+    "id": "secplus-def-shadow-it",
+    "term": "Shadow IT",
+    "definition": "Systems, apps, or cloud services that staff adopt for work without the IT department's knowledge or approval, so they escape security review.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 5: Compare and contrast common threat actors and motivations"
+  },
+  {
+    "id": "secplus-def-misconfiguration",
+    "term": "Misconfiguration",
+    "definition": "Weakness caused by insecure settings, such as default passwords, open storage, needless services, or overly broad permissions, rather than by a flaw in the code.",
+    "acceptedAnswers": [
+      "Security misconfiguration",
+      "Misconfigured system"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-stale-credentials",
+    "term": "Stale credentials",
+    "definition": "Accounts, passwords, or keys left active after they are no longer needed, such as a departed worker's login, that attackers can quietly reuse.",
+    "acceptedAnswers": [
+      "Unmanaged credentials",
+      "Unmanaged/stale credentials",
+      "Stale accounts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CIS Critical Security Controls v8 – Safeguard 5.3 Disable Dormant Accounts; MITRE ATT&CK – T1078 Valid Accounts; SY0-801 objective 2.4",
+    "sourceUrls": [
+      "https://controls-assessment-specification.readthedocs.io/en/latest/control-5/control-5.3.html",
+      "https://attack.mitre.org/techniques/T1078/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-open-service-port",
+    "term": "Open service port",
+    "definition": "Listening network endpoint of a running program that is reachable from outside, giving attackers a point to probe and exploit when it is not needed.",
+    "acceptedAnswers": [
+      "Open port",
+      "Open ports",
+      "Ports and services"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-system-state",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-race-condition",
+    "term": "Race condition",
+    "definition": "Flaw where the outcome depends on the timing of two operations, so an attacker who acts between them can change data the program assumed was safe.",
+    "acceptedAnswers": [
+      "Race conditions"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-time-of-check",
+    "term": "Time-of-check",
+    "definition": "Moment when a program verifies a condition, such as a file's permissions or an account balance, before acting on it, opening a gap if things change afterward.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-time-of-use",
+    "term": "Time-of-use",
+    "definition": "Moment when a program actually acts on a resource it validated earlier; if an attacker swapped the resource in between, the outdated validation is abused.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-malicious-update",
+    "term": "Malicious update",
+    "definition": "Tampered patch or new version, pushed through a trusted vendor's distribution channel, that installs attacker code on every system that accepts it.",
+    "acceptedAnswers": [
+      "Malicious software update"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-hardcoded-secret",
+    "term": "Hardcoded secret",
+    "definition": "Password, API key, or cryptographic key written directly into source code, scripts, or firmware, where anyone who reads the code or binary can find and reuse it.",
+    "acceptedAnswers": [
+      "Hard-coded secret",
+      "Hardcoded secrets",
+      "Hardcoded credentials",
+      "Hardcoded password"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Practice Tests & PBQs (Gorgotsias) – Chapter 3: Implementation; SY0-801 objective 2.4"
+  },
+  {
+    "id": "secplus-def-unsafe-exception-handling",
+    "term": "Unsafe exception handling",
+    "definition": "Coding flaw where failures are not caught safely, so the program crashes, fails open, or shows users stack traces and details that help attackers.",
+    "acceptedAnswers": [
+      "Improper error handling",
+      "Improper exception handling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl), Sybex – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations; SY0-801 objective 2.4"
+  },
+  {
+    "id": "secplus-def-zero-day-vulnerability",
+    "term": "Zero-day vulnerability",
+    "definition": "Flaw that is unknown to the vendor or has no fix yet, so attackers can exploit it before any patch or detection signature exists.",
+    "acceptedAnswers": [
+      "Zero-day",
+      "0-day"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-app-code",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-virtual-machine-escape",
+    "term": "Virtual machine escape",
+    "definition": "Exploit that breaks out of a guest operating system to reach the hypervisor or other guests running on the same physical host.",
+    "acceptedAnswers": [
+      "VM escape"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-resource-reuse",
+    "term": "Resource reuse",
+    "definition": "Virtualization flaw where memory or storage given to one tenant or guest is reassigned to another without being wiped, exposing leftover data.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-cryptographic-vulnerability",
+    "term": "Cryptographic vulnerability",
+    "definition": "Weakness from outdated algorithms, short keys, poor random numbers, or bad key handling that lets attackers decrypt, forge, or tamper with protected data.",
+    "acceptedAnswers": [
+      "Cryptographic vulnerabilities",
+      "Weak cryptography"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-side-loading",
+    "term": "Side loading",
+    "definition": "Installing a mobile app from outside the official app store, skipping its vetting, which can bring malware onto the device.",
+    "acceptedAnswers": [
+      "Sideloading"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-jailbreaking",
+    "term": "Jailbreaking",
+    "definition": "Removing a phone's built-in manufacturer restrictions to gain full administrator control, which also disables security protections and allows unvetted apps.",
+    "acceptedAnswers": [
+      "Jailbreak",
+      "Rooting"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-def-large-language-model",
+    "term": "Large language model",
+    "definition": "AI system trained on vast text collections to understand and write human-like replies; as an attack surface it can leak data, obey injected instructions, or emit unsafe output.",
+    "acceptedAnswers": [
+      "Large language models"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025; NIST AI 600-1 Generative AI Profile; SY0-801 objective 2.4",
+    "sourceUrls": [
+      "https://genai.owasp.org/llm-top-10/",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-public-repository",
+    "term": "Public repository",
+    "definition": "Openly accessible project on a hosting site such as GitHub, where leaked secrets, vulnerable dependencies, or poisoned packages can expose or infect anyone who uses it.",
+    "acceptedAnswers": [
+      "Public code repository",
+      "Public repositories"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "objectives",
+    "source": "MITRE ATT&CK – T1593.003 Search Open Websites/Domains: Code Repositories; MITRE ATT&CK – T1195.001 Compromise Software Dependencies and Development Tools; SY0-801 objective 2.4",
+    "sourceUrls": [
+      "https://attack.mitre.org/techniques/T1593/003/",
+      "https://attack.mitre.org/techniques/T1195/001/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-public-object-storage",
+    "term": "Public object storage",
+    "definition": "Cloud blob container, such as an Amazon S3 one, left readable by anonymous internet users, often by mistake, so anyone can list or download its files.",
+    "acceptedAnswers": [
+      "Public cloud storage",
+      "Public storage bucket"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "group": "vuln-attack-surfaces",
+    "origin": "objectives",
+    "source": "MITRE ATT&CK – T1530 Data from Cloud Storage; Blocking public access to your Amazon S3 storage – AWS documentation; SY0-801 objective 2.4",
+    "sourceUrls": [
+      "https://attack.mitre.org/techniques/T1530/",
+      "https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-control-block-public-access.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-virus",
+    "term": "Virus",
+    "definition": "Malicious code that attaches itself to a host file or boot sector and spreads only when the infected file is run or shared by a user.",
+    "acceptedAnswers": [
+      "Computer virus"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-delivery",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-worm",
+    "term": "Worm",
+    "definition": "Self-contained malicious program that copies itself across networks by exploiting flaws, with no user action needed, often consuming bandwidth as it spreads.",
+    "acceptedAnswers": [
+      "Computer worm"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-delivery",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-trojan",
+    "term": "Trojan",
+    "definition": "Malicious program disguised as useful or legitimate software that tricks the user into installing it and then carries out hidden harmful actions.",
+    "acceptedAnswers": [
+      "Trojan horse"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-delivery",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-rootkit",
+    "term": "Rootkit",
+    "definition": "Stealthy malware that gains administrator or kernel-level control and hides itself, its files, and its processes from the operating system and security tools.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-delivery",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-logic-bomb",
+    "term": "Logic bomb",
+    "definition": "Malicious code hidden in a legitimate program that stays inactive until a set date, event, or condition triggers its harmful action.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-delivery",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-fileless-malware",
+    "term": "Fileless malware",
+    "definition": "Malicious code that runs only in memory or through built-in tools such as PowerShell and writes nothing to disk, so file-based scanners miss it.",
+    "acceptedAnswers": [
+      "Fileless virus",
+      "Fileless attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-delivery",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-ransomware",
+    "term": "Ransomware",
+    "definition": "Malware that encrypts a victim's files or locks systems and demands payment, often in cryptocurrency, for the decryption key.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-spyware",
+    "term": "Spyware",
+    "definition": "Malware that secretly monitors a user's browsing, location, and communications and sends the collected information to a third party.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-adware",
+    "term": "Adware",
+    "definition": "Software that floods the user with unwanted advertisements, pop-ups, or browser redirects, often bundled with free programs to earn revenue from clicks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-keylogger",
+    "term": "Keylogger",
+    "definition": "Software or small hardware device that records every key pressed on a keyboard to capture passwords, card numbers, and messages.",
+    "acceptedAnswers": [
+      "Keystroke logger"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-bloatware",
+    "term": "Bloatware",
+    "definition": "Unneeded software preinstalled by a device maker or vendor that uses storage and memory and may add unpatched flaws to the system.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-potentially-unwanted-program",
+    "term": "Potentially unwanted program",
+    "definition": "Software that is not clearly malicious but that the user likely did not mean to install, such as toolbars or trackers bundled with a download.",
+    "acceptedAnswers": [
+      "Potentially unwanted programs",
+      "Potentially unwanted application"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-remote-access-trojan",
+    "term": "Remote access Trojan",
+    "definition": "Malware hidden inside harmless-looking software that opens a backdoor, giving the attacker hands-on control of the infected computer over the network.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-malware-payload",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-distributed-denial-of-service-attack",
+    "term": "Distributed denial-of-service attack",
+    "definition": "Flood of traffic or requests from many compromised machines at once, such as a botnet, that overwhelms a target so legitimate users cannot reach it.",
+    "acceptedAnswers": [
+      "Distributed denial of service"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-amplification-attack",
+    "term": "Amplification attack",
+    "definition": "Flooding attack that sends small requests with the victim's spoofed address to open servers, such as DNS or NTP, which send much larger replies to the victim.",
+    "acceptedAnswers": [
+      "Reflected attack",
+      "Reflection attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-protocol-downgrade",
+    "term": "Protocol downgrade",
+    "definition": "Attack that forces two parties to negotiate an older, weaker version of an encryption standard or cipher, such as SSL instead of TLS, so the traffic can be broken.",
+    "acceptedAnswers": [
+      "Downgrade attack",
+      "Protocol downgrade attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-sniffing",
+    "term": "Sniffing",
+    "definition": "Capturing and reading network traffic as it passes, with a tool such as Wireshark, to collect unencrypted passwords and data.",
+    "acceptedAnswers": [
+      "Packet sniffing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-spoofing",
+    "term": "Spoofing",
+    "definition": "Faking an identifier, such as a source IP address, MAC address, email sender, or caller ID, so traffic appears to come from a trusted source.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-on-path-attack",
+    "term": "On-path attack",
+    "definition": "Attack in which the intruder secretly sits between two communicating parties to intercept, read, or alter their traffic before relaying it.",
+    "acceptedAnswers": [
+      "Man-in-the-middle attack",
+      "Man-in-the-middle",
+      "Adversary-in-the-middle"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-pivoting",
+    "term": "Pivoting",
+    "definition": "Using a first compromised host as a stepping stone to reach and attack other systems deeper in the network that are not directly reachable.",
+    "acceptedAnswers": [
+      "Lateral movement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-cache-poisoning",
+    "term": "Cache poisoning",
+    "definition": "Inserting forged records into a name resolver's stored answers so that later lookups for a legitimate site return an address the attacker controls.",
+    "acceptedAnswers": [
+      "DNS cache poisoning",
+      "DNS poisoning",
+      "Domain Name System poisoning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-address-resolution-protocol-poisoning",
+    "term": "Address Resolution Protocol poisoning",
+    "definition": "Sending forged replies on a LAN that link the attacker's MAC address to the gateway's or another host's IP, so local traffic flows through the attacker.",
+    "acceptedAnswers": [
+      "ARP poisoning",
+      "ARP spoofing",
+      "ARP cache poisoning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-network-traffic",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-phishing",
+    "term": "Phishing",
+    "definition": "Mass fraudulent message, usually email, that poses as a trusted organization to trick many recipients into clicking a link, opening an attachment, or giving up credentials.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-phishing",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-spear-phishing",
+    "term": "Spear phishing",
+    "definition": "Fraudulent email crafted for a particular employee or team, using researched details such as names and projects, rather than sent to masses or to top executives.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-phishing",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-whaling",
+    "term": "Whaling",
+    "definition": "Fraudulent message aimed specifically at senior executives, such as the CEO or CFO, to steal high-value credentials or get large payments approved.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-phishing",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "secplus-def-smishing",
+    "term": "Smishing",
+    "definition": "Fraud delivered by text message that urges the recipient to tap a link, call a number, or reply with personal details, often posing as a bank or courier.",
+    "acceptedAnswers": [
+      "SMS phishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-phishing",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-vishing",
+    "term": "Vishing",
+    "definition": "Fraud carried out by phone call or voicemail, often with a spoofed caller ID, in which the caller poses as a bank, help desk, or official to extract information.",
+    "acceptedAnswers": [
+      "Voice phishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-phishing",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "secplus-def-quishing",
+    "term": "Quishing",
+    "definition": "Fraud that hides a malicious link in a two-dimensional barcode on a poster, parking meter, email, or text, so a victim's phone scan opens a fake site or installs malware.",
+    "acceptedAnswers": [
+      "QR code phishing",
+      "QR phishing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-phishing",
+    "origin": "objectives",
+    "source": "FTC Consumer Advice – Scammers hide harmful links in QR codes to steal your information (2023); FBI IC3 – Cybercriminals Tampering with QR Codes to Steal Victim Funds (PSA, 2022); SY0-801 objective 2.5",
+    "sourceUrls": [
+      "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information",
+      "https://www.ic3.gov/PSA/2022/PSA220118"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-impersonation",
+    "term": "Impersonation",
+    "definition": "Pretending to be someone the target trusts, such as a help desk technician, executive, or police officer, to gain access or information.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/2.5"
+    ],
+    "group": "attack-social-tactics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-deepfake",
+    "term": "Deepfake",
+    "definition": "AI-generated or altered video, image, or voice that convincingly mimics a real person, used to trick staff into approving payments or sharing access.",
+    "acceptedAnswers": [
+      "Deep fake",
+      "Deepfakes"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-social-tactics",
+    "origin": "objectives",
+    "source": "NSA, FBI, and CISA – Contextualizing Deepfake Threats to Organizations (Cybersecurity Information Sheet, 2023); FBI IC3 – Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (PSA, 2024); SY0-801 objective 2.5",
+    "sourceUrls": [
+      "https://www.aha.org/cybersecurity-government-intelligence-reports/2023-09-13-nsafbicisa-cybersecurity-information-sheet-tlp-clear-contextualizing",
+      "https://www.ic3.gov/PSA/2024/PSA241203",
+      "https://csiac.dtic.mil/articles/nsa-u-s-federal-agencies-advise-on-deepfake-threats/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-pretexting",
+    "term": "Pretexting",
+    "definition": "Inventing a believable story or reason for contact, such as an urgent IT problem, to persuade a victim to share information or take an action.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-social-tactics",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "secplus-def-watering-hole-attack",
+    "term": "Watering hole attack",
+    "definition": "Compromising a legitimate website that members of a target group often visit, so their browsers get infected when they go there.",
+    "acceptedAnswers": [
+      "Watering hole"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "group": "attack-social-tactics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-typosquatting",
+    "term": "Typosquatting",
+    "definition": "Registering a web address that differs from a popular one by a small typing mistake, so users who mistype it land on the attacker's site.",
+    "acceptedAnswers": [
+      "URL hijacking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-social-tactics",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-brand-impersonation",
+    "term": "Brand impersonation",
+    "definition": "Copying a well-known company's logos, style, and look-alike web addresses in fake emails or websites so victims trust them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-social-tactics",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "secplus-def-indicator-of-compromise",
+    "term": "Indicator of compromise",
+    "definition": "Piece of forensic evidence, such as a known bad file signature, network address, or registry change, showing that a system has likely been breached.",
+    "acceptedAnswers": [
+      "Indicators of compromise"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-def-malicious-file-hash",
+    "term": "Malicious file hash",
+    "definition": "Unique fingerprint of a file's contents that matches a known malware sample, letting tools flag the same file wherever it appears, even if renamed.",
+    "acceptedAnswers": [
+      "Hash",
+      "File hash",
+      "Known-bad hash"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-malicious-ip-address",
+    "term": "Malicious IP address",
+    "definition": "Numeric network location known to host malware or command-and-control servers, whose appearance in firewall or proxy logs signals possible compromise.",
+    "acceptedAnswers": [
+      "IP address",
+      "Internet Protocol address",
+      "Malicious Internet Protocol address"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-malicious-domain",
+    "term": "Malicious domain",
+    "definition": "Internet name registered or hijacked for phishing or malware delivery, often newly created or look-alike, whose lookups in resolver logs point to infected hosts.",
+    "acceptedAnswers": [
+      "Domain",
+      "Malicious domain name"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-malicious-process",
+    "term": "Malicious process",
+    "definition": "Running program instance with an odd name, parent, path, or network activity, such as a word processor launching a command shell, that points to infection.",
+    "acceptedAnswers": [
+      "Malicious processes",
+      "Suspicious process"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-file-system-artifact",
+    "term": "File system artifact",
+    "definition": "Trace left on disk by attacker activity, such as dropped tools, odd items in temp folders, altered permissions, or prefetch records, found during an investigation.",
+    "acceptedAnswers": [
+      "File system artifacts",
+      "Filesystem artifact"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-timestamp",
+    "term": "Timestamp",
+    "definition": "Recorded date and time of a file or event; values that are out of sequence, in the future, or changed to blend in reveal tampering.",
+    "acceptedAnswers": [
+      "Timestamp anomaly",
+      "Time stamp"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-plaintext-string",
+    "term": "Plaintext string",
+    "definition": "Human-readable characters found inside a binary or captured traffic, such as URLs, commands, or credentials, that reveals what a suspicious file or session does.",
+    "acceptedAnswers": [
+      "Plaintext strings",
+      "Plain text string"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-artifacts",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-log-manipulation",
+    "term": "Log manipulation",
+    "definition": "Deleting, altering, or clearing records of system events to hide an intrusion, often shown by gaps, edits, or a wiped audit history.",
+    "acceptedAnswers": [
+      "Log tampering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity; SY0-801 objective 2.5"
+  },
+  {
+    "id": "secplus-def-out-of-cycle-logging",
+    "term": "Out-of-cycle logging",
+    "definition": "Events recorded at unusual times, such as activity at 3 a.m. when the business is closed, suggesting someone is operating outside normal hours.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-excessive-resource-consumption",
+    "term": "Excessive resource consumption",
+    "definition": "Unexplained spikes in processor, memory, disk, or bandwidth use, which can point to malware, cryptomining, or data being exfiltrated.",
+    "acceptedAnswers": [
+      "Resource consumption",
+      "High resource usage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-account-lockout",
+    "term": "Account lockout",
+    "definition": "A user being shut out of a login after too many failed sign-ins, which, when the user did not cause it, suggests someone is guessing the password.",
+    "acceptedAnswers": [
+      "Account lockouts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-impossible-travel",
+    "term": "Impossible travel",
+    "definition": "Sign-ins to one account from distant locations within a time too short to get between them, suggesting the credentials are in someone else's hands.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-concurrent-sessions",
+    "term": "Concurrent sessions",
+    "definition": "Same account logged in at once from several devices or places when the user normally has one, suggesting the account is shared or compromised.",
+    "acceptedAnswers": [
+      "Concurrent session usage",
+      "Concurrent session"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-blocked-content",
+    "term": "Blocked content",
+    "definition": "Security tools stopping access to sites, files, or downloads, where a surge of such denials can show malware trying to reach its servers or a user being lured.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-resource-inaccessibility",
+    "term": "Resource inaccessibility",
+    "definition": "Users or admins suddenly unable to open files, systems, or accounts, which can signal ransomware encryption, changed passwords, or a denial-of-service attack.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "indicator-behavior",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-def-injection-attack",
+    "term": "Injection attack",
+    "definition": "General category of attack that inserts untrusted input, such as commands or query code, into a program so it is executed as part of the program's own instructions.",
+    "acceptedAnswers": [
+      "Injection",
+      "Code injection"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-injection",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-structured-query-language-injection",
+    "term": "Structured Query Language injection",
+    "definition": "Attack that enters crafted database commands into a web form or URL so the application runs them, letting the attacker read, change, or delete records.",
+    "acceptedAnswers": [
+      "SQL injection",
+      "SQL injection attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-injection",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-cross-site-scripting",
+    "term": "Cross-site scripting",
+    "definition": "Attack that plants malicious script in a trusted website, for example through a comment field, so it runs in other visitors' browsers and can steal their sessions.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-injection",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-def-buffer-overflow",
+    "term": "Buffer overflow",
+    "definition": "Attack that writes more data into a memory area than it can hold, overwriting nearby memory to crash the program or run the attacker's code.",
+    "acceptedAnswers": [
+      "Buffer overrun"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-injection",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-directory-traversal",
+    "term": "Directory traversal",
+    "definition": "Attack that uses sequences such as ../ in a file name request to climb out of the web root and read files the server should not expose.",
+    "acceptedAnswers": [
+      "Path traversal",
+      "Dot-dot-slash attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-injection",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-cross-site-request-forgery",
+    "term": "Cross-site request forgery",
+    "definition": "Attack that tricks a logged-in user's browser into sending an unwanted request, such as a fund transfer, to a site that trusts that browser's session.",
+    "acceptedAnswers": [
+      "Session riding"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-abuse",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-server-side-request-forgery",
+    "term": "Server-side request forgery",
+    "definition": "Attack that makes a vulnerable server send requests on the attacker's behalf to internal systems or cloud metadata services it can reach but the attacker cannot.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-abuse",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-replay-attack",
+    "term": "Replay attack",
+    "definition": "Capturing valid network data, such as an authentication exchange or token, and sending it again later to repeat a transaction or gain access.",
+    "acceptedAnswers": [
+      "Replay",
+      "Credential replay"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-abuse",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-privilege-escalation",
+    "term": "Privilege escalation",
+    "definition": "Exploiting a flaw or misconfiguration to gain higher access rights than were granted, such as a standard user becoming an administrator.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-app-abuse",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-session-hijacking",
+    "term": "Session hijacking",
+    "definition": "Taking over a user's authenticated web or AI chat connection by stealing or guessing its token, then acting as that user without having to log in.",
+    "acceptedAnswers": [
+      "Session takeover"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5",
+      "SY0-801/2.6"
+    ],
+    "group": "attack-app-abuse",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 7: Explain various types of vulnerabilities; SY0-801 objective 2.6"
+  },
+  {
+    "id": "secplus-def-password-spraying",
+    "term": "Password spraying",
+    "definition": "Trying one or a few common passwords against many different accounts, staying under the lockout limits that repeated guessing on one account would trigger.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-brute-force-attack",
+    "term": "Brute-force attack",
+    "definition": "Trying every possible password or key combination, usually with automated tools, until the right one is found.",
+    "acceptedAnswers": [
+      "Brute force"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-dictionary-attack",
+    "term": "Dictionary attack",
+    "definition": "Password guessing that works through a prepared wordlist of common passwords and real words, with variations, instead of every possible combination.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-user-enumeration",
+    "term": "User enumeration",
+    "definition": "Discovering which account names are valid, for example from differing login error messages or response times, to build a target list for password attacks.",
+    "acceptedAnswers": [
+      "Username enumeration",
+      "Account enumeration"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "objectives",
+    "source": "OWASP Web Security Testing Guide – Testing for Account Enumeration and Guessable User Account; CWE-204 Observable Response Discrepancy; SY0-801 objective 2.5",
+    "sourceUrls": [
+      "https://wstg.owasp.org/latest/4-Web_Application_Security_Testing/03-Identity_Management/04-Account_Enumeration_and_Guessable_User_Account/",
+      "https://cwe.mitre.org/data/definitions/204.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-multifactor-authentication-bypass",
+    "term": "Multifactor authentication bypass",
+    "definition": "Getting past the second sign-in step, for example by flooding a user with push approval requests, intercepting one-time codes, or stealing a session cookie issued after login.",
+    "acceptedAnswers": [
+      "MFA bypass",
+      "Multi-factor authentication bypass"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "objectives",
+    "source": "MITRE ATT&CK – T1621 Multi-Factor Authentication Request Generation; MITRE ATT&CK – T1111 Multi-Factor Authentication Interception; MITRE ATT&CK – T1539 Steal Web Session Cookie; SY0-801 objective 2.5",
+    "sourceUrls": [
+      "https://attack.mitre.org/techniques/T1621/",
+      "https://attack.mitre.org/techniques/T1111/",
+      "https://attack.mitre.org/techniques/T1539/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-pass-the-hash",
+    "term": "Pass the hash",
+    "definition": "Reusing a captured password digest taken from memory to authenticate to other Windows systems without ever cracking the actual password.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-credential-stuffing",
+    "term": "Credential stuffing",
+    "definition": "Automated logins using username and password pairs leaked from other breaches, betting that users reuse the same login details across sites.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "group": "attack-credential",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-def-model-manipulation",
+    "term": "Model manipulation",
+    "definition": "Altering an AI model's weights, settings, or components, for example through a compromised model file or supply chain, so it behaves the way an attacker wants.",
+    "acceptedAnswers": [
+      "Model tampering",
+      "AI model manipulation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-attacks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM03 Supply Chain and LLM04 Data and Model Poisoning; NIST AI 100-2 E2025 Adversarial Machine Learning; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm032025-supply-chain/",
+      "https://genai.owasp.org/llmrisk/llm042025-data-and-model-poisoning/",
+      "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-data-poisoning",
+    "term": "Data poisoning",
+    "definition": "Corrupting the training, fine-tuning, or retrieval data of an AI system so the resulting model learns hidden backdoors, biases, or wrong behavior.",
+    "acceptedAnswers": [
+      "Poisoning",
+      "Training data poisoning",
+      "AI poisoning"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-attacks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM04 Data and Model Poisoning; NIST AI 100-2 E2025 Adversarial Machine Learning; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm042025-data-and-model-poisoning/",
+      "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-prompt-injection",
+    "term": "Prompt injection",
+    "definition": "Malicious instructions slipped into an AI system's input, typed directly or hidden in a web page, file, or email it reads, so it acts against its developer's intent.",
+    "acceptedAnswers": [
+      "Prompt injection attack"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-attacks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM01 Prompt Injection; NIST AI 100-2 E2025 Adversarial Machine Learning; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-ai-jailbreaking",
+    "term": "AI jailbreaking",
+    "definition": "Using role-play, hypothetical framing, or persistent rewording to talk an AI chatbot into ignoring its safety guardrails and producing content it is built to refuse.",
+    "acceptedAnswers": [
+      "AI jailbreak",
+      "Model jailbreaking",
+      "LLM jailbreaking"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-attacks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM01 Prompt Injection; NIST AI 100-2 E2025 Adversarial Machine Learning; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+      "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-evasion-attack",
+    "term": "Evasion attack",
+    "definition": "Feeding a deployed AI model inputs with small, deliberate changes, such as altered pixels or reworded malware, so it misclassifies them, for example missing a threat.",
+    "acceptedAnswers": [
+      "Evasion",
+      "Adversarial example"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-attacks",
+    "origin": "objectives",
+    "source": "NIST AI 100-2 E2025 Adversarial Machine Learning: A Taxonomy and Terminology of Attacks and Mitigations; OWASP Machine Learning Security Top 10 – ML01 Input Manipulation Attack; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/ai/100/2/e2025/final",
+      "https://owasp.github.io/www-project-machine-learning-security-top-10/docs/ML01_2023-Input_Manipulation_Attack"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-code-execution",
+    "term": "Code execution",
+    "definition": "Running attacker-chosen commands on a system because an AI application passes model output or tool calls to an interpreter, shell, or plug-in without validating them.",
+    "acceptedAnswers": [
+      "Remote code execution",
+      "Arbitrary code execution"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-attacks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM05 Improper Output Handling and LLM06 Excessive Agency; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm052025-improper-output-handling/",
+      "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-data-loss",
+    "term": "Data loss",
+    "definition": "Exposure of an organization's confidential information, such as source code or customer files, when staff paste it into outside AI tools or an AI reveals it to other users.",
+    "acceptedAnswers": [
+      "Data leakage",
+      "Sensitive information disclosure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-risks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM02 Sensitive Information Disclosure; NIST AI 600-1 Generative AI Profile; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm022025-sensitive-information-disclosure/",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-bias",
+    "term": "Bias",
+    "definition": "Systematic unfairness in an AI system's outputs, often inherited from unrepresentative training data, that favors or harms certain groups of people.",
+    "acceptedAnswers": [
+      "AI bias",
+      "Algorithmic bias"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-risks",
+    "origin": "objectives",
+    "source": "NIST AI Risk Management Framework (AI RMF 1.0); NIST AI 600-1 Generative AI Profile; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://www.nist.gov/itl/ai-risk-management-framework",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-explainability",
+    "term": "Explainability",
+    "definition": "Degree to which people can understand how and why an AI model reached a given output; when it is lacking, errors and manipulation are hard to spot or audit.",
+    "acceptedAnswers": [
+      "Lack of explainability",
+      "Explainable AI"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-risks",
+    "origin": "objectives",
+    "source": "NIST IR 8312 Four Principles of Explainable Artificial Intelligence; NIST AI Risk Management Framework (AI RMF 1.0); SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://nvlpubs.nist.gov/nistpubs/ir/2021/NIST.IR.8312.pdf",
+      "https://www.nist.gov/itl/ai-risk-management-framework"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-hallucination",
+    "term": "Hallucination",
+    "definition": "Confident but false or made-up output from a generative AI model, such as invented facts, citations, or software package names.",
+    "acceptedAnswers": [
+      "Hallucinations",
+      "AI hallucination",
+      "Confabulation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-risks",
+    "origin": "objectives",
+    "source": "OWASP Top 10 for LLM Applications 2025 – LLM09 Misinformation; NIST AI 600-1 Generative AI Profile; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://genai.owasp.org/llmrisk/llm092025-misinformation/",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-privacy",
+    "term": "Privacy",
+    "definition": "Risk that an AI system gathers, keeps, or infers personal details about individuals, or reveals them through memorized training data, without their consent.",
+    "acceptedAnswers": [
+      "AI privacy",
+      "Privacy risk"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-risks",
+    "origin": "objectives",
+    "source": "NIST AI 600-1 Generative AI Profile; NIST AI 100-2 E2025 Adversarial Machine Learning; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf",
+      "https://csrc.nist.gov/pubs/ai/100/2/e2025/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-ethical-considerations",
+    "term": "Ethical considerations",
+    "definition": "Questions of whether an AI use is fair, transparent, accountable, and respectful of people, for example around consent, job impact, and harmful or deceptive output.",
+    "acceptedAnswers": [
+      "AI ethics",
+      "Ethical AI"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6"
+    ],
+    "group": "ai-risks",
+    "origin": "objectives",
+    "source": "NIST AI Risk Management Framework (AI RMF 1.0); NIST AI 600-1 Generative AI Profile; SY0-801 objective 2.6",
+    "sourceUrls": [
+      "https://www.nist.gov/itl/ai-risk-management-framework",
+      "https://nvlpubs.nist.gov/nistpubs/ai/NIST.AI.600-1.pdf"
+    ],
+    "verified": "2026-10-30"
+  }
+]

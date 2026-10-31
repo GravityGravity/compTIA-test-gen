@@ -1,0 +1,882 @@
+[
+  {
+    "id": "security-s-aware-bec",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "bank",
+      "retail",
+      "enterprise"
+    ],
+    "need": "stop the accounts payable team from paying fake requests",
+    "clues": [
+      "an email from the real CEO's account asked for an urgent wire transfer to a new account",
+      "a supplier's usual contact emailed new bank details for all future invoices",
+      "the messages came from legitimate company and supplier mailboxes"
+    ],
+    "answer": {
+      "item": "Business email compromise (BEC) awareness"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "attackers use compromised or impersonated business email accounts to redirect payments",
+    "explanation": "Business email compromise uses a real or impersonated business mailbox to trick staff into sending money, often by changing bank details on invoices. Training teaches staff to verify payment changes through a known phone number before acting.",
+    "related": [
+      "security-s-aware-social-eng",
+      "security-s-aware-password",
+      "security-s-aware-opsec"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "security-s-aware-byod",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "clinic",
+      "office",
+      "retail"
+    ],
+    "need": "protect company email that staff read on their own phones",
+    "clues": [
+      "many personal phones have no screen lock",
+      "staff save work attachments to personal apps on the same phones",
+      "the company allows employees to use their own devices for work"
+    ],
+    "answer": {
+      "item": "Bring your own device (BYOD) security"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "employees use personal devices for company work and data",
+    "explanation": "When staff use their own devices for work, company data mixes with personal data on devices the company does not fully control. Training covers screen locks, updates, and keeping work data in approved apps.",
+    "related": [
+      "security-s-aware-remote",
+      "security-s-aware-password",
+      "security-s-aware-removable"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-corrective",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.1"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "clinic"
+    ],
+    "need": "respond to an employee who entered his password on a simulated phishing page",
+    "clues": [
+      "he is one of only three employees who failed this month's test",
+      "the goal is to fix his behavior, not to punish him",
+      "he completed the yearly course two months ago"
+    ],
+    "answer": {
+      "item": "Corrective (remedial) training for the employee"
+    },
+    "itemType": "type of training",
+    "appliesWhen": "one person made a specific mistake and needs follow-up training to correct it",
+    "explanation": "Employees who fall for a simulated phishing attack are retrained so they learn from the mistake. Phishing results should guide learning and should not be used to punish or call out employees.",
+    "related": [
+      "security-s-aware-targeted",
+      "security-s-aware-ongoing",
+      "security-s-aware-onboarding"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices; NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7); Microsoft Learn – Get started using Attack simulation training",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-aware-emerging",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "bank",
+      "software-company",
+      "enterprise"
+    ],
+    "need": "brief staff about a new attack technique that the sector's threat-sharing group reported last week",
+    "clues": [
+      "the technique did not exist when this year's course was written",
+      "attackers are already using it against similar companies",
+      "the regular modules do not mention it"
+    ],
+    "answer": {
+      "item": "Emerging security topics"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "a new threat has appeared that the existing training does not cover",
+    "explanation": "Training goals must match the organization's current needs, which can mean covering newly emerging attacks instead of the usual topics. The program should be updated as threats evolve.",
+    "related": [
+      "security-s-aware-social-eng",
+      "security-s-aware-opsec",
+      "security-s-aware-situational"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "security-s-aware-feedback-survey",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.3"
+    ],
+    "settings": [
+      "school",
+      "office",
+      "clinic"
+    ],
+    "need": "learn what employees thought of a new training course so it can be improved",
+    "clues": [
+      "the team wants to know whether the course was clear and met its goals",
+      "participants should answer in their own words in a free-text box",
+      "the answers will be used to change the course content and delivery"
+    ],
+    "answer": {
+      "item": "A post-training feedback survey"
+    },
+    "itemType": "way to measure the program",
+    "appliesWhen": "the team needs participants' opinions of a course to find gaps in its content or delivery",
+    "explanation": "After a course, participants evaluate it in a survey or questionnaire. Their feedback shows weak points in the content or delivery so the training team can improve the program.",
+    "related": [
+      "security-s-aware-metrics",
+      "security-s-aware-managerial-report",
+      "security-s-aware-risk-scoring"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-lms",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.2"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "government-agency"
+    ],
+    "need": "deliver required security courses to 4,000 staff at 12 sites and prove who finished them",
+    "clues": [
+      "auditors want completion records for every employee",
+      "courses must be assigned to staff by role and tracked to completion",
+      "staff take the courses online at different times"
+    ],
+    "answer": {
+      "item": "A learning management system (LMS)"
+    },
+    "itemType": "delivery method",
+    "appliesWhen": "training must be assigned, delivered online, and tracked with completion records for many people",
+    "explanation": "A learning management system delivers course content, registers participants, and keeps course completion records. It lets the organization assign training at scale and prove completion to auditors.",
+    "related": [
+      "security-s-aware-self-service",
+      "security-s-aware-one-to-many",
+      "security-s-aware-one-to-one"
+    ],
+    "origin": "written",
+    "source": "NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7); PhishingBox – Dedicated training portal (learning management system)",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://www.phishingbox.com/platform/learning-management-system/dedicated-training-portal"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-aware-managerial-report",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.3"
+    ],
+    "settings": [
+      "enterprise",
+      "government-agency",
+      "bank"
+    ],
+    "need": "keep senior leadership informed each quarter about the awareness program",
+    "clues": [
+      "leaders want completion rates and incident trends for each department",
+      "the summary must be short and need no technical knowledge",
+      "it is reviewed at the quarterly management meeting"
+    ],
+    "answer": {
+      "item": "A managerial report of program results"
+    },
+    "itemType": "way to measure the program",
+    "appliesWhen": "leadership needs a periodic summary of program results and trends",
+    "explanation": "Recurring reports are generated weekly, monthly, or quarterly and include metrics such as incidents detected and training completion. Managerial reports present these results to leadership so it can make decisions about the program.",
+    "related": [
+      "security-s-aware-metrics",
+      "security-s-aware-risk-scoring",
+      "security-s-aware-feedback-survey"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-metrics",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.3"
+    ],
+    "settings": [
+      "bank",
+      "enterprise",
+      "hospital"
+    ],
+    "need": "find out whether the new phishing training is actually working",
+    "clues": [
+      "the team ran a simulated phishing test before the training and will run another after it",
+      "the measures must be numbers that can be compared over time",
+      "the results should show both clicks and reports of the test email"
+    ],
+    "answer": {
+      "item": "Metrics such as phishing click and report rates"
+    },
+    "itemType": "way to measure the program",
+    "appliesWhen": "the team must measure the effect of training with comparable numbers",
+    "explanation": "Metrics such as click rates, report rates, and incident counts turn the program's effect into numbers. Comparing them before and after training shows whether behavior changed.",
+    "related": [
+      "security-s-aware-managerial-report",
+      "security-s-aware-risk-scoring",
+      "security-s-aware-feedback-survey"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 5: Domain 5.0: Security Program Management and Oversight; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-onboarding",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.1"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "bank"
+    ],
+    "need": "prepare 20 new hires who start on Monday to work safely",
+    "clues": [
+      "the new staff have not yet received their accounts",
+      "they must learn the acceptable use policy and password rules before they get access",
+      "they have never had any security training at this company"
+    ],
+    "answer": {
+      "item": "Initial (onboarding) security training"
+    },
+    "itemType": "type of training",
+    "appliesWhen": "new staff must learn the security rules before they receive access",
+    "explanation": "Initial training is part of onboarding, along with orientation and account creation. It teaches new staff the security policies and expected behavior before they use company systems.",
+    "related": [
+      "security-s-aware-ongoing",
+      "security-s-aware-targeted",
+      "security-s-aware-corrective"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 5: Domain 5.0: Security Program Management and Oversight; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "security-s-aware-one-to-many",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.2"
+    ],
+    "settings": [
+      "enterprise",
+      "school",
+      "government-agency"
+    ],
+    "need": "explain a new remote work policy to all 600 employees at the same time",
+    "clues": [
+      "every employee must hear the same message on the same day",
+      "the CISO wants to take live questions from the audience",
+      "the session will be held as a company-wide webinar"
+    ],
+    "answer": {
+      "item": "A one-to-many presentation"
+    },
+    "itemType": "delivery method",
+    "appliesWhen": "one message must reach a large audience at the same time",
+    "explanation": "One-to-many delivery, such as a classroom lecture or a virtual session, lets one presenter reach many people at once with the same message. It is efficient for announcements that everyone must hear.",
+    "related": [
+      "security-s-aware-one-to-one",
+      "security-s-aware-self-service",
+      "security-s-aware-lms"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices; NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7); risk3sixty – Annual Security Training, Phase 3: Deliver",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://risk3sixty.com/blog/annual-security-training-phase-3-deliver"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-aware-one-to-one",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.2"
+    ],
+    "settings": [
+      "bank",
+      "enterprise",
+      "software-company"
+    ],
+    "need": "help a senior executive who keeps falling for impersonation attempts",
+    "clues": [
+      "the executive has failed several tests in a row",
+      "the mistakes are specific to how she handles requests from her assistants",
+      "she wants a private session that fits her schedule and her questions"
+    ],
+    "answer": {
+      "item": "One-to-one coaching"
+    },
+    "itemType": "delivery method",
+    "appliesWhen": "a single person needs personal, interactive instruction that fits their situation",
+    "explanation": "One-to-one training is interactive instruction, coaching, or mentoring for a single person. It lets the trainer focus on that person's specific mistakes and questions, which a group session cannot do.",
+    "related": [
+      "security-s-aware-one-to-many",
+      "security-s-aware-lms",
+      "security-s-aware-self-service"
+    ],
+    "origin": "written",
+    "source": "NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7); CyberAware – How to design an escalation path for repeat phishing clickers",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://cyberaware.com/blog/how-to-design-an-escalation-path-for-repeat-phishing-clickers"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-aware-ongoing",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "need": "keep staff alert to phishing after the first round of training",
+    "clues": [
+      "phishing incidents dropped after last year's course but are rising again six months later",
+      "users seem to have become complacent",
+      "the whole workforce is affected, not one team"
+    ],
+    "answer": {
+      "item": "Recurring (ongoing) awareness training"
+    },
+    "itemType": "type of training",
+    "appliesWhen": "knowledge fades over time and the whole workforce needs regular refreshers",
+    "explanation": "Awareness fades, and users become complacent months after training. Recurring training on a regular schedule reeducates the whole workforce and keeps awareness current.",
+    "related": [
+      "security-s-aware-onboarding",
+      "security-s-aware-targeted",
+      "security-s-aware-corrective"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "security-s-aware-opsec",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "software-company",
+      "government-agency",
+      "enterprise"
+    ],
+    "need": "stop staff from revealing internal details in daily work and online",
+    "clues": [
+      "an employee posted a photo of a whiteboard with network diagrams on social media",
+      "staff discuss unreleased projects in public places",
+      "confidential printouts are left on desks overnight"
+    ],
+    "answer": {
+      "item": "Operational security (OPSEC)"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "staff reveal sensitive details through everyday habits, posts, or conversations",
+    "explanation": "Operational security protects sensitive information in day-to-day activity, including what staff share in posts, conversations, and printouts. Practices such as a clean desk policy and care with what is shared reduce leaks.",
+    "related": [
+      "security-s-aware-situational",
+      "security-s-aware-social-eng",
+      "security-s-aware-remote"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices; CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 5: Domain 5.0: Security Program Management and Oversight"
+  },
+  {
+    "id": "security-s-aware-password",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "retail"
+    ],
+    "need": "reduce the risk from the way staff choose and store their passwords",
+    "clues": [
+      "an audit found the same password used on work and personal sites",
+      "several users keep passwords on sticky notes",
+      "many accounts still lack a second factor"
+    ],
+    "answer": {
+      "item": "Password and credential management"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "users reuse, write down, or weakly protect their passwords and credentials",
+    "explanation": "Password training covers strong, unique passwords for each service, the risk of reuse, password managers, and enabling multifactor authentication. Audits then check that staff follow the policy.",
+    "related": [
+      "security-s-aware-social-eng",
+      "security-s-aware-byod",
+      "security-s-aware-remote"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices; CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 5: Domain 5.0: Security Program Management and Oversight"
+  },
+  {
+    "id": "security-s-aware-program-cycle",
+    "kind": "procedure",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.3",
+      "SY0-801/5.6.2"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "hospital"
+    ],
+    "task": "building a new security awareness training course",
+    "steps": [
+      {
+        "do": "Define the goals and needs the course must meet",
+        "done": "defined the goals and needs the course must meet"
+      },
+      {
+        "do": "Develop the training material",
+        "done": "developed the training material"
+      },
+      {
+        "do": "Deliver the training to staff",
+        "done": "delivered the training to staff"
+      },
+      {
+        "do": "Collect feedback from participants",
+        "done": "collected feedback from participants"
+      },
+      {
+        "do": "Monitor completion rates and results",
+        "done": "monitored completion rates and results"
+      }
+    ],
+    "explanation": "An awareness course starts with its goals and needs, which decide the material that is developed and how it is delivered. Feedback and monitoring of completion and results come after delivery and feed back into the next round of goals.",
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-remote",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "home-office",
+      "enterprise",
+      "software-company"
+    ],
+    "need": "secure staff who now work from home and from cafes three days a week",
+    "clues": [
+      "employees connect from coffee shop Wi-Fi",
+      "home routers still use their default passwords",
+      "some staff do not start the VPN before they work"
+    ],
+    "answer": {
+      "item": "Remote and hybrid work security"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "staff work outside the office on home or public networks",
+    "explanation": "Remote and hybrid work brings risks such as weak home networks and public Wi-Fi. Training covers securing the home router, keeping devices patched, avoiding public Wi-Fi, and always using the VPN.",
+    "related": [
+      "security-s-aware-byod",
+      "security-s-aware-opsec",
+      "security-s-aware-removable"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-removable",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "warehouse",
+      "office",
+      "school"
+    ],
+    "need": "deal with USB devices that keep turning up around the building",
+    "clues": [
+      "several flash drives labeled 'Salaries' were found in the parking lot",
+      "a charging cable arrived in the mail from an unknown sender",
+      "an employee plugged in a found drive to see who owned it"
+    ],
+    "answer": {
+      "item": "Removable media and cable safety"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "unknown USB drives, cables, or other removable devices may carry malware or leak data",
+    "explanation": "Removable media and cables can carry malware or be used to steal data. Training teaches users never to connect unknown drives or cables and to hand found devices to IT.",
+    "related": [
+      "security-s-aware-social-eng",
+      "security-s-aware-byod",
+      "security-s-aware-situational"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "security-s-aware-reported-phish",
+    "kind": "procedure",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "task": "responding to a suspicious email that an employee reported",
+    "steps": [
+      {
+        "do": "Quarantine the email so no one else can interact with it",
+        "done": "quarantined the email"
+      },
+      {
+        "do": "Analyze the message for phishing indicators",
+        "done": "analyzed the message for phishing indicators"
+      },
+      {
+        "do": "Notify the IT security team",
+        "done": "notified the IT security team"
+      },
+      {
+        "do": "Inform the reporting user and other staff about the attempt",
+        "done": "informed the reporting user and other staff about the attempt"
+      },
+      {
+        "do": "Update email filters and training based on the findings",
+        "done": "updated the email filters and training"
+      }
+    ],
+    "explanation": "A reported message is isolated first so no one else clicks it, then analyzed and passed to IT security. Users are then told about the attempt, and filters and training are updated to stop similar attacks.",
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "security-s-aware-risk-scoring",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.3"
+    ],
+    "settings": [
+      "bank",
+      "software-company",
+      "enterprise"
+    ],
+    "need": "find which individual employees pose the most human risk so they get attention first",
+    "clues": [
+      "the team combines each person's phishing test results, overdue training, and risky actions",
+      "each employee should get a value that can be ranked",
+      "the result decides who gets extra coaching first"
+    ],
+    "answer": {
+      "item": "Personnel behavior risk scoring"
+    },
+    "itemType": "way to measure the program",
+    "appliesWhen": "individual people must be ranked by the risk their behavior creates",
+    "explanation": "Behavior risk scoring gives each person a score from data such as simulated phishing actions, training completion, and other risky behavior. The scores rank people so the program can focus help where the risk is highest.",
+    "related": [
+      "security-s-aware-metrics",
+      "security-s-aware-managerial-report",
+      "security-s-aware-feedback-survey"
+    ],
+    "origin": "written",
+    "source": "Keepnet Labs documentation – Executive Reports (Users with Highest Risk Scores); Abnormal AI – The formula behind Abnormal’s phishing risk score; NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7)",
+    "sourceUrls": [
+      "https://doc.keepnetlabs.com/next-generation-product/platform/reports/executive-reports",
+      "https://abnormal.ai/blog/phishing-risk-score-behavioral-model-human-risk",
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-aware-self-service",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.2"
+    ],
+    "settings": [
+      "school",
+      "office",
+      "enterprise"
+    ],
+    "need": "give employees a place where they can get security help whenever they need it",
+    "clues": [
+      "staff want to look up the latest policies and tips on their own",
+      "they want short how-to guides and a way to report a suspicious message",
+      "no trainer is needed for each visit"
+    ],
+    "answer": {
+      "item": "A self-service security awareness portal"
+    },
+    "itemType": "delivery method",
+    "appliesWhen": "people need on-demand access to guides, policies, and reporting tools without a trainer",
+    "explanation": "A self-service portal is one place where users find security guides, tips, policies, training, and a way to report suspicious messages on their own schedule. It supports learning on demand without a trainer.",
+    "related": [
+      "security-s-aware-lms",
+      "security-s-aware-one-to-many",
+      "security-s-aware-one-to-one"
+    ],
+    "origin": "written",
+    "source": "NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7); University of Toronto Information Security – Cyber security awareness resources; PhishingBox – Dedicated training portal",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://security.utoronto.ca/resources/",
+      "https://www.phishingbox.com/platform/learning-management-system/dedicated-training-portal"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-aware-situational",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "hospital",
+      "bank",
+      "office"
+    ],
+    "need": "make staff notice people and events around them that could be a threat",
+    "clues": [
+      "a stranger followed employees through the secure door twice this week",
+      "someone was seen watching a nurse type her password at a shared station",
+      "the team wants staff to notice and report odd behavior"
+    ],
+    "answer": {
+      "item": "Situational awareness"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "staff must watch their surroundings and the behavior of people around them",
+    "explanation": "Situational awareness means watching the environment and the behavior of people nearby, understanding what could go wrong, and reporting it. It helps staff spot threats such as tailgating and shoulder surfing.",
+    "related": [
+      "security-s-aware-opsec",
+      "security-s-aware-social-eng",
+      "security-s-aware-removable"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 5: Domain 5.0: Security Program Management and Oversight; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-social-eng",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.4"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "school"
+    ],
+    "need": "prepare staff for callers and text messages that pretend to come from the help desk",
+    "clues": [
+      "several employees were asked for their passwords by someone claiming to be IT",
+      "one employee got a text urging her to confirm her login details at once",
+      "the attackers rely on urgency and pretending to have authority"
+    ],
+    "answer": {
+      "item": "Social engineering awareness"
+    },
+    "itemType": "training topic",
+    "appliesWhen": "people are being manipulated by pretexting, vishing, smishing, or similar tricks",
+    "explanation": "Social engineering exploits human psychology, such as urgency and authority, to get access or information. Training with real examples and simulations teaches staff to recognize these tricks and verify requests through official channels.",
+    "related": [
+      "security-s-aware-bec",
+      "security-s-aware-password",
+      "security-s-aware-situational"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices"
+  },
+  {
+    "id": "security-s-aware-targeted",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "5",
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "topics": [
+      "SY0-801/5.6.1"
+    ],
+    "settings": [
+      "bank",
+      "software-company",
+      "enterprise"
+    ],
+    "need": "reduce the risk to the finance team, which attackers keep singling out",
+    "clues": [
+      "phishing tests show the finance team clicks far more often than other departments",
+      "the attacks aimed at them ask for urgent payments to new accounts",
+      "the rest of the company already does well in the same tests"
+    ],
+    "answer": {
+      "item": "Targeted training for the finance team"
+    },
+    "itemType": "type of training",
+    "appliesWhen": "one group or role faces particular threats or shows weak results and needs content made for it",
+    "explanation": "Targeted, role-based training gives a group content that fits its duties and the threats aimed at it. Click rates by group show which teams need more targeted training.",
+    "related": [
+      "security-s-aware-ongoing",
+      "security-s-aware-onboarding",
+      "security-s-aware-corrective"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 28: Given a scenario, implement security awareness practices; NIST SP 800-50 Rev. 1, Building a Cybersecurity and Privacy Learning Program (sections 2.4 and 2.7); Microsoft Learn – Get started using Attack simulation training",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/50/r1/final",
+      "https://learn.microsoft.com/en-us/defender-office-365/attack-simulation-training-get-started"
+    ],
+    "verified": "2026-10-30"
+  }
+]

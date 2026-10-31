@@ -178,15 +178,25 @@ BOX_CLASSES = {"note", "ex-note-g", "ex-note", "tip", "warning", "sidebar", "fea
                "feature2", "feature3", "feature4", "box", "chap-box"}
 
 
+# Honor <ol start> and <li value> (the Security+ Neil book). Off for the older books: their text,
+# question parsers, and pool content were made without it.
+LIST_NUMBERS = {"honor": False}
+
+
 def list_md(lst, depth=0):
     lines = []
     ordered = lst.name == "ol"
     first_li = lst.find("li", recursive=False)
     classes = " ".join(lst.get("class", []) + (first_li.get("class", []) if first_li else [])).lower()
     alpha = "alpha" in classes or lst.get("type") in ("A", "a")
-    n = 0
+    numbered = ordered and not alpha and LIST_NUMBERS["honor"]
+    start = lst.get("start", "1")
+    n = int(start) - 1 if numbered and start.isdigit() else 0
     for li in lst.find_all("li", recursive=False):
         n += 1
+        value = li.get("value", "")
+        if numbered and value.isdigit():  # <li value="2"> continues a list split by a table
+            n = int(value)
         nested = [c for c in li.children if isinstance(c, Tag) and c.name in ("ul", "ol")]
         text_parts = []
         for c in li.children:
@@ -666,9 +676,9 @@ def obj_items(lines):
     return re.sub(r"(\w)\. (exe|msc)\b", r"\1.\2", out)
 
 
-def obj_parse(doc):
-    """Exam details, domains, objectives, and the acronym list of one objectives PDF."""
-    details, domains, objectives, acronyms = [], [], [], []
+def obj_front(doc):
+    """Exam details, domains, and the troubleshooting methodology from the first pages."""
+    details = []
     front = re.sub(r"\s+", " ", " ".join(doc[i].get_text() for i in range(1, 3)))
     for label in ("Number of questions", "Types of questions", "Length of test", "Passing Score"):
         m = re.search(re.escape(label) + r" (.+?) (?=Number of|Types of|Length of|Recommended|Passing|EXAM OBJECTIVES)", front, re.I)
@@ -678,7 +688,13 @@ def obj_parse(doc):
     m = re.search(r"The troubleshooting methodology includes the following steps: (.+?) DOMAIN", front)
     method = [s.strip() for s in re.split(r"[•]", m.group(1)) if s.strip()] if m else []
     method = [re.sub(r" - ", "\n   - ", s) for s in method]  # sub-steps
+    return details, domains, method
 
+
+def obj_parse(doc):
+    """Exam details, domains, objectives, and the acronym list of one objectives PDF."""
+    details, domains, method = obj_front(doc)
+    objectives, acronyms = [], []
     mode, cur = "front", None
     for page in doc:
         lines = obj_lines(page)
@@ -732,11 +748,71 @@ def obj_parse(doc):
     return details, domains, method, objectives, acronyms
 
 
+SEC_COLUMNS = (108, 360)  # x of the top-level bullet in the left and right column
+
+
+def sec_obj_parse(doc):
+    """SY0-801 objectives PDF: one or two bullet columns, the bullet glyph and its text are separate lines.
+
+    The level comes from the text's x (18 pt per level from the column's first bullet). A text
+    line with no bullet glyph beside it continues the item above it in the same column.
+    """
+    details, domains, method = obj_front(doc)
+    objectives, acronyms, mode = [], [], "front"
+    for page in doc:
+        lines = [l for l in obj_lines(page) if l[1] < 720]
+        texts = " ".join(l[4] for l in lines)
+        if "Acronym List" in texts:
+            mode = "acronyms"
+        if "Hardware and Software List" in texts or "EQUIPMENT" in texts:
+            break
+        if mode == "front" and any(l[2] > 20 and re.match(r"1\.0 ", l[4]) for l in lines):
+            mode = "objectives"
+        if mode == "objectives":
+            heads = sorted([l for l in lines if l[2] == 12 and "Bold" in l[3] and re.match(r"\d\.\d+", l[4])], key=lambda l: l[1])
+            conts = [l for l in lines if l[2] == 12 and "Bold" not in l[3]]
+            glyphs = [l for l in lines if l[2] < 10 and ("Wingdings" in l[3] or "Symbol" in l[3]) and len(l[4]) <= 2]
+            body = [l for l in lines if l[2] < 10 and l not in glyphs]
+            bands = [0] + [h[1] for h in heads] + [1e9]
+            for i in range(len(bands) - 1):
+                if i > 0:
+                    h = heads[i - 1]
+                    m = re.match(r"(\d\.\d+) ?(.*)", h[4])
+                    title = " ".join([m.group(2)] + [c[4] for c in conts if 0 < c[1] - h[1] < 40])
+                    title = re.sub(r"(\w)- (\w)", r"\1-\2", re.sub(r"\s+", " ", title)).strip().rstrip(".")
+                    objectives.append({"num": m.group(1), "title": title, "items": []})
+                if not objectives:
+                    continue
+                items = objectives[-1]["items"]
+                for col, base in enumerate(SEC_COLUMNS):
+                    part = sorted([l for l in body if bands[i] < l[1] < bands[i + 1] and (l[0] >= 340) == bool(col)], key=lambda l: l[1])
+                    for x, y, size, font, text in part:
+                        level = round((x - base) / 18)
+                        if any(abs(g[0] - (x - 18)) < 3 and abs(g[1] - y) < 4 for g in glyphs):
+                            items.append([max(level, 1), text.strip()])
+                        elif items:
+                            sep = "" if items[-1][1].endswith(("/", "-")) else " "
+                            items[-1][1] += sep + text.strip()
+        elif mode == "acronyms":
+            for x, y, size, font, text in sorted([l for l in lines if l[2] < 10], key=lambda l: (round(l[1]), l[0])):
+                if x < 100:
+                    acronyms.append([text, ""])
+                elif acronyms:
+                    acronyms[-1][1] = (acronyms[-1][1] + " " + text).strip()
+    for o in objectives:
+        # 4.2 prints all its bullets one step deeper: the shallowest bullet of an objective is level 1.
+        shift = min((lvl for lvl, _ in o["items"]), default=1) - 1
+        o["md"] = "\n".join("  " * (lvl - 1 - shift) + "- " + t for lvl, t in o["items"])
+    return details, domains, method, objectives, acronyms
+
+
 def book_objectives(src, out):
-    code = re.search(r"220-\d{4}|n10-\d{3}", src.name, re.I).group(0).upper()
-    core = "Network+" if code.startswith("N10") else "Core 1" if code.endswith("1") else "Core 2"
-    details, domains, method, objectives, acronyms = obj_parse(pymupdf.open(str(src)))
-    cert = "" if core == "Network+" else "A+ "
+    code = re.search(r"220-\d{4}|n10-\d{3}|sy0-\d{3}", src.name, re.I).group(0).upper()
+    core = ("Network+" if code.startswith("N10") else "Security+" if code.startswith("SY0")
+            else "Core 1" if code.endswith("1") else "Core 2")
+    parse = sec_obj_parse if core == "Security+" else obj_parse
+    details, domains, method, objectives, acronyms = parse(pymupdf.open(str(src)))
+    cert = "" if core in ("Network+", "Security+") else "A+ "
     src_line = f"Source: CompTIA {cert}{core} ({code}) Exam Objectives (official)\nExam: {core} ({code})"
 
     md = ["## Exam details", ""] + [f"- **{k}:** {v}" for k, v in details] + [""]
@@ -752,7 +828,7 @@ def book_objectives(src, out):
         if d != major:
             major = d
             md += [f"## {d}.0 {names.get(d, '')}".rstrip(), ""]
-        md += [f"### {o['num']} {o['title']}", "", obj_items(o["lines"]), ""]
+        md += [f"### {o['num']} {o['title']}", "", o["md"] if "md" in o else obj_items(o["lines"]), ""]
     files = [(write_chapter(out, 1, f"{core} ({code}) Exam Objectives", src_line, "\n".join(md)),
               f"{core} ({code}) Exam Objectives", f"{core} ({code})", [o["num"] for o in objectives])]
 
@@ -1007,6 +1083,287 @@ def book_west(src, out):
 
 
 # ---------------------------------------------------------------------------
+# Security+ books. All four are for SY0-701, the exam before SY0-801. Their chapters keep
+# the SY0-701 objective numbers; the content step tags each question with an SY0-801 objective.
+# ---------------------------------------------------------------------------
+
+SEC = "Security+ (SY0-701)"
+SEC_NOTE = "(older objectives; the app targets SY0-801)"
+
+
+def sec_header(book, ch, objs):
+    return (f"Source: {book} – chapter {ch}\nExam: {SEC} {SEC_NOTE}"
+            + ("\nObjectives: " + ", ".join(objs) if objs else ""))
+
+
+def sort_objectives(objs):
+    return sorted(set(objs), key=lambda s: [int(x) for x in s.split(".")])
+
+
+def neil_sec_options(md):
+    """In the review questions, a question whose stem goes on after a paragraph or a table has its
+    options as a new top-level list ("1. Rule #1"). Indent that list under the question."""
+    out, in_review, open_q, next_opt = [], False, False, 0
+    for line in md.split("\n"):
+        if line.startswith("## "):
+            in_review = bool(re.match(r"## Chapter Review ?Questions", line))
+        elif in_review and not line.strip():
+            next_opt = 0  # the options of one question are one run of lines
+        elif in_review:
+            top = re.match(r"^(\d+)\. ", line)
+            if top and next_opt and int(top.group(1)) == next_opt:
+                line, next_opt = "  " + line, next_opt + 1
+            elif top and top.group(1) == "1" and open_q:
+                line, next_opt, open_q = "  " + line, 2, False
+            elif top:
+                open_q, next_opt = True, 0
+            elif re.match(r"^  \d+\. ", line):
+                open_q = False  # the question has its options
+        out.append(line)
+    return "\n".join(out)
+
+
+def book_sec_neil(src, out):
+    """Packt (Neil), EPUB: one chapter for each SY0-701 objective, answers in the Solutions file."""
+    items = dict(epub_items(src))
+    LIST_NUMBERS["honor"] = True
+    _, sol = html_to_md(items["B21881_Solution_ePub.xhtml"])
+    sols = split_by_heading(sol, r"^#+ Chapter (\d+): ")
+    files = []
+    for ch in range(1, 29):
+        soup, md = html_to_md(items[f"B21881_{ch:02d}_ePub.xhtml"])
+        heads = [h.get_text(" ").strip() for h in soup.find_all("h1")]
+        heads = [h for h in heads if h and not h.isdigit() and h != "Introduction"]
+        title = f"Chapter {ch}: {heads[0]}"
+        md = re.sub(r"^(#+ .*\n\n?){1,2}", "", md)  # chapter number and title: write_chapter adds them
+        md = re.sub(r"^The following questions are designed to check.*\n", "", md, flags=re.M)
+        objs = sort_objectives(re.findall(r"^#+ Exam Objectives? (\d\.\d+)", md, re.M))
+        md = neil_sec_options(md)
+        md += "\n\n## Solutions\n\n" + sols.get(str(ch), "")
+        book = "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil)"
+        files.append((write_chapter(out, ch, title, sec_header(book, ch, objs), md), title, SEC, objs))
+    LIST_NUMBERS["honor"] = False
+    return files
+
+
+def book_sec_heuermann(src, out):
+    """Pearson Cert Guide (Heuermann), EPUB. The "Do I Know This Already?" quizzes have options but
+    the answer appendix is "in development" in this edition, so they have no answers. The Review
+    Questions are short-answer questions (no options)."""
+    items = dict(epub_items(src))
+    files = []
+    book = "CompTIA Security+ SY0-701 Cert Guide (Heuermann)"
+    for ch in range(1, 29):
+        soup, md = html_to_md(items[f"ch{ch:02d}.html"])
+        title = re.sub(r"^Chapter (\d+)\. ", r"Chapter \1: ", soup.find(["h1", "h2", "h3"]).get_text(" ").strip())
+        md = re.sub(r"^#+ Chapter \d+\..*\n", "", md, count=1)
+        objs = sort_objectives(re.findall(r"Objectives? (\d\.\d+)", md[:3000]))
+        # Quiz options "**a.** text" -> "a. text"; the quiz intro, mapping table, and caution box are filler.
+        md = re.sub(r"^\*\*([a-h])\.\*\*\s+", r"\1. ", md, flags=re.M)
+        md = re.sub(r"^\*\*(\d+)\.\*\*\s+", r"\1. ", md, flags=re.M)
+        md = re.sub(r"\n\n(?=[a-h]\. )", "\n", md)
+        md = re.sub(r"(#+ [“”]Do I Know This Already\?” Quiz\n)(?:.|\n)*?(?=^1\. )", r"\1\n", md, flags=re.M)
+        md = re.sub(r"^Answer the following review questions\..*\n", "", md, flags=re.M)
+        files.append((write_chapter(out, ch, title, sec_header(book, ch, objs), md), title, SEC, objs))
+    return files
+
+
+def pdf_lines(doc, first, last, header):
+    """Text lines of pages first..last (1-based), without the lines that match `header`."""
+    lines = []
+    for i in range(first - 1, last):
+        for line in doc[i].get_text().split("\n"):
+            if not header.match(line.strip()):
+                lines.append(line.rstrip())
+    return lines
+
+
+def join_wrapped(parts, soft_hyphens):
+    """Joins wrapped lines. With `soft_hyphens` (Seidl), a line that ends in '-' without a soft
+    hyphen is a word broken in two; '-' plus a soft hyphen is a real hyphen."""
+    text = ""
+    for p in parts:
+        p = p.strip()
+        if not p:
+            continue
+        if not text:
+            text = p
+        elif soft_hyphens and text.endswith("-") and not text.endswith("-­"):
+            text = text[:-1] + p
+        elif text.endswith(("-", "­", "/")):
+            text += p
+        else:
+            text += " " + p
+    return text.replace("­", "")
+
+
+def numbered_items(lines, start, soft_hyphens):
+    """Question blocks: [[number, stem lines, [(letter, option lines)]]]; a new question is the next number."""
+    items, expected = [], None
+    for line in lines:
+        t = line.strip()
+        m = re.match(r"^(\d+)\.\s*(.*)", t) or re.match(r"^(\d+)\t\s*(.*)", line.lstrip(" "))  # Seidl: "58\t" (no period)
+        if m and not t[len(m.group(1)):len(m.group(1)) + 1] == "." and int(m.group(1)) != expected:
+            m = None
+        if m and (expected is None and int(m.group(1)) == start or int(m.group(1)) in (expected, (expected or 0) + 1)):
+            items.append([int(m.group(1)), [m.group(2)], []])
+            expected = int(m.group(1)) + 1
+            continue
+        if not items:
+            continue
+        o = re.match(r"^\(?([A-H])[.)]\s*(.*)", t)
+        opts = items[-1][2]
+        if o and ord(o.group(1)) - ord("A") == len(opts):
+            opts.append((o.group(1), [o.group(2)]))
+        elif opts:
+            opts[-1][1].append(t)
+        else:
+            items[-1][1].append(t)
+    return [(n, join_wrapped(stem, soft_hyphens), [(l, join_wrapped(o, soft_hyphens)) for l, o in opts])
+            for n, stem, opts in items]
+
+
+def questions_md(items):
+    out = []
+    for n, stem, opts in items:
+        out.append(f"{n}. {stem}")
+        out += [f"  {l}. {o}" for l, o in opts]
+    return "\n".join(out)
+
+
+SEIDL_HEADER = re.compile(r"^(\d+|Chapter \d+ +■ +Domain.*|Appendix +■ +Answers.*|Chapter \d+: Domain \d\.0:.*)$")
+SEIDL_DOMAINS = {  # chapter: (question pages, title)
+    1: ((21, 48), "Domain 1.0: General Security Concepts"),
+    2: ((49, 88), "Domain 2.0: Threats, Vulnerabilities, and Mitigations"),
+    3: ((89, 134), "Domain 3.0: Security Architecture"),
+    4: ((135, 188), "Domain 4.0: Security Operations"),
+    5: ((189, 236), "Domain 5.0: Security Program Management and Oversight"),
+}
+
+
+def seidl_answers(doc):
+    """{chapter: [(number, text)]} from the appendix; the numbers restart at 1 for each chapter."""
+    lines = pdf_lines(doc, 238, 356, SEIDL_HEADER)
+    # Answers 1–9 print the number on its own line: "1." then "B.  File encryption …".
+    merged = []
+    for line in lines:
+        if merged and re.fullmatch(r"\d+\.", merged[-1].strip()):
+            merged[-1] = merged[-1].strip() + " " + line.strip()
+        else:
+            merged.append(line)
+    lines = merged
+    chapters, cur = {}, None
+    for line in lines:
+        t = line.strip()
+        m = re.match(r"^(\d+)\.\s+([A-H](?:,\s*[A-H])*)\.\s+(.*)", t)
+        if m and (cur is None or int(m.group(1)) == 1 or int(m.group(1)) == cur[-1][0] + 1):
+            if int(m.group(1)) == 1:
+                cur = []
+                chapters[len(chapters) + 1] = cur
+            cur.append([int(m.group(1)), [f"{m.group(2)}. {m.group(3)}"]])
+        elif cur and not re.match(r"^Chapter \d+: Domain", t) and t not in ("Concepts", "Mitigations", "and Oversight"):
+            cur[-1][1].append(t)
+    return {ch: [(n, join_wrapped(p, True)) for n, p in rows] for ch, rows in chapters.items()}
+
+
+def book_sec_seidl(src, out):
+    """Sybex Practice Tests (Seidl), PDF: one chapter for each SY0-701 domain, answers in the appendix."""
+    doc = pymupdf.open(str(src))
+    answers = seidl_answers(doc)
+    files = []
+    book = "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl)"
+    for ch, ((first, last), name) in SEIDL_DOMAINS.items():
+        lines = pdf_lines(doc, first, last, SEIDL_HEADER)
+        topics = join_wrapped(lines[:next(i for i, l in enumerate(lines) if re.fullmatch(r"1\.(\s.*)?", l.strip()))], True)
+        objs = sort_objectives(re.findall(r"[■✓](\d\.\d+) ", topics.replace("■ ■", "■").replace("■■", "■")))
+        md = ["## Review Questions", "", questions_md(numbered_items(lines, 1, True)), "",
+              "## Answers to Review Questions", ""]
+        md += [f"{n}. {text}" for n, text in answers.get(ch, [])]
+        title = f"Chapter {ch}: {name}"
+        files.append((write_chapter(out, ch, title, sec_header(book, ch, objs), "\n".join(md)), title, SEC, objs))
+    return files
+
+
+GORG_HEADER = re.compile(r"^\d+$")  # page numbers
+GORG_PARTS = [  # (file number, title, answer pages, first question number)
+    (1, "Chapter 1: General Security Concepts", (51, 163), 1),
+    (2, "Chapter 2: Threats, Vulnerabilities, and Mitigations", (204, 321), 111),
+    (3, "Chapter 3: Implementation", (355, 446), 221),
+    (4, "Chapter 4: Security Operations", (504, 658), 311),
+    (5, "Chapter 5: Security Program Management and Oversight", (689, 771), 461),
+    (6, "Exam Simulator 1", (808, 913), 1),
+    (7, "Exam Simulator 2", (950, 1052), 101),
+    (8, "Exam Simulator 3", (1090, 1197), 201),
+    (9, "Exam Simulator 4", (1234, 1333), 301),
+    (10, "Exam Simulator 5", (1371, 1473), 401),
+    (11, "Exam Simulator 6", (1513, 1619), 501),
+]
+
+
+# "Question 1. …", and the book's typos "Question 394.Lisa", "Question 444 Omega", "Question 365.. Web", ".Question 456."
+GORG_QUESTION = re.compile(r"^\.?Question (\d+)(?:\.{1,2}\s*|\s+)(?=\S)")
+
+
+def book_sec_gorgotsias(src, out):
+    """ExamsDigest Practice Tests (Gorgotsias), PDF. Each answer section repeats the question and its
+    options before 'Explanation N. Correct Answer: C. …', so only the answer sections are read. The
+    book numbers a few questions wrong (a repeated or skipped number), so blocks split at each
+    'Question N.' line, not by number. The book has no PBQs in this edition's text."""
+    doc = pymupdf.open(str(src))
+    files = []
+    book = "CompTIA Security+ SY0-701 Practice Tests & PBQs (Gorgotsias)"
+    for num, title, (first, last), _ in GORG_PARTS:
+        # An answer section can start and end in the middle of a page: read from the
+        # "Answers N-M" title to the next section title.
+        lines = [l.strip() for l in pdf_lines(doc, first - 1, last + 1, GORG_HEADER) if l.strip()]
+        start = next(i for i, t in enumerate(lines) if re.fullmatch(r"Answers \d+-\d+", t))
+        lines = lines[start + 1:]
+        stop = next((i for i, t in enumerate(lines) if re.match(r"^(Questions \d+-\d+|Exam Simulator #\d+|Chapter \d+ |BONUSES)", t)), len(lines))
+        lines = lines[:stop]
+        # Options run into one line in a few places ("… respectively? ((A)       TechFirm … (B)       …",
+        # "(D       Encrypting"): each "(X)" followed by a wide gap starts its own line.
+        lines = [p.strip() for t in lines for p in re.sub(r"\s*\(+([A-H])\)?\s{3,}", r"\n(\1) ", t).split("\n") if p.strip()]
+        blocks, cur = [], None
+        for t in lines:
+            if GORG_QUESTION.match(t):
+                cur = {"q": [t], "opts": [], "exp": []}
+                blocks.append(cur)
+            elif cur is None:
+                continue
+            elif re.match(r"^Explanation \d+\.\s", t) or cur["exp"]:
+                cur["exp"].append(t)
+            elif re.match(r"^\([A-H]\)(\s|$)", t) and len(cur["opts"]) == ord(t[1]) - ord("A"):
+                cur["opts"].append([t[3:].strip()])
+            elif cur["opts"]:
+                cur["opts"][-1].append(t)
+            else:
+                cur["q"].append(t)
+        qs, ans = [], []
+        for k, b in enumerate(blocks, start=1):
+            n = GORG_QUESTION.match(b["q"][0])
+            stem = join_wrapped([b["q"][0][n.end():]] + b["q"][1:], False)
+            qs.append(f"{n.group(1)}. {stem}")
+            qs += [f"  {chr(65 + i)}. {join_wrapped(o, False)}" for i, o in enumerate(b["opts"])]
+            # "Explanation 1. Correct Answer: C. Non-repudiation. …", then "Option A is incorrect. …" paragraphs.
+            paras, para = [], []
+            for t in b["exp"]:
+                if re.match(r"^Option [A-H] is (in)?correct\b", t) and para:
+                    paras.append(join_wrapped(para, False))
+                    para = []
+                para.append(t)
+            if para:
+                paras.append(join_wrapped(para, False))
+            first_para = re.sub(r"^Explanation \d+\.\s*Correct Answers?:\s*", "", paras[0]) if paras else ""
+            ans.append(f"{n.group(1)}. {first_para}")
+            ans += [f"    {p}" for p in paras[1:]]
+        md = ["## Questions", "", "\n".join(qs), "", "## Answers", "", "\n".join(ans)]
+        files.append((write_chapter(out, num, title, sec_header(book, num, []), "\n".join(md)), title, SEC, []))
+    return files
+
+
+
+
+# ---------------------------------------------------------------------------
 
 BOOKS = {
     "exam-cram-2e": ("general", "CompTIAACore1(220-1201)andCore2(220-1202)ExamCram,2ndEdition-9780135447000.epub", book_exam_cram),
@@ -1016,6 +1373,11 @@ BOOKS = {
     "objectives-220-1201": ("general", "comptia-a-plus-220-1201-exam-objectives.pdf", book_objectives),
     "objectives-220-1202": ("general", "comptia-a-plus-220-1202-exam-objectives.pdf", book_objectives),
     "objectives-n10-009": ("network", "n10-009-exam-objectives.pdf", book_objectives),
+    "objectives-sy0-801": ("sec", "CompTIA Security+ SY0-801 Exam Objectives (2.0).pdf", book_objectives),
+    "sec-neil-cert-guide": ("sec", "Ian Neil - CompTIA Security+ SY0-701 Certification Guide, Third Edition (2024, Packt Publishing Pvt. Ltd.) - libgen.li.epub", book_sec_neil),
+    "sec-heuermann-cert-guide": ("sec", "Lewis Heuermann - CompTIA Security+ SY0-701 Cert Guide (Certification Guide) (2024, Pearson IT Certification) - libgen.li.epub", book_sec_heuermann),
+    "sec-seidl-practice-tests": ("sec", "David Seidl - CompTIA Security+ Practice Tests_ Exam SY0-701 (2024, Sybex) - libgen.li.pdf", book_sec_seidl),
+    "sec-gorgotsias-practice-tests": ("sec", "Nikolaos Gorgotsias - CompTIA Security+ SY0-701 Practice Tests & PBQs_ Exam SY0-701 (2024, ExamsDigest LLC. and LabsDigest LLC) - libgen.li.pdf", book_sec_gorgotsias),
     "net-exam-cram": ("network", "Comptia Network+ N10-009 Exam Cram (Exam Cram (Pearson)){Emmett Dulaney}(2024, Pearson It Certification){105355531} libgen.li.epub", book_exam_cram_net),
     "net-zacker-practice-tests": ("network", "CompTIA Network+ Practice Tests_ Exam N10-009{Craig Zacker}(2024, Sybex){105351008} libgen.li.epub", book_zacker),
     "net-west-guide": ("network", "CompTIA Network+ Guide to Networks{Jill West}(224, Cengage Learning){107908711} libgen.li.pdf", book_west),

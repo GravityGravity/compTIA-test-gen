@@ -1,0 +1,7 @@
+{
+  "id": "security-plus",
+  "name": "CompTIA Security+ (SY0-801)",
+  "shortName": "CompTIA Security+",
+  "active": true,
+  "exams": ["SY0-801"]
+}

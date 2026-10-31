@@ -1,0 +1,2564 @@
+[
+  {
+    "id": "secplus-def-public-cloud",
+    "term": "Public cloud",
+    "definition": "Cloud deployment model in which a provider hosts many unrelated tenants on shared infrastructure that any customer can subscribe to over the internet.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-private-cloud",
+    "term": "Private cloud",
+    "definition": "Cloud deployment model dedicated to a single organization, on its own or reserved hardware, giving the most control over data and security.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-hybrid-cloud",
+    "term": "Hybrid cloud",
+    "definition": "Cloud deployment model that combines on-premises or dedicated infrastructure with provider-hosted services, so workloads and data can move between the two.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-community-cloud",
+    "term": "Community cloud",
+    "definition": "Cloud deployment model shared by several organizations with common needs, such as firms in one industry, which split the cost of a dedicated infrastructure.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-multicloud",
+    "term": "Multicloud",
+    "definition": "Strategy of using services from two or more different cloud providers at once, which avoids depending on one vendor and survives an outage at any single provider.",
+    "acceptedAnswers": [
+      "Multi-cloud",
+      "Multicloud systems",
+      "Multi-cloud systems"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1",
+      "SY0-801/3.4"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-serverless",
+    "term": "Serverless",
+    "definition": "Cloud model in which developers upload code as functions and the provider runs, scales, and patches all underlying machines, while the customer still secures its code and data.",
+    "acceptedAnswers": [
+      "Serverless computing",
+      "Serverless architecture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-infrastructure-as-code",
+    "term": "Infrastructure as Code",
+    "definition": "Practice of defining servers, networks, and other resources in machine-readable files, such as YAML or JSON, so they deploy the same way every time and stay under version control.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-responsibility-matrix",
+    "term": "Responsibility matrix",
+    "definition": "Chart showing which security duties belong to the cloud provider and which to the customer for each service type, such as IaaS, PaaS, or SaaS.",
+    "acceptedAnswers": [
+      "Shared responsibility model",
+      "Shared responsibility matrix"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-cloud",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models; SY0-801 objective 3.1"
+  },
+  {
+    "id": "secplus-def-on-premises",
+    "term": "On-premises",
+    "definition": "Hosting model in which an organization owns and runs its servers in its own buildings, giving it full control of security but also full responsibility for hardware, power, and staff.",
+    "acceptedAnswers": [
+      "On-premises infrastructure",
+      "On-premise",
+      "On-prem"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-infrastructure",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-air-gapped-network",
+    "term": "Air-gapped network",
+    "definition": "Network physically isolated from the internet and every other network, with no wired or wireless links, so data moves in or out only on removable media.",
+    "acceptedAnswers": [
+      "Air gap",
+      "Air-gapped",
+      "Airgapped network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-infrastructure",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-microservices",
+    "term": "Microservices",
+    "definition": "Design that splits an application into small, independent services, each with one business function, that talk through APIs and can be deployed, scaled, and fail separately.",
+    "acceptedAnswers": [
+      "Microservice architecture",
+      "Microservices architecture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-infrastructure",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-logical-segmentation",
+    "term": "Logical segmentation",
+    "definition": "Dividing a network into separate parts with software controls, such as VLANs, subnets, and firewall rules, while devices may still share the same switches and cables.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-infrastructure",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-def-physical-segmentation",
+    "term": "Physical segmentation",
+    "definition": "Separating networks with their own dedicated switches, cabling, and hardware, so traffic in one part cannot reach another through shared equipment.",
+    "acceptedAnswers": [
+      "Physical isolation",
+      "Physical separation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-infrastructure",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models; SY0-801 objective 3.1"
+  },
+  {
+    "id": "secplus-def-resilience",
+    "term": "Resilience",
+    "definition": "Ability of a system to keep working through faults, attacks, or disasters and to return to normal quickly, achieved with redundancy and recovery planning.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-def-usability",
+    "term": "Usability",
+    "definition": "How easy a system is for people to use; security controls that make work hard push users toward workarounds that weaken protection.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models; SY0-801 objective 3.1"
+  },
+  {
+    "id": "secplus-def-ease-of-recovery",
+    "term": "Ease of recovery",
+    "definition": "How quickly and simply a system can be brought back to working order after a failure or attack, for example from backups, snapshots, or code templates.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-def-scalability",
+    "term": "Scalability",
+    "definition": "Ability of a system to grow or shrink its capacity to handle more or less work, by adding resources to a node or by adding more nodes.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-def-compute",
+    "term": "Compute",
+    "definition": "The processing capacity, such as CPU cores and memory, that a design needs; security functions like encryption and traffic inspection add to this demand.",
+    "acceptedAnswers": [
+      "Compute resources"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-def-power-requirements",
+    "term": "Power requirements",
+    "definition": "Electricity a design needs for its servers, cooling, and network gear, including backup supply, which can limit where and how systems are deployed.",
+    "acceptedAnswers": [
+      "Power requirement"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models; SY0-801 objective 3.1"
+  },
+  {
+    "id": "secplus-def-open-source-software",
+    "term": "Open-source software",
+    "definition": "Software whose code anyone may read and change; a large community can find and fix its flaws, but support and patch timing are not guaranteed.",
+    "acceptedAnswers": [
+      "Open source"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models; SY0-801 objective 3.1"
+  },
+  {
+    "id": "secplus-def-proprietary-software",
+    "term": "Proprietary software",
+    "definition": "Software owned by a vendor that keeps its code secret; the vendor supplies support and patches, but customers cannot audit the code and may be locked in.",
+    "acceptedAnswers": [
+      "Proprietary",
+      "Closed-source software"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "arch-considerations",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 10: Compare and contrast security implications of different architecture models; SY0-801 objective 3.1"
+  },
+  {
+    "id": "secplus-def-device-placement",
+    "term": "Device placement",
+    "definition": "Deciding where each security appliance, such as a firewall, IDS sensor, or jump server, sits in the network so it can see and protect the right traffic.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-security-zone",
+    "term": "Security zone",
+    "definition": "Network area grouped by trust level, such as the internal LAN, the boundary network, or the internet, with its own access rules enforced where traffic crosses it.",
+    "acceptedAnswers": [
+      "Security zones"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-screened-subnet",
+    "term": "Screened subnet",
+    "definition": "Boundary network between the internet and the internal LAN, guarded by firewalls, that holds public-facing servers such as web and mail servers.",
+    "acceptedAnswers": [
+      "Demilitarized zone",
+      "Perimeter network"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-attack-surface",
+    "term": "Attack surface",
+    "definition": "All the points where an attacker could try to get in or pull data out, such as open ports, running services, accounts, endpoints, and third-party links.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-diversity",
+    "term": "Diversity",
+    "definition": "Layering controls from different vendors or of different types, such as two firewall brands, so a single flaw or exploit cannot defeat every layer.",
+    "acceptedAnswers": [
+      "Defense diversity",
+      "Control diversity"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-fail-closed",
+    "term": "Fail-closed",
+    "definition": "Failure mode in which a security device that stops working blocks all traffic or access, keeping protection at the cost of availability.",
+    "acceptedAnswers": [
+      "Fail-secure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-fail-open",
+    "term": "Fail-open",
+    "definition": "Failure mode in which a security device that stops working lets all traffic or access through, keeping service up but leaving the network unprotected.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-design",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-zero-trust-architecture",
+    "term": "Zero Trust architecture",
+    "definition": "Network design that places policy decision and enforcement points in front of every resource, so each request is checked for identity, device health, and context before access.",
+    "acceptedAnswers": [
+      "Zero Trust network architecture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-device-health",
+    "term": "Device health",
+    "definition": "An endpoint's current security condition, such as patch level, running antivirus, and enabled disk encryption, checked as a condition for granting access.",
+    "acceptedAnswers": [
+      "Device health check",
+      "Device posture"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-device-inventory",
+    "term": "Device inventory",
+    "definition": "Up-to-date record of every endpoint allowed to reach company resources, so unknown or unmanaged devices can be spotted and denied.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-application-access-control",
+    "term": "Application access control",
+    "definition": "Granting a verified user entry to one specific program or web app after checking identity and context, instead of opening the whole network to that user.",
+    "acceptedAnswers": [
+      "Application-level access control"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-zero-trust",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-virtual-private-network",
+    "term": "Virtual Private Network",
+    "definition": "Encrypted connection across an untrusted network, such as the internet, that lets a remote user or branch office reach an internal network as if attached locally.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-remote-access",
+    "term": "Remote access",
+    "definition": "Ability to reach and use a computer or network from another location, for example through SSH, RDP, or a VPN client, which must be secured and logged.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-tunneling",
+    "term": "Tunneling",
+    "definition": "Wrapping one protocol's packets inside another, usually encrypted, protocol so they cross an untrusted network privately, as IPsec and TLS do for VPNs.",
+    "acceptedAnswers": [
+      "Tunnelling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-internet-protocol-security",
+    "term": "Internet Protocol Security",
+    "definition": "Suite of protocols that authenticates and encrypts IP packets with AH and ESP headers, widely used for site-to-site and remote VPN connections.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-secure-access-service-edge",
+    "term": "Secure access service edge",
+    "definition": "Cloud architecture that merges wide-area networking such as SD-WAN with cloud-delivered security services under a Zero Trust model, for users in any location.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-def-secure-file-transfer-protocol",
+    "term": "Secure File Transfer Protocol",
+    "definition": "Encrypted method of copying documents between hosts inside an SSH session on port 22, protecting both the login and the content.",
+    "acceptedAnswers": [
+      "SSH File Transfer Protocol"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-end-to-end-encrypted-messaging",
+    "term": "End-to-end encrypted messaging",
+    "definition": "Communication in which only the sender's and recipient's devices hold the keys, so the servers that relay the messages cannot read their content.",
+    "acceptedAnswers": [
+      "End-to-end encryption",
+      "End-to-end encrypted message"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "Mobile Communications Best Practice Guidance – CISA; End-to-end encryption – Wikipedia; SY0-801 objective 3.2",
+    "sourceUrls": [
+      "https://www.cisa.gov/sites/default/files/2024-12/guidance-mobile-communications-best-practices.pdf",
+      "https://en.wikipedia.org/wiki/End-to-end_encryption"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-out-of-band-management",
+    "term": "Out-of-band management",
+    "definition": "Administering servers and network devices through a separate, dedicated channel, such as a management network or console port, that keeps working when the production network is down.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "Essential Guide to Out-of-Band Management – Advantech; Out-of-band management – Wikipedia; Performing Out-of-Band Network Management – NSA; SY0-801 objective 3.2",
+    "sourceUrls": [
+      "https://www.advantech.com/en-us/resources/industry-focus/out-of-band-management-guide",
+      "https://en.wikipedia.org/wiki/Out-of-band_management",
+      "https://media.defense.gov/2020/Sep/17/2002499616/1/-1/0/PERFORMING_OUT_OF_BAND_NETWORK_MANAGEMENT20200911.PDF"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-security-service-edge",
+    "term": "Security Service Edge",
+    "definition": "Cloud-delivered bundle of security services, chiefly a secure web gateway, a cloud access security broker, and Zero Trust network access, that protects users wherever they connect.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-remote",
+    "origin": "objectives",
+    "source": "What Is Security Service Edge (SSE)? – Palo Alto Networks Cyberpedia; What is Global Secure Access? – Microsoft Learn; SY0-801 objective 3.2",
+    "sourceUrls": [
+      "https://www.paloaltonetworks.com/cyberpedia/what-is-security-service-edge-sse",
+      "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-group-managed-service-account",
+    "term": "Group Managed Service Account",
+    "definition": "Active Directory account for running services on one or more servers, whose long password the domain controllers generate and rotate automatically so no administrator handles it.",
+    "acceptedAnswers": [],
+    "typeable": false,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-identity",
+    "origin": "objectives",
+    "source": "Microsoft Learn – Group Managed Service Accounts overview; SY0-801 objective 3.2",
+    "sourceUrls": [
+      "https://learn.microsoft.com/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview",
+      "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-service-accounts"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-least-privilege-access-account",
+    "term": "Least privilege access account",
+    "definition": "User account with only the rights needed for daily work, kept separate from any administrator account so that malware or mistakes during normal use do limited damage.",
+    "acceptedAnswers": [
+      "Least privilege account",
+      "Least privilege access accounts"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-identity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 23: Summarizing Elements of Effective Security Governance; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-privilege-creep",
+    "term": "Privilege creep",
+    "definition": "Gradual build-up of access rights as a user changes jobs and keeps old permissions, leaving far more access than the current role needs.",
+    "acceptedAnswers": [
+      "Permission creep",
+      "Access creep"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-identity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-user-management",
+    "term": "User management",
+    "definition": "Administering people's accounts across their life cycle: creating them, assigning and changing rights, and disabling them promptly when people leave.",
+    "acceptedAnswers": [
+      "User account management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "group": "infra-identity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 20: Understanding the Importance of Automation and Orchestration Related to Secure Operations; SY0-801 objective 3.2"
+  },
+  {
+    "id": "secplus-def-structured-data",
+    "term": "Structured data",
+    "definition": "Data organized in a fixed, predefined format such as the rows and columns of a database table, which makes it easy to search, classify, and protect field by field.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-types-states",
+    "origin": "objectives",
+    "source": "IBM Think – Structured vs. unstructured data: What's the difference?; SY0-801 objective 3.3",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/structured-vs-unstructured-data",
+      "https://www.mongodb.com/resources/basics/unstructured-data/structured-vs-unstructured"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-unstructured-data",
+    "term": "Unstructured data",
+    "definition": "Data with no predefined format, such as emails, documents, images, audio, and video, which is harder to search and classify and often hides sensitive content.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-types-states",
+    "origin": "objectives",
+    "source": "IBM Think – Structured vs. unstructured data: What's the difference?; SY0-801 objective 3.3",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/structured-vs-unstructured-data",
+      "https://www.mongodb.com/resources/basics/unstructured-data/structured-vs-unstructured"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-data-at-rest",
+    "term": "Data at rest",
+    "definition": "Data stored on a drive, database, file share, or backup medium and not currently moving or being processed, protected mainly with disk, file, or database encryption.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-types-states",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-data-in-transit",
+    "term": "Data in transit",
+    "definition": "Data moving across a network or communication channel, such as a web purchase, protected mainly with protocols like TLS, HTTPS, and IPsec.",
+    "acceptedAnswers": [
+      "Data in motion"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-types-states",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-data-in-use",
+    "term": "Data in use",
+    "definition": "Data loaded into memory and being processed by an application or CPU, where it is usually unencrypted and must be protected by measures such as secure enclaves.",
+    "acceptedAnswers": [
+      "Data in processing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-types-states",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-data-classification",
+    "term": "Data classification",
+    "definition": "Process of sorting information into labeled levels by sensitivity and the harm its exposure would cause, which then decides how it is stored, accessed, and destroyed.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1",
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data"
+  },
+  {
+    "id": "secplus-def-top-secret",
+    "term": "Top secret",
+    "definition": "Highest government level, for information whose unauthorized release could cause exceptionally grave damage to national security.",
+    "acceptedAnswers": [
+      "Top secret data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-secret",
+    "term": "Secret",
+    "definition": "Government level just below the highest, for information whose unauthorized release could cause serious damage to national security.",
+    "acceptedAnswers": [
+      "Secret data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-confidential",
+    "term": "Confidential",
+    "definition": "Label for information whose disclosure would cause damage; the lowest government level that is still classified, and in business often used for trade secrets and source code.",
+    "acceptedAnswers": [
+      "Confidential data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-restricted",
+    "term": "Restricted",
+    "definition": "Commercial label for the most tightly controlled information, which only named people may access and whose use legal or regulatory rules also limit.",
+    "acceptedAnswers": [
+      "Restricted data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data"
+  },
+  {
+    "id": "secplus-def-sensitive",
+    "term": "Sensitive",
+    "definition": "Label for information such as PII or internal financial details whose exposure could harm people or the organization, so it needs more protection than open information.",
+    "acceptedAnswers": [
+      "Sensitive data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-critical",
+    "term": "Critical",
+    "definition": "Label for information the organization cannot operate without, such as encryption keys or core databases, whose loss or corruption would halt the business.",
+    "acceptedAnswers": [
+      "Critical data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data"
+  },
+  {
+    "id": "secplus-def-public",
+    "term": "Public",
+    "definition": "Label for information approved for anyone to see, such as press releases and brochures, whose release causes no harm.",
+    "acceptedAnswers": [
+      "Public data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-private",
+    "term": "Private",
+    "definition": "Label for personal or internal information, such as salaries and medical records, that is not meant for outsiders and whose exposure would harm the people it describes.",
+    "acceptedAnswers": [
+      "Private data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-classifications",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data"
+  },
+  {
+    "id": "secplus-def-filtering",
+    "term": "Filtering",
+    "definition": "Applying rules that remove or block sensitive values, such as card numbers, from information before it is displayed, sent, or shared, as content filters and DLP tools do.",
+    "acceptedAnswers": [
+      "Data filtering"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-methods",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-transpose",
+    "term": "Data transpose",
+    "definition": "Hiding information by rearranging the order of its characters or fields by a set rule, so the original pieces remain but no longer read in their true order.",
+    "acceptedAnswers": [
+      "Data transposition",
+      "Transposition"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-methods",
+    "origin": "objectives",
+    "source": "Understanding and Selecting Data Masking: Defining Data Masking – Securosis; Transposition cipher – Wikipedia; SY0-801 objective 3.3",
+    "sourceUrls": [
+      "https://securosis.com/blog/understanding-and-selecting-data-masking-defining-data-masking/",
+      "https://en.wikipedia.org/wiki/Transposition_cipher"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-deidentification",
+    "term": "Deidentification",
+    "definition": "Removing or altering details that link records to specific people, such as names and ID numbers, so a data set can be used without revealing who it describes.",
+    "acceptedAnswers": [
+      "De-identification"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-methods",
+    "origin": "objectives",
+    "source": "NIST CSRC Glossary – de-identification; NIST SP 800-188, De-Identifying Government Data Sets; SY0-801 objective 3.3",
+    "sourceUrls": [
+      "https://csrc.nist.gov/glossary/term/de_identification",
+      "https://csrc.nist.gov/pubs/sp/800/188/final"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-geographic-restrictions",
+    "term": "Geographic restrictions",
+    "definition": "Limiting access to information so that only users or devices located in approved countries or regions can reach it, often to satisfy local regulations.",
+    "acceptedAnswers": [
+      "Geographic restriction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-methods",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-permission-restrictions",
+    "term": "Permission restrictions",
+    "definition": "Limiting who can read, change, or delete information by assigning rights according to each user's role, so only authorized staff can handle it.",
+    "acceptedAnswers": [
+      "Permission restriction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-methods",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-data-owner",
+    "term": "Data owner",
+    "definition": "Senior person accountable for a data set, who decides its classification and who may access it, and answers for its protection.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-roles",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-custodian",
+    "term": "Data custodian",
+    "definition": "Role, usually in IT, that carries out the technical safeguarding of information day to day: storing it securely, encrypting it, backing it up, and applying retention rules.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-roles",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-steward",
+    "term": "Data steward",
+    "definition": "Role that keeps information accurate and consistent, fixes errors, maintains metadata, and labels it by sensitivity so it is understood and handled correctly.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-roles",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-controller",
+    "term": "Data controller",
+    "definition": "Organization or person that decides why and how personal information is collected and used, and is legally responsible for following privacy laws such as GDPR.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-roles",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-processor",
+    "term": "Data processor",
+    "definition": "Organization that handles personal information on behalf of the party that decided its purpose, following that party's written instructions and keeping records of its work.",
+    "acceptedAnswers": [
+      "Processor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.4"
+    ],
+    "group": "data-roles",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-def-data-subprocessor",
+    "term": "Data subprocessor",
+    "definition": "Third party that a company already handling personal information for a client hires to do part of that work; it needs the client's approval and the same contract terms.",
+    "acceptedAnswers": [
+      "Subprocessor",
+      "Sub-processor",
+      "Data sub-processor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-roles",
+    "origin": "objectives",
+    "source": "GDPR Article 28 (Processor); UK ICO – Controllers and processors; SY0-801 objective 3.3",
+    "sourceUrls": [
+      "https://gdpr-info.eu/art-28-gdpr/",
+      "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/controllers-and-processors/controllers-and-processors/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-data-labeling",
+    "term": "Data labeling",
+    "definition": "Attaching a visible tag or metadata to files, documents, and media that shows their sensitivity level, so people and tools such as DLP handle them correctly.",
+    "acceptedAnswers": [
+      "Marking and labeling",
+      "Data labelling",
+      "Data marking",
+      "Labeling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-handling",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-geofencing",
+    "term": "Geofencing",
+    "definition": "Using GPS or network location to draw a virtual boundary, so a device or app changes features, data access, or alerts as it enters or leaves the area.",
+    "acceptedAnswers": [
+      "Geo-fencing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-handling",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 14: Applying Common Security Techniques to Computing Resources; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-geolocation",
+    "term": "Geolocation",
+    "definition": "Working out the real-world location of a user or device from GPS, IP address, or Wi-Fi data, to check that a login or request comes from an expected place.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-handling",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-data-sovereignty",
+    "term": "Data sovereignty",
+    "definition": "Principle that information is subject to the laws of the country where it is collected or stored, which limits where an organization or cloud provider may move or keep it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "group": "data-handling",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-data-management-life-cycle",
+    "term": "Data management life cycle",
+    "definition": "Sequence of stages that information passes through from the moment it is made or collected until it is securely destroyed, with controls applied at each stage.",
+    "acceptedAnswers": [
+      "Data life cycle",
+      "Data lifecycle",
+      "Data management lifecycle"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-creation",
+    "term": "Data creation",
+    "definition": "Stage in which information is first generated or collected, the right moment to classify and label it and to assign who is accountable for it.",
+    "acceptedAnswers": [
+      "Creation"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-management",
+    "term": "Data management",
+    "definition": "Stage in which stored information is organized, kept accurate, and protected with access controls and backups during its working life.",
+    "acceptedAnswers": [
+      "Management"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-distribution",
+    "term": "Data distribution",
+    "definition": "Stage in which information is shared with users, partners, or other systems, which calls for encryption in transit and checks that each recipient is authorized.",
+    "acceptedAnswers": [
+      "Distribution"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-retention",
+    "term": "Data retention",
+    "definition": "Keeping information only for the period that policy, law, or contract sets before it may be destroyed; the same rule sets how long backup copies are kept.",
+    "acceptedAnswers": [
+      "Retention"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/3.4"
+    ],
+    "group": "data-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-data-disposal",
+    "term": "Data disposal",
+    "definition": "Final stage, in which information that is no longer needed is destroyed so it cannot be recovered, for example by wiping, degaussing, or shredding media.",
+    "acceptedAnswers": [
+      "Data destruction"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-lifecycle",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 23: Summarize elements of effective security governance; SY0-801 objective 3.3"
+  },
+  {
+    "id": "secplus-def-regulated-data",
+    "term": "Regulated data",
+    "definition": "Information whose collection, storage, and sharing are governed by specific laws or industry rules, such as medical records under HIPAA or card data under PCI DSS.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data"
+  },
+  {
+    "id": "secplus-def-personally-identifiable-information",
+    "term": "Personally Identifiable Information",
+    "definition": "Any information that can identify a specific individual on its own or combined with other details, such as a name, ID number, email address, or biometric record.",
+    "acceptedAnswers": [
+      "Personal information",
+      "Personal data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-protected-health-information",
+    "term": "Protected Health Information",
+    "definition": "Medical details linked to a specific person, such as diagnoses, treatments, test results, and insurance records, safeguarded in the United States by HIPAA.",
+    "acceptedAnswers": [
+      "Health data",
+      "Personal Health Information",
+      "Health information"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-financial-data",
+    "term": "Financial data",
+    "definition": "Information about payments, bank accounts, card numbers, transactions, and an organization's accounts, protected by rules such as PCI DSS, GLBA, and SOX.",
+    "acceptedAnswers": [
+      "Financial information"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-children-s-data",
+    "term": "Children's data",
+    "definition": "Personal information about people under the legal age of consent, which laws such as the US COPPA protect by requiring a parent's verifiable permission before collecting it.",
+    "acceptedAnswers": [
+      "Child data",
+      "Minor data",
+      "Child/minor data",
+      "Childrens data"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "objectives",
+    "source": "US FTC – Complying with COPPA: Frequently Asked Questions; Wikipedia – Children's Online Privacy Protection Act; SY0-801 objective 3.3",
+    "sourceUrls": [
+      "https://www.ftc.gov/business-guidance/resources/complying-coppa-frequently-asked-questions",
+      "https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-intellectual-property",
+    "term": "Intellectual property",
+    "definition": "Creations of the mind, such as inventions, designs, source code, and written works, protected by patents, copyrights, and trademarks.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-legal-data",
+    "term": "Legal data",
+    "definition": "Information about court cases, contracts, and litigation, often protected by attorney-client privilege and needing strict handling and retention.",
+    "acceptedAnswers": [
+      "Legal information"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-def-trade-secret",
+    "term": "Trade secret",
+    "definition": "Confidential business know-how, such as a formula or algorithm, that gives a competitive edge and is protected by NDAs and access limits rather than registration.",
+    "acceptedAnswers": [
+      "Trade secrets"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "group": "data-compliance",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 12: Comparing and Contrasting Concepts and Strategies to Protect Data"
+  },
+  {
+    "id": "secplus-def-hot-site",
+    "term": "Hot site",
+    "definition": "Fully equipped standby facility with data replicated in near real time, ready to take over operations within minutes; the fastest and most expensive recovery option.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-sites",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-warm-site",
+    "term": "Warm site",
+    "definition": "Standby facility with hardware and connectivity in place but data that is only periodically updated, so it needs hours or days of work before taking over.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-sites",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-cold-site",
+    "term": "Cold site",
+    "definition": "Standby facility that provides only space, power, and cooling, with no ready equipment or data, so recovery takes the longest but costs the least.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-sites",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-geographic-dispersion",
+    "term": "Geographic dispersion",
+    "definition": "Placing data centers and backups far apart in different regions, so one regional disaster such as a flood or long power outage cannot take out all of them.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-sites",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-load-balancing",
+    "term": "Load balancing",
+    "definition": "Spreading incoming requests across several servers, sending each to a healthy, lightly used one, so no server is overloaded and one failure does not stop the service.",
+    "acceptedAnswers": [
+      "Load balancer"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-clustering",
+    "term": "Clustering",
+    "definition": "Grouping two or more servers that share storage and watch each other through a heartbeat, so a standby node takes over at once if the active one fails.",
+    "acceptedAnswers": [
+      "Server clustering",
+      "Cluster"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-autoscaling",
+    "term": "Autoscaling",
+    "definition": "Cloud feature that automatically adds or removes instances as measured demand rises and falls, keeping performance steady without paying for unused capacity.",
+    "acceptedAnswers": [
+      "Auto scaling"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-redundancy",
+    "origin": "objectives",
+    "source": "AWS – Amazon EC2 Auto Scaling User Guide and FAQs; SY0-801 objective 3.4",
+    "sourceUrls": [
+      "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html",
+      "https://aws.amazon.com/ec2/autoscaling/faqs/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-high-availability",
+    "term": "High availability",
+    "definition": "Design goal of keeping a service running with almost no downtime, often stated as a percentage such as 99.999 percent, through redundant parts with no single point of failure.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-platform-diversity",
+    "term": "Platform diversity",
+    "definition": "Running workloads on a mix of operating systems, hardware types, or virtualization platforms, so a flaw or failure in one technology does not stop every system.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-vendor-diversity",
+    "term": "Vendor diversity",
+    "definition": "Buying critical products or services from more than one supplier, so one supplier's outage, flaw, or business failure does not leave the organization without a working option.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-redundancy",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 13: Understanding the Importance of Resilience and Recovery in Security Architecture; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-uninterruptible-power-supply",
+    "term": "Uninterruptible Power Supply",
+    "definition": "Battery-backed device that supplies power instantly when mains power fails, long enough to ride out short outages, shut systems down cleanly, or start a generator.",
+    "acceptedAnswers": [
+      "Uninterruptible Power System",
+      "Uninterruptible power source"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-power",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-redundant-power-supply",
+    "term": "Redundant Power Supply",
+    "definition": "Second power unit in a server or network device, often hot-swappable, that keeps the device running on its own if the first unit fails.",
+    "acceptedAnswers": [
+      "Dual power supply"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-power",
+    "origin": "objectives",
+    "source": "Oracle Server X9-2 Service Manual – Servicing Power Supplies; Install a hot-swap power supply unit – Lenovo ThinkSystem SR645 Docs; SY0-801 objective 3.4",
+    "sourceUrls": [
+      "https://docs.oracle.com/en/servers/x86/x9-2/service-manual/servicing-power-supplies-cru.html",
+      "https://pubs.lenovo.com/sr645/install_a_hot-swap_power_supply"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-power-generator",
+    "term": "Power generator",
+    "definition": "Fuel-driven machine that produces electricity for hours or days during a long outage, usually started while battery units bridge the first minutes.",
+    "acceptedAnswers": [
+      "Generator",
+      "Backup generator"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-power",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-surge-protector",
+    "term": "Surge protector",
+    "definition": "Device that shields connected equipment from sudden voltage spikes, such as those caused by lightning, by diverting the excess energy away.",
+    "acceptedAnswers": [
+      "Surge suppressor"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-power",
+    "origin": "objectives",
+    "source": "NIST CSRC Glossary – Surge Protector (NISTIR 7621 Rev. 1); SY0-801 objective 3.4",
+    "sourceUrls": [
+      "https://csrc.nist.gov/glossary/term/Surge_Protector",
+      "https://www.lenovo.com/us/en/glossary/surge-protectors/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-power-distribution-unit",
+    "term": "Power distribution unit",
+    "definition": "Rack-mounted strip that feeds power to the equipment in a rack; managed models let staff monitor the load and switch outlets remotely.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-power",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-full-backup",
+    "term": "Full backup",
+    "definition": "Copy of all selected data every time the job runs; the slowest and largest kind, but a restore needs only that one set.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-incremental-backup",
+    "term": "Incremental backup",
+    "definition": "Copy of only the data changed since the last backup of any kind; fast and small, but a restore needs the last full set plus every later one in order.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-differential-backup",
+    "term": "Differential backup",
+    "definition": "Copy of all data changed since the last full backup; it grows each day, but a restore needs only the full set and the latest one of these.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-snapshot",
+    "term": "Snapshot",
+    "definition": "Point-in-time image of a virtual machine or storage volume, including its state, that lets administrators roll back quickly to that moment.",
+    "acceptedAnswers": [
+      "Snapshots"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4",
+      "SY0-801/4.8"
+    ],
+    "group": "resilience-backups",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-replication",
+    "term": "Replication",
+    "definition": "Continuously copying data to another system or site in near real time, so an up-to-date duplicate is ready if the primary fails.",
+    "acceptedAnswers": [
+      "Data replication"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-journaling",
+    "term": "Journaling",
+    "definition": "Recording every change to files or a database, with time and details, in a log that can be replayed to restore data to a precise point.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-immutable-backup",
+    "term": "Immutable backup",
+    "definition": "Copy of data locked against change or deletion, even by administrators, until its retention period ends, so ransomware cannot encrypt or erase it.",
+    "acceptedAnswers": [
+      "Immutability",
+      "Immutable backups",
+      "Immutable storage"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "objectives",
+    "source": "IBM Think – What are immutable backups?; Cohesity glossary – Immutable backup; SY0-801 objective 3.4",
+    "sourceUrls": [
+      "https://www.ibm.com/think/topics/immutable-backups",
+      "https://www.cohesity.com/glossary/immutable-backup/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-restoration-testing",
+    "term": "Restoration testing",
+    "definition": "Regularly recovering data from saved copies onto a test system to prove the copies are complete, readable, and can be brought back within the target time.",
+    "acceptedAnswers": [
+      "Restore testing",
+      "Backup restoration testing"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "objectives",
+    "source": "SP 800-34 Rev. 1, Contingency Planning Guide for Federal Information Systems – NIST CSRC; #StopRansomware Guide – CISA; SY0-801 objective 3.4",
+    "sourceUrls": [
+      "https://csrc.nist.gov/pubs/sp/800/34/r1/upd1/final",
+      "https://www.cisa.gov/stopransomware/ransomware-guide"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "secplus-def-backup-scope",
+    "term": "Backup scope",
+    "definition": "Decision about which systems, data, and settings a backup job includes, such as whole servers, single databases, or chosen folders.",
+    "acceptedAnswers": [
+      "Scope"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-backups",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 13: Understanding the Importance of Resilience and Recovery in Security Architecture; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-disaster-recovery",
+    "term": "Disaster recovery",
+    "definition": "Process for restoring IT systems, data, and facilities after a major disruption, setting out restoration steps, priorities, and alternate locations.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-continuity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-business-continuity",
+    "term": "Business continuity",
+    "definition": "Effort that keeps an organization's essential functions running during and after a disruption, covering people, processes, and suppliers, not only IT systems.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-continuity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-capacity-planning",
+    "term": "Capacity planning",
+    "definition": "Forecasting the people, technology, and infrastructure needed to meet future demand, so systems and teams are not overwhelmed during growth or a crisis.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-continuity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-failover",
+    "term": "Failover",
+    "definition": "Switching operations from a failed primary system to a standby one; trying it on purpose proves the standby actually takes over without losing data.",
+    "acceptedAnswers": [
+      "Failover testing",
+      "Failover test"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-continuity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 13: Explain the importance of resilience and recovery in security architecture"
+  },
+  {
+    "id": "secplus-def-parallel-processing",
+    "term": "Parallel processing",
+    "definition": "Check that runs the same workloads on the primary and the recovery systems at the same time and compares their results, without interrupting production.",
+    "acceptedAnswers": [
+      "Parallel testing",
+      "Parallel test"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-continuity",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann), Pearson – Chapter 13: Understanding the Importance of Resilience and Recovery in Security Architecture"
+  },
+  {
+    "id": "secplus-def-recovery-time-objective",
+    "term": "Recovery Time Objective",
+    "definition": "Target for how long a system or process may stay down after a disruption before the outage causes unacceptable harm; restoration must finish within it.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-recovery-point-objective",
+    "term": "Recovery Point Objective",
+    "definition": "Maximum amount of data, measured as time before an outage, that the organization can afford to lose; it sets how often backups must run.",
+    "acceptedAnswers": [],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-mean-time-to-repair",
+    "term": "Mean Time to Repair",
+    "definition": "Average duration needed to fix a failed component or system and return it to service.",
+    "acceptedAnswers": [
+      "Mean time to recover"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process; SY0-801 objective 3.4"
+  },
+  {
+    "id": "secplus-def-mean-time-between-failures",
+    "term": "Mean Time Between Failures",
+    "definition": "Average period of normal operation from one breakdown of a repairable system to the next, used to predict its reliability.",
+    "acceptedAnswers": [
+      "Mean time between failure"
+    ],
+    "typeable": true,
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "group": "resilience-metrics",
+    "origin": "objectives",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd ed. (Neil), Packt – Chapter 24: Explain elements of the risk management process; SY0-801 objective 3.4"
+  }
+]

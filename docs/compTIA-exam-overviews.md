@@ -7,7 +7,7 @@ This file gives the structure of each CompTIA exam in the app. Each part is for 
 | 1 | A+ Core 1 | 220-1201 | Current. Active since 2026-10-30. |
 | 2 | A+ Core 2 | 220-1202 | Current |
 | 3 | Network+ | N10-009 | Current. Active since 2026-10-30. |
-| 4 | Security+ | SY0-801 | In scope. Greyed out in module selection until its config is active. |
+| 4 | Security+ | SY0-801 | In scope. Active since 2026-10-30 (all five domains have content). |
 
 **A+:** The current exams are **Core 1 (220-1201)** and **Core 2 (220-1202)**, version V15. You must pass the two exams to get the A+ certification. You must take the two exams from the same version.
 
@@ -391,6 +391,7 @@ The real exam also has PBQs, for example configuring a device or putting steps i
 | Time | 90 minutes |
 | Passing score | 750 on a scale of 100–900 |
 | Question format | Multiple choice and performance-based questions (PBQs) |
+| Launch date | November 2026 |
 | Recommended experience | Security administrator with two years of hands-on experience |
 
 **Note:** PBQs are out of scope for the app now. A Security+ exam in the app uses multiple-choice questions only. Each attempt has 75–90 questions, the same range as A+ and Network+.
@@ -518,10 +519,12 @@ The objectives are for SY0-801 (`sources/sec/CompTIA Security+ SY0-801 Exam Obje
 | Seidl, *CompTIA Security+ Practice Tests: Exam SY0-701* (Sybex, 2024) | Practice questions by domain, practice exams |
 | Gorgotsias, *CompTIA Security+ SY0-701 Practice Tests & PBQs* (ExamsDigest, 2024) | Practice questions and PBQs |
 
+The objectives and the four books are extracted into `sources-text/sec/` (2,692 book questions in `sources-text/derived/questions/sec-*.json`). `sources-text/sources-index.md` has a SY0-701 → SY0-801 objective map. 19 official SY0-801 acronyms are in none of the books (for example LLM, CSPM, SSE, BIMI): a sign of the topics that are new in SY0-801.
+
 SY0-801 changes the domain names and weights of SY0-701, renumbers some objectives, and adds topics (for example 2.6, AI threats and vulnerabilities). So:
 - Every book is an older-objective book. Its practice questions go into the pool as they are, tagged with the closest SY0-801 objective, with a `note` when the match is not exact (the same rule as the 220-1101/1102 A+ books).
-- Check the facts of each written question and record against the SY0-801 objectives, because no current-objective book exists yet.
-- **Plan with the user:** topics that are new in SY0-801 and that the books do not cover (for example 2.6). The rule "write from the facts in each chapter" cannot give them questions. Decide how to cover them before the content for that domain is made.
+- Check the facts of each written question and record against the SY0-801 objectives, because no SY0-801 book exists yet (the exam is released in November 2026).
+- Topics that are new in SY0-801 (approved 2026-10-30): first look for the facts in the SY0-701 books, also under other objectives or names. Only when the books do not cover a topic (for example 2.6, AI threats), write the questions from online sources (authoritative pages first: CompTIA, NIST, OWASP, MITRE, CISA, vendor documentation; never online question banks or exam dumps). These records have `sourceUrls` and `verified: false`. After the domain's pool is generated, each one is verified against at least two independent sources, then fixed or dropped if the facts do not agree. The rules are in `CLAUDE.md` and `content/README.md`.
 
 ---
 

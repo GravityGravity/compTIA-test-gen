@@ -26,13 +26,17 @@ EXAMS = {
     "network-plus": {
         "N10-009": TEXT / "network" / "objectives-n10-009" / "01-network-n10-009-exam-objectives.md",
     },
+    "security-plus": {
+        "SY0-801": TEXT / "sec" / "objectives-sy0-801" / "01-security-sy0-801-exam-objectives.md",
+    },
 }
 COMMON = {"id": str, "acceptedAnswers": list, "certifications": list, "exams": list,
           "objectives": list, "origin": str, "source": str}
 # Acronyms are always typed (acronym -> expanded form), so they have no typeable flag and no distractor group.
 ACRONYM = {**COMMON, "acronym": str, "expanded": str, "meaning": str, "official": bool}
 DEFINITION = {**COMMON, "term": str, "definition": str, "typeable": bool, "group": str}
-OPTIONAL = {"note": str}
+# sourceUrls and verified: a record written from online sources (Security+ topics that no book covers).
+OPTIONAL = {"note": str, "sourceUrls": list, "verified": (bool, str)}
 ORIGINS = {"acronym": {"official", "book"}, "definition": {"objectives", "glossary", "book"}}
 MIN_GROUP = 4          # a group smaller than this makes the engine add distractors from other groups
 MAX_DEFINITION_WORDS = 30
@@ -92,6 +96,18 @@ def check(kind, fields, objectives, errors, warnings, summary):
                 err(f"unknown field '{name}'")
         if any(not isinstance(rec.get(n), t) for n, t in fields.items()):
             continue
+        for name, typ in OPTIONAL.items():
+            if name in rec and not isinstance(rec[name], typ):
+                err(f"field '{name}' has the wrong type")
+        if ("sourceUrls" in rec) != ("verified" in rec):
+            err("an online-sourced record needs both 'sourceUrls' and 'verified'")
+        elif "sourceUrls" in rec:
+            if not rec["sourceUrls"] or not all(isinstance(u, str) and u.startswith("https://") for u in rec["sourceUrls"]):
+                err("'sourceUrls' must list https:// pages")
+            if rec["verified"] is True or (isinstance(rec["verified"], str) and not re.fullmatch(r"\d{4}-\d{2}-\d{2}", rec["verified"])):
+                err("'verified' is false or a date (YYYY-MM-DD)")
+            elif rec["verified"] is False:
+                warn("online-sourced record is not verified yet")
 
         if rid in seen_ids:
             err("duplicate id")

@@ -4,7 +4,7 @@
   "description": "Match terms to their definitions, and type the term for a definition.",
   "active": true,
   "content": "definitions",
-  "certifications": ["a-plus", "network-plus"],
+  "certifications": ["a-plus", "network-plus", "security-plus"],
   "questionCount": 20,
   "timeLimitMinutes": 15,
   "onTimeUp": "end",

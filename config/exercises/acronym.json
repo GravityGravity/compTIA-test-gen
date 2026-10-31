@@ -5,7 +5,7 @@
   "notSure": true,
   "active": true,
   "content": "acronyms",
-  "certifications": ["a-plus", "network-plus"],
+  "certifications": ["a-plus", "network-plus", "security-plus"],
   "questionCount": 20,
   "timeLimitMinutes": 12,
   "onTimeUp": "end",

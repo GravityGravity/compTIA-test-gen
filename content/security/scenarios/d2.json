@@ -1,0 +1,1964 @@
+[
+  {
+    "id": "security-s-ind-adware",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "home-office",
+      "retail",
+      "school"
+    ],
+    "clues": [
+      "pop-up advertisements appear even when the browser is closed",
+      "a new toolbar and search page appeared in the browser",
+      "the changes started after the user installed a free game",
+      "no data leaves the PC except requests to advertising servers"
+    ],
+    "answer": {
+      "cause": "adware bundled with free software",
+      "action": "Uninstall the bundled program and remove the unwanted browser extensions"
+    },
+    "appliesWhen": "unwanted software shows advertisements and changes browser settings",
+    "explanation": "Adware displays unwanted advertisements and often arrives bundled with free programs. It is usually a potentially unwanted program rather than destructive malware, and removing the bundle removes the ads.",
+    "related": [
+      "security-s-ind-spyware",
+      "security-s-ind-virus",
+      "security-s-ind-trojan",
+      "security-s-ind-dns-hosts-file"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations"
+  },
+  {
+    "id": "security-s-ind-brute-force",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.7",
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "bank",
+      "hospital",
+      "office"
+    ],
+    "clues": [
+      "the administrator account is locked out again every 30 minutes",
+      "the logs show thousands of failed logins for that account from one external IP address",
+      "each attempt uses a different password",
+      "other accounts have no failed logins"
+    ],
+    "answer": {
+      "cause": "an online brute-force attack against the account",
+      "action": "Block the source IP address, rename or protect the exposed account, and require MFA"
+    },
+    "firstStep": "Review the failed login events for the account's source IP addresses",
+    "appliesWhen": "many passwords are tried quickly against one account",
+    "explanation": "A brute-force attack tries many passwords against an account, and repeated account lockouts are the typical indicator. Blocking the source and MFA stop the attack, while the lockout policy limits guesses.",
+    "related": [
+      "security-s-ind-password-spraying",
+      "security-s-ind-user-enumeration",
+      "security-s-ind-mfa-fatigue",
+      "security-s-ind-concurrent-sessions"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-buffer-overflow",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "software-company",
+      "government-agency",
+      "enterprise"
+    ],
+    "clues": [
+      "the network service crashes when it receives a request with thousands of repeated characters",
+      "the crash log shows the instruction pointer filled with those characters",
+      "after one such request, the service opened a command shell to an external host",
+      "the service is written in C and has not been patched for years"
+    ],
+    "answer": {
+      "cause": "a buffer overflow in the network service",
+      "action": "Patch the service and enable memory protections such as DEP and ASLR"
+    },
+    "appliesWhen": "too much input overwrites memory next to a buffer and can run attacker code",
+    "explanation": "A buffer overflow writes more data than a buffer can hold, which crashes the program or overwrites memory so the attacker's code runs. Patching the code and memory protections such as DEP prevent it.",
+    "related": [
+      "security-s-ind-sql-injection",
+      "security-s-ind-privilege-escalation",
+      "security-s-ind-ddos",
+      "security-s-ind-directory-traversal"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-c2-beacon",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "enterprise",
+      "government-agency",
+      "software-company"
+    ],
+    "clues": [
+      "the firewall log shows a workstation contacting the same domain every 60 seconds",
+      "the domain was registered two days ago",
+      "the destination IP address appears on a threat intelligence block list",
+      "the connections continue at night when no one is logged on"
+    ],
+    "answer": {
+      "cause": "malware beaconing to a command-and-control server",
+      "action": "Block the domain and IP address at the firewall and isolate the workstation for investigation"
+    },
+    "firstStep": "Look up the domain and IP address in threat intelligence sources",
+    "appliesWhen": "an infected host regularly contacts an attacker's server for instructions",
+    "explanation": "Regular connections to a new domain or a known bad IP address show that malware is beaconing to its command-and-control server. Domains and IP addresses are indicators of compromise that can be blocked and searched for on other hosts.",
+    "related": [
+      "security-s-ind-malicious-process",
+      "security-s-ind-sniffing",
+      "security-s-ind-spyware",
+      "security-s-ind-cryptomining"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 16: Explain various activities associated with vulnerability management; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-concurrent-sessions",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "hospital",
+      "office",
+      "government-agency"
+    ],
+    "clues": [
+      "an account is signed in at two workstations in different buildings at the same time",
+      "the account owner is on vacation this week",
+      "the second session opened a file share the owner has never used",
+      "the account does not allow more than one session by policy"
+    ],
+    "answer": {
+      "cause": "an account taken over while its owner is away",
+      "action": "Disable the account, end both sessions, and investigate how the credentials were exposed"
+    },
+    "appliesWhen": "an account is used by someone other than its owner",
+    "explanation": "Concurrent session use, especially while the owner is away or in a place that should not allow it, points to stolen or shared credentials. The account should be locked while the cause is found.",
+    "related": [
+      "security-s-ind-privilege-escalation",
+      "security-s-ind-brute-force",
+      "security-s-ind-credential-replay",
+      "security-s-ind-tailgating"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-credential-replay",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.7"
+    ],
+    "settings": [
+      "enterprise",
+      "government-agency",
+      "hospital"
+    ],
+    "clues": [
+      "an administrator's account logged on to a file server from a workstation the administrator never uses",
+      "no failed login came before the successful one",
+      "the logon used legacy NTLM authentication",
+      "a credential dumping tool was found on that workstation"
+    ],
+    "answer": {
+      "cause": "a credential replay attack with a captured password hash",
+      "action": "Disable NTLM, require Kerberos, and reset the administrator's credentials"
+    },
+    "appliesWhen": "captured credentials or hashes are reused to log in as the user",
+    "explanation": "Credential replay reuses captured credentials or password hashes to log in as the user without guessing. Legacy NTLM is a common target, and Kerberos with its timestamps and sequence numbers resists replay.",
+    "related": [
+      "security-s-ind-brute-force",
+      "security-s-ind-password-spraying",
+      "security-s-ind-replay-application",
+      "security-s-ind-privilege-escalation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-cryptomining",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "software-company",
+      "school",
+      "enterprise"
+    ],
+    "clues": [
+      "the cloud servers run at full CPU all night with no scheduled jobs",
+      "the monthly cloud bill rose sharply",
+      "an unknown process holds a long connection to an external server on an uncommon port",
+      "the web application on the servers is slow for users"
+    ],
+    "answer": {
+      "cause": "cryptomining malware using the server resources",
+      "action": "Terminate the process, remove the malware, patch the entry point, and alert on abnormal resource use"
+    },
+    "appliesWhen": "malware uses a system's processor to mine cryptocurrency for the attacker",
+    "explanation": "Excessive resource consumption with no business reason is an indicator of compromise, and steady full CPU with an outbound mining connection points to cryptomining malware. The servers do work for the attacker and cost the owner money.",
+    "related": [
+      "security-s-ind-ddos",
+      "security-s-ind-worm",
+      "security-s-ind-c2-beacon",
+      "security-s-ind-ransomware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-csrf",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "software-company",
+      "retail",
+      "school"
+    ],
+    "clues": [
+      "several users' account email addresses changed while they were signed in to the web portal",
+      "each user had just opened a post on an outside forum",
+      "the change requests came from the users' own browsers with valid session cookies",
+      "the change form needs no token other than the session cookie"
+    ],
+    "answer": {
+      "cause": "cross-site request forgery",
+      "action": "Add anti-CSRF tokens to every request that changes data"
+    },
+    "appliesWhen": "a malicious site makes a signed-in user's browser send an unwanted request",
+    "explanation": "Cross-site request forgery tricks a signed-in user's browser into sending a request the user did not intend, using the user's valid session. Anti-forgery tokens make the server reject requests that did not come from its own pages.",
+    "related": [
+      "security-s-ind-ssrf",
+      "security-s-ind-sql-injection",
+      "security-s-ind-replay-application",
+      "security-s-ind-on-path-arp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-ddos",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "retail",
+      "software-company",
+      "bank"
+    ],
+    "clues": [
+      "the public website stopped responding during the busiest sales hour",
+      "the firewall shows traffic from thousands of IP addresses around the world",
+      "the web server holds a huge number of half-open TCP connections",
+      "the internal network and other sites work normally"
+    ],
+    "answer": {
+      "cause": "a DDoS attack from a botnet",
+      "action": "Work with the ISP or a DDoS mitigation service to filter the attack traffic"
+    },
+    "appliesWhen": "many hosts flood a service with traffic until it cannot answer real users",
+    "explanation": "A distributed denial-of-service attack uses many compromised hosts, a botnet, to flood a target, for example with half-open SYN connections. Traffic filtering upstream by the ISP or a mitigation service keeps the service available.",
+    "related": [
+      "security-s-ind-ddos-amplified",
+      "security-s-ind-worm",
+      "security-s-ind-cryptomining",
+      "security-s-ind-buffer-overflow"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-ddos-amplified",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "software-company",
+      "government-agency",
+      "enterprise"
+    ],
+    "clues": [
+      "the internet link is full of large DNS responses",
+      "the company's own hosts never sent the DNS queries that match these responses",
+      "the responses come from thousands of open DNS resolvers",
+      "each response is many times larger than a normal query"
+    ],
+    "answer": {
+      "cause": "a reflected amplification DDoS through open DNS resolvers",
+      "action": "Have the upstream provider block the unsolicited DNS responses before they reach the link"
+    },
+    "appliesWhen": "attackers spoof the victim's address so that servers send large replies to the victim",
+    "explanation": "In a reflected amplification attack, the attacker sends small queries with the victim's spoofed address to servers that send much larger replies to the victim. The flood fills the link, so it must be filtered upstream.",
+    "related": [
+      "security-s-ind-ddos",
+      "security-s-ind-dns-cache-poisoning",
+      "security-s-ind-on-path-arp",
+      "security-s-ind-rogue-ap"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-deepfake",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "bank",
+      "enterprise",
+      "software-company"
+    ],
+    "clues": [
+      "the finance manager joined a video call with someone who looked and sounded like the CFO",
+      "the face on the video call asked for an urgent wire transfer to a new supplier account",
+      "the caller's lip movements were slightly out of sync with the voice",
+      "the caller refused a call back and said the matter was confidential"
+    ],
+    "answer": {
+      "cause": "a deepfake of the executive's face and voice",
+      "action": "Confirm the request through a separate known channel and require a second approver for every transfer"
+    },
+    "appliesWhen": "synthetic audio or video imitates a real person",
+    "explanation": "A deepfake uses AI-generated audio or video to imitate a real person, often an executive, to approve fraud. Out-of-band verification and dual approval of payments help stop it even when the fake is convincing.",
+    "related": [
+      "security-s-ind-vishing",
+      "security-s-ind-whaling",
+      "security-s-ind-impersonation",
+      "security-s-ind-spear-phishing"
+    ],
+    "origin": "written",
+    "source": "FBI Internet Crime Complaint Center (IC3) – Criminals Use Generative Artificial Intelligence to Facilitate Financial Fraud (PSA I-120324-PSA); FinCEN – Alert on Fraud Schemes Involving Deepfake Media Targeting Financial Institutions (FIN-2024-Alert004)",
+    "sourceUrls": [
+      "https://www.ic3.gov/PSA/2024/PSA241203",
+      "https://www.fincen.gov/sites/default/files/shared/FinCEN-Alert-DeepFakes-Alert508FINAL.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-ind-directory-traversal",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "software-company",
+      "government-agency",
+      "retail"
+    ],
+    "clues": [
+      "the web log shows requests with ../../../../etc/passwd in a file parameter",
+      "other requests use %2e%2e%2f in the same parameter",
+      "the site uses the parameter to load help pages",
+      "the server returned a system file to one of the requests"
+    ],
+    "answer": {
+      "cause": "a directory traversal attack",
+      "action": "Validate file paths against an allow list and run the web server with minimal file permissions"
+    },
+    "appliesWhen": "an attacker uses path sequences to read files outside the web folder",
+    "explanation": "Directory traversal uses ../ sequences, or their encoded forms, to move up the folder tree and read files outside the web root, such as /etc/passwd. Input validation and limited file permissions prevent it.",
+    "related": [
+      "security-s-ind-sql-injection",
+      "security-s-ind-ssrf",
+      "security-s-ind-privilege-escalation",
+      "security-s-ind-csrf"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-dns-cache-poisoning",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "bank",
+      "office",
+      "enterprise"
+    ],
+    "clues": [
+      "users who type the correct address of the payroll site land on a look-alike page",
+      "the browser shows a certificate warning on the look-alike page",
+      "the internal DNS server returns an unfamiliar IP address for the payroll site",
+      "a public DNS resolver returns the correct address for the same name"
+    ],
+    "answer": {
+      "cause": "DNS cache poisoning on the internal DNS server",
+      "action": "Flush the DNS server's cache and enable DNSSEC validation"
+    },
+    "firstStep": "Compare the internal DNS server's answer with the answer from a trusted public resolver",
+    "appliesWhen": "false records in a DNS cache send users to a malicious address",
+    "explanation": "DNS cache poisoning places false records in a resolver's cache, so a correct name resolves to the attacker's address. DNSSEC lets resolvers check that DNS answers are signed and genuine.",
+    "related": [
+      "security-s-ind-dns-hosts-file",
+      "security-s-ind-on-path-arp",
+      "security-s-ind-evil-twin",
+      "security-s-ind-phishing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-dns-hosts-file",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "clinic"
+    ],
+    "clues": [
+      "only one workstation is sent to a fake banking site",
+      "other workstations reach the real site with the same address",
+      "the internal DNS server returns the correct IP address",
+      "the workstation resolves the name before it sends any DNS query"
+    ],
+    "answer": {
+      "cause": "a malicious entry in the workstation's hosts file",
+      "action": "Restore the hosts file and scan the workstation for the malware that changed it"
+    },
+    "appliesWhen": "a local name file on one computer is changed to redirect a domain",
+    "explanation": "A computer checks its local hosts file before it asks a DNS server, so an attacker who adds an entry there redirects that one computer. Because only one host is affected and DNS answers correctly, the local file is the cause.",
+    "related": [
+      "security-s-ind-dns-cache-poisoning",
+      "security-s-ind-adware",
+      "security-s-ind-on-path-arp",
+      "security-s-ind-evil-twin"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-evil-twin",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "office",
+      "retail",
+      "clinic"
+    ],
+    "clues": [
+      "users see two networks with the company's wireless name, and one of them has a stronger signal",
+      "the stronger network shows a login page that asks for network credentials",
+      "users on the stronger network cannot reach the internal file shares",
+      "no new device is connected to the wired network"
+    ],
+    "answer": {
+      "cause": "an evil twin access point imitating the company network",
+      "action": "Use WPA3-Enterprise with server certificate validation and warn users not to join the fake network"
+    },
+    "appliesWhen": "an attacker sets up a fake access point with the same name as a trusted network",
+    "explanation": "An evil twin copies the name of a trusted wireless network to trick users into connecting, then captures their traffic and credentials. A sign is that users cannot reach company resources because they are on another network.",
+    "related": [
+      "security-s-ind-rogue-ap",
+      "security-s-ind-dns-cache-poisoning",
+      "security-s-ind-phishing",
+      "security-s-ind-mac-spoofing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-fileless",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "hospital"
+    ],
+    "clues": [
+      "the EDR tool flags a scripting shell started by the word processor with an encoded command",
+      "no new executable file was written to the disk",
+      "file-based antivirus scans find nothing",
+      "the suspicious activity stops after a reboot and returns when the user opens email"
+    ],
+    "answer": {
+      "cause": "fileless malware running in memory",
+      "action": "Isolate the host and analyze its memory and process behavior with the EDR tool"
+    },
+    "appliesWhen": "malicious code runs only in memory inside legitimate processes and leaves no file to scan",
+    "explanation": "Fileless malware runs in memory inside legitimate programs and tools instead of installing a file, so signature scans of the disk miss it. Behavior-based tools such as EDR and memory analysis detect it.",
+    "related": [
+      "security-s-ind-rootkit",
+      "security-s-ind-spyware",
+      "security-s-ind-virus",
+      "security-s-ind-malicious-process"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-forced-entry",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.2"
+    ],
+    "settings": [
+      "warehouse",
+      "retail",
+      "office"
+    ],
+    "clues": [
+      "the storage room door frame is bent and the lock is broken",
+      "several laptops are missing from the storage room",
+      "the badge system logged no entry to the room that night",
+      "the motion alarm in the hallway went off in the middle of the night"
+    ],
+    "answer": {
+      "cause": "forced entry by breaking through the door",
+      "action": "Repair and reinforce the door and add cameras and monitored alarms to the room"
+    },
+    "appliesWhen": "an intruder physically breaks a door, window, or lock to get in",
+    "explanation": "Forced entry, a physical brute-force attack, uses tools or force to break through a door or lock. Signs are physical damage and alarms without a matching badge entry.",
+    "related": [
+      "security-s-ind-tailgating",
+      "security-s-ind-impersonation",
+      "security-s-ind-skimming",
+      "security-s-ind-shoulder-surfing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-impersonation",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "office",
+      "hospital",
+      "government-agency"
+    ],
+    "clues": [
+      "a man in an internet provider uniform asked reception for access to the wiring closet",
+      "he said the internet outage needed an urgent fix",
+      "no work order exists, and no outage was reported",
+      "he left quickly when asked for identification"
+    ],
+    "answer": {
+      "cause": "impersonation of a service technician",
+      "action": "Verify every visitor's identity and work order with the vendor through a known contact before giving access"
+    },
+    "appliesWhen": "an attacker pretends to be a trusted person, such as a technician or colleague, to gain access",
+    "explanation": "Impersonation is pretending to be someone trusted, such as a vendor, colleague, or authority, to gain access or information. Checking identity through a separate, known channel defeats it.",
+    "related": [
+      "security-s-ind-tailgating",
+      "security-s-ind-vishing",
+      "security-s-ind-spear-phishing",
+      "security-s-ind-forced-entry"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "security-s-ind-impossible-travel",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5",
+      "SY0-801/2.5.7"
+    ],
+    "settings": [
+      "bank",
+      "software-company",
+      "enterprise"
+    ],
+    "clues": [
+      "the user signed in from Chicago at 9:00 and from Singapore at 9:20",
+      "the user does not use a VPN service",
+      "the Singapore session downloaded the user's whole mailbox",
+      "the user's password appeared in a recent public data breach"
+    ],
+    "answer": {
+      "cause": "an attacker using the user's stolen credentials",
+      "action": "End all the user's sessions, reset the password, and require MFA for the account"
+    },
+    "appliesWhen": "an attacker signs in with a real user's valid credentials",
+    "explanation": "Impossible travel is two logins from places too far apart to travel between in the time between them. It is a strong sign that someone else is using the account's credentials.",
+    "related": [
+      "security-s-ind-password-spraying",
+      "security-s-ind-brute-force",
+      "security-s-ind-user-enumeration",
+      "security-s-ind-mfa-fatigue"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-keylogger",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "retail",
+      "bank",
+      "school"
+    ],
+    "clues": [
+      "several users had their passwords stolen after they used the shared lobby PC",
+      "a small adapter sits between the keyboard cable and the PC",
+      "the anti-malware scan of the PC finds nothing",
+      "no unusual network traffic leaves the PC"
+    ],
+    "answer": {
+      "cause": "a hardware keylogger recording keystrokes",
+      "action": "Remove the device, secure the PC's ports, and have the affected users change their passwords"
+    },
+    "firstStep": "Inspect the keyboard connection at the back of the PC",
+    "appliesWhen": "a device or program records everything the user types",
+    "explanation": "A keylogger records every keystroke to capture passwords and other data. A hardware keylogger is a small device between the keyboard and the computer, so software scans do not find it.",
+    "related": [
+      "security-s-ind-spyware",
+      "security-s-ind-shoulder-surfing",
+      "security-s-ind-trojan",
+      "security-s-ind-skimming"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-log-manipulation",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "hospital",
+      "bank",
+      "government-agency"
+    ],
+    "clues": [
+      "the security event log on the domain controller was cleared at three in the morning",
+      "the log now starts with a single log-cleared event",
+      "no administrator was working at that time",
+      "the central log server holds entries for that night that the local log no longer has"
+    ],
+    "answer": {
+      "cause": "an attacker clearing logs to cover their tracks",
+      "action": "Investigate the account that cleared the log and send all logs to a protected central log server in real time"
+    },
+    "appliesWhen": "logs are deleted or changed to hide malicious activity",
+    "explanation": "Missing logs, gaps, and logging at unusual times are signs that an attacker tried to hide activity. A central, protected copy of the logs keeps the evidence even when local logs are cleared.",
+    "related": [
+      "security-s-ind-timestomp",
+      "security-s-ind-logic-bomb",
+      "security-s-ind-privilege-escalation",
+      "security-s-ind-malicious-process"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-logic-bomb",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "software-company"
+    ],
+    "clues": [
+      "payroll records were deleted at exactly midnight on the first of the month",
+      "the same deletion happened again after the data was restored",
+      "a scheduled script was added by a developer whose account was disabled last month",
+      "no outside connection to the server was logged at those times"
+    ],
+    "answer": {
+      "cause": "a logic bomb planted by a former insider",
+      "action": "Remove the malicious script and review all code and scheduled tasks for other hidden triggers"
+    },
+    "appliesWhen": "malicious code waits for a set date, time, or event before it acts",
+    "explanation": "A logic bomb is code that stays dormant until a trigger, such as a date, time, or event, and then deletes or corrupts data. It is often planted by an insider, and the damage repeats until the code is found and removed.",
+    "related": [
+      "security-s-ind-ransomware",
+      "security-s-ind-virus",
+      "security-s-ind-privilege-escalation",
+      "security-s-ind-log-manipulation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-mac-spoofing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "hospital",
+      "enterprise",
+      "warehouse"
+    ],
+    "clues": [
+      "network access control shows the printer's hardware address on a port in another building",
+      "the device on that port reports a laptop operating system",
+      "the switch logs show the same hardware address on two ports",
+      "the network allows devices only by hardware address"
+    ],
+    "answer": {
+      "cause": "MAC address spoofing to impersonate an allowed device",
+      "action": "Replace hardware-address filtering with 802.1X certificate-based authentication"
+    },
+    "appliesWhen": "a device copies the hardware address of a trusted device to get network access",
+    "explanation": "MAC spoofing changes a device's hardware address to impersonate an allowed device and bypass address filtering. The same address in two places, or a device that does not behave like the real one, is the indicator.",
+    "related": [
+      "security-s-ind-rogue-ap",
+      "security-s-ind-on-path-arp",
+      "security-s-ind-sniffing",
+      "security-s-ind-evil-twin"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-malicious-process",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5",
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "hospital"
+    ],
+    "clues": [
+      "a process named like a Windows system process runs from a user's temporary folder",
+      "the real system process of that name runs only from the system folder",
+      "the file's SHA-256 hash matches an entry in a threat intelligence feed",
+      "the process starts at every logon from a new registry run key"
+    ],
+    "answer": {
+      "cause": "malware disguised as a system process",
+      "action": "Isolate the host, remove the malware and its run key, and block the hash on all endpoints"
+    },
+    "appliesWhen": "a known malicious file runs under the name of a legitimate process",
+    "explanation": "A process with a system name in the wrong folder and a hash that matches known malware are strong indicators of compromise. Blocking the hash everywhere stops the same file on other hosts.",
+    "related": [
+      "security-s-ind-c2-beacon",
+      "security-s-ind-cryptomining",
+      "security-s-ind-fileless",
+      "security-s-ind-rootkit"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 16: Explain various activities associated with vulnerability management; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 21: Understanding Appropriate Incident Response Activities; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-mfa-fatigue",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.7"
+    ],
+    "settings": [
+      "software-company",
+      "bank",
+      "enterprise"
+    ],
+    "clues": [
+      "the user received dozens of sign-in push prompts on the phone late at night",
+      "the user finally approved one prompt to stop the notifications",
+      "a sign-in from a device the user does not own succeeded right after the approval",
+      "the user's password had been exposed in an earlier breach"
+    ],
+    "answer": {
+      "cause": "an MFA fatigue attack using repeated push requests",
+      "action": "Enable number matching for push approvals, limit the number of prompts, and reset the password"
+    },
+    "appliesWhen": "an attacker with a valid password sends repeated MFA prompts until the user approves one",
+    "explanation": "In an MFA fatigue (push bombing) attack, an attacker who already has the password sends prompt after prompt until the user approves one. Number matching or code entry, limits on prompts, and user training defeat it.",
+    "related": [
+      "security-s-ind-brute-force",
+      "security-s-ind-vishing",
+      "security-s-ind-impossible-travel",
+      "security-s-ind-password-spraying"
+    ],
+    "origin": "written",
+    "source": "MITRE ATT&CK – T1621 Multi-Factor Authentication Request Generation; CISA – Implementing Number Matching in MFA Applications (fact sheet)",
+    "sourceUrls": [
+      "https://attack.mitre.org/techniques/T1621/",
+      "https://www.cisa.gov/sites/default/files/publications/fact-sheet-implement-number-matching-in-mfa-applications-508c.pdf"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-ind-on-path-arp",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "office",
+      "school",
+      "clinic"
+    ],
+    "clues": [
+      "the ARP table on a workstation maps the default gateway's IP address to another workstation's MAC address",
+      "users on the LAN report slower internet access",
+      "the switch shows the same MAC address replying for many IP addresses",
+      "traffic to the internet passes through a user's PC before it reaches the router"
+    ],
+    "answer": {
+      "cause": "ARP poisoning that places an attacker on the path",
+      "action": "Enable dynamic ARP inspection on the switches and remove the attacking host"
+    },
+    "appliesWhen": "fake ARP messages map the gateway's IP address to the attacker's MAC address",
+    "explanation": "ARP poisoning floods a LAN with fake ARP replies so that traffic for the gateway goes to the attacker's MAC address. The attacker then sits on the path and can read or change the traffic.",
+    "related": [
+      "security-s-ind-mac-spoofing",
+      "security-s-ind-dns-cache-poisoning",
+      "security-s-ind-sniffing",
+      "security-s-ind-protocol-downgrade"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-password-spraying",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.7"
+    ],
+    "settings": [
+      "enterprise",
+      "school",
+      "government-agency"
+    ],
+    "clues": [
+      "hundreds of accounts each had one or two failed logins in the last day",
+      "all the failed logins used the same seasonal password",
+      "the attempts came slowly, a few minutes apart, from a small set of IP addresses",
+      "no account was locked out"
+    ],
+    "answer": {
+      "cause": "a password spraying attack",
+      "action": "Require MFA, ban common passwords, and alert on failures across many accounts"
+    },
+    "appliesWhen": "a few common passwords are tried against many accounts to avoid lockouts",
+    "explanation": "Password spraying tries one or a few common passwords against many accounts, slowly, so that no account reaches the lockout limit. Alerts across accounts and MFA defeat it.",
+    "related": [
+      "security-s-ind-brute-force",
+      "security-s-ind-user-enumeration",
+      "security-s-ind-impossible-travel",
+      "security-s-ind-credential-replay"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-phishing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "enterprise",
+      "office",
+      "school"
+    ],
+    "clues": [
+      "hundreds of employees received the same email saying their mailbox is full",
+      "the email has a generic greeting and a link to a sign-in page",
+      "the sender's domain is one letter different from the company's domain",
+      "several users entered their passwords on the linked page"
+    ],
+    "answer": {
+      "cause": "a mass phishing email campaign",
+      "action": "Block the sender and link at the email gateway and reset the passwords of users who signed in"
+    },
+    "appliesWhen": "the same fraudulent email is sent to many people to steal credentials",
+    "explanation": "Phishing sends fraudulent messages, usually by email, to many people at once to steal credentials or deliver malware. It needs little information about the targets and often uses look-alike domains and fake sign-in pages.",
+    "related": [
+      "security-s-ind-spear-phishing",
+      "security-s-ind-whaling",
+      "security-s-ind-smishing",
+      "security-s-ind-quishing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "security-s-ind-plaintext-strings",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "software-company"
+    ],
+    "clues": [
+      "a strings scan of an unknown executable from a user's downloads folder shows a web address and an IP address",
+      "the readable text in the file includes a message telling the user that files are locked",
+      "copies of the same file on two other hosts contain the same embedded addresses",
+      "the file has not run yet on the user's computer, and its text names a payment deadline"
+    ],
+    "answer": {
+      "cause": "a staged ransomware sample with hard-coded attacker addresses",
+      "action": "Block the addresses found in the file, search all hosts for them, and remove the sample"
+    },
+    "appliesWhen": "readable text inside a file reveals what the malware does and where it connects",
+    "explanation": "Plaintext strings in a file, such as URLs, IP addresses, and ransom text, reveal its purpose and give indicators to search for and block. Here the file has not yet run, so blocking its addresses and finding other copies stops it.",
+    "related": [
+      "security-s-ind-c2-beacon",
+      "security-s-ind-malicious-process",
+      "security-s-ind-trojan",
+      "security-s-ind-adware"
+    ],
+    "origin": "written",
+    "source": "Microsoft Learn – Sysinternals Strings; MITRE ATT&CK – T1027 Obfuscated Files or Information",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/sysinternals/downloads/strings",
+      "https://attack.mitre.org/techniques/T1027/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-ind-privilege-escalation",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "enterprise",
+      "school",
+      "hospital"
+    ],
+    "clues": [
+      "a standard user account was added to the local administrators group",
+      "no change request or administrator approved the change",
+      "the user ran a tool that exploits an unpatched driver just before the change",
+      "the account then installed software that only administrators can install"
+    ],
+    "answer": {
+      "cause": "a privilege escalation exploit",
+      "action": "Remove the extra rights, patch the vulnerable driver, and enforce least privilege"
+    },
+    "appliesWhen": "a user or attacker exploits a flaw to gain more rights than granted",
+    "explanation": "Privilege escalation exploits a bug or misconfiguration to gain higher rights, such as administrator access. Patching, least privilege, and monitoring group changes defend against it.",
+    "related": [
+      "security-s-ind-buffer-overflow",
+      "security-s-ind-concurrent-sessions",
+      "security-s-ind-logic-bomb",
+      "security-s-ind-rootkit"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-protocol-downgrade",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "bank",
+      "hospital",
+      "enterprise"
+    ],
+    "clues": [
+      "the web server logs show sessions that use TLS 1.0 from clients that support TLS 1.3",
+      "the weak sessions come only from users on a public hotel Wi-Fi network",
+      "the server still accepts old protocol versions for compatibility",
+      "the same clients use TLS 1.3 when they connect from the office"
+    ],
+    "answer": {
+      "cause": "a downgrade attack forcing an older protocol version",
+      "action": "Disable SSL and old TLS versions on the server so that only current versions are accepted"
+    },
+    "appliesWhen": "an attacker in the path forces both sides to use a weaker protocol or cipher",
+    "explanation": "A protocol downgrade attack makes the client and server fall back to an older, weaker protocol or cipher that the attacker can break. It works only while legacy versions stay enabled for compatibility.",
+    "related": [
+      "security-s-ind-on-path-arp",
+      "security-s-ind-sniffing",
+      "security-s-ind-evil-twin",
+      "security-s-ind-replay-application"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-quishing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "retail",
+      "government-agency",
+      "school"
+    ],
+    "clues": [
+      "stickers with a payment code were placed over the original codes on the parking meters",
+      "people who scanned them with their phones reached a payment page with a misspelled address",
+      "the original codes under the stickers lead to the real payment site",
+      "no email or text message was involved"
+    ],
+    "answer": {
+      "cause": "quishing through malicious QR code stickers",
+      "action": "Remove the stickers, check the codes regularly, and warn people to check the address after they scan"
+    },
+    "appliesWhen": "a malicious QR code sends people to a fake site",
+    "explanation": "Quishing is phishing with QR codes that lead to fake sites to steal credentials or payment details. Attackers place stickers over real codes, so physical checks and checking the opened address help.",
+    "related": [
+      "security-s-ind-smishing",
+      "security-s-ind-phishing",
+      "security-s-ind-skimming",
+      "security-s-ind-dns-cache-poisoning"
+    ],
+    "origin": "written",
+    "source": "FBI Internet Crime Complaint Center (IC3) – Cybercriminals Tampering with QR Codes to Steal Victim Funds (PSA I-011822-PSA); Federal Trade Commission – Scammers hide harmful links in QR codes to steal your information",
+    "sourceUrls": [
+      "https://www.ic3.gov/PSA/2022/PSA220118",
+      "https://consumer.ftc.gov/consumer-alerts/2023/12/scammers-hide-harmful-links-qr-codes-steal-your-information"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-ind-ransomware",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "hospital",
+      "office",
+      "government-agency"
+    ],
+    "clues": [
+      "files on the shared drive suddenly have a new extension and will not open",
+      "a text file in every folder demands payment in cryptocurrency within 72 hours",
+      "the file server's disk activity has been at its maximum for an hour",
+      "a user opened an invoice attachment from an unknown sender this morning"
+    ],
+    "answer": {
+      "cause": "ransomware encrypting the files",
+      "action": "Isolate the infected systems and restore the files from clean offline backups"
+    },
+    "firstStep": "Disconnect the infected workstation from the network",
+    "appliesWhen": "files are encrypted and a payment is demanded to unlock them",
+    "explanation": "Ransomware encrypts the victim's files and leaves a note that demands payment, usually in cryptocurrency, for the key. It often arrives through a phishing attachment, and the safe recovery path is clean backups, not payment.",
+    "related": [
+      "security-s-ind-worm",
+      "security-s-ind-logic-bomb",
+      "security-s-ind-virus",
+      "security-s-ind-cryptomining"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-replay-application",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "bank",
+      "retail",
+      "software-company"
+    ],
+    "clues": [
+      "the payment API processed the same signed transfer request twice, an hour apart",
+      "both requests carry the same token and the same timestamp",
+      "the customer sent the request only once",
+      "the API accepts tokens with no expiration time"
+    ],
+    "answer": {
+      "cause": "a replay attack resending a captured request",
+      "action": "Add one-time nonces and short expiration times to every request token"
+    },
+    "appliesWhen": "a valid captured message is sent again later",
+    "explanation": "A replay attack captures a valid request or token and sends it again later. Unique nonces, timestamps, and expiring tokens make a resent copy invalid.",
+    "related": [
+      "security-s-ind-csrf",
+      "security-s-ind-credential-replay",
+      "security-s-ind-sql-injection",
+      "security-s-ind-protocol-downgrade"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-rogue-ap",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "school"
+    ],
+    "clues": [
+      "a wireless scan finds an access point that is not in the inventory",
+      "the access point is plugged into a network jack in a conference room",
+      "clients that join it get addresses from the internal network",
+      "the access point uses no encryption"
+    ],
+    "answer": {
+      "cause": "a rogue access point connected to the wired network",
+      "action": "Locate and remove the device and enable 802.1X port authentication on the switch ports"
+    },
+    "appliesWhen": "an unauthorized access point is added to the network",
+    "explanation": "A rogue access point is an unauthorized wireless access point attached to the network, which bypasses security controls. Regular wireless scans find it, and port authentication stops unknown devices from connecting.",
+    "related": [
+      "security-s-ind-evil-twin",
+      "security-s-ind-mac-spoofing",
+      "security-s-ind-sniffing",
+      "security-s-ind-on-path-arp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-rootkit",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "government-agency"
+    ],
+    "clues": [
+      "the network monitor sees traffic from the server that no process in the task list explains",
+      "the installed antivirus reports the system as clean",
+      "a scan after booting from trusted external media finds hidden files and drivers",
+      "kernel-level system files have changed since the last baseline"
+    ],
+    "answer": {
+      "cause": "a rootkit hiding its files and processes",
+      "action": "Wipe the system and reimage it from known-good media"
+    },
+    "firstStep": "Scan the drive after booting from trusted external media",
+    "appliesWhen": "malware hides deep in the operating system and conceals its own files and processes",
+    "explanation": "A rootkit gains administrator-level or kernel-level control and hides files, processes, and accounts, so tools that run on the infected system cannot be trusted. Reimaging is the reliable way to remove it.",
+    "related": [
+      "security-s-ind-fileless",
+      "security-s-ind-trojan",
+      "security-s-ind-virus",
+      "security-s-ind-spyware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-shoulder-surfing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.2"
+    ],
+    "settings": [
+      "office",
+      "bank",
+      "retail"
+    ],
+    "clues": [
+      "a user's password was misused after the user logged in at a busy front counter",
+      "the counter monitor faces the customer waiting line",
+      "anti-malware scans of the PC are clean",
+      "the user never typed the password anywhere else"
+    ],
+    "answer": {
+      "cause": "shoulder surfing at the counter",
+      "action": "Fit privacy screens, turn the monitor away from the public, and teach users to shield their input"
+    },
+    "appliesWhen": "someone watches a user type a password or other sensitive data",
+    "explanation": "Shoulder surfing is watching someone, directly or through a camera, as they enter passwords or other sensitive data. Privacy screens, screen placement, and awareness reduce it.",
+    "related": [
+      "security-s-ind-keylogger",
+      "security-s-ind-phishing",
+      "security-s-ind-tailgating",
+      "security-s-ind-spyware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations"
+  },
+  {
+    "id": "security-s-ind-skimming",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.2"
+    ],
+    "settings": [
+      "retail",
+      "bank"
+    ],
+    "clues": [
+      "several customers report fraudulent charges after they paid at the same store",
+      "all the charges trace back to one self-checkout card reader",
+      "the reader's card slot has a loose plastic part that the other readers lack",
+      "the point-of-sale software and network show no compromise"
+    ],
+    "answer": {
+      "cause": "a card skimmer fitted to the payment terminal",
+      "action": "Remove the device, inspect the terminals daily, and fit tamper-evident seals"
+    },
+    "appliesWhen": "a fake reader copies card data when the card is used",
+    "explanation": "Skimming uses a fake or added card reader to copy card data so the card can be cloned. Regular inspection of terminals and tamper-evident seals help find and stop it.",
+    "related": [
+      "security-s-ind-keylogger",
+      "security-s-ind-forced-entry",
+      "security-s-ind-tailgating",
+      "security-s-ind-sql-injection"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-smishing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "clinic",
+      "retail",
+      "school"
+    ],
+    "clues": [
+      "several employees received text messages on their phones that claim to come from IT",
+      "the messages say their accounts will close unless they confirm them through a short link",
+      "the link opens a fake company sign-in page on the phone",
+      "the company email filter shows no related messages"
+    ],
+    "answer": {
+      "cause": "a smishing campaign sent by SMS",
+      "action": "Warn staff, report the sender number, block the link on mobile devices, and reset any exposed passwords"
+    },
+    "appliesWhen": "fraudulent text messages lure users to a malicious link",
+    "explanation": "Smishing is phishing through SMS text messages that push the user to follow a malicious link. Email filters do not see these messages, so user awareness and mobile controls are the defenses.",
+    "related": [
+      "security-s-ind-vishing",
+      "security-s-ind-phishing",
+      "security-s-ind-quishing",
+      "security-s-ind-impersonation"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "security-s-ind-sniffing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.3"
+    ],
+    "settings": [
+      "enterprise",
+      "school",
+      "government-agency"
+    ],
+    "clues": [
+      "a laptop with a packet capture tool was found connected to a switch mirror port",
+      "the laptop's network card runs in promiscuous mode",
+      "administrators still manage the routers with Telnet",
+      "router passwords were later used from an unknown host"
+    ],
+    "answer": {
+      "cause": "packet sniffing of cleartext management traffic",
+      "action": "Remove the capture device and replace Telnet with SSH for all device management"
+    },
+    "appliesWhen": "an attacker captures network traffic to read data sent in clear text",
+    "explanation": "Sniffing captures packets on the network, and protocols such as Telnet send credentials in clear text that a capture tool can read. Encrypted protocols such as SSH protect the data even when it is captured.",
+    "related": [
+      "security-s-ind-on-path-arp",
+      "security-s-ind-mac-spoofing",
+      "security-s-ind-rogue-ap",
+      "security-s-ind-credential-replay"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-spear-phishing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "bank",
+      "software-company",
+      "hospital"
+    ],
+    "clues": [
+      "only the five members of the accounts payable team received the email",
+      "the email names their manager and a current supplier project",
+      "it asks them to open an attached updated bank form",
+      "staff outside the team received nothing similar"
+    ],
+    "answer": {
+      "cause": "a spear phishing attack aimed at the accounts payable team",
+      "action": "Quarantine the messages, check the attachment in a sandbox, and give the team targeted awareness training"
+    },
+    "appliesWhen": "a fraudulent email is tailored to a specific group or person using researched details",
+    "explanation": "Spear phishing targets specific people or groups with details about their work to make the message believable. A message sent to one team that names real people and projects points to it.",
+    "related": [
+      "security-s-ind-phishing",
+      "security-s-ind-whaling",
+      "security-s-ind-impersonation",
+      "security-s-ind-vishing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "security-s-ind-spyware",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "office",
+      "bank",
+      "clinic"
+    ],
+    "clues": [
+      "the laptop has become slow since a browser add-on was installed",
+      "an unknown process sends small uploads to a remote server every few minutes",
+      "the user sees advertisements that mention sites the user visited privately",
+      "no files are damaged or missing"
+    ],
+    "answer": {
+      "cause": "spyware collecting the user's activity",
+      "action": "Remove the add-on and the unknown process with an anti-malware tool and review the browser extensions"
+    },
+    "appliesWhen": "software secretly monitors the user and sends the collected data to a third party",
+    "explanation": "Spyware secretly tracks a user's activity, such as browsing habits and keystrokes, and sends it to a remote server. Signs are slow performance, unknown processes, and unusual outbound traffic.",
+    "related": [
+      "security-s-ind-adware",
+      "security-s-ind-keylogger",
+      "security-s-ind-trojan",
+      "security-s-ind-fileless"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-sql-injection",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "retail",
+      "software-company",
+      "bank"
+    ],
+    "clues": [
+      "the web server log shows login requests that contain ' OR 1=1 --",
+      "the site sometimes shows database error messages to visitors",
+      "customer records were read without any valid login",
+      "the login form sends the user's input straight into a database query"
+    ],
+    "answer": {
+      "cause": "SQL injection through the login form",
+      "action": "Use parameterized queries or stored procedures and validate all input"
+    },
+    "appliesWhen": "user input is placed into a database query so that attackers can change the query",
+    "explanation": "SQL injection puts SQL code into input fields so that the application runs the attacker's query, and 1=1 or SELECT statements in logs are signs of it. Parameterized queries and input validation stop the input from changing the query.",
+    "related": [
+      "security-s-ind-directory-traversal",
+      "security-s-ind-buffer-overflow",
+      "security-s-ind-csrf",
+      "security-s-ind-ssrf"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "security-s-ind-ssrf",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.6"
+    ],
+    "settings": [
+      "software-company",
+      "enterprise",
+      "government-agency"
+    ],
+    "clues": [
+      "the web app has a feature that imports a profile picture from a URL",
+      "the server's logs show it requested 169.254.169.254 and internal admin pages",
+      "the URLs came from a user's import requests",
+      "cloud access keys were later used from outside the company"
+    ],
+    "answer": {
+      "cause": "server-side request forgery through the import feature",
+      "action": "Validate the URLs and allow the server to fetch only approved external addresses"
+    },
+    "appliesWhen": "an attacker makes the server send requests to internal or unintended systems",
+    "explanation": "Server-side request forgery makes the server send requests the attacker chooses, often to internal systems or cloud metadata services that are not reachable from outside. Allow-listing and validating destinations stops it.",
+    "related": [
+      "security-s-ind-csrf",
+      "security-s-ind-directory-traversal",
+      "security-s-ind-sql-injection",
+      "security-s-ind-buffer-overflow"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-tailgating",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.2"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "government-agency"
+    ],
+    "clues": [
+      "the badge log shows five entries to the server room while the camera shows seven people",
+      "an unknown visitor without a badge was seen inside the secure area",
+      "employees often hold the secure door open for people behind them",
+      "the door lock and badge readers work normally"
+    ],
+    "answer": {
+      "cause": "tailgating through the secured door",
+      "action": "Install an access control vestibule and train staff not to hold secure doors open"
+    },
+    "appliesWhen": "an unauthorized person follows an authorized person through a secured door",
+    "explanation": "Tailgating is following an authorized person through a secured entrance without using a badge. An access control vestibule lets only one person through at a time, and training stops staff from holding doors.",
+    "related": [
+      "security-s-ind-forced-entry",
+      "security-s-ind-impersonation",
+      "security-s-ind-skimming",
+      "security-s-ind-shoulder-surfing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 2: Summarizing Fundamental Security Concepts; CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 2: Domain 2.0: Threats, Vulnerabilities, and Mitigations"
+  },
+  {
+    "id": "security-s-ind-timestomp",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.5"
+    ],
+    "settings": [
+      "bank",
+      "government-agency",
+      "enterprise"
+    ],
+    "clues": [
+      "a new library file in the system folder shows the same dates as files installed years ago",
+      "the file's master file table name record shows it was created last night",
+      "prefetch records show an unknown tool ran just before the file's dates were changed",
+      "the file is not part of any installed update"
+    ],
+    "answer": {
+      "cause": "an attacker altering file timestamps to hide a new file",
+      "action": "Image the drive and build a forensic timeline from the master file table records"
+    },
+    "appliesWhen": "file time attributes are changed so a new file blends in with old ones",
+    "explanation": "Timestomping changes a file's created and modified times so that a new malicious file looks old. On NTFS, the times users see can differ from the $FILE_NAME times kept by the system, and that mismatch is an indicator.",
+    "related": [
+      "security-s-ind-log-manipulation",
+      "security-s-ind-malicious-process",
+      "security-s-ind-rootkit",
+      "security-s-ind-logic-bomb"
+    ],
+    "origin": "written",
+    "source": "MITRE ATT&CK – T1070.006 Indicator Removal: Timestomp; Inversecos – Defence Evasion Technique: Timestomping Detection – NTFS Forensics",
+    "sourceUrls": [
+      "https://attack.mitre.org/techniques/T1070/006/",
+      "https://inversecos.com/2022/04/defence-evasion-technique-timestomping.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-ind-trojan",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "office",
+      "home-office",
+      "retail"
+    ],
+    "clues": [
+      "the user installed a free PDF converter from a download site last week",
+      "the converter works as advertised",
+      "the antivirus now raises alerts every few hours",
+      "the workstation opens an outbound connection to an unknown host on a high port"
+    ],
+    "answer": {
+      "cause": "a remote access Trojan hidden in the downloaded program",
+      "action": "Remove the program, run a full anti-malware scan, and allow software only from approved sources"
+    },
+    "appliesWhen": "malware poses as useful software that the user installed",
+    "explanation": "A Trojan looks like legitimate software but runs malicious code in the background. A remote access Trojan also gives the attacker a backdoor and remote control of the system.",
+    "related": [
+      "security-s-ind-spyware",
+      "security-s-ind-adware",
+      "security-s-ind-virus",
+      "security-s-ind-rootkit"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-user-enumeration",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.7"
+    ],
+    "settings": [
+      "software-company",
+      "retail",
+      "bank"
+    ],
+    "clues": [
+      "the login page answers 'unknown user' for some names and 'wrong password' for others",
+      "the web logs show thousands of failed logins for names taken from a common list of usernames",
+      "the password reset page also says when an email address is not registered",
+      "a later attack targeted only the accounts that exist"
+    ],
+    "answer": {
+      "cause": "user enumeration through different error messages",
+      "action": "Return the same generic error message and response time for every failed login and reset request"
+    },
+    "appliesWhen": "an attacker uses the application's responses to learn which usernames exist",
+    "explanation": "User enumeration uses differences in error messages, response times, or reset pages to find which accounts exist. Valid usernames make later password attacks more effective, so the application should answer the same way for every failure.",
+    "related": [
+      "security-s-ind-password-spraying",
+      "security-s-ind-brute-force",
+      "security-s-ind-sql-injection",
+      "security-s-ind-credential-replay"
+    ],
+    "origin": "written",
+    "source": "OWASP Web Security Testing Guide v4.2 – WSTG-IDNT-04 Testing for Account Enumeration and Guessable User Account; MITRE CWE-204 – Observable Response Discrepancy",
+    "sourceUrls": [
+      "https://wstg.owasp.org/v4.2/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account",
+      "https://cwe.mitre.org/data/definitions/204.html"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-ind-virus",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "office",
+      "clinic",
+      "school"
+    ],
+    "clues": [
+      "several program files on the drive have grown in size",
+      "the antivirus reports infected executables in more than one folder",
+      "the problem began after the user ran a program from an email attachment",
+      "other programs become infected after they are run"
+    ],
+    "answer": {
+      "cause": "a virus attaching its code to program files",
+      "action": "Quarantine and clean the infected files with updated anti-malware and restore clean copies"
+    },
+    "appliesWhen": "malicious code spreads by inserting itself into other files when a user runs it",
+    "explanation": "A virus needs a user to run it, then replicates by inserting its code into other programs and files. Signs are changed or unknown files, crashes, and anti-malware alerts.",
+    "related": [
+      "security-s-ind-worm",
+      "security-s-ind-trojan",
+      "security-s-ind-rootkit",
+      "security-s-ind-adware"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "security-s-ind-vishing",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "bank",
+      "hospital",
+      "office"
+    ],
+    "clues": [
+      "an employee received a phone call that showed the bank's own phone number",
+      "the caller said there was fraud on the account and asked for the one-time code just sent by text",
+      "the call sounded like a recorded message at first",
+      "minutes later a login to the account came from an unknown location"
+    ],
+    "answer": {
+      "cause": "a vishing call with a spoofed caller ID",
+      "action": "Hang up, call the bank back on a known number, and train staff never to share one-time codes"
+    },
+    "appliesWhen": "an attacker uses a phone call to trick a person into giving information",
+    "explanation": "Vishing is voice phishing over the phone, and attackers often spoof the caller ID to look trusted. Calling back on a known number is the reliable way to check the caller.",
+    "related": [
+      "security-s-ind-smishing",
+      "security-s-ind-impersonation",
+      "security-s-ind-deepfake",
+      "security-s-ind-mfa-fatigue"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "security-s-ind-whaling",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.4"
+    ],
+    "settings": [
+      "bank",
+      "enterprise",
+      "government-agency"
+    ],
+    "clues": [
+      "only the chief executive received the email",
+      "it claims to come from outside legal counsel about an urgent court matter",
+      "it uses details from the executive's recent public interviews",
+      "it asks the executive to sign in to a document portal to read the papers"
+    ],
+    "answer": {
+      "cause": "a whaling attack aimed at the executive",
+      "action": "Report the message to security, block the portal, and give executives extra awareness training"
+    },
+    "appliesWhen": "a tailored fraudulent message targets a senior executive",
+    "explanation": "Whaling is spear phishing that targets senior executives such as the CEO or CFO. It uses detailed research about the target, often from public sources.",
+    "related": [
+      "security-s-ind-spear-phishing",
+      "security-s-ind-phishing",
+      "security-s-ind-deepfake",
+      "security-s-ind-vishing"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "security-s-ind-worm",
+    "kind": "fault",
+    "exam": "SY0-801",
+    "domain": "2",
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "topics": [
+      "SY0-801/2.5.1"
+    ],
+    "settings": [
+      "enterprise",
+      "school",
+      "government-agency"
+    ],
+    "clues": [
+      "dozens of unpatched hosts on the same subnet were infected within minutes",
+      "no user opened a file or clicked a link on the infected hosts",
+      "the switches show a flood of connections to TCP port 445 from the infected hosts",
+      "network bandwidth use jumped sharply during the outbreak"
+    ],
+    "answer": {
+      "cause": "a worm spreading through an unpatched network service",
+      "action": "Isolate the affected network segment and patch the vulnerable service on every host"
+    },
+    "appliesWhen": "malware copies itself from host to host without any user action",
+    "explanation": "A worm replicates on its own and spreads through network vulnerabilities, so it needs no user action and no carrier file. Its spread consumes bandwidth, and only patching the hole stops new infections.",
+    "related": [
+      "security-s-ind-ransomware",
+      "security-s-ind-virus",
+      "security-s-ind-ddos",
+      "security-s-ind-trojan"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  }
+]

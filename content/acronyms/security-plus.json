@@ -1,0 +1,3675 @@
+[
+  {
+    "id": "secplus-acr-aaa",
+    "acronym": "AAA",
+    "expanded": "Authentication, Authorization, and Accounting",
+    "meaning": "AAA is the framework that verifies who a user is, decides what they may access, and logs what they did, often using RADIUS or TACACS+.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-acl",
+    "acronym": "ACL",
+    "expanded": "Access Control List",
+    "meaning": "An ACL is an ordered set of allow and deny rules on a router, firewall, or file that controls which traffic or users get access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.2",
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 9: Understanding the Purpose of Mitigation Techniques Used to Secure the Enterprise"
+  },
+  {
+    "id": "secplus-acr-aes",
+    "acronym": "AES",
+    "expanded": "Advanced Encryption Standard",
+    "meaning": "AES is the standard symmetric block cipher, using 128-bit blocks with 128-, 192-, or 256-bit keys for fast bulk encryption.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-ah",
+    "acronym": "AH",
+    "expanded": "Authentication Header",
+    "meaning": "AH is the IPsec protocol that provides integrity and origin authentication for packets but no encryption, using IP protocol 51.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3",
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-ai",
+    "acronym": "AI",
+    "expanded": "Artificial Intelligence",
+    "meaning": "AI systems such as chatbots and agents can automate security operations, but they also face threats like prompt injection, poisoning, and jailbreaking.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.6",
+      "SY0-801/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ale",
+    "acronym": "ALE",
+    "expanded": "Annualized Loss Expectancy",
+    "meaning": "ALE is the expected yearly cost of a risk, calculated by multiplying the single loss expectancy by the annualized rate of occurrence.",
+    "acceptedAnswers": [
+      "Annual Loss Expectancy"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-aml-ctf",
+    "acronym": "AML/CTF",
+    "expanded": "Anti-money Laundering/Counter-terrorism Financing",
+    "meaning": "AML/CTF regulations require financial organizations to monitor transactions and report suspicious activity that could move criminal money or fund terrorism.",
+    "acceptedAnswers": [
+      "Anti-money Laundering and Counter-terrorism Financing"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-api",
+    "acronym": "API",
+    "expanded": "Application Programming Interface",
+    "meaning": "An API lets programs exchange data and commands; APIs drive security automation and integrations but must be authenticated and protected from abuse.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4",
+      "SY0-801/4.6"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 4: Domain 4.0: Security Operations"
+  },
+  {
+    "id": "secplus-acr-apt",
+    "acronym": "APT",
+    "expanded": "Advanced Persistent Threat",
+    "meaning": "An APT is a well-funded, skilled attacker, often a nation-state, that gains access and stays hidden in a network for a long time.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-aro",
+    "acronym": "ARO",
+    "expanded": "Annualized Rate of Occurrence",
+    "meaning": "ARO is the number of times a risk is expected to occur in one year, used with SLE to calculate annualized loss expectancy.",
+    "acceptedAnswers": [
+      "Annual Rate of Occurrence"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-arp",
+    "acronym": "ARP",
+    "expanded": "Address Resolution Protocol",
+    "meaning": "ARP maps IP addresses to MAC addresses on a local network; forged ARP replies enable spoofing, poisoning, and on-path attacks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-acr-aup",
+    "acronym": "AUP",
+    "expanded": "Acceptable Use Policy",
+    "meaning": "An AUP is a policy that users agree to, defining how they may and may not use the organization's systems, network, and data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-bcp",
+    "acronym": "BCP",
+    "expanded": "Business Continuity Plan",
+    "meaning": "A BCP describes how an organization keeps critical business functions running during and after a disruption or disaster.",
+    "acceptedAnswers": [
+      "Business Continuity Planning"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4",
+      "SY0-801/5.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-acr-bec",
+    "acronym": "BEC",
+    "expanded": "Business Email Compromise",
+    "meaning": "BEC is a fraud in which an attacker impersonates or takes over an executive or vendor email account to trick staff into sending money.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-bia",
+    "acronym": "BIA",
+    "expanded": "Business Impact Analysis",
+    "meaning": "A BIA identifies critical business functions and the impact of losing them, setting recovery priorities and targets such as RTO and RPO.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 24: Explain elements of the risk management process"
+  },
+  {
+    "id": "secplus-acr-bimi",
+    "acronym": "BIMI",
+    "expanded": "Brand Indicators for Message Identification",
+    "meaning": "BIMI shows an organization's verified brand logo next to its email in the inbox, but only for messages that pass DMARC with an enforcement policy.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-bios",
+    "acronym": "BIOS",
+    "expanded": "Basic Input/Output System",
+    "meaning": "BIOS is legacy motherboard firmware that starts the hardware and loads the operating system; attackers can target it, so it needs updates and a password.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-byod",
+    "acronym": "BYOD",
+    "expanded": "Bring Your Own Device",
+    "meaning": "BYOD lets employees use personal phones and laptops for work, so policies and mobile device management are needed to protect company data on them.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1",
+      "SY0-801/5.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ca",
+    "acronym": "CA",
+    "expanded": "Certificate Authority",
+    "meaning": "A CA is a trusted entity that verifies identities and digitally signs certificates, publishing revocations through a CRL or OCSP.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 4: Understanding the Importance of Using Appropriate Cryptographic Solutions"
+  },
+  {
+    "id": "secplus-acr-cab",
+    "acronym": "CAB",
+    "expanded": "Change Advisory Board",
+    "meaning": "A CAB is the group that reviews, approves, or rejects proposed changes after weighing their impact, risk, backout plan, and maintenance window.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-captcha",
+    "acronym": "CAPTCHA",
+    "expanded": "Completely Automated Public Turing test to tell Computers and Humans Apart",
+    "meaning": "A CAPTCHA is a challenge that people can solve but automated bots cannot easily solve, used to block scripted logins and form spam.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-casb",
+    "acronym": "CASB",
+    "expanded": "Cloud Access Security Broker",
+    "meaning": "A CASB sits between users and cloud services to enforce security policy, give visibility into cloud use, and detect shadow IT.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 7: Explain various types of vulnerabilities",
+    "note": "Not on the SY0-801 acronym list; SY0-801 3.2 names Security Service Edge (SSE), which includes CASB."
+  },
+  {
+    "id": "secplus-acr-ccpa",
+    "acronym": "CCPA",
+    "expanded": "California Consumer Privacy Act",
+    "meaning": "CCPA is a California state law that gives residents rights to know, delete, and opt out of the sale of their personal information.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.4",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-acr-ci-cd",
+    "acronym": "CI/CD",
+    "expanded": "Continuous Integration and Continuous Deployment",
+    "meaning": "CI/CD automatically builds, tests, and releases code changes through a pipeline, where security checks such as code scanning can be built in.",
+    "acceptedAnswers": [
+      "Continuous Integration and Continuous Delivery",
+      "Continuous Integration/Continuous Deployment",
+      "Continuous Integration/Continuous Delivery"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-cia",
+    "acronym": "CIA",
+    "expanded": "Confidentiality, Integrity, and Availability",
+    "meaning": "The CIA triad names the three core security goals: keep data secret from unauthorized users, keep it accurate and unaltered, and keep it accessible.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-cis",
+    "acronym": "CIS",
+    "expanded": "Center for Internet Security",
+    "meaning": "CIS is a nonprofit that publishes the CIS Controls and CIS Benchmarks, widely used secure configuration baselines for systems and applications.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4",
+      "SY0-801/5.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 14: Given a scenario, apply common security techniques to computing resources"
+  },
+  {
+    "id": "secplus-acr-coppa",
+    "acronym": "COPPA",
+    "expanded": "Children's Online Privacy Protection Act",
+    "meaning": "COPPA is the U.S. law that requires verifiable parental consent before websites or online services collect personal data from children under 13.",
+    "acceptedAnswers": [
+      "Childrens Online Privacy Protection Act"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 26: Summarizing Elements of Effective Security Compliance"
+  },
+  {
+    "id": "secplus-acr-crl",
+    "acronym": "CRL",
+    "expanded": "Certificate Revocation List",
+    "meaning": "A CRL is a list, published by a certificate authority, of certificates it revoked before their expiration date so clients stop trusting them.",
+    "acceptedAnswers": [
+      "Certificate Revocation Lists"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-cspm",
+    "acronym": "CSPM",
+    "expanded": "Cloud Security Posture Management",
+    "meaning": "CSPM tools continuously scan cloud accounts for misconfigurations and compliance gaps, such as public storage or weak settings, and report or fix them.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-csr",
+    "acronym": "CSR",
+    "expanded": "Certificate Signing Request",
+    "meaning": "A CSR is the request, containing the public key and identity details, that an applicant sends to a certificate authority to obtain a signed certificate.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-csrf",
+    "acronym": "CSRF",
+    "expanded": "Cross-Site Request Forgery",
+    "meaning": "CSRF tricks a logged-in user's browser into sending an unwanted request to a trusted site, which acts using the user's session.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-acr-cve",
+    "acronym": "CVE",
+    "expanded": "Common Vulnerabilities and Exposures",
+    "meaning": "CVE is a public list that gives each known vulnerability a unique identifier, such as CVE-2024-1234, so tools and vendors refer to it consistently.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-cvss",
+    "acronym": "CVSS",
+    "expanded": "Common Vulnerability Scoring System",
+    "meaning": "CVSS rates the severity of a vulnerability on a scale from 0.0 to 10.0, helping teams prioritize which flaws to patch first.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-cwe",
+    "acronym": "CWE",
+    "expanded": "Common Weakness Enumeration",
+    "meaning": "CWE is a community list of common software and hardware weakness types, such as SQL injection or buffer overflow, that cause vulnerabilities.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dac",
+    "acronym": "DAC",
+    "expanded": "Discretionary Access Control",
+    "meaning": "DAC lets the owner of a resource decide who can access it and with what permissions, as with standard NTFS file permissions.",
+    "acceptedAnswers": [
+      "Discretionary-Based Access Control"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-acr-ddos",
+    "acronym": "DDoS",
+    "expanded": "Distributed Denial of Service",
+    "meaning": "A DDoS attack floods a target with traffic from many compromised hosts, often a botnet, so blocking a single source address does not stop it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dh",
+    "acronym": "DH",
+    "expanded": "Diffie-Hellman",
+    "meaning": "DH is a key exchange method that lets two parties agree on a shared secret key over an untrusted network without sending the key.",
+    "acceptedAnswers": [
+      "Diffie-Hellman key exchange"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-dhcp",
+    "acronym": "DHCP",
+    "expanded": "Dynamic Host Configuration Protocol",
+    "meaning": "DHCP automatically assigns IP settings to clients over UDP ports 67 and 68; rogue DHCP servers and starvation attacks can disrupt or redirect traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dkim",
+    "acronym": "DKIM",
+    "expanded": "DomainKeys Identified Mail",
+    "meaning": "DKIM adds a digital signature to outgoing email headers, which receiving servers check against a public key published in DNS to detect tampering or spoofing.",
+    "acceptedAnswers": [
+      "Domain Keys Identified Mail"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dlp",
+    "acronym": "DLP",
+    "expanded": "Data Loss Prevention",
+    "meaning": "DLP tools detect and block sensitive data, such as personal or financial records, from leaving the organization through email, uploads, or removable media.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dmarc",
+    "acronym": "DMARC",
+    "expanded": "Domain-based Message Authentication, Reporting, and Conformance",
+    "meaning": "DMARC tells receiving mail servers what to do with messages that fail SPF or DKIM checks, such as quarantine or reject, and sends reports.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dmz",
+    "acronym": "DMZ",
+    "expanded": "Demilitarized Zone",
+    "meaning": "A DMZ, or screened subnet, is a network segment between the internet and the internal network that hosts public-facing servers.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "secplus-acr-dns",
+    "acronym": "DNS",
+    "expanded": "Domain Name System",
+    "meaning": "DNS resolves host names to IP addresses over port 53, and attackers target it with poisoning, spoofing, and tunneling to redirect or hide traffic.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-dnssec",
+    "acronym": "DNSSEC",
+    "expanded": "Domain Name System Security Extensions",
+    "meaning": "DNSSEC adds digital signatures to DNS records so resolvers can verify that answers are authentic, which defends against cache poisoning.",
+    "acceptedAnswers": [
+      "DNS Security Extensions"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-acr-dos",
+    "acronym": "DoS",
+    "expanded": "Denial of Service",
+    "meaning": "A DoS attack makes a system or service unavailable to legitimate users by overwhelming it with traffic or by crashing it from a single source.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-drp",
+    "acronym": "DRP",
+    "expanded": "Disaster Recovery Plan",
+    "meaning": "A DRP describes how to restore IT systems and data after a disaster, including roles, recovery sites, and backup restoration steps.",
+    "acceptedAnswers": [
+      "Disaster Recovery Planning"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4",
+      "SY0-801/5.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 24: Understanding Elements of the Risk Management Process"
+  },
+  {
+    "id": "secplus-acr-eap",
+    "acronym": "EAP",
+    "expanded": "Extensible Authentication Protocol",
+    "meaning": "EAP is an authentication framework used with 802.1X; methods such as EAP-TLS, PEAP, and EAP-TTLS carry the credentials or certificates.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-ecc",
+    "acronym": "ECC",
+    "expanded": "Elliptic Curve Cryptography",
+    "meaning": "ECC is asymmetric cryptography based on elliptic curves, giving strong security with much shorter keys, which suits mobile and low-power devices.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-acr-edr",
+    "acronym": "EDR",
+    "expanded": "Endpoint Detection and Response",
+    "meaning": "EDR software on endpoints continuously records activity, detects suspicious behavior, and lets analysts investigate and isolate or remediate infected hosts.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ef",
+    "acronym": "EF",
+    "expanded": "Exposure Factor",
+    "meaning": "EF is the percentage of an asset's value lost in one incident; asset value times EF gives the single loss expectancy.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 24: Understanding Elements of the Risk Management Process"
+  },
+  {
+    "id": "secplus-acr-eoi",
+    "acronym": "EOI",
+    "expanded": "Expression of Interest",
+    "meaning": "An EOI is an early, informal notice from a potential vendor or partner that shows interest in a project before formal proposals or contracts.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-eol",
+    "acronym": "EOL",
+    "expanded": "End of Life",
+    "meaning": "EOL is the point when a vendor stops selling and supporting a product, so it no longer gets patches and becomes a vulnerability.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-acr-esp",
+    "acronym": "ESP",
+    "expanded": "Encapsulating Security Payload",
+    "meaning": "ESP is the IPsec protocol that encrypts packet payloads and also provides integrity and authentication, using IP protocol 50.",
+    "acceptedAnswers": [
+      "Encapsulation Security Payload"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3",
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-fde",
+    "acronym": "FDE",
+    "expanded": "Full Disk Encryption",
+    "meaning": "FDE encrypts an entire drive, including the operating system, so data at rest stays protected if the device is lost or stolen.",
+    "acceptedAnswers": [
+      "Full Device Encryption"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3",
+      "SY0-801/3.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 4: Explain the importance of using appropriate cryptographic solutions"
+  },
+  {
+    "id": "secplus-acr-fim",
+    "acronym": "FIM",
+    "expanded": "File Integrity Monitoring",
+    "meaning": "FIM compares current file hashes with a known-good baseline and alerts when critical system or configuration files change unexpectedly.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-acr-ftps",
+    "acronym": "FTPS",
+    "expanded": "File Transfer Protocol Secure",
+    "meaning": "FTPS adds TLS encryption to FTP, protecting logins and file transfers; implicit FTPS uses TCP ports 989 and 990.",
+    "acceptedAnswers": [
+      "FTP Secure",
+      "FTP over SSL",
+      "FTP over TLS"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-acr-gbic",
+    "acronym": "GBIC",
+    "expanded": "Gigabit Interface Converter",
+    "meaning": "A GBIC is a hot-swappable transceiver module that plugs into a switch port to connect it to fiber or copper Gigabit Ethernet links.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-gdpr",
+    "acronym": "GDPR",
+    "expanded": "General Data Protection Regulation",
+    "meaning": "GDPR is the European Union law that protects the personal data of EU residents, granting rights like the right to be forgotten.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.4",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-acr-glba",
+    "acronym": "GLBA",
+    "expanded": "Gramm-Leach-Bliley Act",
+    "meaning": "GLBA is the U.S. law requiring financial institutions to explain their data-sharing practices and protect customers' private financial information.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-acr-gmsa",
+    "acronym": "gMSA",
+    "expanded": "Group Managed Service Account",
+    "meaning": "A gMSA is an Active Directory service account whose long, complex password Windows changes automatically, so administrators never handle the password.",
+    "acceptedAnswers": [
+      "Group Managed Service Accounts"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ha",
+    "acronym": "HA",
+    "expanded": "High Availability",
+    "meaning": "HA designs keep systems running with minimal downtime, using redundancy, clustering, load balancing, and failover to remove single points of failure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 13: Understanding the Importance of Resilience and Recovery in Security Architecture"
+  },
+  {
+    "id": "secplus-acr-hids",
+    "acronym": "HIDS",
+    "expanded": "Host-based Intrusion Detection System",
+    "meaning": "A HIDS is software on one host that monitors its logs, files, and processes for suspicious activity and alerts, but does not block it.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-hipaa",
+    "acronym": "HIPAA",
+    "expanded": "Health Insurance Portability and Accountability Act",
+    "meaning": "HIPAA is the U.S. law that requires healthcare organizations and their partners to protect the privacy and security of patient health information.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 26: Summarize elements of effective security compliance"
+  },
+  {
+    "id": "secplus-acr-hips",
+    "acronym": "HIPS",
+    "expanded": "Host-based Intrusion Prevention System",
+    "meaning": "A HIPS is software on one host that detects malicious activity on that host and actively blocks it, unlike a HIDS that only alerts.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-hr",
+    "acronym": "HR",
+    "expanded": "Human Resources",
+    "meaning": "The HR department handles hiring, onboarding, and termination, and investigators may use its records, such as access changes, as evidence in an investigation.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-hsm",
+    "acronym": "HSM",
+    "expanded": "Hardware Security Module",
+    "meaning": "An HSM is a tamper-resistant hardware device or appliance that generates, stores, and uses cryptographic keys and speeds up cryptographic operations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 4: Understanding the Importance of Using Appropriate Cryptographic Solutions"
+  },
+  {
+    "id": "secplus-acr-https",
+    "acronym": "HTTPS",
+    "expanded": "Hypertext Transfer Protocol Secure",
+    "meaning": "HTTPS protects web traffic by running HTTP over TLS, encrypting data in transit between browser and server on TCP port 443.",
+    "acceptedAnswers": [
+      "HTTP Secure",
+      "Hypertext Transfer Protocol over TLS",
+      "HTTP over TLS",
+      "HTTP over SSL/TLS"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 18: Modifying Enterprise Capabilities to Enhance Security"
+  },
+  {
+    "id": "secplus-acr-iaas",
+    "acronym": "IaaS",
+    "expanded": "Infrastructure as a Service",
+    "meaning": "IaaS rents virtual servers, storage, and networks from a cloud provider; the customer secures the operating systems, applications, and data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-acr-iac",
+    "acronym": "IaC",
+    "expanded": "Infrastructure as Code",
+    "meaning": "IaC defines servers, networks, and cloud resources in machine-readable files, so deployments are repeatable, version-controlled, and checked for misconfigurations before release.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-iam",
+    "acronym": "IAM",
+    "expanded": "Identity and Access Management",
+    "meaning": "IAM is the set of processes and tools that create and manage identities and control which resources each user or service can access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-acr-ics",
+    "acronym": "ICS",
+    "expanded": "Industrial Control System",
+    "meaning": "An ICS controls physical industrial processes in plants and utilities; as operational technology it favors availability and is often isolated or segmented.",
+    "acceptedAnswers": [
+      "Industrial Control Systems"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/3.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-acr-idp",
+    "acronym": "IdP",
+    "expanded": "Identity Provider",
+    "meaning": "An IdP authenticates users and issues assertions or tokens that other services trust, enabling federation and single sign-on through SAML or OAuth.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4",
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-acr-ids",
+    "acronym": "IDS",
+    "expanded": "Intrusion Detection System",
+    "meaning": "An IDS monitors network or host activity for signs of attack and generates alerts, but unlike an IPS it does not block the traffic.",
+    "acceptedAnswers": [
+      "Intrusion Detection Systems"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ike",
+    "acronym": "IKE",
+    "expanded": "Internet Key Exchange",
+    "meaning": "IKE is the IPsec protocol that authenticates the peers and negotiates the security associations and keys, using UDP port 500.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3",
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-ioc",
+    "acronym": "IoC",
+    "expanded": "Indicator of Compromise",
+    "meaning": "An IoC is evidence that a system may be breached, such as a known malicious hash, IP address, domain, or unusual log entry.",
+    "acceptedAnswers": [
+      "Indicators of Compromise"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "secplus-acr-iot",
+    "acronym": "IoT",
+    "expanded": "Internet of Things",
+    "meaning": "IoT covers connected devices like cameras, sensors, and printers that often have weak defaults, rare patches, and need network segmentation.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-acr-ip",
+    "acronym": "IP",
+    "expanded": "Internet Protocol",
+    "meaning": "IP addresses and routes packets between networks; investigators use source and destination IP addresses in logs to trace malicious activity.",
+    "acceptedAnswers": [
+      "Intellectual Property"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5",
+      "SY0-801/4.3",
+      "SY0-801/4.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List",
+    "note": "Intellectual Property (objectives 2.2 and 3.3) is accepted as a second meaning; the books use IP for both."
+  },
+  {
+    "id": "secplus-acr-ipfix",
+    "acronym": "IPFIX",
+    "expanded": "Internet Protocol Flow Information Export",
+    "meaning": "IPFIX is the standard, based on NetFlow, for exporting flow records that summarize who talked to whom, when, and how much data moved.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.8"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ips",
+    "acronym": "IPS",
+    "expanded": "Intrusion Prevention System",
+    "meaning": "An IPS sits inline with traffic, detects malicious activity, and actively blocks or drops it, unlike an IDS that only sends alerts.",
+    "acceptedAnswers": [
+      "Intrusion Prevention Systems"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ipsec",
+    "acronym": "IPsec",
+    "expanded": "Internet Protocol Security",
+    "meaning": "IPsec is a protocol suite that authenticates and encrypts IP packets with AH and ESP, commonly used to build site-to-site and remote-access VPN tunnels.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List",
+    "note": "The official list writes \"IPSec\"; the books and the standard write IPsec."
+  },
+  {
+    "id": "secplus-acr-isac",
+    "acronym": "ISAC",
+    "expanded": "Information Sharing and Analysis Center",
+    "meaning": "An ISAC is an industry group whose members share threat intelligence, alerts, and best practices for their sector, such as finance or health.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-acr-iso",
+    "acronym": "ISO",
+    "expanded": "International Organization for Standardization",
+    "meaning": "ISO publishes international standards, including ISO/IEC 27001 for information security management systems and 27002 for security controls.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-acr-jit",
+    "acronym": "JIT",
+    "expanded": "Just-in-Time",
+    "meaning": "JIT access grants elevated permissions only when needed and for a limited time, then removes them automatically to shrink standing privilege.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-acr-kms",
+    "acronym": "KMS",
+    "expanded": "Key Management System",
+    "meaning": "A KMS centrally creates, stores, rotates, and revokes cryptographic keys, often as a cloud service, across their whole life cycle.",
+    "acceptedAnswers": [
+      "Key Management Service"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 4: Understanding the Importance of Using Appropriate Cryptographic Solutions"
+  },
+  {
+    "id": "secplus-acr-lan",
+    "acronym": "LAN",
+    "expanded": "Local Area Network",
+    "meaning": "A LAN connects devices within a limited area, such as an office, and is often divided into VLANs or segments to limit an attacker's movement.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ldap",
+    "acronym": "LDAP",
+    "expanded": "Lightweight Directory Access Protocol",
+    "meaning": "LDAP queries and updates directory services such as Active Directory over port 389; LDAPS on port 636 encrypts these queries with TLS.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ldaps",
+    "acronym": "LDAPS",
+    "expanded": "Lightweight Directory Access Protocol Secure",
+    "meaning": "LDAPS encrypts directory queries and binds with TLS, usually on TCP port 636, so credentials are not sent in plaintext.",
+    "acceptedAnswers": [
+      "Secure Lightweight Directory Access Protocol",
+      "LDAP Secure",
+      "LDAP over SSL",
+      "LDAP over TLS"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 4: Domain 4.0: Security Operations"
+  },
+  {
+    "id": "secplus-acr-llm",
+    "acronym": "LLM",
+    "expanded": "Large Language Model",
+    "meaning": "An LLM is an AI model trained on very large amounts of text to generate language, and it can leak data or follow injected prompts.",
+    "acceptedAnswers": [
+      "Large Language Models"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-lms",
+    "acronym": "LMS",
+    "expanded": "Learning Management System",
+    "meaning": "An LMS is a platform that delivers security awareness training to employees, tracks who completed each course, and reports on their results.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.6"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-md5",
+    "acronym": "MD5",
+    "expanded": "Message Digest Algorithm 5",
+    "meaning": "MD5 is a legacy hashing algorithm producing a 128-bit digest; collisions make it unsafe for signatures, though it still appears in file hashes.",
+    "acceptedAnswers": [
+      "Message Digest 5"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3",
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 8: Understanding Indicators of Malicious Activity"
+  },
+  {
+    "id": "secplus-acr-mdm",
+    "acronym": "MDM",
+    "expanded": "Mobile Device Management",
+    "meaning": "MDM software lets administrators enroll mobile devices and centrally enforce policies, such as screen locks, encryption, app control, and remote wipe.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-mfa",
+    "acronym": "MFA",
+    "expanded": "Multifactor Authentication",
+    "meaning": "MFA requires two or more different kinds of proof, such as a password plus a token, so a stolen password alone is not enough.",
+    "acceptedAnswers": [
+      "Multi-factor Authentication"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5",
+      "SY0-801/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-moa",
+    "acronym": "MOA",
+    "expanded": "Memorandum of Agreement",
+    "meaning": "An MOA is a document in which two parties agree to cooperate on defined terms, more detailed than an MOU but often not binding.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-mou",
+    "acronym": "MOU",
+    "expanded": "Memorandum of Understanding",
+    "meaning": "An MOU is a written statement of a shared goal and the general intentions of two parties, usually without legally binding obligations.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-msa",
+    "acronym": "MSA",
+    "expanded": "Master Service Agreement",
+    "meaning": "An MSA is a contract that sets the general terms for an ongoing vendor relationship, so later statements of work can simply refer to it.",
+    "acceptedAnswers": [
+      "Master Services Agreement"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List",
+    "note": "The official list has \"Master Service Agreement\"; objective 5.3 and one book write Master services agreement. Both are accepted."
+  },
+  {
+    "id": "secplus-acr-msp",
+    "acronym": "MSP",
+    "expanded": "Managed Service Provider",
+    "meaning": "An MSP is a third party that remotely manages a customer's IT systems, so its access makes it a supply chain threat vector.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 6: Understanding Common Threat Vectors and Attack Surfaces"
+  },
+  {
+    "id": "secplus-acr-mtbf",
+    "acronym": "MTBF",
+    "expanded": "Mean Time Between Failures",
+    "meaning": "MTBF is the average time a repairable system runs between failures, a measure of reliability used in resilience and recovery planning.",
+    "acceptedAnswers": [
+      "Mean Time Between Failure"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-mttr",
+    "acronym": "MTTR",
+    "expanded": "Mean Time to Repair",
+    "meaning": "MTTR is the average time needed to repair a failed system and return it to service, a measure of how quickly recovery happens.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-nac",
+    "acronym": "NAC",
+    "expanded": "Network Access Control",
+    "meaning": "NAC checks a device's identity and posture, such as patches and antivirus, before allowing it on the network, often with 802.1X or captive portals.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 18: Modifying Enterprise Capabilities to Enhance Security"
+  },
+  {
+    "id": "secplus-acr-nda",
+    "acronym": "NDA",
+    "expanded": "Non-disclosure Agreement",
+    "meaning": "An NDA is a legal contract in which a party agrees not to disclose confidential information it receives, often signed with vendors and employees.",
+    "acceptedAnswers": [
+      "Nondisclosure Agreement"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-nfc",
+    "acronym": "NFC",
+    "expanded": "Near-field Communication",
+    "meaning": "NFC is short-range wireless used for tap-to-pay and badges, so attackers must be within centimeters to skim or relay its signal.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ngfw",
+    "acronym": "NGFW",
+    "expanded": "Next-Generation Firewall",
+    "meaning": "An NGFW is a Layer 7 firewall that adds application awareness, deep packet inspection, and intrusion prevention to stateful packet filtering.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-nic",
+    "acronym": "NIC",
+    "expanded": "Network Interface Card",
+    "meaning": "A NIC connects a host to the network, and its MAC address is what port security and NAC use to identify the device.",
+    "acceptedAnswers": [
+      "Network Interface Controller"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-nids",
+    "acronym": "NIDS",
+    "expanded": "Network-based Intrusion Detection System",
+    "meaning": "A NIDS watches copies of network traffic from a tap or SPAN port and alerts on attacks, but it does not block them.",
+    "acceptedAnswers": [
+      "Network Intrusion Detection System"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-nips",
+    "acronym": "NIPS",
+    "expanded": "Network-based Intrusion Prevention System",
+    "meaning": "A NIPS sits inline on the network, inspects traffic with signatures or anomalies, and drops malicious packets before they reach hosts.",
+    "acceptedAnswers": [
+      "Network Intrusion Prevention System"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-nist",
+    "acronym": "NIST",
+    "expanded": "National Institute of Standards and Technology",
+    "meaning": "NIST is the U.S. agency that publishes widely used security frameworks and guidance, such as the Cybersecurity Framework and the SP 800 series.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 23: Summarize elements of effective security governance"
+  },
+  {
+    "id": "secplus-acr-nvd",
+    "acronym": "NVD",
+    "expanded": "National Vulnerability Database",
+    "meaning": "The NVD is the NIST-run database that enriches CVE entries with CVSS scores and affected products for vulnerability management.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-oauth",
+    "acronym": "OAuth",
+    "expanded": "Open Authorization",
+    "meaning": "OAuth is an authorization framework that lets an application access a user's resources with tokens, without ever receiving the user's password.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ocsp",
+    "acronym": "OCSP",
+    "expanded": "Online Certificate Status Protocol",
+    "meaning": "OCSP lets a client ask a responder whether one certificate is revoked in real time, instead of downloading a whole CRL.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-os",
+    "acronym": "OS",
+    "expanded": "Operating System",
+    "meaning": "The OS manages hardware and runs applications, so hardening it with patches, secure baselines, and least privilege shrinks the attack surface.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4",
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-osint",
+    "acronym": "OSINT",
+    "expanded": "Open-Source Intelligence",
+    "meaning": "OSINT is information gathered from public sources such as websites, social media, and records, used in threat intelligence and passive reconnaissance.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.1",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 16: Explain various activities associated with vulnerability management"
+  },
+  {
+    "id": "secplus-acr-ot",
+    "acronym": "OT",
+    "expanded": "Operational Technology",
+    "meaning": "OT is the hardware and software, such as ICS and SCADA, that controls physical processes, where availability and safety come first.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/3.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-otp",
+    "acronym": "OTP",
+    "expanded": "One-time Password",
+    "meaning": "An OTP is a code valid for one login, generated by a token or app with HOTP or TOTP, as an MFA possession factor.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-owasp",
+    "acronym": "OWASP",
+    "expanded": "Open Worldwide Application Security Project",
+    "meaning": "OWASP is a nonprofit that publishes free web application security guidance, including the well-known Top 10 list of critical web risks.",
+    "acceptedAnswers": [
+      "Open Web Application Security Project"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 3: Domain 3.0: Security Architecture",
+    "note": "The project was renamed from Open Web Application Security Project in 2023; one book uses the old name."
+  },
+  {
+    "id": "secplus-acr-paas",
+    "acronym": "PaaS",
+    "expanded": "Platform as a Service",
+    "meaning": "PaaS provides a managed platform for building and running applications, so the customer handles code and data while the provider manages the operating systems.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-acr-pam",
+    "acronym": "PAM",
+    "expanded": "Privileged Access Management",
+    "meaning": "PAM protects administrator and other privileged accounts with credential vaulting, just-in-time access, session recording, and approval workflows.",
+    "acceptedAnswers": [
+      "Privilege Access Management"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-acr-pci-dss",
+    "acronym": "PCI DSS",
+    "expanded": "Payment Card Industry Data Security Standard",
+    "meaning": "PCI DSS is the industry standard that any organization storing, processing, or transmitting payment card data must follow to protect cardholder data.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3",
+      "SY0-801/5.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 26: Summarizing Elements of Effective Security Compliance"
+  },
+  {
+    "id": "secplus-acr-pdf",
+    "acronym": "PDF",
+    "expanded": "Portable Document Format",
+    "meaning": "PDF files can carry embedded scripts, links, and attachments, so attackers use them as malicious document attachments in phishing.",
+    "acceptedAnswers": [
+      "Portable Document Formats"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List",
+    "note": "The official list has the plural \"Portable Document Formats\"; the format's name is singular. Both are accepted."
+  },
+  {
+    "id": "secplus-acr-peap",
+    "acronym": "PEAP",
+    "expanded": "Protected Extensible Authentication Protocol",
+    "meaning": "PEAP wraps EAP authentication inside a TLS tunnel built with a server certificate, protecting user credentials during 802.1X logon.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-pfs",
+    "acronym": "PFS",
+    "expanded": "Perfect Forward Secrecy",
+    "meaning": "PFS uses a new ephemeral key for each session, so a stolen long-term private key cannot decrypt previously recorded sessions.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-phi",
+    "acronym": "PHI",
+    "expanded": "Protected Health Information",
+    "meaning": "PHI is health or medical information linked to an individual, such as diagnoses and treatment records, which HIPAA requires organizations to protect.",
+    "acceptedAnswers": [
+      "Personal Health Information"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-acr-pii",
+    "acronym": "PII",
+    "expanded": "Personally Identifiable Information",
+    "meaning": "PII is any data that can identify a specific person, such as name, Social Security number, or email address, and must be protected.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 17: Explain security alerting and monitoring concepts and tools"
+  },
+  {
+    "id": "secplus-acr-pir",
+    "acronym": "PIR",
+    "expanded": "Post-incident Reporting",
+    "meaning": "PIR documents an incident after it closes: the timeline, root cause, impact, and lessons learned to improve future response.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-pki",
+    "acronym": "PKI",
+    "expanded": "Public Key Infrastructure",
+    "meaning": "PKI is the system of certificate authorities, certificates, and key pairs that binds public keys to identities and supports revocation.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-qr",
+    "acronym": "QR",
+    "expanded": "Quick Response",
+    "meaning": "A QR code is a scannable barcode that can hide a malicious URL, so attackers use fake codes for quishing attacks.",
+    "acceptedAnswers": [
+      "Quick Response Code"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-radius",
+    "acronym": "RADIUS",
+    "expanded": "Remote Authentication Dial-In User Service",
+    "meaning": "RADIUS is a centralized AAA protocol over UDP, often used with 802.1X and VPNs, that encrypts only the password in its packets.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.1",
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 14: Applying Common Security Techniques to Computing Resources"
+  },
+  {
+    "id": "secplus-acr-rat",
+    "acronym": "RAT",
+    "expanded": "Remote Access Trojan",
+    "meaning": "A RAT is malware disguised as legitimate software that gives an attacker hidden remote control of the infected system.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-acr-rbac",
+    "acronym": "RBAC",
+    "expanded": "Role-Based Access Control",
+    "meaning": "RBAC assigns permissions to job roles and users to roles, which simplifies administration and supports least privilege.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 19: Implementing and Maintaining Identity and Access Management"
+  },
+  {
+    "id": "secplus-acr-rca",
+    "acronym": "RCA",
+    "expanded": "Root Cause Analysis",
+    "meaning": "RCA is the post-incident process of finding the underlying cause of an incident so it can be fixed and not happen again.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.7"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 4: Domain 4.0: Security Operations"
+  },
+  {
+    "id": "secplus-acr-rcs",
+    "acronym": "RCS",
+    "expanded": "Rich Communication Services",
+    "meaning": "RCS is the modern carrier messaging standard that replaces SMS with rich media and read receipts, making it another phishing vector.",
+    "acceptedAnswers": [
+      "Rich Communication Suite"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rf",
+    "acronym": "RF",
+    "expanded": "Radio Frequency",
+    "meaning": "RF is the wireless signal band used by Wi-Fi, Bluetooth, and RFID, which attackers can jam, eavesdrop on, or replay.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rfc",
+    "acronym": "RFC",
+    "expanded": "Request for Comments",
+    "meaning": "An RFC is a formal document that proposes or records an internet standard or, in change management, a requested change.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rfi",
+    "acronym": "RFI",
+    "expanded": "Request for Information",
+    "meaning": "An RFI asks potential vendors for general information about their products and abilities before an organization narrows its choices.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rfp",
+    "acronym": "RFP",
+    "expanded": "Request for Proposal",
+    "meaning": "An RFP invites vendors to submit detailed proposals, including their security controls, for a defined project during vendor selection.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rfq",
+    "acronym": "RFQ",
+    "expanded": "Request for Quote",
+    "meaning": "An RFQ asks vendors for price quotes on clearly defined goods or services, usually after requirements are already set.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-roi",
+    "acronym": "ROI",
+    "expanded": "Return on Investment",
+    "meaning": "ROI compares the benefit of a security investment with its cost, helping management justify spending on a vendor or control.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rpo",
+    "acronym": "RPO",
+    "expanded": "Recovery Point Objective",
+    "meaning": "The RPO is the maximum acceptable data loss measured in time, and it sets how often backups or replication must run.",
+    "acceptedAnswers": [
+      "Recovery Point Objectives"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rps",
+    "acronym": "RPS",
+    "expanded": "Redundant Power Supply",
+    "meaning": "An RPS gives a server or switch a second power supply, so the device keeps running if one supply fails.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rtf",
+    "acronym": "RTF",
+    "expanded": "Rich Text Format",
+    "meaning": "RTF documents are text files that attackers can use to deliver exploits, such as embedded objects, through email attachments.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-rto",
+    "acronym": "RTO",
+    "expanded": "Recovery Time Objective",
+    "meaning": "The RTO is the maximum time a system can be down before the business is seriously harmed, and it drives recovery planning.",
+    "acceptedAnswers": [
+      "Recovery Time Objectives"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-s-mime",
+    "acronym": "S/MIME",
+    "expanded": "Secure/Multipurpose Internet Mail Extensions",
+    "meaning": "S/MIME uses certificates to encrypt and digitally sign email messages, providing end-to-end confidentiality, integrity, and non-repudiation.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3",
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Practice Tests & PBQs (Gorgotsias) – Chapter 4: Security Operations"
+  },
+  {
+    "id": "secplus-acr-saas",
+    "acronym": "SaaS",
+    "expanded": "Software as a Service",
+    "meaning": "SaaS is a cloud model where the provider runs a complete application, and the customer manages only its data and user access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-saml",
+    "acronym": "SAML",
+    "expanded": "Security Assertion Markup Language",
+    "meaning": "SAML is an XML-based standard that passes authentication assertions from an identity provider to a service provider for web SSO.",
+    "acceptedAnswers": [
+      "Security Assertions Markup Language"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List",
+    "note": "The official list has \"Security Assertions Markup Language\"; the OASIS standard and most books use Security Assertion Markup Language. Both are accepted."
+  },
+  {
+    "id": "secplus-acr-sast",
+    "acronym": "SAST",
+    "expanded": "Static Application Security Testing",
+    "meaning": "SAST analyzes source code without running it to find flaws such as injection or hardcoded secrets early in development.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1",
+      "SY0-801/4.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 16: Understanding Various Activities Associated with Vulnerability Management"
+  },
+  {
+    "id": "secplus-acr-scada",
+    "acronym": "SCADA",
+    "expanded": "Supervisory Control and Data Acquisition",
+    "meaning": "SCADA is a type of industrial control system that monitors and controls equipment spread over large areas, such as pipelines and power grids.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/3.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 10: Comparing and Contrasting Security Implications of Different Architecture Models"
+  },
+  {
+    "id": "secplus-acr-scap",
+    "acronym": "SCAP",
+    "expanded": "Security Content Automation Protocol",
+    "meaning": "SCAP is a NIST suite of standards, including CVE, CVSS, and XCCDF, that lets tools automate configuration and vulnerability checks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-selinux",
+    "acronym": "SELinux",
+    "expanded": "Security-enhanced Linux",
+    "meaning": "SELinux is a Linux kernel module that enforces mandatory access control, confining each process to the labels its policy allows.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sfp",
+    "acronym": "SFP",
+    "expanded": "Small Form-factor Pluggable",
+    "meaning": "An SFP is a hot-swappable transceiver module that connects a switch or router port to fiber or copper cabling.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sftp",
+    "acronym": "SFTP",
+    "expanded": "Secure File Transfer Protocol",
+    "meaning": "SFTP transfers files over an encrypted SSH session on TCP port 22, a secure replacement for plain FTP.",
+    "acceptedAnswers": [
+      "SSH File Transfer Protocol"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "secplus-acr-sha",
+    "acronym": "SHA",
+    "expanded": "Secure Hash Algorithm",
+    "meaning": "SHA is a family of hashing algorithms; SHA-2 versions like SHA-256 are current, while SHA-1 is deprecated because of collision attacks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 12: Compare and contrast concepts and strategies to protect data"
+  },
+  {
+    "id": "secplus-acr-siem",
+    "acronym": "SIEM",
+    "expanded": "Security Information and Event Management",
+    "meaning": "A SIEM collects and correlates logs from many sources, raises alerts on suspicious patterns, and keeps data for investigations and reports.",
+    "acceptedAnswers": [
+      "Security Information & Event Management"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sla",
+    "acronym": "SLA",
+    "expanded": "Service-Level Agreement",
+    "meaning": "An SLA is a contract that defines the service level a vendor must provide, such as uptime and response times, with penalties if missed.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 25: Understanding the Processes Associated with Third-Party Risk Assessment and Management"
+  },
+  {
+    "id": "secplus-acr-sle",
+    "acronym": "SLE",
+    "expanded": "Single Loss Expectancy",
+    "meaning": "SLE is the cost of one occurrence of a risk, calculated as asset value multiplied by exposure factor (SLE = AV x EF).",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sms",
+    "acronym": "SMS",
+    "expanded": "Short Message Service",
+    "meaning": "SMS text messages carry smishing attacks, and SMS codes are a weak MFA method because of SIM swapping and interception.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-snmp",
+    "acronym": "SNMP",
+    "expanded": "Simple Network Management Protocol",
+    "meaning": "SNMP lets managers poll devices and receive traps on UDP ports 161 and 162; version 3 adds authentication and encryption.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-soar",
+    "acronym": "SOAR",
+    "expanded": "Security Orchestration, Automation, and Response",
+    "meaning": "SOAR uses playbooks to automate and coordinate responses across security tools, cutting the time analysts spend on routine alerts.",
+    "acceptedAnswers": [
+      "Security Orchestration, Automation & Response"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-soc",
+    "acronym": "SOC",
+    "expanded": "Security Operations Center",
+    "meaning": "A SOC is the team and facility that monitors an organization's security around the clock and detects and responds to incidents.",
+    "acceptedAnswers": [
+      "Service Organization Control",
+      "Service Organization Controls",
+      "System and Organization Controls"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List",
+    "note": "Security Operations Center is the official meaning; Seidl also uses SOC for Service Organization Control (SOC 2) reports, so that form is accepted."
+  },
+  {
+    "id": "secplus-acr-sop",
+    "acronym": "SOP",
+    "expanded": "Standard Operating Procedure",
+    "meaning": "An SOP is a written, step-by-step instruction for a routine task, such as applying an approved change, so it is done consistently.",
+    "acceptedAnswers": [
+      "Standard Operating Procedures"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.2",
+      "SY0-801/5.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sow",
+    "acronym": "SOW",
+    "expanded": "Statement of Work",
+    "meaning": "A SOW defines the exact work, deliverables, timelines, and costs a vendor will provide, often under a master service agreement.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/5.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-spf",
+    "acronym": "SPF",
+    "expanded": "Sender Policy Framework",
+    "meaning": "SPF is a DNS TXT record that lists the mail servers allowed to send email for a domain, helping receivers detect spoofing.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sql",
+    "acronym": "SQL",
+    "expanded": "Structured Query Language",
+    "meaning": "SQL is the language for querying relational databases, and unvalidated input in SQL statements leads to SQL injection attacks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-sqli",
+    "acronym": "SQLi",
+    "expanded": "Structured Query Language Injection",
+    "meaning": "SQLi inserts malicious SQL into input fields so the database runs it; input validation and parameterized queries prevent it.",
+    "acceptedAnswers": [
+      "SQL Injection"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-acr-sse",
+    "acronym": "SSE",
+    "expanded": "Security Service Edge",
+    "meaning": "SSE is the cloud-delivered security part of SASE, combining secure web gateway, CASB, and zero trust network access.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ssh",
+    "acronym": "SSH",
+    "expanded": "Secure Shell",
+    "meaning": "SSH provides encrypted remote command-line access and secure tunneling on TCP port 22, replacing insecure Telnet for remote administration.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "secplus-acr-sso",
+    "acronym": "SSO",
+    "expanded": "Single Sign-on",
+    "meaning": "SSO lets a user authenticate once and then reach many applications without signing in again, often using SAML or OpenID Connect.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-ssrf",
+    "acronym": "SSRF",
+    "expanded": "Server-Side Request Forgery",
+    "meaning": "SSRF makes a vulnerable server send requests the attacker chooses, often to reach internal systems or cloud metadata services.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 8: Given a scenario, analyze indicators of malicious activity"
+  },
+  {
+    "id": "secplus-acr-swg",
+    "acronym": "SWG",
+    "expanded": "Secure Web Gateway",
+    "meaning": "An SWG filters users' web traffic, blocking malicious sites and enforcing acceptable use policy, often delivered as a cloud service.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 20: Explain the importance of automation and orchestration related to secure operations",
+    "note": "Not on the SY0-801 acronym list; SY0-801 3.2 names Security Service Edge (SSE), which includes an SWG."
+  },
+  {
+    "id": "secplus-acr-tacacs-plus",
+    "acronym": "TACACS+",
+    "expanded": "Terminal Access Controller Access Control System Plus",
+    "meaning": "TACACS+ is a Cisco-developed AAA protocol on TCP port 49 that encrypts the whole packet and separates authentication, authorization, and accounting.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "secplus-acr-tls",
+    "acronym": "TLS",
+    "expanded": "Transport Layer Security",
+    "meaning": "TLS encrypts and authenticates data in transit, securing HTTPS on port 443; versions 1.2 and 1.3 replace insecure SSL.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-toc",
+    "acronym": "TOC",
+    "expanded": "Time-of-check",
+    "meaning": "TOC is the moment a program checks a condition, such as a file permission; a TOCTOU race changes it before use.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-totp",
+    "acronym": "TOTP",
+    "expanded": "Time-based One-Time Password",
+    "meaning": "TOTP generates a short-lived code from a shared secret and the current time, typically every 30 seconds, as an MFA factor.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Practice Tests & PBQs (Gorgotsias) – Chapter 3: Implementation"
+  },
+  {
+    "id": "secplus-acr-tou",
+    "acronym": "TOU",
+    "expanded": "Time-of-use",
+    "meaning": "TOU is the moment a program acts on a checked resource; if it changed after the check, a TOCTOU race condition exists.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-tpm",
+    "acronym": "TPM",
+    "expanded": "Trusted Platform Module",
+    "meaning": "A TPM is a chip on the motherboard that securely stores keys, supports secure and measured boot, and protects full-disk encryption keys.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/1.3"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 4: Understanding the Importance of Using Appropriate Cryptographic Solutions"
+  },
+  {
+    "id": "secplus-acr-ueba",
+    "acronym": "UEBA",
+    "expanded": "User and Entity Behavior Analytics",
+    "meaning": "UEBA builds baselines of normal user and device behavior and flags anomalies, such as unusual logins or data access, that may signal compromise.",
+    "acceptedAnswers": [
+      "User and Entity Behaviour Analytics"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.4",
+      "SY0-801/4.6"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 28: Implementing Security Awareness Practices"
+  },
+  {
+    "id": "secplus-acr-ups",
+    "acronym": "UPS",
+    "expanded": "Uninterruptible Power Supply",
+    "meaning": "A UPS uses batteries to keep systems running through short outages and gives time for a clean shutdown or generator start.",
+    "acceptedAnswers": [
+      "Uninterruptible Power System"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.4"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-usb",
+    "acronym": "USB",
+    "expanded": "Universal Serial Bus",
+    "meaning": "USB ports and drives can deliver malware or exfiltrate data, so malicious USB devices are a removable media threat vector.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-utm",
+    "acronym": "UTM",
+    "expanded": "Unified Threat Management",
+    "meaning": "A UTM appliance combines firewall, IPS, antivirus, content filtering, and VPN in one device, which is simple but a single point of failure.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-vlan",
+    "acronym": "VLAN",
+    "expanded": "Virtual Local Area Network",
+    "meaning": "A VLAN logically divides one switched network into separate broadcast domains, segmenting traffic between departments or device types without extra hardware.",
+    "acceptedAnswers": [
+      "Virtual LAN"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.1",
+      "SY0-801/4.1"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 10: Compare and contrast security implications of different architecture models"
+  },
+  {
+    "id": "secplus-acr-vm",
+    "acronym": "VM",
+    "expanded": "Virtual Machine",
+    "meaning": "A VM is a software-based computer running on a hypervisor; VM escape and sprawl are its main security risks.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.4",
+      "SY0-801/3.4"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 7: Explain various types of vulnerabilities"
+  },
+  {
+    "id": "secplus-acr-vnc",
+    "acronym": "VNC",
+    "expanded": "Virtual Network Computing",
+    "meaning": "VNC shares a remote graphical desktop, usually on TCP port 5900, and unsecured VNC services are an attack vector.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-vpn",
+    "acronym": "VPN",
+    "expanded": "Virtual Private Network",
+    "meaning": "A VPN creates an encrypted tunnel over an untrusted network, using IPsec or TLS, for remote access or site-to-site links.",
+    "acceptedAnswers": [
+      "Virtual Private Networking"
+    ],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.3",
+      "SY0-801/3.2"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-waf",
+    "acronym": "WAF",
+    "expanded": "Web Application Firewall",
+    "meaning": "A WAF inspects HTTP traffic to a web application and blocks attacks such as SQL injection and cross-site scripting.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-wips",
+    "acronym": "WIPS",
+    "expanded": "Wireless Intrusion Prevention System",
+    "meaning": "A WIPS monitors the radio spectrum for rogue access points, evil twins, and deauthentication attacks, and blocks them automatically.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-xdr",
+    "acronym": "XDR",
+    "expanded": "Extended Detection and Response",
+    "meaning": "XDR correlates detection data from endpoints, network, email, and cloud in one platform to detect and respond to threats.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/4.1"
+    ],
+    "official": true,
+    "origin": "official",
+    "source": "CompTIA Security+ (SY0-801) Exam Objectives – Acronym List"
+  },
+  {
+    "id": "secplus-acr-xss",
+    "acronym": "XSS",
+    "expanded": "Cross-Site Scripting",
+    "meaning": "XSS injects malicious script into a trusted website so it runs in other users' browsers, often to steal cookies or session tokens.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/2.5"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 7: Understanding Various Types of Vulnerabilities"
+  },
+  {
+    "id": "secplus-acr-ztna",
+    "acronym": "ZTNA",
+    "expanded": "Zero Trust Network Access",
+    "meaning": "ZTNA gives users access to specific applications only after verifying identity and device posture, replacing broad network access through a traditional VPN.",
+    "acceptedAnswers": [],
+    "certifications": [
+      "security-plus"
+    ],
+    "exams": [
+      "SY0-801"
+    ],
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "official": false,
+    "origin": "book",
+    "source": "CompTIA Security+ SY0-701 Practice Tests & PBQs (Gorgotsias) – Chapter 3: Implementation",
+    "note": "Not on the SY0-801 acronym list; SY0-801 3.2 names Zero Trust architecture and Security Service Edge (SSE), which includes ZTNA."
+  }
+]

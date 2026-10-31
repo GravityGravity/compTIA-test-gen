@@ -37,7 +37,7 @@ HEADING = re.compile(r"^(#+)\s+(.*)")
 SELECT = re.compile(r"\((?:choose|select)\s+(?:the\s+)?(two|three|four|all)\b[^)]*\)", re.I)
 SELECT_WORDS = {"two": 2, "three": 3, "four": 4}
 FIGURE = re.compile(r"\b(exhibit|figure|diagram|illustration|shown below|following image|screenshot)\b", re.I)
-EXAM_CODE = re.compile(r"(220-|N10-)(\d{3,4})(?:/(\d{3,4}))?")
+EXAM_CODE = re.compile(r"(220-|N10-|SY0-)(\d{3,4})(?:/(\d{3,4}))?")
 
 
 # ---------------------------------------------------------------------------
@@ -711,6 +711,65 @@ def net_west_guide(book):
                 book.add(ch, "Scenario-Based Questions", "sb", q, None)
 
 
+# ---------------------------------------------------------------------------
+# Security+ books (all for SY0-701; the records keep the SY0-701 objectives of the chapter)
+# ---------------------------------------------------------------------------
+
+# "1. The correct answer is option C. …", "The correct answers are option B and option D.",
+# "The correct option is option C.", "The correct answer is option B, updating diagrams."
+# Also "1. Explanation: The correct answer is option D.", "The correct answer is a.", "are b and option C."
+SEC_NEIL_ANSWER = re.compile(
+    r"^(\d+)\.\s+(?:Explanation:\s*)?The correct (?:answers? (?:is|are)|options? (?:is|are))\s+"
+    r"((?:options?\s+)?[A-Ha-h](?:(?:,\s*|,?\s+and\s+)(?:option\s+)?[A-Ha-h])*)\b[.,]?\s*(.*)")
+
+
+def sec_neil_cert_guide(book):
+    review = lambda line: bool(re.match(r"^## Chapter Review ?Questions\s*$", line.strip()))
+    for ch in chapters(book.category, book.key):
+        qs = parse_questions(section(ch.lines, review, heading(2)), DIGIT_OPTION)
+        ans = parse_answers(section(ch.lines, is_heading("## Solutions"), heading(2)), SEC_NEIL_ANSWER)
+        book.pair(ch, "Chapter Review Questions", "rq", qs, ans)
+
+
+def sec_heuermann_cert_guide(book):
+    """The quiz answers are not in this edition (Appendix A is "in development"): every record is no-answer."""
+    quiz = lambda line: bool(re.match(r"^#+ [“”\"]Do I Know This Already\?[”\"] Quiz", line.strip()))
+    for ch in chapters(book.category, book.key):
+        qs = parse_questions(section(ch.lines, quiz, lambda line: bool(HEADING.match(line))), LOWER_OPTION)
+        book.pair(ch, "Do I Know This Already? Quiz", "dikta", qs, {})
+
+
+def sec_seidl_practice_tests(book):
+    for ch in chapters(book.category, book.key):
+        qs = parse_questions(section(ch.lines, is_heading("## Review Questions"), heading(2)))
+        ans = parse_answers(section(ch.lines, is_heading("## Answers to Review Questions"), heading(2)),
+                            PLAIN_LETTERS)
+        book.pair(ch, "Review Questions", "rq", qs, ans)
+
+
+def gorgotsias_answers(lines):
+    """{k: answer} by position: 'N. C. text', then indented 'Option A is incorrect. …' lines."""
+    out, a = {}, None
+    for line in lines:
+        m = PLAIN_LETTERS.match(line)
+        if m:
+            a = {"letters": letters_to_indexes(m.group(2)), "explanation": clean(m.group(3)), "incorrect": None}
+            out[len(out) + 1] = a
+        elif a is not None and line.startswith("    ") and line.strip():
+            a["incorrect"] = ((a["incorrect"] + " ") if a["incorrect"] else "") + clean(line)
+    return out
+
+
+def sec_gorgotsias_practice_tests(book):
+    """The book misnumbers a few questions, so the k-th question pairs with the k-th answer
+    (the extractor read each question and its answer from the same block)."""
+    for ch in chapters(book.category, book.key):
+        qs = parse_questions(section(ch.lines, is_heading("## Questions"), heading(2)))
+        ans = gorgotsias_answers(section(ch.lines, is_heading("## Answers"), heading(2)))
+        simulator = "exam-simulator" in ch.path.name
+        book.pair_in_order(ch, ch.title if simulator else "Practice Questions", "x" if simulator else "pq", qs, ans)
+
+
 PARSERS = {
     "exam-cram-2e": ("general", exam_cram_2e),
     "docter-study-guide": ("general", docter_study_guide),
@@ -719,6 +778,10 @@ PARSERS = {
     "net-exam-cram": ("network", net_exam_cram),
     "net-zacker-practice-tests": ("network", net_zacker_practice_tests),
     "net-west-guide": ("network", net_west_guide),
+    "sec-neil-cert-guide": ("sec", sec_neil_cert_guide),
+    "sec-heuermann-cert-guide": ("sec", sec_heuermann_cert_guide),
+    "sec-seidl-practice-tests": ("sec", sec_seidl_practice_tests),
+    "sec-gorgotsias-practice-tests": ("sec", sec_gorgotsias_practice_tests),
 }
 
 

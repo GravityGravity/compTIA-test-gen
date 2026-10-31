@@ -1,0 +1,849 @@
+[
+  {
+    "id": "security-s-arch-access-review",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.4",
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "bank",
+      "hospital",
+      "enterprise"
+    ],
+    "need": "fix a finding from the internal audit about user permissions",
+    "clues": [
+      "an employee who moved from finance to sales can still open the finance share",
+      "several long-time staff hold rights from every job they have had",
+      "managers never confirm what their staff can access"
+    ],
+    "answer": {
+      "item": "Periodic user access reviews that remove rights no longer needed"
+    },
+    "itemType": "account management practice",
+    "appliesWhen": "users keep collecting rights from earlier roles that are never removed",
+    "explanation": "Privilege creep happens when staff change jobs and their old rights are not removed. Regular access reviews, where managers confirm each user's rights, remove what the current role does not need and restore least privilege.",
+    "related": [
+      "security-s-arch-least-privilege-accounts",
+      "security-s-arch-deprovision",
+      "security-s-arch-gmsa"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ Practice Tests: Exam SY0-701 (Seidl) – Chapter 4: Domain 4.0: Security Operations; CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "security-s-arch-attack-surface",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.1"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "government-agency"
+    ],
+    "need": "reduce the ways an attacker could get into a new application server",
+    "clues": [
+      "a port scan shows FTP, Telnet, and a print service listening",
+      "the application uses only HTTPS",
+      "the default installation enabled several features nobody uses"
+    ],
+    "answer": {
+      "item": "Disable unneeded services and close unused ports"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "a system exposes services, ports, or features that it does not need",
+    "explanation": "Every open port and running service is a possible entry point. Minimizing the attack surface means removing or disabling what the system does not need, so there is less for an attacker to probe and exploit.",
+    "related": [
+      "security-s-arch-security-zones",
+      "security-s-arch-ips-inline",
+      "security-s-arch-platform-diversity"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-deprovision",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "software-company",
+      "enterprise",
+      "government-agency"
+    ],
+    "need": "handle the accounts of a contractor whose project ended today",
+    "clues": [
+      "the contractor's login still works on the VPN and the code repository",
+      "the contractor has returned the company laptop and token",
+      "nobody else uses the contractor's account"
+    ],
+    "answer": {
+      "item": "Deprovision the contractor's accounts and access"
+    },
+    "itemType": "account management practice",
+    "appliesWhen": "a user is no longer authorized and the account must be disabled or removed",
+    "explanation": "Deprovisioning disables or removes a user's accounts and access when the person is no longer authorized, for example at the end of a contract. It is part of offboarding and stops a former user, or an attacker with their credentials, from getting in.",
+    "related": [
+      "security-s-arch-access-review",
+      "security-s-arch-least-privilege-accounts",
+      "security-s-arch-gmsa"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "security-s-arch-e2ee-messaging",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "hospital",
+      "government-agency",
+      "bank"
+    ],
+    "need": "choose a chat tool for staff who discuss sensitive cases",
+    "clues": [
+      "text messages sent over the phone network could be read by the carrier",
+      "even the chat service provider must not be able to read the messages",
+      "only the sender's and recipients' devices may hold the keys"
+    ],
+    "answer": {
+      "item": "An end-to-end encrypted messaging app"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "messages must stay encrypted from the sender's device to the recipient's device",
+    "explanation": "End-to-end encryption encrypts a message on the sender's device and decrypts it only on the recipient's device. Servers in between, including the provider's, carry only ciphertext, which protects against interception.",
+    "related": [
+      "security-s-arch-sftp",
+      "security-s-arch-site-to-site-vpn",
+      "security-s-arch-sse"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 6: Explain common threat vectors and attack surfaces"
+  },
+  {
+    "id": "security-s-arch-fail-closed",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.5"
+    ],
+    "settings": [
+      "bank",
+      "government-agency",
+      "enterprise"
+    ],
+    "need": "set what the firewall that protects the payment network does when it fails",
+    "clues": [
+      "the firewall is the only control between the internet and the payment servers",
+      "a short outage is acceptable but unfiltered traffic is not",
+      "the auditor asks what happens if the firewall's inspection engine crashes"
+    ],
+    "answer": {
+      "item": "Configure the firewall to fail closed"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "security matters more than availability, so a failed device must block traffic",
+    "explanation": "In a fail-closed mode, a device that fails defaults to a blocked state. The service may stop, but no unauthorized traffic passes while the control is down.",
+    "related": [
+      "security-s-arch-fail-open",
+      "security-s-arch-platform-diversity",
+      "security-s-arch-ips-inline"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "security-s-arch-fail-open",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.5"
+    ],
+    "settings": [
+      "hospital",
+      "clinic",
+      "warehouse"
+    ],
+    "need": "set what an inline traffic filter on the patient-monitoring network does when it fails",
+    "clues": [
+      "the monitors must keep sending alarms to the nurses' station at all times",
+      "the filter only adds an extra layer behind other controls",
+      "an outage of the monitoring traffic could put patients at risk"
+    ],
+    "answer": {
+      "item": "Configure the filter to fail open"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "availability matters more than the extra filtering, so a failed device must let traffic pass",
+    "explanation": "In a fail-open mode, a device that fails lets traffic pass. It creates a security gap while the device is down, so it is chosen only when keeping the service available is more important than the control.",
+    "related": [
+      "security-s-arch-fail-closed",
+      "security-s-arch-ids-tap",
+      "security-s-arch-security-zones"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "security-s-arch-gmsa",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.4"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "software-company"
+    ],
+    "need": "set up the account that a web service uses on four load-balanced Windows servers",
+    "clues": [
+      "the service now runs under a domain user account whose password never changes",
+      "the same identity must work on every server in the farm",
+      "administrators do not want to rotate the password by hand"
+    ],
+    "answer": {
+      "item": "A group Managed Service Account (gMSA)"
+    },
+    "itemType": "account management practice",
+    "appliesWhen": "a service on several Windows servers needs one identity whose password Windows rotates automatically",
+    "explanation": "A group Managed Service Account (gMSA) gives a service one domain identity on several servers. Windows creates a long, complex password for it and changes it automatically, by default every 30 days, so no administrator has to rotate it by hand.",
+    "related": [
+      "security-s-arch-least-privilege-accounts",
+      "security-s-arch-access-review",
+      "security-s-arch-deprovision"
+    ],
+    "origin": "written",
+    "source": "Microsoft Learn – Group Managed Service Accounts Overview; Microsoft Learn – Secure group managed service accounts; SentinelOne – gMSA password exposures",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/windows-server/security/group-managed-service-accounts/group-managed-service-accounts-overview",
+      "https://learn.microsoft.com/en-us/entra/architecture/service-accounts-group-managed",
+      "https://www.sentinelone.com/blog/gmsa-password-exposures/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-arch-ids-tap",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.1"
+    ],
+    "settings": [
+      "hospital",
+      "enterprise",
+      "government-agency"
+    ],
+    "need": "watch the core network for suspicious activity",
+    "clues": [
+      "the monitoring device must never slow down or interrupt production traffic",
+      "the security team only wants alerts to investigate, not automatic blocking",
+      "a copy of the traffic from the core switch is available"
+    ],
+    "answer": {
+      "item": "Connect an IDS sensor to a network tap"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "traffic must be watched and reported without placing a device in the traffic path",
+    "explanation": "An intrusion detection system (IDS) is passive: its sensors analyze a copy of the traffic from a tap or monitor port and raise alerts. It does not sit in the data path, so it cannot interrupt traffic, but it also does not block attacks.",
+    "related": [
+      "security-s-arch-ips-inline",
+      "security-s-arch-fail-open",
+      "security-s-arch-security-zones"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-ips-inline",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "retail",
+      "bank"
+    ],
+    "need": "stop known attacks against the customer database in real time",
+    "clues": [
+      "alerts alone are not enough because attacks must be blocked as they happen",
+      "the device must see every packet between the perimeter firewall and the servers",
+      "the team accepts that the device will sit in the traffic path"
+    ],
+    "answer": {
+      "item": "Place an IPS inline behind the perimeter firewall"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "malicious traffic must be actively blocked as it passes through the network",
+    "explanation": "An intrusion prevention system (IPS) is an active, inline device placed close to the firewall. Because traffic flows through it, it can block attack patterns in real time instead of only reporting them.",
+    "related": [
+      "security-s-arch-ids-tap",
+      "security-s-arch-screened-subnet",
+      "security-s-arch-attack-surface"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-jump-server",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "bank",
+      "software-company"
+    ],
+    "need": "let administrators manage servers in a high-security zone",
+    "clues": [
+      "administrators must not connect directly from their desktops to the servers",
+      "all admin sessions must pass one hardened, logged host",
+      "the administrators use SSH and RDP"
+    ],
+    "answer": {
+      "item": "A jump server"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "administrators must reach protected systems through one hardened intermediary host",
+    "explanation": "A jump server is a hardened intermediary host. Administrators connect to it with SSH or RDP and manage the protected systems from there, so the systems accept admin connections from one controlled, logged point only.",
+    "related": [
+      "security-s-arch-ssh-keys",
+      "security-s-arch-oob-mgmt",
+      "security-s-arch-site-to-site-vpn"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-least-privilege-accounts",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.4",
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "office",
+      "enterprise",
+      "school"
+    ],
+    "need": "lower the risk from the IT staff's daily computer use",
+    "clues": [
+      "the administrators read email and browse the web while logged in with domain admin rights",
+      "a phishing link opened by one administrator would run with full rights",
+      "administrative rights are needed only for a few tasks a day"
+    ],
+    "answer": {
+      "item": "Separate standard user accounts for daily work and admin accounts for admin tasks only"
+    },
+    "itemType": "account management practice",
+    "appliesWhen": "users with elevated rights do routine work that needs no elevated rights",
+    "explanation": "Least privilege gives each account only the rights its task needs. A standard account for email and browsing, and a separate privileged account used only for admin tasks, keeps malware from getting admin rights through daily activity.",
+    "related": [
+      "security-s-arch-access-review",
+      "security-s-arch-gmsa",
+      "security-s-arch-deprovision"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 19: Given a scenario, implement and maintain identity and access management"
+  },
+  {
+    "id": "security-s-arch-oob-mgmt",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "government-agency",
+      "hospital"
+    ],
+    "need": "keep control of the routers and switches during an outage or an attack",
+    "clues": [
+      "last month a broken route cut the administrators off from the devices they had to fix",
+      "management traffic must not share the path that carries user data",
+      "each device has a dedicated management port and a console port"
+    ],
+    "answer": {
+      "item": "Out-of-band management through a separate management network"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "devices must be managed over a path that is separate from the production data network",
+    "explanation": "Out-of-band management uses a separate path, such as a dedicated management network or console servers, to reach network devices. Administrators can still manage the devices when the production network is down, and management interfaces are kept off the user and internet paths.",
+    "related": [
+      "security-s-arch-jump-server",
+      "security-s-arch-site-to-site-vpn",
+      "security-s-arch-ssh-keys"
+    ],
+    "origin": "written",
+    "source": "Cisco – Out-of-Band Best Practices (white paper); CISA – Binding Operational Directive 23-02: Mitigating the Risk from Internet-Exposed Management Interfaces",
+    "sourceUrls": [
+      "https://www.cisco.com/c/en/us/solutions/collateral/service-provider/out-of-band-best-practices-wp.html",
+      "https://www.cisa.gov/news-events/directives/binding-operational-directive-23-02"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-arch-platform-diversity",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.1"
+    ],
+    "settings": [
+      "bank",
+      "government-agency",
+      "enterprise"
+    ],
+    "need": "plan the replacement of the perimeter and internal firewalls",
+    "clues": [
+      "last year one vendor's firewall flaw exposed both firewall layers at once",
+      "the board wants no single product weakness to defeat the whole defense",
+      "the team can support more than one firewall platform"
+    ],
+    "answer": {
+      "item": "Use firewalls from two different vendors for the two layers"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "one product's vulnerability must not compromise every layer of the defense",
+    "explanation": "Platform (vendor) diversity uses different hardware or software products in the security design. A flaw or compromise in one vendor's product then does not open every layer, which removes a systemic single point of failure.",
+    "related": [
+      "security-s-arch-security-zones",
+      "security-s-arch-attack-surface",
+      "security-s-arch-fail-closed"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 13: Explain the importance of resilience and recovery in security architecture; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 13: Understanding the Importance of Resilience and Recovery in Security Architecture"
+  },
+  {
+    "id": "security-s-arch-screened-subnet",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.1"
+    ],
+    "settings": [
+      "enterprise",
+      "retail",
+      "software-company"
+    ],
+    "need": "host a new public web server for customer orders",
+    "clues": [
+      "customers on the internet must reach the server",
+      "a compromise of the web server must not give direct access to the internal LAN",
+      "traffic to the internal network must pass a second firewall"
+    ],
+    "answer": {
+      "item": "Place the server in a screened subnet between the perimeter and internal firewalls"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "a server must be reachable from the internet but kept apart from the trusted internal network",
+    "explanation": "A screened subnet (DMZ) is a boundary zone between the untrusted WAN and the trusted LAN. Servers that outside users must reach go there, and a firewall on each side means traffic is checked twice before it can reach the LAN.",
+    "related": [
+      "security-s-arch-security-zones",
+      "security-s-arch-ips-inline",
+      "security-s-arch-attack-surface"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure; CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 11: Applying Security Principles to Secure Enterprise Infrastructure"
+  },
+  {
+    "id": "security-s-arch-security-zones",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.1"
+    ],
+    "settings": [
+      "hospital",
+      "bank",
+      "enterprise"
+    ],
+    "need": "redesign a flat network that holds patient records, guest Wi-Fi, and office PCs",
+    "clues": [
+      "all devices can currently reach the database servers",
+      "an auditor wants each group of systems to have its own access policy and trust level",
+      "an infection on one segment must not spread laterally to the others"
+    ],
+    "answer": {
+      "item": "Divide the network into security zones with their own access policies"
+    },
+    "itemType": "design choice",
+    "appliesWhen": "systems with different trust levels share one network and must be separated with their own policies",
+    "explanation": "Security zones split a network into segments, each with its own policies, access controls, and trust level. They limit lateral movement, contain breaches, and help meet regulations such as HIPAA and PCI DSS.",
+    "related": [
+      "security-s-arch-screened-subnet",
+      "security-s-arch-attack-surface",
+      "security-s-arch-platform-diversity"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-sftp",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "bank",
+      "hospital",
+      "enterprise"
+    ],
+    "need": "send nightly payroll files to an outside payroll provider",
+    "clues": [
+      "the provider's server accepts connections only on TCP port 22",
+      "the files must not be readable or changed in transit",
+      "the old process used plain FTP"
+    ],
+    "answer": {
+      "item": "SFTP"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "files must be transferred over an encrypted SSH connection",
+    "explanation": "SFTP transfers files over an encrypted SSH connection on port 22, so the files cannot be read or changed in transit. It is the secure replacement for FTP.",
+    "related": [
+      "security-s-arch-ssh-keys",
+      "security-s-arch-e2ee-messaging",
+      "security-s-arch-site-to-site-vpn"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 18: Given a scenario, modify enterprise capabilities to enhance security"
+  },
+  {
+    "id": "security-s-arch-site-to-site-vpn",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "enterprise",
+      "retail",
+      "bank"
+    ],
+    "need": "connect a new branch office to the head office network",
+    "clues": [
+      "the two offices are linked only through the internet",
+      "the connection must be up all the time without users starting it",
+      "all traffic between the two networks must be encrypted"
+    ],
+    "answer": {
+      "item": "An always-on site-to-site IPsec VPN"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "two networks must be joined permanently over an untrusted network",
+    "explanation": "A site-to-site VPN builds an always-on encrypted tunnel between two sites' VPN gateways. IPsec encrypts the traffic, so the internet can carry it safely without each user making a connection.",
+    "related": [
+      "security-s-arch-ssh-keys",
+      "security-s-arch-sse",
+      "security-s-arch-oob-mgmt"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-sse",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "software-company",
+      "enterprise",
+      "retail"
+    ],
+    "need": "protect remote staff who work mostly in cloud and SaaS applications",
+    "clues": [
+      "sending all remote traffic back through the head office VPN is slow",
+      "web filtering, control of SaaS use, and Zero Trust access to private apps are all needed",
+      "the security services must be delivered from the cloud near the users"
+    ],
+    "answer": {
+      "item": "A Security Service Edge (SSE) service"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "web, SaaS, and private application access must be secured by cloud-delivered security services",
+    "explanation": "Security Service Edge (SSE) is a cloud-delivered set of security services: a secure web gateway, a cloud access security broker, and Zero Trust network access. It is the security part of SASE, without the SD-WAN networking part.",
+    "related": [
+      "security-s-arch-site-to-site-vpn",
+      "security-s-arch-jump-server",
+      "security-s-arch-e2ee-messaging"
+    ],
+    "origin": "written",
+    "source": "Microsoft Learn – What is Global Secure Access?; Microsoft Learn – Secure networks with SASE, Zero Trust, and AI; SentinelOne – What is Security Service Edge (SSE)?",
+    "sourceUrls": [
+      "https://learn.microsoft.com/en-us/entra/global-secure-access/overview-what-is-global-secure-access",
+      "https://learn.microsoft.com/en-us/security/zero-trust/deploy/networks",
+      "https://www.sentinelone.com/cybersecurity-101/cloud-security/what-is-sse/"
+    ],
+    "verified": "2026-10-30"
+  },
+  {
+    "id": "security-s-arch-ssh-keys",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.3"
+    ],
+    "settings": [
+      "software-company",
+      "enterprise",
+      "school"
+    ],
+    "need": "manage the Linux servers from the admin workstations",
+    "clues": [
+      "the servers are still managed with Telnet",
+      "passwords crossing the network can be captured in clear text",
+      "the administrators want to log in without typing a password"
+    ],
+    "answer": {
+      "item": "SSH with key-based authentication"
+    },
+    "itemType": "secure access method",
+    "appliesWhen": "a command-line remote session must be encrypted and should not rely on passwords",
+    "explanation": "SSH replaces Telnet, which sends credentials in clear text, with an encrypted remote session. Key pairs made with ssh-keygen and placed in authorized_keys replace passwords for login.",
+    "related": [
+      "security-s-arch-site-to-site-vpn",
+      "security-s-arch-jump-server",
+      "security-s-arch-sftp"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Certification Guide, 3rd edition (Neil) – Chapter 11: Given a scenario, apply security principles to secure enterprise infrastructure"
+  },
+  {
+    "id": "security-s-arch-zt-app-access",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "software-company",
+      "government-agency"
+    ],
+    "need": "give contractors access to one project application",
+    "clues": [
+      "the VPN gave earlier contractors access to the whole internal network",
+      "contractors must see only the one application they work on",
+      "each request must be allowed or blocked by a central policy decision"
+    ],
+    "answer": {
+      "item": "Grant per-application access through a policy enforcement point"
+    },
+    "itemType": "Zero Trust control",
+    "appliesWhen": "access must be limited to specific applications instead of the whole network",
+    "explanation": "Zero Trust application access control grants access to individual applications, not network segments. A policy engine decides each request, and a policy enforcement point allows or blocks it, which limits what a compromised account can reach.",
+    "related": [
+      "security-s-arch-zt-user-auth",
+      "security-s-arch-zt-device-health",
+      "security-s-arch-zt-inventory"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 2: Summarizing Fundamental Security Concepts"
+  },
+  {
+    "id": "security-s-arch-zt-device-health",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "software-company",
+      "bank"
+    ],
+    "need": "decide whether each laptop may reach the internal applications",
+    "clues": [
+      "a valid user login is not enough on its own",
+      "laptops with missing patches or a stopped endpoint agent must be refused",
+      "the check must happen at every connection, not once a year"
+    ],
+    "answer": {
+      "item": "Check the device's health and posture before each access"
+    },
+    "itemType": "Zero Trust control",
+    "appliesWhen": "access depends on the security state of the device that asks for it",
+    "explanation": "Zero Trust does not trust a device because of where it is. Before it allows access, it checks the device's security posture, such as its patch level and running security agents, and refuses unhealthy devices.",
+    "related": [
+      "security-s-arch-zt-inventory",
+      "security-s-arch-zt-user-auth",
+      "security-s-arch-zt-app-access"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 2: Summarizing Fundamental Security Concepts"
+  },
+  {
+    "id": "security-s-arch-zt-inventory",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.2"
+    ],
+    "settings": [
+      "enterprise",
+      "hospital",
+      "government-agency"
+    ],
+    "need": "stop personal tablets from connecting to the clinical applications",
+    "clues": [
+      "staff have tried to connect from their own devices with valid passwords",
+      "only devices the IT department issued and tracks may connect",
+      "every company device is recorded with its owner and serial number"
+    ],
+    "answer": {
+      "item": "Allow access only from devices in the managed device inventory"
+    },
+    "itemType": "Zero Trust control",
+    "appliesWhen": "only known, company-managed devices may connect",
+    "explanation": "Zero Trust device management starts with an inventory of the devices the organization manages. A device that is not in the inventory is unknown, so it gets no access, even when the user's credentials are valid.",
+    "related": [
+      "security-s-arch-zt-device-health",
+      "security-s-arch-zt-user-auth",
+      "security-s-arch-zt-app-access"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 2: Summarizing Fundamental Security Concepts"
+  },
+  {
+    "id": "security-s-arch-zt-user-auth",
+    "kind": "requirement",
+    "exam": "SY0-801",
+    "domain": "3",
+    "objectives": [
+      "SY0-801/3.2"
+    ],
+    "topics": [
+      "SY0-801/3.2.2"
+    ],
+    "settings": [
+      "bank",
+      "software-company",
+      "enterprise"
+    ],
+    "need": "stop stolen passwords from giving access to the internal applications",
+    "clues": [
+      "phished passwords were used from inside the office network",
+      "the old design trusted anyone already on the LAN",
+      "each request must prove who the user is with more than one factor"
+    ],
+    "answer": {
+      "item": "Require strong multifactor authentication for every access request"
+    },
+    "itemType": "Zero Trust control",
+    "appliesWhen": "the identity of the user must be verified for each request, whatever the network location",
+    "explanation": "Zero Trust never assumes trust from a network location. It authenticates the user at each request, and multifactor authentication keeps a stolen password from being enough to get in.",
+    "related": [
+      "security-s-arch-zt-device-health",
+      "security-s-arch-zt-inventory",
+      "security-s-arch-zt-app-access"
+    ],
+    "origin": "written",
+    "source": "CompTIA Security+ SY0-701 Cert Guide (Heuermann) – Chapter 2: Summarizing Fundamental Security Concepts"
+  }
+]
