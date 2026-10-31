@@ -17,11 +17,18 @@ asarUnpack:
 linux:
   target: [AppImage, deb]
   category: Education
+  icon: build/icon.png
+  synopsis: Practice exams and exercises for CompTIA certifications
   maintainer: Cert Practice
 win:
   target: nsis
+  icon: build/icon.ico
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
+  installerIcon: build/icon.ico
+  uninstallerIcon: build/icon.ico
+  createDesktopShortcut: true
+  shortcutName: Cert Practice
 # No auto-update: the app makes no network calls.
 publish: null

@@ -1,6 +1,7 @@
 import { join } from 'node:path'
 import { app, BrowserWindow, dialog, ipcMain } from 'electron'
 import { IPC } from '@shared/api'
+import icon from '../../resources/icon.png?asset'
 import { loadCatalog } from './catalog'
 import { loadContent, loadExamContent, spellData } from './content'
 import { AttemptStore } from './db'
@@ -29,6 +30,8 @@ function createWindow(): BrowserWindow {
     minHeight: 720,
     show: false,
     autoHideMenuBar: true,
+    // Window and taskbar icon on Linux. Windows takes it from the .exe (build/icon.ico).
+    icon,
     webPreferences: {
       preload: join(import.meta.dirname, '../preload/index.cjs'),
       contextIsolation: true,

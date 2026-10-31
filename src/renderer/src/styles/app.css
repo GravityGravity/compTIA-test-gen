@@ -44,10 +44,17 @@ a:hover {
   gap: var(--space-6);
 }
 .appname {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
   color: var(--brand);
+}
+.applogo {
+  width: 32px;
+  height: 32px;
 }
 .appname span {
   color: var(--plum);
