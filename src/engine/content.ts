@@ -2,8 +2,7 @@ import type { AcronymRecord, DefinitionRecord } from '@shared/types'
 import { ConfigError } from './config'
 import { normalizeAnswer } from './normalize'
 
-// Light checks on the content records: the fields the app reads. tools/extract/check_content.py
-// does the full content check during development.
+// Light checks on the content records: the fields the app reads.
 
 type Json = Record<string, unknown>
 

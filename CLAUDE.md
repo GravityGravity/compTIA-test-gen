@@ -1,5 +1,7 @@
 # CompTIA A+ Practice App
 
+> **Release branch.** This branch holds only the source that builds the installers. The installers are attached to GitHub Releases (tag `v<version>`), not committed (each is over GitHub's 100 MB file limit). It has no tests, no content tools (`tools/extract/`), no UI drafts (`references/`), and no `docs/exam-modules.md` or `docs/compTIA-exam-overviews.md`; those are on `main`, where all development and content work happens. On this branch, `npm run typecheck`, `npm run lint`, `npm run dist:linux` (`.deb`), and `npm run dist:win` (`.exe`, no Wine needed) are the commands. Merge changes from `main` here, then rebuild the installers.
+
 A local desktop app that generates practice exams and exercises for CompTIA A+ Core 1 and Core 2, Network+ (N10-009), and Security+ (SY0-801).
 Read `docs/spec.md` for the product requirements.
 Read `docs/compTIA-exam-overviews.md` for how each exam is generated.
@@ -14,8 +16,8 @@ npm run test:e2e       # Build, then Playwright drives the Electron app (tests/e
 npm run typecheck      # tsc for the Node side (main, preload, engine, tests) and the web side (renderer).
 npm run lint           # ESLint. `npm run format` runs Prettier.
 npm run build          # Production build into out/.
-npm run dist:linux     # .AppImage and .deb in release/.
-npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or run it on Windows.
+npm run dist:linux     # .deb in release/.
+npm run dist:win       # .exe (NSIS) in release/. Runs on Linux without Wine (scripts/dist-win.mjs).
 ```
 - After each change: `npm test`, `npm run typecheck`, `npm run lint`, and `npm run test:e2e` when an app flow changes. UI-only changes (layout, styling, screen markup) do not run `npm test` or `npm run test:e2e` (approved 2026-10-30).
 - Ubuntu 24.04 and later block the user namespaces that Electron's sandbox needs, so `npm run dev` aborts with "The SUID sandbox helper binary was found, but is not configured correctly". Fix it once with an AppArmor profile for `node_modules/electron/dist/electron` (see README.md). Do not run Electron with `--no-sandbox`.
@@ -51,6 +53,8 @@ npm run dist:win       # .exe (NSIS) in release/. On Linux this needs Wine; or r
 - `src/shared/` – Types and IPC contracts that main, preload, and renderer share.
 - `tests/unit/` – Vitest tests that are not next to one source file (for example the design-token check and attempt generation). `tests/e2e/` – Playwright tests.
 - `tests/fixtures/app-data/` – A small `config/` and `content/` (an active Core 1 Exam with 12–14 questions, every scenario kind) for the exam tests. In development, the app reads it when `CERT_PRACTICE_DATA` points to it, and `CERT_PRACTICE_USER_DATA` sets the userData folder (the Playwright exam test uses both). Keep its `content/shared/grammar.json` a copy of the real one.
+- `build/` – The logo (`icon.svg` is the source) and the installer icons. `resources/icon.png` is the Linux window icon.
+- `scripts/dist-win.mjs` – Builds the Windows installer on Linux without Wine.
 - `electron.vite.config.ts`, `electron-builder.yml`, `vitest.config.ts`, `playwright.config.ts` – build, packaging, and test configs. In an installed build, `config/` and `content/` are copied next to the app as resources.
 
 ## Tech Stack

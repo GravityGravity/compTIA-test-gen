@@ -11,11 +11,8 @@ const APP_NAME = 'Cert Practice'
 
 // config/ and content/ sit next to the app: the repo root in development,
 // the resources folder in an installed build (see electron-builder.yml).
-// In development, CERT_PRACTICE_DATA and CERT_PRACTICE_USER_DATA point to test data (Playwright).
 const dev = !app.isPackaged
-const dataRoot =
-  (dev && process.env.CERT_PRACTICE_DATA) || (app.isPackaged ? process.resourcesPath : app.getAppPath())
-if (dev && process.env.CERT_PRACTICE_USER_DATA) app.setPath('userData', process.env.CERT_PRACTICE_USER_DATA)
+const dataRoot = app.isPackaged ? process.resourcesPath : app.getAppPath()
 
 /** True while the renderer shows an exam attempt: closing the window then asks to save or cancel. */
 let attemptOpen = false

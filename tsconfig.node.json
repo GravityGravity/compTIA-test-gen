@@ -7,12 +7,9 @@
   },
   "include": [
     "electron.vite.config.ts",
-    "vitest.config.ts",
-    "playwright.config.ts",
     "src/main/**/*",
     "src/preload/**/*",
     "src/engine/**/*",
-    "src/shared/**/*",
-    "tests/**/*"
+    "src/shared/**/*"
   ]
 }

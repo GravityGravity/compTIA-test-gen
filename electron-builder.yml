@@ -6,23 +6,40 @@ directories:
 files:
   - out/**
   - package.json
+  # better-sqlite3 ships a prebuilt N-API binary for each platform in prebuilds/:
+  # no native rebuild, and no SQLite sources in the installer.
+  - '!node_modules/better-sqlite3/{deps,src,build,binding.gyp}{,/**}'
+npmRebuild: false
 # The app reads configs and question content from these folders at run time.
 extraResources:
   - from: config
     to: config
   - from: content
     to: content
+    filter: ['**/*.json']
 asarUnpack:
   - node_modules/better-sqlite3/**
 linux:
-  target: [AppImage, deb]
+  # One Linux installer: the .deb sets up the sandbox helper that Electron needs on Ubuntu.
+  target: deb
+  syncDesktopName: true
+  # Keep only this platform's SQLite binary. A platform list that starts with an exclusion
+  # would pull in the whole project folder, so it repeats the root patterns first.
+  files:
+    - out/**
+    - package.json
+    - '!node_modules/better-sqlite3/prebuilds/!(linux-x64.node)'
   category: Education
-  icon: build/icon.png
+  icon: build/icons
   synopsis: Practice exams and exercises for CompTIA certifications
   maintainer: Cert Practice
 win:
   target: nsis
   icon: build/icon.ico
+  files:
+    - out/**
+    - package.json
+    - '!node_modules/better-sqlite3/prebuilds/!(win32-x64.node)'
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true

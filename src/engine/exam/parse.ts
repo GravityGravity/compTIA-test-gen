@@ -9,8 +9,7 @@ import type {
 } from '@shared/exam'
 import { ConfigError } from '../config'
 
-// Checks the exam module records: the fields the engine reads. tools/extract/check_questions.py
-// does the full content check (coverage, sentence counts, duplicates) during development.
+// Checks the exam module records: the fields the engine reads.
 
 type Json = Record<string, unknown>
 

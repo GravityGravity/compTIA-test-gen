@@ -2,6 +2,25 @@
 
 A summary of the changes and decisions in each task. Newest first.
 
+## 2026-10-30 – Release branch: logo and installers
+
+Decisions:
+- A `release` branch holds the source that builds the installers. Development stays on `main`.
+- The installers are GitHub Release assets (release `v0.1.0`), not files in git: each is over GitHub's 100 MB file limit.
+- One installer for each system: a `.deb` for Linux (it sets up the AppArmor profile that Electron needs on Ubuntu 24.04 and later; the AppImage is dropped) and an NSIS `.exe` for Windows (per-user by default, the user can change the folder, desktop shortcut).
+- Logo: a brand-to-plum tile with a white "C" ring and a check mark that leaves through the ring's opening. It is the Windows exe, installer, and shortcut icon, the Linux app-menu and window icon, and it sits next to "Cert Practice" in the top bar.
+- The exam content in `content/` is kept as it is, including the book practice questions (approved). Only the tools and text made from parsing the books are removed.
+- The Windows installer builds on Linux without Wine: electron-builder's own JavaScript reader takes the uninstaller out of the installer (`scripts/dist-win.mjs`). electron-builder's downloadable Wine 11 toolset has no Windows DLLs, and system Wine needs sudo.
+- No native rebuild (`npmRebuild: false`): `better-sqlite3` ships a prebuilt N-API binary for each platform. Each installer keeps only its own binary, and the SQLite sources are left out.
+
+Changes:
+- Logo: `build/icon.svg`, `build/icon.png`, `build/icons/` (16–1024 px), `build/icon.ico`, `resources/icon.png`, `src/renderer/src/assets/logo.svg`; `src/main/index.ts` (window icon), `TopBar.tsx` and `app.css` (top bar logo).
+- `electron-builder.yml`: icons, `.deb` only, `desktopName`, NSIS options, per-platform files; `package.json`: author, `desktopName`, `dist:win` script.
+- Removed (release branch only): `tools/extract/` (the book extractor, question parser, and content checkers), `references/` (UI drafts and screenshots), `tests/` and every `*.test.ts(x)`, the Vitest and Playwright configs and packages, `docs/exam-modules.md`, `docs/compTIA-exam-overviews.md`, the `CERT_PRACTICE_DATA` / `CERT_PRACTICE_USER_DATA` test-data hooks in the main process, the unused `missingRules` grammar helper, and `content/README.md` from the installers. `sources/` and `sources-text/` were never in git.
+- GitHub Release `v0.1.0`: `cert-practice_0.1.0_amd64.deb`, `Cert Practice Setup 0.1.0.exe`, `SHA256SUMS`.
+- `README.md` (install and build steps) and `CLAUDE.md` (the release branch).
+- Checks: typecheck and lint; the app starts from the production build (`electron-vite preview`); both installers checked for the icon, the content folders, and the right SQLite binary. Before the tests were removed, `npm test` passed (175 tests) with the logo changes.
+
 ## 2026-10-30 – Definitions: Security+ Domains 2–5
 
 Decisions:

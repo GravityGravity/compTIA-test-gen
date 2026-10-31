@@ -49,15 +49,6 @@ export function expand(text: string, grammar: Grammar, rng: Random, bindings: Gr
   return run(text, 0)
 }
 
-/** Rule names that are used in a phrasing but do not exist. `extra` are names bound at run time. */
-export function missingRules(grammar: Grammar, extra: readonly string[] = []): string[] {
-  const known = new Set([...Object.keys(grammar), ...extra])
-  const missing = new Set<string>()
-  for (const phrasings of Object.values(grammar))
-    for (const p of phrasings) for (const m of p.matchAll(REF)) if (!known.has(m[1]!)) missing.add(m[1]!)
-  return [...missing].sort()
-}
-
 /** "a", "a and b", "a, b, and c" */
 export function joinList(items: readonly string[]): string {
   if (items.length <= 1) return items.join('')

@@ -10,12 +10,8 @@ export default tseslint.config(
       'release/',
       'dist/',
       'node_modules/',
-      'references/',
-      'tools/',
       'sources/',
-      'sources-text/',
-      'test-results/',
-      'playwright-report/'
+      'sources-text/'
     ]
   },
   js.configs.recommended,
